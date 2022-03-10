@@ -1,5 +1,6 @@
 import vue from 'rollup-plugin-vue'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import postcss from 'rollup-plugin-postcss'
 
 export default [
   {
@@ -15,7 +16,11 @@ export default [
       }
     ],
     plugins: [
-      vue(), peerDepsExternal()
+      vue({
+        preprocessStyles: true
+      }),
+      postcss(),
+      peerDepsExternal()
     ]
   }
 ]
