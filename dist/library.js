@@ -122,7 +122,7 @@ var script$2 = {
 };
 
 const _withScopeId = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$2 = { class: "content col-md-9" };
+const _hoisted_1$2 = { class: "content" };
 const _hoisted_2$2 = { class: "row section" };
 const _hoisted_3$1 = { class: "table-section" };
 const _hoisted_4 = { class: "slider-block" };
