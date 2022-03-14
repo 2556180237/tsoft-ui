@@ -1,5 +1,5 @@
 <template>
-  <div class="content col-md-9">
+  <div class="content">
     <div class="row section">
       <div class="table-section">
         <div class="slider-block">
