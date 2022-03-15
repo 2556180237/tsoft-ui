@@ -4,90 +4,44 @@
       <div class="table-section">
         <div class="slider-block">
           <div
-              class="control-prev btn-left"
-              id="tableSliderLeft"
-              data-bs-slide="prev"
-              style="transform: translate3d(0px, 48px, 0px)"
-              :class="{ active: this.leftScroll }"
-              @mouseout="stop"
-              @mouseover="moveLeft"
+            class="control-prev btn-left"
+            id="tableSliderLeft"
+            data-bs-slide="prev"
+            style="transform: translate3d(0px, 48px, 0px)"
+            :class="{ active: this.leftScroll }"
+            @mouseout="stop"
+            @mouseover="moveLeft"
           >
             <span class="visually-hidden">Предыдущий</span>
           </div>
           <div
-              class="control-next btn-right"
-              id="tableSliderRight"
-              data-bs-slide="next"
-              style="transform: translate3d(0px, 48px, 0px)"
-              @mouseout="stop"
-              @mouseover="moveRight"
+            class="control-next btn-right"
+            id="tableSliderRight"
+            data-bs-slide="next"
+            style="transform: translate3d(0px, 48px, 0px)"
+            @mouseout="stop"
+            @mouseover="moveRight"
           >
             <span class="visually-hidden">Следующий</span>
           </div>
         </div>
         <div
-            class="table-responsive table-statuses"
-            id="tableResponsive"
-            @scroll="move"
+          class="table-responsive table-statuses"
+          id="tableResponsive"
+          @scroll="move"
         >
           <table class="table">
             <thead class="">
-            <tr>
-              <th>Номер Документа</th>
-              <th>Дата изменения</th>
-              <th>Тов.</th>
-              <th>Тип</th>
-              <th>ИМ...</th>
-              <th>Суммар...</th>
-              <th>! Номер свидетельства</th>
-              <th>Регистр. номер</th>
-              <th>Архив ЭД</th>
-              <th>Коммент.</th>
-              <th>Декларант</th>
-            </tr>
+              <tr>
+                <th v-for="title in titles" :key="title">{{ title }}</th>
+              </tr>
             </thead>
             <tbody class="tbody">
-            <tr
-                class="document-row"
-                v-for="reester in reesters"
-                :key="reester"
-            >
-              <td class="col-documentNumber">
-                <a class="documentNumber" href="">
-                  <p>{{ reester.num }}</p>
-                </a>
-              </td>
-              <td class="col-date">
-                <p>{{ reester.changedDate }}</p>
-              </td>
-              <td class="col-product">
-                <p>{{ reester.countGoods }}</p>
-              </td>
-              <td class="col-type">
-                <p>{{ reester.type }}</p>
-              </td>
-              <td class="col-IM">
-                <p>{{ reester.IM }}</p>
-              </td>
-              <td class="col-amount">
-                <p>{{ reester.amount }}</p>
-              </td>
-              <td class="col-certificateNumber">
-                <p>{{ reester.certificateNumber }}</p>
-              </td>
-              <td class="col-registryNumber">
-                <p>{{ reester.regNum }}</p>
-              </td>
-              <td class="col-archive">
-                <p>{{ reester.archiveED }}</p>
-              </td>
-              <td class="col-comment">
-                <p>{{ reester.comment }}</p>
-              </td>
-              <td class="col-declarant">
-                <p>{{ reester.declarantName }}</p>
-              </td>
-            </tr>
+              <tr class="document-row" v-for="row in rows" :key="row">
+                <td v-for="(value, key) in row" :key="key">
+                  <p>{{ value }}</p>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -97,15 +51,23 @@
 </template>
 
 <script>
-import { reesters } from "./helpers/vars";
 export default {
   name: "TsoftTable",
+  props: {
+    titles: {
+      type: Object,
+      required: true,
+    },
+    rows: {
+      type: Object,
+      required: true,
+    },
+  },
   data() {
     return {
       mode: undefined,
       table: null,
       leftScroll: false,
-      reesters,
     };
   },
   mounted() {
@@ -126,10 +88,10 @@ export default {
       this.move();
     },
     move() {
-      if (this.mode === true) this.table.scrollLeft += 10;
+      if (this.mode === true) this.table.scrollLeft += 15;
       if (this.mode === false) {
         if (this.table.scrollLeft === 0) this.leftScroll = false;
-        this.table.scrollLeft -= 10;
+        this.table.scrollLeft -= 15;
       }
     },
     stop() {
@@ -140,6 +102,14 @@ export default {
 </script>
 
 <style lang="css" scoped>
+#tableResponsive {
+  background: rgb(253, 253, 253);
+  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);
+}
+.content {
+  padding: 20px 0 20px 20px;
+}
+
 .tbody td p {
   padding-bottom: 0;
 }
@@ -196,7 +166,7 @@ th p {
 .table td {
   margin: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
+  /* border: 1px solid #dee2e6; */
 }
 .table-section {
   padding-top: 200px;
@@ -236,7 +206,7 @@ th p {
 }
 .btn-left {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)
-  center left no-repeat;
+    center left no-repeat;
   position: absolute;
   left: 0;
 }
@@ -257,7 +227,7 @@ th p {
 }
 .btn-right {
   background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)
-  center right no-repeat;
+    center right no-repeat;
   position: absolute;
   right: 0;
 }

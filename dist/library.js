@@ -2,93 +2,47 @@
 
 var vue = require('vue');
 
-var script$4 = {
+var script$5 = {
   name: 'InputText'
 };
 
-const _hoisted_1$3 = { type: "text" };
+const _hoisted_1$4 = { type: "text" };
 
-function render$4(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$3))
+function render$5(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$4))
 }
 
-script$4.render = render$4;
-script$4.__file = "src/InputText.vue";
+script$5.render = render$5;
+script$5.__file = "src/InputText.vue";
 
-var script$3 = {
+var script$4 = {
   name: 'InputTextarea'
 };
 
-function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("textarea"))
 }
 
-script$3.render = render$3;
-script$3.__file = "src/InputTextarea.vue";
+script$4.render = render$4;
+script$4.__file = "src/InputTextarea.vue";
 
-const reesters = {
-    0: {
-        num: '2222222/2222222/33333',
-        changedDate: '14.02.2022 15:00:00',
-        countGoods: 100,
-        type: 'ПТДЭГ',
-        IM: 'ИМ',
-        amount: 300,
-        certificateNumber: '1111/1111/1222/3',
-        regNum: '2312321332432',
-        archiveED: 'dfsfs',
-        comment: 'fsdfsdfsdfsdfsdfsdf dsfdsf ',
-        declarantName: 'Анастасия'
-    },
-    1: {
-        num: '11111111/2222222/33333',
-        changedDate: '14.02.2022 15:00:00',
-        countGoods: 100,
-        type: 'ПТДЭГ',
-        IM: 'ИМ',
-        amount: 111.2,
-        certificateNumber: '1111/1111/1222/3',
-        regNum: '2312321332432',
-        archiveED: 'dfsfs',
-        comment: 'fsdfsdfsdfsdfsdfsdf dsfdsf ',
-        declarantName: 'Анастасия'
-    },
-    2: {
-        num: '3333333/2222222/33333',
-        changedDate: '14.02.2022 15:00:00',
-        countGoods: 100,
-        type: 'ПТДЭГ',
-        IM: 'ИМ',
-        amount: 234.2,
-        certificateNumber: '1111/1111/1222/3',
-        regNum: '2312321332432',
-        archiveED: 'dfsfs',
-        comment: 'fsdfsdfsdfsdfsdfsdf dsfdsf ',
-        declarantName: 'Анастасия'
-    },
-    3: {
-        num: '4444444/2222222/33333',
-        changedDate: '14.02.2022 15:00:00',
-        countGoods: 100,
-        type: 'ПТДЭГ',
-        IM: 'ИМ',
-        amount: 34.3,
-        certificateNumber: '1111/1111/1222/3',
-        regNum: '2312321332432',
-        archiveED: 'dfsfs',
-        comment: 'fsdfsdfsdfsdfsdfsdf dsfdsf ',
-        declarantName: 'Анастасия'
-    }
-};
-
-var script$2 = {
+var script$3 = {
   name: "TsoftTable",
+  props: {
+    titles: {
+      type: Object,
+      required: true,
+    },
+    rows: {
+      type: Object,
+      required: true,
+    },
+  },
   data() {
     return {
       mode: undefined,
       table: null,
       leftScroll: false,
-      reesters,
     };
   },
   mounted() {
@@ -109,10 +63,10 @@ var script$2 = {
       this.move();
     },
     move() {
-      if (this.mode === true) this.table.scrollLeft += 10;
+      if (this.mode === true) this.table.scrollLeft += 15;
       if (this.mode === false) {
         if (this.table.scrollLeft === 0) this.leftScroll = false;
-        this.table.scrollLeft -= 10;
+        this.table.scrollLeft -= 15;
       }
     },
     stop() {
@@ -122,9 +76,9 @@ var script$2 = {
 };
 
 const _withScopeId = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$2 = { class: "content" };
-const _hoisted_2$2 = { class: "row section" };
-const _hoisted_3$1 = { class: "table-section" };
+const _hoisted_1$3 = { class: "content" };
+const _hoisted_2$3 = { class: "row section" };
+const _hoisted_3$2 = { class: "table-section" };
 const _hoisted_4 = { class: "slider-block" };
 const _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
 const _hoisted_6 = [
@@ -135,42 +89,13 @@ const _hoisted_8 = [
   _hoisted_7
 ];
 const _hoisted_9 = { class: "table" };
-const _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("thead", { class: "" }, [
-  /*#__PURE__*/vue.createElementVNode("tr", null, [
-    /*#__PURE__*/vue.createElementVNode("th", null, "Номер Документа"),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Дата изменения"),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Тов."),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Тип"),
-    /*#__PURE__*/vue.createElementVNode("th", null, "ИМ..."),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Суммар..."),
-    /*#__PURE__*/vue.createElementVNode("th", null, "! Номер свидетельства"),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Регистр. номер"),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Архив ЭД"),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Коммент."),
-    /*#__PURE__*/vue.createElementVNode("th", null, "Декларант")
-  ])
-], -1 /* HOISTED */));
+const _hoisted_10 = { class: "" };
 const _hoisted_11 = { class: "tbody" };
-const _hoisted_12 = { class: "col-documentNumber" };
-const _hoisted_13 = {
-  class: "documentNumber",
-  href: ""
-};
-const _hoisted_14 = { class: "col-date" };
-const _hoisted_15 = { class: "col-product" };
-const _hoisted_16 = { class: "col-type" };
-const _hoisted_17 = { class: "col-IM" };
-const _hoisted_18 = { class: "col-amount" };
-const _hoisted_19 = { class: "col-certificateNumber" };
-const _hoisted_20 = { class: "col-registryNumber" };
-const _hoisted_21 = { class: "col-archive" };
-const _hoisted_22 = { class: "col-comment" };
-const _hoisted_23 = { class: "col-declarant" };
 
-function render$2(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$2, [
-    vue.createElementVNode("div", _hoisted_2$2, [
-      vue.createElementVNode("div", _hoisted_3$1, [
+function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$3, [
+    vue.createElementVNode("div", _hoisted_2$3, [
+      vue.createElementVNode("div", _hoisted_3$2, [
         vue.createElementVNode("div", _hoisted_4, [
           vue.createElementVNode("div", {
             class: vue.normalizeClass(["control-prev btn-left", { active: this.leftScroll }]),
@@ -195,48 +120,24 @@ function render$2(_ctx, _cache, $props, $setup, $data, $options) {
           onScroll: _cache[4] || (_cache[4] = (...args) => ($options.move && $options.move(...args)))
         }, [
           vue.createElementVNode("table", _hoisted_9, [
-            _hoisted_10,
+            vue.createElementVNode("thead", _hoisted_10, [
+              vue.createElementVNode("tr", null, [
+                (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.titles, (title) => {
+                  return (vue.openBlock(), vue.createElementBlock("th", { key: title }, vue.toDisplayString(title), 1 /* TEXT */))
+                }), 128 /* KEYED_FRAGMENT */))
+              ])
+            ]),
             vue.createElementVNode("tbody", _hoisted_11, [
-              (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.reesters, (reester) => {
+              (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.rows, (row) => {
                 return (vue.openBlock(), vue.createElementBlock("tr", {
                   class: "document-row",
-                  key: reester
+                  key: row
                 }, [
-                  vue.createElementVNode("td", _hoisted_12, [
-                    vue.createElementVNode("a", _hoisted_13, [
-                      vue.createElementVNode("p", null, vue.toDisplayString(reester.num), 1 /* TEXT */)
-                    ])
-                  ]),
-                  vue.createElementVNode("td", _hoisted_14, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.changedDate), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_15, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.countGoods), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_16, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.type), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_17, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.IM), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_18, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.amount), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_19, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.certificateNumber), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_20, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.regNum), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_21, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.archiveED), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_22, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.comment), 1 /* TEXT */)
-                  ]),
-                  vue.createElementVNode("td", _hoisted_23, [
-                    vue.createElementVNode("p", null, vue.toDisplayString(reester.declarantName), 1 /* TEXT */)
-                  ])
+                  (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(row, (value, key) => {
+                    return (vue.openBlock(), vue.createElementBlock("td", { key: key }, [
+                      vue.createElementVNode("p", null, vue.toDisplayString(value), 1 /* TEXT */)
+                    ]))
+                  }), 128 /* KEYED_FRAGMENT */))
                 ]))
               }), 128 /* KEYED_FRAGMENT */))
             ])
@@ -274,31 +175,31 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$1 = "\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  border-top: 1px solid #dee2e6;\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n  center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n  center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
-styleInject(css_248z$1);
+var css_248z$2 = "\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
+styleInject(css_248z$2);
 
-script$2.render = render$2;
-script$2.__scopeId = "data-v-647119ad";
-script$2.__file = "src/components/Table/Table.vue";
+script$3.render = render$3;
+script$3.__scopeId = "data-v-647119ad";
+script$3.__file = "src/components/Table/Table.vue";
 
-var script$1 = {
+var script$2 = {
   name: "node",
   props: {
     node: Object
   }
 };
 
-const _hoisted_1$1 = { class: "node-tree" };
-const _hoisted_2$1 = { class: "label" };
-const _hoisted_3 = { key: 0 };
+const _hoisted_1$2 = { class: "node-tree" };
+const _hoisted_2$2 = { class: "label" };
+const _hoisted_3$1 = { key: 0 };
 
-function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+function render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node = vue.resolveComponent("node");
 
-  return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$1, [
-    vue.createElementVNode("span", _hoisted_2$1, vue.toDisplayString($props.node.label), 1 /* TEXT */),
+  return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$2, [
+    vue.createElementVNode("span", _hoisted_2$2, vue.toDisplayString($props.node.label), 1 /* TEXT */),
     ($props.node.children && $props.node.children.length)
-      ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3, [
+      ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$1, [
           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.node.children, (child) => {
             return (vue.openBlock(), vue.createBlock(_component_node, { node: child }, null, 8 /* PROPS */, ["node"]))
           }), 256 /* UNKEYED_FRAGMENT */))
@@ -307,38 +208,65 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$1.render = render$1;
-script$1.__file = "src/components/Tree/NodeTreeMenu.vue";
+script$2.render = render$2;
+script$2.__file = "src/components/Tree/NodeTreeMenu.vue";
 
-var script = {
+var script$1 = {
   props: {
     treeData: Object
   },
   components: {
-    NodeTree: script$1
+    NodeTree: script$2
   }
 };
 
-const _hoisted_1 = { class: "tree" };
-const _hoisted_2 = { class: "tree-list" };
+const _hoisted_1$1 = { class: "tree" };
+const _hoisted_2$1 = { class: "tree-list" };
 
-function render(_ctx, _cache) {
+function render$1(_ctx, _cache) {
   const _component_node_tree = vue.resolveComponent("node-tree");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1, [
-    vue.createElementVNode("ul", _hoisted_2, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
+    vue.createElementVNode("ul", _hoisted_2$1, [
       vue.createVNode(_component_node_tree, { node: _ctx.treeData }, null, 8 /* PROPS */, ["node"])
     ])
   ]))
 }
 
-var css_248z = "\n.tree-list ul {\n  padding-left: 16px;\n  margin: 6px 0;\n}\n";
+var css_248z$1 = "\n.tree-list ul {\n  padding-left: 16px;\n  margin: 6px 0;\n}\n";
+styleInject(css_248z$1);
+
+script$1.render = render$1;
+script$1.__file = "src/components/Tree/TreeMenu.vue";
+
+var script = {
+  name: "TsoftLeftmenuFolder",
+};
+
+const _hoisted_1 = { class: "menu-sitemap-tree" };
+const _hoisted_2 = /*#__PURE__*/vue.createStaticVNode("<div class=\"file-system\" data-v-647b20c4><!-- region Папка --><div class=\"folder-row\" data-v-647b20c4><div class=\"folder\" data-v-647b20c4><!-- region строка папки (переключатель, иконка, название) --><div class=\"folder-container\" data-v-647b20c4><i class=\"fa-solid fa-angle-down\" data-v-647b20c4></i><i class=\"fas fa-folder folder-icon\" data-v-647b20c4></i><span class=\"folder-name\" data-v-647b20c4>Папка с файлами</span></div><!-- endregion cтрока папки --><!-- region содержимое папки --><div class=\"file-content\" data-v-647b20c4><div class=\"folder\" data-v-647b20c4><div class=\"folder-container\" data-v-647b20c4><i class=\"fa-solid fa-angle-down\" data-v-647b20c4></i><i class=\"fas fa-folder folder-icon\" data-v-647b20c4></i><span class=\"folder-name\" data-v-647b20c4>Папка с файлами</span></div><!-- region содержимое подпапки --><div class=\"file-content\" data-v-647b20c4><div class=\"file\" data-v-647b20c4><i class=\"fas fa-file\" data-v-647b20c4></i><span class=\"file-name\" data-v-647b20c4>Название файла</span></div></div><!-- endregion содержимое подпапки --></div></div><!-- endregion содержимое папки --></div></div><!-- endregion папка --><!-- region обычный файл в корне --><div class=\"file-row\" data-v-647b20c4><div class=\"file\" data-v-647b20c4><i class=\"fas fa-file\" data-v-647b20c4></i><span class=\"file-name\" data-v-647b20c4>Название файла</span></div></div><!-- endregion обычный файл в корне --></div>", 1);
+const _hoisted_3 = [
+  _hoisted_2
+];
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1, _hoisted_3))
+}
+
+var css_248z = "\n.menu-sitemap-tree[data-v-647b20c4] {\n  padding-top: 20px;\n}\n.file-system[data-v-647b20c4] {\n  background: rgb(253, 253, 253);\n  /* box-shadow: inset 1px 1px 5px 1px rgb(0 0 0 / 10%); */\n  border: 1px solid #ccc;\n  padding: 10px;\n  overflow: scroll;\n}\n.folder-container[data-v-647b20c4] {\n  white-space: nowrap;\n}\n.folder-name[data-v-647b20c4],\n.file-name[data-v-647b20c4] {\n  white-space: nowrap;\n  cursor: pointer;\n}\n.folder-name[data-v-647b20c4]:hover,\n.file-name[data-v-647b20c4]:hover {\n  color: #e67926;\n}\n.fa-file[data-v-647b20c4] {\n  color: #252525;\n}\n.fa-angle-right[data-v-647b20c4],\n.fa-angle-down[data-v-647b20c4] {\n  color: rgb(190, 190, 190);\n  margin-right: 7px;\n  cursor: pointer;\n}\n.file[data-v-647b20c4] {\n  margin-left: 21px;\n  white-space: nowrap;\n}\n.fa-folder[data-v-647b20c4] {\n  color: #e67926;\n  margin-right: 7px;\n}\n.file-name[data-v-647b20c4] {\n  margin-left: 9px;\n}\n.file-content[data-v-647b20c4] {\n  padding-left: 21px;\n  margin-right: -20px;\n}\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__file = "src/components/Tree/TreeMenu.vue";
+script.__scopeId = "data-v-647b20c4";
+script.__file = "src/components/Menu/LeftmenuFolder.vue";
 
-var components = { InputTextarea: script$3, InputText: script$4, TsoftTable: script$2, TsoftTree: script };
+var components = { 
+    InputTextarea: script$4, 
+    InputText: script$5, 
+    TsoftTable: script$3, 
+    TsoftTree: script$1,
+    TsoftLeftmenuFolder: script
+};
 
 const plugin = {
   install (Vue) {
