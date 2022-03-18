@@ -31,7 +31,7 @@
           @scroll="move"
         >
           <table class="table">
-            <thead class="">
+            <thead class="thead">
               <tr>
                 <th v-for="title in titles" :key="title">{{ title }}</th>
               </tr>

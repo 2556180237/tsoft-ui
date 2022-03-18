@@ -3,7 +3,7 @@
     <span class="label">{{ node.label }}</span>
 
     <ul v-if="node.children && node.children.length">
-      <node v-for="child in node.children" :node="child"></node>
+      <node v-for="child in node.children" :node="child" :key="child"></node>
     </ul>
   </li>
 </template>
@@ -12,7 +12,7 @@
 export default {
   name: "node",
   props: {
-    node: Object
-  }
+    node: Object,
+  },
 };
 </script>

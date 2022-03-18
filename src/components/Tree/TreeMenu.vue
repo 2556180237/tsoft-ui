@@ -11,7 +11,12 @@ import NodeTree from "./NodeTreeMenu.vue";
 
 export default {
   props: {
-    treeData: Object
+    folders: {
+      type: Object
+    },
+    folderName: {
+      type: String
+    }
   },
   components: {
     NodeTree
