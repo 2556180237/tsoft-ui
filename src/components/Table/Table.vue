@@ -37,9 +37,10 @@
               </tr>
             </thead>
             <tbody class="tbody">
-              <tr class="document-row" v-for="row in rows" :key="row">
+              <tr class="document-row" v-for="(row, index) in rows" :key="index">
                 <td v-for="(value, key) in row" :key="key">
-                  <p>{{ value }}</p>
+                  <router-link :to="{name: 'declaration', params: {reester_id: index}}" v-if="key === 'num'">{{ value }}</router-link>
+                  <p v-else>{{ value }}</p>
                 </td>
               </tr>
             </tbody>
