@@ -36,22 +36,22 @@
                   </div>
                   <div class="col-1"></div>
                   <div class="input-bg col-5">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.general.document.code"/>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.general.document.type"/>
                   </div>
                 </div>
                 <div class="col-3">
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.general.document.num"/>
                   </div>
                 </div>
                 <div class="col-2">
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.general.document.date"/>
                   </div>
                 </div>
               </div>
@@ -62,26 +62,26 @@
                   </div>
                   <div class="col-2">
                     <div class="input-bg">
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" v-model="order.personal.document.count"/>
                     </div>
                   </div>
                   <div class="input-bg col-4">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.personal.document.code"/>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.personal.document.type"/>
                   </div>
                 </div>
                 <div class="col-3">
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.personal.document.num"/>
                   </div>
                 </div>
                 <div class="col-2">
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.personal.document.date"/>
                   </div>
                 </div>
               </div>
@@ -91,18 +91,18 @@
                   <div class="d-flex">
                     <div class="col-6">
                       <div class="input-bg">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" v-model="order.general.grossWeight" />
                       </div>
                     </div>
                     <div class="col-6 d-flex">
                       <div class="col-7">
                         <div class="input-bg">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.general.grossWeightUnit"/>
                         </div>
                       </div>
                       <div class="col-5">
                         <div class="input-bg">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.general.grossWeightUnknown" />
                         </div>
                       </div>
                     </div>
@@ -113,14 +113,14 @@
                   <div class="d-flex">
                     <div class="col-8">
                       <div class="input-bg">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" v-model="order.general.customCost"/>
                       </div>
                     </div>
                     <div class="col-4 d-flex">
                       <div class="col-2"></div>
                       <div class="col-10">
                         <div class="input-bg">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.general.customCostCurrency"/>
                         </div>
                       </div>
                     </div>
@@ -133,13 +133,13 @@
                   <div class="d-flex">
                     <div class="col-9">
                       <div class="input-bg">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" v-model="order.general.customCost"/>
                       </div>
                     </div>
                     <div class="col-3 d-flex">
                       <div class="col-12">
                         <div class="input-bg">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.general.customCostCurrency"/>
                         </div>
                       </div>
                     </div>
@@ -153,13 +153,13 @@
                   </div>
                   <div class="col-7">
                     <div class="input-bg">
-                      <input type="text" class="form-control" />
+                      <input type="text" class="form-control" v-model="order.internetMarketUrl" />
                     </div>
                   </div>
                   <div class="col-2 d-flex">
                     <div class="col-7 d-flex">
                       <div class="input-bg">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" v-model="order.internetMarketUnknown"/>
                       </div>
                     </div>
                     <div class="col-5">
@@ -172,7 +172,7 @@
                 <div class="col-4">
                   <p class="align-bcntr">Номер мешка/места</p>
                   <div class="input-bg">
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" v-model="order.placeNum"/>
                   </div>
                 </div>
               </div>
@@ -194,29 +194,29 @@
               </router-link>
               <div class="inf-block changing-code row">
                 <div class="label-block" style="width: 100%">
-                  <label class="fs-5" for="">Код изменений</label>
+                  <label class="fs-5">Код изменений</label>
                 </div>
                 <div class="col-10 d-flex">
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.stageChangeCode"/>
                   </div>
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.reasonChangeCode"/>
                   </div>
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.quantityChangeCode"/>
                   </div>
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.TNVEDChangeCode"/>
                   </div>
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.customsCostChangeCode"/>
                   </div>
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.customsPaymentChangeCode"/>
                   </div>
                   <div class="col input-bg">
-                    <input class="form-control number-code" type="number" />
+                    <input class="form-control number-code" type="number" v-model="order.changeDetailsType.otherChangeCode"/>
                   </div>
                   <button class="btn info-button p-1">
                     <i class="fa-solid fa-circle-info"></i>
@@ -236,12 +236,12 @@
             <div class="d-flex">
               <div class="col-9">
                 <div class="input-bg">
-                  <input class="form-control" type="text" />
+                  <input class="form-control" type="text" v-model="order.personal.invoiceDecision" />
                 </div>
               </div>
               <div class="col-3">
                 <div class="input-bg">
-                  <input class="form-control" type="text" />
+                  <input class="form-control" type="text"  v-model="order.personal.invoiceDecisionUnknown"/>
                 </div>
               </div>
             </div>
@@ -250,13 +250,13 @@
             <div class="col-7">
               <p class="align-bcntr fs-5">Причина отказа</p>
               <div class="input-bg">
-                <input class="form-control" type="text" />
+                <input class="form-control" type="text" v-model="order.orderRejectReason" />
               </div>
             </div>
             <div class="col-5">
               <p class="align-bcntr fs-5">Уникальный идентификатор партии</p>
               <div class="col input-bg">
-                <input class="form-control" type="text" />
+                <input class="form-control" type="text" v-model="order.orderUniqueId"/>
               </div>
             </div>
           </div>
@@ -290,21 +290,22 @@
                           type="text"
                           class="form-control"
                           placeholder=""
+                          v-model="order.consignor.fullName"
                         />
                       </div>
                     </div>
                     <div class="col-1">
                       <div class="input-bg">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" v-model="order.consignor.countryCode" />
                       </div>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-2 d-flex">
                       <div class="input-bg col-2">
-                        <input type="checkbox" class="form-check-input" />
+                        <input type="checkbox" class="form-check-input" v-bind:checked="order.consignor.isDeclarant"/>
                       </div>
                       <div class="label-block col-10">
-                        <label for=""> Декларант (заявитель) </label>
+                        <label> Декларант (заявитель) </label>
                       </div>
                     </div>
                   </form>
@@ -312,26 +313,26 @@
                     <div class="col-6 d-flex justify-content-between">
                       <div class="col-4 d-flex">
                         <div class="label-block col-3 ps-1">
-                          <label for=""> ОГРН </label>
+                          <label> ОГРН </label>
                         </div>
                         <div class="input-bg col-9">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.consignor.OGRN"/>
                         </div>
                       </div>
                       <div class="col-4 d-flex">
                         <div class="label-block col-3 ps-3">
-                          <label for=""> ИНН </label>
+                          <label> ИНН </label>
                         </div>
                         <div class="input-bg col-9">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.consignor.INN"/>
                         </div>
                       </div>
                       <div class="col-4 d-flex">
                         <div class="label-block col-3 ps-3">
-                          <label for=""> КПП </label>
+                          <label> КПП </label>
                         </div>
                         <div class="input-bg col-9">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.consignor.KPP"/>
                         </div>
                       </div>
                     </div>
@@ -341,6 +342,7 @@
                           class="form-control"
                           type="text"
                           placeholder="номер телефона"
+                          v-model="order.consignor.phone"
                         />
                       </div>
                       <div class="input-bg col-6">
@@ -348,6 +350,7 @@
                           class="form-control"
                           type="text"
                           placeholder="адрес эл.почты"
+                          v-model="order.consignor.email"
                         />
                       </div>
                     </div>
@@ -372,6 +375,7 @@
                               type="text"
                               class="form-control"
                               placeholder="язык"
+                              v-model="order.consignor.language"
                             />
                           </div>
                         </div>
@@ -381,6 +385,7 @@
                               type="text"
                               class="form-control"
                               placeholder="страна"
+                              v-model="order.consignor.country"
                             />
                           </div>
                         </div>
@@ -390,6 +395,7 @@
                               type="text"
                               class="form-control"
                               placeholder="почтовый индекс"
+                              v-model="order.consignor.mailIndex"
                             />
                           </div>
                         </div>
@@ -399,6 +405,7 @@
                               type="text"
                               class="form-control"
                               placeholder="область (регион, штат, провинция)"
+                              v-model="order.consignor.region"
                             />
                           </div>
                         </div>
@@ -410,6 +417,7 @@
                               type="text"
                               class="form-control"
                               placeholder="район"
+                              v-model="order.consignor.area"
                             />
                           </div>
                         </div>
@@ -419,6 +427,7 @@
                               type="text"
                               class="form-control"
                               placeholder="город"
+                              v-model="order.consignor.city"
                             />
                           </div>
                         </div>
@@ -428,6 +437,7 @@
                               type="text"
                               class="form-control"
                               placeholder="населённый пункт"
+                              v-model="order.consignor.settlement"
                             />
                           </div>
                         </div>
@@ -439,6 +449,7 @@
                               type="text"
                               class="form-control"
                               placeholder="улица"
+                              v-model="order.consignor.address"
                             />
                           </div>
                         </div>
@@ -448,6 +459,7 @@
                               type="text"
                               class="form-control"
                               placeholder="дом, корпус, строение"
+                              v-model="order.consignor.house"
                             />
                           </div>
                         </div>
@@ -457,6 +469,7 @@
                               type="text"
                               class="form-control"
                               placeholder="офис/квартира"
+                              v-model="order.consignor.office"
                             />
                           </div>
                         </div>
@@ -466,6 +479,7 @@
                               type="text"
                               class="form-control"
                               placeholder="номер а/я"
+                              v-model="order.consignor.officeLetter"
                             />
                           </div>
                         </div>
@@ -477,6 +491,7 @@
                               type="text"
                               class="form-control"
                               placeholder="набор элементов адреса, представленных в свободной форме в виде текста"
+                              v-model="order.consignor.fullAddress"
                             />
                           </div>
                         </div>
@@ -496,6 +511,7 @@
                             type="text"
                             class="form-control"
                             placeholder="стр"
+                            v-model="order.consignor.document.country"
                           />
                         </div>
                       </div>
@@ -504,7 +520,8 @@
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="код вида "
+                            placeholder="код вида"
+                            v-model="order.consignor.document.code"
                           />
                         </div>
                       </div>
@@ -514,6 +531,7 @@
                             type="text"
                             class="form-control"
                             placeholder="краткое наименование"
+                            v-model="order.consignor.document.shortName"
                           />
                         </div>
                       </div>
@@ -523,6 +541,7 @@
                             type="text"
                             class="form-control"
                             placeholder="серия"
+                            v-model="order.consignor.document.series"
                           />
                         </div>
                         <div class="input-bg col-4">
@@ -530,6 +549,7 @@
                             type="text"
                             class="form-control"
                             placeholder="номер"
+                            v-model="order.consignor.document.num"
                           />
                         </div>
                         <div class="input-bg col-4">
@@ -537,6 +557,7 @@
                             type="text"
                             class="form-control"
                             placeholder="дата выдачи"
+                            v-model="order.consignor.document.dateRelease"
                           />
                         </div>
                       </div>
@@ -546,6 +567,7 @@
                             type="text"
                             class="form-control"
                             placeholder="Код подразделения"
+                            v-model="order.consignor.document.divisionCode"
                           />
                         </div>
                       </div>
@@ -557,6 +579,7 @@
                             type="text"
                             class="form-control"
                             placeholder="наименование организации, выдавшей документ"
+                            v-model="order.consignor.document.issuedBy"
                           />
                         </div>
                       </div>
@@ -596,21 +619,22 @@
                           type="text"
                           class="form-control"
                           placeholder=""
+                          v-model="order.consignee.fullName"
                         />
                       </div>
                     </div>
                     <div class="col-1">
                       <div class="input-bg">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" v-model="order.consignee.countryCode" />
                       </div>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-2 d-flex">
                       <div class="input-bg col-2">
-                        <input type="checkbox" class="form-check-input" />
+                        <input type="checkbox" class="form-check-input" v-bind:checked="order.consignee.isDeclarant"/>
                       </div>
                       <div class="label-block col-10">
-                        <label for=""> Декларант (заявитель) </label>
+                        <label> Декларант (заявитель) </label>
                       </div>
                     </div>
                   </form>
@@ -618,26 +642,26 @@
                     <div class="col-6 d-flex justify-content-between">
                       <div class="col-4 d-flex">
                         <div class="label-block col-3 ps-1">
-                          <label for=""> ОГРН </label>
+                          <label> ОГРН </label>
                         </div>
                         <div class="input-bg col-9">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.consignee.OGRN"/>
                         </div>
                       </div>
                       <div class="col-4 d-flex">
                         <div class="label-block col-3 ps-3">
-                          <label for=""> ИНН </label>
+                          <label> ИНН </label>
                         </div>
                         <div class="input-bg col-9">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.consignee.INN"/>
                         </div>
                       </div>
                       <div class="col-4 d-flex">
                         <div class="label-block col-3 ps-3">
-                          <label for=""> КПП </label>
+                          <label> КПП </label>
                         </div>
                         <div class="input-bg col-9">
-                          <input type="text" class="form-control" />
+                          <input type="text" class="form-control" v-model="order.consignee.KPP"/>
                         </div>
                       </div>
                     </div>
@@ -647,6 +671,7 @@
                           class="form-control"
                           type="text"
                           placeholder="номер телефона"
+                          v-model="order.consignee.phone"
                         />
                       </div>
                       <div class="input-bg col-6">
@@ -654,6 +679,7 @@
                           class="form-control"
                           type="text"
                           placeholder="адрес эл.почты"
+                          v-model="order.consignee.email"
                         />
                       </div>
                     </div>
@@ -678,6 +704,7 @@
                               type="text"
                               class="form-control"
                               placeholder="язык"
+                              v-model="order.consignee.language"
                             />
                           </div>
                         </div>
@@ -687,6 +714,7 @@
                               type="text"
                               class="form-control"
                               placeholder="страна"
+                              v-model="order.consignee.country"
                             />
                           </div>
                         </div>
@@ -696,6 +724,7 @@
                               type="text"
                               class="form-control"
                               placeholder="почтовый индекс"
+                              v-model="order.consignee.mailIndex"
                             />
                           </div>
                         </div>
@@ -705,6 +734,7 @@
                               type="text"
                               class="form-control"
                               placeholder="область (регион, штат, провинция)"
+                              v-model="order.consignee.region"
                             />
                           </div>
                         </div>
@@ -716,6 +746,7 @@
                               type="text"
                               class="form-control"
                               placeholder="район"
+                              v-model="order.consignee.area"
                             />
                           </div>
                         </div>
@@ -725,6 +756,7 @@
                               type="text"
                               class="form-control"
                               placeholder="город"
+                              v-model="order.consignee.city"
                             />
                           </div>
                         </div>
@@ -734,6 +766,7 @@
                               type="text"
                               class="form-control"
                               placeholder="населённый пункт"
+                              v-model="order.consignee.settlement"
                             />
                           </div>
                         </div>
@@ -745,6 +778,7 @@
                               type="text"
                               class="form-control"
                               placeholder="улица"
+                              v-model="order.consignee.address"
                             />
                           </div>
                         </div>
@@ -754,6 +788,7 @@
                               type="text"
                               class="form-control"
                               placeholder="дом, корпус, строение"
+                              v-model="order.consignee.house"
                             />
                           </div>
                         </div>
@@ -763,6 +798,7 @@
                               type="text"
                               class="form-control"
                               placeholder="офис/квартира"
+                              v-model="order.consignee.office"
                             />
                           </div>
                         </div>
@@ -772,6 +808,7 @@
                               type="text"
                               class="form-control"
                               placeholder="номер а/я"
+                              v-model="order.consignee.officeLetter"
                             />
                           </div>
                         </div>
@@ -783,6 +820,7 @@
                               type="text"
                               class="form-control"
                               placeholder="набор элементов адреса, представленных в свободной форме в виде текста"
+                              v-model="order.consignee.fullAddress"
                             />
                           </div>
                         </div>
@@ -802,6 +840,7 @@
                             type="text"
                             class="form-control"
                             placeholder="стр"
+                            v-model="order.consignee.document.country"
                           />
                         </div>
                       </div>
@@ -810,7 +849,8 @@
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="код вида "
+                            placeholder="код вида"
+                            v-model="order.consignee.document.code"
                           />
                         </div>
                       </div>
@@ -820,6 +860,7 @@
                             type="text"
                             class="form-control"
                             placeholder="краткое наименование"
+                            v-model="order.consignee.document.shortName"
                           />
                         </div>
                       </div>
@@ -829,6 +870,7 @@
                             type="text"
                             class="form-control"
                             placeholder="серия"
+                            v-model="order.consignee.document.series"
                           />
                         </div>
                         <div class="input-bg col-4">
@@ -836,6 +878,7 @@
                             type="text"
                             class="form-control"
                             placeholder="номер"
+                            v-model="order.consignee.document.num"
                           />
                         </div>
                         <div class="input-bg col-4">
@@ -843,6 +886,7 @@
                             type="text"
                             class="form-control"
                             placeholder="дата выдачи"
+                            v-model="order.consignee.document.dateRelease"
                           />
                         </div>
                       </div>
@@ -852,6 +896,7 @@
                             type="text"
                             class="form-control"
                             placeholder="Код подразделения"
+                            v-model="order.consignee.document.divisionCode"
                           />
                         </div>
                       </div>
@@ -863,6 +908,7 @@
                             type="text"
                             class="form-control"
                             placeholder="наименование организации, выдавшей документ"
+                            v-model="order.consignee.document.issuedBy"
                           />
                         </div>
                       </div>
@@ -876,392 +922,26 @@
       </div>
     </div>
   </div>
+  <tsoft-good-information-form
+    v-for="(good, index) in goods"
+    :key="index"
+    :good="good.goodInfo"
+    :documents="good.documents"
+  />
 </template>
 
 <script>
 export default {
   name: "TsoftGoodsAwbInformationForm",
+  props: {
+    order: {
+      type: Object,
+      required: true
+    },
+    goods: {
+      type: Object,
+      required: true
+    }
+  },
 };
 </script>
-
-<style scoped>
-li a {
-  color: black;
-  text-decoration: unset;
-  font-size: 14px;
-}
-
-.sidebar-prods.active {
-  color: orange;
-  background-color: green;
-}
-/*Стили текстовых инпутов*/
-.form-control {
-  padding: 0 5px 0 3px;
-  background-color: #21a0fe;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 1px 1px 1px white;
-}
-
-.form-control:focus {
-  outline: unset;
-  border: unset;
-  background-color: #80ffff;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 1px 1px 1px #9f9f9f;
-  border: 1px solid black;
-}
-
-.form-control::placeholder {
-  color: #597a93;
-  font-weight: bold;
-  font-size: 11px;
-  padding-left: 10px;
-}
-
-/**/
-/*Стиль чекбоксовых инпутов*/
-.form-check-input {
-  background-color: #21a0fe;
-  box-shadow: 1px 1px 1px white;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-}
-
-/*Region Стили блока декларации*/
-
-.declaration {
-  background-color: #d1d1d1;
-  padding: 10px;
-  border: 1px solid black;
-  max-width: 950px;
-  min-width: 900px;
-}
-
-h5 {
-  text-align: center;
-}
-
-.inf-block {
-  margin-bottom: 10px;
-}
-
-label {
-  margin-top: 7px;
-}
-
-.inputs-group > div {
-  padding: unset;
-  min-width: 30px;
-  margin-right: 7px;
-}
-
-.form-check-input {
-  min-width: 20px;
-  min-height: 20px;
-}
-
-.sheets-input {
-  max-width: 70px;
-}
-
-.certificate-block div:first-child {
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-}
-
-.certificate-block div {
-  padding: 0;
-  margin-right: 6px;
-}
-
-/*Стили текстовых инпутов*/
-.form-control {
-  padding: 0 5px 0 3px;
-  background-color: #21a0fe;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 1px 1px 1px white;
-}
-
-.form-control:focus {
-  outline: unset;
-  border: unset;
-  background-color: #80ffff;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 1px 1px 1px #9f9f9f;
-  border: 1px solid black;
-}
-
-.form-control::placeholder {
-  color: #597a93;
-  font-weight: bold;
-  font-size: 11px;
-  padding-left: 10px;
-}
-
-/**/
-/*Стиль чекбоксовых инпутов*/
-.form-check-input {
-  background-color: #21a0fe;
-  box-shadow: 1px 1px 1px white;
-}
-
-/**/
-/*Стиль блоков-обёрток для <p>*/
-.inf-paragraph {
-  min-width: 250px;
-  max-width: 270px;
-  margin: 10px 0 auto 0;
-}
-
-/**/
-
-.changing-declaration .inf-block div {
-  padding: unset;
-  margin-right: 5px;
-}
-
-.changing-code {
-  margin-top: 10px;
-}
-
-/*стиль, отменяющий стрелки в <input type ="number"> в разделе "Код изменений"*/
-.number-code::-webkit-outer-spin-button,
-.number-code::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-/**/
-/*Стили блоков с инпутами из раздела "Товарная партия"*/
-.batch-form {
-  padding: 0 10px 0 4px;
-}
-
-.batch-form div:first-child {
-  padding-left: 0;
-}
-
-.batch-block {
-  padding-left: 10px;
-}
-
-.batch-block div {
-  padding: 0;
-}
-
-/**/
-/*Стили "Сведений об оплате таможенных и иных платежей*/
-.payment-information {
-  width: fit-content;
-  color: gray;
-  text-decoration: underline;
-  font-size: 10px;
-}
-
-.payment-information:hover {
-  cursor: pointer;
-}
-
-/**/
-/*Стили кнопок со скрывающимся контентом*/
-
-.invoice-button:focus {
-  box-shadow: unset;
-}
-
-.invoice-button.collapsed .collapsing-block i {
-  transform: rotate(180deg);
-}
-
-.collapsing-block {
-  background-color: white;
-  border: 1px solid black;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-
-.collapsing-block span,
-i {
-  font-size: 14px;
-}
-
-/**/
-.card-body {
-  background-color: unset;
-  border: 1px solid black;
-}
-
-.point-name {
-  width: fit-content;
-  margin: auto auto 0;
-  color: #3274dd;
-  text-decoration: underline;
-}
-
-.personal-data div {
-  padding: 0 0 0 3px;
-}
-
-/*Стиль заголовка "Таможенный представитель"*/
-.customs-representative {
-  font-size: 11px;
-  font-weight: bold;
-  margin: 0 0 8px;
-}
-
-/**/
-/*Стили кнопки календаря*/
-.button-calendar {
-  background-color: white;
-  border: unset;
-  border-radius: 8px;
-}
-
-.button-calendar:focus {
-  box-shadow: unset;
-}
-
-/**/
-/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/
-.align-bcntr {
-  display: flex;
-  margin: 5px auto 0;
-}
-
-/*Стили блока информации о товарной партии*/
-.product-batch {
-  background-color: #d1d1d1;
-  padding: 0 0 10px;
-  border: 1px solid black;
-  max-width: 950px;
-  min-width: 900px;
-}
-
-/*Стиль синего хэдера с кнопками */
-.product-batch-header {
-  padding: 0 10px;
-  background-color: #3274dd;
-  box-shadow: inset 1px 1px 6px 0 #0d3195;
-  color: white;
-}
-
-.batch-button:focus {
-  box-shadow: unset;
-}
-
-.batch-button i:before {
-  color: white;
-}
-
-.batch-button:last-child i {
-  transform: rotate(180deg);
-}
-/**/
-
-.product-inner-block {
-  padding: 10px;
-}
-
-.fs-12 {
-  font-size: 12px;
-}
-
-/*Стиль кнопки "интернет-магазин", которая находится в элементе с общей информацией о партии*/
-
-.new-window-button {
-  background-color: white;
-  border-radius: 5px;
-}
-
-.new-window-button:hover {
-  box-shadow: unset;
-}
-
-.new-window-button:focus {
-  box-shadow: unset;
-}
-
-.new-window-button i {
-  font-size: 15px;
-  color: #3274dd;
-}
-/**/
-
-/*Стили группы серых ссылок в элементе с общей информацией о партии*/
-.batch-info-anchors router-link {
-  display: block;
-  color: gray;
-  text-decoration: underline;
-  margin-bottom: 3px;
-}
-
-.batch-info-anchors router-link:hover {
-  color: blue;
-  cursor: pointer;
-}
-/**/
-
-.product-info-block {
-  background-color: #d1d1d1;
-  padding: 0 0 10px;
-  border: 1px solid black;
-  max-width: 950px;
-  min-width: 900px;
-}
-
-.product-info-actions button:focus {
-  box-shadow: unset;
-}
-
-.product-info-actions i:before {
-  color: white;
-}
-
-.product-info-actions .fa-sort-down:before {
-  color: black;
-}
-
-.product-actions-button:not(.collapsed) {
-  transform: rotate(180deg);
-}
-
-.btn-bg-white {
-  background-color: white;
-  border-radius: 5px;
-}
-.btn-bg-white:focus {
-  box-shadow: unset;
-}
-
-.fa-note-sticky {
-  font-size: 16px;
-}
-
-/*Стили блока со сведениями о дополнительном документе*/
-
-.optional-inf-block {
-  background-color: #d1d1d1;
-  padding: 0 0 10px;
-  border: 1px solid black;
-  max-width: 950px;
-  min-width: 900px;
-}
-
-.optional-inf-header {
-  padding: 0 10px;
-  background-color: #3274dd;
-  box-shadow: inset 1px 1px 6px 0 #0d3195;
-  color: white;
-}
-</style>

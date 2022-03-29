@@ -1,30 +1,30 @@
-import { openBlock, createElementBlock, createElementVNode, normalizeClass, Fragment, renderList, toDisplayString, pushScopeId, popScopeId, resolveComponent, createBlock, createCommentVNode, createVNode, withCtx, createTextVNode, createStaticVNode } from 'vue';
+import { openBlock, createElementBlock, createElementVNode, normalizeClass, Fragment, renderList, toDisplayString, pushScopeId, popScopeId, resolveComponent, createBlock, createCommentVNode, createVNode, withCtx, withDirectives, vModelText, vModelCheckbox, createTextVNode, createStaticVNode } from 'vue';
 
-var script$c = {
+var script$d = {
   name: 'InputText'
 };
 
-const _hoisted_1$a = { type: "text" };
+const _hoisted_1$b = { type: "text" };
 
-function render$c(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("input", _hoisted_1$a))
+function render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  return (openBlock(), createElementBlock("input", _hoisted_1$b))
 }
 
-script$c.render = render$c;
-script$c.__file = "src/InputText.vue";
+script$d.render = render$d;
+script$d.__file = "src/InputText.vue";
 
-var script$b = {
+var script$c = {
   name: 'InputTextarea'
 };
 
-function render$b(_ctx, _cache, $props, $setup, $data, $options) {
+function render$c(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock("textarea"))
 }
 
-script$b.render = render$b;
-script$b.__file = "src/InputTextarea.vue";
+script$c.render = render$c;
+script$c.__file = "src/InputTextarea.vue";
 
-var script$a = {
+var script$b = {
   name: "TsoftTable",
   props: {
     titles: {
@@ -74,26 +74,26 @@ var script$a = {
 };
 
 const _withScopeId$2 = n => (pushScopeId("data-v-647119ad"),n=n(),popScopeId(),n);
-const _hoisted_1$9 = { class: "content" };
+const _hoisted_1$a = { class: "content" };
 const _hoisted_2$9 = { class: "row section" };
-const _hoisted_3$6 = { class: "table-section" };
+const _hoisted_3$7 = { class: "table-section" };
 const _hoisted_4$6 = { class: "slider-block" };
-const _hoisted_5$3 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
-const _hoisted_6$3 = [
-  _hoisted_5$3
+const _hoisted_5$5 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
+const _hoisted_6$4 = [
+  _hoisted_5$5
 ];
-const _hoisted_7$2 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
-const _hoisted_8$2 = [
-  _hoisted_7$2
+const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
+const _hoisted_8$4 = [
+  _hoisted_7$4
 ];
-const _hoisted_9$2 = { class: "table" };
-const _hoisted_10$2 = { class: "thead" };
-const _hoisted_11$3 = { class: "tbody" };
+const _hoisted_9$4 = { class: "table" };
+const _hoisted_10$4 = { class: "thead" };
+const _hoisted_11$4 = { class: "tbody" };
 
-function render$a(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("div", _hoisted_1$9, [
+function render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  return (openBlock(), createElementBlock("div", _hoisted_1$a, [
     createElementVNode("div", _hoisted_2$9, [
-      createElementVNode("div", _hoisted_3$6, [
+      createElementVNode("div", _hoisted_3$7, [
         createElementVNode("div", _hoisted_4$6, [
           createElementVNode("div", {
             class: normalizeClass(["control-prev btn-left", { active: this.leftScroll }]),
@@ -102,7 +102,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
             style: {"transform":"translate3d(0px, 48px, 0px)"},
             onMouseout: _cache[0] || (_cache[0] = (...args) => ($options.stop && $options.stop(...args))),
             onMouseover: _cache[1] || (_cache[1] = (...args) => ($options.moveLeft && $options.moveLeft(...args)))
-          }, _hoisted_6$3, 34 /* CLASS, HYDRATE_EVENTS */),
+          }, _hoisted_6$4, 34 /* CLASS, HYDRATE_EVENTS */),
           createElementVNode("div", {
             class: "control-next btn-right",
             id: "tableSliderRight",
@@ -110,22 +110,22 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
             style: {"transform":"translate3d(0px, 48px, 0px)"},
             onMouseout: _cache[2] || (_cache[2] = (...args) => ($options.stop && $options.stop(...args))),
             onMouseover: _cache[3] || (_cache[3] = (...args) => ($options.moveRight && $options.moveRight(...args)))
-          }, _hoisted_8$2, 32 /* HYDRATE_EVENTS */)
+          }, _hoisted_8$4, 32 /* HYDRATE_EVENTS */)
         ]),
         createElementVNode("div", {
           class: "table-responsive table-statuses",
           id: "tableResponsive",
           onScroll: _cache[4] || (_cache[4] = (...args) => ($options.move && $options.move(...args)))
         }, [
-          createElementVNode("table", _hoisted_9$2, [
-            createElementVNode("thead", _hoisted_10$2, [
+          createElementVNode("table", _hoisted_9$4, [
+            createElementVNode("thead", _hoisted_10$4, [
               createElementVNode("tr", null, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList($props.titles, (title) => {
                   return (openBlock(), createElementBlock("th", { key: title }, toDisplayString(title), 1 /* TEXT */))
                 }), 128 /* KEYED_FRAGMENT */))
               ])
             ]),
-            createElementVNode("tbody", _hoisted_11$3, [
+            createElementVNode("tbody", _hoisted_11$4, [
               (openBlock(true), createElementBlock(Fragment, null, renderList($props.rows, (row) => {
                 return (openBlock(), createElementBlock("tr", {
                   class: "document-row",
@@ -173,31 +173,31 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$8 = "\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
-styleInject(css_248z$8);
+var css_248z$5 = "\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\r\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\r\n    center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\r\n    center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\r\n";
+styleInject(css_248z$5);
 
-script$a.render = render$a;
-script$a.__scopeId = "data-v-647119ad";
-script$a.__file = "src/components/Table/Table.vue";
+script$b.render = render$b;
+script$b.__scopeId = "data-v-647119ad";
+script$b.__file = "src/components/Table/Table.vue";
 
-var script$9 = {
+var script$a = {
   name: "node",
   props: {
     node: Object,
   },
 };
 
-const _hoisted_1$8 = { class: "node-tree" };
+const _hoisted_1$9 = { class: "node-tree" };
 const _hoisted_2$8 = { class: "label" };
-const _hoisted_3$5 = { key: 0 };
+const _hoisted_3$6 = { key: 0 };
 
-function render$9(_ctx, _cache, $props, $setup, $data, $options) {
+function render$a(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node = resolveComponent("node");
 
-  return (openBlock(), createElementBlock("li", _hoisted_1$8, [
+  return (openBlock(), createElementBlock("li", _hoisted_1$9, [
     createElementVNode("span", _hoisted_2$8, toDisplayString($props.node.label), 1 /* TEXT */),
     ($props.node.children && $props.node.children.length)
-      ? (openBlock(), createElementBlock("ul", _hoisted_3$5, [
+      ? (openBlock(), createElementBlock("ul", _hoisted_3$6, [
           (openBlock(true), createElementBlock(Fragment, null, renderList($props.node.children, (child) => {
             return (openBlock(), createBlock(_component_node, {
               node: child,
@@ -209,10 +209,10 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$9.render = render$9;
-script$9.__file = "src/components/Tree/NodeTreeMenu.vue";
+script$a.render = render$a;
+script$a.__file = "src/components/Tree/NodeTreeMenu.vue";
 
-var script$8 = {
+var script$9 = {
   props: {
     folders: {
       type: Object
@@ -222,30 +222,30 @@ var script$8 = {
     }
   },
   components: {
-    NodeTree: script$9
+    NodeTree: script$a
   }
 };
 
-const _hoisted_1$7 = { class: "tree" };
+const _hoisted_1$8 = { class: "tree" };
 const _hoisted_2$7 = { class: "tree-list" };
 
-function render$8(_ctx, _cache) {
+function render$9(_ctx, _cache) {
   const _component_node_tree = resolveComponent("node-tree");
 
-  return (openBlock(), createElementBlock("div", _hoisted_1$7, [
+  return (openBlock(), createElementBlock("div", _hoisted_1$8, [
     createElementVNode("ul", _hoisted_2$7, [
       createVNode(_component_node_tree, { node: _ctx.treeData }, null, 8 /* PROPS */, ["node"])
     ])
   ]))
 }
 
-var css_248z$7 = "\n.tree-list ul {\n  padding-left: 16px;\n  margin: 6px 0;\n}\n";
-styleInject(css_248z$7);
+var css_248z$4 = "\n.tree-list ul {\r\n  padding-left: 16px;\r\n  margin: 6px 0;\n}\r\n";
+styleInject(css_248z$4);
 
-script$8.render = render$8;
-script$8.__file = "src/components/Tree/TreeMenu.vue";
+script$9.render = render$9;
+script$9.__file = "src/components/Tree/TreeMenu.vue";
 
-var script$7 = {
+var script$8 = {
   name: "TreeFile",
   props: {
     filename: {
@@ -255,31 +255,31 @@ var script$7 = {
 };
 
 const _withScopeId$1 = n => (pushScopeId("data-v-f314cfaa"),n=n(),popScopeId(),n);
-const _hoisted_1$6 = { class: "file-row" };
+const _hoisted_1$7 = { class: "file-row" };
 const _hoisted_2$6 = { class: "file" };
-const _hoisted_3$4 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
+const _hoisted_3$5 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
 const _hoisted_4$5 = { class: "file-name" };
 
-function render$7(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("div", _hoisted_1$6, [
+function render$8(_ctx, _cache, $props, $setup, $data, $options) {
+  return (openBlock(), createElementBlock("div", _hoisted_1$7, [
     createElementVNode("div", _hoisted_2$6, [
-      _hoisted_3$4,
+      _hoisted_3$5,
       createElementVNode("span", _hoisted_4$5, toDisplayString($props.filename), 1 /* TEXT */)
     ])
   ]))
 }
 
-var css_248z$6 = "\n.file-name[data-v-f314cfaa]:hover {\n  color: #e67926;\n}\n.fa-file[data-v-f314cfaa] {\n  color: #252525;\n}\n.file[data-v-f314cfaa] {\n  margin-left: 18px;\n  white-space: nowrap;\n}\n.file-name[data-v-f314cfaa] {\n  margin-left: 9px;\n}\n.file-name[data-v-f314cfaa] {\n  white-space: nowrap;\n  cursor: pointer;\n}\n";
-styleInject(css_248z$6);
+var css_248z$3 = "\n.file-name[data-v-f314cfaa]:hover {\r\n  color: #e67926;\n}\n.fa-file[data-v-f314cfaa] {\r\n  color: #252525;\n}\n.file[data-v-f314cfaa] {\r\n  margin-left: 18px;\r\n  white-space: nowrap;\n}\n.file-name[data-v-f314cfaa] {\r\n  margin-left: 9px;\n}\n.file-name[data-v-f314cfaa] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\r\n";
+styleInject(css_248z$3);
 
-script$7.render = render$7;
-script$7.__scopeId = "data-v-f314cfaa";
-script$7.__file = "src/components/Tree/TreeFile.vue";
+script$8.render = render$8;
+script$8.__scopeId = "data-v-f314cfaa";
+script$8.__file = "src/components/Tree/TreeFile.vue";
 
-var script$6 = {
+var script$7 = {
   name: "TreeFolder",
   components: {
-    TreeFile: script$7,
+    TreeFile: script$8,
   },
   props: {
     treeData: {
@@ -302,17 +302,17 @@ var script$6 = {
 };
 
 const _withScopeId = n => (pushScopeId("data-v-61a6cc5d"),n=n(),popScopeId(),n);
-const _hoisted_1$5 = { class: "folder-row" };
+const _hoisted_1$6 = { class: "folder-row" };
 const _hoisted_2$5 = { class: "folder-container" };
-const _hoisted_3$3 = ["onClick"];
+const _hoisted_3$4 = ["onClick"];
 const _hoisted_4$4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
-const _hoisted_5$2 = { class: "folder-name" };
+const _hoisted_5$4 = { class: "folder-name" };
 
-function render$6(_ctx, _cache, $props, $setup, $data, $options) {
+function render$7(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = resolveComponent("tree-folder", true);
   const _component_tree_file = resolveComponent("tree-file");
 
-  return (openBlock(), createElementBlock("div", _hoisted_1$5, [
+  return (openBlock(), createElementBlock("div", _hoisted_1$6, [
     (openBlock(true), createElementBlock(Fragment, null, renderList($data.dataFiles.folders, (children, folderName) => {
       return (openBlock(), createElementBlock("div", {
         class: "folder",
@@ -324,9 +324,9 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
             'down-rotate': children.isOpen,
           }]),
             onClick: $event => ($options.toggle(folderName))
-          }, null, 10 /* CLASS, PROPS */, _hoisted_3$3),
+          }, null, 10 /* CLASS, PROPS */, _hoisted_3$4),
           _hoisted_4$4,
-          createElementVNode("span", _hoisted_5$2, toDisplayString(folderName), 1 /* TEXT */)
+          createElementVNode("span", _hoisted_5$4, toDisplayString(folderName), 1 /* TEXT */)
         ]),
         createElementVNode("div", {
           class: normalizeClass(["file-content", { 'content-open': children.isOpen }])
@@ -344,17 +344,17 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$5 = "\n.toggle-icon[data-v-61a6cc5d] {\n  height: 16px;\n  width: 8px;\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\n  padding-left: 21px;\n  margin-right: -20px;\n  height: 0px;\n  overflow: unset;\n  opacity: 0;\n  transition: 0s;\n}\n.content-open[data-v-61a6cc5d] {\n  height: fit-content;\n  overflow: unset;\n  opacity: 1;\n  transition: 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\n  white-space: nowrap;\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\n  color: rgb(190, 190, 190);\n  margin-right: 7px;\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\n  transition: 0.15s;\n  rotate: 0;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\n  transform: rotate(90deg);\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\n  color: #e67926;\n  margin-right: 7px;\n}\n";
-styleInject(css_248z$5);
+var css_248z$2 = "\n.toggle-icon[data-v-61a6cc5d] {\r\n  height: 16px;\r\n  width: 8px;\r\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\r\n  padding-left: 21px;\r\n  margin-right: -20px;\r\n  height: 0px;\r\n  overflow: unset;\r\n  opacity: 0;\r\n  transition: 0s;\n}\n.content-open[data-v-61a6cc5d] {\r\n  height: fit-content;\r\n  overflow: unset;\r\n  opacity: 1;\r\n  transition: 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\r\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\r\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\r\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\r\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  color: rgb(190, 190, 190);\r\n  margin-right: 7px;\r\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  transition: 0.15s;\r\n  rotate: 0;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\r\n  color: #e67926;\r\n  margin-right: 7px;\n}\r\n";
+styleInject(css_248z$2);
 
-script$6.render = render$6;
-script$6.__scopeId = "data-v-61a6cc5d";
-script$6.__file = "src/components/Tree/TreeFolder.vue";
+script$7.render = render$7;
+script$7.__scopeId = "data-v-61a6cc5d";
+script$7.__file = "src/components/Tree/TreeFolder.vue";
 
-var script$5 = {
+var script$6 = {
   name: "TreeFileSystem",
   components: {
-    TreeFolder: script$6,
+    TreeFolder: script$7,
   },
   props: {
     treeData: {
@@ -363,19 +363,19 @@ var script$5 = {
   },
 };
 
-function render$5(_ctx, _cache, $props, $setup, $data, $options) {
+function render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = resolveComponent("tree-folder");
 
   return (openBlock(), createBlock(_component_tree_folder, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"]))
 }
 
-script$5.render = render$5;
-script$5.__file = "src/components/Tree/TreeFileSystem.vue";
+script$6.render = render$6;
+script$6.__file = "src/components/Tree/TreeFileSystem.vue";
 
-var script$4 = {
+var script$5 = {
   name: "TsoftLeftmenuFolder",
   components: {
-    TreeFileSystem: script$5,
+    TreeFileSystem: script$6,
   },
   props: {
     treeData: {
@@ -384,74 +384,1073 @@ var script$4 = {
   },
 };
 
-const _hoisted_1$4 = { class: "menu-sitemap-tree" };
+const _hoisted_1$5 = { class: "menu-sitemap-tree" };
 const _hoisted_2$4 = { class: "file-system" };
 
-function render$4(_ctx, _cache, $props, $setup, $data, $options) {
+function render$5(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_file_system = resolveComponent("tree-file-system");
 
-  return (openBlock(), createElementBlock("div", _hoisted_1$4, [
+  return (openBlock(), createElementBlock("div", _hoisted_1$5, [
     createElementVNode("div", _hoisted_2$4, [
       createVNode(_component_tree_file_system, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"])
     ])
   ]))
 }
 
-var css_248z$4 = "\n.menu-sitemap-tree[data-v-647b20c4] {\n  padding-top: 20px;\n}\n.file-system[data-v-647b20c4] {\n  background: rgb(253, 253, 253);\n  border: 1px solid #ccc;\n  padding: 10px;\n  overflow: scroll;\n}\n";
-styleInject(css_248z$4);
+var css_248z$1 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: scroll;\n}\r\n";
+styleInject(css_248z$1);
 
-script$4.render = render$4;
-script$4.__scopeId = "data-v-647b20c4";
-script$4.__file = "src/components/Menu/LeftmenuFolder.vue";
+script$5.render = render$5;
+script$5.__scopeId = "data-v-647b20c4";
+script$5.__file = "src/components/Menu/LeftmenuFolder.vue";
 
-var script$3 = {
+var script$4 = {
   name: "TsoftGeneralDeclarationForm",
+  props: {
+    awbInfo: {
+      type: Object,
+      required: true
+    },
+    registry: {
+      type: Object,
+      required: true
+    }
+  }
 };
 
-const _hoisted_1$3 = {
+const _hoisted_1$4 = {
   class: "declaration mt-3",
   id: "declaration"
 };
 const _hoisted_2$3 = { class: "common-inf" };
-const _hoisted_3$2 = { class: "row" };
+const _hoisted_3$3 = { class: "row" };
 const _hoisted_4$3 = { class: "inf-block" };
-const _hoisted_5$1 = /*#__PURE__*/createTextVNode(" Подан с ДТ: ");
-const _hoisted_6$2 = /*#__PURE__*/createStaticVNode("<div class=\"row\" data-v-06a6f23d><div class=\"inf-block\" data-v-06a6f23d><h5 data-v-06a6f23d> Декларация на товары и пассажирская таможенная декларация для экспресс-грузов </h5></div></div><div class=\"row\" data-v-06a6f23d><div class=\"inf-block row col-12 justify-content-between\" data-v-06a6f23d><div class=\"checkbox-block d-flex col-2\" data-v-06a6f23d><div class=\"checkbox-bg col-2\" data-v-06a6f23d><input class=\"form-check-input\" type=\"checkbox\" id=\"DTEG\" data-v-06a6f23d></div><div class=\"label-block col-4\" data-v-06a6f23d><label for=\"DTEG\" data-v-06a6f23d>ДТЭГ</label></div><div class=\"checkbox-bg col-2\" data-v-06a6f23d><input class=\"form-check-input\" type=\"checkbox\" id=\"PTDEG\" data-v-06a6f23d></div><div class=\"label-block col-4\" data-v-06a6f23d><label for=\"PTDEG\" data-v-06a6f23d>ПТДЭГ</label></div></div><div class=\"checkbox-block d-flex col-2\" data-v-06a6f23d><div class=\"checkbox-bg col-2\" data-v-06a6f23d><input class=\"form-check-input\" type=\"checkbox\" id=\"IM\" data-v-06a6f23d></div><div class=\"label-block col-3\" data-v-06a6f23d><label for=\"IM\" data-v-06a6f23d>ИМ</label></div><div class=\"checkbox-bg col-2\" data-v-06a6f23d><input class=\"form-check-input\" type=\"checkbox\" id=\"EK\" data-v-06a6f23d></div><div class=\"label-block col-3\" data-v-06a6f23d><label for=\"EK\" data-v-06a6f23d>ЭК</label></div></div><div class=\"declaration-number-block justify-content-end d-flex col-5\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"declarationNumber\" data-v-06a6f23d>№</label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input class=\"declaration-number-input form-control\" type=\"text\" id=\"declarationNumber\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"inf-block row col-12\" data-v-06a6f23d><div class=\"inputs-group d-flex col-2\" data-v-06a6f23d><div class=\"col-2\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-2\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-3\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-2\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div><div class=\"sheets-block d-flex col-2\" data-v-06a6f23d><div class=\"label-block col-4\" data-v-06a6f23d><label for=\"Sheets\" data-v-06a6f23d>Листов</label></div><div class=\"input-bg col-8\" data-v-06a6f23d><input class=\"sheets-input form-control\" type=\"text\" id=\"Sheets\" data-v-06a6f23d></div></div><div class=\"registry-number-block d-flex justify-content-end col-5\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"registryNumber\" data-v-06a6f23d>Рег. №</label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input class=\"registry-number-input form-control\" type=\"text\" id=\"registryNumber\" data-v-06a6f23d></div></div><div class=\"registry-changes d-flex col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"registry-checkbox form-check-input\" type=\"checkbox\" id=\"registryCheckbox\" data-v-06a6f23d></div><label for=\"registryCheckbox\" data-v-06a6f23d>- реестр с внесёнными изменениями</label></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"inf-block d-grid\" data-v-06a6f23d><div class=\"row col-12\" data-v-06a6f23d><div class=\"col-6\" data-v-06a6f23d><label class=\"express-courier-label\" for=\"expressCourier\" data-v-06a6f23d>Экспресс перевозчик</label><div class=\"express-courier-block col-12 d-flex\" data-v-06a6f23d><div class=\"col-1\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-11\" data-v-06a6f23d><input class=\"col-11 form-control\" type=\"text\" id=\"expressCourier\" data-v-06a6f23d></div></div></div><div class=\"col-1\" data-v-06a6f23d></div><div class=\"col-5\" data-v-06a6f23d><div class=\"inf-paragraph\" data-v-06a6f23d><p data-v-06a6f23d> Регистрационный номер декларации, в которую вносятся изменения </p></div></div></div><div class=\"row col-12\" data-v-06a6f23d><div class=\"col-6\" data-v-06a6f23d><div class=\"\" data-v-06a6f23d><div class=\"\" data-v-06a6f23d><h4 data-v-06a6f23d>Свидетельство о включении в</h4><p data-v-06a6f23d> реестр УЭО, реестр владельцев СВХ, складов хранения собственных товаров, таможенных складов, свободных складов или магазинов БТ </p></div><form class=\"certificate-block row col-12\" data-v-06a6f23d><div class=\"input-bg col-1\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"input-bg col-1\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"input-bg col-7\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"input-bg col-1\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"input-bg col-1\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></form></div></div><div class=\"col-1\" data-v-06a6f23d></div><div class=\"col-5\" data-v-06a6f23d><form class=\"changing-declaration\" action=\"\" data-v-06a6f23d><div class=\"inf-block row\" data-v-06a6f23d><div class=\"col-3 input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-4 input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-3 input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-1 input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div><div class=\"inf-block changing-code row\" data-v-06a6f23d><div class=\"label-block\" style=\"width:100%;\" data-v-06a6f23d><label class=\"fs-5\" for=\"\" data-v-06a6f23d>Код изменений</label></div><div class=\"col-8 d-flex\" data-v-06a6f23d><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><div class=\"col input-bg\" data-v-06a6f23d><input class=\"form-control number-code\" type=\"number\" data-v-06a6f23d></div><button class=\"btn info-button p-1\" data-v-06a6f23d><i class=\"fa-solid fa-circle-info\" data-v-06a6f23d></i></button></div><div class=\"col-4\" data-v-06a6f23d></div></div></form></div></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"inf-block\" data-v-06a6f23d><h4 data-v-06a6f23d>Товарная партия</h4><form action=\"\" class=\"batch-form row\" data-v-06a6f23d><div class=\"col-3 inf-block\" data-v-06a6f23d><div class=\"row inf-paragraph\" data-v-06a6f23d><p data-v-06a6f23d> общая служба таможенных и иных платежей, подлежащих уплате по декларации </p></div><div class=\"batch-block row\" data-v-06a6f23d><div class=\"col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"Сумма\" data-v-06a6f23d></div><div class=\"col-2\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"Вал\" data-v-06a6f23d></div></div></div><div class=\"col-3 inf-block\" data-v-06a6f23d><h5 data-v-06a6f23d>Общая стоимость</h5><div class=\"inf-paragraph\" data-v-06a6f23d><p data-v-06a6f23d>по ПТД для экспресс-грузов</p></div><div class=\"batch-block row\" data-v-06a6f23d><div class=\"col-9\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-3\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div><div class=\"col-3 inf-block\" data-v-06a6f23d><h5 data-v-06a6f23d>Общий вес брутто</h5><div class=\"inf-paragraph\" data-v-06a6f23d><p data-v-06a6f23d>по ТД для экспресс-грузов</p></div><div class=\"batch-block row\" data-v-06a6f23d><div class=\"col-6\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-3\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-3\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div><div class=\"col-3 inf-block\" data-v-06a6f23d><h5 data-v-06a6f23d>Общая таможенная стоимость</h5><div class=\"inf-paragraph\" data-v-06a6f23d><p data-v-06a6f23d>по ДТ для экспресс-грузов</p></div><div class=\"batch-block row\" data-v-06a6f23d><div class=\"col-9\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div><div class=\"col-3\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div></form></div></div>", 5);
-const _hoisted_11$2 = { class: "row" };
-const _hoisted_12$2 = { class: "inf-block row justify-content-end" };
-const _hoisted_13$2 = { class: "payment-information" };
-const _hoisted_14$2 = /*#__PURE__*/createTextVNode(" Сведения об оплате таможенных и иных платежей ");
-const _hoisted_15$1 = /*#__PURE__*/createStaticVNode("<div class=\"sender-common-inf\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><button class=\"btn invoice-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsedSenderInfo\" aria-expanded=\"false\" aria-controls=\"collapsedSenderInfo\" data-v-06a6f23d><p class=\"collapsing-block d-flex justify-content-between\" data-v-06a6f23d><span data-v-06a6f23d>ОТПРАВИТЕЛЬ по общей накладной</span><i class=\"fa-solid fa-caret-up\" data-v-06a6f23d></i></p></button><div class=\"collapse\" id=\"collapsedSenderInfo\" data-v-06a6f23d><div class=\"card card-body\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><div class=\"sender-name\" data-v-06a6f23d><form class=\"row form my-2\" data-v-06a6f23d><div class=\"col-8\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d></div><div class=\"col-2 d-flex\" data-v-06a6f23d><div class=\"input-bg col-2\" data-v-06a6f23d><input type=\"checkbox\" class=\"form-check-input\" data-v-06a6f23d></div><div class=\"label-block col-10\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> Декларант (заявитель) </label></div></div></form><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"краткое наименование организации\" data-v-06a6f23d></div></div><div class=\"col-7 d-flex justify-content-between\" data-v-06a6f23d><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> ОГРН </label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> ИНН </label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> КПП </label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1 d-flex\" data-v-06a6f23d></div></div></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"sender-address\" data-v-06a6f23d><div class=\"row my-2\" data-v-06a6f23d><div class=\"d-flex sender-contacts\" data-v-06a6f23d><div class=\"col-1 d-flex\" data-v-06a6f23d><p class=\"point-name\" data-v-06a6f23d>Адрес</p></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" placeholder=\"номер телефона\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" placeholder=\"Адрес электронной почты\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" placeholder=\"номер факса\" data-v-06a6f23d></div></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"address-block\" data-v-06a6f23d><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"язык\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"страна\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"почтовый индекс\" data-v-06a6f23d></div></div><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"область (регион, штат, провинция)\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"район\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"город\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"населённый пункт\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"дом, корпус, строение\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"номер а/я\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-12\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"набор элементов адреса, представленных в свободной форме в виде текста\" data-v-06a6f23d></div></div></div></div></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"personal-inf-block\" data-v-06a6f23d><p data-v-06a6f23d>Документ, удостоверяющий личность</p><div class=\"row my-2\" data-v-06a6f23d><div class=\"row personal-data my-2\" data-v-06a6f23d><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"стр\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"код\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"краткое наименование\" data-v-06a6f23d></div></div><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"input-bg col-4\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"серия\" data-v-06a6f23d></div><div class=\"input-bg col-4\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"номер\" data-v-06a6f23d></div><div class=\"input-bg col-4\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"дата выдачи\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"наименование организации, выдавшей документ\" data-v-06a6f23d></div></div></div><div class=\"row personal-data my-2\" data-v-06a6f23d><div class=\"col-7\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"полное наименование документа, удостоверяющего личность\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"код подразделения\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"строка, иденти-ая орган государства\" data-v-06a6f23d></div></div></div></div></div></div></div></div></div></div>", 1);
-const _hoisted_16$1 = /*#__PURE__*/createStaticVNode("<div class=\"recipient-common-inf\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><button class=\"btn invoice-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsedRecipientInfo\" aria-expanded=\"false\" aria-controls=\"collapsedRecipientInfo\" data-v-06a6f23d><div class=\"collapsing-block d-flex justify-content-between\" data-v-06a6f23d><span data-v-06a6f23d>ПОЛУЧАТЕЛЬ по общей накладной</span><i class=\"fa-solid fa-caret-up\" data-v-06a6f23d></i></div></button><div class=\"collapse\" id=\"collapsedRecipientInfo\" data-v-06a6f23d><div class=\"card card-body\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><div class=\"recipient-name\" data-v-06a6f23d><form class=\"row form my-2\" data-v-06a6f23d><div class=\"col-8\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d></div><div class=\"col-2 d-flex\" data-v-06a6f23d><div class=\"input-bg col-2\" data-v-06a6f23d><input type=\"checkbox\" class=\"form-check-input\" data-v-06a6f23d></div><div class=\"label-block col-10\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> Декларант (заявитель) </label></div></div></form><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"краткое наименование организации\" data-v-06a6f23d></div></div><div class=\"col-7 d-flex justify-content-between\" data-v-06a6f23d><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> ОГРН </label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> ИНН </label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"label-block col-2\" data-v-06a6f23d><label for=\"\" data-v-06a6f23d> КПП </label></div><div class=\"input-bg col-10\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1 d-flex\" data-v-06a6f23d></div></div></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"recipient-address\" data-v-06a6f23d><div class=\"row my-2\" data-v-06a6f23d><div class=\"d-flex recipient-contacts\" data-v-06a6f23d><div class=\"col-1 d-flex\" data-v-06a6f23d><p class=\"point-name\" data-v-06a6f23d>Адрес</p></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" placeholder=\"номер телефона\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" placeholder=\"Адрес электронной почты\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" placeholder=\"номер факса\" data-v-06a6f23d></div></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"address-block\" data-v-06a6f23d><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"язык\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"страна\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"почтовый индекс\" data-v-06a6f23d></div></div><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"область (регион, штат, провинция)\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"район\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"город\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"населённый пункт\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"дом, корпус, строение\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"номер а/я\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-12\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"набор элементов адреса, представленных в свободной форме в виде текста\" data-v-06a6f23d></div></div></div></div></div></div></div><div class=\"row\" data-v-06a6f23d><div class=\"personal-inf-block\" data-v-06a6f23d><p data-v-06a6f23d>Документ, удостоверяющий личность</p><div class=\"row my-2\" data-v-06a6f23d><div class=\"row personal-data my-2\" data-v-06a6f23d><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"стр\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"код\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"краткое наименование\" data-v-06a6f23d></div></div><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"input-bg col-4\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"серия\" data-v-06a6f23d></div><div class=\"input-bg col-4\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"номер\" data-v-06a6f23d></div><div class=\"input-bg col-4\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"дата выдачи\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"наименование организации, выдавшей документ\" data-v-06a6f23d></div></div></div><div class=\"row personal-data my-2\" data-v-06a6f23d><div class=\"col-7\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"полное наименование документа, удостоверяющего личность\" data-v-06a6f23d></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"код подразделения\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" placeholder=\"строка, иденти-ая орган государства\" data-v-06a6f23d></div></div></div></div></div></div></div></div></div></div>", 1);
-const _hoisted_17$1 = /*#__PURE__*/createStaticVNode("<div class=\"customs-sender-inf my-2\" data-v-06a6f23d><div class=\"col-12 row inf-block\" data-v-06a6f23d><div class=\"col-7\" data-v-06a6f23d><div class=\"col\" data-v-06a6f23d><h4 class=\"customs-representative\" data-v-06a6f23d>Таможенный представитель</h4><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"col-5\" data-v-06a6f23d><p class=\"align-bcntr\" data-v-06a6f23d> Сведения о включении лица в реестр таможенных представителей </p><div class=\"col d-flex\" data-v-06a6f23d><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-7\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-1\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div></div></div><div class=\"row\" data-v-06a6f23d><button class=\"btn invoice-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsedNaturalPersonInfo\" aria-expanded=\"false\" aria-controls=\"collapsedNaturalPersonInfo\" data-v-06a6f23d><div class=\"collapsing-block d-flex justify-content-between\" data-v-06a6f23d><span data-v-06a6f23d>Сведения о физическом лице, заполнившем (подписавшем) таможенный документ</span><i class=\"fa-solid fa-caret-up\" data-v-06a6f23d></i></div></button><div class=\"collapse\" id=\"collapsedNaturalPersonInfo\" data-v-06a6f23d><div class=\"card card-body\" data-v-06a6f23d><form action=\"\" class=\"form\" data-v-06a6f23d><div class=\"d-flex\" data-v-06a6f23d><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-9 d-flex\" data-v-06a6f23d><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-6\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"col-3 row\" data-v-06a6f23d><div class=\"col-8\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-4\" data-v-06a6f23d><button class=\"btn button-calendar\" type=\"button\" data-v-06a6f23d><i class=\"fa-solid fa-calendar-days\" data-v-06a6f23d></i></button></div></div></div><div class=\"row my-2\" data-v-06a6f23d><p data-v-06a6f23d> Идентификаторы, присвоенные документу (сведениям) при размещении в хранилище электронных документов </p><div class=\"row\" data-v-06a6f23d><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-7\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-8\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"col-6\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-6\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"col-3 d-flex\" data-v-06a6f23d><div class=\"col-3\" data-v-06a6f23d><div class=\"label-block align-bcntr\" data-v-06a6f23d><label class=\"align-bcntr\" for=\"\" data-v-06a6f23d> аттестат </label></div></div><div class=\"col-8\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"col-3\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"col-3 input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div><div class=\"col-8 input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div><div class=\"col-1 input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><p data-v-06a6f23d> Идентификаторы, присвоенные документу (сведениям) при размещении в хранилище электронных документов </p></div><div class=\"row\" data-v-06a6f23d><div class=\"col-8 d-flex\" data-v-06a6f23d><div class=\"col-6\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div><div class=\"col-6\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input type=\"text\" class=\"form-control\" data-v-06a6f23d></div></div></div></div></div><div class=\"row my-2\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><p data-v-06a6f23d>Документ, удостоверяющий полномочия</p></div><div class=\"row\" data-v-06a6f23d><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"col-4\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div><div class=\"col-8\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div><div class=\"col-8 row\" data-v-06a6f23d><div class=\"col-4 d-flex\" data-v-06a6f23d><div class=\"col-5\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div><div class=\"col-7\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div><div class=\"col-8 row\" data-v-06a6f23d><div class=\"col-5 d-flex\" data-v-06a6f23d><div class=\"col-2 align-bcntr\" data-v-06a6f23d><p class=\"align-bcntr\" data-v-06a6f23d>с</p></div><div class=\"col-10\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div><div class=\"col-5 d-flex\" data-v-06a6f23d><div class=\"col-2 align-bcntr\" data-v-06a6f23d><p class=\"align-bcntr\" data-v-06a6f23d>по</p></div><div class=\"col-10\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div><div class=\"col-2\" data-v-06a6f23d><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div></div></div></div></form></div></div></div></div>", 1);
-const _hoisted_18 = /*#__PURE__*/createStaticVNode("<div class=\"inspector-inf my-2\" data-v-06a6f23d><div class=\"row\" data-v-06a6f23d><div class=\"col-7\" data-v-06a6f23d><p class=\"align-bcntr\" data-v-06a6f23d>ФИО инспектора</p><div class=\"input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div><div class=\"col-5\" data-v-06a6f23d><p class=\"align-bcntr\" data-v-06a6f23d>ЛНП</p><div class=\"row\" data-v-06a6f23d><div class=\"col-2 input-bg\" data-v-06a6f23d><input class=\"form-control\" type=\"text\" data-v-06a6f23d></div></div></div></div></div>", 1);
+const _hoisted_5$3 = /*#__PURE__*/createTextVNode(" Подан с ДТ: ");
+const _hoisted_6$3 = /*#__PURE__*/createElementVNode("div", { class: "row" }, [
+  /*#__PURE__*/createElementVNode("div", { class: "inf-block" }, [
+    /*#__PURE__*/createElementVNode("h5", null, " Декларация на товары и пассажирская таможенная декларация для экспресс-грузов ")
+  ])
+], -1 /* HOISTED */);
+const _hoisted_7$3 = { class: "row" };
+const _hoisted_8$3 = { class: "inf-block row col-12 justify-content-between" };
+const _hoisted_9$3 = { class: "checkbox-block d-flex col-2" };
+const _hoisted_10$3 = { class: "checkbox-bg col-2" };
+const _hoisted_11$3 = ["checked"];
+const _hoisted_12$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-4" }, [
+  /*#__PURE__*/createElementVNode("label", null, "ДТЭГ")
+], -1 /* HOISTED */);
+const _hoisted_13$3 = { class: "checkbox-bg col-2" };
+const _hoisted_14$3 = ["checked"];
+const _hoisted_15$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-4" }, [
+  /*#__PURE__*/createElementVNode("label", null, "ПТДЭГ")
+], -1 /* HOISTED */);
+const _hoisted_16$3 = { class: "checkbox-block d-flex col-2" };
+const _hoisted_17$3 = { class: "checkbox-bg col-2" };
+const _hoisted_18$3 = ["checked"];
+const _hoisted_19$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3" }, [
+  /*#__PURE__*/createElementVNode("label", null, "ИМ")
+], -1 /* HOISTED */);
+const _hoisted_20$3 = { class: "checkbox-bg col-2" };
+const _hoisted_21$3 = ["checked"];
+const _hoisted_22$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3" }, [
+  /*#__PURE__*/createElementVNode("label", null, "ЭК")
+], -1 /* HOISTED */);
+const _hoisted_23$3 = { class: "declaration-number-block justify-content-end d-flex col-5" };
+const _hoisted_24$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, "№")
+], -1 /* HOISTED */);
+const _hoisted_25$3 = { class: "input-bg col-10" };
+const _hoisted_26$3 = /*#__PURE__*/createElementVNode("div", { class: "col-3" }, null, -1 /* HOISTED */);
+const _hoisted_27$3 = { class: "row" };
+const _hoisted_28$3 = { class: "inf-block row col-12" };
+const _hoisted_29$3 = { class: "inputs-group d-flex col-2" };
+const _hoisted_30$3 = { class: "col-2" };
+const _hoisted_31$3 = { class: "col-2" };
+const _hoisted_32$3 = { class: "col-3" };
+const _hoisted_33$3 = { class: "col-2" };
+const _hoisted_34$3 = { class: "sheets-block d-flex col-2" };
+const _hoisted_35$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-4" }, [
+  /*#__PURE__*/createElementVNode("label", null, "Листов")
+], -1 /* HOISTED */);
+const _hoisted_36$3 = { class: "input-bg col-8" };
+const _hoisted_37$3 = { class: "registry-number-block d-flex justify-content-end col-5" };
+const _hoisted_38$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", { for: "registryNumber" }, "Рег. №")
+], -1 /* HOISTED */);
+const _hoisted_39$3 = { class: "input-bg col-10" };
+const _hoisted_40$3 = { class: "registry-changes d-flex col-3" };
+const _hoisted_41$3 = { class: "input-bg" };
+const _hoisted_42$3 = /*#__PURE__*/createElementVNode("label", null, "- реестр с внесёнными изменениями", -1 /* HOISTED */);
+const _hoisted_43$3 = { class: "row" };
+const _hoisted_44$3 = { class: "inf-block d-grid" };
+const _hoisted_45$3 = { class: "row col-12" };
+const _hoisted_46$3 = { class: "col-6" };
+const _hoisted_47$3 = /*#__PURE__*/createElementVNode("label", { class: "express-courier-label" }, "Экспресс перевозчик", -1 /* HOISTED */);
+const _hoisted_48$3 = { class: "express-courier-block col-12 d-flex" };
+const _hoisted_49$3 = { class: "col-1" };
+const _hoisted_50$3 = { class: "col-11" };
+const _hoisted_51$3 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_52$3 = /*#__PURE__*/createElementVNode("div", { class: "col-5" }, [
+  /*#__PURE__*/createElementVNode("div", { class: "inf-paragraph" }, [
+    /*#__PURE__*/createElementVNode("p", null, " Регистрационный номер декларации, в которую вносятся изменения ")
+  ])
+], -1 /* HOISTED */);
+const _hoisted_53$3 = { class: "row col-12" };
+const _hoisted_54$3 = { class: "col-6" };
+const _hoisted_55$3 = { class: "" };
+const _hoisted_56$3 = /*#__PURE__*/createElementVNode("div", { class: "" }, [
+  /*#__PURE__*/createElementVNode("h4", null, "Свидетельство о включении в"),
+  /*#__PURE__*/createElementVNode("p", null, " реестр УЭО, реестр владельцев СВХ, складов хранения собственных товаров, таможенных складов, свободных складов или магазинов БТ ")
+], -1 /* HOISTED */);
+const _hoisted_57$3 = { class: "certificate-block row col-12" };
+const _hoisted_58$3 = { class: "input-bg col-1" };
+const _hoisted_59$3 = { class: "input-bg col-1" };
+const _hoisted_60$3 = { class: "input-bg col-7" };
+const _hoisted_61$3 = { class: "input-bg col-1" };
+const _hoisted_62$3 = { class: "input-bg col-1" };
+const _hoisted_63$3 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_64$3 = { class: "col-5" };
+const _hoisted_65$3 = {
+  class: "changing-declaration",
+  action: ""
+};
+const _hoisted_66$3 = { class: "inf-block row" };
+const _hoisted_67$3 = { class: "col-3 input-bg" };
+const _hoisted_68$3 = { class: "col-4 input-bg" };
+const _hoisted_69$3 = { class: "col-3 input-bg" };
+const _hoisted_70$3 = { class: "col-1 input-bg" };
+const _hoisted_71$3 = { class: "inf-block changing-code row" };
+const _hoisted_72$3 = /*#__PURE__*/createElementVNode("div", {
+  class: "label-block",
+  style: {"width":"100%"}
+}, [
+  /*#__PURE__*/createElementVNode("label", { class: "fs-5" }, "Код изменений")
+], -1 /* HOISTED */);
+const _hoisted_73$3 = { class: "col-8 d-flex" };
+const _hoisted_74$3 = { class: "col input-bg" };
+const _hoisted_75$3 = { class: "col input-bg" };
+const _hoisted_76$3 = { class: "col input-bg" };
+const _hoisted_77$3 = { class: "col input-bg" };
+const _hoisted_78$3 = { class: "col input-bg" };
+const _hoisted_79$3 = { class: "col input-bg" };
+const _hoisted_80$3 = { class: "col input-bg" };
+const _hoisted_81$3 = /*#__PURE__*/createElementVNode("button", { class: "btn info-button p-1" }, [
+  /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-circle-info" })
+], -1 /* HOISTED */);
+const _hoisted_82$3 = /*#__PURE__*/createElementVNode("div", { class: "col-4" }, null, -1 /* HOISTED */);
+const _hoisted_83$3 = { class: "row" };
+const _hoisted_84$3 = { class: "inf-block" };
+const _hoisted_85$3 = /*#__PURE__*/createElementVNode("h4", null, "Товарная партия", -1 /* HOISTED */);
+const _hoisted_86$3 = {
+  action: "",
+  class: "batch-form row"
+};
+const _hoisted_87$2 = { class: "col-3 inf-block" };
+const _hoisted_88$2 = /*#__PURE__*/createElementVNode("div", { class: "row inf-paragraph" }, [
+  /*#__PURE__*/createElementVNode("p", null, " общая сумма таможенных и иных платежей, подлежащих уплате по декларации ")
+], -1 /* HOISTED */);
+const _hoisted_89$2 = { class: "batch-block row" };
+const _hoisted_90$2 = { class: "col-10" };
+const _hoisted_91$2 = { class: "col-2" };
+const _hoisted_92$2 = { class: "col-3 inf-block" };
+const _hoisted_93$2 = /*#__PURE__*/createElementVNode("h5", null, "Общая стоимость", -1 /* HOISTED */);
+const _hoisted_94$2 = /*#__PURE__*/createElementVNode("div", { class: "inf-paragraph" }, [
+  /*#__PURE__*/createElementVNode("p", null, "по ПТД для экспресс-грузов")
+], -1 /* HOISTED */);
+const _hoisted_95$2 = { class: "batch-block row" };
+const _hoisted_96$2 = { class: "col-9" };
+const _hoisted_97$2 = { class: "col-3" };
+const _hoisted_98$2 = { class: "col-3 inf-block" };
+const _hoisted_99$2 = /*#__PURE__*/createElementVNode("h5", null, "Общий вес брутто", -1 /* HOISTED */);
+const _hoisted_100$2 = /*#__PURE__*/createElementVNode("div", { class: "inf-paragraph" }, [
+  /*#__PURE__*/createElementVNode("p", null, "по ТД для экспресс-грузов")
+], -1 /* HOISTED */);
+const _hoisted_101$2 = { class: "batch-block row" };
+const _hoisted_102$2 = { class: "col-6" };
+const _hoisted_103$2 = { class: "col-3" };
+const _hoisted_104$2 = { class: "col-3" };
+const _hoisted_105$2 = { class: "col-3 inf-block" };
+const _hoisted_106$2 = /*#__PURE__*/createElementVNode("h5", null, "Общая таможенная стоимость", -1 /* HOISTED */);
+const _hoisted_107$1 = /*#__PURE__*/createElementVNode("div", { class: "inf-paragraph" }, [
+  /*#__PURE__*/createElementVNode("p", null, "по ДТ для экспресс-грузов")
+], -1 /* HOISTED */);
+const _hoisted_108$1 = { class: "batch-block row" };
+const _hoisted_109$1 = { class: "col-9" };
+const _hoisted_110$1 = { class: "col-3" };
+const _hoisted_111$1 = { class: "row" };
+const _hoisted_112$1 = { class: "inf-block row justify-content-end" };
+const _hoisted_113$1 = { class: "payment-information" };
+const _hoisted_114$1 = /*#__PURE__*/createTextVNode(" Сведения об оплате таможенных и иных платежей ");
+const _hoisted_115$1 = { class: "sender-common-inf" };
+const _hoisted_116$1 = { class: "row" };
+const _hoisted_117$1 = /*#__PURE__*/createElementVNode("button", {
+  class: "btn invoice-button collapsed",
+  type: "button",
+  "data-bs-toggle": "collapse",
+  "data-bs-target": "#collapsedSenderInfo",
+  "aria-expanded": "false",
+  "aria-controls": "collapsedSenderInfo"
+}, [
+  /*#__PURE__*/createElementVNode("p", { class: "collapsing-block d-flex justify-content-between" }, [
+    /*#__PURE__*/createElementVNode("span", null, "ОТПРАВИТЕЛЬ по общей накладной"),
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-caret-up" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_118$1 = {
+  class: "collapse",
+  id: "collapsedSenderInfo"
+};
+const _hoisted_119$1 = { class: "card card-body" };
+const _hoisted_120$1 = { class: "row" };
+const _hoisted_121$1 = { class: "sender-name" };
+const _hoisted_122$1 = { class: "row form my-2" };
+const _hoisted_123$1 = { class: "col-8" };
+const _hoisted_124$1 = { class: "input-bg" };
+const _hoisted_125$1 = { class: "col-1" };
+const _hoisted_126$1 = { class: "input-bg" };
+const _hoisted_127$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_128$1 = { class: "col-2 d-flex" };
+const _hoisted_129$1 = { class: "input-bg col-2" };
+const _hoisted_130$1 = ["checked"];
+const _hoisted_131$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-10" }, [
+  /*#__PURE__*/createElementVNode("label", null, " Декларант (заявитель) ")
+], -1 /* HOISTED */);
+const _hoisted_132$1 = { class: "row my-2" };
+const _hoisted_133$1 = { class: "col-5" };
+const _hoisted_134$1 = { class: "input-bg" };
+const _hoisted_135$1 = { class: "col-7 d-flex justify-content-between" };
+const _hoisted_136$1 = { class: "col-4 d-flex" };
+const _hoisted_137$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ОГРН ")
+], -1 /* HOISTED */);
+const _hoisted_138$1 = { class: "input-bg col-10" };
+const _hoisted_139$1 = { class: "col-3 d-flex" };
+const _hoisted_140$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ИНН ")
+], -1 /* HOISTED */);
+const _hoisted_141$1 = { class: "input-bg col-10" };
+const _hoisted_142$1 = { class: "col-3 d-flex" };
+const _hoisted_143$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, " КПП ")
+], -1 /* HOISTED */);
+const _hoisted_144$1 = { class: "input-bg col-10" };
+const _hoisted_145$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1 d-flex" }, null, -1 /* HOISTED */);
+const _hoisted_146$1 = { class: "row" };
+const _hoisted_147$1 = { class: "sender-address" };
+const _hoisted_148$1 = { class: "row my-2" };
+const _hoisted_149$1 = { class: "d-flex sender-contacts" };
+const _hoisted_150$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1 d-flex" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "point-name" }, "Адрес")
+], -1 /* HOISTED */);
+const _hoisted_151$1 = { class: "col-3" };
+const _hoisted_152$1 = { class: "input-bg" };
+const _hoisted_153$1 = { class: "col-4" };
+const _hoisted_154$1 = { class: "input-bg" };
+const _hoisted_155$1 = { class: "col-3" };
+const _hoisted_156$1 = { class: "input-bg" };
+const _hoisted_157$1 = { class: "row my-2" };
+const _hoisted_158$1 = { class: "address-block" };
+const _hoisted_159$1 = { class: "row my-2" };
+const _hoisted_160$1 = { class: "col-1" };
+const _hoisted_161$1 = { class: "input-bg" };
+const _hoisted_162$1 = { class: "col-4" };
+const _hoisted_163$1 = { class: "input-bg" };
+const _hoisted_164$1 = { class: "col-2" };
+const _hoisted_165$1 = { class: "input-bg" };
+const _hoisted_166$1 = { class: "col-5" };
+const _hoisted_167$1 = { class: "input-bg" };
+const _hoisted_168$1 = { class: "row my-2" };
+const _hoisted_169$1 = { class: "col-5" };
+const _hoisted_170$1 = { class: "input-bg" };
+const _hoisted_171$1 = { class: "col-3" };
+const _hoisted_172$1 = { class: "input-bg" };
+const _hoisted_173$1 = { class: "col-4" };
+const _hoisted_174$1 = { class: "input-bg" };
+const _hoisted_175$1 = { class: "row my-2" };
+const _hoisted_176$1 = { class: "col-4" };
+const _hoisted_177$1 = { class: "input-bg" };
+const _hoisted_178$1 = { class: "col-2" };
+const _hoisted_179$1 = { class: "input-bg" };
+const _hoisted_180$1 = { class: "col-2" };
+const _hoisted_181$1 = { class: "input-bg" };
+const _hoisted_182$1 = { class: "col-2" };
+const _hoisted_183$1 = { class: "input-bg" };
+const _hoisted_184$1 = { class: "row my-2" };
+const _hoisted_185$1 = { class: "col-12" };
+const _hoisted_186$1 = { class: "input-bg" };
+const _hoisted_187$1 = { class: "row" };
+const _hoisted_188$1 = { class: "personal-inf-block" };
+const _hoisted_189$1 = /*#__PURE__*/createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
+const _hoisted_190$1 = { class: "row my-2" };
+const _hoisted_191$1 = { class: "row personal-data my-2" };
+const _hoisted_192$1 = { class: "col-1" };
+const _hoisted_193$1 = { class: "input-bg" };
+const _hoisted_194$1 = { class: "col-1" };
+const _hoisted_195$1 = { class: "input-bg" };
+const _hoisted_196$1 = { class: "col-2" };
+const _hoisted_197$1 = { class: "input-bg" };
+const _hoisted_198$1 = { class: "col-4 d-flex" };
+const _hoisted_199$1 = { class: "input-bg col-4" };
+const _hoisted_200$1 = { class: "input-bg col-4" };
+const _hoisted_201$1 = { class: "input-bg col-4" };
+const _hoisted_202$1 = { class: "col-4" };
+const _hoisted_203$1 = { class: "input-bg" };
+const _hoisted_204$1 = { class: "row personal-data my-2" };
+const _hoisted_205$1 = { class: "col-7" };
+const _hoisted_206$1 = { class: "input-bg" };
+const _hoisted_207$1 = { class: "col-2" };
+const _hoisted_208$1 = { class: "input-bg" };
+const _hoisted_209$1 = { class: "col-3" };
+const _hoisted_210$1 = { class: "input-bg" };
+const _hoisted_211$1 = { class: "recipient-common-inf" };
+const _hoisted_212$1 = { class: "row" };
+const _hoisted_213$1 = /*#__PURE__*/createElementVNode("button", {
+  class: "btn invoice-button collapsed",
+  type: "button",
+  "data-bs-toggle": "collapse",
+  "data-bs-target": "#collapsedRecipientInfo",
+  "aria-expanded": "false",
+  "aria-controls": "collapsedRecipientInfo"
+}, [
+  /*#__PURE__*/createElementVNode("div", { class: "collapsing-block d-flex justify-content-between" }, [
+    /*#__PURE__*/createElementVNode("span", null, "ПОЛУЧАТЕЛЬ по общей накладной"),
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-caret-up" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_214$1 = {
+  class: "collapse",
+  id: "collapsedRecipientInfo"
+};
+const _hoisted_215$1 = { class: "card card-body" };
+const _hoisted_216$1 = { class: "row" };
+const _hoisted_217$1 = { class: "sender-name" };
+const _hoisted_218$1 = { class: "row form my-2" };
+const _hoisted_219$1 = { class: "col-8" };
+const _hoisted_220$1 = { class: "input-bg" };
+const _hoisted_221$1 = { class: "col-1" };
+const _hoisted_222$1 = { class: "input-bg" };
+const _hoisted_223$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_224$1 = { class: "col-2 d-flex" };
+const _hoisted_225$1 = { class: "input-bg col-2" };
+const _hoisted_226$1 = ["checked"];
+const _hoisted_227$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-10" }, [
+  /*#__PURE__*/createElementVNode("label", null, " Декларант (заявитель) ")
+], -1 /* HOISTED */);
+const _hoisted_228$1 = { class: "row my-2" };
+const _hoisted_229$1 = { class: "col-5" };
+const _hoisted_230$1 = { class: "input-bg" };
+const _hoisted_231$1 = { class: "col-7 d-flex justify-content-between" };
+const _hoisted_232$1 = { class: "col-4 d-flex" };
+const _hoisted_233$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ОГРН ")
+], -1 /* HOISTED */);
+const _hoisted_234$1 = { class: "input-bg col-10" };
+const _hoisted_235$1 = { class: "col-3 d-flex" };
+const _hoisted_236$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ИНН ")
+], -1 /* HOISTED */);
+const _hoisted_237$1 = { class: "input-bg col-10" };
+const _hoisted_238$1 = { class: "col-3 d-flex" };
+const _hoisted_239$1 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-2" }, [
+  /*#__PURE__*/createElementVNode("label", null, " КПП ")
+], -1 /* HOISTED */);
+const _hoisted_240$1 = { class: "input-bg col-10" };
+const _hoisted_241$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1 d-flex" }, null, -1 /* HOISTED */);
+const _hoisted_242$1 = { class: "row" };
+const _hoisted_243$1 = { class: "sender-address" };
+const _hoisted_244$1 = { class: "row my-2" };
+const _hoisted_245$1 = { class: "d-flex sender-contacts" };
+const _hoisted_246$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1 d-flex" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "point-name" }, "Адрес")
+], -1 /* HOISTED */);
+const _hoisted_247$1 = { class: "col-3" };
+const _hoisted_248$1 = { class: "input-bg" };
+const _hoisted_249$1 = { class: "col-4" };
+const _hoisted_250$1 = { class: "input-bg" };
+const _hoisted_251$1 = { class: "col-3" };
+const _hoisted_252$1 = { class: "input-bg" };
+const _hoisted_253$1 = { class: "row my-2" };
+const _hoisted_254$1 = { class: "address-block" };
+const _hoisted_255$1 = { class: "row my-2" };
+const _hoisted_256$1 = { class: "col-1" };
+const _hoisted_257$1 = { class: "input-bg" };
+const _hoisted_258$1 = { class: "col-4" };
+const _hoisted_259$1 = { class: "input-bg" };
+const _hoisted_260$1 = { class: "col-2" };
+const _hoisted_261$1 = { class: "input-bg" };
+const _hoisted_262$1 = { class: "col-5" };
+const _hoisted_263$1 = { class: "input-bg" };
+const _hoisted_264$1 = { class: "row my-2" };
+const _hoisted_265$1 = { class: "col-5" };
+const _hoisted_266$1 = { class: "input-bg" };
+const _hoisted_267$1 = { class: "col-3" };
+const _hoisted_268$1 = { class: "input-bg" };
+const _hoisted_269$1 = { class: "col-4" };
+const _hoisted_270$1 = { class: "input-bg" };
+const _hoisted_271$1 = { class: "row my-2" };
+const _hoisted_272$1 = { class: "col-4" };
+const _hoisted_273 = { class: "input-bg" };
+const _hoisted_274 = { class: "col-2" };
+const _hoisted_275 = { class: "input-bg" };
+const _hoisted_276 = { class: "col-2" };
+const _hoisted_277 = { class: "input-bg" };
+const _hoisted_278 = { class: "col-2" };
+const _hoisted_279 = { class: "input-bg" };
+const _hoisted_280 = { class: "row my-2" };
+const _hoisted_281 = { class: "col-12" };
+const _hoisted_282 = { class: "input-bg" };
+const _hoisted_283 = { class: "row" };
+const _hoisted_284 = { class: "personal-inf-block" };
+const _hoisted_285 = /*#__PURE__*/createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
+const _hoisted_286 = { class: "row my-2" };
+const _hoisted_287 = { class: "row personal-data my-2" };
+const _hoisted_288 = { class: "col-1" };
+const _hoisted_289 = { class: "input-bg" };
+const _hoisted_290 = { class: "col-1" };
+const _hoisted_291 = { class: "input-bg" };
+const _hoisted_292 = { class: "col-2" };
+const _hoisted_293 = { class: "input-bg" };
+const _hoisted_294 = { class: "col-4 d-flex" };
+const _hoisted_295 = { class: "input-bg col-4" };
+const _hoisted_296 = { class: "input-bg col-4" };
+const _hoisted_297 = { class: "input-bg col-4" };
+const _hoisted_298 = { class: "col-4" };
+const _hoisted_299 = { class: "input-bg" };
+const _hoisted_300 = { class: "row personal-data my-2" };
+const _hoisted_301 = { class: "col-7" };
+const _hoisted_302 = { class: "input-bg" };
+const _hoisted_303 = { class: "col-2" };
+const _hoisted_304 = { class: "input-bg" };
+const _hoisted_305 = { class: "col-3" };
+const _hoisted_306 = { class: "input-bg" };
+const _hoisted_307 = { class: "customs-sender-inf my-2" };
+const _hoisted_308 = { class: "col-12 row inf-block" };
+const _hoisted_309 = { class: "col-7" };
+const _hoisted_310 = { class: "col" };
+const _hoisted_311 = /*#__PURE__*/createElementVNode("h4", { class: "customs-representative" }, "Таможенный представитель", -1 /* HOISTED */);
+const _hoisted_312 = { class: "input-bg" };
+const _hoisted_313 = { class: "col-5" };
+const _hoisted_314 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, " Сведения о включении лица в реестр таможенных представителей ", -1 /* HOISTED */);
+const _hoisted_315 = { class: "col d-flex" };
+const _hoisted_316 = { class: "col-2" };
+const _hoisted_317 = { class: "input-bg" };
+const _hoisted_318 = { class: "col-1" };
+const _hoisted_319 = { class: "input-bg" };
+const _hoisted_320 = { class: "col-7" };
+const _hoisted_321 = { class: "input-bg" };
+const _hoisted_322 = { class: "col-1" };
+const _hoisted_323 = { class: "input-bg" };
+const _hoisted_324 = { class: "col-1" };
+const _hoisted_325 = { class: "input-bg" };
+const _hoisted_326 = { class: "row" };
+const _hoisted_327 = /*#__PURE__*/createElementVNode("button", {
+  class: "btn invoice-button collapsed",
+  type: "button",
+  "data-bs-toggle": "collapse",
+  "data-bs-target": "#collapsedNaturalPersonInfo",
+  "aria-expanded": "false",
+  "aria-controls": "collapsedNaturalPersonInfo"
+}, [
+  /*#__PURE__*/createElementVNode("div", { class: "collapsing-block d-flex justify-content-between" }, [
+    /*#__PURE__*/createElementVNode("span", null, "Сведения о физическом лице, заполнившем (подписавшем) таможенный документ"),
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-caret-up" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_328 = {
+  class: "collapse",
+  id: "collapsedNaturalPersonInfo"
+};
+const _hoisted_329 = { class: "card card-body" };
+const _hoisted_330 = {
+  action: "",
+  class: "form"
+};
+const _hoisted_331 = { class: "d-flex" };
+const _hoisted_332 = { class: "col-3" };
+const _hoisted_333 = { class: "input-bg" };
+const _hoisted_334 = { class: "col-3" };
+const _hoisted_335 = { class: "input-bg" };
+const _hoisted_336 = { class: "col-3" };
+const _hoisted_337 = { class: "input-bg" };
+const _hoisted_338 = { class: "col-3" };
+const _hoisted_339 = { class: "input-bg" };
+const _hoisted_340 = { class: "row my-2" };
+const _hoisted_341 = { class: "col-9 d-flex" };
+const _hoisted_342 = { class: "col-3" };
+const _hoisted_343 = { class: "input-bg" };
+const _hoisted_344 = { class: "col-3" };
+const _hoisted_345 = { class: "input-bg" };
+const _hoisted_346 = { class: "col-6" };
+const _hoisted_347 = { class: "input-bg" };
+const _hoisted_348 = { class: "col-3 row" };
+const _hoisted_349 = { class: "col-8" };
+const _hoisted_350 = { class: "input-bg" };
+const _hoisted_351 = /*#__PURE__*/createElementVNode("div", { class: "col-4" }, [
+  /*#__PURE__*/createElementVNode("button", {
+    class: "btn button-calendar",
+    type: "button"
+  }, [
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-calendar-days" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_352 = { class: "row my-2" };
+const _hoisted_353 = /*#__PURE__*/createElementVNode("p", null, " Сведения о документе, удостоверяющем личность лица, заоплневшего (подписавшего) таможенного документ ", -1 /* HOISTED */);
+const _hoisted_354 = { class: "row" };
+const _hoisted_355 = { class: "col-3 d-flex" };
+const _hoisted_356 = { class: "col-5" };
+const _hoisted_357 = { class: "input-bg" };
+const _hoisted_358 = { class: "col-7" };
+const _hoisted_359 = { class: "input-bg" };
+const _hoisted_360 = { class: "col-3 d-flex" };
+const _hoisted_361 = { class: "col-4" };
+const _hoisted_362 = { class: "input-bg" };
+const _hoisted_363 = { class: "col-8" };
+const _hoisted_364 = { class: "input-bg" };
+const _hoisted_365 = { class: "col-3 d-flex" };
+const _hoisted_366 = { class: "col-6" };
+const _hoisted_367 = { class: "input-bg" };
+const _hoisted_368 = { class: "col-6" };
+const _hoisted_369 = { class: "input-bg" };
+const _hoisted_370 = { class: "col-3 d-flex" };
+const _hoisted_371 = /*#__PURE__*/createElementVNode("div", { class: "col-3" }, [
+  /*#__PURE__*/createElementVNode("div", { class: "label-block align-bcntr" }, [
+    /*#__PURE__*/createElementVNode("label", { class: "align-bcntr" }, " аттестат ")
+  ])
+], -1 /* HOISTED */);
+const _hoisted_372 = { class: "col-8" };
+const _hoisted_373 = { class: "input-bg" };
+const _hoisted_374 = { class: "row my-2" };
+const _hoisted_375 = { class: "col-3" };
+const _hoisted_376 = { class: "input-bg" };
+const _hoisted_377 = { class: "col-5" };
+const _hoisted_378 = { class: "input-bg" };
+const _hoisted_379 = { class: "col-4 d-flex" };
+const _hoisted_380 = { class: "col-3 input-bg" };
+const _hoisted_381 = { class: "col-8 input-bg" };
+const _hoisted_382 = { class: "col-1 input-bg" };
+const _hoisted_383 = { class: "row my-2" };
+const _hoisted_384 = { class: "row" };
+const _hoisted_385 = /*#__PURE__*/createElementVNode("div", { class: "row" }, [
+  /*#__PURE__*/createElementVNode("p", null, " Идентификаторы, присвоенные документу (сведениям) при размещении в хранилище электронных документов ")
+], -1 /* HOISTED */);
+const _hoisted_386 = { class: "row" };
+const _hoisted_387 = { class: "col-8 d-flex" };
+const _hoisted_388 = { class: "col-6" };
+const _hoisted_389 = { class: "input-bg" };
+const _hoisted_390 = { class: "col-6" };
+const _hoisted_391 = { class: "input-bg" };
+const _hoisted_392 = { class: "col-4" };
+const _hoisted_393 = { class: "input-bg" };
+const _hoisted_394 = { class: "row my-2" };
+const _hoisted_395 = /*#__PURE__*/createElementVNode("div", { class: "row" }, [
+  /*#__PURE__*/createElementVNode("p", null, "Документ, удостоверяющий полномочия")
+], -1 /* HOISTED */);
+const _hoisted_396 = { class: "row" };
+const _hoisted_397 = { class: "col-4 d-flex" };
+const _hoisted_398 = { class: "col-4" };
+const _hoisted_399 = { class: "input-bg" };
+const _hoisted_400 = { class: "col-8" };
+const _hoisted_401 = { class: "input-bg" };
+const _hoisted_402 = { class: "col-8 row" };
+const _hoisted_403 = { class: "col-4 d-flex" };
+const _hoisted_404 = { class: "col-5" };
+const _hoisted_405 = { class: "input-bg" };
+const _hoisted_406 = { class: "col-7" };
+const _hoisted_407 = { class: "input-bg" };
+const _hoisted_408 = { class: "col-8 row" };
+const _hoisted_409 = { class: "col-5 d-flex" };
+const _hoisted_410 = /*#__PURE__*/createElementVNode("div", { class: "col-2 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "с")
+], -1 /* HOISTED */);
+const _hoisted_411 = { class: "col-10" };
+const _hoisted_412 = { class: "input-bg" };
+const _hoisted_413 = { class: "col-5 d-flex" };
+const _hoisted_414 = /*#__PURE__*/createElementVNode("div", { class: "col-2 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "по")
+], -1 /* HOISTED */);
+const _hoisted_415 = { class: "col-10" };
+const _hoisted_416 = { class: "input-bg" };
+const _hoisted_417 = { class: "col-2" };
+const _hoisted_418 = { class: "input-bg" };
+const _hoisted_419 = { class: "inspector-inf my-2" };
+const _hoisted_420 = { class: "row" };
+const _hoisted_421 = { class: "col-7" };
+const _hoisted_422 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "ФИО инспектора", -1 /* HOISTED */);
+const _hoisted_423 = { class: "input-bg" };
+const _hoisted_424 = { class: "col-5" };
+const _hoisted_425 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "ЛНП", -1 /* HOISTED */);
+const _hoisted_426 = { class: "row" };
+const _hoisted_427 = { class: "col-2 input-bg" };
 
-function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = resolveComponent("router-link");
 
-  return (openBlock(), createElementBlock("div", _hoisted_1$3, [
+  return (openBlock(), createElementBlock("div", _hoisted_1$4, [
     createCommentVNode("Region элемент с общей информацией декларации"),
     createElementVNode("div", _hoisted_2$3, [
-      createElementVNode("div", _hoisted_3$2, [
+      createElementVNode("div", _hoisted_3$3, [
         createElementVNode("div", _hoisted_4$3, [
           createVNode(_component_router_link, {
             class: "point-name",
             to: { name: 'index' }
           }, {
             default: withCtx(() => [
-              _hoisted_5$1
+              _hoisted_5$3
             ]),
             _: 1 /* STABLE */
           })
         ])
       ]),
-      _hoisted_6$2,
-      createElementVNode("div", _hoisted_11$2, [
-        createElementVNode("div", _hoisted_12$2, [
-          createElementVNode("div", _hoisted_13$2, [
+      _hoisted_6$3,
+      createElementVNode("div", _hoisted_7$3, [
+        createElementVNode("div", _hoisted_8$3, [
+          createElementVNode("div", _hoisted_9$3, [
+            createElementVNode("div", _hoisted_10$3, [
+              createElementVNode("input", {
+                class: "form-check-input",
+                type: "checkbox",
+                checked: this.registry.docType.dteg
+              }, null, 8 /* PROPS */, _hoisted_11$3)
+            ]),
+            _hoisted_12$3,
+            createElementVNode("div", _hoisted_13$3, [
+              createElementVNode("input", {
+                class: "form-check-input",
+                type: "checkbox",
+                checked: this.registry.docType.ptdeg
+              }, null, 8 /* PROPS */, _hoisted_14$3)
+            ]),
+            _hoisted_15$3
+          ]),
+          createElementVNode("div", _hoisted_16$3, [
+            createElementVNode("div", _hoisted_17$3, [
+              createElementVNode("input", {
+                class: "form-check-input",
+                type: "checkbox",
+                checked: this.registry.declarationKindCode.import
+              }, null, 8 /* PROPS */, _hoisted_18$3)
+            ]),
+            _hoisted_19$3,
+            createElementVNode("div", _hoisted_20$3, [
+              createElementVNode("input", {
+                class: "form-check-input",
+                type: "checkbox",
+                checked: this.registry.declarationKindCode.export
+              }, null, 8 /* PROPS */, _hoisted_21$3)
+            ]),
+            _hoisted_22$3
+          ]),
+          createElementVNode("div", _hoisted_23$3, [
+            _hoisted_24$3,
+            createElementVNode("div", _hoisted_25$3, [
+              withDirectives(createElementVNode("input", {
+                class: "declaration-number-input form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => ((this.registry.registryNum) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.registryNum]
+              ])
+            ])
+          ]),
+          _hoisted_26$3
+        ])
+      ]),
+      createElementVNode("div", _hoisted_27$3, [
+        createElementVNode("div", _hoisted_28$3, [
+          createElementVNode("div", _hoisted_29$3, [
+            createElementVNode("div", _hoisted_30$3, [
+              withDirectives(createElementVNode("input", {
+                class: "form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => ((this.registry.customsCodeMode) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.customsCodeMode]
+              ])
+            ]),
+            createElementVNode("div", _hoisted_31$3, [
+              withDirectives(createElementVNode("input", {
+                class: "form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => ((this.registry.previousCustomsCodeMode) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.previousCustomsCodeMode]
+              ])
+            ]),
+            createElementVNode("div", _hoisted_32$3, [
+              withDirectives(createElementVNode("input", {
+                class: "form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => ((this.registry.declarationKind) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.declarationKind]
+              ])
+            ]),
+            createElementVNode("div", _hoisted_33$3, [
+              withDirectives(createElementVNode("input", {
+                class: "form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => ((this.registry.electronicDocumentSign) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.electronicDocumentSign]
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_34$3, [
+            _hoisted_35$3,
+            createElementVNode("div", _hoisted_36$3, [
+              withDirectives(createElementVNode("input", {
+                class: "sheets-input form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => ((this.registry.countList) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.countList]
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_37$3, [
+            _hoisted_38$3,
+            createElementVNode("div", _hoisted_39$3, [
+              withDirectives(createElementVNode("input", {
+                class: "registry-number-input form-control",
+                type: "text",
+                id: "registryNumber",
+                "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => ((this.registry.customNum) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.customNum]
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_40$3, [
+            createElementVNode("div", _hoisted_41$3, [
+              withDirectives(createElementVNode("input", {
+                class: "registry-checkbox form-check-input",
+                type: "checkbox",
+                "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => ((this.registry.isRegistryWasChanged) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelCheckbox, this.registry.isRegistryWasChanged]
+              ])
+            ]),
+            _hoisted_42$3
+          ])
+        ])
+      ]),
+      createElementVNode("div", _hoisted_43$3, [
+        createElementVNode("div", _hoisted_44$3, [
+          createElementVNode("div", _hoisted_45$3, [
+            createElementVNode("div", _hoisted_46$3, [
+              _hoisted_47$3,
+              createElementVNode("div", _hoisted_48$3, [
+                createElementVNode("div", _hoisted_49$3, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => ((this.registry.expressCourierCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.expressCourierCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_50$3, [
+                  withDirectives(createElementVNode("input", {
+                    class: "col-11 form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => ((this.registry.expressCourierName) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.expressCourierName]
+                  ])
+                ])
+              ])
+            ]),
+            _hoisted_51$3,
+            _hoisted_52$3
+          ]),
+          createElementVNode("div", _hoisted_53$3, [
+            createElementVNode("div", _hoisted_54$3, [
+              createElementVNode("div", _hoisted_55$3, [
+                _hoisted_56$3,
+                createElementVNode("form", _hoisted_57$3, [
+                  createElementVNode("div", _hoisted_58$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => ((this.registry.registerDocumentUnknownString1) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.registerDocumentUnknownString1]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_59$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => ((this.registry.registerDocumentIdCountryCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.registerDocumentIdCountryCode]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_60$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => ((this.registry.registerDocumentIdNumber) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.registerDocumentIdNumber]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_61$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => ((this.registry.registerDocumentUnknownString2) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.registerDocumentUnknownString2]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_62$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => ((this.registry.registerDocumentUnknownString3) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.registerDocumentUnknownString3]
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _hoisted_63$3,
+            createElementVNode("div", _hoisted_64$3, [
+              createElementVNode("form", _hoisted_65$3, [
+                createElementVNode("div", _hoisted_66$3, [
+                  createElementVNode("div", _hoisted_67$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => ((this.registry.changingDeclarationNumber.customPoint) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.changingDeclarationNumber.customPoint]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_68$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => ((this.registry.changingDeclarationNumber.date) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.changingDeclarationNumber.date]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_69$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => ((this.registry.changingDeclarationNumber.innerNum) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.changingDeclarationNumber.innerNum]
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_70$3, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => ((this.registry.changingDeclarationNumber.unknownNum) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.changingDeclarationNumber.unknownNum]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_71$3, [
+                  _hoisted_72$3,
+                  createElementVNode("div", _hoisted_73$3, [
+                    createElementVNode("div", _hoisted_74$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => ((this.registry.changeDetailsType.stageChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.stageChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_75$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => ((this.registry.changeDetailsType.reasonChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.reasonChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_76$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => ((this.registry.changeDetailsType.quantityChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.quantityChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_77$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => ((this.registry.changeDetailsType.TNVEDChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.TNVEDChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_78$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => ((this.registry.changeDetailsType.customsCostChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.customsCostChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_79$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => ((this.registry.changeDetailsType.customsPaymentChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.customsPaymentChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_80$3, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => ((this.registry.changeDetailsType.otherChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.changeDetailsType.otherChangeCode]
+                      ])
+                    ]),
+                    _hoisted_81$3
+                  ]),
+                  _hoisted_82$3
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      createElementVNode("div", _hoisted_83$3, [
+        createElementVNode("div", _hoisted_84$3, [
+          _hoisted_85$3,
+          createElementVNode("form", _hoisted_86$3, [
+            createElementVNode("div", _hoisted_87$2, [
+              _hoisted_88$2,
+              createElementVNode("div", _hoisted_89$2, [
+                createElementVNode("div", _hoisted_90$2, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "Сумма",
+                    "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => ((this.registry.totalPaymentAmountDetailsSum) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.totalPaymentAmountDetailsSum]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_91$2, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "Валюта",
+                    "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => ((this.registry.totalPaymentAmountDetailsCurrency) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.totalPaymentAmountDetailsCurrency]
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_92$2, [
+              _hoisted_93$2,
+              _hoisted_94$2,
+              createElementVNode("div", _hoisted_95$2, [
+                createElementVNode("div", _hoisted_96$2, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => ((this.registry.CAValueAmountSum) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.CAValueAmountSum]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_97$2, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => ((this.registry.CAValueAmountCurrency) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.CAValueAmountCurrency]
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_98$2, [
+              _hoisted_99$2,
+              _hoisted_100$2,
+              createElementVNode("div", _hoisted_101$2, [
+                createElementVNode("div", _hoisted_102$2, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => ((this.registry.unifiedGrossWeightQuantity) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.unifiedGrossWeightQuantity]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_103$2, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => ((this.registry.weightUnit) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.weightUnit]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_104$2, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[32] || (_cache[32] = $event => ((this.registry.unknownStringUnit) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.unknownStringUnit]
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_105$2, [
+              _hoisted_106$2,
+              _hoisted_107$1,
+              createElementVNode("div", _hoisted_108$1, [
+                createElementVNode("div", _hoisted_109$1, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[33] || (_cache[33] = $event => ((this.registry.customCost) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.customCost]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_110$1, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[34] || (_cache[34] = $event => ((this.registry.customCostCurrency) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, this.registry.customCostCurrency]
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      createElementVNode("div", _hoisted_111$1, [
+        createElementVNode("div", _hoisted_112$1, [
+          createElementVNode("div", _hoisted_113$1, [
             createVNode(_component_router_link, { to: { name: 'index' } }, {
               default: withCtx(() => [
-                _hoisted_14$2
+                _hoisted_114$1
               ]),
               _: 1 /* STABLE */
             })
@@ -461,214 +1460,3402 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
     ]),
     createCommentVNode(" endregion"),
     createCommentVNode(" Region элемент с общей информацией по отправителю"),
-    _hoisted_15$1,
+    createElementVNode("div", _hoisted_115$1, [
+      createElementVNode("div", _hoisted_116$1, [
+        _hoisted_117$1,
+        createElementVNode("div", _hoisted_118$1, [
+          createElementVNode("div", _hoisted_119$1, [
+            createElementVNode("div", _hoisted_120$1, [
+              createElementVNode("div", _hoisted_121$1, [
+                createElementVNode("form", _hoisted_122$1, [
+                  createElementVNode("div", _hoisted_123$1, [
+                    createElementVNode("div", _hoisted_124$1, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[35] || (_cache[35] = $event => ((this.registry.consignor.fullName) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.consignor.fullName]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_125$1, [
+                    createElementVNode("div", _hoisted_126$1, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[36] || (_cache[36] = $event => ((this.registry.consignor.countryCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.consignor.countryCode]
+                      ])
+                    ])
+                  ]),
+                  _hoisted_127$1,
+                  createElementVNode("div", _hoisted_128$1, [
+                    createElementVNode("div", _hoisted_129$1, [
+                      createElementVNode("input", {
+                        type: "checkbox",
+                        class: "form-check-input",
+                        checked: this.registry.consignor.isDeclarant
+                      }, null, 8 /* PROPS */, _hoisted_130$1)
+                    ]),
+                    _hoisted_131$1
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_132$1, [
+                  createElementVNode("div", _hoisted_133$1, [
+                    createElementVNode("div", _hoisted_134$1, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        placeholder: "краткое наименование организации",
+                        "onUpdate:modelValue": _cache[37] || (_cache[37] = $event => ((this.registry.consignor.shortName) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.consignor.shortName]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_135$1, [
+                    createElementVNode("div", _hoisted_136$1, [
+                      _hoisted_137$1,
+                      createElementVNode("div", _hoisted_138$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[38] || (_cache[38] = $event => ((this.registry.consignor.fullName) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.fullName]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_139$1, [
+                      _hoisted_140$1,
+                      createElementVNode("div", _hoisted_141$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[39] || (_cache[39] = $event => ((this.registry.consignor.INN) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.INN]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_142$1, [
+                      _hoisted_143$1,
+                      createElementVNode("div", _hoisted_144$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[40] || (_cache[40] = $event => ((this.registry.consignor.KPP) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.KPP]
+                        ])
+                      ])
+                    ]),
+                    _hoisted_145$1
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_146$1, [
+              createElementVNode("div", _hoisted_147$1, [
+                createElementVNode("div", _hoisted_148$1, [
+                  createElementVNode("div", _hoisted_149$1, [
+                    _hoisted_150$1,
+                    createElementVNode("div", _hoisted_151$1, [
+                      createElementVNode("div", _hoisted_152$1, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          placeholder: "номер телефона",
+                          "onUpdate:modelValue": _cache[41] || (_cache[41] = $event => ((this.registry.consignor.phone) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.phone]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_153$1, [
+                      createElementVNode("div", _hoisted_154$1, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          placeholder: "Адрес электронной почты",
+                          "onUpdate:modelValue": _cache[42] || (_cache[42] = $event => ((this.registry.consignor.email) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.email]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_155$1, [
+                      createElementVNode("div", _hoisted_156$1, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          placeholder: "номер факса",
+                          "onUpdate:modelValue": _cache[43] || (_cache[43] = $event => ((this.registry.consignor.fax) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.fax]
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_157$1, [
+                  createElementVNode("div", _hoisted_158$1, [
+                    createElementVNode("div", _hoisted_159$1, [
+                      createElementVNode("div", _hoisted_160$1, [
+                        createElementVNode("div", _hoisted_161$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "язык",
+                            "onUpdate:modelValue": _cache[44] || (_cache[44] = $event => ((this.registry.consignor.language) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.language]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_162$1, [
+                        createElementVNode("div", _hoisted_163$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "страна",
+                            "onUpdate:modelValue": _cache[45] || (_cache[45] = $event => ((this.registry.consignor.country) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.country]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_164$1, [
+                        createElementVNode("div", _hoisted_165$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "почтовый индекс",
+                            "onUpdate:modelValue": _cache[46] || (_cache[46] = $event => ((this.registry.consignor.mailIndex) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.mailIndex]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_166$1, [
+                        createElementVNode("div", _hoisted_167$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "область (регион, штат, провинция)",
+                            "onUpdate:modelValue": _cache[47] || (_cache[47] = $event => ((this.registry.consignor.region) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.region]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_168$1, [
+                      createElementVNode("div", _hoisted_169$1, [
+                        createElementVNode("div", _hoisted_170$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "район",
+                            "onUpdate:modelValue": _cache[48] || (_cache[48] = $event => ((this.registry.consignor.area) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.area]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_171$1, [
+                        createElementVNode("div", _hoisted_172$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "город",
+                            "onUpdate:modelValue": _cache[49] || (_cache[49] = $event => ((this.registry.consignor.city) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.city]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_173$1, [
+                        createElementVNode("div", _hoisted_174$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "населённый пункт",
+                            "onUpdate:modelValue": _cache[50] || (_cache[50] = $event => ((this.registry.consignor.settlement) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.settlement]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_175$1, [
+                      createElementVNode("div", _hoisted_176$1, [
+                        createElementVNode("div", _hoisted_177$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[51] || (_cache[51] = $event => ((this.registry.consignor.address) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.address]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_178$1, [
+                        createElementVNode("div", _hoisted_179$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "дом, корпус, строение",
+                            "onUpdate:modelValue": _cache[52] || (_cache[52] = $event => ((this.registry.consignor.house) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.house]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_180$1, [
+                        createElementVNode("div", _hoisted_181$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[53] || (_cache[53] = $event => ((this.registry.consignor.office) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.office]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_182$1, [
+                        createElementVNode("div", _hoisted_183$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "номер а/я",
+                            "onUpdate:modelValue": _cache[54] || (_cache[54] = $event => ((this.registry.consignor.officeLetter) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.officeLetter]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_184$1, [
+                      createElementVNode("div", _hoisted_185$1, [
+                        createElementVNode("div", _hoisted_186$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
+                            "onUpdate:modelValue": _cache[55] || (_cache[55] = $event => ((this.registry.consignor.fullAddress) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignor.fullAddress]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_187$1, [
+              createElementVNode("div", _hoisted_188$1, [
+                _hoisted_189$1,
+                createElementVNode("div", _hoisted_190$1, [
+                  createElementVNode("div", _hoisted_191$1, [
+                    createElementVNode("div", _hoisted_192$1, [
+                      createElementVNode("div", _hoisted_193$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "стр",
+                          "onUpdate:modelValue": _cache[56] || (_cache[56] = $event => ((this.registry.consignor.document.country) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.country]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_194$1, [
+                      createElementVNode("div", _hoisted_195$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "код",
+                          "onUpdate:modelValue": _cache[57] || (_cache[57] = $event => ((this.registry.consignor.document.countryCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.countryCode]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_196$1, [
+                      createElementVNode("div", _hoisted_197$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "краткое наименование",
+                          "onUpdate:modelValue": _cache[58] || (_cache[58] = $event => ((this.registry.consignor.document.shortType) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.shortType]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_198$1, [
+                      createElementVNode("div", _hoisted_199$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "серия",
+                          "onUpdate:modelValue": _cache[59] || (_cache[59] = $event => ((this.registry.consignor.document.series) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.series]
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_200$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "номер",
+                          "onUpdate:modelValue": _cache[60] || (_cache[60] = $event => ((this.registry.consignor.document.number) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.number]
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_201$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "дата выдачи",
+                          "onUpdate:modelValue": _cache[61] || (_cache[61] = $event => ((this.registry.consignor.document.releaseDate) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.releaseDate]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_202$1, [
+                      createElementVNode("div", _hoisted_203$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "наименование организации, выдавшей документ",
+                          "onUpdate:modelValue": _cache[62] || (_cache[62] = $event => ((this.registry.consignor.document.issuedBy) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.issuedBy]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_204$1, [
+                    createElementVNode("div", _hoisted_205$1, [
+                      createElementVNode("div", _hoisted_206$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "полное наименование документа, удостоверяющего личность",
+                          "onUpdate:modelValue": _cache[63] || (_cache[63] = $event => ((this.registry.consignor.document.fullType) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.fullType]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_207$1, [
+                      createElementVNode("div", _hoisted_208$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "код подразделения",
+                          "onUpdate:modelValue": _cache[64] || (_cache[64] = $event => ((this.registry.consignor.document.divisionCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.divisionCode]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_209$1, [
+                      createElementVNode("div", _hoisted_210$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "строка, иденти-ая орган государства",
+                          "onUpdate:modelValue": _cache[65] || (_cache[65] = $event => ((this.registry.consignor.document.countryIdString) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignor.document.countryIdString]
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
     createCommentVNode(" endregion"),
     createCommentVNode(" Region элемет с общей информацией по получателю"),
-    _hoisted_16$1,
+    createElementVNode("div", _hoisted_211$1, [
+      createElementVNode("div", _hoisted_212$1, [
+        _hoisted_213$1,
+        createElementVNode("div", _hoisted_214$1, [
+          createElementVNode("div", _hoisted_215$1, [
+            createElementVNode("div", _hoisted_216$1, [
+              createElementVNode("div", _hoisted_217$1, [
+                createElementVNode("form", _hoisted_218$1, [
+                  createElementVNode("div", _hoisted_219$1, [
+                    createElementVNode("div", _hoisted_220$1, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[66] || (_cache[66] = $event => ((this.registry.consignee.fullName) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.consignee.fullName]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_221$1, [
+                    createElementVNode("div", _hoisted_222$1, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[67] || (_cache[67] = $event => ((this.registry.consignee.countryCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.consignee.countryCode]
+                      ])
+                    ])
+                  ]),
+                  _hoisted_223$1,
+                  createElementVNode("div", _hoisted_224$1, [
+                    createElementVNode("div", _hoisted_225$1, [
+                      createElementVNode("input", {
+                        type: "checkbox",
+                        class: "form-check-input",
+                        checked: this.registry.consignee.isDeclarant
+                      }, null, 8 /* PROPS */, _hoisted_226$1)
+                    ]),
+                    _hoisted_227$1
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_228$1, [
+                  createElementVNode("div", _hoisted_229$1, [
+                    createElementVNode("div", _hoisted_230$1, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        placeholder: "краткое наименование организации",
+                        "onUpdate:modelValue": _cache[68] || (_cache[68] = $event => ((this.registry.consignee.shortName) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.consignee.shortName]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_231$1, [
+                    createElementVNode("div", _hoisted_232$1, [
+                      _hoisted_233$1,
+                      createElementVNode("div", _hoisted_234$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[69] || (_cache[69] = $event => ((this.registry.consignee.fullName) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.fullName]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_235$1, [
+                      _hoisted_236$1,
+                      createElementVNode("div", _hoisted_237$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[70] || (_cache[70] = $event => ((this.registry.consignee.INN) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.INN]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_238$1, [
+                      _hoisted_239$1,
+                      createElementVNode("div", _hoisted_240$1, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[71] || (_cache[71] = $event => ((this.registry.consignee.KPP) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.KPP]
+                        ])
+                      ])
+                    ]),
+                    _hoisted_241$1
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_242$1, [
+              createElementVNode("div", _hoisted_243$1, [
+                createElementVNode("div", _hoisted_244$1, [
+                  createElementVNode("div", _hoisted_245$1, [
+                    _hoisted_246$1,
+                    createElementVNode("div", _hoisted_247$1, [
+                      createElementVNode("div", _hoisted_248$1, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          placeholder: "номер телефона",
+                          "onUpdate:modelValue": _cache[72] || (_cache[72] = $event => ((this.registry.consignee.phone) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.phone]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_249$1, [
+                      createElementVNode("div", _hoisted_250$1, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          placeholder: "Адрес электронной почты",
+                          "onUpdate:modelValue": _cache[73] || (_cache[73] = $event => ((this.registry.consignee.email) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.email]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_251$1, [
+                      createElementVNode("div", _hoisted_252$1, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          placeholder: "номер факса",
+                          "onUpdate:modelValue": _cache[74] || (_cache[74] = $event => ((this.registry.consignee.fax) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.fax]
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_253$1, [
+                  createElementVNode("div", _hoisted_254$1, [
+                    createElementVNode("div", _hoisted_255$1, [
+                      createElementVNode("div", _hoisted_256$1, [
+                        createElementVNode("div", _hoisted_257$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "язык",
+                            "onUpdate:modelValue": _cache[75] || (_cache[75] = $event => ((this.registry.consignee.language) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.language]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_258$1, [
+                        createElementVNode("div", _hoisted_259$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "страна",
+                            "onUpdate:modelValue": _cache[76] || (_cache[76] = $event => ((this.registry.consignee.country) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.country]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_260$1, [
+                        createElementVNode("div", _hoisted_261$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "почтовый индекс",
+                            "onUpdate:modelValue": _cache[77] || (_cache[77] = $event => ((this.registry.consignee.mailIndex) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.mailIndex]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_262$1, [
+                        createElementVNode("div", _hoisted_263$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "область (регион, штат, провинция)",
+                            "onUpdate:modelValue": _cache[78] || (_cache[78] = $event => ((this.registry.consignee.region) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.region]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_264$1, [
+                      createElementVNode("div", _hoisted_265$1, [
+                        createElementVNode("div", _hoisted_266$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "район",
+                            "onUpdate:modelValue": _cache[79] || (_cache[79] = $event => ((this.registry.consignee.area) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.area]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_267$1, [
+                        createElementVNode("div", _hoisted_268$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "город",
+                            "onUpdate:modelValue": _cache[80] || (_cache[80] = $event => ((this.registry.consignee.city) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.city]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_269$1, [
+                        createElementVNode("div", _hoisted_270$1, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "населённый пункт",
+                            "onUpdate:modelValue": _cache[81] || (_cache[81] = $event => ((this.registry.consignee.settlement) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.settlement]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_271$1, [
+                      createElementVNode("div", _hoisted_272$1, [
+                        createElementVNode("div", _hoisted_273, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[82] || (_cache[82] = $event => ((this.registry.consignee.address) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.address]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_274, [
+                        createElementVNode("div", _hoisted_275, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "дом, корпус, строение",
+                            "onUpdate:modelValue": _cache[83] || (_cache[83] = $event => ((this.registry.consignee.house) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.house]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_276, [
+                        createElementVNode("div", _hoisted_277, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[84] || (_cache[84] = $event => ((this.registry.consignee.office) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.office]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_278, [
+                        createElementVNode("div", _hoisted_279, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "номер а/я",
+                            "onUpdate:modelValue": _cache[85] || (_cache[85] = $event => ((this.registry.consignee.officeLetter) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.officeLetter]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_280, [
+                      createElementVNode("div", _hoisted_281, [
+                        createElementVNode("div", _hoisted_282, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
+                            "onUpdate:modelValue": _cache[86] || (_cache[86] = $event => ((this.registry.consignee.fullAddress) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.consignee.fullAddress]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_283, [
+              createElementVNode("div", _hoisted_284, [
+                _hoisted_285,
+                createElementVNode("div", _hoisted_286, [
+                  createElementVNode("div", _hoisted_287, [
+                    createElementVNode("div", _hoisted_288, [
+                      createElementVNode("div", _hoisted_289, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "стр",
+                          "onUpdate:modelValue": _cache[87] || (_cache[87] = $event => ((this.registry.consignee.document.country) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.country]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_290, [
+                      createElementVNode("div", _hoisted_291, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "код",
+                          "onUpdate:modelValue": _cache[88] || (_cache[88] = $event => ((this.registry.consignee.document.countryCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.countryCode]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_292, [
+                      createElementVNode("div", _hoisted_293, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "краткое наименование",
+                          "onUpdate:modelValue": _cache[89] || (_cache[89] = $event => ((this.registry.consignee.document.shortType) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.shortType]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_294, [
+                      createElementVNode("div", _hoisted_295, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "серия",
+                          "onUpdate:modelValue": _cache[90] || (_cache[90] = $event => ((this.registry.consignee.document.series) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.series]
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_296, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "номер",
+                          "onUpdate:modelValue": _cache[91] || (_cache[91] = $event => ((this.registry.consignee.document.number) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.number]
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_297, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "дата выдачи",
+                          "onUpdate:modelValue": _cache[92] || (_cache[92] = $event => ((this.registry.consignee.document.releaseDate) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.releaseDate]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_298, [
+                      createElementVNode("div", _hoisted_299, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "наименование организации, выдавшей документ",
+                          "onUpdate:modelValue": _cache[93] || (_cache[93] = $event => ((this.registry.consignee.document.issuedBy) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.issuedBy]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_300, [
+                    createElementVNode("div", _hoisted_301, [
+                      createElementVNode("div", _hoisted_302, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "полное наименование документа, удостоверяющего личность",
+                          "onUpdate:modelValue": _cache[94] || (_cache[94] = $event => ((this.registry.consignee.document.fullType) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.fullType]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_303, [
+                      createElementVNode("div", _hoisted_304, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "код подразделения",
+                          "onUpdate:modelValue": _cache[95] || (_cache[95] = $event => ((this.registry.consignee.document.divisionCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.divisionCode]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_305, [
+                      createElementVNode("div", _hoisted_306, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          placeholder: "строка, иденти-ая орган государства",
+                          "onUpdate:modelValue": _cache[96] || (_cache[96] = $event => ((this.registry.consignee.document.countryIdString) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.consignee.document.countryIdString]
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
     createCommentVNode("endregion"),
     createCommentVNode(" Region элемент с общей информацией по таможенному представителю и исполнителю"),
-    _hoisted_17$1,
+    createElementVNode("div", _hoisted_307, [
+      createElementVNode("div", _hoisted_308, [
+        createElementVNode("div", _hoisted_309, [
+          createElementVNode("div", _hoisted_310, [
+            _hoisted_311,
+            createElementVNode("div", _hoisted_312, [
+              withDirectives(createElementVNode("input", {
+                type: "text",
+                class: "form-control",
+                "onUpdate:modelValue": _cache[97] || (_cache[97] = $event => ((this.registry.brokerName) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.brokerName]
+              ])
+            ])
+          ])
+        ]),
+        createElementVNode("div", _hoisted_313, [
+          _hoisted_314,
+          createElementVNode("div", _hoisted_315, [
+            createElementVNode("div", _hoisted_316, [
+              createElementVNode("div", _hoisted_317, [
+                withDirectives(createElementVNode("input", {
+                  type: "text",
+                  class: "form-control",
+                  "onUpdate:modelValue": _cache[98] || (_cache[98] = $event => ((this.registry.brokerRegistryDocDetails[0]) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, this.registry.brokerRegistryDocDetails[0]]
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_318, [
+              createElementVNode("div", _hoisted_319, [
+                withDirectives(createElementVNode("input", {
+                  type: "text",
+                  class: "form-control",
+                  "onUpdate:modelValue": _cache[99] || (_cache[99] = $event => ((this.registry.brokerRegistryDocDetails[1]) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, this.registry.brokerRegistryDocDetails[1]]
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_320, [
+              createElementVNode("div", _hoisted_321, [
+                withDirectives(createElementVNode("input", {
+                  type: "text",
+                  class: "form-control",
+                  "onUpdate:modelValue": _cache[100] || (_cache[100] = $event => ((this.registry.brokerRegistryDocDetails[2]) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, this.registry.brokerRegistryDocDetails[2]]
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_322, [
+              createElementVNode("div", _hoisted_323, [
+                withDirectives(createElementVNode("input", {
+                  type: "text",
+                  class: "form-control",
+                  "onUpdate:modelValue": _cache[101] || (_cache[101] = $event => ((this.registry.brokerRegistryDocDetails[3]) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, this.registry.brokerRegistryDocDetails[3]]
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_324, [
+              createElementVNode("div", _hoisted_325, [
+                withDirectives(createElementVNode("input", {
+                  type: "text",
+                  class: "form-control",
+                  "onUpdate:modelValue": _cache[102] || (_cache[102] = $event => ((this.registry.brokerRegistryDocDetails[4]) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, this.registry.brokerRegistryDocDetails[4]]
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      createElementVNode("div", _hoisted_326, [
+        _hoisted_327,
+        createElementVNode("div", _hoisted_328, [
+          createElementVNode("div", _hoisted_329, [
+            createElementVNode("form", _hoisted_330, [
+              createElementVNode("div", _hoisted_331, [
+                createElementVNode("div", _hoisted_332, [
+                  createElementVNode("div", _hoisted_333, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[103] || (_cache[103] = $event => ((this.registry.signatoryPersonIdentityDetails.lastName) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.signatoryPersonIdentityDetails.lastName]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_334, [
+                  createElementVNode("div", _hoisted_335, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[104] || (_cache[104] = $event => ((this.registry.signatoryPersonIdentityDetails.firstName) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.signatoryPersonIdentityDetails.firstName]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_336, [
+                  createElementVNode("div", _hoisted_337, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[105] || (_cache[105] = $event => ((this.registry.signatoryPersonIdentityDetails.middleName) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.signatoryPersonIdentityDetails.middleName]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_338, [
+                  createElementVNode("div", _hoisted_339, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[106] || (_cache[106] = $event => ((this.registry.signatoryPersonIdentityDetails.profession) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, this.registry.signatoryPersonIdentityDetails.profession]
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_340, [
+                createElementVNode("div", _hoisted_341, [
+                  createElementVNode("div", _hoisted_342, [
+                    createElementVNode("div", _hoisted_343, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[107] || (_cache[107] = $event => ((this.registry.signatoryPersonIdentityDetails.mobilePhone) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.mobilePhone]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_344, [
+                    createElementVNode("div", _hoisted_345, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[108] || (_cache[108] = $event => ((this.registry.signatoryPersonIdentityDetails.fax) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.fax]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_346, [
+                    createElementVNode("div", _hoisted_347, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[109] || (_cache[109] = $event => ((this.registry.signatoryPersonIdentityDetails.email) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.email]
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_348, [
+                  createElementVNode("div", _hoisted_349, [
+                    createElementVNode("div", _hoisted_350, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[110] || (_cache[110] = $event => ((this.registry.signatoryPersonIdentityDetails.appealDocumentDate) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.appealDocumentDate]
+                      ])
+                    ])
+                  ]),
+                  _hoisted_351
+                ])
+              ]),
+              createElementVNode("div", _hoisted_352, [
+                _hoisted_353,
+                createElementVNode("div", _hoisted_354, [
+                  createElementVNode("div", _hoisted_355, [
+                    createElementVNode("div", _hoisted_356, [
+                      createElementVNode("div", _hoisted_357, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[111] || (_cache[111] = $event => ((this.registry.signatoryPersonIdentityDetails.countyCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.countyCode]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_358, [
+                      createElementVNode("div", _hoisted_359, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[112] || (_cache[112] = $event => ((this.registry.signatoryPersonIdentityDetails.personalDocType) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.personalDocType]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_360, [
+                    createElementVNode("div", _hoisted_361, [
+                      createElementVNode("div", _hoisted_362, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[113] || (_cache[113] = $event => ((this.registry.signatoryPersonIdentityDetails.documentSeries) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.documentSeries]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_363, [
+                      createElementVNode("div", _hoisted_364, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[114] || (_cache[114] = $event => ((this.registry.signatoryPersonIdentityDetails.documentNumber) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.documentNumber]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_365, [
+                    createElementVNode("div", _hoisted_366, [
+                      createElementVNode("div", _hoisted_367, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[115] || (_cache[115] = $event => ((this.registry.signatoryPersonIdentityDetails.documentReleaseDate) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.documentReleaseDate]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_368, [
+                      createElementVNode("div", _hoisted_369, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[116] || (_cache[116] = $event => ((this.registry.signatoryPersonIdentityDetails.documentDateEnd) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.documentDateEnd]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_370, [
+                    _hoisted_371,
+                    createElementVNode("div", _hoisted_372, [
+                      createElementVNode("div", _hoisted_373, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[117] || (_cache[117] = $event => ((this.registry.signatoryPersonIdentityDetails.qualificationCertificate) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.qualificationCertificate]
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_374, [
+                  createElementVNode("div", _hoisted_375, [
+                    createElementVNode("div", _hoisted_376, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[118] || (_cache[118] = $event => ((this.registry.signatoryPersonIdentityDetails.fullDocumentType) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.fullDocumentType]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_377, [
+                    createElementVNode("div", _hoisted_378, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[119] || (_cache[119] = $event => ((this.registry.signatoryPersonIdentityDetails.issuedBy) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.issuedBy]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_379, [
+                    createElementVNode("div", _hoisted_380, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[120] || (_cache[120] = $event => ((this.registry.signatoryPersonIdentityDetails.divisionCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.divisionCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_381, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[121] || (_cache[121] = $event => ((this.registry.signatoryPersonIdentityDetails.countryIdString) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.countryIdString]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_382, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[122] || (_cache[122] = $event => ((this.registry.signatoryPersonIdentityDetails.countryIdCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, this.registry.signatoryPersonIdentityDetails.countryIdCode]
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_383, [
+                createElementVNode("div", _hoisted_384, [
+                  _hoisted_385,
+                  createElementVNode("div", _hoisted_386, [
+                    createElementVNode("div", _hoisted_387, [
+                      createElementVNode("div", _hoisted_388, [
+                        createElementVNode("div", _hoisted_389, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[123] || (_cache[123] = $event => ((this.registry.signatoryPersonIdentityDetails.documentModeId) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.signatoryPersonIdentityDetails.documentModeId]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_390, [
+                        createElementVNode("div", _hoisted_391, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[124] || (_cache[124] = $event => ((this.registry.signatoryPersonIdentityDetails.documentModeUnknown1) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.signatoryPersonIdentityDetails.documentModeUnknown1]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_392, [
+                      createElementVNode("div", _hoisted_393, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[125] || (_cache[125] = $event => ((this.registry.signatoryPersonIdentityDetails.documentModeUnknown2) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.documentModeUnknown2]
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_394, [
+                _hoisted_395,
+                createElementVNode("div", _hoisted_396, [
+                  createElementVNode("div", _hoisted_397, [
+                    createElementVNode("div", _hoisted_398, [
+                      createElementVNode("div", _hoisted_399, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[126] || (_cache[126] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docSeries) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docSeries]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_400, [
+                      createElementVNode("div", _hoisted_401, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[127] || (_cache[127] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docType) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docType]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_402, [
+                    createElementVNode("div", _hoisted_403, [
+                      createElementVNode("div", _hoisted_404, [
+                        createElementVNode("div", _hoisted_405, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[128] || (_cache[128] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownString) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownString]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_406, [
+                        createElementVNode("div", _hoisted_407, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[129] || (_cache[129] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.appealDate) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.appealDate]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_408, [
+                      createElementVNode("div", _hoisted_409, [
+                        _hoisted_410,
+                        createElementVNode("div", _hoisted_411, [
+                          createElementVNode("div", _hoisted_412, [
+                            withDirectives(createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              "onUpdate:modelValue": _cache[130] || (_cache[130] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateStart) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateStart]
+                            ])
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_413, [
+                        _hoisted_414,
+                        createElementVNode("div", _hoisted_415, [
+                          createElementVNode("div", _hoisted_416, [
+                            withDirectives(createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              "onUpdate:modelValue": _cache[131] || (_cache[131] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateEnd) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateEnd]
+                            ])
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_417, [
+                        createElementVNode("div", _hoisted_418, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[132] || (_cache[132] = $event => ((this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownInput) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownInput]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
     createCommentVNode("endregion"),
     createCommentVNode("Region элемент с информацией по инспектору"),
-    _hoisted_18,
+    createElementVNode("div", _hoisted_419, [
+      createElementVNode("div", _hoisted_420, [
+        createElementVNode("div", _hoisted_421, [
+          _hoisted_422,
+          createElementVNode("div", _hoisted_423, [
+            withDirectives(createElementVNode("input", {
+              class: "form-control",
+              type: "text",
+              "onUpdate:modelValue": _cache[133] || (_cache[133] = $event => ((this.registry.inspectorFullName) = $event))
+            }, null, 512 /* NEED_PATCH */), [
+              [vModelText, this.registry.inspectorFullName]
+            ])
+          ])
+        ]),
+        createElementVNode("div", _hoisted_424, [
+          _hoisted_425,
+          createElementVNode("div", _hoisted_426, [
+            createElementVNode("div", _hoisted_427, [
+              withDirectives(createElementVNode("input", {
+                class: "form-control",
+                type: "text",
+                "onUpdate:modelValue": _cache[134] || (_cache[134] = $event => ((this.registry.lnp) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, this.registry.lnp]
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
     createCommentVNode("endregion")
   ]))
 }
 
-var css_248z$3 = "\nli a[data-v-06a6f23d] {\n  color: black;\n  text-decoration: unset;\n  font-size: 14px;\n}\n.sidebar-prods.active[data-v-06a6f23d] {\n  color: orange;\n  background-color: green;\n}\n/*Стили текстовых инпутов*/\n.form-control[data-v-06a6f23d] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-06a6f23d]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-06a6f23d]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-06a6f23d] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n*[data-v-06a6f23d] {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n\n/*Region Стили блока декларации*/\n.declaration[data-v-06a6f23d] {\n  background-color: #d1d1d1;\n  padding: 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\nh5[data-v-06a6f23d] {\n  text-align: center;\n}\n.inf-block[data-v-06a6f23d] {\n  margin-bottom: 10px;\n}\nlabel[data-v-06a6f23d] {\n  margin-top: 7px;\n}\n.inputs-group > div[data-v-06a6f23d] {\n  padding: unset;\n  min-width: 30px;\n  margin-right: 7px;\n}\n.form-check-input[data-v-06a6f23d] {\n  min-width: 20px;\n  min-height: 20px;\n}\n.sheets-input[data-v-06a6f23d] {\n  max-width: 70px;\n}\n.certificate-block div[data-v-06a6f23d]:first-child {\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div[data-v-06a6f23d] {\n  padding: 0;\n  margin-right: 6px;\n}\n\n/*Стили текстовых инпутов*/\n.form-control[data-v-06a6f23d] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-06a6f23d]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-06a6f23d]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-06a6f23d] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n\n/**/\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph[data-v-06a6f23d] {\n  min-width: 250px;\n  max-width: 270px;\n  margin: 10px 0 auto 0;\n}\n\n/**/\n.changing-declaration .inf-block div[data-v-06a6f23d] {\n  padding: unset;\n  margin-right: 5px;\n}\n.changing-code[data-v-06a6f23d] {\n  margin-top: 10px;\n}\n\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code[data-v-06a6f23d]::-webkit-outer-spin-button,\n.number-code[data-v-06a6f23d]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n\n/**/\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form[data-v-06a6f23d] {\n  padding: 0 10px 0 4px;\n}\n.batch-form div[data-v-06a6f23d]:first-child {\n  padding-left: 0;\n}\n.batch-block[data-v-06a6f23d] {\n  padding-left: 10px;\n}\n.batch-block div[data-v-06a6f23d] {\n  padding: 0;\n}\n\n/**/\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information[data-v-06a6f23d] {\n  width: fit-content;\n  color: gray;\n  text-decoration: underline;\n  font-size: 10px;\n}\n.payment-information[data-v-06a6f23d]:hover {\n  cursor: pointer;\n}\n\n/**/\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button[data-v-06a6f23d]:focus {\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i[data-v-06a6f23d] {\n  transform: rotate(180deg);\n}\n.collapsing-block[data-v-06a6f23d] {\n  background-color: white;\n  border: 1px solid black;\n  padding: 5px 10px;\n  font-weight: bold;\n}\n.collapsing-block span[data-v-06a6f23d],\ni[data-v-06a6f23d] {\n  font-size: 14px;\n}\n\n/**/\n.card-body[data-v-06a6f23d] {\n  background-color: unset;\n  border: 1px solid black;\n}\n.point-name[data-v-06a6f23d] {\n  width: fit-content;\n  margin: auto auto 0;\n  color: #3274dd;\n  text-decoration: underline;\n}\n.personal-data div[data-v-06a6f23d] {\n  padding: 0 0 0 3px;\n}\n\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative[data-v-06a6f23d] {\n  font-size: 11px;\n  font-weight: bold;\n  margin: 0 0 8px;\n}\n\n/**/\n/*Стили кнопки календаря*/\n.button-calendar[data-v-06a6f23d] {\n  background-color: white;\n  border: unset;\n  border-radius: 8px;\n}\n.button-calendar[data-v-06a6f23d]:focus {\n  box-shadow: unset;\n}\n\n/**/\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr[data-v-06a6f23d] {\n  display: flex;\n  margin: 5px auto 0;\n}\n\n/*Стили блока информации о товарной партии*/\n.product-batch[data-v-06a6f23d] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n\n/*Стиль синего хэдера с кнопками */\n.product-batch-header[data-v-06a6f23d] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n.batch-button[data-v-06a6f23d]:focus {\n  box-shadow: unset;\n}\n.batch-button i[data-v-06a6f23d]:before {\n  color: white;\n}\n.batch-button:last-child i[data-v-06a6f23d] {\n  transform: rotate(180deg);\n}\n/**/\n.product-inner-block[data-v-06a6f23d] {\n  padding: 10px;\n}\n.fs-12[data-v-06a6f23d] {\n  font-size: 12px;\n}\n\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button[data-v-06a6f23d] {\n  background-color: white;\n  border-radius: 5px;\n}\n.new-window-button[data-v-06a6f23d]:hover {\n  box-shadow: unset;\n}\n.new-window-button[data-v-06a6f23d]:focus {\n  box-shadow: unset;\n}\n.new-window-button i[data-v-06a6f23d] {\n  font-size: 15px;\n  color: #3274dd;\n}\n/**/\n\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link[data-v-06a6f23d] {\n  display: block;\n  color: gray;\n  text-decoration: underline;\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link[data-v-06a6f23d]:hover {\n  color: blue;\n  cursor: pointer;\n}\n/**/\n.product-info-block[data-v-06a6f23d] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.product-info-actions button[data-v-06a6f23d]:focus {\n  box-shadow: unset;\n}\n.product-info-actions i[data-v-06a6f23d]:before {\n  color: white;\n}\n.product-info-actions .fa-sort-down[data-v-06a6f23d]:before {\n  color: black;\n}\n.product-actions-button[data-v-06a6f23d]:not(.collapsed) {\n  transform: rotate(180deg);\n}\n.btn-bg-white[data-v-06a6f23d] {\n  background-color: white;\n  border-radius: 5px;\n}\n.btn-bg-white[data-v-06a6f23d]:focus {\n  box-shadow: unset;\n}\n.fa-note-sticky[data-v-06a6f23d] {\n  font-size: 16px;\n}\n\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block[data-v-06a6f23d] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.optional-inf-header[data-v-06a6f23d] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n";
-styleInject(css_248z$3);
+script$4.render = render$4;
+script$4.__file = "src/components/Form/GeneralDeclaration.vue";
 
-script$3.render = render$3;
-script$3.__scopeId = "data-v-06a6f23d";
-script$3.__file = "src/components/Form/GeneralDeclaration.vue";
-
-var script$2 = {
+var script$3 = {
   name: "TsoftGoodsAwbInformationForm",
+  props: {
+    order: {
+      type: Object,
+      required: true
+    },
+    goods: {
+      type: Object,
+      required: true
+    }
+  },
 };
 
-const _hoisted_1$2 = { class: "product-batch my-3" };
-const _hoisted_2$2 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\" data-v-87b4174a><h4 class=\"col-4\" data-v-87b4174a>Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\" data-v-87b4174a><div class=\"col-2\" data-v-87b4174a><button class=\"btn batch-button\" data-v-87b4174a><i class=\"fa-solid fa-plus\" data-v-87b4174a></i></button></div><div class=\"col-2\" data-v-87b4174a><button class=\"btn batch-button\" data-v-87b4174a><i class=\"fa-solid fa-minus\" data-v-87b4174a></i></button></div><div class=\"col-2\" data-v-87b4174a><button class=\"btn batch-button\" data-v-87b4174a><i class=\"fa-solid fa-border-top-left\" data-v-87b4174a></i></button></div></div></div>", 1);
-const _hoisted_3$1 = { class: "product-inner-block" };
+const _hoisted_1$3 = { class: "product-batch my-3" };
+const _hoisted_2$2 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
+const _hoisted_3$2 = { class: "product-inner-block" };
 const _hoisted_4$2 = { class: "row" };
-const _hoisted_5 = { class: "row" };
-const _hoisted_6$1 = /*#__PURE__*/createStaticVNode("<div class=\"col-9\" data-v-87b4174a><form action=\"\" data-v-87b4174a><div class=\"d-flex\" data-v-87b4174a><div class=\"col-3 d-flex\" data-v-87b4174a><div class=\"col-6 align-bcntr\" data-v-87b4174a><p class=\"align-bcntr\" data-v-87b4174a>Общая накладная</p></div><div class=\"col-1\" data-v-87b4174a></div><div class=\"input-bg col-5\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-3\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div><div class=\"d-flex my-2\" data-v-87b4174a><div class=\"col-3 d-flex\" data-v-87b4174a><div class=\"col-6 align-bcntr\" data-v-87b4174a><p class=\"align-bcntr\" data-v-87b4174a>Инд. накладная</p></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-3\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div><div class=\"row my-3\" data-v-87b4174a><div class=\"col-4\" data-v-87b4174a><h5 class=\"align-bcntr my-1\" data-v-87b4174a>Общий вес брутто</h5><div class=\"d-flex\" data-v-87b4174a><div class=\"col-6\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-6 d-flex\" data-v-87b4174a><div class=\"col-7\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-5\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div></div></div><div class=\"col-4\" data-v-87b4174a><h5 class=\"align-bcntr my-1\" data-v-87b4174a>Общая таможенная стоимость</h5><div class=\"d-flex\" data-v-87b4174a><div class=\"col-8\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"col-2\" data-v-87b4174a></div><div class=\"col-10\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div></div></div><div class=\"col-4\" data-v-87b4174a><h5 class=\"align-bcntr my-1 fs-12\" data-v-87b4174a> Общая стоимость по инд. накладной </h5><div class=\"d-flex\" data-v-87b4174a><div class=\"col-9\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-3 d-flex\" data-v-87b4174a><div class=\"col-12\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div></div></div></div><div class=\"row align-items-end\" data-v-87b4174a><div class=\"col-8 d-flex\" data-v-87b4174a><div class=\"col-3 d-flex align-bcntr\" data-v-87b4174a><p class=\"align-bcntr\" data-v-87b4174a>Интернет-магазин</p></div><div class=\"col-7\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-2 d-flex\" data-v-87b4174a><div class=\"col-7 d-flex\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-5\" data-v-87b4174a><button class=\"btn new-window-button\" data-v-87b4174a><i class=\"fa-solid fa-pager\" data-v-87b4174a></i></button></div></div></div><div class=\"col-4\" data-v-87b4174a><p class=\"align-bcntr\" data-v-87b4174a>Номер мешка/места</p><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div></form></div>", 1);
-const _hoisted_7$1 = { class: "col-3" };
-const _hoisted_8$1 = { class: "batch-info-anchors" };
-const _hoisted_9$1 = /*#__PURE__*/createTextVNode(" Сведения о товарах в накладной ");
-const _hoisted_10$1 = /*#__PURE__*/createTextVNode(" Сведения о там.сборе накладной ");
-const _hoisted_11$1 = /*#__PURE__*/createTextVNode(" Суммы пошлин и налогов накладной ");
-const _hoisted_12$1 = /*#__PURE__*/createTextVNode(" Исчисление там.пошлин, налогов ");
-const _hoisted_13$1 = /*#__PURE__*/createStaticVNode("<div class=\"inf-block changing-code row\" data-v-87b4174a><div class=\"label-block\" style=\"width:100%;\" data-v-87b4174a><label class=\"fs-5\" for=\"\" data-v-87b4174a>Код изменений</label></div><div class=\"col-10 d-flex\" data-v-87b4174a><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control number-code\" type=\"number\" data-v-87b4174a></div><button class=\"btn info-button p-1\" data-v-87b4174a><i class=\"fa-solid fa-circle-info\" data-v-87b4174a></i></button></div><div class=\"col-2\" data-v-87b4174a></div></div>", 1);
-const _hoisted_14$1 = /*#__PURE__*/createTextVNode(" Открыть исходную Инд. накладную ");
-const _hoisted_15 = /*#__PURE__*/createStaticVNode("<div class=\"row\" data-v-87b4174a><div class=\"my-2\" data-v-87b4174a><p class=\"align-bcntr\" data-v-87b4174a>Решение по инд. накладной</p><div class=\"d-flex\" data-v-87b4174a><div class=\"col-9\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input class=\"form-control\" type=\"text\" data-v-87b4174a></div></div><div class=\"col-3\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input class=\"form-control\" type=\"text\" data-v-87b4174a></div></div></div></div><div class=\"d-flex\" data-v-87b4174a><div class=\"col-7\" data-v-87b4174a><p class=\"align-bcntr fs-5\" data-v-87b4174a>Причина отказа</p><div class=\"input-bg\" data-v-87b4174a><input class=\"form-control\" type=\"text\" data-v-87b4174a></div></div><div class=\"col-5\" data-v-87b4174a><p class=\"align-bcntr fs-5\" data-v-87b4174a>Уникальный идентификатор партии</p><div class=\"col input-bg\" data-v-87b4174a><input class=\"form-control\" type=\"text\" data-v-87b4174a></div></div></div></div>", 1);
-const _hoisted_16 = /*#__PURE__*/createStaticVNode("<div class=\"sender-personal-inf mt-4\" data-v-87b4174a><div class=\"row\" data-v-87b4174a><button class=\"btn invoice-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsedBatchSender\" aria-expanded=\"false\" aria-controls=\"collapsedBatchSender\" data-v-87b4174a><div class=\"collapsing-block d-flex justify-content-between\" data-v-87b4174a><span data-v-87b4174a>Отправитель по индивидуальной накладной</span><i class=\"fa-solid fa-caret-up\" data-v-87b4174a></i></div></button><div class=\"collapse\" id=\"collapsedBatchSender\" data-v-87b4174a><div class=\"card card-body\" data-v-87b4174a><div class=\"row\" data-v-87b4174a><div class=\"recipient-name\" data-v-87b4174a><form class=\"row form my-2\" data-v-87b4174a><div class=\"col-8\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"\" data-v-87b4174a></div></div><div class=\"col-1\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-1\" data-v-87b4174a></div><div class=\"col-2 d-flex\" data-v-87b4174a><div class=\"input-bg col-2\" data-v-87b4174a><input type=\"checkbox\" class=\"form-check-input\" data-v-87b4174a></div><div class=\"label-block col-10\" data-v-87b4174a><label for=\"\" data-v-87b4174a> Декларант (заявитель) </label></div></div></form><div class=\"row my-2\" data-v-87b4174a><div class=\"col-6 d-flex justify-content-between\" data-v-87b4174a><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"label-block col-3 ps-1\" data-v-87b4174a><label for=\"\" data-v-87b4174a> ОГРН </label></div><div class=\"input-bg col-9\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"label-block col-3 ps-3\" data-v-87b4174a><label for=\"\" data-v-87b4174a> ИНН </label></div><div class=\"input-bg col-9\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"label-block col-3 ps-3\" data-v-87b4174a><label for=\"\" data-v-87b4174a> КПП </label></div><div class=\"input-bg col-9\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div><div class=\"col-6 d-flex\" data-v-87b4174a><div class=\"input-bg col-6\" data-v-87b4174a><input class=\"form-control\" type=\"text\" placeholder=\"номер телефона\" data-v-87b4174a></div><div class=\"input-bg col-6\" data-v-87b4174a><input class=\"form-control\" type=\"text\" placeholder=\"адрес эл.почты\" data-v-87b4174a></div></div></div></div></div><div class=\"row\" data-v-87b4174a><div class=\"recipient-address\" data-v-87b4174a><div class=\"row my-2\" data-v-87b4174a><div class=\"d-flex recipient-contacts\" data-v-87b4174a><div class=\"col-1 d-flex\" data-v-87b4174a><p class=\"point-name\" data-v-87b4174a>Адрес:</p></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"address-block\" data-v-87b4174a><div class=\"row my-2\" data-v-87b4174a><div class=\"col-1\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"язык\" data-v-87b4174a></div></div><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"страна\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"почтовый индекс\" data-v-87b4174a></div></div><div class=\"col-5\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"область (регион, штат, провинция)\" data-v-87b4174a></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"col-5\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"район\" data-v-87b4174a></div></div><div class=\"col-3\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"город\" data-v-87b4174a></div></div><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"населённый пункт\" data-v-87b4174a></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"улица\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"дом, корпус, строение\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"офис/квартира\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"номер а/я\" data-v-87b4174a></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"col-12\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"набор элементов адреса, представленных в свободной форме в виде текста\" data-v-87b4174a></div></div></div></div></div></div></div><div class=\"row\" data-v-87b4174a><div class=\"personal-inf-block\" data-v-87b4174a><p data-v-87b4174a>Документ, удостоверяющий личность</p><div class=\"row my-2\" data-v-87b4174a><div class=\"row personal-data my-2\" data-v-87b4174a><div class=\"col-1\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"стр\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"код вида \" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"краткое наименование\" data-v-87b4174a></div></div><div class=\"col-5 d-flex\" data-v-87b4174a><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"серия\" data-v-87b4174a></div><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"номер\" data-v-87b4174a></div><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"дата выдачи\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"Код подразделения\" data-v-87b4174a></div></div></div><div class=\"row\" data-v-87b4174a><div class=\"col-8\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"наименование организации, выдавшей документ\" data-v-87b4174a></div></div></div></div></div></div></div></div></div></div>", 1);
-const _hoisted_17 = /*#__PURE__*/createStaticVNode("<div class=\"recipient-personal-inf\" data-v-87b4174a><div class=\"row\" data-v-87b4174a><button class=\"btn invoice-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsedBatchRecipient\" aria-expanded=\"false\" aria-controls=\"collapsedBatchRecipient\" data-v-87b4174a><div class=\"collapsing-block d-flex justify-content-between\" data-v-87b4174a><span data-v-87b4174a>Получатель по индивидуальной накладной</span><i class=\"fa-solid fa-caret-up\" data-v-87b4174a></i></div></button><div class=\"collapse\" id=\"collapsedBatchRecipient\" data-v-87b4174a><div class=\"card card-body\" data-v-87b4174a><div class=\"row\" data-v-87b4174a><div class=\"recipient-name\" data-v-87b4174a><form class=\"row form my-2\" data-v-87b4174a><div class=\"col-8\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"\" data-v-87b4174a></div></div><div class=\"col-1\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-1\" data-v-87b4174a></div><div class=\"col-2 d-flex\" data-v-87b4174a><div class=\"input-bg col-2\" data-v-87b4174a><input type=\"checkbox\" class=\"form-check-input\" data-v-87b4174a></div><div class=\"label-block col-10\" data-v-87b4174a><label for=\"\" data-v-87b4174a> Декларант (заявитель) </label></div></div></form><div class=\"row my-2\" data-v-87b4174a><div class=\"col-6 d-flex justify-content-between\" data-v-87b4174a><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"label-block col-3 ps-1\" data-v-87b4174a><label for=\"\" data-v-87b4174a> ОГРН </label></div><div class=\"input-bg col-9\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"label-block col-3 ps-3\" data-v-87b4174a><label for=\"\" data-v-87b4174a> ИНН </label></div><div class=\"input-bg col-9\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div><div class=\"col-4 d-flex\" data-v-87b4174a><div class=\"label-block col-3 ps-3\" data-v-87b4174a><label for=\"\" data-v-87b4174a> КПП </label></div><div class=\"input-bg col-9\" data-v-87b4174a><input type=\"text\" class=\"form-control\" data-v-87b4174a></div></div></div><div class=\"col-6 d-flex\" data-v-87b4174a><div class=\"input-bg col-6\" data-v-87b4174a><input class=\"form-control\" type=\"text\" placeholder=\"номер телефона\" data-v-87b4174a></div><div class=\"input-bg col-6\" data-v-87b4174a><input class=\"form-control\" type=\"text\" placeholder=\"адрес эл.почты\" data-v-87b4174a></div></div></div></div></div><div class=\"row\" data-v-87b4174a><div class=\"recipient-address\" data-v-87b4174a><div class=\"row my-2\" data-v-87b4174a><div class=\"d-flex recipient-contacts\" data-v-87b4174a><div class=\"col-1 d-flex\" data-v-87b4174a><p class=\"point-name\" data-v-87b4174a>Адрес:</p></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"address-block\" data-v-87b4174a><div class=\"row my-2\" data-v-87b4174a><div class=\"col-1\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"язык\" data-v-87b4174a></div></div><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"страна\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"почтовый индекс\" data-v-87b4174a></div></div><div class=\"col-5\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"область (регион, штат, провинция)\" data-v-87b4174a></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"col-5\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"район\" data-v-87b4174a></div></div><div class=\"col-3\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"город\" data-v-87b4174a></div></div><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"населённый пункт\" data-v-87b4174a></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"col-4\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"улица\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"дом, корпус, строение\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"офис/квартира\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"номер а/я\" data-v-87b4174a></div></div></div><div class=\"row my-2\" data-v-87b4174a><div class=\"col-12\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"набор элементов адреса, представленных в свободной форме в виде текста\" data-v-87b4174a></div></div></div></div></div></div></div><div class=\"row\" data-v-87b4174a><div class=\"personal-inf-block\" data-v-87b4174a><p data-v-87b4174a>Документ, удостоверяющий личность</p><div class=\"row my-2\" data-v-87b4174a><div class=\"row personal-data my-2\" data-v-87b4174a><div class=\"col-1\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"стр\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"код вида \" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"краткое наименование\" data-v-87b4174a></div></div><div class=\"col-5 d-flex\" data-v-87b4174a><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"серия\" data-v-87b4174a></div><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"номер\" data-v-87b4174a></div><div class=\"input-bg col-4\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"дата выдачи\" data-v-87b4174a></div></div><div class=\"col-2\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"Код подразделения\" data-v-87b4174a></div></div></div><div class=\"row\" data-v-87b4174a><div class=\"col-8\" data-v-87b4174a><div class=\"input-bg\" data-v-87b4174a><input type=\"text\" class=\"form-control\" placeholder=\"наименование организации, выдавшей документ\" data-v-87b4174a></div></div></div></div></div></div></div></div></div></div>", 1);
+const _hoisted_5$2 = { class: "row" };
+const _hoisted_6$2 = { class: "col-9" };
+const _hoisted_7$2 = { action: "" };
+const _hoisted_8$2 = { class: "d-flex" };
+const _hoisted_9$2 = { class: "col-3 d-flex" };
+const _hoisted_10$2 = /*#__PURE__*/createElementVNode("div", { class: "col-6 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Общая накладная")
+], -1 /* HOISTED */);
+const _hoisted_11$2 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_12$2 = { class: "input-bg col-5" };
+const _hoisted_13$2 = { class: "col-4" };
+const _hoisted_14$2 = { class: "input-bg" };
+const _hoisted_15$2 = { class: "col-3" };
+const _hoisted_16$2 = { class: "input-bg" };
+const _hoisted_17$2 = { class: "col-2" };
+const _hoisted_18$2 = { class: "input-bg" };
+const _hoisted_19$2 = { class: "d-flex my-2" };
+const _hoisted_20$2 = { class: "col-3 d-flex" };
+const _hoisted_21$2 = /*#__PURE__*/createElementVNode("div", { class: "col-6 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Инд. накладная")
+], -1 /* HOISTED */);
+const _hoisted_22$2 = { class: "col-2" };
+const _hoisted_23$2 = { class: "input-bg" };
+const _hoisted_24$2 = { class: "input-bg col-4" };
+const _hoisted_25$2 = { class: "col-4" };
+const _hoisted_26$2 = { class: "input-bg" };
+const _hoisted_27$2 = { class: "col-3" };
+const _hoisted_28$2 = { class: "input-bg" };
+const _hoisted_29$2 = { class: "col-2" };
+const _hoisted_30$2 = { class: "input-bg" };
+const _hoisted_31$2 = { class: "row my-3" };
+const _hoisted_32$2 = { class: "col-4" };
+const _hoisted_33$2 = /*#__PURE__*/createElementVNode("h5", { class: "align-bcntr my-1" }, "Общий вес брутто", -1 /* HOISTED */);
+const _hoisted_34$2 = { class: "d-flex" };
+const _hoisted_35$2 = { class: "col-6" };
+const _hoisted_36$2 = { class: "input-bg" };
+const _hoisted_37$2 = { class: "col-6 d-flex" };
+const _hoisted_38$2 = { class: "col-7" };
+const _hoisted_39$2 = { class: "input-bg" };
+const _hoisted_40$2 = { class: "col-5" };
+const _hoisted_41$2 = { class: "input-bg" };
+const _hoisted_42$2 = { class: "col-4" };
+const _hoisted_43$2 = /*#__PURE__*/createElementVNode("h5", { class: "align-bcntr my-1" }, "Общая таможенная стоимость", -1 /* HOISTED */);
+const _hoisted_44$2 = { class: "d-flex" };
+const _hoisted_45$2 = { class: "col-8" };
+const _hoisted_46$2 = { class: "input-bg" };
+const _hoisted_47$2 = { class: "col-4 d-flex" };
+const _hoisted_48$2 = /*#__PURE__*/createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
+const _hoisted_49$2 = { class: "col-10" };
+const _hoisted_50$2 = { class: "input-bg" };
+const _hoisted_51$2 = { class: "col-4" };
+const _hoisted_52$2 = /*#__PURE__*/createElementVNode("h5", { class: "align-bcntr my-1 fs-12" }, " Общая стоимость по инд. накладной ", -1 /* HOISTED */);
+const _hoisted_53$2 = { class: "d-flex" };
+const _hoisted_54$2 = { class: "col-9" };
+const _hoisted_55$2 = { class: "input-bg" };
+const _hoisted_56$2 = { class: "col-3 d-flex" };
+const _hoisted_57$2 = { class: "col-12" };
+const _hoisted_58$2 = { class: "input-bg" };
+const _hoisted_59$2 = { class: "row align-items-end" };
+const _hoisted_60$2 = { class: "col-8 d-flex" };
+const _hoisted_61$2 = /*#__PURE__*/createElementVNode("div", { class: "col-3 d-flex align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Интернет-магазин")
+], -1 /* HOISTED */);
+const _hoisted_62$2 = { class: "col-7" };
+const _hoisted_63$2 = { class: "input-bg" };
+const _hoisted_64$2 = { class: "col-2 d-flex" };
+const _hoisted_65$2 = { class: "col-7 d-flex" };
+const _hoisted_66$2 = { class: "input-bg" };
+const _hoisted_67$2 = /*#__PURE__*/createElementVNode("div", { class: "col-5" }, [
+  /*#__PURE__*/createElementVNode("button", { class: "btn new-window-button" }, [
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-pager" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_68$2 = { class: "col-4" };
+const _hoisted_69$2 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Номер мешка/места", -1 /* HOISTED */);
+const _hoisted_70$2 = { class: "input-bg" };
+const _hoisted_71$2 = { class: "col-3" };
+const _hoisted_72$2 = { class: "batch-info-anchors" };
+const _hoisted_73$2 = /*#__PURE__*/createTextVNode(" Сведения о товарах в накладной ");
+const _hoisted_74$2 = /*#__PURE__*/createTextVNode(" Сведения о там.сборе накладной ");
+const _hoisted_75$2 = /*#__PURE__*/createTextVNode(" Суммы пошлин и налогов накладной ");
+const _hoisted_76$2 = /*#__PURE__*/createTextVNode(" Исчисление там.пошлин, налогов ");
+const _hoisted_77$2 = { class: "inf-block changing-code row" };
+const _hoisted_78$2 = /*#__PURE__*/createElementVNode("div", {
+  class: "label-block",
+  style: {"width":"100%"}
+}, [
+  /*#__PURE__*/createElementVNode("label", { class: "fs-5" }, "Код изменений")
+], -1 /* HOISTED */);
+const _hoisted_79$2 = { class: "col-10 d-flex" };
+const _hoisted_80$2 = { class: "col input-bg" };
+const _hoisted_81$2 = { class: "col input-bg" };
+const _hoisted_82$2 = { class: "col input-bg" };
+const _hoisted_83$2 = { class: "col input-bg" };
+const _hoisted_84$2 = { class: "col input-bg" };
+const _hoisted_85$2 = { class: "col input-bg" };
+const _hoisted_86$2 = { class: "col input-bg" };
+const _hoisted_87$1 = /*#__PURE__*/createElementVNode("button", { class: "btn info-button p-1" }, [
+  /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-circle-info" })
+], -1 /* HOISTED */);
+const _hoisted_88$1 = /*#__PURE__*/createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
+const _hoisted_89$1 = /*#__PURE__*/createTextVNode(" Открыть исходную Инд. накладную ");
+const _hoisted_90$1 = { class: "row" };
+const _hoisted_91$1 = { class: "my-2" };
+const _hoisted_92$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Решение по инд. накладной", -1 /* HOISTED */);
+const _hoisted_93$1 = { class: "d-flex" };
+const _hoisted_94$1 = { class: "col-9" };
+const _hoisted_95$1 = { class: "input-bg" };
+const _hoisted_96$1 = { class: "col-3" };
+const _hoisted_97$1 = { class: "input-bg" };
+const _hoisted_98$1 = { class: "d-flex" };
+const _hoisted_99$1 = { class: "col-7" };
+const _hoisted_100$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr fs-5" }, "Причина отказа", -1 /* HOISTED */);
+const _hoisted_101$1 = { class: "input-bg" };
+const _hoisted_102$1 = { class: "col-5" };
+const _hoisted_103$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr fs-5" }, "Уникальный идентификатор партии", -1 /* HOISTED */);
+const _hoisted_104$1 = { class: "col input-bg" };
+const _hoisted_105$1 = { class: "sender-personal-inf mt-4" };
+const _hoisted_106$1 = { class: "row" };
+const _hoisted_107 = /*#__PURE__*/createElementVNode("button", {
+  class: "btn invoice-button collapsed",
+  type: "button",
+  "data-bs-toggle": "collapse",
+  "data-bs-target": "#collapsedBatchSender",
+  "aria-expanded": "false",
+  "aria-controls": "collapsedBatchSender"
+}, [
+  /*#__PURE__*/createElementVNode("div", { class: "collapsing-block d-flex justify-content-between" }, [
+    /*#__PURE__*/createElementVNode("span", null, "Отправитель по индивидуальной накладной"),
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-caret-up" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_108 = {
+  class: "collapse",
+  id: "collapsedBatchSender"
+};
+const _hoisted_109 = { class: "card card-body" };
+const _hoisted_110 = { class: "row" };
+const _hoisted_111 = { class: "recipient-name" };
+const _hoisted_112 = { class: "row form my-2" };
+const _hoisted_113 = { class: "col-8" };
+const _hoisted_114 = { class: "input-bg" };
+const _hoisted_115 = { class: "col-1" };
+const _hoisted_116 = { class: "input-bg" };
+const _hoisted_117 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_118 = { class: "col-2 d-flex" };
+const _hoisted_119 = { class: "input-bg col-2" };
+const _hoisted_120 = ["checked"];
+const _hoisted_121 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-10" }, [
+  /*#__PURE__*/createElementVNode("label", null, " Декларант (заявитель) ")
+], -1 /* HOISTED */);
+const _hoisted_122 = { class: "row my-2" };
+const _hoisted_123 = { class: "col-6 d-flex justify-content-between" };
+const _hoisted_124 = { class: "col-4 d-flex" };
+const _hoisted_125 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3 ps-1" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ОГРН ")
+], -1 /* HOISTED */);
+const _hoisted_126 = { class: "input-bg col-9" };
+const _hoisted_127 = { class: "col-4 d-flex" };
+const _hoisted_128 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ИНН ")
+], -1 /* HOISTED */);
+const _hoisted_129 = { class: "input-bg col-9" };
+const _hoisted_130 = { class: "col-4 d-flex" };
+const _hoisted_131 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+  /*#__PURE__*/createElementVNode("label", null, " КПП ")
+], -1 /* HOISTED */);
+const _hoisted_132 = { class: "input-bg col-9" };
+const _hoisted_133 = { class: "col-6 d-flex" };
+const _hoisted_134 = { class: "input-bg col-6" };
+const _hoisted_135 = { class: "input-bg col-6" };
+const _hoisted_136 = { class: "row" };
+const _hoisted_137 = { class: "recipient-address" };
+const _hoisted_138 = /*#__PURE__*/createElementVNode("div", { class: "row my-2" }, [
+  /*#__PURE__*/createElementVNode("div", { class: "d-flex recipient-contacts" }, [
+    /*#__PURE__*/createElementVNode("div", { class: "col-1 d-flex" }, [
+      /*#__PURE__*/createElementVNode("p", { class: "point-name" }, "Адрес:")
+    ])
+  ])
+], -1 /* HOISTED */);
+const _hoisted_139 = { class: "row my-2" };
+const _hoisted_140 = { class: "address-block" };
+const _hoisted_141 = { class: "row my-2" };
+const _hoisted_142 = { class: "col-1" };
+const _hoisted_143 = { class: "input-bg" };
+const _hoisted_144 = { class: "col-4" };
+const _hoisted_145 = { class: "input-bg" };
+const _hoisted_146 = { class: "col-2" };
+const _hoisted_147 = { class: "input-bg" };
+const _hoisted_148 = { class: "col-5" };
+const _hoisted_149 = { class: "input-bg" };
+const _hoisted_150 = { class: "row my-2" };
+const _hoisted_151 = { class: "col-5" };
+const _hoisted_152 = { class: "input-bg" };
+const _hoisted_153 = { class: "col-3" };
+const _hoisted_154 = { class: "input-bg" };
+const _hoisted_155 = { class: "col-4" };
+const _hoisted_156 = { class: "input-bg" };
+const _hoisted_157 = { class: "row my-2" };
+const _hoisted_158 = { class: "col-4" };
+const _hoisted_159 = { class: "input-bg" };
+const _hoisted_160 = { class: "col-2" };
+const _hoisted_161 = { class: "input-bg" };
+const _hoisted_162 = { class: "col-2" };
+const _hoisted_163 = { class: "input-bg" };
+const _hoisted_164 = { class: "col-2" };
+const _hoisted_165 = { class: "input-bg" };
+const _hoisted_166 = { class: "row my-2" };
+const _hoisted_167 = { class: "col-12" };
+const _hoisted_168 = { class: "input-bg" };
+const _hoisted_169 = { class: "row" };
+const _hoisted_170 = { class: "personal-inf-block" };
+const _hoisted_171 = /*#__PURE__*/createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
+const _hoisted_172 = { class: "row my-2" };
+const _hoisted_173 = { class: "row personal-data my-2" };
+const _hoisted_174 = { class: "col-1" };
+const _hoisted_175 = { class: "input-bg" };
+const _hoisted_176 = { class: "col-2" };
+const _hoisted_177 = { class: "input-bg" };
+const _hoisted_178 = { class: "col-2" };
+const _hoisted_179 = { class: "input-bg" };
+const _hoisted_180 = { class: "col-5 d-flex" };
+const _hoisted_181 = { class: "input-bg col-4" };
+const _hoisted_182 = { class: "input-bg col-4" };
+const _hoisted_183 = { class: "input-bg col-4" };
+const _hoisted_184 = { class: "col-2" };
+const _hoisted_185 = { class: "input-bg" };
+const _hoisted_186 = { class: "row" };
+const _hoisted_187 = { class: "col-8" };
+const _hoisted_188 = { class: "input-bg" };
+const _hoisted_189 = { class: "recipient-personal-inf" };
+const _hoisted_190 = { class: "row" };
+const _hoisted_191 = /*#__PURE__*/createElementVNode("button", {
+  class: "btn invoice-button collapsed",
+  type: "button",
+  "data-bs-toggle": "collapse",
+  "data-bs-target": "#collapsedBatchRecipient",
+  "aria-expanded": "false",
+  "aria-controls": "collapsedBatchRecipient"
+}, [
+  /*#__PURE__*/createElementVNode("div", { class: "collapsing-block d-flex justify-content-between" }, [
+    /*#__PURE__*/createElementVNode("span", null, "Получатель по индивидуальной накладной"),
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-caret-up" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_192 = {
+  class: "collapse",
+  id: "collapsedBatchRecipient"
+};
+const _hoisted_193 = { class: "card card-body" };
+const _hoisted_194 = { class: "row" };
+const _hoisted_195 = { class: "recipient-name" };
+const _hoisted_196 = { class: "row form my-2" };
+const _hoisted_197 = { class: "col-8" };
+const _hoisted_198 = { class: "input-bg" };
+const _hoisted_199 = { class: "col-1" };
+const _hoisted_200 = { class: "input-bg" };
+const _hoisted_201 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_202 = { class: "col-2 d-flex" };
+const _hoisted_203 = { class: "input-bg col-2" };
+const _hoisted_204 = ["checked"];
+const _hoisted_205 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-10" }, [
+  /*#__PURE__*/createElementVNode("label", null, " Декларант (заявитель) ")
+], -1 /* HOISTED */);
+const _hoisted_206 = { class: "row my-2" };
+const _hoisted_207 = { class: "col-6 d-flex justify-content-between" };
+const _hoisted_208 = { class: "col-4 d-flex" };
+const _hoisted_209 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3 ps-1" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ОГРН ")
+], -1 /* HOISTED */);
+const _hoisted_210 = { class: "input-bg col-9" };
+const _hoisted_211 = { class: "col-4 d-flex" };
+const _hoisted_212 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+  /*#__PURE__*/createElementVNode("label", null, " ИНН ")
+], -1 /* HOISTED */);
+const _hoisted_213 = { class: "input-bg col-9" };
+const _hoisted_214 = { class: "col-4 d-flex" };
+const _hoisted_215 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+  /*#__PURE__*/createElementVNode("label", null, " КПП ")
+], -1 /* HOISTED */);
+const _hoisted_216 = { class: "input-bg col-9" };
+const _hoisted_217 = { class: "col-6 d-flex" };
+const _hoisted_218 = { class: "input-bg col-6" };
+const _hoisted_219 = { class: "input-bg col-6" };
+const _hoisted_220 = { class: "row" };
+const _hoisted_221 = { class: "recipient-address" };
+const _hoisted_222 = /*#__PURE__*/createElementVNode("div", { class: "row my-2" }, [
+  /*#__PURE__*/createElementVNode("div", { class: "d-flex recipient-contacts" }, [
+    /*#__PURE__*/createElementVNode("div", { class: "col-1 d-flex" }, [
+      /*#__PURE__*/createElementVNode("p", { class: "point-name" }, "Адрес:")
+    ])
+  ])
+], -1 /* HOISTED */);
+const _hoisted_223 = { class: "row my-2" };
+const _hoisted_224 = { class: "address-block" };
+const _hoisted_225 = { class: "row my-2" };
+const _hoisted_226 = { class: "col-1" };
+const _hoisted_227 = { class: "input-bg" };
+const _hoisted_228 = { class: "col-4" };
+const _hoisted_229 = { class: "input-bg" };
+const _hoisted_230 = { class: "col-2" };
+const _hoisted_231 = { class: "input-bg" };
+const _hoisted_232 = { class: "col-5" };
+const _hoisted_233 = { class: "input-bg" };
+const _hoisted_234 = { class: "row my-2" };
+const _hoisted_235 = { class: "col-5" };
+const _hoisted_236 = { class: "input-bg" };
+const _hoisted_237 = { class: "col-3" };
+const _hoisted_238 = { class: "input-bg" };
+const _hoisted_239 = { class: "col-4" };
+const _hoisted_240 = { class: "input-bg" };
+const _hoisted_241 = { class: "row my-2" };
+const _hoisted_242 = { class: "col-4" };
+const _hoisted_243 = { class: "input-bg" };
+const _hoisted_244 = { class: "col-2" };
+const _hoisted_245 = { class: "input-bg" };
+const _hoisted_246 = { class: "col-2" };
+const _hoisted_247 = { class: "input-bg" };
+const _hoisted_248 = { class: "col-2" };
+const _hoisted_249 = { class: "input-bg" };
+const _hoisted_250 = { class: "row my-2" };
+const _hoisted_251 = { class: "col-12" };
+const _hoisted_252 = { class: "input-bg" };
+const _hoisted_253 = { class: "row" };
+const _hoisted_254 = { class: "personal-inf-block" };
+const _hoisted_255 = /*#__PURE__*/createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
+const _hoisted_256 = { class: "row my-2" };
+const _hoisted_257 = { class: "row personal-data my-2" };
+const _hoisted_258 = { class: "col-1" };
+const _hoisted_259 = { class: "input-bg" };
+const _hoisted_260 = { class: "col-2" };
+const _hoisted_261 = { class: "input-bg" };
+const _hoisted_262 = { class: "col-2" };
+const _hoisted_263 = { class: "input-bg" };
+const _hoisted_264 = { class: "col-5 d-flex" };
+const _hoisted_265 = { class: "input-bg col-4" };
+const _hoisted_266 = { class: "input-bg col-4" };
+const _hoisted_267 = { class: "input-bg col-4" };
+const _hoisted_268 = { class: "col-2" };
+const _hoisted_269 = { class: "input-bg" };
+const _hoisted_270 = { class: "row" };
+const _hoisted_271 = { class: "col-8" };
+const _hoisted_272 = { class: "input-bg" };
 
-function render$2(_ctx, _cache, $props, $setup, $data, $options) {
+function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = resolveComponent("router-link");
+  const _component_tsoft_good_information_form = resolveComponent("tsoft-good-information-form");
 
-  return (openBlock(), createElementBlock("div", _hoisted_1$2, [
-    createCommentVNode("Region элемент хэдера блока с кнопками"),
-    _hoisted_2$2,
-    createCommentVNode("endregion"),
-    createCommentVNode("Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе"),
-    createElementVNode("div", _hoisted_3$1, [
-      createCommentVNode("Region элемент с общей информацией о партии"),
-      createElementVNode("div", _hoisted_4$2, [
-        createElementVNode("div", _hoisted_5, [
-          _hoisted_6$1,
-          createElementVNode("div", _hoisted_7$1, [
-            createElementVNode("div", _hoisted_8$1, [
-              createVNode(_component_router_link, {
-                to: { name: 'index' },
-                id: "productsInfoLink"
-              }, {
-                default: withCtx(() => [
-                  _hoisted_9$1
+  return (openBlock(), createElementBlock(Fragment, null, [
+    createElementVNode("div", _hoisted_1$3, [
+      createCommentVNode("Region элемент хэдера блока с кнопками"),
+      _hoisted_2$2,
+      createCommentVNode("endregion"),
+      createCommentVNode("Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе"),
+      createElementVNode("div", _hoisted_3$2, [
+        createCommentVNode("Region элемент с общей информацией о партии"),
+        createElementVNode("div", _hoisted_4$2, [
+          createElementVNode("div", _hoisted_5$2, [
+            createElementVNode("div", _hoisted_6$2, [
+              createElementVNode("form", _hoisted_7$2, [
+                createElementVNode("div", _hoisted_8$2, [
+                  createElementVNode("div", _hoisted_9$2, [
+                    _hoisted_10$2,
+                    _hoisted_11$2,
+                    createElementVNode("div", _hoisted_12$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (($props.order.general.document.code) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.general.document.code]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_13$2, [
+                    createElementVNode("div", _hoisted_14$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.order.general.document.type) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.general.document.type]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_15$2, [
+                    createElementVNode("div", _hoisted_16$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.order.general.document.num) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.general.document.num]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_17$2, [
+                    createElementVNode("div", _hoisted_18$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.order.general.document.date) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.general.document.date]
+                      ])
+                    ])
+                  ])
                 ]),
-                _: 1 /* STABLE */
-              }),
-              createVNode(_component_router_link, { to: { name: 'index' } }, {
-                default: withCtx(() => [
-                  _hoisted_10$1
+                createElementVNode("div", _hoisted_19$2, [
+                  createElementVNode("div", _hoisted_20$2, [
+                    _hoisted_21$2,
+                    createElementVNode("div", _hoisted_22$2, [
+                      createElementVNode("div", _hoisted_23$2, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.order.personal.document.count) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, $props.order.personal.document.count]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_24$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.order.personal.document.code) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.personal.document.code]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_25$2, [
+                    createElementVNode("div", _hoisted_26$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.order.personal.document.type) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.personal.document.type]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_27$2, [
+                    createElementVNode("div", _hoisted_28$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.order.personal.document.num) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.personal.document.num]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_29$2, [
+                    createElementVNode("div", _hoisted_30$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.order.personal.document.date) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.personal.document.date]
+                      ])
+                    ])
+                  ])
                 ]),
-                _: 1 /* STABLE */
-              }),
-              createVNode(_component_router_link, { to: { name: 'index' } }, {
-                default: withCtx(() => [
-                  _hoisted_11$1
+                createElementVNode("div", _hoisted_31$2, [
+                  createElementVNode("div", _hoisted_32$2, [
+                    _hoisted_33$2,
+                    createElementVNode("div", _hoisted_34$2, [
+                      createElementVNode("div", _hoisted_35$2, [
+                        createElementVNode("div", _hoisted_36$2, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.order.general.grossWeight) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.general.grossWeight]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_37$2, [
+                        createElementVNode("div", _hoisted_38$2, [
+                          createElementVNode("div", _hoisted_39$2, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.order.general.grossWeightUnit) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.general.grossWeightUnit]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_40$2, [
+                          createElementVNode("div", _hoisted_41$2, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.order.general.grossWeightUnknown) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.general.grossWeightUnknown]
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_42$2, [
+                    _hoisted_43$2,
+                    createElementVNode("div", _hoisted_44$2, [
+                      createElementVNode("div", _hoisted_45$2, [
+                        createElementVNode("div", _hoisted_46$2, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.order.general.customCost) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.general.customCost]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_47$2, [
+                        _hoisted_48$2,
+                        createElementVNode("div", _hoisted_49$2, [
+                          createElementVNode("div", _hoisted_50$2, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.order.general.customCostCurrency) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.general.customCostCurrency]
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_51$2, [
+                    _hoisted_52$2,
+                    createElementVNode("div", _hoisted_53$2, [
+                      createElementVNode("div", _hoisted_54$2, [
+                        createElementVNode("div", _hoisted_55$2, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.order.general.customCost) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.general.customCost]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_56$2, [
+                        createElementVNode("div", _hoisted_57$2, [
+                          createElementVNode("div", _hoisted_58$2, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.order.general.customCostCurrency) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.general.customCostCurrency]
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
                 ]),
-                _: 1 /* STABLE */
-              }),
-              createVNode(_component_router_link, { to: { name: 'index' } }, {
-                default: withCtx(() => [
-                  _hoisted_12$1
+                createElementVNode("div", _hoisted_59$2, [
+                  createElementVNode("div", _hoisted_60$2, [
+                    _hoisted_61$2,
+                    createElementVNode("div", _hoisted_62$2, [
+                      createElementVNode("div", _hoisted_63$2, [
+                        withDirectives(createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.order.internetMarketUrl) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, $props.order.internetMarketUrl]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_64$2, [
+                      createElementVNode("div", _hoisted_65$2, [
+                        createElementVNode("div", _hoisted_66$2, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.order.internetMarketUnknown) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.internetMarketUnknown]
+                          ])
+                        ])
+                      ]),
+                      _hoisted_67$2
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_68$2, [
+                    _hoisted_69$2,
+                    createElementVNode("div", _hoisted_70$2, [
+                      withDirectives(createElementVNode("input", {
+                        type: "text",
+                        class: "form-control",
+                        "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.order.placeNum) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.placeNum]
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_71$2, [
+              createElementVNode("div", _hoisted_72$2, [
+                createVNode(_component_router_link, {
+                  to: { name: 'index' },
+                  id: "productsInfoLink"
+                }, {
+                  default: withCtx(() => [
+                    _hoisted_73$2
+                  ]),
+                  _: 1 /* STABLE */
+                }),
+                createVNode(_component_router_link, { to: { name: 'index' } }, {
+                  default: withCtx(() => [
+                    _hoisted_74$2
+                  ]),
+                  _: 1 /* STABLE */
+                }),
+                createVNode(_component_router_link, { to: { name: 'index' } }, {
+                  default: withCtx(() => [
+                    _hoisted_75$2
+                  ]),
+                  _: 1 /* STABLE */
+                }),
+                createVNode(_component_router_link, { to: { name: 'index' } }, {
+                  default: withCtx(() => [
+                    _hoisted_76$2
+                  ]),
+                  _: 1 /* STABLE */
+                }),
+                createElementVNode("div", _hoisted_77$2, [
+                  _hoisted_78$2,
+                  createElementVNode("div", _hoisted_79$2, [
+                    createElementVNode("div", _hoisted_80$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.order.changeDetailsType.stageChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.stageChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_81$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.order.changeDetailsType.reasonChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.reasonChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_82$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.order.changeDetailsType.quantityChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.quantityChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_83$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.order.changeDetailsType.TNVEDChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.TNVEDChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_84$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.order.changeDetailsType.customsCostChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.customsCostChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_85$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.order.changeDetailsType.customsPaymentChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.customsPaymentChangeCode]
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_86$2, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control number-code",
+                        type: "number",
+                        "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.order.changeDetailsType.otherChangeCode) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.order.changeDetailsType.otherChangeCode]
+                      ])
+                    ]),
+                    _hoisted_87$1
+                  ]),
+                  _hoisted_88$1
                 ]),
-                _: 1 /* STABLE */
-              }),
-              _hoisted_13$1,
-              createVNode(_component_router_link, {
-                to: { name: 'index' },
-                class: "my-4"
-              }, {
-                default: withCtx(() => [
-                  _hoisted_14$1
+                createVNode(_component_router_link, {
+                  to: { name: 'index' },
+                  class: "my-4"
+                }, {
+                  default: withCtx(() => [
+                    _hoisted_89$1
+                  ]),
+                  _: 1 /* STABLE */
+                })
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_90$1, [
+            createElementVNode("div", _hoisted_91$1, [
+              _hoisted_92$1,
+              createElementVNode("div", _hoisted_93$1, [
+                createElementVNode("div", _hoisted_94$1, [
+                  createElementVNode("div", _hoisted_95$1, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.order.personal.invoiceDecision) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.order.personal.invoiceDecision]
+                    ])
+                  ])
                 ]),
-                _: 1 /* STABLE */
-              })
+                createElementVNode("div", _hoisted_96$1, [
+                  createElementVNode("div", _hoisted_97$1, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => (($props.order.personal.invoiceDecisionUnknown) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.order.personal.invoiceDecisionUnknown]
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_98$1, [
+              createElementVNode("div", _hoisted_99$1, [
+                _hoisted_100$1,
+                createElementVNode("div", _hoisted_101$1, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => (($props.order.orderRejectReason) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.order.orderRejectReason]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_102$1, [
+                _hoisted_103$1,
+                createElementVNode("div", _hoisted_104$1, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => (($props.order.orderUniqueId) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.order.orderUniqueId]
+                  ])
+                ])
+              ])
             ])
           ])
         ]),
-        _hoisted_15
-      ]),
-      createCommentVNode("endregion"),
-      createCommentVNode("Region элемент с индивидуальной информацией об отправителе"),
-      _hoisted_16,
-      createCommentVNode("endregion"),
-      createCommentVNode("Region элемент с индивидуальной информацией о получателе"),
-      _hoisted_17
-    ])
-  ]))
+        createCommentVNode("endregion"),
+        createCommentVNode("Region элемент с индивидуальной информацией об отправителе"),
+        createElementVNode("div", _hoisted_105$1, [
+          createElementVNode("div", _hoisted_106$1, [
+            _hoisted_107,
+            createElementVNode("div", _hoisted_108, [
+              createElementVNode("div", _hoisted_109, [
+                createElementVNode("div", _hoisted_110, [
+                  createElementVNode("div", _hoisted_111, [
+                    createElementVNode("form", _hoisted_112, [
+                      createElementVNode("div", _hoisted_113, [
+                        createElementVNode("div", _hoisted_114, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "",
+                            "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => (($props.order.consignor.fullName) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignor.fullName]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_115, [
+                        createElementVNode("div", _hoisted_116, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => (($props.order.consignor.countryCode) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignor.countryCode]
+                          ])
+                        ])
+                      ]),
+                      _hoisted_117,
+                      createElementVNode("div", _hoisted_118, [
+                        createElementVNode("div", _hoisted_119, [
+                          createElementVNode("input", {
+                            type: "checkbox",
+                            class: "form-check-input",
+                            checked: $props.order.consignor.isDeclarant
+                          }, null, 8 /* PROPS */, _hoisted_120)
+                        ]),
+                        _hoisted_121
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_122, [
+                      createElementVNode("div", _hoisted_123, [
+                        createElementVNode("div", _hoisted_124, [
+                          _hoisted_125,
+                          createElementVNode("div", _hoisted_126, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[32] || (_cache[32] = $event => (($props.order.consignor.OGRN) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.OGRN]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_127, [
+                          _hoisted_128,
+                          createElementVNode("div", _hoisted_129, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[33] || (_cache[33] = $event => (($props.order.consignor.INN) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.INN]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_130, [
+                          _hoisted_131,
+                          createElementVNode("div", _hoisted_132, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[34] || (_cache[34] = $event => (($props.order.consignor.KPP) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.KPP]
+                            ])
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_133, [
+                        createElementVNode("div", _hoisted_134, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            placeholder: "номер телефона",
+                            "onUpdate:modelValue": _cache[35] || (_cache[35] = $event => (($props.order.consignor.phone) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignor.phone]
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_135, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            placeholder: "адрес эл.почты",
+                            "onUpdate:modelValue": _cache[36] || (_cache[36] = $event => (($props.order.consignor.email) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignor.email]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_136, [
+                  createElementVNode("div", _hoisted_137, [
+                    _hoisted_138,
+                    createElementVNode("div", _hoisted_139, [
+                      createElementVNode("div", _hoisted_140, [
+                        createElementVNode("div", _hoisted_141, [
+                          createElementVNode("div", _hoisted_142, [
+                            createElementVNode("div", _hoisted_143, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "язык",
+                                "onUpdate:modelValue": _cache[37] || (_cache[37] = $event => (($props.order.consignor.language) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.language]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_144, [
+                            createElementVNode("div", _hoisted_145, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "страна",
+                                "onUpdate:modelValue": _cache[38] || (_cache[38] = $event => (($props.order.consignor.country) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.country]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_146, [
+                            createElementVNode("div", _hoisted_147, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "почтовый индекс",
+                                "onUpdate:modelValue": _cache[39] || (_cache[39] = $event => (($props.order.consignor.mailIndex) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.mailIndex]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_148, [
+                            createElementVNode("div", _hoisted_149, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "область (регион, штат, провинция)",
+                                "onUpdate:modelValue": _cache[40] || (_cache[40] = $event => (($props.order.consignor.region) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.region]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_150, [
+                          createElementVNode("div", _hoisted_151, [
+                            createElementVNode("div", _hoisted_152, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "район",
+                                "onUpdate:modelValue": _cache[41] || (_cache[41] = $event => (($props.order.consignor.area) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.area]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_153, [
+                            createElementVNode("div", _hoisted_154, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "город",
+                                "onUpdate:modelValue": _cache[42] || (_cache[42] = $event => (($props.order.consignor.city) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.city]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_155, [
+                            createElementVNode("div", _hoisted_156, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "населённый пункт",
+                                "onUpdate:modelValue": _cache[43] || (_cache[43] = $event => (($props.order.consignor.settlement) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.settlement]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_157, [
+                          createElementVNode("div", _hoisted_158, [
+                            createElementVNode("div", _hoisted_159, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "улица",
+                                "onUpdate:modelValue": _cache[44] || (_cache[44] = $event => (($props.order.consignor.address) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.address]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_160, [
+                            createElementVNode("div", _hoisted_161, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "дом, корпус, строение",
+                                "onUpdate:modelValue": _cache[45] || (_cache[45] = $event => (($props.order.consignor.house) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.house]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_162, [
+                            createElementVNode("div", _hoisted_163, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "офис/квартира",
+                                "onUpdate:modelValue": _cache[46] || (_cache[46] = $event => (($props.order.consignor.office) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.office]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_164, [
+                            createElementVNode("div", _hoisted_165, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "номер а/я",
+                                "onUpdate:modelValue": _cache[47] || (_cache[47] = $event => (($props.order.consignor.officeLetter) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.officeLetter]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_166, [
+                          createElementVNode("div", _hoisted_167, [
+                            createElementVNode("div", _hoisted_168, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
+                                "onUpdate:modelValue": _cache[48] || (_cache[48] = $event => (($props.order.consignor.fullAddress) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignor.fullAddress]
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_169, [
+                  createElementVNode("div", _hoisted_170, [
+                    _hoisted_171,
+                    createElementVNode("div", _hoisted_172, [
+                      createElementVNode("div", _hoisted_173, [
+                        createElementVNode("div", _hoisted_174, [
+                          createElementVNode("div", _hoisted_175, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "стр",
+                              "onUpdate:modelValue": _cache[49] || (_cache[49] = $event => (($props.order.consignor.document.country) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.country]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_176, [
+                          createElementVNode("div", _hoisted_177, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "код вида",
+                              "onUpdate:modelValue": _cache[50] || (_cache[50] = $event => (($props.order.consignor.document.code) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.code]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_178, [
+                          createElementVNode("div", _hoisted_179, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "краткое наименование",
+                              "onUpdate:modelValue": _cache[51] || (_cache[51] = $event => (($props.order.consignor.document.shortName) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.shortName]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_180, [
+                          createElementVNode("div", _hoisted_181, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "серия",
+                              "onUpdate:modelValue": _cache[52] || (_cache[52] = $event => (($props.order.consignor.document.series) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.series]
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_182, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "номер",
+                              "onUpdate:modelValue": _cache[53] || (_cache[53] = $event => (($props.order.consignor.document.num) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.num]
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_183, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "дата выдачи",
+                              "onUpdate:modelValue": _cache[54] || (_cache[54] = $event => (($props.order.consignor.document.dateRelease) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.dateRelease]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_184, [
+                          createElementVNode("div", _hoisted_185, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "Код подразделения",
+                              "onUpdate:modelValue": _cache[55] || (_cache[55] = $event => (($props.order.consignor.document.divisionCode) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.divisionCode]
+                            ])
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_186, [
+                        createElementVNode("div", _hoisted_187, [
+                          createElementVNode("div", _hoisted_188, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "наименование организации, выдавшей документ",
+                              "onUpdate:modelValue": _cache[56] || (_cache[56] = $event => (($props.order.consignor.document.issuedBy) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignor.document.issuedBy]
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        createCommentVNode("endregion"),
+        createCommentVNode("Region элемент с индивидуальной информацией о получателе"),
+        createElementVNode("div", _hoisted_189, [
+          createElementVNode("div", _hoisted_190, [
+            _hoisted_191,
+            createElementVNode("div", _hoisted_192, [
+              createElementVNode("div", _hoisted_193, [
+                createElementVNode("div", _hoisted_194, [
+                  createElementVNode("div", _hoisted_195, [
+                    createElementVNode("form", _hoisted_196, [
+                      createElementVNode("div", _hoisted_197, [
+                        createElementVNode("div", _hoisted_198, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            placeholder: "",
+                            "onUpdate:modelValue": _cache[57] || (_cache[57] = $event => (($props.order.consignee.fullName) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignee.fullName]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_199, [
+                        createElementVNode("div", _hoisted_200, [
+                          withDirectives(createElementVNode("input", {
+                            type: "text",
+                            class: "form-control",
+                            "onUpdate:modelValue": _cache[58] || (_cache[58] = $event => (($props.order.consignee.countryCode) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignee.countryCode]
+                          ])
+                        ])
+                      ]),
+                      _hoisted_201,
+                      createElementVNode("div", _hoisted_202, [
+                        createElementVNode("div", _hoisted_203, [
+                          createElementVNode("input", {
+                            type: "checkbox",
+                            class: "form-check-input",
+                            checked: $props.order.consignee.isDeclarant
+                          }, null, 8 /* PROPS */, _hoisted_204)
+                        ]),
+                        _hoisted_205
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_206, [
+                      createElementVNode("div", _hoisted_207, [
+                        createElementVNode("div", _hoisted_208, [
+                          _hoisted_209,
+                          createElementVNode("div", _hoisted_210, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[59] || (_cache[59] = $event => (($props.order.consignee.OGRN) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.OGRN]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_211, [
+                          _hoisted_212,
+                          createElementVNode("div", _hoisted_213, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[60] || (_cache[60] = $event => (($props.order.consignee.INN) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.INN]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_214, [
+                          _hoisted_215,
+                          createElementVNode("div", _hoisted_216, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[61] || (_cache[61] = $event => (($props.order.consignee.KPP) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.KPP]
+                            ])
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_217, [
+                        createElementVNode("div", _hoisted_218, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            placeholder: "номер телефона",
+                            "onUpdate:modelValue": _cache[62] || (_cache[62] = $event => (($props.order.consignee.phone) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignee.phone]
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_219, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            placeholder: "адрес эл.почты",
+                            "onUpdate:modelValue": _cache[63] || (_cache[63] = $event => (($props.order.consignee.email) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.order.consignee.email]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_220, [
+                  createElementVNode("div", _hoisted_221, [
+                    _hoisted_222,
+                    createElementVNode("div", _hoisted_223, [
+                      createElementVNode("div", _hoisted_224, [
+                        createElementVNode("div", _hoisted_225, [
+                          createElementVNode("div", _hoisted_226, [
+                            createElementVNode("div", _hoisted_227, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "язык",
+                                "onUpdate:modelValue": _cache[64] || (_cache[64] = $event => (($props.order.consignee.language) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.language]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_228, [
+                            createElementVNode("div", _hoisted_229, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "страна",
+                                "onUpdate:modelValue": _cache[65] || (_cache[65] = $event => (($props.order.consignee.country) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.country]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_230, [
+                            createElementVNode("div", _hoisted_231, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "почтовый индекс",
+                                "onUpdate:modelValue": _cache[66] || (_cache[66] = $event => (($props.order.consignee.mailIndex) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.mailIndex]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_232, [
+                            createElementVNode("div", _hoisted_233, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "область (регион, штат, провинция)",
+                                "onUpdate:modelValue": _cache[67] || (_cache[67] = $event => (($props.order.consignee.region) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.region]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_234, [
+                          createElementVNode("div", _hoisted_235, [
+                            createElementVNode("div", _hoisted_236, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "район",
+                                "onUpdate:modelValue": _cache[68] || (_cache[68] = $event => (($props.order.consignee.area) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.area]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_237, [
+                            createElementVNode("div", _hoisted_238, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "город",
+                                "onUpdate:modelValue": _cache[69] || (_cache[69] = $event => (($props.order.consignee.city) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.city]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_239, [
+                            createElementVNode("div", _hoisted_240, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "населённый пункт",
+                                "onUpdate:modelValue": _cache[70] || (_cache[70] = $event => (($props.order.consignee.settlement) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.settlement]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_241, [
+                          createElementVNode("div", _hoisted_242, [
+                            createElementVNode("div", _hoisted_243, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "улица",
+                                "onUpdate:modelValue": _cache[71] || (_cache[71] = $event => (($props.order.consignee.address) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.address]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_244, [
+                            createElementVNode("div", _hoisted_245, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "дом, корпус, строение",
+                                "onUpdate:modelValue": _cache[72] || (_cache[72] = $event => (($props.order.consignee.house) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.house]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_246, [
+                            createElementVNode("div", _hoisted_247, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "офис/квартира",
+                                "onUpdate:modelValue": _cache[73] || (_cache[73] = $event => (($props.order.consignee.office) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.office]
+                              ])
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_248, [
+                            createElementVNode("div", _hoisted_249, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "номер а/я",
+                                "onUpdate:modelValue": _cache[74] || (_cache[74] = $event => (($props.order.consignee.officeLetter) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.officeLetter]
+                              ])
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_250, [
+                          createElementVNode("div", _hoisted_251, [
+                            createElementVNode("div", _hoisted_252, [
+                              withDirectives(createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
+                                "onUpdate:modelValue": _cache[75] || (_cache[75] = $event => (($props.order.consignee.fullAddress) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vModelText, $props.order.consignee.fullAddress]
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_253, [
+                  createElementVNode("div", _hoisted_254, [
+                    _hoisted_255,
+                    createElementVNode("div", _hoisted_256, [
+                      createElementVNode("div", _hoisted_257, [
+                        createElementVNode("div", _hoisted_258, [
+                          createElementVNode("div", _hoisted_259, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "стр",
+                              "onUpdate:modelValue": _cache[76] || (_cache[76] = $event => (($props.order.consignee.document.country) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.country]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_260, [
+                          createElementVNode("div", _hoisted_261, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "код вида",
+                              "onUpdate:modelValue": _cache[77] || (_cache[77] = $event => (($props.order.consignee.document.code) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.code]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_262, [
+                          createElementVNode("div", _hoisted_263, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "краткое наименование",
+                              "onUpdate:modelValue": _cache[78] || (_cache[78] = $event => (($props.order.consignee.document.shortName) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.shortName]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_264, [
+                          createElementVNode("div", _hoisted_265, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "серия",
+                              "onUpdate:modelValue": _cache[79] || (_cache[79] = $event => (($props.order.consignee.document.series) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.series]
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_266, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "номер",
+                              "onUpdate:modelValue": _cache[80] || (_cache[80] = $event => (($props.order.consignee.document.num) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.num]
+                            ])
+                          ]),
+                          createElementVNode("div", _hoisted_267, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "дата выдачи",
+                              "onUpdate:modelValue": _cache[81] || (_cache[81] = $event => (($props.order.consignee.document.dateRelease) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.dateRelease]
+                            ])
+                          ])
+                        ]),
+                        createElementVNode("div", _hoisted_268, [
+                          createElementVNode("div", _hoisted_269, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "Код подразделения",
+                              "onUpdate:modelValue": _cache[82] || (_cache[82] = $event => (($props.order.consignee.document.divisionCode) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.divisionCode]
+                            ])
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_270, [
+                        createElementVNode("div", _hoisted_271, [
+                          createElementVNode("div", _hoisted_272, [
+                            withDirectives(createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "наименование организации, выдавшей документ",
+                              "onUpdate:modelValue": _cache[83] || (_cache[83] = $event => (($props.order.consignee.document.issuedBy) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vModelText, $props.order.consignee.document.issuedBy]
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]),
+    (openBlock(true), createElementBlock(Fragment, null, renderList($props.goods, (good, index) => {
+      return (openBlock(), createBlock(_component_tsoft_good_information_form, {
+        key: index,
+        good: good.goodInfo,
+        documents: good.documents
+      }, null, 8 /* PROPS */, ["good", "documents"]))
+    }), 128 /* KEYED_FRAGMENT */))
+  ], 64 /* STABLE_FRAGMENT */))
 }
 
-var css_248z$2 = "\nli a[data-v-87b4174a] {\n  color: black;\n  text-decoration: unset;\n  font-size: 14px;\n}\n.sidebar-prods.active[data-v-87b4174a] {\n  color: orange;\n  background-color: green;\n}\n/*Стили текстовых инпутов*/\n.form-control[data-v-87b4174a] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-87b4174a]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-87b4174a]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-87b4174a] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n*[data-v-87b4174a] {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n\n/*Region Стили блока декларации*/\n.declaration[data-v-87b4174a] {\n  background-color: #d1d1d1;\n  padding: 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\nh5[data-v-87b4174a] {\n  text-align: center;\n}\n.inf-block[data-v-87b4174a] {\n  margin-bottom: 10px;\n}\nlabel[data-v-87b4174a] {\n  margin-top: 7px;\n}\n.inputs-group > div[data-v-87b4174a] {\n  padding: unset;\n  min-width: 30px;\n  margin-right: 7px;\n}\n.form-check-input[data-v-87b4174a] {\n  min-width: 20px;\n  min-height: 20px;\n}\n.sheets-input[data-v-87b4174a] {\n  max-width: 70px;\n}\n.certificate-block div[data-v-87b4174a]:first-child {\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div[data-v-87b4174a] {\n  padding: 0;\n  margin-right: 6px;\n}\n\n/*Стили текстовых инпутов*/\n.form-control[data-v-87b4174a] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-87b4174a]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-87b4174a]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-87b4174a] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n\n/**/\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph[data-v-87b4174a] {\n  min-width: 250px;\n  max-width: 270px;\n  margin: 10px 0 auto 0;\n}\n\n/**/\n.changing-declaration .inf-block div[data-v-87b4174a] {\n  padding: unset;\n  margin-right: 5px;\n}\n.changing-code[data-v-87b4174a] {\n  margin-top: 10px;\n}\n\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code[data-v-87b4174a]::-webkit-outer-spin-button,\n.number-code[data-v-87b4174a]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n\n/**/\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form[data-v-87b4174a] {\n  padding: 0 10px 0 4px;\n}\n.batch-form div[data-v-87b4174a]:first-child {\n  padding-left: 0;\n}\n.batch-block[data-v-87b4174a] {\n  padding-left: 10px;\n}\n.batch-block div[data-v-87b4174a] {\n  padding: 0;\n}\n\n/**/\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information[data-v-87b4174a] {\n  width: fit-content;\n  color: gray;\n  text-decoration: underline;\n  font-size: 10px;\n}\n.payment-information[data-v-87b4174a]:hover {\n  cursor: pointer;\n}\n\n/**/\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button[data-v-87b4174a]:focus {\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i[data-v-87b4174a] {\n  transform: rotate(180deg);\n}\n.collapsing-block[data-v-87b4174a] {\n  background-color: white;\n  border: 1px solid black;\n  padding: 5px 10px;\n  font-weight: bold;\n}\n.collapsing-block span[data-v-87b4174a],\ni[data-v-87b4174a] {\n  font-size: 14px;\n}\n\n/**/\n.card-body[data-v-87b4174a] {\n  background-color: unset;\n  border: 1px solid black;\n}\n.point-name[data-v-87b4174a] {\n  width: fit-content;\n  margin: auto auto 0;\n  color: #3274dd;\n  text-decoration: underline;\n}\n.personal-data div[data-v-87b4174a] {\n  padding: 0 0 0 3px;\n}\n\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative[data-v-87b4174a] {\n  font-size: 11px;\n  font-weight: bold;\n  margin: 0 0 8px;\n}\n\n/**/\n/*Стили кнопки календаря*/\n.button-calendar[data-v-87b4174a] {\n  background-color: white;\n  border: unset;\n  border-radius: 8px;\n}\n.button-calendar[data-v-87b4174a]:focus {\n  box-shadow: unset;\n}\n\n/**/\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr[data-v-87b4174a] {\n  display: flex;\n  margin: 5px auto 0;\n}\n\n/*Стили блока информации о товарной партии*/\n.product-batch[data-v-87b4174a] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n\n/*Стиль синего хэдера с кнопками */\n.product-batch-header[data-v-87b4174a] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n.batch-button[data-v-87b4174a]:focus {\n  box-shadow: unset;\n}\n.batch-button i[data-v-87b4174a]:before {\n  color: white;\n}\n.batch-button:last-child i[data-v-87b4174a] {\n  transform: rotate(180deg);\n}\n/**/\n.product-inner-block[data-v-87b4174a] {\n  padding: 10px;\n}\n.fs-12[data-v-87b4174a] {\n  font-size: 12px;\n}\n\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button[data-v-87b4174a] {\n  background-color: white;\n  border-radius: 5px;\n}\n.new-window-button[data-v-87b4174a]:hover {\n  box-shadow: unset;\n}\n.new-window-button[data-v-87b4174a]:focus {\n  box-shadow: unset;\n}\n.new-window-button i[data-v-87b4174a] {\n  font-size: 15px;\n  color: #3274dd;\n}\n/**/\n\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link[data-v-87b4174a] {\n  display: block;\n  color: gray;\n  text-decoration: underline;\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link[data-v-87b4174a]:hover {\n  color: blue;\n  cursor: pointer;\n}\n/**/\n.product-info-block[data-v-87b4174a] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.product-info-actions button[data-v-87b4174a]:focus {\n  box-shadow: unset;\n}\n.product-info-actions i[data-v-87b4174a]:before {\n  color: white;\n}\n.product-info-actions .fa-sort-down[data-v-87b4174a]:before {\n  color: black;\n}\n.product-actions-button[data-v-87b4174a]:not(.collapsed) {\n  transform: rotate(180deg);\n}\n.btn-bg-white[data-v-87b4174a] {\n  background-color: white;\n  border-radius: 5px;\n}\n.btn-bg-white[data-v-87b4174a]:focus {\n  box-shadow: unset;\n}\n.fa-note-sticky[data-v-87b4174a] {\n  font-size: 16px;\n}\n\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block[data-v-87b4174a] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.optional-inf-header[data-v-87b4174a] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n";
-styleInject(css_248z$2);
+script$3.render = render$3;
+script$3.__file = "src/components/Form/GoodsAwbInformation.vue";
 
-script$2.render = render$2;
-script$2.__scopeId = "data-v-87b4174a";
-script$2.__file = "src/components/Form/GoodsAwbInformation.vue";
-
-var script$1 = {
+var script$2 = {
   name: "TsoftAdditionalDocumentForm",
+  props: {
+    document: {
+      type: Object,
+      required: true
+    }
+  }
 };
 
-const _hoisted_1$1 = {
+const _hoisted_1$2 = {
   class: "optional-inf-block my-3",
   id: "extraDocBlock"
 };
-const _hoisted_2$1 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\" data-v-598fc5a6><h4 class=\"col-4\" data-v-598fc5a6>Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\" data-v-598fc5a6><div class=\"col-2\" data-v-598fc5a6><button class=\"btn product-actions-button\" data-v-598fc5a6><i class=\"fa-solid fa-plus\" data-v-598fc5a6></i></button></div><div class=\"col-2\" data-v-598fc5a6><button class=\"btn product-actions-button\" data-v-598fc5a6><i class=\"fa-solid fa-minus\" id=\"collapseButton2\" data-v-598fc5a6></i></button></div><div class=\"col-2\" data-v-598fc5a6><button class=\"btn product-actions-button\" data-v-598fc5a6><i class=\"fa-solid fa-border-top-left\" data-v-598fc5a6></i></button></div><div class=\"col-2\" data-v-598fc5a6><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\" data-v-598fc5a6><i class=\"fa-solid fa-sort-down\" data-v-598fc5a6></i></button></div></div></div><div class=\"product-inner-block collapse\" id=\"product-2Inner\" data-v-598fc5a6><div class=\"optional-inf-card\" data-v-598fc5a6><div class=\"row\" data-v-598fc5a6><div class=\"d-flex\" data-v-598fc5a6><div class=\"col-5 d-flex\" data-v-598fc5a6><div class=\"col-3 d-flex\" data-v-598fc5a6><div class=\"col-8\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-1\" data-v-598fc5a6><p class=\"fs-3 my-0\" data-v-598fc5a6>/</p></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div><div class=\"col-9 ps-2\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div><div class=\"col-7 row\" data-v-598fc5a6><div class=\"col-2\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-3 d-flex\" data-v-598fc5a6><p class=\"align-bcntr pe-1\" data-v-598fc5a6>от</p><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"дата\" data-v-598fc5a6></div></div><div class=\"col-3 d-flex\" data-v-598fc5a6><p class=\"align-bcntr pe-1\" data-v-598fc5a6>с</p><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"дата начала\" data-v-598fc5a6></div></div><div class=\"col-3 d-flex\" data-v-598fc5a6><p class=\"align-bcntr pe-1\" data-v-598fc5a6>по</p><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"дата окончания\" data-v-598fc5a6></div></div><div class=\"col-1\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div></div></div><div class=\"row mt-3\" data-v-598fc5a6><div class=\"d-flex\" data-v-598fc5a6><div class=\"col-5 d-flex\" data-v-598fc5a6><div class=\"col-2\" data-v-598fc5a6><div class=\"row pe-4\" data-v-598fc5a6><div class=\"col-6\" data-v-598fc5a6><button class=\"btn\" data-v-598fc5a6><i class=\"fa-solid fa-bolt-lightning\" data-v-598fc5a6></i></button></div><div class=\"col-6\" data-v-598fc5a6><button class=\"btn\" data-v-598fc5a6><i class=\"fa-solid fa-folder-open\" data-v-598fc5a6></i></button></div></div><div class=\"row\" data-v-598fc5a6></div></div><div class=\"col-10 d-flex\" data-v-598fc5a6><div class=\"col-8\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"Полное наименование государственной\" data-v-598fc5a6></div></div><div class=\"col-4\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"AuthorityId\" data-v-598fc5a6></div></div></div></div><div class=\"col-7 d-flex\" data-v-598fc5a6><div class=\"col-4\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"Информационного ресурс\" data-v-598fc5a6></div></div><div class=\"col-5\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"URL\" data-v-598fc5a6></div></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" placeholder=\"Дата обращения\" data-v-598fc5a6></div></div></div></div></div><div class=\"row justify-content-center mt-2\" data-v-598fc5a6><div class=\"col-11\" data-v-598fc5a6><div class=\"\" data-v-598fc5a6><p class=\"align-bcntr\" data-v-598fc5a6> Сведения о фактическом представлении документа </p></div><div class=\"d-flex\" data-v-598fc5a6><div class=\"col-2 d-flex\" data-v-598fc5a6><div class=\"input-bg col-4\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div><div class=\"input-bg col-8\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-5 d-flex\" data-v-598fc5a6><div class=\"align-bcntr\" data-v-598fc5a6><p class=\"col-1 align-bcntr\" data-v-598fc5a6>ДТ</p></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-4\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-1\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div><div class=\"col-5 d-flex\" data-v-598fc5a6><div class=\"align-bcntr\" data-v-598fc5a6><p class=\"col-1 align-bcntr\" data-v-598fc5a6>ТС</p></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-4\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-1\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div></div><div class=\"d-flex mt-2\" data-v-598fc5a6><div class=\"col-2 d-flex\" data-v-598fc5a6><div class=\"col-1\" data-v-598fc5a6></div><div class=\"col-2 align-bcntr\" data-v-598fc5a6><p class=\"align-bcntr\" data-v-598fc5a6>TIR</p></div><div class=\"col-2\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-7\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div><div class=\"col-6 d-flex\" data-v-598fc5a6><div class=\"col-3 align-bcntr\" data-v-598fc5a6><p class=\"align-bcntr\" data-v-598fc5a6>Иной документ</p></div><div class=\"col-6\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div><div class=\"col-3\" data-v-598fc5a6><div class=\"input-bg\" data-v-598fc5a6><input type=\"text\" class=\"form-control\" data-v-598fc5a6></div></div></div></div></div></div></div></div>", 2);
-const _hoisted_4$1 = [
-  _hoisted_2$1
-];
-
-function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("div", _hoisted_1$1, _hoisted_4$1))
-}
-
-var css_248z$1 = "\nli a[data-v-598fc5a6] {\n  color: black;\n  text-decoration: unset;\n  font-size: 14px;\n}\n.sidebar-prods.active[data-v-598fc5a6] {\n  color: orange;\n  background-color: green;\n}\n/*Стили текстовых инпутов*/\n.form-control[data-v-598fc5a6] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-598fc5a6]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-598fc5a6]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-598fc5a6] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n*[data-v-598fc5a6] {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n\n/*Region Стили блока декларации*/\n.declaration[data-v-598fc5a6] {\n  background-color: #d1d1d1;\n  padding: 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\nh5[data-v-598fc5a6] {\n  text-align: center;\n}\n.inf-block[data-v-598fc5a6] {\n  margin-bottom: 10px;\n}\nlabel[data-v-598fc5a6] {\n  margin-top: 7px;\n}\n.inputs-group > div[data-v-598fc5a6] {\n  padding: unset;\n  min-width: 30px;\n  margin-right: 7px;\n}\n.form-check-input[data-v-598fc5a6] {\n  min-width: 20px;\n  min-height: 20px;\n}\n.sheets-input[data-v-598fc5a6] {\n  max-width: 70px;\n}\n.certificate-block div[data-v-598fc5a6]:first-child {\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div[data-v-598fc5a6] {\n  padding: 0;\n  margin-right: 6px;\n}\n\n/*Стили текстовых инпутов*/\n.form-control[data-v-598fc5a6] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-598fc5a6]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-598fc5a6]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-598fc5a6] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n\n/**/\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph[data-v-598fc5a6] {\n  min-width: 250px;\n  max-width: 270px;\n  margin: 10px 0 auto 0;\n}\n\n/**/\n.changing-declaration .inf-block div[data-v-598fc5a6] {\n  padding: unset;\n  margin-right: 5px;\n}\n.changing-code[data-v-598fc5a6] {\n  margin-top: 10px;\n}\n\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code[data-v-598fc5a6]::-webkit-outer-spin-button,\n.number-code[data-v-598fc5a6]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n\n/**/\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form[data-v-598fc5a6] {\n  padding: 0 10px 0 4px;\n}\n.batch-form div[data-v-598fc5a6]:first-child {\n  padding-left: 0;\n}\n.batch-block[data-v-598fc5a6] {\n  padding-left: 10px;\n}\n.batch-block div[data-v-598fc5a6] {\n  padding: 0;\n}\n\n/**/\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information[data-v-598fc5a6] {\n  width: fit-content;\n  color: gray;\n  text-decoration: underline;\n  font-size: 10px;\n}\n.payment-information[data-v-598fc5a6]:hover {\n  cursor: pointer;\n}\n\n/**/\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button[data-v-598fc5a6]:focus {\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i[data-v-598fc5a6] {\n  transform: rotate(180deg);\n}\n.collapsing-block[data-v-598fc5a6] {\n  background-color: white;\n  border: 1px solid black;\n  padding: 5px 10px;\n  font-weight: bold;\n}\n.collapsing-block span[data-v-598fc5a6],\ni[data-v-598fc5a6] {\n  font-size: 14px;\n}\n\n/**/\n.card-body[data-v-598fc5a6] {\n  background-color: unset;\n  border: 1px solid black;\n}\n.point-name[data-v-598fc5a6] {\n  width: fit-content;\n  margin: auto auto 0;\n  color: #3274dd;\n  text-decoration: underline;\n}\n.personal-data div[data-v-598fc5a6] {\n  padding: 0 0 0 3px;\n}\n\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative[data-v-598fc5a6] {\n  font-size: 11px;\n  font-weight: bold;\n  margin: 0 0 8px;\n}\n\n/**/\n/*Стили кнопки календаря*/\n.button-calendar[data-v-598fc5a6] {\n  background-color: white;\n  border: unset;\n  border-radius: 8px;\n}\n.button-calendar[data-v-598fc5a6]:focus {\n  box-shadow: unset;\n}\n\n/**/\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr[data-v-598fc5a6] {\n  display: flex;\n  margin: 5px auto 0;\n}\n\n/*Стили блока информации о товарной партии*/\n.product-batch[data-v-598fc5a6] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n\n/*Стиль синего хэдера с кнопками */\n.product-batch-header[data-v-598fc5a6] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n.batch-button[data-v-598fc5a6]:focus {\n  box-shadow: unset;\n}\n.batch-button i[data-v-598fc5a6]:before {\n  color: white;\n}\n.batch-button:last-child i[data-v-598fc5a6] {\n  transform: rotate(180deg);\n}\n/**/\n.product-inner-block[data-v-598fc5a6] {\n  padding: 10px;\n}\n.fs-12[data-v-598fc5a6] {\n  font-size: 12px;\n}\n\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button[data-v-598fc5a6] {\n  background-color: white;\n  border-radius: 5px;\n}\n.new-window-button[data-v-598fc5a6]:hover {\n  box-shadow: unset;\n}\n.new-window-button[data-v-598fc5a6]:focus {\n  box-shadow: unset;\n}\n.new-window-button i[data-v-598fc5a6] {\n  font-size: 15px;\n  color: #3274dd;\n}\n/**/\n\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link[data-v-598fc5a6] {\n  display: block;\n  color: gray;\n  text-decoration: underline;\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link[data-v-598fc5a6]:hover {\n  color: blue;\n  cursor: pointer;\n}\n/**/\n.product-info-block[data-v-598fc5a6] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.product-info-actions button[data-v-598fc5a6]:focus {\n  box-shadow: unset;\n}\n.product-info-actions i[data-v-598fc5a6]:before {\n  color: white;\n}\n.product-info-actions .fa-sort-down[data-v-598fc5a6]:before {\n  color: black;\n}\n.product-actions-button[data-v-598fc5a6]:not(.collapsed) {\n  transform: rotate(180deg);\n}\n.btn-bg-white[data-v-598fc5a6] {\n  background-color: white;\n  border-radius: 5px;\n}\n.btn-bg-white[data-v-598fc5a6]:focus {\n  box-shadow: unset;\n}\n.fa-note-sticky[data-v-598fc5a6] {\n  font-size: 16px;\n}\n\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block[data-v-598fc5a6] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.optional-inf-header[data-v-598fc5a6] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n";
-styleInject(css_248z$1);
-
-script$1.render = render$1;
-script$1.__scopeId = "data-v-598fc5a6";
-script$1.__file = "src/components/Form/AdditionalDocument.vue";
-
-var script = {
-  name: "TsoftGoodInformationForm",
-};
-
-const _hoisted_1 = {
-  class: "product-info-block my-3",
-  id: "productInvoiceBlock"
-};
-const _hoisted_2 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\" data-v-d878b218><h4 class=\"col-4\" data-v-d878b218>Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\" data-v-d878b218><div class=\"col-2\" data-v-d878b218><button class=\"btn product-actions-button\" data-v-d878b218><i class=\"fa-solid fa-plus\" data-v-d878b218></i></button></div><div class=\"col-2\" data-v-d878b218><button class=\"btn product-actions-button\" data-v-d878b218><i class=\"fa-solid fa-minus\" id=\"collapseButton\" data-v-d878b218></i></button></div><div class=\"col-2\" data-v-d878b218><button class=\"btn product-actions-button\" data-v-d878b218><i class=\"fa-solid fa-border-top-left\" data-v-d878b218></i></button></div><div class=\"col-2\" data-v-d878b218><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\" data-v-d878b218><i class=\"fa-solid fa-sort-down\" data-v-d878b218></i></button></div></div></div>", 1);
-const _hoisted_3 = {
+const _hoisted_2$1 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_3$1 = {
   class: "product-inner-block collapse",
-  id: "product-1Inner"
+  id: "product-2Inner"
 };
-const _hoisted_4 = /*#__PURE__*/createStaticVNode("<div class=\"row\" data-v-d878b218><div class=\"col-1\" data-v-d878b218><div class=\"col-9\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div><div class=\"col input-bg mt-3\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div><div class=\"col-8\" data-v-d878b218><div class=\"input-bg h-100\" data-v-d878b218><textarea type=\"text\" class=\"form-control h-100\" data-v-d878b218></textarea></div></div><div class=\"col-3\" data-v-d878b218><div class=\"changing-code\" data-v-d878b218><div class=\"label-block\" data-v-d878b218><label class=\"fs-5\" for=\"\" data-v-d878b218>Код изменений</label></div><div class=\"col-9 d-flex\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"number\" data-v-d878b218></div><button class=\"btn info-button p-1\" data-v-d878b218><i class=\"fa-solid fa-circle-info\" data-v-d878b218></i></button></div><div class=\"col-2\" data-v-d878b218></div></div></div></div><div class=\"row\" data-v-d878b218><div class=\"col-3\" data-v-d878b218><div class=\"d-flex\" data-v-d878b218><div class=\"col-5\" data-v-d878b218><p class=\"col-11 align-bcntr\" data-v-d878b218>ТН ВЭД ЕАЭС</p><div class=\"col-11 input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-7\" data-v-d878b218><p class=\"align-bcntr\" data-v-d878b218>Вес, брутто</p><div class=\"d-flex\" data-v-d878b218><div class=\"col-6\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-6 d-flex\" data-v-d878b218><div class=\"col-5\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-7\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control number-code\" type=\"text\" data-v-d878b218></div></div></div></div></div></div><div class=\"d-flex mt-2\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" placeholder=\"наименование товарного знака, объекта авторского\" data-v-d878b218></div></div></div><div class=\"col-6\" data-v-d878b218><div class=\"d-flex\" data-v-d878b218><div class=\"col-4\" data-v-d878b218><p class=\"align-bcntr\" data-v-d878b218>Вес, нетто</p><div class=\"d-flex\" data-v-d878b218><div class=\"col-6\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-6\" data-v-d878b218><div class=\"d-flex\" data-v-d878b218><div class=\"col-5\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-7\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div></div></div></div><div class=\"col-4\" data-v-d878b218><p class=\"align-bcntr\" data-v-d878b218>Количество</p><div class=\"d-flex\" data-v-d878b218><div class=\"col-5\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-7\" data-v-d878b218><div class=\"d-flex\" data-v-d878b218><div class=\"col-5\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-7\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div></div></div></div><div class=\"col-4\" data-v-d878b218><p class=\"align-bcntr\" data-v-d878b218>Таможенная стоимость</p><div class=\"d-flex\" data-v-d878b218><div class=\"col-7\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-3\" data-v-d878b218><div class=\"d-flex\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div><div class=\"col-2\" data-v-d878b218><button class=\"btn btn-bg-white\" data-v-d878b218><i class=\"fa-solid fa-note-sticky\" data-v-d878b218></i></button></div></div></div></div><div class=\"d-flex mt-2\" data-v-d878b218><div class=\"col-6\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" placeholder=\"наименование места происх.\" data-v-d878b218></div></div><div class=\"col-6 d-flex\" data-v-d878b218><p class=\"align-bcntr ps-2\" data-v-d878b218>Трансп. расх.</p><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div></div><div class=\"col-3\" data-v-d878b218><div class=\"\" data-v-d878b218><p class=\"align-bcntr\" data-v-d878b218>Фактурная стоимость</p><div class=\"d-flex\" data-v-d878b218><div class=\"col-8\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-4\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div></div><div class=\"d-flex mt-2\" data-v-d878b218><div class=\"d-flex\" data-v-d878b218><div class=\"col-8\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div><div class=\"col-4\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div></div></div></div></div>", 2);
-const _hoisted_6 = { class: "row" };
-const _hoisted_7 = { class: "col-9 d-flex" };
-const _hoisted_8 = /*#__PURE__*/createStaticVNode("<div class=\"col-9 d-flex\" data-v-d878b218><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" placeholder=\"примечание\" data-v-d878b218></div><div class=\"col input-bg\" data-v-d878b218><input class=\"form-control\" type=\"text\" data-v-d878b218></div></div>", 1);
-const _hoisted_9 = { class: "col-3 d-flex batch-info-anchors" };
-const _hoisted_10 = /*#__PURE__*/createTextVNode("РОИС");
-const _hoisted_11 = /*#__PURE__*/createTextVNode("Предшествующий документ");
-const _hoisted_12 = { class: "col-3 d-flex" };
-const _hoisted_13 = { class: "d-flex batch-info-anchors" };
-const _hoisted_14 = /*#__PURE__*/createTextVNode("Дополнительный документ");
+const _hoisted_4$1 = { class: "optional-inf-card" };
+const _hoisted_5$1 = { class: "row" };
+const _hoisted_6$1 = { class: "d-flex" };
+const _hoisted_7$1 = { class: "col-5 d-flex" };
+const _hoisted_8$1 = { class: "col-3 d-flex" };
+const _hoisted_9$1 = { class: "col-8" };
+const _hoisted_10$1 = { class: "input-bg" };
+const _hoisted_11$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "fs-3 my-0" }, "/")
+], -1 /* HOISTED */);
+const _hoisted_12$1 = { class: "col-3" };
+const _hoisted_13$1 = { class: "input-bg" };
+const _hoisted_14$1 = { class: "col-9 ps-2" };
+const _hoisted_15$1 = { class: "input-bg" };
+const _hoisted_16$1 = { class: "col-7 row" };
+const _hoisted_17$1 = { class: "col-2" };
+const _hoisted_18$1 = { class: "input-bg" };
+const _hoisted_19$1 = { class: "col-3 d-flex" };
+const _hoisted_20$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "от", -1 /* HOISTED */);
+const _hoisted_21$1 = { class: "input-bg" };
+const _hoisted_22$1 = { class: "col-3 d-flex" };
+const _hoisted_23$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "с", -1 /* HOISTED */);
+const _hoisted_24$1 = { class: "input-bg" };
+const _hoisted_25$1 = { class: "col-3 d-flex" };
+const _hoisted_26$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "по", -1 /* HOISTED */);
+const _hoisted_27$1 = { class: "input-bg" };
+const _hoisted_28$1 = { class: "col-1" };
+const _hoisted_29$1 = { class: "input-bg" };
+const _hoisted_30$1 = { class: "row mt-3" };
+const _hoisted_31$1 = { class: "d-flex" };
+const _hoisted_32$1 = { class: "col-5 d-flex" };
+const _hoisted_33$1 = /*#__PURE__*/createStaticVNode("<div class=\"col-2\"><div class=\"row pe-4\"><div class=\"col-6\"><button class=\"btn\"><i class=\"fa-solid fa-bolt-lightning\"></i></button></div><div class=\"col-6\"><button class=\"btn\"><i class=\"fa-solid fa-folder-open\"></i></button></div></div><div class=\"row\"></div></div>", 1);
+const _hoisted_34$1 = { class: "col-10 d-flex" };
+const _hoisted_35$1 = { class: "col-8" };
+const _hoisted_36$1 = { class: "input-bg" };
+const _hoisted_37$1 = { class: "col-4" };
+const _hoisted_38$1 = { class: "input-bg" };
+const _hoisted_39$1 = { class: "col-7 d-flex" };
+const _hoisted_40$1 = { class: "col-4" };
+const _hoisted_41$1 = { class: "input-bg" };
+const _hoisted_42$1 = { class: "col-5" };
+const _hoisted_43$1 = { class: "input-bg" };
+const _hoisted_44$1 = { class: "col-3" };
+const _hoisted_45$1 = { class: "input-bg" };
+const _hoisted_46$1 = { class: "row justify-content-center mt-2" };
+const _hoisted_47$1 = { class: "col-11" };
+const _hoisted_48$1 = /*#__PURE__*/createElementVNode("div", { class: "" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, " Сведения о фактическом представлении документа ")
+], -1 /* HOISTED */);
+const _hoisted_49$1 = { class: "d-flex" };
+const _hoisted_50$1 = { class: "col-2 d-flex" };
+const _hoisted_51$1 = { class: "input-bg col-4" };
+const _hoisted_52$1 = { class: "input-bg col-8" };
+const _hoisted_53$1 = { class: "col-5 d-flex" };
+const _hoisted_54$1 = /*#__PURE__*/createElementVNode("div", { class: "align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "col-1 align-bcntr" }, "ДТ")
+], -1 /* HOISTED */);
+const _hoisted_55$1 = { class: "col-3" };
+const _hoisted_56$1 = { class: "input-bg" };
+const _hoisted_57$1 = { class: "col-4" };
+const _hoisted_58$1 = { class: "input-bg" };
+const _hoisted_59$1 = { class: "col-3" };
+const _hoisted_60$1 = { class: "input-bg" };
+const _hoisted_61$1 = { class: "col-1" };
+const _hoisted_62$1 = { class: "input-bg" };
+const _hoisted_63$1 = { class: "col-5 d-flex" };
+const _hoisted_64$1 = /*#__PURE__*/createElementVNode("div", { class: "align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "col-1 align-bcntr" }, "ТС")
+], -1 /* HOISTED */);
+const _hoisted_65$1 = { class: "col-3" };
+const _hoisted_66$1 = { class: "input-bg" };
+const _hoisted_67$1 = { class: "col-4" };
+const _hoisted_68$1 = { class: "input-bg" };
+const _hoisted_69$1 = { class: "col-3" };
+const _hoisted_70$1 = { class: "input-bg" };
+const _hoisted_71$1 = { class: "col-1" };
+const _hoisted_72$1 = { class: "input-bg" };
+const _hoisted_73$1 = { class: "d-flex mt-2" };
+const _hoisted_74$1 = { class: "col-2 d-flex" };
+const _hoisted_75$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_76$1 = /*#__PURE__*/createElementVNode("div", { class: "col-2 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "TIR")
+], -1 /* HOISTED */);
+const _hoisted_77$1 = { class: "col-2" };
+const _hoisted_78$1 = { class: "input-bg" };
+const _hoisted_79$1 = { class: "col-7" };
+const _hoisted_80$1 = { class: "input-bg" };
+const _hoisted_81$1 = { class: "col-6 d-flex" };
+const _hoisted_82$1 = /*#__PURE__*/createElementVNode("div", { class: "col-3 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Иной документ")
+], -1 /* HOISTED */);
+const _hoisted_83$1 = { class: "col-6" };
+const _hoisted_84$1 = { class: "input-bg" };
+const _hoisted_85$1 = { class: "col-3" };
+const _hoisted_86$1 = { class: "input-bg" };
 
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_router_link = resolveComponent("router-link");
-
-  return (openBlock(), createElementBlock("div", _hoisted_1, [
-    _hoisted_2,
-    createElementVNode("div", _hoisted_3, [
-      _hoisted_4,
-      createElementVNode("div", _hoisted_6, [
-        createElementVNode("div", _hoisted_7, [
-          _hoisted_8,
-          createElementVNode("div", _hoisted_9, [
-            createVNode(_component_router_link, {
-              to: { name: 'index' },
-              class: "align-bcntr"
-            }, {
-              default: withCtx(() => [
-                _hoisted_10
+function render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  return (openBlock(), createElementBlock("div", _hoisted_1$2, [
+    _hoisted_2$1,
+    createElementVNode("div", _hoisted_3$1, [
+      createElementVNode("div", _hoisted_4$1, [
+        createElementVNode("div", _hoisted_5$1, [
+          createElementVNode("div", _hoisted_6$1, [
+            createElementVNode("div", _hoisted_7$1, [
+              createElementVNode("div", _hoisted_8$1, [
+                createElementVNode("div", _hoisted_9$1, [
+                  createElementVNode("div", _hoisted_10$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (($props.document.typeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.typeCode]
+                    ])
+                  ])
+                ]),
+                _hoisted_11$1,
+                createElementVNode("div", _hoisted_12$1, [
+                  createElementVNode("div", _hoisted_13$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.document.typeCodeCount) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.typeCodeCount]
+                    ])
+                  ])
+                ])
               ]),
-              _: 1 /* STABLE */
-            }),
-            createVNode(_component_router_link, {
-              to: { name: 'index' },
-              class: "align-bcntr"
-            }, {
-              default: withCtx(() => [
-                _hoisted_11
+              createElementVNode("div", _hoisted_14$1, [
+                createElementVNode("div", _hoisted_15$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.document.type) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.type]
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_16$1, [
+              createElementVNode("div", _hoisted_17$1, [
+                createElementVNode("div", _hoisted_18$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.document.number) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.number]
+                  ])
+                ])
               ]),
-              _: 1 /* STABLE */
-            })
+              createElementVNode("div", _hoisted_19$1, [
+                _hoisted_20$1,
+                createElementVNode("div", _hoisted_21$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "дата",
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.document.dateRelease) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.dateRelease]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_22$1, [
+                _hoisted_23$1,
+                createElementVNode("div", _hoisted_24$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "дата начала",
+                    "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.document.dateStart) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.dateStart]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_25$1, [
+                _hoisted_26$1,
+                createElementVNode("div", _hoisted_27$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "дата окончания",
+                    "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.document.dateEnd) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.dateEnd]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_28$1, [
+                createElementVNode("div", _hoisted_29$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.document.fieldUnknown) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.fieldUnknown]
+                  ])
+                ])
+              ])
+            ])
           ])
         ]),
-        createElementVNode("div", _hoisted_12, [
-          createElementVNode("div", _hoisted_13, [
-            createVNode(_component_router_link, {
-              to: { name: 'index' },
-              class: "align-bcntr",
-              id: "extraDocLink"
-            }, {
-              default: withCtx(() => [
-                _hoisted_14
+        createElementVNode("div", _hoisted_30$1, [
+          createElementVNode("div", _hoisted_31$1, [
+            createElementVNode("div", _hoisted_32$1, [
+              _hoisted_33$1,
+              createElementVNode("div", _hoisted_34$1, [
+                createElementVNode("div", _hoisted_35$1, [
+                  createElementVNode("div", _hoisted_36$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      placeholder: "Полное наименование государственной",
+                      "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.document.countryFullName) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.countryFullName]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_37$1, [
+                  createElementVNode("div", _hoisted_38$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      placeholder: "AuthorityId",
+                      "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.document.authorityId) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.authorityId]
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_39$1, [
+              createElementVNode("div", _hoisted_40$1, [
+                createElementVNode("div", _hoisted_41$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "Информационного ресурс",
+                    "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.document.informationSource) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.informationSource]
+                  ])
+                ])
               ]),
-              _: 1 /* STABLE */
-            })
+              createElementVNode("div", _hoisted_42$1, [
+                createElementVNode("div", _hoisted_43$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "URL",
+                    "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.document.url) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.url]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_44$1, [
+                createElementVNode("div", _hoisted_45$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    placeholder: "Дата обращения",
+                    "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.document.dateUrlAppeal) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.dateUrlAppeal]
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        createElementVNode("div", _hoisted_46$1, [
+          createElementVNode("div", _hoisted_47$1, [
+            _hoisted_48$1,
+            createElementVNode("div", _hoisted_49$1, [
+              createElementVNode("div", _hoisted_50$1, [
+                createElementVNode("div", _hoisted_51$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.document.unknownField1) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.unknownField1]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_52$1, [
+                  withDirectives(createElementVNode("input", {
+                    type: "text",
+                    class: "form-control",
+                    "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.document.unknownField2) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.document.unknownField2]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_53$1, [
+                _hoisted_54$1,
+                createElementVNode("div", _hoisted_55$1, [
+                  createElementVNode("div", _hoisted_56$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.document.unknownField3) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField3]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_57$1, [
+                  createElementVNode("div", _hoisted_58$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.document.unknownField4) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField4]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_59$1, [
+                  createElementVNode("div", _hoisted_60$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.document.unknownField5) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField5]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_61$1, [
+                  createElementVNode("div", _hoisted_62$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.document.unknownField6) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField6]
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_63$1, [
+                _hoisted_64$1,
+                createElementVNode("div", _hoisted_65$1, [
+                  createElementVNode("div", _hoisted_66$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.document.unknownField7) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField7]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_67$1, [
+                  createElementVNode("div", _hoisted_68$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.document.unknownField8) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField8]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_69$1, [
+                  createElementVNode("div", _hoisted_70$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.document.unknownField9) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField9]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_71$1, [
+                  createElementVNode("div", _hoisted_72$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.document.unknownField10) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField10]
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_73$1, [
+              createElementVNode("div", _hoisted_74$1, [
+                _hoisted_75$1,
+                _hoisted_76$1,
+                createElementVNode("div", _hoisted_77$1, [
+                  createElementVNode("div", _hoisted_78$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.document.unknownField11) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField11]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_79$1, [
+                  createElementVNode("div", _hoisted_80$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.document.unknownField12) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField12]
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_81$1, [
+                _hoisted_82$1,
+                createElementVNode("div", _hoisted_83$1, [
+                  createElementVNode("div", _hoisted_84$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.document.unknownField13) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField13]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_85$1, [
+                  createElementVNode("div", _hoisted_86$1, [
+                    withDirectives(createElementVNode("input", {
+                      type: "text",
+                      class: "form-control",
+                      "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.document.unknownField14) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.document.unknownField14]
+                    ])
+                  ])
+                ])
+              ])
+            ])
           ])
         ])
       ])
@@ -676,23 +4863,665 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z = "\nli a[data-v-d878b218] {\n  color: black;\n  text-decoration: unset;\n  font-size: 14px;\n}\n.sidebar-prods.active[data-v-d878b218] {\n  color: orange;\n  background-color: green;\n}\n/*Стили текстовых инпутов*/\n.form-control[data-v-d878b218] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-d878b218]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-d878b218]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-d878b218] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n*[data-v-d878b218] {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n\n/*Region Стили блока декларации*/\n.declaration[data-v-d878b218] {\n  background-color: #d1d1d1;\n  padding: 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\nh5[data-v-d878b218] {\n  text-align: center;\n}\n.inf-block[data-v-d878b218] {\n  margin-bottom: 10px;\n}\nlabel[data-v-d878b218] {\n  margin-top: 7px;\n}\n.inputs-group > div[data-v-d878b218] {\n  padding: unset;\n  min-width: 30px;\n  margin-right: 7px;\n}\n.form-check-input[data-v-d878b218] {\n  min-width: 20px;\n  min-height: 20px;\n}\n.sheets-input[data-v-d878b218] {\n  max-width: 70px;\n}\n.certificate-block div[data-v-d878b218]:first-child {\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div[data-v-d878b218] {\n  padding: 0;\n  margin-right: 6px;\n}\n\n/*Стили текстовых инпутов*/\n.form-control[data-v-d878b218] {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control[data-v-d878b218]:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control[data-v-d878b218]::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input[data-v-d878b218] {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n\n/**/\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph[data-v-d878b218] {\n  min-width: 250px;\n  max-width: 270px;\n  margin: 10px 0 auto 0;\n}\n\n/**/\n.changing-declaration .inf-block div[data-v-d878b218] {\n  padding: unset;\n  margin-right: 5px;\n}\n.changing-code[data-v-d878b218] {\n  margin-top: 10px;\n}\n\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code[data-v-d878b218]::-webkit-outer-spin-button,\n.number-code[data-v-d878b218]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n\n/**/\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form[data-v-d878b218] {\n  padding: 0 10px 0 4px;\n}\n.batch-form div[data-v-d878b218]:first-child {\n  padding-left: 0;\n}\n.batch-block[data-v-d878b218] {\n  padding-left: 10px;\n}\n.batch-block div[data-v-d878b218] {\n  padding: 0;\n}\n\n/**/\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information[data-v-d878b218] {\n  width: fit-content;\n  color: gray;\n  text-decoration: underline;\n  font-size: 10px;\n}\n.payment-information[data-v-d878b218]:hover {\n  cursor: pointer;\n}\n\n/**/\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button[data-v-d878b218]:focus {\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i[data-v-d878b218] {\n  transform: rotate(180deg);\n}\n.collapsing-block[data-v-d878b218] {\n  background-color: white;\n  border: 1px solid black;\n  padding: 5px 10px;\n  font-weight: bold;\n}\n.collapsing-block span[data-v-d878b218],\ni[data-v-d878b218] {\n  font-size: 14px;\n}\n\n/**/\n.card-body[data-v-d878b218] {\n  background-color: unset;\n  border: 1px solid black;\n}\n.point-name[data-v-d878b218] {\n  width: fit-content;\n  margin: auto auto 0;\n  color: #3274dd;\n  text-decoration: underline;\n}\n.personal-data div[data-v-d878b218] {\n  padding: 0 0 0 3px;\n}\n\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative[data-v-d878b218] {\n  font-size: 11px;\n  font-weight: bold;\n  margin: 0 0 8px;\n}\n\n/**/\n/*Стили кнопки календаря*/\n.button-calendar[data-v-d878b218] {\n  background-color: white;\n  border: unset;\n  border-radius: 8px;\n}\n.button-calendar[data-v-d878b218]:focus {\n  box-shadow: unset;\n}\n\n/**/\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr[data-v-d878b218] {\n  display: flex;\n  margin: 5px auto 0;\n}\n\n/*Стили блока информации о товарной партии*/\n.product-batch[data-v-d878b218] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n\n/*Стиль синего хэдера с кнопками */\n.product-batch-header[data-v-d878b218] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n.batch-button[data-v-d878b218]:focus {\n  box-shadow: unset;\n}\n.batch-button i[data-v-d878b218]:before {\n  color: white;\n}\n.batch-button:last-child i[data-v-d878b218] {\n  transform: rotate(180deg);\n}\n/**/\n.product-inner-block[data-v-d878b218] {\n  padding: 10px;\n}\n.fs-12[data-v-d878b218] {\n  font-size: 12px;\n}\n\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button[data-v-d878b218] {\n  background-color: white;\n  border-radius: 5px;\n}\n.new-window-button[data-v-d878b218]:hover {\n  box-shadow: unset;\n}\n.new-window-button[data-v-d878b218]:focus {\n  box-shadow: unset;\n}\n.new-window-button i[data-v-d878b218] {\n  font-size: 15px;\n  color: #3274dd;\n}\n/**/\n\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link[data-v-d878b218] {\n  display: block;\n  color: gray;\n  text-decoration: underline;\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link[data-v-d878b218]:hover {\n  color: blue;\n  cursor: pointer;\n}\n/**/\n.product-info-block[data-v-d878b218] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.product-info-actions button[data-v-d878b218]:focus {\n  box-shadow: unset;\n}\n.product-info-actions i[data-v-d878b218]:before {\n  color: white;\n}\n.product-info-actions .fa-sort-down[data-v-d878b218]:before {\n  color: black;\n}\n.product-actions-button[data-v-d878b218]:not(.collapsed) {\n  transform: rotate(180deg);\n}\n.btn-bg-white[data-v-d878b218] {\n  background-color: white;\n  border-radius: 5px;\n}\n.btn-bg-white[data-v-d878b218]:focus {\n  box-shadow: unset;\n}\n.fa-note-sticky[data-v-d878b218] {\n  font-size: 16px;\n}\n\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block[data-v-d878b218] {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n}\n.optional-inf-header[data-v-d878b218] {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n";
+script$2.render = render$2;
+script$2.__file = "src/components/Form/AdditionalDocument.vue";
+
+var script$1 = {
+  name: "TsoftGoodInformationForm",
+  props: {
+    good: {
+      type: Object,
+      required: true
+    },
+    documents: {
+      type: Object,
+      required: true
+    }
+  }
+};
+
+const _hoisted_1$1 = {
+  class: "product-info-block my-3",
+  id: "productInvoiceBlock"
+};
+const _hoisted_2 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_3 = {
+  class: "product-inner-block collapse",
+  id: "product-1Inner"
+};
+const _hoisted_4 = { class: "row" };
+const _hoisted_5 = { class: "col-1" };
+const _hoisted_6 = { class: "col-9" };
+const _hoisted_7 = { class: "col input-bg" };
+const _hoisted_8 = { class: "col input-bg mt-3" };
+const _hoisted_9 = { class: "col-8" };
+const _hoisted_10 = { class: "input-bg h-100" };
+const _hoisted_11 = { class: "col-3" };
+const _hoisted_12 = { class: "changing-code" };
+const _hoisted_13 = /*#__PURE__*/createElementVNode("div", { class: "label-block" }, [
+  /*#__PURE__*/createElementVNode("label", { class: "fs-5" }, "Код изменений")
+], -1 /* HOISTED */);
+const _hoisted_14 = { class: "col-9 d-flex" };
+const _hoisted_15 = { class: "col input-bg" };
+const _hoisted_16 = { class: "col input-bg" };
+const _hoisted_17 = { class: "col input-bg" };
+const _hoisted_18 = { class: "col input-bg" };
+const _hoisted_19 = { class: "col input-bg" };
+const _hoisted_20 = { class: "col input-bg" };
+const _hoisted_21 = { class: "col input-bg" };
+const _hoisted_22 = /*#__PURE__*/createElementVNode("button", { class: "btn info-button p-1" }, [
+  /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-circle-info" })
+], -1 /* HOISTED */);
+const _hoisted_23 = /*#__PURE__*/createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
+const _hoisted_24 = { class: "row" };
+const _hoisted_25 = { class: "col-3" };
+const _hoisted_26 = { class: "d-flex" };
+const _hoisted_27 = { class: "col-5" };
+const _hoisted_28 = /*#__PURE__*/createElementVNode("p", { class: "col-11 align-bcntr" }, "ТН ВЭД ЕАЭС", -1 /* HOISTED */);
+const _hoisted_29 = { class: "col-11 input-bg" };
+const _hoisted_30 = { class: "col-7" };
+const _hoisted_31 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Вес, брутто", -1 /* HOISTED */);
+const _hoisted_32 = { class: "d-flex" };
+const _hoisted_33 = { class: "col-6" };
+const _hoisted_34 = { class: "col input-bg" };
+const _hoisted_35 = { class: "col-6 d-flex" };
+const _hoisted_36 = { class: "col-5" };
+const _hoisted_37 = { class: "col input-bg" };
+const _hoisted_38 = { class: "col-7" };
+const _hoisted_39 = { class: "col input-bg" };
+const _hoisted_40 = { class: "d-flex mt-2" };
+const _hoisted_41 = { class: "col input-bg" };
+const _hoisted_42 = { class: "col-6" };
+const _hoisted_43 = { class: "d-flex" };
+const _hoisted_44 = { class: "col-4" };
+const _hoisted_45 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Вес, нетто", -1 /* HOISTED */);
+const _hoisted_46 = { class: "d-flex" };
+const _hoisted_47 = { class: "col-6" };
+const _hoisted_48 = { class: "col input-bg" };
+const _hoisted_49 = { class: "col-6" };
+const _hoisted_50 = { class: "d-flex" };
+const _hoisted_51 = { class: "col-5" };
+const _hoisted_52 = { class: "col input-bg" };
+const _hoisted_53 = { class: "col-7" };
+const _hoisted_54 = { class: "col input-bg" };
+const _hoisted_55 = { class: "col-4" };
+const _hoisted_56 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Количество", -1 /* HOISTED */);
+const _hoisted_57 = { class: "d-flex" };
+const _hoisted_58 = { class: "col-5" };
+const _hoisted_59 = { class: "col input-bg" };
+const _hoisted_60 = { class: "col-7" };
+const _hoisted_61 = { class: "d-flex" };
+const _hoisted_62 = { class: "col-5" };
+const _hoisted_63 = { class: "col input-bg" };
+const _hoisted_64 = { class: "col-7" };
+const _hoisted_65 = { class: "col input-bg" };
+const _hoisted_66 = { class: "col-4" };
+const _hoisted_67 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Таможенная стоимость", -1 /* HOISTED */);
+const _hoisted_68 = { class: "d-flex" };
+const _hoisted_69 = { class: "col-7" };
+const _hoisted_70 = { class: "col input-bg" };
+const _hoisted_71 = { class: "col-3" };
+const _hoisted_72 = { class: "d-flex" };
+const _hoisted_73 = { class: "col input-bg" };
+const _hoisted_74 = /*#__PURE__*/createElementVNode("div", { class: "col-2" }, [
+  /*#__PURE__*/createElementVNode("button", { class: "btn btn-bg-white" }, [
+    /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-note-sticky" })
+  ])
+], -1 /* HOISTED */);
+const _hoisted_75 = { class: "d-flex mt-2" };
+const _hoisted_76 = { class: "col-6" };
+const _hoisted_77 = { class: "col input-bg" };
+const _hoisted_78 = { class: "col-6 d-flex" };
+const _hoisted_79 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr ps-2" }, "Трансп. расх.", -1 /* HOISTED */);
+const _hoisted_80 = { class: "col input-bg" };
+const _hoisted_81 = { class: "col input-bg" };
+const _hoisted_82 = { class: "col-3" };
+const _hoisted_83 = { class: "" };
+const _hoisted_84 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Фактурная стоимость", -1 /* HOISTED */);
+const _hoisted_85 = { class: "d-flex" };
+const _hoisted_86 = { class: "col-8" };
+const _hoisted_87 = { class: "col input-bg" };
+const _hoisted_88 = { class: "col-4" };
+const _hoisted_89 = { class: "col input-bg" };
+const _hoisted_90 = { class: "d-flex mt-2" };
+const _hoisted_91 = { class: "d-flex" };
+const _hoisted_92 = { class: "col-8" };
+const _hoisted_93 = { class: "col input-bg" };
+const _hoisted_94 = { class: "col-4" };
+const _hoisted_95 = { class: "col input-bg" };
+const _hoisted_96 = { class: "row" };
+const _hoisted_97 = { class: "col-9 d-flex" };
+const _hoisted_98 = { class: "col-9 d-flex" };
+const _hoisted_99 = { class: "col input-bg" };
+const _hoisted_100 = { class: "col input-bg" };
+const _hoisted_101 = { class: "col-3 d-flex batch-info-anchors" };
+const _hoisted_102 = /*#__PURE__*/createTextVNode("РОИС");
+const _hoisted_103 = /*#__PURE__*/createTextVNode("Предшествующий документ");
+const _hoisted_104 = { class: "col-3 d-flex" };
+const _hoisted_105 = { class: "d-flex batch-info-anchors" };
+const _hoisted_106 = /*#__PURE__*/createTextVNode("Дополнительный документ ");
+
+function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_router_link = resolveComponent("router-link");
+  const _component_tsoft_additional_document_form = resolveComponent("tsoft-additional-document-form");
+
+  return (openBlock(), createElementBlock(Fragment, null, [
+    createElementVNode("div", _hoisted_1$1, [
+      _hoisted_2,
+      createElementVNode("div", _hoisted_3, [
+        createElementVNode("div", _hoisted_4, [
+          createElementVNode("div", _hoisted_5, [
+            createElementVNode("div", _hoisted_6, [
+              createElementVNode("div", _hoisted_7, [
+                withDirectives(createElementVNode("input", {
+                  class: "form-control",
+                  type: "text",
+                  "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (($props.good.numeric) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, $props.good.numeric]
+                ])
+              ]),
+              createElementVNode("div", _hoisted_8, [
+                withDirectives(createElementVNode("input", {
+                  class: "form-control",
+                  type: "text",
+                  "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.good.totalNumeric) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, $props.good.totalNumeric]
+                ])
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_9, [
+            createElementVNode("div", _hoisted_10, [
+              withDirectives(createElementVNode("textarea", {
+                type: "text",
+                class: "form-control h-100",
+                "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.good.description) = $event))
+              }, null, 512 /* NEED_PATCH */), [
+                [vModelText, $props.good.description]
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_11, [
+            createElementVNode("div", _hoisted_12, [
+              _hoisted_13,
+              createElementVNode("div", _hoisted_14, [
+                createElementVNode("div", _hoisted_15, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.good.changeDetailsType.stageChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.stageChangeCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_16, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.good.changeDetailsType.reasonChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.reasonChangeCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_17, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.good.changeDetailsType.quantityChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.quantityChangeCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_18, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.good.changeDetailsType.TNVEDChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.TNVEDChangeCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_19, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.good.changeDetailsType.customsCostChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.customsCostChangeCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_20, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.good.changeDetailsType.customsPaymentChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.customsPaymentChangeCode]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_21, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control number-code",
+                    type: "number",
+                    "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.good.changeDetailsType.otherChangeCode) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.changeDetailsType.otherChangeCode]
+                  ])
+                ]),
+                _hoisted_22
+              ]),
+              _hoisted_23
+            ])
+          ])
+        ]),
+        createElementVNode("div", _hoisted_24, [
+          createElementVNode("div", _hoisted_25, [
+            createElementVNode("div", _hoisted_26, [
+              createElementVNode("div", _hoisted_27, [
+                _hoisted_28,
+                createElementVNode("div", _hoisted_29, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.good.tnved) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.tnved]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_30, [
+                _hoisted_31,
+                createElementVNode("div", _hoisted_32, [
+                  createElementVNode("div", _hoisted_33, [
+                    createElementVNode("div", _hoisted_34, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.good.grossWeightQuantity) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.good.grossWeightQuantity]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_35, [
+                    createElementVNode("div", _hoisted_36, [
+                      createElementVNode("div", _hoisted_37, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.good.goodWeightUnit) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, $props.good.goodWeightUnit]
+                        ])
+                      ])
+                    ]),
+                    createElementVNode("div", _hoisted_38, [
+                      createElementVNode("div", _hoisted_39, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.good.goodWeightUnknown) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, $props.good.goodWeightUnknown]
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_40, [
+              createElementVNode("div", _hoisted_41, [
+                withDirectives(createElementVNode("input", {
+                  class: "form-control",
+                  type: "text",
+                  placeholder: "наименование товарного знака, объекта авторского",
+                  "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.good.tradeMark) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, $props.good.tradeMark]
+                ])
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_42, [
+            createElementVNode("div", _hoisted_43, [
+              createElementVNode("div", _hoisted_44, [
+                _hoisted_45,
+                createElementVNode("div", _hoisted_46, [
+                  createElementVNode("div", _hoisted_47, [
+                    createElementVNode("div", _hoisted_48, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.good.netWeightQuantity) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.good.netWeightQuantity]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_49, [
+                    createElementVNode("div", _hoisted_50, [
+                      createElementVNode("div", _hoisted_51, [
+                        createElementVNode("div", _hoisted_52, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.good.netWeightUnit) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.good.netWeightUnit]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_53, [
+                        createElementVNode("div", _hoisted_54, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.good.netWeightUnknown) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.good.netWeightUnknown]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_55, [
+                _hoisted_56,
+                createElementVNode("div", _hoisted_57, [
+                  createElementVNode("div", _hoisted_58, [
+                    createElementVNode("div", _hoisted_59, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.good.goodQuantity) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.good.goodQuantity]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_60, [
+                    createElementVNode("div", _hoisted_61, [
+                      createElementVNode("div", _hoisted_62, [
+                        createElementVNode("div", _hoisted_63, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.good.goodUnit) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.good.goodUnit]
+                          ])
+                        ])
+                      ]),
+                      createElementVNode("div", _hoisted_64, [
+                        createElementVNode("div", _hoisted_65, [
+                          withDirectives(createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.good.goodUnknown) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vModelText, $props.good.goodUnknown]
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_66, [
+                _hoisted_67,
+                createElementVNode("div", _hoisted_68, [
+                  createElementVNode("div", _hoisted_69, [
+                    createElementVNode("div", _hoisted_70, [
+                      withDirectives(createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.good.customsCost) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vModelText, $props.good.customsCost]
+                      ])
+                    ])
+                  ]),
+                  createElementVNode("div", _hoisted_71, [
+                    createElementVNode("div", _hoisted_72, [
+                      createElementVNode("div", _hoisted_73, [
+                        withDirectives(createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.good.customsCostCurrency) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vModelText, $props.good.customsCostCurrency]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _hoisted_74
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_75, [
+              createElementVNode("div", _hoisted_76, [
+                createElementVNode("div", _hoisted_77, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    placeholder: "наименование места происх.",
+                    "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.good.productionPlaceName) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.productionPlaceName]
+                  ])
+                ])
+              ]),
+              createElementVNode("div", _hoisted_78, [
+                _hoisted_79,
+                createElementVNode("div", _hoisted_80, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.good.transportCost) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.transportCost]
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_81, [
+                  withDirectives(createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.good.transportCostCurrency) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vModelText, $props.good.transportCostCurrency]
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          createElementVNode("div", _hoisted_82, [
+            createElementVNode("div", _hoisted_83, [
+              _hoisted_84,
+              createElementVNode("div", _hoisted_85, [
+                createElementVNode("div", _hoisted_86, [
+                  createElementVNode("div", _hoisted_87, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.good.invoiceValue) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.good.invoiceValue]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_88, [
+                  createElementVNode("div", _hoisted_89, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => (($props.good.invoiceValueCurrency) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.good.invoiceValueCurrency]
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_90, [
+              createElementVNode("div", _hoisted_91, [
+                createElementVNode("div", _hoisted_92, [
+                  createElementVNode("div", _hoisted_93, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => (($props.good.invoiceValueRus) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.good.invoiceValueRus]
+                    ])
+                  ])
+                ]),
+                createElementVNode("div", _hoisted_94, [
+                  createElementVNode("div", _hoisted_95, [
+                    withDirectives(createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => (($props.good.invoiceValueRusCurrency) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vModelText, $props.good.invoiceValueRusCurrency]
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        createElementVNode("div", _hoisted_96, [
+          createElementVNode("div", _hoisted_97, [
+            createElementVNode("div", _hoisted_98, [
+              createElementVNode("div", _hoisted_99, [
+                withDirectives(createElementVNode("input", {
+                  class: "form-control",
+                  type: "text",
+                  placeholder: "примечание",
+                  "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => (($props.good.note) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, $props.good.note]
+                ])
+              ]),
+              createElementVNode("div", _hoisted_100, [
+                withDirectives(createElementVNode("input", {
+                  class: "form-control",
+                  type: "text",
+                  "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => (($props.good.url) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vModelText, $props.good.url]
+                ])
+              ])
+            ]),
+            createElementVNode("div", _hoisted_101, [
+              createVNode(_component_router_link, {
+                to: { name: 'index' },
+                class: "align-bcntr"
+              }, {
+                default: withCtx(() => [
+                  _hoisted_102
+                ]),
+                _: 1 /* STABLE */
+              }),
+              createVNode(_component_router_link, {
+                to: { name: 'index' },
+                class: "align-bcntr"
+              }, {
+                default: withCtx(() => [
+                  _hoisted_103
+                ]),
+                _: 1 /* STABLE */
+              })
+            ])
+          ]),
+          createElementVNode("div", _hoisted_104, [
+            createElementVNode("div", _hoisted_105, [
+              createVNode(_component_router_link, {
+                to: { name: 'index' },
+                class: "align-bcntr",
+                id: "extraDocLink"
+              }, {
+                default: withCtx(() => [
+                  _hoisted_106
+                ]),
+                _: 1 /* STABLE */
+              })
+            ])
+          ])
+        ])
+      ])
+    ]),
+    (openBlock(true), createElementBlock(Fragment, null, renderList($props.documents, (document, index) => {
+      return (openBlock(), createBlock(_component_tsoft_additional_document_form, {
+        key: index,
+        document: document
+      }, null, 8 /* PROPS */, ["document"]))
+    }), 128 /* KEYED_FRAGMENT */))
+  ], 64 /* STABLE_FRAGMENT */))
+}
+
+script$1.render = render$1;
+script$1.__file = "src/components/Form/GoodInformation.vue";
+
+var script = {
+  name: "TsoftOrderDeclaration",
+  props: {
+    data: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      awbInfo: this.data.awbInfo,
+      registry: this.data.registry.regInfo
+    };
+  }
+};
+
+const _hoisted_1 = { class: "forms" };
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_tsoft_general_declaration_form = resolveComponent("tsoft-general-declaration-form");
+  const _component_tsoft_goods_awb_information_form = resolveComponent("tsoft-goods-awb-information-form");
+
+  return (openBlock(), createElementBlock("div", _hoisted_1, [
+    createElementVNode("p", null, "Текущий ID: " + toDisplayString(_ctx.$route.params.reester_id), 1 /* TEXT */),
+    createVNode(_component_tsoft_general_declaration_form, {
+      "awb-info": this.awbInfo,
+      registry: this.registry
+    }, null, 8 /* PROPS */, ["awb-info", "registry"]),
+    (openBlock(true), createElementBlock(Fragment, null, renderList(this.data.registry.orders, (order, index) => {
+      return (openBlock(), createBlock(_component_tsoft_goods_awb_information_form, {
+        order: order.orderInfo,
+        goods: order.goods,
+        key: index
+      }, null, 8 /* PROPS */, ["order", "goods"]))
+    }), 128 /* KEYED_FRAGMENT */))
+  ]))
+}
+
+var css_248z = "\nli a {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\n.sidebar-prods.active {\r\n  color: orange;\r\n  background-color: green;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\r\n  font-size: 10px;\n}\r\n\r\n/*Region Стили блока декларации*/\n.declaration {\r\n  background-color: #d1d1d1;\r\n  padding: 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  font-size: 10px;\n}\nh4 {\r\n  font-size: 10px;\n}\nh5 {\r\n  text-align: center;\r\n  font-size: 10px;\n}\n.inf-block {\r\n  margin-bottom: 10px;\n}\nlabel {\r\n  margin-top: 7px;\n}\n.inputs-group > div {\r\n  padding: unset;\r\n  min-width: 30px;\r\n  margin-right: 7px;\n}\n.form-check-input {\r\n  min-width: 20px;\r\n  min-height: 20px;\n}\n.sheets-input {\r\n  max-width: 70px;\n}\n.certificate-block div:first-child {\r\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div {\r\n  padding: 0;\r\n  margin-right: 6px;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/**/\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\n}\r\n\r\n/**/\r\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph {\r\n  min-width: 250px;\r\n  max-width: 270px;\r\n  margin: 10px 0 auto 0;\n}\r\n\r\n/**/\n.changing-declaration .inf-block div {\r\n  padding: unset;\r\n  margin-right: 5px;\n}\n.changing-code {\r\n  margin-top: 10px;\n}\r\n\r\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code::-webkit-outer-spin-button,\r\n.number-code::-webkit-inner-spin-button {\r\n  -webkit-appearance: none;\n}\r\n\r\n/**/\r\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form {\r\n  padding: 0 10px 0 4px;\n}\n.batch-form div:first-child {\r\n  padding-left: 0;\n}\n.batch-block {\r\n  padding-left: 10px;\n}\n.batch-block div {\r\n  padding: 0;\n}\r\n\r\n/**/\r\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information {\r\n  width: fit-content;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  font-size: 10px;\n}\n.payment-information:hover {\r\n  cursor: pointer;\n}\r\n\r\n/**/\r\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button:focus {\r\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i {\r\n  transform: rotate(180deg);\n}\n.collapsing-block {\r\n  background-color: white;\r\n  border: 1px solid black;\r\n  padding: 5px 10px;\r\n  font-weight: bold;\n}\n.collapsing-block span,\r\ni {\r\n  font-size: 14px;\n}\r\n\r\n/**/\n.card-body {\r\n  background-color: unset;\r\n  border: 1px solid black;\n}\n.point-name {\r\n  width: fit-content;\r\n  margin: auto auto 0;\r\n  color: #3274dd;\r\n  text-decoration: underline;\n}\n.personal-data div {\r\n  padding: 0 0 0 3px;\n}\r\n\r\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative {\r\n  font-size: 11px;\r\n  font-weight: bold;\r\n  margin: 0 0 8px;\n}\r\n\r\n/**/\r\n/*Стили кнопки календаря*/\n.button-calendar {\r\n  background-color: white;\r\n  border: unset;\r\n  border-radius: 8px;\n}\n.button-calendar:focus {\r\n  box-shadow: unset;\n}\r\n\r\n/**/\r\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr {\r\n  display: flex;\r\n  margin: 5px auto 0;\n}\r\n\r\n/*Стили блока информации о товарной партии*/\n.product-batch {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\r\n\r\n/*Стиль синего хэдера с кнопками */\n.product-batch-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\n.batch-button:focus {\r\n  box-shadow: unset;\n}\n.batch-button i:before {\r\n  color: white;\n}\n.batch-button:last-child i {\r\n  transform: rotate(180deg);\n}\r\n\r\n/**/\n.product-inner-block {\r\n  padding: 10px;\n}\n.fs-12 {\r\n  font-size: 12px;\n}\r\n\r\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button {\r\n  background-color: white;\r\n  border-radius: 5px;\n}\n.new-window-button:hover {\r\n  box-shadow: unset;\n}\n.new-window-button:focus {\r\n  box-shadow: unset;\n}\n.new-window-button i {\r\n  font-size: 15px;\r\n  color: #3274dd;\n}\r\n\r\n/**/\r\n\r\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link {\r\n  display: block;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link:hover {\r\n  color: blue;\r\n  cursor: pointer;\n}\r\n\r\n/**/\n.product-info-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\n.product-info-actions button:focus {\r\n  box-shadow: unset;\n}\n.product-info-actions i:before {\r\n  color: white;\n}\n.product-info-actions .fa-sort-down:before {\r\n  color: black;\n}\n.product-actions-button:not(.collapsed) {\r\n  transform: rotate(180deg);\n}\n.btn-bg-white {\r\n  background-color: white;\r\n  border-radius: 5px;\n}\n.btn-bg-white:focus {\r\n  box-shadow: unset;\n}\n.fa-note-sticky {\r\n  font-size: 16px;\n}\r\n\r\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\n.optional-inf-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\r\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__scopeId = "data-v-d878b218";
-script.__file = "src/components/Form/GoodInformation.vue";
+script.__file = "src/components/Declaration/OrderDeclaration.vue";
 
 var components = { 
-    InputTextarea: script$b,
-    InputText: script$c,
-    TsoftTable: script$a,
-    TsoftTree: script$8,
-    TsoftLeftmenuFolder: script$4,
-    TsoftGeneralDeclarantionForm: script$3,
-    TsoftGoodsAwbInformationForm: script$2,
-    TsoftAdditionalDocumentForm: script$1,
-    TsoftGoodInformationForm: script
+    InputTextarea: script$c,
+    InputText: script$d,
+    TsoftTable: script$b,
+    TsoftTree: script$9,
+    TsoftLeftmenuFolder: script$5,
+    TsoftGeneralDeclarationForm: script$4,
+    TsoftGoodsAwbInformationForm: script$3,
+    TsoftAdditionalDocumentForm: script$2,
+    TsoftGoodInformationForm: script$1,
+    TsoftOrderDeclaration: script
 };
 
 const plugin = {
