@@ -91,8 +91,11 @@ const _hoisted_8$4 = [
 const _hoisted_9$4 = { class: "table" };
 const _hoisted_10$4 = { class: "thead" };
 const _hoisted_11$4 = { class: "tbody" };
+const _hoisted_12$4 = { key: 1 };
 
 function render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_router_link = vue.resolveComponent("router-link");
+
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
     vue.createElementVNode("div", _hoisted_2$9, [
       vue.createElementVNode("div", _hoisted_3$7, [
@@ -128,14 +131,24 @@ function render$b(_ctx, _cache, $props, $setup, $data, $options) {
               ])
             ]),
             vue.createElementVNode("tbody", _hoisted_11$4, [
-              (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.rows, (row) => {
+              (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.rows, (row, index) => {
                 return (vue.openBlock(), vue.createElementBlock("tr", {
                   class: "document-row",
-                  key: row
+                  key: index
                 }, [
                   (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(row, (value, key) => {
                     return (vue.openBlock(), vue.createElementBlock("td", { key: key }, [
-                      vue.createElementVNode("p", null, vue.toDisplayString(value), 1 /* TEXT */)
+                      (key === 'num')
+                        ? (vue.openBlock(), vue.createBlock(_component_router_link, {
+                            key: 0,
+                            to: {name: 'declaration', params: {reester_id: index}}
+                          }, {
+                            default: vue.withCtx(() => [
+                              vue.createTextVNode(vue.toDisplayString(value), 1 /* TEXT */)
+                            ]),
+                            _: 2 /* DYNAMIC */
+                          }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
+                        : (vue.openBlock(), vue.createElementBlock("p", _hoisted_12$4, vue.toDisplayString(value), 1 /* TEXT */))
                     ]))
                   }), 128 /* KEYED_FRAGMENT */))
                 ]))

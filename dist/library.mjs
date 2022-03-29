@@ -1,4 +1,4 @@
-import { openBlock, createElementBlock, createElementVNode, normalizeClass, Fragment, renderList, toDisplayString, pushScopeId, popScopeId, resolveComponent, createBlock, createCommentVNode, createVNode, withCtx, withDirectives, vModelText, vModelCheckbox, createTextVNode, createStaticVNode } from 'vue';
+import { openBlock, createElementBlock, resolveComponent, createElementVNode, normalizeClass, Fragment, renderList, toDisplayString, createBlock, withCtx, createTextVNode, pushScopeId, popScopeId, createCommentVNode, createVNode, withDirectives, vModelText, vModelCheckbox, createStaticVNode } from 'vue';
 
 var script$d = {
   name: 'InputText'
@@ -89,8 +89,11 @@ const _hoisted_8$4 = [
 const _hoisted_9$4 = { class: "table" };
 const _hoisted_10$4 = { class: "thead" };
 const _hoisted_11$4 = { class: "tbody" };
+const _hoisted_12$4 = { key: 1 };
 
 function render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_router_link = resolveComponent("router-link");
+
   return (openBlock(), createElementBlock("div", _hoisted_1$a, [
     createElementVNode("div", _hoisted_2$9, [
       createElementVNode("div", _hoisted_3$7, [
@@ -126,14 +129,24 @@ function render$b(_ctx, _cache, $props, $setup, $data, $options) {
               ])
             ]),
             createElementVNode("tbody", _hoisted_11$4, [
-              (openBlock(true), createElementBlock(Fragment, null, renderList($props.rows, (row) => {
+              (openBlock(true), createElementBlock(Fragment, null, renderList($props.rows, (row, index) => {
                 return (openBlock(), createElementBlock("tr", {
                   class: "document-row",
-                  key: row
+                  key: index
                 }, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(row, (value, key) => {
                     return (openBlock(), createElementBlock("td", { key: key }, [
-                      createElementVNode("p", null, toDisplayString(value), 1 /* TEXT */)
+                      (key === 'num')
+                        ? (openBlock(), createBlock(_component_router_link, {
+                            key: 0,
+                            to: {name: 'declaration', params: {reester_id: index}}
+                          }, {
+                            default: withCtx(() => [
+                              createTextVNode(toDisplayString(value), 1 /* TEXT */)
+                            ]),
+                            _: 2 /* DYNAMIC */
+                          }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
+                        : (openBlock(), createElementBlock("p", _hoisted_12$4, toDisplayString(value), 1 /* TEXT */))
                     ]))
                   }), 128 /* KEYED_FRAGMENT */))
                 ]))
