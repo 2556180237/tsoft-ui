@@ -1,7 +1,6 @@
 <template>
-  <div class="forms">
+  <div class="forms col-9">
     <p>Текущий ID: {{ $route.params.reester_id }}</p>
-
     <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
     <tsoft-goods-awb-information-form
       v-for="(order, index) in this.data.registry.orders"
@@ -31,17 +30,6 @@ export default {
 </script>
 
 <style>
-li a {
-  color: black;
-  text-decoration: unset;
-  font-size: 14px;
-}
-
-.sidebar-prods.active {
-  color: orange;
-  background-color: green;
-}
-
 /*Стили текстовых инпутов*/
 .form-control {
   padding: 0 5px 0 3px;

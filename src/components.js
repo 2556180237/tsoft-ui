@@ -8,6 +8,8 @@ import TsoftGoodsAwbInformationForm from "./components/Form/GoodsAwbInformation.
 import TsoftAdditionalDocumentForm from './components/Form/AdditionalDocument.vue'
 import TsoftGoodInformationForm from './components/Form/GoodInformation.vue'
 import TsoftOrderDeclaration from  './components/Declaration/OrderDeclaration.vue'
+import TsoftLeftmenuGoods from './components/Menu/LeftMenuGoods.vue'
+import TsoftInstrumentsMenu from './components/Menu/InstrumentsMenu.vue'
 
 export default { 
     InputTextarea,
@@ -15,9 +17,11 @@ export default {
     TsoftTable,
     TsoftTree,
     TsoftLeftmenuFolder,
+    TsoftLeftmenuGoods,
     TsoftGeneralDeclarationForm,
     TsoftGoodsAwbInformationForm,
     TsoftAdditionalDocumentForm,
     TsoftGoodInformationForm,
-    TsoftOrderDeclaration
+    TsoftOrderDeclaration,
+    TsoftInstrumentsMenu,
 }
