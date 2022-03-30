@@ -75,16 +75,16 @@ var script$d = {
   },
 };
 
-const _withScopeId$2 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
+const _withScopeId$3 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$c = { class: "content" };
 const _hoisted_2$b = { class: "row section" };
-const _hoisted_3$7 = { class: "table-section" };
+const _hoisted_3$8 = { class: "table-section" };
 const _hoisted_4$8 = { class: "slider-block" };
-const _hoisted_5$5 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
+const _hoisted_5$5 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
 const _hoisted_6$4 = [
   _hoisted_5$5
 ];
-const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
+const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
 const _hoisted_8$4 = [
   _hoisted_7$4
 ];
@@ -98,7 +98,7 @@ function render$d(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$c, [
     vue.createElementVNode("div", _hoisted_2$b, [
-      vue.createElementVNode("div", _hoisted_3$7, [
+      vue.createElementVNode("div", _hoisted_3$8, [
         vue.createElementVNode("div", _hoisted_4$8, [
           vue.createElementVNode("div", {
             class: vue.normalizeClass(["control-prev btn-left", { active: this.leftScroll }]),
@@ -204,7 +204,7 @@ var script$c = {
 
 const _hoisted_1$b = { class: "node-tree" };
 const _hoisted_2$a = { class: "label" };
-const _hoisted_3$6 = { key: 0 };
+const _hoisted_3$7 = { key: 0 };
 
 function render$c(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node = vue.resolveComponent("node");
@@ -212,7 +212,7 @@ function render$c(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$b, [
     vue.createElementVNode("span", _hoisted_2$a, vue.toDisplayString($props.node.label), 1 /* TEXT */),
     ($props.node.children && $props.node.children.length)
-      ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$6, [
+      ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$7, [
           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.node.children, (child) => {
             return (vue.openBlock(), vue.createBlock(_component_node, {
               node: child,
@@ -269,16 +269,16 @@ var script$a = {
   },
 };
 
-const _withScopeId$1 = n => (vue.pushScopeId("data-v-f314cfaa"),n=n(),vue.popScopeId(),n);
+const _withScopeId$2 = n => (vue.pushScopeId("data-v-f314cfaa"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$9 = { class: "file-row" };
 const _hoisted_2$8 = { class: "file" };
-const _hoisted_3$5 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
+const _hoisted_3$6 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
 const _hoisted_4$7 = { class: "file-name" };
 
 function render$a(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$9, [
     vue.createElementVNode("div", _hoisted_2$8, [
-      _hoisted_3$5,
+      _hoisted_3$6,
       vue.createElementVNode("span", _hoisted_4$7, vue.toDisplayString($props.filename), 1 /* TEXT */)
     ])
   ]))
@@ -316,11 +316,11 @@ var script$9 = {
   },
 };
 
-const _withScopeId = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
+const _withScopeId$1 = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$8 = { class: "folder-row" };
 const _hoisted_2$7 = { class: "folder-container" };
-const _hoisted_3$4 = ["onClick"];
-const _hoisted_4$6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
+const _hoisted_3$5 = ["onClick"];
+const _hoisted_4$6 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
 const _hoisted_5$4 = { class: "folder-name" };
 
 function render$9(_ctx, _cache, $props, $setup, $data, $options) {
@@ -339,7 +339,7 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
             'down-rotate': children.isOpen,
           }]),
             onClick: $event => ($options.toggle(folderName))
-          }, null, 10 /* CLASS, PROPS */, _hoisted_3$4),
+          }, null, 10 /* CLASS, PROPS */, _hoisted_3$5),
           _hoisted_4$6,
           vue.createElementVNode("span", _hoisted_5$4, vue.toDisplayString(folderName), 1 /* TEXT */)
         ]),
@@ -438,7 +438,7 @@ const _hoisted_1$6 = {
   id: "declaration"
 };
 const _hoisted_2$5 = { class: "common-inf" };
-const _hoisted_3$3 = { class: "row" };
+const _hoisted_3$4 = { class: "row" };
 const _hoisted_4$5 = { class: "inf-block" };
 const _hoisted_5$3 = /*#__PURE__*/vue.createTextVNode(" Подан с ДТ: ");
 const _hoisted_6$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
@@ -1003,7 +1003,7 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
     vue.createCommentVNode("Region элемент с общей информацией декларации"),
     vue.createElementVNode("div", _hoisted_2$5, [
-      vue.createElementVNode("div", _hoisted_3$3, [
+      vue.createElementVNode("div", _hoisted_3$4, [
         vue.createElementVNode("div", _hoisted_4$5, [
           vue.createVNode(_component_router_link, {
             class: "point-name",
@@ -2854,7 +2854,7 @@ var script$5 = {
 
 const _hoisted_1$5 = { class: "product-batch my-3" };
 const _hoisted_2$4 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
-const _hoisted_3$2 = { class: "product-inner-block" };
+const _hoisted_3$3 = { class: "product-inner-block" };
 const _hoisted_4$4 = { class: "row" };
 const _hoisted_5$2 = { class: "row" };
 const _hoisted_6$2 = { class: "col-9" };
@@ -3210,7 +3210,7 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
       _hoisted_2$4,
       vue.createCommentVNode("endregion"),
       vue.createCommentVNode("Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе"),
-      vue.createElementVNode("div", _hoisted_3$2, [
+      vue.createElementVNode("div", _hoisted_3$3, [
         vue.createCommentVNode("Region элемент с общей информацией о партии"),
         vue.createElementVNode("div", _hoisted_4$4, [
           vue.createElementVNode("div", _hoisted_5$2, [
@@ -4418,7 +4418,7 @@ const _hoisted_1$4 = {
   id: "extraDocBlock"
 };
 const _hoisted_2$3 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
-const _hoisted_3$1 = {
+const _hoisted_3$2 = {
   class: "product-inner-block collapse",
   id: "product-2Inner"
 };
@@ -4521,7 +4521,7 @@ const _hoisted_86$1 = { class: "input-bg" };
 function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
     _hoisted_2$3,
-    vue.createElementVNode("div", _hoisted_3$1, [
+    vue.createElementVNode("div", _hoisted_3$2, [
       vue.createElementVNode("div", _hoisted_4$3, [
         vue.createElementVNode("div", _hoisted_5$1, [
           vue.createElementVNode("div", _hoisted_6$1, [
@@ -4900,7 +4900,7 @@ const _hoisted_1$3 = {
   id: "productInvoiceBlock"
 };
 const _hoisted_2$2 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
-const _hoisted_3 = {
+const _hoisted_3$1 = {
   class: "product-inner-block collapse",
   id: "product-1Inner"
 };
@@ -5023,7 +5023,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
     vue.createElementVNode("div", _hoisted_1$3, [
       _hoisted_2$2,
-      vue.createElementVNode("div", _hoisted_3, [
+      vue.createElementVNode("div", _hoisted_3$1, [
         vue.createElementVNode("div", _hoisted_4$2, [
           vue.createElementVNode("div", _hoisted_5, [
             vue.createElementVNode("div", _hoisted_6, [
@@ -5527,17 +5527,44 @@ script$2.render = render$2;
 script$2.__file = "src/components/Declaration/OrderDeclaration.vue";
 
 var script$1 = {
-  name: "TsoftLeftmenuGoods"
+  name: "TsoftLeftmenuGoods",
+  props: {
+    treeGoods: {
+      type: Object,
+      required: true,
+    }
+  }
 };
 
+const _withScopeId = n => (vue.pushScopeId("data-v-6ebd9650"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$1 = { class: "sidebar col-md-2 me-3" };
-const _hoisted_2$1 = /*#__PURE__*/vue.createStaticVNode("<div class=\"menu-sitemap-tree\" data-v-6ebd9650><div class=\"d-flex p-2 tree-buttons-block\" data-v-6ebd9650><button class=\"btn sidebar-prods active me-3 fs-5\" id=\"goodsButton\" data-v-6ebd9650> Товары </button><button class=\"btn fs-5 sidebar-prods\" id=\"treeButton\" data-v-6ebd9650> Дерево </button></div></div><ol id=\"goodsList\" data-v-6ebd9650><li data-v-6ebd9650><a href=\"#declaration\" data-v-6ebd9650>Заголовок документа</a></li><li data-v-6ebd9650><a href=\"#productInvoiceBlock\" id=\"prodLink1\" data-v-6ebd9650>1</a></li><li data-v-6ebd9650><a href=\"#productInvoiceBlock\" id=\"prodLink2\" data-v-6ebd9650>2</a></li><li data-v-6ebd9650><a href=\"#productInvoiceBlock\" id=\"prodLink3\" data-v-6ebd9650>3</a></li></ol>", 2);
-const _hoisted_4$1 = [
-  _hoisted_2$1
-];
+const _hoisted_2$1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("div", { class: "menu-sitemap-tree" }, [
+  /*#__PURE__*/vue.createElementVNode("div", { class: "d-flex p-2 tree-buttons-block" }, [
+    /*#__PURE__*/vue.createElementVNode("button", {
+      class: "btn sidebar-prods active me-3 fs-5",
+      id: "goodsButton"
+    }, " Товары "),
+    /*#__PURE__*/vue.createElementVNode("button", {
+      class: "btn fs-5 sidebar-prods",
+      id: "treeButton"
+    }, " Дерево ")
+  ])
+], -1 /* HOISTED */));
+const _hoisted_3 = { id: "goodsList" };
+const _hoisted_4$1 = { href: "#declaration" };
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, _hoisted_4$1))
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
+    _hoisted_2$1,
+    vue.createElementVNode("ol", _hoisted_3, [
+      vue.createElementVNode("li", null, [
+        vue.createElementVNode("a", _hoisted_4$1, vue.toDisplayString($props.treeGoods.title) + "а", 1 /* TEXT */)
+      ]),
+      (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.treeGoods.goods, (good, index) => {
+        return (vue.openBlock(), vue.createElementBlock("li", { key: index }, vue.toDisplayString(good), 1 /* TEXT */))
+      }), 128 /* KEYED_FRAGMENT */))
+    ])
+  ]))
 }
 
 var css_248z = "\n.sidebar[data-v-6ebd9650] {\r\n  position: sticky;\r\n  top: 0;\r\n  height: fit-content;\r\n  min-width: 300px;\r\n  margin-top: 40px ;\n}\n.tree-buttons-block[data-v-6ebd9650]{\r\n  background-color: #d7d8d4\n}\n.sidebar-prods[data-v-6ebd9650] {\r\n  border: 1px solid\n}\nli a[data-v-6ebd9650] {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\n.sidebar-prods.active[data-v-6ebd9650] {\r\n  color: orange;\r\n  background-color: green;\n}\r\n";
