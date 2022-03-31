@@ -1,14 +1,49 @@
 <template>
   <div class="forms">
-    <p>Текущий ID: {{ $route.params.reester_id }}</p>
+    <div>
+      <div class="group-panel-label" @click="isGeneralOpen = !isGeneralOpen">
+        <p>Общие сведения</p>
+        <div class="arrow">
+          <span class="fa-solid fa-caret-right" :class="{'down-rotate': isGeneralOpen}" />
+        </div>
+      </div>
+      <div class="group-panel-content" :class="{'open': isGeneralOpen}">
+        <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
+      </div>
+    </div>
 
-    <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
-    <tsoft-goods-awb-information-form
-      v-for="(order, index) in this.data.registry.orders"
-      :order="order.orderInfo"
-      :goods="order.goods"
-      :key="index"
-    />
+    <div>
+      <div class="group-panel-label" @click="isOrdersOpen = !isOrdersOpen">
+        <p>Заказы</p>
+        <div class="arrow">
+          <span class="fa-solid fa-caret-right" :class="{'down-rotate': isOrdersOpen}" />
+        </div>
+      </div>
+      <div class="group-panel-content" :class="{'open': isOrdersOpen}">
+        <tsoft-goods-awb-information-form
+          v-for="(order, index) in this.data.registry.orders"
+          :order="order.orderInfo"
+          :goods="order.goods"
+          :orderNum="index"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div class="group-panel-label" @click="isDocumentOpen = !isDocumentOpen">
+        <p>Документы</p>
+        <div class="arrow">
+          <span class="fa-solid fa-caret-right" :class="{'down-rotate': isDocumentOpen}" />
+        </div>
+      </div>
+      <div class="group-panel-content" :class="{'open': isDocumentOpen}">
+        <tsoft-additional-document-form
+          v-for="(document, index) in this.data.registry.documents"
+          :key="index"
+          :document="document"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
