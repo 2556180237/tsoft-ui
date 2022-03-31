@@ -12,16 +12,10 @@
     </div>
     <ol id="goodsList">
       <li>
-        <a href="#declaration">Заголовок документа</a>
+        <a href="#declaration">{{ treeGoods.title }}а</a>
       </li>
-      <li>
-        <a href="#productInvoiceBlock" id="prodLink1">1</a>
-      </li>
-      <li>
-        <a href="#productInvoiceBlock" id="prodLink2">2</a>
-      </li>
-      <li>
-        <a href="#productInvoiceBlock" id="prodLink3">3</a>
+      <li v-for="(good, index) in treeGoods.goods" :key="index">
+        {{good}}
       </li>
     </ol>
 
@@ -30,7 +24,13 @@
 
 <script>
 export default {
-  name: "TsoftLeftmenuGoods"
+  name: "TsoftLeftmenuGoods",
+  props: {
+    treeGoods: {
+      type: Object,
+      required: true,
+    }
+  }
 }
 </script>
 
