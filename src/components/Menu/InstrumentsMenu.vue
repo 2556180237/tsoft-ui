@@ -1,6 +1,5 @@
 <template>
-  <div class="row instruments">
-    <div class="col-6 d-flex">
+  <div class="d-flex instruments">
       <div class="dropdown" title="создать документ">
         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -169,8 +168,6 @@
           <i class="fa-solid fa-screwdriver-wrench" style="font-size: 20px; color: blue"></i>
         </button>
       </div>
-    </div>
-    <div class="col-6"></div>
   </div>
 </template>
 
@@ -181,7 +178,5 @@ export default {
 </script>
 
 <style scoped>
- .instruments {
-   margin-left: 50px;
- }
+
 </style>
