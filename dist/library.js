@@ -2,31 +2,31 @@
 
 var vue = require('vue');
 
-var script$f = {
+var script$d = {
   name: 'InputText'
 };
 
-const _hoisted_1$d = { type: "text" };
+const _hoisted_1$b = { type: "text" };
 
-function render$f(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$d))
+function render$d(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$b))
 }
 
-script$f.render = render$f;
-script$f.__file = "src/InputText.vue";
+script$d.render = render$d;
+script$d.__file = "src/InputText.vue";
 
-var script$e = {
+var script$c = {
   name: 'InputTextarea'
 };
 
-function render$e(_ctx, _cache, $props, $setup, $data, $options) {
+function render$c(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("textarea"))
 }
 
-script$e.render = render$e;
-script$e.__file = "src/InputTextarea.vue";
+script$c.render = render$c;
+script$c.__file = "src/InputTextarea.vue";
 
-var script$d = {
+var script$b = {
   name: "TsoftTable",
   props: {
     titles: {
@@ -75,31 +75,31 @@ var script$d = {
   },
 };
 
-const _withScopeId$3 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$c = { class: "content" };
-const _hoisted_2$b = { class: "row section" };
+const _withScopeId$2 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
+const _hoisted_1$a = { class: "content" };
+const _hoisted_2$a = { class: "row section" };
 const _hoisted_3$8 = { class: "table-section" };
-const _hoisted_4$8 = { class: "slider-block" };
-const _hoisted_5$5 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
-const _hoisted_6$4 = [
-  _hoisted_5$5
+const _hoisted_4$7 = { class: "slider-block" };
+const _hoisted_5$6 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
+const _hoisted_6$5 = [
+  _hoisted_5$6
 ];
-const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
+const _hoisted_7$5 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
 const _hoisted_8$4 = [
-  _hoisted_7$4
+  _hoisted_7$5
 ];
 const _hoisted_9$4 = { class: "table" };
 const _hoisted_10$4 = { class: "thead" };
 const _hoisted_11$4 = { class: "tbody" };
 const _hoisted_12$4 = { key: 1 };
 
-function render$d(_ctx, _cache, $props, $setup, $data, $options) {
+function render$b(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$c, [
-    vue.createElementVNode("div", _hoisted_2$b, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
+    vue.createElementVNode("div", _hoisted_2$a, [
       vue.createElementVNode("div", _hoisted_3$8, [
-        vue.createElementVNode("div", _hoisted_4$8, [
+        vue.createElementVNode("div", _hoisted_4$7, [
           vue.createElementVNode("div", {
             class: vue.normalizeClass(["control-prev btn-left", { active: this.leftScroll }]),
             id: "tableSliderLeft",
@@ -107,7 +107,7 @@ function render$d(_ctx, _cache, $props, $setup, $data, $options) {
             style: {"transform":"translate3d(0px, 48px, 0px)"},
             onMouseout: _cache[0] || (_cache[0] = (...args) => ($options.stop && $options.stop(...args))),
             onMouseover: _cache[1] || (_cache[1] = (...args) => ($options.moveLeft && $options.moveLeft(...args)))
-          }, _hoisted_6$4, 34 /* CLASS, HYDRATE_EVENTS */),
+          }, _hoisted_6$5, 34 /* CLASS, HYDRATE_EVENTS */),
           vue.createElementVNode("div", {
             class: "control-next btn-right",
             id: "tableSliderRight",
@@ -188,29 +188,29 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$7 = "\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\r\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\r\n    center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\r\n    center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\r\n";
-styleInject(css_248z$7);
+var css_248z$5 = "\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\r\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\r\n    center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\r\n    center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\r\n";
+styleInject(css_248z$5);
 
-script$d.render = render$d;
-script$d.__scopeId = "data-v-647119ad";
-script$d.__file = "src/components/Table/Table.vue";
+script$b.render = render$b;
+script$b.__scopeId = "data-v-647119ad";
+script$b.__file = "src/components/Table/Table.vue";
 
-var script$c = {
+var script$a = {
   name: "node",
   props: {
     node: Object,
   },
 };
 
-const _hoisted_1$b = { class: "node-tree" };
-const _hoisted_2$a = { class: "label" };
+const _hoisted_1$9 = { class: "node-tree" };
+const _hoisted_2$9 = { class: "label" };
 const _hoisted_3$7 = { key: 0 };
 
-function render$c(_ctx, _cache, $props, $setup, $data, $options) {
+function render$a(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node = vue.resolveComponent("node");
 
-  return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$b, [
-    vue.createElementVNode("span", _hoisted_2$a, vue.toDisplayString($props.node.label), 1 /* TEXT */),
+  return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$9, [
+    vue.createElementVNode("span", _hoisted_2$9, vue.toDisplayString($props.node.label), 1 /* TEXT */),
     ($props.node.children && $props.node.children.length)
       ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$7, [
           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.node.children, (child) => {
@@ -224,10 +224,10 @@ function render$c(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$c.render = render$c;
-script$c.__file = "src/components/Tree/NodeTreeMenu.vue";
+script$a.render = render$a;
+script$a.__file = "src/components/Tree/NodeTreeMenu.vue";
 
-var script$b = {
+var script$9 = {
   props: {
     folders: {
       type: Object
@@ -237,30 +237,30 @@ var script$b = {
     }
   },
   components: {
-    NodeTree: script$c
+    NodeTree: script$a
   }
 };
 
-const _hoisted_1$a = { class: "tree" };
-const _hoisted_2$9 = { class: "tree-list" };
+const _hoisted_1$8 = { class: "tree" };
+const _hoisted_2$8 = { class: "tree-list" };
 
-function render$b(_ctx, _cache) {
+function render$9(_ctx, _cache) {
   const _component_node_tree = vue.resolveComponent("node-tree");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
-    vue.createElementVNode("ul", _hoisted_2$9, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
+    vue.createElementVNode("ul", _hoisted_2$8, [
       vue.createVNode(_component_node_tree, { node: _ctx.treeData }, null, 8 /* PROPS */, ["node"])
     ])
   ]))
 }
 
-var css_248z$6 = "\n.tree-list ul {\r\n  padding-left: 16px;\r\n  margin: 6px 0;\n}\r\n";
-styleInject(css_248z$6);
+var css_248z$4 = "\n.tree-list ul {\r\n  padding-left: 16px;\r\n  margin: 6px 0;\n}\r\n";
+styleInject(css_248z$4);
 
-script$b.render = render$b;
-script$b.__file = "src/components/Tree/TreeMenu.vue";
+script$9.render = render$9;
+script$9.__file = "src/components/Tree/TreeMenu.vue";
 
-var script$a = {
+var script$8 = {
   name: "TreeFile",
   props: {
     filename: {
@@ -269,32 +269,32 @@ var script$a = {
   },
 };
 
-const _withScopeId$2 = n => (vue.pushScopeId("data-v-f314cfaa"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$9 = { class: "file-row" };
-const _hoisted_2$8 = { class: "file" };
-const _hoisted_3$6 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
-const _hoisted_4$7 = { class: "file-name" };
+const _withScopeId$1 = n => (vue.pushScopeId("data-v-f314cfaa"),n=n(),vue.popScopeId(),n);
+const _hoisted_1$7 = { class: "file-row" };
+const _hoisted_2$7 = { class: "file" };
+const _hoisted_3$6 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
+const _hoisted_4$6 = { class: "file-name" };
 
-function render$a(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$9, [
-    vue.createElementVNode("div", _hoisted_2$8, [
+function render$8(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
+    vue.createElementVNode("div", _hoisted_2$7, [
       _hoisted_3$6,
-      vue.createElementVNode("span", _hoisted_4$7, vue.toDisplayString($props.filename), 1 /* TEXT */)
+      vue.createElementVNode("span", _hoisted_4$6, vue.toDisplayString($props.filename), 1 /* TEXT */)
     ])
   ]))
 }
 
-var css_248z$5 = "\n.file-name[data-v-f314cfaa]:hover {\r\n  color: #e67926;\n}\n.fa-file[data-v-f314cfaa] {\r\n  color: #252525;\n}\n.file[data-v-f314cfaa] {\r\n  margin-left: 18px;\r\n  white-space: nowrap;\n}\n.file-name[data-v-f314cfaa] {\r\n  margin-left: 9px;\n}\n.file-name[data-v-f314cfaa] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\r\n";
-styleInject(css_248z$5);
+var css_248z$3 = "\n.file-name[data-v-f314cfaa]:hover {\r\n  color: #e67926;\n}\n.fa-file[data-v-f314cfaa] {\r\n  color: #252525;\n}\n.file[data-v-f314cfaa] {\r\n  margin-left: 18px;\r\n  white-space: nowrap;\n}\n.file-name[data-v-f314cfaa] {\r\n  margin-left: 9px;\n}\n.file-name[data-v-f314cfaa] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\r\n";
+styleInject(css_248z$3);
 
-script$a.render = render$a;
-script$a.__scopeId = "data-v-f314cfaa";
-script$a.__file = "src/components/Tree/TreeFile.vue";
+script$8.render = render$8;
+script$8.__scopeId = "data-v-f314cfaa";
+script$8.__file = "src/components/Tree/TreeFile.vue";
 
-var script$9 = {
+var script$7 = {
   name: "TreeFolder",
   components: {
-    TreeFile: script$a,
+    TreeFile: script$8,
   },
   props: {
     treeData: {
@@ -316,32 +316,32 @@ var script$9 = {
   },
 };
 
-const _withScopeId$1 = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$8 = { class: "folder-row" };
-const _hoisted_2$7 = { class: "folder-container" };
+const _withScopeId = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
+const _hoisted_1$6 = { class: "folder-row" };
+const _hoisted_2$6 = { class: "folder-container" };
 const _hoisted_3$5 = ["onClick"];
-const _hoisted_4$6 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
-const _hoisted_5$4 = { class: "folder-name" };
+const _hoisted_4$5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
+const _hoisted_5$5 = { class: "folder-name" };
 
-function render$9(_ctx, _cache, $props, $setup, $data, $options) {
+function render$7(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = vue.resolveComponent("tree-folder", true);
   const _component_tree_file = vue.resolveComponent("tree-file");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
     (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.dataFiles.folders, (children, folderName) => {
       return (vue.openBlock(), vue.createElementBlock("div", {
         class: "folder",
         key: folderName
       }, [
-        vue.createElementVNode("div", _hoisted_2$7, [
+        vue.createElementVNode("div", _hoisted_2$6, [
           vue.createElementVNode("i", {
             class: vue.normalizeClass(["fa-solid fa-angle-right", {
             'down-rotate': children.isOpen,
           }]),
             onClick: $event => ($options.toggle(folderName))
           }, null, 10 /* CLASS, PROPS */, _hoisted_3$5),
-          _hoisted_4$6,
-          vue.createElementVNode("span", _hoisted_5$4, vue.toDisplayString(folderName), 1 /* TEXT */)
+          _hoisted_4$5,
+          vue.createElementVNode("span", _hoisted_5$5, vue.toDisplayString(folderName), 1 /* TEXT */)
         ]),
         vue.createElementVNode("div", {
           class: vue.normalizeClass(["file-content", { 'content-open': children.isOpen }])
@@ -359,17 +359,17 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$4 = "\n.toggle-icon[data-v-61a6cc5d] {\r\n  height: 16px;\r\n  width: 8px;\r\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\r\n  padding-left: 21px;\r\n  margin-right: -20px;\r\n  height: 0px;\r\n  overflow: unset;\r\n  opacity: 0;\r\n  transition: 0s;\n}\n.content-open[data-v-61a6cc5d] {\r\n  height: fit-content;\r\n  overflow: unset;\r\n  opacity: 1;\r\n  transition: 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\r\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\r\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\r\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\r\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  color: rgb(190, 190, 190);\r\n  margin-right: 7px;\r\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  transition: 0.15s;\r\n  rotate: 0;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\r\n  color: #e67926;\r\n  margin-right: 7px;\n}\r\n";
-styleInject(css_248z$4);
+var css_248z$2 = "\n.toggle-icon[data-v-61a6cc5d] {\r\n  height: 16px;\r\n  width: 8px;\r\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\r\n  padding-left: 21px;\r\n  margin-right: -20px;\r\n  height: 0px;\r\n  overflow: unset;\r\n  opacity: 0;\r\n  transition: 0s;\n}\n.content-open[data-v-61a6cc5d] {\r\n  height: fit-content;\r\n  overflow: unset;\r\n  opacity: 1;\r\n  transition: 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\r\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\r\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\r\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\r\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  color: rgb(190, 190, 190);\r\n  margin-right: 7px;\r\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  transition: 0.15s;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\r\n  color: #e67926;\r\n  margin-right: 7px;\n}\r\n";
+styleInject(css_248z$2);
 
-script$9.render = render$9;
-script$9.__scopeId = "data-v-61a6cc5d";
-script$9.__file = "src/components/Tree/TreeFolder.vue";
+script$7.render = render$7;
+script$7.__scopeId = "data-v-61a6cc5d";
+script$7.__file = "src/components/Tree/TreeFolder.vue";
 
-var script$8 = {
+var script$6 = {
   name: "TreeFileSystem",
   components: {
-    TreeFolder: script$9,
+    TreeFolder: script$7,
   },
   props: {
     treeData: {
@@ -378,19 +378,19 @@ var script$8 = {
   },
 };
 
-function render$8(_ctx, _cache, $props, $setup, $data, $options) {
+function render$6(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = vue.resolveComponent("tree-folder");
 
   return (vue.openBlock(), vue.createBlock(_component_tree_folder, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"]))
 }
 
-script$8.render = render$8;
-script$8.__file = "src/components/Tree/TreeFileSystem.vue";
+script$6.render = render$6;
+script$6.__file = "src/components/Tree/TreeFileSystem.vue";
 
-var script$7 = {
+var script$5 = {
   name: "TsoftLeftmenuFolder",
   components: {
-    TreeFileSystem: script$8,
+    TreeFileSystem: script$6,
   },
   props: {
     treeData: {
@@ -399,27 +399,27 @@ var script$7 = {
   },
 };
 
-const _hoisted_1$7 = { class: "menu-sitemap-tree" };
-const _hoisted_2$6 = { class: "file-system" };
+const _hoisted_1$5 = { class: "menu-sitemap-tree" };
+const _hoisted_2$5 = { class: "file-system" };
 
-function render$7(_ctx, _cache, $props, $setup, $data, $options) {
+function render$5(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_file_system = vue.resolveComponent("tree-file-system");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
-    vue.createElementVNode("div", _hoisted_2$6, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$5, [
+    vue.createElementVNode("div", _hoisted_2$5, [
       vue.createVNode(_component_tree_file_system, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"])
     ])
   ]))
 }
 
-var css_248z$3 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: scroll;\n}\r\n";
-styleInject(css_248z$3);
+var css_248z$1 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: scroll;\n}\r\n";
+styleInject(css_248z$1);
 
-script$7.render = render$7;
-script$7.__scopeId = "data-v-647b20c4";
-script$7.__file = "src/components/Menu/LeftmenuFolder.vue";
+script$5.render = render$5;
+script$5.__scopeId = "data-v-647b20c4";
+script$5.__file = "src/components/Menu/LeftmenuFolder.vue";
 
-var script$6 = {
+var script$4 = {
   name: "TsoftGeneralDeclarationForm",
   props: {
     awbInfo: {
@@ -433,20 +433,20 @@ var script$6 = {
   }
 };
 
-const _hoisted_1$6 = {
+const _hoisted_1$4 = {
   class: "declaration mt-3",
   id: "declaration"
 };
-const _hoisted_2$5 = { class: "common-inf" };
+const _hoisted_2$4 = { class: "common-inf" };
 const _hoisted_3$4 = { class: "row" };
-const _hoisted_4$5 = { class: "inf-block" };
-const _hoisted_5$3 = /*#__PURE__*/vue.createTextVNode(" Подан с ДТ: ");
-const _hoisted_6$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
+const _hoisted_4$4 = { class: "inf-block" };
+const _hoisted_5$4 = /*#__PURE__*/vue.createTextVNode(" Подан с ДТ: ");
+const _hoisted_6$4 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
   /*#__PURE__*/vue.createElementVNode("div", { class: "inf-block" }, [
     /*#__PURE__*/vue.createElementVNode("h5", null, " Декларация на товары и пассажирская таможенная декларация для экспресс-грузов ")
   ])
 ], -1 /* HOISTED */);
-const _hoisted_7$3 = { class: "row" };
+const _hoisted_7$4 = { class: "row" };
 const _hoisted_8$3 = { class: "inf-block row col-12 justify-content-between" };
 const _hoisted_9$3 = { class: "checkbox-block d-flex col-2" };
 const _hoisted_10$3 = { class: "checkbox-bg col-2" };
@@ -586,10 +586,10 @@ const _hoisted_103$2 = { class: "col-3" };
 const _hoisted_104$2 = { class: "col-3" };
 const _hoisted_105$2 = { class: "col-3 inf-block" };
 const _hoisted_106$2 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общая таможенная стоимость", -1 /* HOISTED */);
-const _hoisted_107$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
+const _hoisted_107$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, "по ДТ для экспресс-грузов")
 ], -1 /* HOISTED */);
-const _hoisted_108$1 = { class: "batch-block row" };
+const _hoisted_108$2 = { class: "batch-block row" };
 const _hoisted_109$1 = { class: "col-9" };
 const _hoisted_110$1 = { class: "col-3" };
 const _hoisted_111$1 = { class: "row" };
@@ -804,11 +804,11 @@ const _hoisted_269$1 = { class: "col-4" };
 const _hoisted_270$1 = { class: "input-bg" };
 const _hoisted_271$1 = { class: "row my-2" };
 const _hoisted_272$1 = { class: "col-4" };
-const _hoisted_273 = { class: "input-bg" };
-const _hoisted_274 = { class: "col-2" };
-const _hoisted_275 = { class: "input-bg" };
-const _hoisted_276 = { class: "col-2" };
-const _hoisted_277 = { class: "input-bg" };
+const _hoisted_273$1 = { class: "input-bg" };
+const _hoisted_274$1 = { class: "col-2" };
+const _hoisted_275$1 = { class: "input-bg" };
+const _hoisted_276$1 = { class: "col-2" };
+const _hoisted_277$1 = { class: "input-bg" };
 const _hoisted_278 = { class: "col-2" };
 const _hoisted_279 = { class: "input-bg" };
 const _hoisted_280 = { class: "row my-2" };
@@ -997,27 +997,27 @@ const _hoisted_425 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bc
 const _hoisted_426 = { class: "row" };
 const _hoisted_427 = { class: "col-2 input-bg" };
 
-function render$6(_ctx, _cache, $props, $setup, $data, $options) {
+function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
     vue.createCommentVNode("Region элемент с общей информацией декларации"),
-    vue.createElementVNode("div", _hoisted_2$5, [
+    vue.createElementVNode("div", _hoisted_2$4, [
       vue.createElementVNode("div", _hoisted_3$4, [
-        vue.createElementVNode("div", _hoisted_4$5, [
+        vue.createElementVNode("div", _hoisted_4$4, [
           vue.createVNode(_component_router_link, {
             class: "point-name",
             to: { name: 'index' }
           }, {
             default: vue.withCtx(() => [
-              _hoisted_5$3
+              _hoisted_5$4
             ]),
             _: 1 /* STABLE */
           })
         ])
       ]),
-      _hoisted_6$3,
-      vue.createElementVNode("div", _hoisted_7$3, [
+      _hoisted_6$4,
+      vue.createElementVNode("div", _hoisted_7$4, [
         vue.createElementVNode("div", _hoisted_8$3, [
           vue.createElementVNode("div", _hoisted_9$3, [
             vue.createElementVNode("div", _hoisted_10$3, [
@@ -1435,8 +1435,8 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
             ]),
             vue.createElementVNode("div", _hoisted_105$2, [
               _hoisted_106$2,
-              _hoisted_107$1,
-              vue.createElementVNode("div", _hoisted_108$1, [
+              _hoisted_107$2,
+              vue.createElementVNode("div", _hoisted_108$2, [
                 vue.createElementVNode("div", _hoisted_109$1, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
@@ -2136,7 +2136,7 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
                     ]),
                     vue.createElementVNode("div", _hoisted_271$1, [
                       vue.createElementVNode("div", _hoisted_272$1, [
-                        vue.createElementVNode("div", _hoisted_273, [
+                        vue.createElementVNode("div", _hoisted_273$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2146,8 +2146,8 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_274, [
-                        vue.createElementVNode("div", _hoisted_275, [
+                      vue.createElementVNode("div", _hoisted_274$1, [
+                        vue.createElementVNode("div", _hoisted_275$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2158,8 +2158,8 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_276, [
-                        vue.createElementVNode("div", _hoisted_277, [
+                      vue.createElementVNode("div", _hoisted_276$1, [
+                        vue.createElementVNode("div", _hoisted_277$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2835,147 +2835,158 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$6.render = render$6;
-script$6.__file = "src/components/Form/GeneralDeclaration.vue";
+script$4.render = render$4;
+script$4.__file = "src/components/Form/GeneralDeclaration.vue";
 
-var script$5 = {
+var script$3 = {
   name: "TsoftGoodsAwbInformationForm",
+  data() {
+    return {
+      isGoodsOpen: false,
+      isOrderOpen: false
+    };
+  },
   props: {
     order: {
       type: Object,
+      required: true
+    },
+    orderNum: {
       required: true
     },
     goods: {
       type: Object,
       required: true
     }
-  },
+  }
 };
 
-const _hoisted_1$5 = { class: "product-batch my-3" };
-const _hoisted_2$4 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
-const _hoisted_3$3 = { class: "product-inner-block" };
-const _hoisted_4$4 = { class: "row" };
-const _hoisted_5$2 = { class: "row" };
-const _hoisted_6$2 = { class: "col-9" };
-const _hoisted_7$2 = { action: "" };
-const _hoisted_8$2 = { class: "d-flex" };
-const _hoisted_9$2 = { class: "col-3 d-flex" };
-const _hoisted_10$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-6 align-bcntr" }, [
+const _hoisted_1$3 = { class: "order" };
+const _hoisted_2$3 = { class: "arrow" };
+const _hoisted_3$3 = { class: "product-batch my-3" };
+const _hoisted_4$3 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
+const _hoisted_5$3 = { class: "product-inner-block" };
+const _hoisted_6$3 = { class: "row" };
+const _hoisted_7$3 = { class: "row" };
+const _hoisted_8$2 = { class: "col-9" };
+const _hoisted_9$2 = { action: "" };
+const _hoisted_10$2 = { class: "d-flex" };
+const _hoisted_11$2 = { class: "col-3 d-flex" };
+const _hoisted_12$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-6 align-bcntr" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Общая накладная")
 ], -1 /* HOISTED */);
-const _hoisted_11$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_12$2 = { class: "input-bg col-5" };
-const _hoisted_13$2 = { class: "col-4" };
-const _hoisted_14$2 = { class: "input-bg" };
-const _hoisted_15$2 = { class: "col-3" };
+const _hoisted_13$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_14$2 = { class: "input-bg col-5" };
+const _hoisted_15$2 = { class: "col-4" };
 const _hoisted_16$2 = { class: "input-bg" };
-const _hoisted_17$2 = { class: "col-2" };
+const _hoisted_17$2 = { class: "col-3" };
 const _hoisted_18$2 = { class: "input-bg" };
-const _hoisted_19$2 = { class: "d-flex my-2" };
-const _hoisted_20$2 = { class: "col-3 d-flex" };
-const _hoisted_21$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-6 align-bcntr" }, [
+const _hoisted_19$2 = { class: "col-2" };
+const _hoisted_20$2 = { class: "input-bg" };
+const _hoisted_21$2 = { class: "d-flex my-2" };
+const _hoisted_22$2 = { class: "col-3 d-flex" };
+const _hoisted_23$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-6 align-bcntr" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Инд. накладная")
 ], -1 /* HOISTED */);
-const _hoisted_22$2 = { class: "col-2" };
-const _hoisted_23$2 = { class: "input-bg" };
-const _hoisted_24$2 = { class: "input-bg col-4" };
-const _hoisted_25$2 = { class: "col-4" };
-const _hoisted_26$2 = { class: "input-bg" };
-const _hoisted_27$2 = { class: "col-3" };
+const _hoisted_24$2 = { class: "col-2" };
+const _hoisted_25$2 = { class: "input-bg" };
+const _hoisted_26$2 = { class: "input-bg col-4" };
+const _hoisted_27$2 = { class: "col-4" };
 const _hoisted_28$2 = { class: "input-bg" };
-const _hoisted_29$2 = { class: "col-2" };
+const _hoisted_29$2 = { class: "col-3" };
 const _hoisted_30$2 = { class: "input-bg" };
-const _hoisted_31$2 = { class: "row my-3" };
-const _hoisted_32$2 = { class: "col-4" };
-const _hoisted_33$2 = /*#__PURE__*/vue.createElementVNode("h5", { class: "align-bcntr my-1" }, "Общий вес брутто", -1 /* HOISTED */);
-const _hoisted_34$2 = { class: "d-flex" };
-const _hoisted_35$2 = { class: "col-6" };
-const _hoisted_36$2 = { class: "input-bg" };
-const _hoisted_37$2 = { class: "col-6 d-flex" };
-const _hoisted_38$2 = { class: "col-7" };
-const _hoisted_39$2 = { class: "input-bg" };
-const _hoisted_40$2 = { class: "col-5" };
+const _hoisted_31$2 = { class: "col-2" };
+const _hoisted_32$2 = { class: "input-bg" };
+const _hoisted_33$2 = { class: "row my-3" };
+const _hoisted_34$2 = { class: "col-4" };
+const _hoisted_35$2 = /*#__PURE__*/vue.createElementVNode("h5", { class: "align-bcntr my-1" }, "Общий вес брутто", -1 /* HOISTED */);
+const _hoisted_36$2 = { class: "d-flex" };
+const _hoisted_37$2 = { class: "col-6" };
+const _hoisted_38$2 = { class: "input-bg" };
+const _hoisted_39$2 = { class: "col-6 d-flex" };
+const _hoisted_40$2 = { class: "col-7" };
 const _hoisted_41$2 = { class: "input-bg" };
-const _hoisted_42$2 = { class: "col-4" };
-const _hoisted_43$2 = /*#__PURE__*/vue.createElementVNode("h5", { class: "align-bcntr my-1" }, "Общая таможенная стоимость", -1 /* HOISTED */);
-const _hoisted_44$2 = { class: "d-flex" };
-const _hoisted_45$2 = { class: "col-8" };
-const _hoisted_46$2 = { class: "input-bg" };
-const _hoisted_47$2 = { class: "col-4 d-flex" };
-const _hoisted_48$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
-const _hoisted_49$2 = { class: "col-10" };
-const _hoisted_50$2 = { class: "input-bg" };
-const _hoisted_51$2 = { class: "col-4" };
-const _hoisted_52$2 = /*#__PURE__*/vue.createElementVNode("h5", { class: "align-bcntr my-1 fs-12" }, " Общая стоимость по инд. накладной ", -1 /* HOISTED */);
-const _hoisted_53$2 = { class: "d-flex" };
-const _hoisted_54$2 = { class: "col-9" };
-const _hoisted_55$2 = { class: "input-bg" };
-const _hoisted_56$2 = { class: "col-3 d-flex" };
-const _hoisted_57$2 = { class: "col-12" };
-const _hoisted_58$2 = { class: "input-bg" };
-const _hoisted_59$2 = { class: "row align-items-end" };
-const _hoisted_60$2 = { class: "col-8 d-flex" };
-const _hoisted_61$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-3 d-flex align-bcntr" }, [
+const _hoisted_42$2 = { class: "col-5" };
+const _hoisted_43$2 = { class: "input-bg" };
+const _hoisted_44$2 = { class: "col-4" };
+const _hoisted_45$2 = /*#__PURE__*/vue.createElementVNode("h5", { class: "align-bcntr my-1" }, "Общая таможенная стоимость", -1 /* HOISTED */);
+const _hoisted_46$2 = { class: "d-flex" };
+const _hoisted_47$2 = { class: "col-8" };
+const _hoisted_48$2 = { class: "input-bg" };
+const _hoisted_49$2 = { class: "col-4 d-flex" };
+const _hoisted_50$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
+const _hoisted_51$2 = { class: "col-10" };
+const _hoisted_52$2 = { class: "input-bg" };
+const _hoisted_53$2 = { class: "col-4" };
+const _hoisted_54$2 = /*#__PURE__*/vue.createElementVNode("h5", { class: "align-bcntr my-1 fs-12" }, " Общая стоимость по инд. накладной ", -1 /* HOISTED */);
+const _hoisted_55$2 = { class: "d-flex" };
+const _hoisted_56$2 = { class: "col-9" };
+const _hoisted_57$2 = { class: "input-bg" };
+const _hoisted_58$2 = { class: "col-3 d-flex" };
+const _hoisted_59$2 = { class: "col-12" };
+const _hoisted_60$2 = { class: "input-bg" };
+const _hoisted_61$2 = { class: "row align-items-end" };
+const _hoisted_62$2 = { class: "col-8 d-flex" };
+const _hoisted_63$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-3 d-flex align-bcntr" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Интернет-магазин")
 ], -1 /* HOISTED */);
-const _hoisted_62$2 = { class: "col-7" };
-const _hoisted_63$2 = { class: "input-bg" };
-const _hoisted_64$2 = { class: "col-2 d-flex" };
-const _hoisted_65$2 = { class: "col-7 d-flex" };
-const _hoisted_66$2 = { class: "input-bg" };
-const _hoisted_67$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-5" }, [
+const _hoisted_64$2 = { class: "col-7" };
+const _hoisted_65$2 = { class: "input-bg" };
+const _hoisted_66$2 = { class: "col-2 d-flex" };
+const _hoisted_67$2 = { class: "col-7 d-flex" };
+const _hoisted_68$2 = { class: "input-bg" };
+const _hoisted_69$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-5" }, [
   /*#__PURE__*/vue.createElementVNode("button", { class: "btn new-window-button" }, [
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-pager" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_68$2 = { class: "col-4" };
-const _hoisted_69$2 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Номер мешка/места", -1 /* HOISTED */);
-const _hoisted_70$2 = { class: "input-bg" };
-const _hoisted_71$2 = { class: "col-3" };
-const _hoisted_72$2 = { class: "batch-info-anchors" };
-const _hoisted_73$2 = /*#__PURE__*/vue.createTextVNode(" Сведения о товарах в накладной ");
-const _hoisted_74$2 = /*#__PURE__*/vue.createTextVNode(" Сведения о там.сборе накладной ");
-const _hoisted_75$2 = /*#__PURE__*/vue.createTextVNode(" Суммы пошлин и налогов накладной ");
-const _hoisted_76$2 = /*#__PURE__*/vue.createTextVNode(" Исчисление там.пошлин, налогов ");
-const _hoisted_77$2 = { class: "inf-block changing-code row" };
-const _hoisted_78$2 = /*#__PURE__*/vue.createElementVNode("div", {
+const _hoisted_70$2 = { class: "col-4" };
+const _hoisted_71$2 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Номер мешка/места", -1 /* HOISTED */);
+const _hoisted_72$2 = { class: "input-bg" };
+const _hoisted_73$2 = { class: "col-3" };
+const _hoisted_74$2 = { class: "batch-info-anchors" };
+const _hoisted_75$2 = /*#__PURE__*/vue.createTextVNode(" Сведения о товарах в накладной ");
+const _hoisted_76$2 = /*#__PURE__*/vue.createTextVNode(" Сведения о там.сборе накладной ");
+const _hoisted_77$2 = /*#__PURE__*/vue.createTextVNode(" Суммы пошлин и налогов накладной ");
+const _hoisted_78$2 = /*#__PURE__*/vue.createTextVNode(" Исчисление там.пошлин, налогов ");
+const _hoisted_79$2 = { class: "inf-block changing-code row" };
+const _hoisted_80$2 = /*#__PURE__*/vue.createElementVNode("div", {
   class: "label-block",
   style: {"width":"100%"}
 }, [
   /*#__PURE__*/vue.createElementVNode("label", { class: "fs-5" }, "Код изменений")
 ], -1 /* HOISTED */);
-const _hoisted_79$2 = { class: "col-10 d-flex" };
-const _hoisted_80$2 = { class: "col input-bg" };
-const _hoisted_81$2 = { class: "col input-bg" };
+const _hoisted_81$2 = { class: "col-10 d-flex" };
 const _hoisted_82$2 = { class: "col input-bg" };
 const _hoisted_83$2 = { class: "col input-bg" };
 const _hoisted_84$2 = { class: "col input-bg" };
 const _hoisted_85$2 = { class: "col input-bg" };
 const _hoisted_86$2 = { class: "col input-bg" };
-const _hoisted_87$1 = /*#__PURE__*/vue.createElementVNode("button", { class: "btn info-button p-1" }, [
+const _hoisted_87$1 = { class: "col input-bg" };
+const _hoisted_88$1 = { class: "col input-bg" };
+const _hoisted_89$1 = /*#__PURE__*/vue.createElementVNode("button", { class: "btn info-button p-1" }, [
   /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-circle-info" })
 ], -1 /* HOISTED */);
-const _hoisted_88$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
-const _hoisted_89$1 = /*#__PURE__*/vue.createTextVNode(" Открыть исходную Инд. накладную ");
-const _hoisted_90$1 = { class: "row" };
-const _hoisted_91$1 = { class: "my-2" };
-const _hoisted_92$1 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Решение по инд. накладной", -1 /* HOISTED */);
-const _hoisted_93$1 = { class: "d-flex" };
-const _hoisted_94$1 = { class: "col-9" };
-const _hoisted_95$1 = { class: "input-bg" };
-const _hoisted_96$1 = { class: "col-3" };
+const _hoisted_90$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
+const _hoisted_91$1 = /*#__PURE__*/vue.createTextVNode(" Открыть исходную Инд. накладную ");
+const _hoisted_92$1 = { class: "row" };
+const _hoisted_93$1 = { class: "my-2" };
+const _hoisted_94$1 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Решение по инд. накладной", -1 /* HOISTED */);
+const _hoisted_95$1 = { class: "d-flex" };
+const _hoisted_96$1 = { class: "col-9" };
 const _hoisted_97$1 = { class: "input-bg" };
-const _hoisted_98$1 = { class: "d-flex" };
-const _hoisted_99$1 = { class: "col-7" };
-const _hoisted_100$1 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr fs-5" }, "Причина отказа", -1 /* HOISTED */);
-const _hoisted_101$1 = { class: "input-bg" };
-const _hoisted_102$1 = { class: "col-5" };
-const _hoisted_103$1 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr fs-5" }, "Уникальный идентификатор партии", -1 /* HOISTED */);
-const _hoisted_104$1 = { class: "col input-bg" };
-const _hoisted_105$1 = { class: "sender-personal-inf mt-4" };
-const _hoisted_106$1 = { class: "row" };
-const _hoisted_107 = /*#__PURE__*/vue.createElementVNode("button", {
+const _hoisted_98$1 = { class: "col-3" };
+const _hoisted_99$1 = { class: "input-bg" };
+const _hoisted_100$1 = { class: "d-flex" };
+const _hoisted_101$1 = { class: "col-7" };
+const _hoisted_102$1 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr fs-5" }, "Причина отказа", -1 /* HOISTED */);
+const _hoisted_103$1 = { class: "input-bg" };
+const _hoisted_104$1 = { class: "col-5" };
+const _hoisted_105$1 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr fs-5" }, "Уникальный идентификатор партии", -1 /* HOISTED */);
+const _hoisted_106$1 = { class: "col input-bg" };
+const _hoisted_107$1 = { class: "sender-personal-inf mt-4" };
+const _hoisted_108$1 = { class: "row" };
+const _hoisted_109 = /*#__PURE__*/vue.createElementVNode("button", {
   class: "btn invoice-button collapsed",
   type: "button",
   "data-bs-toggle": "collapse",
@@ -2988,107 +2999,107 @@ const _hoisted_107 = /*#__PURE__*/vue.createElementVNode("button", {
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-caret-up" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_108 = {
+const _hoisted_110 = {
   class: "collapse",
   id: "collapsedBatchSender"
 };
-const _hoisted_109 = { class: "card card-body" };
-const _hoisted_110 = { class: "row" };
-const _hoisted_111 = { class: "recipient-name" };
-const _hoisted_112 = { class: "row form my-2" };
-const _hoisted_113 = { class: "col-8" };
-const _hoisted_114 = { class: "input-bg" };
-const _hoisted_115 = { class: "col-1" };
+const _hoisted_111 = { class: "card card-body" };
+const _hoisted_112 = { class: "row" };
+const _hoisted_113 = { class: "recipient-name" };
+const _hoisted_114 = { class: "row form my-2" };
+const _hoisted_115 = { class: "col-8" };
 const _hoisted_116 = { class: "input-bg" };
-const _hoisted_117 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_118 = { class: "col-2 d-flex" };
-const _hoisted_119 = { class: "input-bg col-2" };
-const _hoisted_120 = ["checked"];
-const _hoisted_121 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
+const _hoisted_117 = { class: "col-1" };
+const _hoisted_118 = { class: "input-bg" };
+const _hoisted_119 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_120 = { class: "col-2 d-flex" };
+const _hoisted_121 = { class: "input-bg col-2" };
+const _hoisted_122 = ["checked"];
+const _hoisted_123 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " Декларант (заявитель) ")
 ], -1 /* HOISTED */);
-const _hoisted_122 = { class: "row my-2" };
-const _hoisted_123 = { class: "col-6 d-flex justify-content-between" };
-const _hoisted_124 = { class: "col-4 d-flex" };
-const _hoisted_125 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-1" }, [
+const _hoisted_124 = { class: "row my-2" };
+const _hoisted_125 = { class: "col-6 d-flex justify-content-between" };
+const _hoisted_126 = { class: "col-4 d-flex" };
+const _hoisted_127 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-1" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ОГРН ")
 ], -1 /* HOISTED */);
-const _hoisted_126 = { class: "input-bg col-9" };
-const _hoisted_127 = { class: "col-4 d-flex" };
-const _hoisted_128 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+const _hoisted_128 = { class: "input-bg col-9" };
+const _hoisted_129 = { class: "col-4 d-flex" };
+const _hoisted_130 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ИНН ")
 ], -1 /* HOISTED */);
-const _hoisted_129 = { class: "input-bg col-9" };
-const _hoisted_130 = { class: "col-4 d-flex" };
-const _hoisted_131 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+const _hoisted_131 = { class: "input-bg col-9" };
+const _hoisted_132 = { class: "col-4 d-flex" };
+const _hoisted_133 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " КПП ")
 ], -1 /* HOISTED */);
-const _hoisted_132 = { class: "input-bg col-9" };
-const _hoisted_133 = { class: "col-6 d-flex" };
-const _hoisted_134 = { class: "input-bg col-6" };
-const _hoisted_135 = { class: "input-bg col-6" };
-const _hoisted_136 = { class: "row" };
-const _hoisted_137 = { class: "recipient-address" };
-const _hoisted_138 = /*#__PURE__*/vue.createElementVNode("div", { class: "row my-2" }, [
+const _hoisted_134 = { class: "input-bg col-9" };
+const _hoisted_135 = { class: "col-6 d-flex" };
+const _hoisted_136 = { class: "input-bg col-6" };
+const _hoisted_137 = { class: "input-bg col-6" };
+const _hoisted_138 = { class: "row" };
+const _hoisted_139 = { class: "recipient-address" };
+const _hoisted_140 = /*#__PURE__*/vue.createElementVNode("div", { class: "row my-2" }, [
   /*#__PURE__*/vue.createElementVNode("div", { class: "d-flex recipient-contacts" }, [
     /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, [
       /*#__PURE__*/vue.createElementVNode("p", { class: "point-name" }, "Адрес:")
     ])
   ])
 ], -1 /* HOISTED */);
-const _hoisted_139 = { class: "row my-2" };
-const _hoisted_140 = { class: "address-block" };
 const _hoisted_141 = { class: "row my-2" };
-const _hoisted_142 = { class: "col-1" };
-const _hoisted_143 = { class: "input-bg" };
-const _hoisted_144 = { class: "col-4" };
+const _hoisted_142 = { class: "address-block" };
+const _hoisted_143 = { class: "row my-2" };
+const _hoisted_144 = { class: "col-1" };
 const _hoisted_145 = { class: "input-bg" };
-const _hoisted_146 = { class: "col-2" };
+const _hoisted_146 = { class: "col-4" };
 const _hoisted_147 = { class: "input-bg" };
-const _hoisted_148 = { class: "col-5" };
+const _hoisted_148 = { class: "col-2" };
 const _hoisted_149 = { class: "input-bg" };
-const _hoisted_150 = { class: "row my-2" };
-const _hoisted_151 = { class: "col-5" };
-const _hoisted_152 = { class: "input-bg" };
-const _hoisted_153 = { class: "col-3" };
+const _hoisted_150 = { class: "col-5" };
+const _hoisted_151 = { class: "input-bg" };
+const _hoisted_152 = { class: "row my-2" };
+const _hoisted_153 = { class: "col-5" };
 const _hoisted_154 = { class: "input-bg" };
-const _hoisted_155 = { class: "col-4" };
+const _hoisted_155 = { class: "col-3" };
 const _hoisted_156 = { class: "input-bg" };
-const _hoisted_157 = { class: "row my-2" };
-const _hoisted_158 = { class: "col-4" };
-const _hoisted_159 = { class: "input-bg" };
-const _hoisted_160 = { class: "col-2" };
+const _hoisted_157 = { class: "col-4" };
+const _hoisted_158 = { class: "input-bg" };
+const _hoisted_159 = { class: "row my-2" };
+const _hoisted_160 = { class: "col-4" };
 const _hoisted_161 = { class: "input-bg" };
 const _hoisted_162 = { class: "col-2" };
 const _hoisted_163 = { class: "input-bg" };
 const _hoisted_164 = { class: "col-2" };
 const _hoisted_165 = { class: "input-bg" };
-const _hoisted_166 = { class: "row my-2" };
-const _hoisted_167 = { class: "col-12" };
-const _hoisted_168 = { class: "input-bg" };
-const _hoisted_169 = { class: "row" };
-const _hoisted_170 = { class: "personal-inf-block" };
-const _hoisted_171 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
-const _hoisted_172 = { class: "row my-2" };
-const _hoisted_173 = { class: "row personal-data my-2" };
-const _hoisted_174 = { class: "col-1" };
-const _hoisted_175 = { class: "input-bg" };
-const _hoisted_176 = { class: "col-2" };
+const _hoisted_166 = { class: "col-2" };
+const _hoisted_167 = { class: "input-bg" };
+const _hoisted_168 = { class: "row my-2" };
+const _hoisted_169 = { class: "col-12" };
+const _hoisted_170 = { class: "input-bg" };
+const _hoisted_171 = { class: "row" };
+const _hoisted_172 = { class: "personal-inf-block" };
+const _hoisted_173 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
+const _hoisted_174 = { class: "row my-2" };
+const _hoisted_175 = { class: "row personal-data my-2" };
+const _hoisted_176 = { class: "col-1" };
 const _hoisted_177 = { class: "input-bg" };
 const _hoisted_178 = { class: "col-2" };
 const _hoisted_179 = { class: "input-bg" };
-const _hoisted_180 = { class: "col-5 d-flex" };
-const _hoisted_181 = { class: "input-bg col-4" };
-const _hoisted_182 = { class: "input-bg col-4" };
+const _hoisted_180 = { class: "col-2" };
+const _hoisted_181 = { class: "input-bg" };
+const _hoisted_182 = { class: "col-5 d-flex" };
 const _hoisted_183 = { class: "input-bg col-4" };
-const _hoisted_184 = { class: "col-2" };
-const _hoisted_185 = { class: "input-bg" };
-const _hoisted_186 = { class: "row" };
-const _hoisted_187 = { class: "col-8" };
-const _hoisted_188 = { class: "input-bg" };
-const _hoisted_189 = { class: "recipient-personal-inf" };
-const _hoisted_190 = { class: "row" };
-const _hoisted_191 = /*#__PURE__*/vue.createElementVNode("button", {
+const _hoisted_184 = { class: "input-bg col-4" };
+const _hoisted_185 = { class: "input-bg col-4" };
+const _hoisted_186 = { class: "col-2" };
+const _hoisted_187 = { class: "input-bg" };
+const _hoisted_188 = { class: "row" };
+const _hoisted_189 = { class: "col-8" };
+const _hoisted_190 = { class: "input-bg" };
+const _hoisted_191 = { class: "recipient-personal-inf" };
+const _hoisted_192 = { class: "row" };
+const _hoisted_193 = /*#__PURE__*/vue.createElementVNode("button", {
   class: "btn invoice-button collapsed",
   type: "button",
   "data-bs-toggle": "collapse",
@@ -3101,905 +3112,923 @@ const _hoisted_191 = /*#__PURE__*/vue.createElementVNode("button", {
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-caret-up" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_192 = {
+const _hoisted_194 = {
   class: "collapse",
   id: "collapsedBatchRecipient"
 };
-const _hoisted_193 = { class: "card card-body" };
-const _hoisted_194 = { class: "row" };
-const _hoisted_195 = { class: "recipient-name" };
-const _hoisted_196 = { class: "row form my-2" };
-const _hoisted_197 = { class: "col-8" };
-const _hoisted_198 = { class: "input-bg" };
-const _hoisted_199 = { class: "col-1" };
+const _hoisted_195 = { class: "card card-body" };
+const _hoisted_196 = { class: "row" };
+const _hoisted_197 = { class: "recipient-name" };
+const _hoisted_198 = { class: "row form my-2" };
+const _hoisted_199 = { class: "col-8" };
 const _hoisted_200 = { class: "input-bg" };
-const _hoisted_201 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_202 = { class: "col-2 d-flex" };
-const _hoisted_203 = { class: "input-bg col-2" };
-const _hoisted_204 = ["checked"];
-const _hoisted_205 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
+const _hoisted_201 = { class: "col-1" };
+const _hoisted_202 = { class: "input-bg" };
+const _hoisted_203 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_204 = { class: "col-2 d-flex" };
+const _hoisted_205 = { class: "input-bg col-2" };
+const _hoisted_206 = ["checked"];
+const _hoisted_207 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " Декларант (заявитель) ")
 ], -1 /* HOISTED */);
-const _hoisted_206 = { class: "row my-2" };
-const _hoisted_207 = { class: "col-6 d-flex justify-content-between" };
-const _hoisted_208 = { class: "col-4 d-flex" };
-const _hoisted_209 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-1" }, [
+const _hoisted_208 = { class: "row my-2" };
+const _hoisted_209 = { class: "col-6 d-flex justify-content-between" };
+const _hoisted_210 = { class: "col-4 d-flex" };
+const _hoisted_211 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-1" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ОГРН ")
 ], -1 /* HOISTED */);
-const _hoisted_210 = { class: "input-bg col-9" };
-const _hoisted_211 = { class: "col-4 d-flex" };
-const _hoisted_212 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+const _hoisted_212 = { class: "input-bg col-9" };
+const _hoisted_213 = { class: "col-4 d-flex" };
+const _hoisted_214 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ИНН ")
 ], -1 /* HOISTED */);
-const _hoisted_213 = { class: "input-bg col-9" };
-const _hoisted_214 = { class: "col-4 d-flex" };
-const _hoisted_215 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
+const _hoisted_215 = { class: "input-bg col-9" };
+const _hoisted_216 = { class: "col-4 d-flex" };
+const _hoisted_217 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3 ps-3" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " КПП ")
 ], -1 /* HOISTED */);
-const _hoisted_216 = { class: "input-bg col-9" };
-const _hoisted_217 = { class: "col-6 d-flex" };
-const _hoisted_218 = { class: "input-bg col-6" };
-const _hoisted_219 = { class: "input-bg col-6" };
-const _hoisted_220 = { class: "row" };
-const _hoisted_221 = { class: "recipient-address" };
-const _hoisted_222 = /*#__PURE__*/vue.createElementVNode("div", { class: "row my-2" }, [
+const _hoisted_218 = { class: "input-bg col-9" };
+const _hoisted_219 = { class: "col-6 d-flex" };
+const _hoisted_220 = { class: "input-bg col-6" };
+const _hoisted_221 = { class: "input-bg col-6" };
+const _hoisted_222 = { class: "row" };
+const _hoisted_223 = { class: "recipient-address" };
+const _hoisted_224 = /*#__PURE__*/vue.createElementVNode("div", { class: "row my-2" }, [
   /*#__PURE__*/vue.createElementVNode("div", { class: "d-flex recipient-contacts" }, [
     /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, [
       /*#__PURE__*/vue.createElementVNode("p", { class: "point-name" }, "Адрес:")
     ])
   ])
 ], -1 /* HOISTED */);
-const _hoisted_223 = { class: "row my-2" };
-const _hoisted_224 = { class: "address-block" };
 const _hoisted_225 = { class: "row my-2" };
-const _hoisted_226 = { class: "col-1" };
-const _hoisted_227 = { class: "input-bg" };
-const _hoisted_228 = { class: "col-4" };
+const _hoisted_226 = { class: "address-block" };
+const _hoisted_227 = { class: "row my-2" };
+const _hoisted_228 = { class: "col-1" };
 const _hoisted_229 = { class: "input-bg" };
-const _hoisted_230 = { class: "col-2" };
+const _hoisted_230 = { class: "col-4" };
 const _hoisted_231 = { class: "input-bg" };
-const _hoisted_232 = { class: "col-5" };
+const _hoisted_232 = { class: "col-2" };
 const _hoisted_233 = { class: "input-bg" };
-const _hoisted_234 = { class: "row my-2" };
-const _hoisted_235 = { class: "col-5" };
-const _hoisted_236 = { class: "input-bg" };
-const _hoisted_237 = { class: "col-3" };
+const _hoisted_234 = { class: "col-5" };
+const _hoisted_235 = { class: "input-bg" };
+const _hoisted_236 = { class: "row my-2" };
+const _hoisted_237 = { class: "col-5" };
 const _hoisted_238 = { class: "input-bg" };
-const _hoisted_239 = { class: "col-4" };
+const _hoisted_239 = { class: "col-3" };
 const _hoisted_240 = { class: "input-bg" };
-const _hoisted_241 = { class: "row my-2" };
-const _hoisted_242 = { class: "col-4" };
-const _hoisted_243 = { class: "input-bg" };
-const _hoisted_244 = { class: "col-2" };
+const _hoisted_241 = { class: "col-4" };
+const _hoisted_242 = { class: "input-bg" };
+const _hoisted_243 = { class: "row my-2" };
+const _hoisted_244 = { class: "col-4" };
 const _hoisted_245 = { class: "input-bg" };
 const _hoisted_246 = { class: "col-2" };
 const _hoisted_247 = { class: "input-bg" };
 const _hoisted_248 = { class: "col-2" };
 const _hoisted_249 = { class: "input-bg" };
-const _hoisted_250 = { class: "row my-2" };
-const _hoisted_251 = { class: "col-12" };
-const _hoisted_252 = { class: "input-bg" };
-const _hoisted_253 = { class: "row" };
-const _hoisted_254 = { class: "personal-inf-block" };
-const _hoisted_255 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
-const _hoisted_256 = { class: "row my-2" };
-const _hoisted_257 = { class: "row personal-data my-2" };
-const _hoisted_258 = { class: "col-1" };
-const _hoisted_259 = { class: "input-bg" };
-const _hoisted_260 = { class: "col-2" };
+const _hoisted_250 = { class: "col-2" };
+const _hoisted_251 = { class: "input-bg" };
+const _hoisted_252 = { class: "row my-2" };
+const _hoisted_253 = { class: "col-12" };
+const _hoisted_254 = { class: "input-bg" };
+const _hoisted_255 = { class: "row" };
+const _hoisted_256 = { class: "personal-inf-block" };
+const _hoisted_257 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
+const _hoisted_258 = { class: "row my-2" };
+const _hoisted_259 = { class: "row personal-data my-2" };
+const _hoisted_260 = { class: "col-1" };
 const _hoisted_261 = { class: "input-bg" };
 const _hoisted_262 = { class: "col-2" };
 const _hoisted_263 = { class: "input-bg" };
-const _hoisted_264 = { class: "col-5 d-flex" };
-const _hoisted_265 = { class: "input-bg col-4" };
-const _hoisted_266 = { class: "input-bg col-4" };
+const _hoisted_264 = { class: "col-2" };
+const _hoisted_265 = { class: "input-bg" };
+const _hoisted_266 = { class: "col-5 d-flex" };
 const _hoisted_267 = { class: "input-bg col-4" };
-const _hoisted_268 = { class: "col-2" };
-const _hoisted_269 = { class: "input-bg" };
-const _hoisted_270 = { class: "row" };
-const _hoisted_271 = { class: "col-8" };
-const _hoisted_272 = { class: "input-bg" };
+const _hoisted_268 = { class: "input-bg col-4" };
+const _hoisted_269 = { class: "input-bg col-4" };
+const _hoisted_270 = { class: "col-2" };
+const _hoisted_271 = { class: "input-bg" };
+const _hoisted_272 = { class: "row" };
+const _hoisted_273 = { class: "col-8" };
+const _hoisted_274 = { class: "input-bg" };
+const _hoisted_275 = { class: "goods" };
+const _hoisted_276 = /*#__PURE__*/vue.createElementVNode("p", null, "Товары", -1 /* HOISTED */);
+const _hoisted_277 = { class: "arrow" };
 
-function render$5(_ctx, _cache, $props, $setup, $data, $options) {
+function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
   const _component_tsoft_good_information_form = vue.resolveComponent("tsoft-good-information-form");
 
-  return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
-    vue.createElementVNode("div", _hoisted_1$5, [
-      vue.createCommentVNode("Region элемент хэдера блока с кнопками"),
-      _hoisted_2$4,
-      vue.createCommentVNode("endregion"),
-      vue.createCommentVNode("Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе"),
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$3, [
+    vue.createElementVNode("div", {
+      class: "group-panel-label",
+      onClick: _cache[0] || (_cache[0] = $event => ($data.isOrderOpen= !$data.isOrderOpen))
+    }, [
+      vue.createElementVNode("p", null, "Товарная партия " + vue.toDisplayString($props.orderNum), 1 /* TEXT */),
+      vue.createElementVNode("div", _hoisted_2$3, [
+        vue.createElementVNode("span", {
+          class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrderOpen}])
+        }, null, 2 /* CLASS */)
+      ])
+    ]),
+    vue.createElementVNode("div", {
+      class: vue.normalizeClass(["group-panel-content", {'open': $data.isOrderOpen}])
+    }, [
       vue.createElementVNode("div", _hoisted_3$3, [
-        vue.createCommentVNode("Region элемент с общей информацией о партии"),
-        vue.createElementVNode("div", _hoisted_4$4, [
-          vue.createElementVNode("div", _hoisted_5$2, [
-            vue.createElementVNode("div", _hoisted_6$2, [
-              vue.createElementVNode("form", _hoisted_7$2, [
-                vue.createElementVNode("div", _hoisted_8$2, [
-                  vue.createElementVNode("div", _hoisted_9$2, [
-                    _hoisted_10$2,
-                    _hoisted_11$2,
-                    vue.createElementVNode("div", _hoisted_12$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (($props.order.general.document.code) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.general.document.code]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_13$2, [
-                    vue.createElementVNode("div", _hoisted_14$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.order.general.document.type) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.general.document.type]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_15$2, [
-                    vue.createElementVNode("div", _hoisted_16$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.order.general.document.num) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.general.document.num]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_17$2, [
-                    vue.createElementVNode("div", _hoisted_18$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.order.general.document.date) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.general.document.date]
-                      ])
-                    ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_19$2, [
-                  vue.createElementVNode("div", _hoisted_20$2, [
-                    _hoisted_21$2,
-                    vue.createElementVNode("div", _hoisted_22$2, [
-                      vue.createElementVNode("div", _hoisted_23$2, [
+        vue.createCommentVNode("Region элемент хэдера блока с кнопками"),
+        _hoisted_4$3,
+        vue.createCommentVNode("endregion"),
+        vue.createCommentVNode("Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе"),
+        vue.createElementVNode("div", _hoisted_5$3, [
+          vue.createCommentVNode("Region элемент с общей информацией о партии"),
+          vue.createElementVNode("div", _hoisted_6$3, [
+            vue.createElementVNode("div", _hoisted_7$3, [
+              vue.createElementVNode("div", _hoisted_8$2, [
+                vue.createElementVNode("form", _hoisted_9$2, [
+                  vue.createElementVNode("div", _hoisted_10$2, [
+                    vue.createElementVNode("div", _hoisted_11$2, [
+                      _hoisted_12$2,
+                      _hoisted_13$2,
+                      vue.createElementVNode("div", _hoisted_14$2, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
-                          "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.order.personal.document.count) = $event))
+                          "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.order.general.document.code) = $event))
                         }, null, 512 /* NEED_PATCH */), [
-                          [vue.vModelText, $props.order.personal.document.count]
+                          [vue.vModelText, $props.order.general.document.code]
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_24$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.order.personal.document.code) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.personal.document.code]
+                    vue.createElementVNode("div", _hoisted_15$2, [
+                      vue.createElementVNode("div", _hoisted_16$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.order.general.document.type) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.general.document.type]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_17$2, [
+                      vue.createElementVNode("div", _hoisted_18$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.order.general.document.num) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.general.document.num]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_19$2, [
+                      vue.createElementVNode("div", _hoisted_20$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.order.general.document.date) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.general.document.date]
+                        ])
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_25$2, [
-                    vue.createElementVNode("div", _hoisted_26$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.order.personal.document.type) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.personal.document.type]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_27$2, [
-                    vue.createElementVNode("div", _hoisted_28$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.order.personal.document.num) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.personal.document.num]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_29$2, [
-                    vue.createElementVNode("div", _hoisted_30$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.order.personal.document.date) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.personal.document.date]
-                      ])
-                    ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_31$2, [
-                  vue.createElementVNode("div", _hoisted_32$2, [
-                    _hoisted_33$2,
-                    vue.createElementVNode("div", _hoisted_34$2, [
-                      vue.createElementVNode("div", _hoisted_35$2, [
-                        vue.createElementVNode("div", _hoisted_36$2, [
+                  vue.createElementVNode("div", _hoisted_21$2, [
+                    vue.createElementVNode("div", _hoisted_22$2, [
+                      _hoisted_23$2,
+                      vue.createElementVNode("div", _hoisted_24$2, [
+                        vue.createElementVNode("div", _hoisted_25$2, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
-                            "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.order.general.grossWeight) = $event))
+                            "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.order.personal.document.count) = $event))
                           }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.general.grossWeight]
+                            [vue.vModelText, $props.order.personal.document.count]
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_37$2, [
-                        vue.createElementVNode("div", _hoisted_38$2, [
-                          vue.createElementVNode("div", _hoisted_39$2, [
+                      vue.createElementVNode("div", _hoisted_26$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.order.personal.document.code) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.personal.document.code]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_27$2, [
+                      vue.createElementVNode("div", _hoisted_28$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.order.personal.document.type) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.personal.document.type]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_29$2, [
+                      vue.createElementVNode("div", _hoisted_30$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.order.personal.document.num) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.personal.document.num]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_31$2, [
+                      vue.createElementVNode("div", _hoisted_32$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          type: "text",
+                          class: "form-control",
+                          "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.order.personal.document.date) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.personal.document.date]
+                        ])
+                      ])
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_33$2, [
+                    vue.createElementVNode("div", _hoisted_34$2, [
+                      _hoisted_35$2,
+                      vue.createElementVNode("div", _hoisted_36$2, [
+                        vue.createElementVNode("div", _hoisted_37$2, [
+                          vue.createElementVNode("div", _hoisted_38$2, [
                             vue.withDirectives(vue.createElementVNode("input", {
                               type: "text",
                               class: "form-control",
-                              "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.order.general.grossWeightUnit) = $event))
+                              "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.order.general.grossWeight) = $event))
                             }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.general.grossWeightUnit]
+                              [vue.vModelText, $props.order.general.grossWeight]
                             ])
                           ])
                         ]),
-                        vue.createElementVNode("div", _hoisted_40$2, [
-                          vue.createElementVNode("div", _hoisted_41$2, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.order.general.grossWeightUnknown) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.general.grossWeightUnknown]
+                        vue.createElementVNode("div", _hoisted_39$2, [
+                          vue.createElementVNode("div", _hoisted_40$2, [
+                            vue.createElementVNode("div", _hoisted_41$2, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.order.general.grossWeightUnit) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.general.grossWeightUnit]
+                              ])
+                            ])
+                          ]),
+                          vue.createElementVNode("div", _hoisted_42$2, [
+                            vue.createElementVNode("div", _hoisted_43$2, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.order.general.grossWeightUnknown) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.general.grossWeightUnknown]
+                              ])
                             ])
                           ])
                         ])
                       ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_42$2, [
-                    _hoisted_43$2,
+                    ]),
                     vue.createElementVNode("div", _hoisted_44$2, [
-                      vue.createElementVNode("div", _hoisted_45$2, [
-                        vue.createElementVNode("div", _hoisted_46$2, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            type: "text",
-                            class: "form-control",
-                            "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.order.general.customCost) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.general.customCost]
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_47$2, [
-                        _hoisted_48$2,
-                        vue.createElementVNode("div", _hoisted_49$2, [
-                          vue.createElementVNode("div", _hoisted_50$2, [
+                      _hoisted_45$2,
+                      vue.createElementVNode("div", _hoisted_46$2, [
+                        vue.createElementVNode("div", _hoisted_47$2, [
+                          vue.createElementVNode("div", _hoisted_48$2, [
                             vue.withDirectives(vue.createElementVNode("input", {
                               type: "text",
                               class: "form-control",
-                              "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.order.general.customCostCurrency) = $event))
+                              "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.order.general.customCost) = $event))
                             }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.general.customCostCurrency]
+                              [vue.vModelText, $props.order.general.customCost]
+                            ])
+                          ])
+                        ]),
+                        vue.createElementVNode("div", _hoisted_49$2, [
+                          _hoisted_50$2,
+                          vue.createElementVNode("div", _hoisted_51$2, [
+                            vue.createElementVNode("div", _hoisted_52$2, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.order.general.customCostCurrency) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.general.customCostCurrency]
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_53$2, [
+                      _hoisted_54$2,
+                      vue.createElementVNode("div", _hoisted_55$2, [
+                        vue.createElementVNode("div", _hoisted_56$2, [
+                          vue.createElementVNode("div", _hoisted_57$2, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.order.general.customCost) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.general.customCost]
+                            ])
+                          ])
+                        ]),
+                        vue.createElementVNode("div", _hoisted_58$2, [
+                          vue.createElementVNode("div", _hoisted_59$2, [
+                            vue.createElementVNode("div", _hoisted_60$2, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.order.general.customCostCurrency) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.general.customCostCurrency]
+                              ])
                             ])
                           ])
                         ])
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_51$2, [
-                    _hoisted_52$2,
-                    vue.createElementVNode("div", _hoisted_53$2, [
-                      vue.createElementVNode("div", _hoisted_54$2, [
-                        vue.createElementVNode("div", _hoisted_55$2, [
+                  vue.createElementVNode("div", _hoisted_61$2, [
+                    vue.createElementVNode("div", _hoisted_62$2, [
+                      _hoisted_63$2,
+                      vue.createElementVNode("div", _hoisted_64$2, [
+                        vue.createElementVNode("div", _hoisted_65$2, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
-                            "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.order.general.customCost) = $event))
+                            "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.order.internetMarketUrl) = $event))
                           }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.general.customCost]
+                            [vue.vModelText, $props.order.internetMarketUrl]
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_56$2, [
-                        vue.createElementVNode("div", _hoisted_57$2, [
-                          vue.createElementVNode("div", _hoisted_58$2, [
+                      vue.createElementVNode("div", _hoisted_66$2, [
+                        vue.createElementVNode("div", _hoisted_67$2, [
+                          vue.createElementVNode("div", _hoisted_68$2, [
                             vue.withDirectives(vue.createElementVNode("input", {
                               type: "text",
                               class: "form-control",
-                              "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.order.general.customCostCurrency) = $event))
+                              "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.order.internetMarketUnknown) = $event))
                             }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.general.customCostCurrency]
+                              [vue.vModelText, $props.order.internetMarketUnknown]
                             ])
                           ])
-                        ])
+                        ]),
+                        _hoisted_69$2
                       ])
-                    ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_59$2, [
-                  vue.createElementVNode("div", _hoisted_60$2, [
-                    _hoisted_61$2,
-                    vue.createElementVNode("div", _hoisted_62$2, [
-                      vue.createElementVNode("div", _hoisted_63$2, [
+                    ]),
+                    vue.createElementVNode("div", _hoisted_70$2, [
+                      _hoisted_71$2,
+                      vue.createElementVNode("div", _hoisted_72$2, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
-                          "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.order.internetMarketUrl) = $event))
+                          "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.order.placeNum) = $event))
                         }, null, 512 /* NEED_PATCH */), [
-                          [vue.vModelText, $props.order.internetMarketUrl]
+                          [vue.vModelText, $props.order.placeNum]
                         ])
                       ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_64$2, [
-                      vue.createElementVNode("div", _hoisted_65$2, [
-                        vue.createElementVNode("div", _hoisted_66$2, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            type: "text",
-                            class: "form-control",
-                            "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.order.internetMarketUnknown) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.internetMarketUnknown]
-                          ])
-                        ])
-                      ]),
-                      _hoisted_67$2
                     ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_68$2, [
-                    _hoisted_69$2,
-                    vue.createElementVNode("div", _hoisted_70$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        type: "text",
-                        class: "form-control",
-                        "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.order.placeNum) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.placeNum]
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]),
-            vue.createElementVNode("div", _hoisted_71$2, [
-              vue.createElementVNode("div", _hoisted_72$2, [
-                vue.createVNode(_component_router_link, {
-                  to: { name: 'index' },
-                  id: "productsInfoLink"
-                }, {
-                  default: vue.withCtx(() => [
-                    _hoisted_73$2
-                  ]),
-                  _: 1 /* STABLE */
-                }),
-                vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
-                  default: vue.withCtx(() => [
-                    _hoisted_74$2
-                  ]),
-                  _: 1 /* STABLE */
-                }),
-                vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
-                  default: vue.withCtx(() => [
-                    _hoisted_75$2
-                  ]),
-                  _: 1 /* STABLE */
-                }),
-                vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
-                  default: vue.withCtx(() => [
-                    _hoisted_76$2
-                  ]),
-                  _: 1 /* STABLE */
-                }),
-                vue.createElementVNode("div", _hoisted_77$2, [
-                  _hoisted_78$2,
-                  vue.createElementVNode("div", _hoisted_79$2, [
-                    vue.createElementVNode("div", _hoisted_80$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.order.changeDetailsType.stageChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.stageChangeCode]
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_81$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.order.changeDetailsType.reasonChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.reasonChangeCode]
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_82$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.order.changeDetailsType.quantityChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.quantityChangeCode]
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_83$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.order.changeDetailsType.TNVEDChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.TNVEDChangeCode]
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_84$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.order.changeDetailsType.customsCostChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.customsCostChangeCode]
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_85$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.order.changeDetailsType.customsPaymentChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.customsPaymentChangeCode]
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_86$2, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control number-code",
-                        type: "number",
-                        "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.order.changeDetailsType.otherChangeCode) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.order.changeDetailsType.otherChangeCode]
-                      ])
-                    ]),
-                    _hoisted_87$1
-                  ]),
-                  _hoisted_88$1
-                ]),
-                vue.createVNode(_component_router_link, {
-                  to: { name: 'index' },
-                  class: "my-4"
-                }, {
-                  default: vue.withCtx(() => [
-                    _hoisted_89$1
-                  ]),
-                  _: 1 /* STABLE */
-                })
-              ])
-            ])
-          ]),
-          vue.createElementVNode("div", _hoisted_90$1, [
-            vue.createElementVNode("div", _hoisted_91$1, [
-              _hoisted_92$1,
-              vue.createElementVNode("div", _hoisted_93$1, [
-                vue.createElementVNode("div", _hoisted_94$1, [
-                  vue.createElementVNode("div", _hoisted_95$1, [
-                    vue.withDirectives(vue.createElementVNode("input", {
-                      class: "form-control",
-                      type: "text",
-                      "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.order.personal.invoiceDecision) = $event))
-                    }, null, 512 /* NEED_PATCH */), [
-                      [vue.vModelText, $props.order.personal.invoiceDecision]
-                    ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_96$1, [
-                  vue.createElementVNode("div", _hoisted_97$1, [
-                    vue.withDirectives(vue.createElementVNode("input", {
-                      class: "form-control",
-                      type: "text",
-                      "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => (($props.order.personal.invoiceDecisionUnknown) = $event))
-                    }, null, 512 /* NEED_PATCH */), [
-                      [vue.vModelText, $props.order.personal.invoiceDecisionUnknown]
-                    ])
-                  ])
-                ])
-              ])
-            ]),
-            vue.createElementVNode("div", _hoisted_98$1, [
-              vue.createElementVNode("div", _hoisted_99$1, [
-                _hoisted_100$1,
-                vue.createElementVNode("div", _hoisted_101$1, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control",
-                    type: "text",
-                    "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => (($props.order.orderRejectReason) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.order.orderRejectReason]
                   ])
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_102$1, [
-                _hoisted_103$1,
+              vue.createElementVNode("div", _hoisted_73$2, [
+                vue.createElementVNode("div", _hoisted_74$2, [
+                  vue.createVNode(_component_router_link, {
+                    to: { name: 'index' },
+                    id: "productsInfoLink"
+                  }, {
+                    default: vue.withCtx(() => [
+                      _hoisted_75$2
+                    ]),
+                    _: 1 /* STABLE */
+                  }),
+                  vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
+                    default: vue.withCtx(() => [
+                      _hoisted_76$2
+                    ]),
+                    _: 1 /* STABLE */
+                  }),
+                  vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
+                    default: vue.withCtx(() => [
+                      _hoisted_77$2
+                    ]),
+                    _: 1 /* STABLE */
+                  }),
+                  vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
+                    default: vue.withCtx(() => [
+                      _hoisted_78$2
+                    ]),
+                    _: 1 /* STABLE */
+                  }),
+                  vue.createElementVNode("div", _hoisted_79$2, [
+                    _hoisted_80$2,
+                    vue.createElementVNode("div", _hoisted_81$2, [
+                      vue.createElementVNode("div", _hoisted_82$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.order.changeDetailsType.stageChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.stageChangeCode]
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_83$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.order.changeDetailsType.reasonChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.reasonChangeCode]
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_84$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.order.changeDetailsType.quantityChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.quantityChangeCode]
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_85$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.order.changeDetailsType.TNVEDChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.TNVEDChangeCode]
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_86$2, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.order.changeDetailsType.customsCostChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.customsCostChangeCode]
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_87$1, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.order.changeDetailsType.customsPaymentChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.customsPaymentChangeCode]
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_88$1, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control number-code",
+                          type: "number",
+                          "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.order.changeDetailsType.otherChangeCode) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.order.changeDetailsType.otherChangeCode]
+                        ])
+                      ]),
+                      _hoisted_89$1
+                    ]),
+                    _hoisted_90$1
+                  ]),
+                  vue.createVNode(_component_router_link, {
+                    to: { name: 'index' },
+                    class: "my-4"
+                  }, {
+                    default: vue.withCtx(() => [
+                      _hoisted_91$1
+                    ]),
+                    _: 1 /* STABLE */
+                  })
+                ])
+              ])
+            ]),
+            vue.createElementVNode("div", _hoisted_92$1, [
+              vue.createElementVNode("div", _hoisted_93$1, [
+                _hoisted_94$1,
+                vue.createElementVNode("div", _hoisted_95$1, [
+                  vue.createElementVNode("div", _hoisted_96$1, [
+                    vue.createElementVNode("div", _hoisted_97$1, [
+                      vue.withDirectives(vue.createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => (($props.order.personal.invoiceDecision) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vue.vModelText, $props.order.personal.invoiceDecision]
+                      ])
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_98$1, [
+                    vue.createElementVNode("div", _hoisted_99$1, [
+                      vue.withDirectives(vue.createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => (($props.order.personal.invoiceDecisionUnknown) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vue.vModelText, $props.order.personal.invoiceDecisionUnknown]
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              vue.createElementVNode("div", _hoisted_100$1, [
+                vue.createElementVNode("div", _hoisted_101$1, [
+                  _hoisted_102$1,
+                  vue.createElementVNode("div", _hoisted_103$1, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => (($props.order.orderRejectReason) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.order.orderRejectReason]
+                    ])
+                  ])
+                ]),
                 vue.createElementVNode("div", _hoisted_104$1, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control",
-                    type: "text",
-                    "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => (($props.order.orderUniqueId) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.order.orderUniqueId]
+                  _hoisted_105$1,
+                  vue.createElementVNode("div", _hoisted_106$1, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => (($props.order.orderUniqueId) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.order.orderUniqueId]
+                    ])
                   ])
                 ])
               ])
             ])
-          ])
-        ]),
-        vue.createCommentVNode("endregion"),
-        vue.createCommentVNode("Region элемент с индивидуальной информацией об отправителе"),
-        vue.createElementVNode("div", _hoisted_105$1, [
-          vue.createElementVNode("div", _hoisted_106$1, [
-            _hoisted_107,
-            vue.createElementVNode("div", _hoisted_108, [
-              vue.createElementVNode("div", _hoisted_109, [
-                vue.createElementVNode("div", _hoisted_110, [
-                  vue.createElementVNode("div", _hoisted_111, [
-                    vue.createElementVNode("form", _hoisted_112, [
-                      vue.createElementVNode("div", _hoisted_113, [
-                        vue.createElementVNode("div", _hoisted_114, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            type: "text",
-                            class: "form-control",
-                            placeholder: "",
-                            "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => (($props.order.consignor.fullName) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignor.fullName]
+          ]),
+          vue.createCommentVNode("endregion"),
+          vue.createCommentVNode("Region элемент с индивидуальной информацией об отправителе"),
+          vue.createElementVNode("div", _hoisted_107$1, [
+            vue.createElementVNode("div", _hoisted_108$1, [
+              _hoisted_109,
+              vue.createElementVNode("div", _hoisted_110, [
+                vue.createElementVNode("div", _hoisted_111, [
+                  vue.createElementVNode("div", _hoisted_112, [
+                    vue.createElementVNode("div", _hoisted_113, [
+                      vue.createElementVNode("form", _hoisted_114, [
+                        vue.createElementVNode("div", _hoisted_115, [
+                          vue.createElementVNode("div", _hoisted_116, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "",
+                              "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => (($props.order.consignor.fullName) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignor.fullName]
+                            ])
                           ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_115, [
-                        vue.createElementVNode("div", _hoisted_116, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            type: "text",
-                            class: "form-control",
-                            "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => (($props.order.consignor.countryCode) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignor.countryCode]
-                          ])
-                        ])
-                      ]),
-                      _hoisted_117,
-                      vue.createElementVNode("div", _hoisted_118, [
-                        vue.createElementVNode("div", _hoisted_119, [
-                          vue.createElementVNode("input", {
-                            type: "checkbox",
-                            class: "form-check-input",
-                            checked: $props.order.consignor.isDeclarant
-                          }, null, 8 /* PROPS */, _hoisted_120)
                         ]),
-                        _hoisted_121
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_122, [
-                      vue.createElementVNode("div", _hoisted_123, [
-                        vue.createElementVNode("div", _hoisted_124, [
-                          _hoisted_125,
+                        vue.createElementVNode("div", _hoisted_117, [
+                          vue.createElementVNode("div", _hoisted_118, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[32] || (_cache[32] = $event => (($props.order.consignor.countryCode) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignor.countryCode]
+                            ])
+                          ])
+                        ]),
+                        _hoisted_119,
+                        vue.createElementVNode("div", _hoisted_120, [
+                          vue.createElementVNode("div", _hoisted_121, [
+                            vue.createElementVNode("input", {
+                              type: "checkbox",
+                              class: "form-check-input",
+                              checked: $props.order.consignor.isDeclarant
+                            }, null, 8 /* PROPS */, _hoisted_122)
+                          ]),
+                          _hoisted_123
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_124, [
+                        vue.createElementVNode("div", _hoisted_125, [
                           vue.createElementVNode("div", _hoisted_126, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[32] || (_cache[32] = $event => (($props.order.consignor.OGRN) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.OGRN]
+                            _hoisted_127,
+                            vue.createElementVNode("div", _hoisted_128, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[33] || (_cache[33] = $event => (($props.order.consignor.OGRN) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.OGRN]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_127, [
-                          _hoisted_128,
+                          ]),
                           vue.createElementVNode("div", _hoisted_129, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[33] || (_cache[33] = $event => (($props.order.consignor.INN) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.INN]
+                            _hoisted_130,
+                            vue.createElementVNode("div", _hoisted_131, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[34] || (_cache[34] = $event => (($props.order.consignor.INN) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.INN]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_130, [
-                          _hoisted_131,
+                          ]),
                           vue.createElementVNode("div", _hoisted_132, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[34] || (_cache[34] = $event => (($props.order.consignor.KPP) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.KPP]
+                            _hoisted_133,
+                            vue.createElementVNode("div", _hoisted_134, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[35] || (_cache[35] = $event => (($props.order.consignor.KPP) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.KPP]
+                              ])
                             ])
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_133, [
-                        vue.createElementVNode("div", _hoisted_134, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            placeholder: "номер телефона",
-                            "onUpdate:modelValue": _cache[35] || (_cache[35] = $event => (($props.order.consignor.phone) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignor.phone]
                           ])
                         ]),
                         vue.createElementVNode("div", _hoisted_135, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            placeholder: "адрес эл.почты",
-                            "onUpdate:modelValue": _cache[36] || (_cache[36] = $event => (($props.order.consignor.email) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignor.email]
+                          vue.createElementVNode("div", _hoisted_136, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              placeholder: "номер телефона",
+                              "onUpdate:modelValue": _cache[36] || (_cache[36] = $event => (($props.order.consignor.phone) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignor.phone]
+                            ])
+                          ]),
+                          vue.createElementVNode("div", _hoisted_137, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              placeholder: "адрес эл.почты",
+                              "onUpdate:modelValue": _cache[37] || (_cache[37] = $event => (($props.order.consignor.email) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignor.email]
+                            ])
                           ])
                         ])
                       ])
                     ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_136, [
-                  vue.createElementVNode("div", _hoisted_137, [
-                    _hoisted_138,
+                  ]),
+                  vue.createElementVNode("div", _hoisted_138, [
                     vue.createElementVNode("div", _hoisted_139, [
-                      vue.createElementVNode("div", _hoisted_140, [
-                        vue.createElementVNode("div", _hoisted_141, [
-                          vue.createElementVNode("div", _hoisted_142, [
-                            vue.createElementVNode("div", _hoisted_143, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "язык",
-                                "onUpdate:modelValue": _cache[37] || (_cache[37] = $event => (($props.order.consignor.language) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.language]
+                      _hoisted_140,
+                      vue.createElementVNode("div", _hoisted_141, [
+                        vue.createElementVNode("div", _hoisted_142, [
+                          vue.createElementVNode("div", _hoisted_143, [
+                            vue.createElementVNode("div", _hoisted_144, [
+                              vue.createElementVNode("div", _hoisted_145, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "язык",
+                                  "onUpdate:modelValue": _cache[38] || (_cache[38] = $event => (($props.order.consignor.language) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.language]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_146, [
+                              vue.createElementVNode("div", _hoisted_147, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "страна",
+                                  "onUpdate:modelValue": _cache[39] || (_cache[39] = $event => (($props.order.consignor.country) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.country]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_148, [
+                              vue.createElementVNode("div", _hoisted_149, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "почтовый индекс",
+                                  "onUpdate:modelValue": _cache[40] || (_cache[40] = $event => (($props.order.consignor.mailIndex) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.mailIndex]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_150, [
+                              vue.createElementVNode("div", _hoisted_151, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "область (регион, штат, провинция)",
+                                  "onUpdate:modelValue": _cache[41] || (_cache[41] = $event => (($props.order.consignor.region) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.region]
+                                ])
                               ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_144, [
-                            vue.createElementVNode("div", _hoisted_145, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "страна",
-                                "onUpdate:modelValue": _cache[38] || (_cache[38] = $event => (($props.order.consignor.country) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.country]
+                          vue.createElementVNode("div", _hoisted_152, [
+                            vue.createElementVNode("div", _hoisted_153, [
+                              vue.createElementVNode("div", _hoisted_154, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "район",
+                                  "onUpdate:modelValue": _cache[42] || (_cache[42] = $event => (($props.order.consignor.area) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.area]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_155, [
+                              vue.createElementVNode("div", _hoisted_156, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "город",
+                                  "onUpdate:modelValue": _cache[43] || (_cache[43] = $event => (($props.order.consignor.city) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.city]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_157, [
+                              vue.createElementVNode("div", _hoisted_158, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "населённый пункт",
+                                  "onUpdate:modelValue": _cache[44] || (_cache[44] = $event => (($props.order.consignor.settlement) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.settlement]
+                                ])
                               ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_146, [
-                            vue.createElementVNode("div", _hoisted_147, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "почтовый индекс",
-                                "onUpdate:modelValue": _cache[39] || (_cache[39] = $event => (($props.order.consignor.mailIndex) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.mailIndex]
+                          vue.createElementVNode("div", _hoisted_159, [
+                            vue.createElementVNode("div", _hoisted_160, [
+                              vue.createElementVNode("div", _hoisted_161, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "улица",
+                                  "onUpdate:modelValue": _cache[45] || (_cache[45] = $event => (($props.order.consignor.address) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.address]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_162, [
+                              vue.createElementVNode("div", _hoisted_163, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "дом, корпус, строение",
+                                  "onUpdate:modelValue": _cache[46] || (_cache[46] = $event => (($props.order.consignor.house) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.house]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_164, [
+                              vue.createElementVNode("div", _hoisted_165, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "офис/квартира",
+                                  "onUpdate:modelValue": _cache[47] || (_cache[47] = $event => (($props.order.consignor.office) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.office]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_166, [
+                              vue.createElementVNode("div", _hoisted_167, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "номер а/я",
+                                  "onUpdate:modelValue": _cache[48] || (_cache[48] = $event => (($props.order.consignor.officeLetter) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.officeLetter]
+                                ])
                               ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_148, [
-                            vue.createElementVNode("div", _hoisted_149, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "область (регион, штат, провинция)",
-                                "onUpdate:modelValue": _cache[40] || (_cache[40] = $event => (($props.order.consignor.region) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.region]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_150, [
-                          vue.createElementVNode("div", _hoisted_151, [
-                            vue.createElementVNode("div", _hoisted_152, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "район",
-                                "onUpdate:modelValue": _cache[41] || (_cache[41] = $event => (($props.order.consignor.area) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.area]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_153, [
-                            vue.createElementVNode("div", _hoisted_154, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "город",
-                                "onUpdate:modelValue": _cache[42] || (_cache[42] = $event => (($props.order.consignor.city) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.city]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_155, [
-                            vue.createElementVNode("div", _hoisted_156, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "населённый пункт",
-                                "onUpdate:modelValue": _cache[43] || (_cache[43] = $event => (($props.order.consignor.settlement) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.settlement]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_157, [
-                          vue.createElementVNode("div", _hoisted_158, [
-                            vue.createElementVNode("div", _hoisted_159, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "улица",
-                                "onUpdate:modelValue": _cache[44] || (_cache[44] = $event => (($props.order.consignor.address) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.address]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_160, [
-                            vue.createElementVNode("div", _hoisted_161, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "дом, корпус, строение",
-                                "onUpdate:modelValue": _cache[45] || (_cache[45] = $event => (($props.order.consignor.house) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.house]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_162, [
-                            vue.createElementVNode("div", _hoisted_163, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "офис/квартира",
-                                "onUpdate:modelValue": _cache[46] || (_cache[46] = $event => (($props.order.consignor.office) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.office]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_164, [
-                            vue.createElementVNode("div", _hoisted_165, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "номер а/я",
-                                "onUpdate:modelValue": _cache[47] || (_cache[47] = $event => (($props.order.consignor.officeLetter) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.officeLetter]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_166, [
-                          vue.createElementVNode("div", _hoisted_167, [
-                            vue.createElementVNode("div", _hoisted_168, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
-                                "onUpdate:modelValue": _cache[48] || (_cache[48] = $event => (($props.order.consignor.fullAddress) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignor.fullAddress]
+                          vue.createElementVNode("div", _hoisted_168, [
+                            vue.createElementVNode("div", _hoisted_169, [
+                              vue.createElementVNode("div", _hoisted_170, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
+                                  "onUpdate:modelValue": _cache[49] || (_cache[49] = $event => (($props.order.consignor.fullAddress) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignor.fullAddress]
+                                ])
                               ])
                             ])
                           ])
                         ])
                       ])
                     ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_169, [
-                  vue.createElementVNode("div", _hoisted_170, [
-                    _hoisted_171,
+                  ]),
+                  vue.createElementVNode("div", _hoisted_171, [
                     vue.createElementVNode("div", _hoisted_172, [
-                      vue.createElementVNode("div", _hoisted_173, [
-                        vue.createElementVNode("div", _hoisted_174, [
-                          vue.createElementVNode("div", _hoisted_175, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "стр",
-                              "onUpdate:modelValue": _cache[49] || (_cache[49] = $event => (($props.order.consignor.document.country) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.country]
+                      _hoisted_173,
+                      vue.createElementVNode("div", _hoisted_174, [
+                        vue.createElementVNode("div", _hoisted_175, [
+                          vue.createElementVNode("div", _hoisted_176, [
+                            vue.createElementVNode("div", _hoisted_177, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "стр",
+                                "onUpdate:modelValue": _cache[50] || (_cache[50] = $event => (($props.order.consignor.document.country) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.country]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_176, [
-                          vue.createElementVNode("div", _hoisted_177, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "код вида",
-                              "onUpdate:modelValue": _cache[50] || (_cache[50] = $event => (($props.order.consignor.document.code) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.code]
+                          ]),
+                          vue.createElementVNode("div", _hoisted_178, [
+                            vue.createElementVNode("div", _hoisted_179, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "код вида",
+                                "onUpdate:modelValue": _cache[51] || (_cache[51] = $event => (($props.order.consignor.document.code) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.code]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_178, [
-                          vue.createElementVNode("div", _hoisted_179, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "краткое наименование",
-                              "onUpdate:modelValue": _cache[51] || (_cache[51] = $event => (($props.order.consignor.document.shortName) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.shortName]
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_180, [
-                          vue.createElementVNode("div", _hoisted_181, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "серия",
-                              "onUpdate:modelValue": _cache[52] || (_cache[52] = $event => (($props.order.consignor.document.series) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.series]
+                          ]),
+                          vue.createElementVNode("div", _hoisted_180, [
+                            vue.createElementVNode("div", _hoisted_181, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "краткое наименование",
+                                "onUpdate:modelValue": _cache[52] || (_cache[52] = $event => (($props.order.consignor.document.shortName) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.shortName]
+                              ])
                             ])
                           ]),
                           vue.createElementVNode("div", _hoisted_182, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "номер",
-                              "onUpdate:modelValue": _cache[53] || (_cache[53] = $event => (($props.order.consignor.document.num) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.num]
+                            vue.createElementVNode("div", _hoisted_183, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "серия",
+                                "onUpdate:modelValue": _cache[53] || (_cache[53] = $event => (($props.order.consignor.document.series) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.series]
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_184, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "номер",
+                                "onUpdate:modelValue": _cache[54] || (_cache[54] = $event => (($props.order.consignor.document.num) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.num]
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_185, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "дата выдачи",
+                                "onUpdate:modelValue": _cache[55] || (_cache[55] = $event => (($props.order.consignor.document.dateRelease) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.dateRelease]
+                              ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_183, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "дата выдачи",
-                              "onUpdate:modelValue": _cache[54] || (_cache[54] = $event => (($props.order.consignor.document.dateRelease) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.dateRelease]
+                          vue.createElementVNode("div", _hoisted_186, [
+                            vue.createElementVNode("div", _hoisted_187, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "Код подразделения",
+                                "onUpdate:modelValue": _cache[56] || (_cache[56] = $event => (($props.order.consignor.document.divisionCode) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.divisionCode]
+                              ])
                             ])
                           ])
                         ]),
-                        vue.createElementVNode("div", _hoisted_184, [
-                          vue.createElementVNode("div", _hoisted_185, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "Код подразделения",
-                              "onUpdate:modelValue": _cache[55] || (_cache[55] = $event => (($props.order.consignor.document.divisionCode) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.divisionCode]
-                            ])
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_186, [
-                        vue.createElementVNode("div", _hoisted_187, [
-                          vue.createElementVNode("div", _hoisted_188, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "наименование организации, выдавшей документ",
-                              "onUpdate:modelValue": _cache[56] || (_cache[56] = $event => (($props.order.consignor.document.issuedBy) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignor.document.issuedBy]
+                        vue.createElementVNode("div", _hoisted_188, [
+                          vue.createElementVNode("div", _hoisted_189, [
+                            vue.createElementVNode("div", _hoisted_190, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "наименование организации, выдавшей документ",
+                                "onUpdate:modelValue": _cache[57] || (_cache[57] = $event => (($props.order.consignor.document.issuedBy) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignor.document.issuedBy]
+                              ])
                             ])
                           ])
                         ])
@@ -4009,374 +4038,374 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ])
-          ])
-        ]),
-        vue.createCommentVNode("endregion"),
-        vue.createCommentVNode("Region элемент с индивидуальной информацией о получателе"),
-        vue.createElementVNode("div", _hoisted_189, [
-          vue.createElementVNode("div", _hoisted_190, [
-            _hoisted_191,
+          ]),
+          vue.createCommentVNode("endregion"),
+          vue.createCommentVNode("Region элемент с индивидуальной информацией о получателе"),
+          vue.createElementVNode("div", _hoisted_191, [
             vue.createElementVNode("div", _hoisted_192, [
-              vue.createElementVNode("div", _hoisted_193, [
-                vue.createElementVNode("div", _hoisted_194, [
-                  vue.createElementVNode("div", _hoisted_195, [
-                    vue.createElementVNode("form", _hoisted_196, [
-                      vue.createElementVNode("div", _hoisted_197, [
-                        vue.createElementVNode("div", _hoisted_198, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            type: "text",
-                            class: "form-control",
-                            placeholder: "",
-                            "onUpdate:modelValue": _cache[57] || (_cache[57] = $event => (($props.order.consignee.fullName) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignee.fullName]
+              _hoisted_193,
+              vue.createElementVNode("div", _hoisted_194, [
+                vue.createElementVNode("div", _hoisted_195, [
+                  vue.createElementVNode("div", _hoisted_196, [
+                    vue.createElementVNode("div", _hoisted_197, [
+                      vue.createElementVNode("form", _hoisted_198, [
+                        vue.createElementVNode("div", _hoisted_199, [
+                          vue.createElementVNode("div", _hoisted_200, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              placeholder: "",
+                              "onUpdate:modelValue": _cache[58] || (_cache[58] = $event => (($props.order.consignee.fullName) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignee.fullName]
+                            ])
                           ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_199, [
-                        vue.createElementVNode("div", _hoisted_200, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            type: "text",
-                            class: "form-control",
-                            "onUpdate:modelValue": _cache[58] || (_cache[58] = $event => (($props.order.consignee.countryCode) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignee.countryCode]
-                          ])
-                        ])
-                      ]),
-                      _hoisted_201,
-                      vue.createElementVNode("div", _hoisted_202, [
-                        vue.createElementVNode("div", _hoisted_203, [
-                          vue.createElementVNode("input", {
-                            type: "checkbox",
-                            class: "form-check-input",
-                            checked: $props.order.consignee.isDeclarant
-                          }, null, 8 /* PROPS */, _hoisted_204)
                         ]),
-                        _hoisted_205
-                      ])
-                    ]),
-                    vue.createElementVNode("div", _hoisted_206, [
-                      vue.createElementVNode("div", _hoisted_207, [
-                        vue.createElementVNode("div", _hoisted_208, [
-                          _hoisted_209,
+                        vue.createElementVNode("div", _hoisted_201, [
+                          vue.createElementVNode("div", _hoisted_202, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              type: "text",
+                              class: "form-control",
+                              "onUpdate:modelValue": _cache[59] || (_cache[59] = $event => (($props.order.consignee.countryCode) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignee.countryCode]
+                            ])
+                          ])
+                        ]),
+                        _hoisted_203,
+                        vue.createElementVNode("div", _hoisted_204, [
+                          vue.createElementVNode("div", _hoisted_205, [
+                            vue.createElementVNode("input", {
+                              type: "checkbox",
+                              class: "form-check-input",
+                              checked: $props.order.consignee.isDeclarant
+                            }, null, 8 /* PROPS */, _hoisted_206)
+                          ]),
+                          _hoisted_207
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_208, [
+                        vue.createElementVNode("div", _hoisted_209, [
                           vue.createElementVNode("div", _hoisted_210, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[59] || (_cache[59] = $event => (($props.order.consignee.OGRN) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.OGRN]
+                            _hoisted_211,
+                            vue.createElementVNode("div", _hoisted_212, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[60] || (_cache[60] = $event => (($props.order.consignee.OGRN) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.OGRN]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_211, [
-                          _hoisted_212,
+                          ]),
                           vue.createElementVNode("div", _hoisted_213, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[60] || (_cache[60] = $event => (($props.order.consignee.INN) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.INN]
+                            _hoisted_214,
+                            vue.createElementVNode("div", _hoisted_215, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[61] || (_cache[61] = $event => (($props.order.consignee.INN) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.INN]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_214, [
-                          _hoisted_215,
+                          ]),
                           vue.createElementVNode("div", _hoisted_216, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              "onUpdate:modelValue": _cache[61] || (_cache[61] = $event => (($props.order.consignee.KPP) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.KPP]
+                            _hoisted_217,
+                            vue.createElementVNode("div", _hoisted_218, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                "onUpdate:modelValue": _cache[62] || (_cache[62] = $event => (($props.order.consignee.KPP) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.KPP]
+                              ])
                             ])
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_217, [
-                        vue.createElementVNode("div", _hoisted_218, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            placeholder: "номер телефона",
-                            "onUpdate:modelValue": _cache[62] || (_cache[62] = $event => (($props.order.consignee.phone) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignee.phone]
                           ])
                         ]),
                         vue.createElementVNode("div", _hoisted_219, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            placeholder: "адрес эл.почты",
-                            "onUpdate:modelValue": _cache[63] || (_cache[63] = $event => (($props.order.consignee.email) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.order.consignee.email]
+                          vue.createElementVNode("div", _hoisted_220, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              placeholder: "номер телефона",
+                              "onUpdate:modelValue": _cache[63] || (_cache[63] = $event => (($props.order.consignee.phone) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignee.phone]
+                            ])
+                          ]),
+                          vue.createElementVNode("div", _hoisted_221, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              placeholder: "адрес эл.почты",
+                              "onUpdate:modelValue": _cache[64] || (_cache[64] = $event => (($props.order.consignee.email) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.order.consignee.email]
+                            ])
                           ])
                         ])
                       ])
                     ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_220, [
-                  vue.createElementVNode("div", _hoisted_221, [
-                    _hoisted_222,
+                  ]),
+                  vue.createElementVNode("div", _hoisted_222, [
                     vue.createElementVNode("div", _hoisted_223, [
-                      vue.createElementVNode("div", _hoisted_224, [
-                        vue.createElementVNode("div", _hoisted_225, [
-                          vue.createElementVNode("div", _hoisted_226, [
-                            vue.createElementVNode("div", _hoisted_227, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "язык",
-                                "onUpdate:modelValue": _cache[64] || (_cache[64] = $event => (($props.order.consignee.language) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.language]
+                      _hoisted_224,
+                      vue.createElementVNode("div", _hoisted_225, [
+                        vue.createElementVNode("div", _hoisted_226, [
+                          vue.createElementVNode("div", _hoisted_227, [
+                            vue.createElementVNode("div", _hoisted_228, [
+                              vue.createElementVNode("div", _hoisted_229, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "язык",
+                                  "onUpdate:modelValue": _cache[65] || (_cache[65] = $event => (($props.order.consignee.language) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.language]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_230, [
+                              vue.createElementVNode("div", _hoisted_231, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "страна",
+                                  "onUpdate:modelValue": _cache[66] || (_cache[66] = $event => (($props.order.consignee.country) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.country]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_232, [
+                              vue.createElementVNode("div", _hoisted_233, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "почтовый индекс",
+                                  "onUpdate:modelValue": _cache[67] || (_cache[67] = $event => (($props.order.consignee.mailIndex) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.mailIndex]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_234, [
+                              vue.createElementVNode("div", _hoisted_235, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "область (регион, штат, провинция)",
+                                  "onUpdate:modelValue": _cache[68] || (_cache[68] = $event => (($props.order.consignee.region) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.region]
+                                ])
                               ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_228, [
-                            vue.createElementVNode("div", _hoisted_229, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "страна",
-                                "onUpdate:modelValue": _cache[65] || (_cache[65] = $event => (($props.order.consignee.country) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.country]
+                          vue.createElementVNode("div", _hoisted_236, [
+                            vue.createElementVNode("div", _hoisted_237, [
+                              vue.createElementVNode("div", _hoisted_238, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "район",
+                                  "onUpdate:modelValue": _cache[69] || (_cache[69] = $event => (($props.order.consignee.area) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.area]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_239, [
+                              vue.createElementVNode("div", _hoisted_240, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "город",
+                                  "onUpdate:modelValue": _cache[70] || (_cache[70] = $event => (($props.order.consignee.city) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.city]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_241, [
+                              vue.createElementVNode("div", _hoisted_242, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "населённый пункт",
+                                  "onUpdate:modelValue": _cache[71] || (_cache[71] = $event => (($props.order.consignee.settlement) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.settlement]
+                                ])
                               ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_230, [
-                            vue.createElementVNode("div", _hoisted_231, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "почтовый индекс",
-                                "onUpdate:modelValue": _cache[66] || (_cache[66] = $event => (($props.order.consignee.mailIndex) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.mailIndex]
+                          vue.createElementVNode("div", _hoisted_243, [
+                            vue.createElementVNode("div", _hoisted_244, [
+                              vue.createElementVNode("div", _hoisted_245, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "улица",
+                                  "onUpdate:modelValue": _cache[72] || (_cache[72] = $event => (($props.order.consignee.address) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.address]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_246, [
+                              vue.createElementVNode("div", _hoisted_247, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "дом, корпус, строение",
+                                  "onUpdate:modelValue": _cache[73] || (_cache[73] = $event => (($props.order.consignee.house) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.house]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_248, [
+                              vue.createElementVNode("div", _hoisted_249, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "офис/квартира",
+                                  "onUpdate:modelValue": _cache[74] || (_cache[74] = $event => (($props.order.consignee.office) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.office]
+                                ])
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_250, [
+                              vue.createElementVNode("div", _hoisted_251, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "номер а/я",
+                                  "onUpdate:modelValue": _cache[75] || (_cache[75] = $event => (($props.order.consignee.officeLetter) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.officeLetter]
+                                ])
                               ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_232, [
-                            vue.createElementVNode("div", _hoisted_233, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "область (регион, штат, провинция)",
-                                "onUpdate:modelValue": _cache[67] || (_cache[67] = $event => (($props.order.consignee.region) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.region]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_234, [
-                          vue.createElementVNode("div", _hoisted_235, [
-                            vue.createElementVNode("div", _hoisted_236, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "район",
-                                "onUpdate:modelValue": _cache[68] || (_cache[68] = $event => (($props.order.consignee.area) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.area]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_237, [
-                            vue.createElementVNode("div", _hoisted_238, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "город",
-                                "onUpdate:modelValue": _cache[69] || (_cache[69] = $event => (($props.order.consignee.city) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.city]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_239, [
-                            vue.createElementVNode("div", _hoisted_240, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "населённый пункт",
-                                "onUpdate:modelValue": _cache[70] || (_cache[70] = $event => (($props.order.consignee.settlement) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.settlement]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_241, [
-                          vue.createElementVNode("div", _hoisted_242, [
-                            vue.createElementVNode("div", _hoisted_243, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "улица",
-                                "onUpdate:modelValue": _cache[71] || (_cache[71] = $event => (($props.order.consignee.address) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.address]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_244, [
-                            vue.createElementVNode("div", _hoisted_245, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "дом, корпус, строение",
-                                "onUpdate:modelValue": _cache[72] || (_cache[72] = $event => (($props.order.consignee.house) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.house]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_246, [
-                            vue.createElementVNode("div", _hoisted_247, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "офис/квартира",
-                                "onUpdate:modelValue": _cache[73] || (_cache[73] = $event => (($props.order.consignee.office) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.office]
-                              ])
-                            ])
-                          ]),
-                          vue.createElementVNode("div", _hoisted_248, [
-                            vue.createElementVNode("div", _hoisted_249, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "номер а/я",
-                                "onUpdate:modelValue": _cache[74] || (_cache[74] = $event => (($props.order.consignee.officeLetter) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.officeLetter]
-                              ])
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_250, [
-                          vue.createElementVNode("div", _hoisted_251, [
-                            vue.createElementVNode("div", _hoisted_252, [
-                              vue.withDirectives(vue.createElementVNode("input", {
-                                type: "text",
-                                class: "form-control",
-                                placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
-                                "onUpdate:modelValue": _cache[75] || (_cache[75] = $event => (($props.order.consignee.fullAddress) = $event))
-                              }, null, 512 /* NEED_PATCH */), [
-                                [vue.vModelText, $props.order.consignee.fullAddress]
+                          vue.createElementVNode("div", _hoisted_252, [
+                            vue.createElementVNode("div", _hoisted_253, [
+                              vue.createElementVNode("div", _hoisted_254, [
+                                vue.withDirectives(vue.createElementVNode("input", {
+                                  type: "text",
+                                  class: "form-control",
+                                  placeholder: "набор элементов адреса, представленных в свободной форме в виде текста",
+                                  "onUpdate:modelValue": _cache[76] || (_cache[76] = $event => (($props.order.consignee.fullAddress) = $event))
+                                }, null, 512 /* NEED_PATCH */), [
+                                  [vue.vModelText, $props.order.consignee.fullAddress]
+                                ])
                               ])
                             ])
                           ])
                         ])
                       ])
                     ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_253, [
-                  vue.createElementVNode("div", _hoisted_254, [
-                    _hoisted_255,
+                  ]),
+                  vue.createElementVNode("div", _hoisted_255, [
                     vue.createElementVNode("div", _hoisted_256, [
-                      vue.createElementVNode("div", _hoisted_257, [
-                        vue.createElementVNode("div", _hoisted_258, [
-                          vue.createElementVNode("div", _hoisted_259, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "стр",
-                              "onUpdate:modelValue": _cache[76] || (_cache[76] = $event => (($props.order.consignee.document.country) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.country]
+                      _hoisted_257,
+                      vue.createElementVNode("div", _hoisted_258, [
+                        vue.createElementVNode("div", _hoisted_259, [
+                          vue.createElementVNode("div", _hoisted_260, [
+                            vue.createElementVNode("div", _hoisted_261, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "стр",
+                                "onUpdate:modelValue": _cache[77] || (_cache[77] = $event => (($props.order.consignee.document.country) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.country]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_260, [
-                          vue.createElementVNode("div", _hoisted_261, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "код вида",
-                              "onUpdate:modelValue": _cache[77] || (_cache[77] = $event => (($props.order.consignee.document.code) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.code]
+                          ]),
+                          vue.createElementVNode("div", _hoisted_262, [
+                            vue.createElementVNode("div", _hoisted_263, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "код вида",
+                                "onUpdate:modelValue": _cache[78] || (_cache[78] = $event => (($props.order.consignee.document.code) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.code]
+                              ])
                             ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_262, [
-                          vue.createElementVNode("div", _hoisted_263, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "краткое наименование",
-                              "onUpdate:modelValue": _cache[78] || (_cache[78] = $event => (($props.order.consignee.document.shortName) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.shortName]
-                            ])
-                          ])
-                        ]),
-                        vue.createElementVNode("div", _hoisted_264, [
-                          vue.createElementVNode("div", _hoisted_265, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "серия",
-                              "onUpdate:modelValue": _cache[79] || (_cache[79] = $event => (($props.order.consignee.document.series) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.series]
+                          ]),
+                          vue.createElementVNode("div", _hoisted_264, [
+                            vue.createElementVNode("div", _hoisted_265, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "краткое наименование",
+                                "onUpdate:modelValue": _cache[79] || (_cache[79] = $event => (($props.order.consignee.document.shortName) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.shortName]
+                              ])
                             ])
                           ]),
                           vue.createElementVNode("div", _hoisted_266, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "номер",
-                              "onUpdate:modelValue": _cache[80] || (_cache[80] = $event => (($props.order.consignee.document.num) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.num]
+                            vue.createElementVNode("div", _hoisted_267, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "серия",
+                                "onUpdate:modelValue": _cache[80] || (_cache[80] = $event => (($props.order.consignee.document.series) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.series]
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_268, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "номер",
+                                "onUpdate:modelValue": _cache[81] || (_cache[81] = $event => (($props.order.consignee.document.num) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.num]
+                              ])
+                            ]),
+                            vue.createElementVNode("div", _hoisted_269, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "дата выдачи",
+                                "onUpdate:modelValue": _cache[82] || (_cache[82] = $event => (($props.order.consignee.document.dateRelease) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.dateRelease]
+                              ])
                             ])
                           ]),
-                          vue.createElementVNode("div", _hoisted_267, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "дата выдачи",
-                              "onUpdate:modelValue": _cache[81] || (_cache[81] = $event => (($props.order.consignee.document.dateRelease) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.dateRelease]
+                          vue.createElementVNode("div", _hoisted_270, [
+                            vue.createElementVNode("div", _hoisted_271, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "Код подразделения",
+                                "onUpdate:modelValue": _cache[83] || (_cache[83] = $event => (($props.order.consignee.document.divisionCode) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.divisionCode]
+                              ])
                             ])
                           ])
                         ]),
-                        vue.createElementVNode("div", _hoisted_268, [
-                          vue.createElementVNode("div", _hoisted_269, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "Код подразделения",
-                              "onUpdate:modelValue": _cache[82] || (_cache[82] = $event => (($props.order.consignee.document.divisionCode) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.divisionCode]
-                            ])
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_270, [
-                        vue.createElementVNode("div", _hoisted_271, [
-                          vue.createElementVNode("div", _hoisted_272, [
-                            vue.withDirectives(vue.createElementVNode("input", {
-                              type: "text",
-                              class: "form-control",
-                              placeholder: "наименование организации, выдавшей документ",
-                              "onUpdate:modelValue": _cache[83] || (_cache[83] = $event => (($props.order.consignee.document.issuedBy) = $event))
-                            }, null, 512 /* NEED_PATCH */), [
-                              [vue.vModelText, $props.order.consignee.document.issuedBy]
+                        vue.createElementVNode("div", _hoisted_272, [
+                          vue.createElementVNode("div", _hoisted_273, [
+                            vue.createElementVNode("div", _hoisted_274, [
+                              vue.withDirectives(vue.createElementVNode("input", {
+                                type: "text",
+                                class: "form-control",
+                                placeholder: "наименование организации, выдавшей документ",
+                                "onUpdate:modelValue": _cache[84] || (_cache[84] = $event => (($props.order.consignee.document.issuedBy) = $event))
+                              }, null, 512 /* NEED_PATCH */), [
+                                [vue.vModelText, $props.order.consignee.document.issuedBy]
+                              ])
                             ])
                           ])
                         ])
@@ -4388,22 +4417,39 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ])
+      ]),
+      vue.createElementVNode("div", _hoisted_275, [
+        vue.createElementVNode("div", {
+          class: "group-panel-label",
+          onClick: _cache[85] || (_cache[85] = $event => ($data.isGoodsOpen= !$data.isGoodsOpen))
+        }, [
+          _hoisted_276,
+          vue.createElementVNode("div", _hoisted_277, [
+            vue.createElementVNode("span", {
+              class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isGoodsOpen}])
+            }, null, 2 /* CLASS */)
+          ])
+        ]),
+        vue.createElementVNode("div", {
+          class: vue.normalizeClass(["group-panel-content", {'open': $data.isGoodsOpen}])
+        }, [
+          (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.goods, (good, index) => {
+            return (vue.openBlock(), vue.createBlock(_component_tsoft_good_information_form, {
+              goodNum: index,
+              good: good.goodInfo,
+              documents: good.documents
+            }, null, 8 /* PROPS */, ["goodNum", "good", "documents"]))
+          }), 256 /* UNKEYED_FRAGMENT */))
+        ], 2 /* CLASS */)
       ])
-    ]),
-    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.goods, (good, index) => {
-      return (vue.openBlock(), vue.createBlock(_component_tsoft_good_information_form, {
-        key: index,
-        good: good.goodInfo,
-        documents: good.documents
-      }, null, 8 /* PROPS */, ["good", "documents"]))
-    }), 128 /* KEYED_FRAGMENT */))
-  ], 64 /* STABLE_FRAGMENT */))
+    ], 2 /* CLASS */)
+  ]))
 }
 
-script$5.render = render$5;
-script$5.__file = "src/components/Form/GoodsAwbInformation.vue";
+script$3.render = render$3;
+script$3.__file = "src/components/Form/GoodsAwbInformation.vue";
 
-var script$4 = {
+var script$2 = {
   name: "TsoftAdditionalDocumentForm",
   props: {
     document: {
@@ -4413,19 +4459,19 @@ var script$4 = {
   }
 };
 
-const _hoisted_1$4 = {
+const _hoisted_1$2 = {
   class: "optional-inf-block my-3",
   id: "extraDocBlock"
 };
-const _hoisted_2$3 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_2$2 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
 const _hoisted_3$2 = {
   class: "product-inner-block collapse",
   id: "product-2Inner"
 };
-const _hoisted_4$3 = { class: "optional-inf-card" };
-const _hoisted_5$1 = { class: "row" };
-const _hoisted_6$1 = { class: "d-flex" };
-const _hoisted_7$1 = { class: "col-5 d-flex" };
+const _hoisted_4$2 = { class: "optional-inf-card" };
+const _hoisted_5$2 = { class: "row" };
+const _hoisted_6$2 = { class: "d-flex" };
+const _hoisted_7$2 = { class: "col-5 d-flex" };
 const _hoisted_8$1 = { class: "col-3 d-flex" };
 const _hoisted_9$1 = { class: "col-8" };
 const _hoisted_10$1 = { class: "input-bg" };
@@ -4518,14 +4564,14 @@ const _hoisted_84$1 = { class: "input-bg" };
 const _hoisted_85$1 = { class: "col-3" };
 const _hoisted_86$1 = { class: "input-bg" };
 
-function render$4(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
-    _hoisted_2$3,
+function render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$2, [
+    _hoisted_2$2,
     vue.createElementVNode("div", _hoisted_3$2, [
-      vue.createElementVNode("div", _hoisted_4$3, [
-        vue.createElementVNode("div", _hoisted_5$1, [
-          vue.createElementVNode("div", _hoisted_6$1, [
-            vue.createElementVNode("div", _hoisted_7$1, [
+      vue.createElementVNode("div", _hoisted_4$2, [
+        vue.createElementVNode("div", _hoisted_5$2, [
+          vue.createElementVNode("div", _hoisted_6$2, [
+            vue.createElementVNode("div", _hoisted_7$2, [
               vue.createElementVNode("div", _hoisted_8$1, [
                 vue.createElementVNode("div", _hoisted_9$1, [
                   vue.createElementVNode("div", _hoisted_10$1, [
@@ -4878,11 +4924,16 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$4.render = render$4;
-script$4.__file = "src/components/Form/AdditionalDocument.vue";
+script$2.render = render$2;
+script$2.__file = "src/components/Form/AdditionalDocument.vue";
 
-var script$3 = {
+var script$1 = {
   name: "TsoftGoodInformationForm",
+  data() {
+    return {
+      isGoodsOpen: false
+    };
+  },
   props: {
     good: {
       type: Object,
@@ -4891,599 +4942,612 @@ var script$3 = {
     documents: {
       type: Object,
       required: true
+    },
+    goodNum: {
+      required: true
     }
   }
 };
 
-const _hoisted_1$3 = {
+const _hoisted_1$1 = { class: "goods" };
+const _hoisted_2$1 = { class: "arrow" };
+const _hoisted_3$1 = {
   class: "product-info-block my-3",
   id: "productInvoiceBlock"
 };
-const _hoisted_2$2 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
-const _hoisted_3$1 = {
+const _hoisted_4$1 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_5$1 = {
   class: "product-inner-block collapse",
   id: "product-1Inner"
 };
-const _hoisted_4$2 = { class: "row" };
-const _hoisted_5 = { class: "col-1" };
-const _hoisted_6 = { class: "col-9" };
-const _hoisted_7 = { class: "col input-bg" };
-const _hoisted_8 = { class: "col input-bg mt-3" };
-const _hoisted_9 = { class: "col-8" };
-const _hoisted_10 = { class: "input-bg h-100" };
-const _hoisted_11 = { class: "col-3" };
-const _hoisted_12 = { class: "changing-code" };
-const _hoisted_13 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block" }, [
+const _hoisted_6$1 = { class: "row" };
+const _hoisted_7$1 = { class: "col-1" };
+const _hoisted_8 = { class: "col-9" };
+const _hoisted_9 = { class: "col input-bg" };
+const _hoisted_10 = { class: "col input-bg mt-3" };
+const _hoisted_11 = { class: "col-8" };
+const _hoisted_12 = { class: "input-bg h-100" };
+const _hoisted_13 = { class: "col-3" };
+const _hoisted_14 = { class: "changing-code" };
+const _hoisted_15 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block" }, [
   /*#__PURE__*/vue.createElementVNode("label", { class: "fs-5" }, "Код изменений")
 ], -1 /* HOISTED */);
-const _hoisted_14 = { class: "col-9 d-flex" };
-const _hoisted_15 = { class: "col input-bg" };
-const _hoisted_16 = { class: "col input-bg" };
+const _hoisted_16 = { class: "col-9 d-flex" };
 const _hoisted_17 = { class: "col input-bg" };
 const _hoisted_18 = { class: "col input-bg" };
 const _hoisted_19 = { class: "col input-bg" };
 const _hoisted_20 = { class: "col input-bg" };
 const _hoisted_21 = { class: "col input-bg" };
-const _hoisted_22 = /*#__PURE__*/vue.createElementVNode("button", { class: "btn info-button p-1" }, [
+const _hoisted_22 = { class: "col input-bg" };
+const _hoisted_23 = { class: "col input-bg" };
+const _hoisted_24 = /*#__PURE__*/vue.createElementVNode("button", { class: "btn info-button p-1" }, [
   /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-circle-info" })
 ], -1 /* HOISTED */);
-const _hoisted_23 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
-const _hoisted_24 = { class: "row" };
-const _hoisted_25 = { class: "col-3" };
-const _hoisted_26 = { class: "d-flex" };
-const _hoisted_27 = { class: "col-5" };
-const _hoisted_28 = /*#__PURE__*/vue.createElementVNode("p", { class: "col-11 align-bcntr" }, "ТН ВЭД ЕАЭС", -1 /* HOISTED */);
-const _hoisted_29 = { class: "col-11 input-bg" };
-const _hoisted_30 = { class: "col-7" };
-const _hoisted_31 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Вес, брутто", -1 /* HOISTED */);
-const _hoisted_32 = { class: "d-flex" };
-const _hoisted_33 = { class: "col-6" };
-const _hoisted_34 = { class: "col input-bg" };
-const _hoisted_35 = { class: "col-6 d-flex" };
-const _hoisted_36 = { class: "col-5" };
-const _hoisted_37 = { class: "col input-bg" };
-const _hoisted_38 = { class: "col-7" };
+const _hoisted_25 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, null, -1 /* HOISTED */);
+const _hoisted_26 = { class: "row" };
+const _hoisted_27 = { class: "col-3" };
+const _hoisted_28 = { class: "d-flex" };
+const _hoisted_29 = { class: "col-5" };
+const _hoisted_30 = /*#__PURE__*/vue.createElementVNode("p", { class: "col-11 align-bcntr" }, "ТН ВЭД ЕАЭС", -1 /* HOISTED */);
+const _hoisted_31 = { class: "col-11 input-bg" };
+const _hoisted_32 = { class: "col-7" };
+const _hoisted_33 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Вес, брутто", -1 /* HOISTED */);
+const _hoisted_34 = { class: "d-flex" };
+const _hoisted_35 = { class: "col-6" };
+const _hoisted_36 = { class: "col input-bg" };
+const _hoisted_37 = { class: "col-6 d-flex" };
+const _hoisted_38 = { class: "col-5" };
 const _hoisted_39 = { class: "col input-bg" };
-const _hoisted_40 = { class: "d-flex mt-2" };
+const _hoisted_40 = { class: "col-7" };
 const _hoisted_41 = { class: "col input-bg" };
-const _hoisted_42 = { class: "col-6" };
-const _hoisted_43 = { class: "d-flex" };
-const _hoisted_44 = { class: "col-4" };
-const _hoisted_45 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Вес, нетто", -1 /* HOISTED */);
-const _hoisted_46 = { class: "d-flex" };
-const _hoisted_47 = { class: "col-6" };
-const _hoisted_48 = { class: "col input-bg" };
+const _hoisted_42 = { class: "d-flex mt-2" };
+const _hoisted_43 = { class: "col input-bg" };
+const _hoisted_44 = { class: "col-6" };
+const _hoisted_45 = { class: "d-flex" };
+const _hoisted_46 = { class: "col-4" };
+const _hoisted_47 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Вес, нетто", -1 /* HOISTED */);
+const _hoisted_48 = { class: "d-flex" };
 const _hoisted_49 = { class: "col-6" };
-const _hoisted_50 = { class: "d-flex" };
-const _hoisted_51 = { class: "col-5" };
-const _hoisted_52 = { class: "col input-bg" };
-const _hoisted_53 = { class: "col-7" };
+const _hoisted_50 = { class: "col input-bg" };
+const _hoisted_51 = { class: "col-6" };
+const _hoisted_52 = { class: "d-flex" };
+const _hoisted_53 = { class: "col-5" };
 const _hoisted_54 = { class: "col input-bg" };
-const _hoisted_55 = { class: "col-4" };
-const _hoisted_56 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Количество", -1 /* HOISTED */);
-const _hoisted_57 = { class: "d-flex" };
-const _hoisted_58 = { class: "col-5" };
-const _hoisted_59 = { class: "col input-bg" };
-const _hoisted_60 = { class: "col-7" };
-const _hoisted_61 = { class: "d-flex" };
-const _hoisted_62 = { class: "col-5" };
-const _hoisted_63 = { class: "col input-bg" };
-const _hoisted_64 = { class: "col-7" };
+const _hoisted_55 = { class: "col-7" };
+const _hoisted_56 = { class: "col input-bg" };
+const _hoisted_57 = { class: "col-4" };
+const _hoisted_58 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Количество", -1 /* HOISTED */);
+const _hoisted_59 = { class: "d-flex" };
+const _hoisted_60 = { class: "col-5" };
+const _hoisted_61 = { class: "col input-bg" };
+const _hoisted_62 = { class: "col-7" };
+const _hoisted_63 = { class: "d-flex" };
+const _hoisted_64 = { class: "col-5" };
 const _hoisted_65 = { class: "col input-bg" };
-const _hoisted_66 = { class: "col-4" };
-const _hoisted_67 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Таможенная стоимость", -1 /* HOISTED */);
-const _hoisted_68 = { class: "d-flex" };
-const _hoisted_69 = { class: "col-7" };
-const _hoisted_70 = { class: "col input-bg" };
-const _hoisted_71 = { class: "col-3" };
-const _hoisted_72 = { class: "d-flex" };
-const _hoisted_73 = { class: "col input-bg" };
-const _hoisted_74 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, [
+const _hoisted_66 = { class: "col-7" };
+const _hoisted_67 = { class: "col input-bg" };
+const _hoisted_68 = { class: "col-4" };
+const _hoisted_69 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Таможенная стоимость", -1 /* HOISTED */);
+const _hoisted_70 = { class: "d-flex" };
+const _hoisted_71 = { class: "col-7" };
+const _hoisted_72 = { class: "col input-bg" };
+const _hoisted_73 = { class: "col-3" };
+const _hoisted_74 = { class: "d-flex" };
+const _hoisted_75 = { class: "col input-bg" };
+const _hoisted_76 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2" }, [
   /*#__PURE__*/vue.createElementVNode("button", { class: "btn btn-bg-white" }, [
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-note-sticky" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_75 = { class: "d-flex mt-2" };
-const _hoisted_76 = { class: "col-6" };
-const _hoisted_77 = { class: "col input-bg" };
-const _hoisted_78 = { class: "col-6 d-flex" };
-const _hoisted_79 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr ps-2" }, "Трансп. расх.", -1 /* HOISTED */);
-const _hoisted_80 = { class: "col input-bg" };
-const _hoisted_81 = { class: "col input-bg" };
-const _hoisted_82 = { class: "col-3" };
-const _hoisted_83 = { class: "" };
-const _hoisted_84 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Фактурная стоимость", -1 /* HOISTED */);
-const _hoisted_85 = { class: "d-flex" };
-const _hoisted_86 = { class: "col-8" };
-const _hoisted_87 = { class: "col input-bg" };
-const _hoisted_88 = { class: "col-4" };
+const _hoisted_77 = { class: "d-flex mt-2" };
+const _hoisted_78 = { class: "col-6" };
+const _hoisted_79 = { class: "col input-bg" };
+const _hoisted_80 = { class: "col-6 d-flex" };
+const _hoisted_81 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr ps-2" }, "Трансп. расх.", -1 /* HOISTED */);
+const _hoisted_82 = { class: "col input-bg" };
+const _hoisted_83 = { class: "col input-bg" };
+const _hoisted_84 = { class: "col-3" };
+const _hoisted_85 = { class: "" };
+const _hoisted_86 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Фактурная стоимость", -1 /* HOISTED */);
+const _hoisted_87 = { class: "d-flex" };
+const _hoisted_88 = { class: "col-8" };
 const _hoisted_89 = { class: "col input-bg" };
-const _hoisted_90 = { class: "d-flex mt-2" };
-const _hoisted_91 = { class: "d-flex" };
-const _hoisted_92 = { class: "col-8" };
-const _hoisted_93 = { class: "col input-bg" };
-const _hoisted_94 = { class: "col-4" };
+const _hoisted_90 = { class: "col-4" };
+const _hoisted_91 = { class: "col input-bg" };
+const _hoisted_92 = { class: "d-flex mt-2" };
+const _hoisted_93 = { class: "d-flex" };
+const _hoisted_94 = { class: "col-8" };
 const _hoisted_95 = { class: "col input-bg" };
-const _hoisted_96 = { class: "row" };
-const _hoisted_97 = { class: "col-9 d-flex" };
-const _hoisted_98 = { class: "col-9 d-flex" };
-const _hoisted_99 = { class: "col input-bg" };
-const _hoisted_100 = { class: "col input-bg" };
-const _hoisted_101 = { class: "col-3 d-flex batch-info-anchors" };
-const _hoisted_102 = /*#__PURE__*/vue.createTextVNode("РОИС");
-const _hoisted_103 = /*#__PURE__*/vue.createTextVNode("Предшествующий документ");
-const _hoisted_104 = { class: "col-3 d-flex" };
-const _hoisted_105 = { class: "d-flex batch-info-anchors" };
-const _hoisted_106 = /*#__PURE__*/vue.createTextVNode("Дополнительный документ ");
+const _hoisted_96 = { class: "col-4" };
+const _hoisted_97 = { class: "col input-bg" };
+const _hoisted_98 = { class: "row" };
+const _hoisted_99 = { class: "col-9 d-flex" };
+const _hoisted_100 = { class: "col-9 d-flex" };
+const _hoisted_101 = { class: "col input-bg" };
+const _hoisted_102 = { class: "col input-bg" };
+const _hoisted_103 = { class: "col-3 d-flex batch-info-anchors" };
+const _hoisted_104 = /*#__PURE__*/vue.createTextVNode("РОИС");
+const _hoisted_105 = /*#__PURE__*/vue.createTextVNode("Предшествующий документ");
+const _hoisted_106 = { class: "col-3 d-flex" };
+const _hoisted_107 = { class: "d-flex batch-info-anchors" };
+const _hoisted_108 = /*#__PURE__*/vue.createTextVNode("Дополнительный документ ");
 
-function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+function render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
-  const _component_tsoft_additional_document_form = vue.resolveComponent("tsoft-additional-document-form");
 
-  return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
-    vue.createElementVNode("div", _hoisted_1$3, [
-      _hoisted_2$2,
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
+    vue.createElementVNode("div", {
+      class: "group-panel-label",
+      onClick: _cache[0] || (_cache[0] = $event => ($data.isGoodsOpen= !$data.isGoodsOpen))
+    }, [
+      vue.createElementVNode("p", null, "Товар " + vue.toDisplayString($props.goodNum), 1 /* TEXT */),
+      vue.createElementVNode("div", _hoisted_2$1, [
+        vue.createElementVNode("span", {
+          class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isGoodsOpen}])
+        }, null, 2 /* CLASS */)
+      ])
+    ]),
+    vue.createElementVNode("div", {
+      class: vue.normalizeClass(["group-panel-content", {'open': $data.isGoodsOpen}])
+    }, [
       vue.createElementVNode("div", _hoisted_3$1, [
-        vue.createElementVNode("div", _hoisted_4$2, [
-          vue.createElementVNode("div", _hoisted_5, [
-            vue.createElementVNode("div", _hoisted_6, [
-              vue.createElementVNode("div", _hoisted_7, [
-                vue.withDirectives(vue.createElementVNode("input", {
-                  class: "form-control",
-                  type: "text",
-                  "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => (($props.good.numeric) = $event))
-                }, null, 512 /* NEED_PATCH */), [
-                  [vue.vModelText, $props.good.numeric]
-                ])
-              ]),
+        _hoisted_4$1,
+        vue.createElementVNode("div", _hoisted_5$1, [
+          vue.createElementVNode("div", _hoisted_6$1, [
+            vue.createElementVNode("div", _hoisted_7$1, [
               vue.createElementVNode("div", _hoisted_8, [
-                vue.withDirectives(vue.createElementVNode("input", {
-                  class: "form-control",
-                  type: "text",
-                  "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.good.totalNumeric) = $event))
-                }, null, 512 /* NEED_PATCH */), [
-                  [vue.vModelText, $props.good.totalNumeric]
-                ])
-              ])
-            ])
-          ]),
-          vue.createElementVNode("div", _hoisted_9, [
-            vue.createElementVNode("div", _hoisted_10, [
-              vue.withDirectives(vue.createElementVNode("textarea", {
-                type: "text",
-                class: "form-control h-100",
-                "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.good.description) = $event))
-              }, null, 512 /* NEED_PATCH */), [
-                [vue.vModelText, $props.good.description]
-              ])
-            ])
-          ]),
-          vue.createElementVNode("div", _hoisted_11, [
-            vue.createElementVNode("div", _hoisted_12, [
-              _hoisted_13,
-              vue.createElementVNode("div", _hoisted_14, [
-                vue.createElementVNode("div", _hoisted_15, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.good.changeDetailsType.stageChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.stageChangeCode]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_16, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.good.changeDetailsType.reasonChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.reasonChangeCode]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_17, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.good.changeDetailsType.quantityChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.quantityChangeCode]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_18, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.good.changeDetailsType.TNVEDChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.TNVEDChangeCode]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_19, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.good.changeDetailsType.customsCostChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.customsCostChangeCode]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_20, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.good.changeDetailsType.customsPaymentChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.customsPaymentChangeCode]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_21, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control number-code",
-                    type: "number",
-                    "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.good.changeDetailsType.otherChangeCode) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.changeDetailsType.otherChangeCode]
-                  ])
-                ]),
-                _hoisted_22
-              ]),
-              _hoisted_23
-            ])
-          ])
-        ]),
-        vue.createElementVNode("div", _hoisted_24, [
-          vue.createElementVNode("div", _hoisted_25, [
-            vue.createElementVNode("div", _hoisted_26, [
-              vue.createElementVNode("div", _hoisted_27, [
-                _hoisted_28,
-                vue.createElementVNode("div", _hoisted_29, [
+                vue.createElementVNode("div", _hoisted_9, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
-                    "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.good.tnved) = $event))
+                    "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => (($props.good.numeric) = $event))
                   }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.tnved]
+                    [vue.vModelText, $props.good.numeric]
+                  ])
+                ]),
+                vue.createElementVNode("div", _hoisted_10, [
+                  vue.withDirectives(vue.createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = $event => (($props.good.totalNumeric) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vue.vModelText, $props.good.totalNumeric]
                   ])
                 ])
-              ]),
-              vue.createElementVNode("div", _hoisted_30, [
-                _hoisted_31,
-                vue.createElementVNode("div", _hoisted_32, [
-                  vue.createElementVNode("div", _hoisted_33, [
-                    vue.createElementVNode("div", _hoisted_34, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control",
-                        type: "text",
-                        "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.good.grossWeightQuantity) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.good.grossWeightQuantity]
-                      ])
+              ])
+            ]),
+            vue.createElementVNode("div", _hoisted_11, [
+              vue.createElementVNode("div", _hoisted_12, [
+                vue.withDirectives(vue.createElementVNode("textarea", {
+                  type: "text",
+                  class: "form-control h-100",
+                  "onUpdate:modelValue": _cache[3] || (_cache[3] = $event => (($props.good.description) = $event))
+                }, null, 512 /* NEED_PATCH */), [
+                  [vue.vModelText, $props.good.description]
+                ])
+              ])
+            ]),
+            vue.createElementVNode("div", _hoisted_13, [
+              vue.createElementVNode("div", _hoisted_14, [
+                _hoisted_15,
+                vue.createElementVNode("div", _hoisted_16, [
+                  vue.createElementVNode("div", _hoisted_17, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[4] || (_cache[4] = $event => (($props.good.changeDetailsType.stageChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.stageChangeCode]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_35, [
-                    vue.createElementVNode("div", _hoisted_36, [
-                      vue.createElementVNode("div", _hoisted_37, [
+                  vue.createElementVNode("div", _hoisted_18, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[5] || (_cache[5] = $event => (($props.good.changeDetailsType.reasonChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.reasonChangeCode]
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_19, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[6] || (_cache[6] = $event => (($props.good.changeDetailsType.quantityChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.quantityChangeCode]
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_20, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[7] || (_cache[7] = $event => (($props.good.changeDetailsType.TNVEDChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.TNVEDChangeCode]
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_21, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[8] || (_cache[8] = $event => (($props.good.changeDetailsType.customsCostChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.customsCostChangeCode]
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_22, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[9] || (_cache[9] = $event => (($props.good.changeDetailsType.customsPaymentChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.customsPaymentChangeCode]
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_23, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control number-code",
+                      type: "number",
+                      "onUpdate:modelValue": _cache[10] || (_cache[10] = $event => (($props.good.changeDetailsType.otherChangeCode) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.changeDetailsType.otherChangeCode]
+                    ])
+                  ]),
+                  _hoisted_24
+                ]),
+                _hoisted_25
+              ])
+            ])
+          ]),
+          vue.createElementVNode("div", _hoisted_26, [
+            vue.createElementVNode("div", _hoisted_27, [
+              vue.createElementVNode("div", _hoisted_28, [
+                vue.createElementVNode("div", _hoisted_29, [
+                  _hoisted_30,
+                  vue.createElementVNode("div", _hoisted_31, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      "onUpdate:modelValue": _cache[11] || (_cache[11] = $event => (($props.good.tnved) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.tnved]
+                    ])
+                  ])
+                ]),
+                vue.createElementVNode("div", _hoisted_32, [
+                  _hoisted_33,
+                  vue.createElementVNode("div", _hoisted_34, [
+                    vue.createElementVNode("div", _hoisted_35, [
+                      vue.createElementVNode("div", _hoisted_36, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
-                          "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.good.goodWeightUnit) = $event))
+                          "onUpdate:modelValue": _cache[12] || (_cache[12] = $event => (($props.good.grossWeightQuantity) = $event))
                         }, null, 512 /* NEED_PATCH */), [
-                          [vue.vModelText, $props.good.goodWeightUnit]
+                          [vue.vModelText, $props.good.grossWeightQuantity]
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_38, [
-                      vue.createElementVNode("div", _hoisted_39, [
-                        vue.withDirectives(vue.createElementVNode("input", {
-                          class: "form-control number-code",
-                          type: "text",
-                          "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.good.goodWeightUnknown) = $event))
-                        }, null, 512 /* NEED_PATCH */), [
-                          [vue.vModelText, $props.good.goodWeightUnknown]
+                    vue.createElementVNode("div", _hoisted_37, [
+                      vue.createElementVNode("div", _hoisted_38, [
+                        vue.createElementVNode("div", _hoisted_39, [
+                          vue.withDirectives(vue.createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[13] || (_cache[13] = $event => (($props.good.goodWeightUnit) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vue.vModelText, $props.good.goodWeightUnit]
+                          ])
+                        ])
+                      ]),
+                      vue.createElementVNode("div", _hoisted_40, [
+                        vue.createElementVNode("div", _hoisted_41, [
+                          vue.withDirectives(vue.createElementVNode("input", {
+                            class: "form-control number-code",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.good.goodWeightUnknown) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vue.vModelText, $props.good.goodWeightUnknown]
+                          ])
                         ])
                       ])
                     ])
+                  ])
+                ])
+              ]),
+              vue.createElementVNode("div", _hoisted_42, [
+                vue.createElementVNode("div", _hoisted_43, [
+                  vue.withDirectives(vue.createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    placeholder: "наименование товарного знака, объекта авторского",
+                    "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.good.tradeMark) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vue.vModelText, $props.good.tradeMark]
                   ])
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_40, [
-              vue.createElementVNode("div", _hoisted_41, [
-                vue.withDirectives(vue.createElementVNode("input", {
-                  class: "form-control",
-                  type: "text",
-                  placeholder: "наименование товарного знака, объекта авторского",
-                  "onUpdate:modelValue": _cache[14] || (_cache[14] = $event => (($props.good.tradeMark) = $event))
-                }, null, 512 /* NEED_PATCH */), [
-                  [vue.vModelText, $props.good.tradeMark]
-                ])
-              ])
-            ])
-          ]),
-          vue.createElementVNode("div", _hoisted_42, [
-            vue.createElementVNode("div", _hoisted_43, [
-              vue.createElementVNode("div", _hoisted_44, [
-                _hoisted_45,
+            vue.createElementVNode("div", _hoisted_44, [
+              vue.createElementVNode("div", _hoisted_45, [
                 vue.createElementVNode("div", _hoisted_46, [
-                  vue.createElementVNode("div", _hoisted_47, [
-                    vue.createElementVNode("div", _hoisted_48, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control",
-                        type: "text",
-                        "onUpdate:modelValue": _cache[15] || (_cache[15] = $event => (($props.good.netWeightQuantity) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.good.netWeightQuantity]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_49, [
-                    vue.createElementVNode("div", _hoisted_50, [
-                      vue.createElementVNode("div", _hoisted_51, [
-                        vue.createElementVNode("div", _hoisted_52, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.good.netWeightUnit) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.good.netWeightUnit]
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_53, [
-                        vue.createElementVNode("div", _hoisted_54, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.good.netWeightUnknown) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.good.netWeightUnknown]
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              vue.createElementVNode("div", _hoisted_55, [
-                _hoisted_56,
-                vue.createElementVNode("div", _hoisted_57, [
-                  vue.createElementVNode("div", _hoisted_58, [
-                    vue.createElementVNode("div", _hoisted_59, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control",
-                        type: "text",
-                        "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.good.goodQuantity) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.good.goodQuantity]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_60, [
-                    vue.createElementVNode("div", _hoisted_61, [
-                      vue.createElementVNode("div", _hoisted_62, [
-                        vue.createElementVNode("div", _hoisted_63, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.good.goodUnit) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.good.goodUnit]
-                          ])
-                        ])
-                      ]),
-                      vue.createElementVNode("div", _hoisted_64, [
-                        vue.createElementVNode("div", _hoisted_65, [
-                          vue.withDirectives(vue.createElementVNode("input", {
-                            class: "form-control",
-                            type: "text",
-                            "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.good.goodUnknown) = $event))
-                          }, null, 512 /* NEED_PATCH */), [
-                            [vue.vModelText, $props.good.goodUnknown]
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              vue.createElementVNode("div", _hoisted_66, [
-                _hoisted_67,
-                vue.createElementVNode("div", _hoisted_68, [
-                  vue.createElementVNode("div", _hoisted_69, [
-                    vue.createElementVNode("div", _hoisted_70, [
-                      vue.withDirectives(vue.createElementVNode("input", {
-                        class: "form-control",
-                        type: "text",
-                        "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.good.customsCost) = $event))
-                      }, null, 512 /* NEED_PATCH */), [
-                        [vue.vModelText, $props.good.customsCost]
-                      ])
-                    ])
-                  ]),
-                  vue.createElementVNode("div", _hoisted_71, [
-                    vue.createElementVNode("div", _hoisted_72, [
-                      vue.createElementVNode("div", _hoisted_73, [
+                  _hoisted_47,
+                  vue.createElementVNode("div", _hoisted_48, [
+                    vue.createElementVNode("div", _hoisted_49, [
+                      vue.createElementVNode("div", _hoisted_50, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
-                          "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.good.customsCostCurrency) = $event))
+                          "onUpdate:modelValue": _cache[16] || (_cache[16] = $event => (($props.good.netWeightQuantity) = $event))
                         }, null, 512 /* NEED_PATCH */), [
-                          [vue.vModelText, $props.good.customsCostCurrency]
+                          [vue.vModelText, $props.good.netWeightQuantity]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_51, [
+                      vue.createElementVNode("div", _hoisted_52, [
+                        vue.createElementVNode("div", _hoisted_53, [
+                          vue.createElementVNode("div", _hoisted_54, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              "onUpdate:modelValue": _cache[17] || (_cache[17] = $event => (($props.good.netWeightUnit) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.good.netWeightUnit]
+                            ])
+                          ])
+                        ]),
+                        vue.createElementVNode("div", _hoisted_55, [
+                          vue.createElementVNode("div", _hoisted_56, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              "onUpdate:modelValue": _cache[18] || (_cache[18] = $event => (($props.good.netWeightUnknown) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.good.netWeightUnknown]
+                            ])
+                          ])
                         ])
                       ])
                     ])
-                  ]),
-                  _hoisted_74
-                ])
-              ])
-            ]),
-            vue.createElementVNode("div", _hoisted_75, [
-              vue.createElementVNode("div", _hoisted_76, [
-                vue.createElementVNode("div", _hoisted_77, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control",
-                    type: "text",
-                    placeholder: "наименование места происх.",
-                    "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.good.productionPlaceName) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.productionPlaceName]
+                  ])
+                ]),
+                vue.createElementVNode("div", _hoisted_57, [
+                  _hoisted_58,
+                  vue.createElementVNode("div", _hoisted_59, [
+                    vue.createElementVNode("div", _hoisted_60, [
+                      vue.createElementVNode("div", _hoisted_61, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[19] || (_cache[19] = $event => (($props.good.goodQuantity) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.good.goodQuantity]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_62, [
+                      vue.createElementVNode("div", _hoisted_63, [
+                        vue.createElementVNode("div", _hoisted_64, [
+                          vue.createElementVNode("div", _hoisted_65, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              "onUpdate:modelValue": _cache[20] || (_cache[20] = $event => (($props.good.goodUnit) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.good.goodUnit]
+                            ])
+                          ])
+                        ]),
+                        vue.createElementVNode("div", _hoisted_66, [
+                          vue.createElementVNode("div", _hoisted_67, [
+                            vue.withDirectives(vue.createElementVNode("input", {
+                              class: "form-control",
+                              type: "text",
+                              "onUpdate:modelValue": _cache[21] || (_cache[21] = $event => (($props.good.goodUnknown) = $event))
+                            }, null, 512 /* NEED_PATCH */), [
+                              [vue.vModelText, $props.good.goodUnknown]
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                vue.createElementVNode("div", _hoisted_68, [
+                  _hoisted_69,
+                  vue.createElementVNode("div", _hoisted_70, [
+                    vue.createElementVNode("div", _hoisted_71, [
+                      vue.createElementVNode("div", _hoisted_72, [
+                        vue.withDirectives(vue.createElementVNode("input", {
+                          class: "form-control",
+                          type: "text",
+                          "onUpdate:modelValue": _cache[22] || (_cache[22] = $event => (($props.good.customsCost) = $event))
+                        }, null, 512 /* NEED_PATCH */), [
+                          [vue.vModelText, $props.good.customsCost]
+                        ])
+                      ])
+                    ]),
+                    vue.createElementVNode("div", _hoisted_73, [
+                      vue.createElementVNode("div", _hoisted_74, [
+                        vue.createElementVNode("div", _hoisted_75, [
+                          vue.withDirectives(vue.createElementVNode("input", {
+                            class: "form-control",
+                            type: "text",
+                            "onUpdate:modelValue": _cache[23] || (_cache[23] = $event => (($props.good.customsCostCurrency) = $event))
+                          }, null, 512 /* NEED_PATCH */), [
+                            [vue.vModelText, $props.good.customsCostCurrency]
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _hoisted_76
                   ])
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_78, [
-                _hoisted_79,
+              vue.createElementVNode("div", _hoisted_77, [
+                vue.createElementVNode("div", _hoisted_78, [
+                  vue.createElementVNode("div", _hoisted_79, [
+                    vue.withDirectives(vue.createElementVNode("input", {
+                      class: "form-control",
+                      type: "text",
+                      placeholder: "наименование места происх.",
+                      "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.good.productionPlaceName) = $event))
+                    }, null, 512 /* NEED_PATCH */), [
+                      [vue.vModelText, $props.good.productionPlaceName]
+                    ])
+                  ])
+                ]),
                 vue.createElementVNode("div", _hoisted_80, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control",
-                    type: "text",
-                    "onUpdate:modelValue": _cache[24] || (_cache[24] = $event => (($props.good.transportCost) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.transportCost]
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_81, [
-                  vue.withDirectives(vue.createElementVNode("input", {
-                    class: "form-control",
-                    type: "text",
-                    "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.good.transportCostCurrency) = $event))
-                  }, null, 512 /* NEED_PATCH */), [
-                    [vue.vModelText, $props.good.transportCostCurrency]
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          vue.createElementVNode("div", _hoisted_82, [
-            vue.createElementVNode("div", _hoisted_83, [
-              _hoisted_84,
-              vue.createElementVNode("div", _hoisted_85, [
-                vue.createElementVNode("div", _hoisted_86, [
-                  vue.createElementVNode("div", _hoisted_87, [
+                  _hoisted_81,
+                  vue.createElementVNode("div", _hoisted_82, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
-                      "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.good.invoiceValue) = $event))
+                      "onUpdate:modelValue": _cache[25] || (_cache[25] = $event => (($props.good.transportCost) = $event))
                     }, null, 512 /* NEED_PATCH */), [
-                      [vue.vModelText, $props.good.invoiceValue]
+                      [vue.vModelText, $props.good.transportCost]
                     ])
-                  ])
-                ]),
-                vue.createElementVNode("div", _hoisted_88, [
-                  vue.createElementVNode("div", _hoisted_89, [
+                  ]),
+                  vue.createElementVNode("div", _hoisted_83, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
-                      "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => (($props.good.invoiceValueCurrency) = $event))
+                      "onUpdate:modelValue": _cache[26] || (_cache[26] = $event => (($props.good.transportCostCurrency) = $event))
                     }, null, 512 /* NEED_PATCH */), [
-                      [vue.vModelText, $props.good.invoiceValueCurrency]
+                      [vue.vModelText, $props.good.transportCostCurrency]
                     ])
                   ])
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_90, [
-              vue.createElementVNode("div", _hoisted_91, [
-                vue.createElementVNode("div", _hoisted_92, [
-                  vue.createElementVNode("div", _hoisted_93, [
-                    vue.withDirectives(vue.createElementVNode("input", {
-                      class: "form-control",
-                      type: "text",
-                      "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => (($props.good.invoiceValueRus) = $event))
-                    }, null, 512 /* NEED_PATCH */), [
-                      [vue.vModelText, $props.good.invoiceValueRus]
+            vue.createElementVNode("div", _hoisted_84, [
+              vue.createElementVNode("div", _hoisted_85, [
+                _hoisted_86,
+                vue.createElementVNode("div", _hoisted_87, [
+                  vue.createElementVNode("div", _hoisted_88, [
+                    vue.createElementVNode("div", _hoisted_89, [
+                      vue.withDirectives(vue.createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[27] || (_cache[27] = $event => (($props.good.invoiceValue) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vue.vModelText, $props.good.invoiceValue]
+                      ])
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_90, [
+                    vue.createElementVNode("div", _hoisted_91, [
+                      vue.withDirectives(vue.createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[28] || (_cache[28] = $event => (($props.good.invoiceValueCurrency) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vue.vModelText, $props.good.invoiceValueCurrency]
+                      ])
                     ])
                   ])
-                ]),
-                vue.createElementVNode("div", _hoisted_94, [
-                  vue.createElementVNode("div", _hoisted_95, [
-                    vue.withDirectives(vue.createElementVNode("input", {
-                      class: "form-control",
-                      type: "text",
-                      "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => (($props.good.invoiceValueRusCurrency) = $event))
-                    }, null, 512 /* NEED_PATCH */), [
-                      [vue.vModelText, $props.good.invoiceValueRusCurrency]
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        vue.createElementVNode("div", _hoisted_96, [
-          vue.createElementVNode("div", _hoisted_97, [
-            vue.createElementVNode("div", _hoisted_98, [
-              vue.createElementVNode("div", _hoisted_99, [
-                vue.withDirectives(vue.createElementVNode("input", {
-                  class: "form-control",
-                  type: "text",
-                  placeholder: "примечание",
-                  "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => (($props.good.note) = $event))
-                }, null, 512 /* NEED_PATCH */), [
-                  [vue.vModelText, $props.good.note]
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_100, [
-                vue.withDirectives(vue.createElementVNode("input", {
-                  class: "form-control",
-                  type: "text",
-                  "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => (($props.good.url) = $event))
-                }, null, 512 /* NEED_PATCH */), [
-                  [vue.vModelText, $props.good.url]
+              vue.createElementVNode("div", _hoisted_92, [
+                vue.createElementVNode("div", _hoisted_93, [
+                  vue.createElementVNode("div", _hoisted_94, [
+                    vue.createElementVNode("div", _hoisted_95, [
+                      vue.withDirectives(vue.createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[29] || (_cache[29] = $event => (($props.good.invoiceValueRus) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vue.vModelText, $props.good.invoiceValueRus]
+                      ])
+                    ])
+                  ]),
+                  vue.createElementVNode("div", _hoisted_96, [
+                    vue.createElementVNode("div", _hoisted_97, [
+                      vue.withDirectives(vue.createElementVNode("input", {
+                        class: "form-control",
+                        type: "text",
+                        "onUpdate:modelValue": _cache[30] || (_cache[30] = $event => (($props.good.invoiceValueRusCurrency) = $event))
+                      }, null, 512 /* NEED_PATCH */), [
+                        [vue.vModelText, $props.good.invoiceValueRusCurrency]
+                      ])
+                    ])
+                  ])
                 ])
               ])
-            ]),
-            vue.createElementVNode("div", _hoisted_101, [
-              vue.createVNode(_component_router_link, {
-                to: { name: 'index' },
-                class: "align-bcntr"
-              }, {
-                default: vue.withCtx(() => [
-                  _hoisted_102
-                ]),
-                _: 1 /* STABLE */
-              }),
-              vue.createVNode(_component_router_link, {
-                to: { name: 'index' },
-                class: "align-bcntr"
-              }, {
-                default: vue.withCtx(() => [
-                  _hoisted_103
-                ]),
-                _: 1 /* STABLE */
-              })
             ])
           ]),
-          vue.createElementVNode("div", _hoisted_104, [
-            vue.createElementVNode("div", _hoisted_105, [
-              vue.createVNode(_component_router_link, {
-                to: { name: 'index' },
-                class: "align-bcntr",
-                id: "extraDocLink"
-              }, {
-                default: vue.withCtx(() => [
-                  _hoisted_106
+          vue.createElementVNode("div", _hoisted_98, [
+            vue.createElementVNode("div", _hoisted_99, [
+              vue.createElementVNode("div", _hoisted_100, [
+                vue.createElementVNode("div", _hoisted_101, [
+                  vue.withDirectives(vue.createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    placeholder: "примечание",
+                    "onUpdate:modelValue": _cache[31] || (_cache[31] = $event => (($props.good.note) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vue.vModelText, $props.good.note]
+                  ])
                 ]),
-                _: 1 /* STABLE */
-              })
+                vue.createElementVNode("div", _hoisted_102, [
+                  vue.withDirectives(vue.createElementVNode("input", {
+                    class: "form-control",
+                    type: "text",
+                    "onUpdate:modelValue": _cache[32] || (_cache[32] = $event => (($props.good.url) = $event))
+                  }, null, 512 /* NEED_PATCH */), [
+                    [vue.vModelText, $props.good.url]
+                  ])
+                ])
+              ]),
+              vue.createElementVNode("div", _hoisted_103, [
+                vue.createVNode(_component_router_link, {
+                  to: { name: 'index' },
+                  class: "align-bcntr"
+                }, {
+                  default: vue.withCtx(() => [
+                    _hoisted_104
+                  ]),
+                  _: 1 /* STABLE */
+                }),
+                vue.createVNode(_component_router_link, {
+                  to: { name: 'index' },
+                  class: "align-bcntr"
+                }, {
+                  default: vue.withCtx(() => [
+                    _hoisted_105
+                  ]),
+                  _: 1 /* STABLE */
+                })
+              ])
+            ]),
+            vue.createElementVNode("div", _hoisted_106, [
+              vue.createElementVNode("div", _hoisted_107, [
+                vue.createVNode(_component_router_link, {
+                  to: { name: 'index' },
+                  class: "align-bcntr",
+                  id: "extraDocLink"
+                }, {
+                  default: vue.withCtx(() => [
+                    _hoisted_108
+                  ]),
+                  _: 1 /* STABLE */
+                })
+              ])
             ])
           ])
         ])
       ])
-    ]),
-    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.documents, (document, index) => {
-      return (vue.openBlock(), vue.createBlock(_component_tsoft_additional_document_form, {
-        key: index,
-        document: document
-      }, null, 8 /* PROPS */, ["document"]))
-    }), 128 /* KEYED_FRAGMENT */))
-  ], 64 /* STABLE_FRAGMENT */))
+    ], 2 /* CLASS */)
+  ]))
 }
 
-script$3.render = render$3;
-script$3.__file = "src/components/Form/GoodInformation.vue";
+script$1.render = render$1;
+script$1.__file = "src/components/Form/GoodInformation.vue";
 
-var script$2 = {
-  name: "TsoftOrderDeclaration",
+var script = {
+  name: "TsoftDeclaration",
   props: {
     data: {
       type: Object,
@@ -5493,121 +5557,121 @@ var script$2 = {
   data() {
     return {
       awbInfo: this.data.awbInfo,
-      registry: this.data.registry.regInfo
+      registry: this.data.registry.regInfo,
+      isGeneralOpen: false,
+      isOrdersOpen: false,
+      isDocumentOpen: false
     };
-  }
-};
+  },
+  methods: {
+    changeState() {
 
-const _hoisted_1$2 = { class: "forms col-9" };
-
-function render$2(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_tsoft_general_declaration_form = vue.resolveComponent("tsoft-general-declaration-form");
-  const _component_tsoft_goods_awb_information_form = vue.resolveComponent("tsoft-goods-awb-information-form");
-
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$2, [
-    vue.createElementVNode("p", null, "Текущий ID: " + vue.toDisplayString(_ctx.$route.params.reester_id), 1 /* TEXT */),
-    vue.createVNode(_component_tsoft_general_declaration_form, {
-      "awb-info": this.awbInfo,
-      registry: this.registry
-    }, null, 8 /* PROPS */, ["awb-info", "registry"]),
-    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(this.data.registry.orders, (order, index) => {
-      return (vue.openBlock(), vue.createBlock(_component_tsoft_goods_awb_information_form, {
-        order: order.orderInfo,
-        goods: order.goods,
-        key: index
-      }, null, 8 /* PROPS */, ["order", "goods"]))
-    }), 128 /* KEYED_FRAGMENT */))
-  ]))
-}
-
-var css_248z$2 = "\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\r\n  font-size: 10px;\n}\r\n\r\n/*Region Стили блока декларации*/\n.declaration {\r\n  background-color: #d1d1d1;\r\n  padding: 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  font-size: 10px;\n}\nh4 {\r\n  font-size: 10px;\n}\nh5 {\r\n  text-align: center;\r\n  font-size: 10px;\n}\n.inf-block {\r\n  margin-bottom: 10px;\n}\nlabel {\r\n  margin-top: 7px;\n}\n.inputs-group > div {\r\n  padding: unset;\r\n  min-width: 30px;\r\n  margin-right: 7px;\n}\n.form-check-input {\r\n  min-width: 20px;\r\n  min-height: 20px;\n}\n.sheets-input {\r\n  max-width: 70px;\n}\n.certificate-block div:first-child {\r\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div {\r\n  padding: 0;\r\n  margin-right: 6px;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/**/\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\n}\r\n\r\n/**/\r\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph {\r\n  min-width: 250px;\r\n  max-width: 270px;\r\n  margin: 10px 0 auto 0;\n}\r\n\r\n/**/\n.changing-declaration .inf-block div {\r\n  padding: unset;\r\n  margin-right: 5px;\n}\n.changing-code {\r\n  margin-top: 10px;\n}\r\n\r\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code::-webkit-outer-spin-button,\r\n.number-code::-webkit-inner-spin-button {\r\n  -webkit-appearance: none;\n}\r\n\r\n/**/\r\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form {\r\n  padding: 0 10px 0 4px;\n}\n.batch-form div:first-child {\r\n  padding-left: 0;\n}\n.batch-block {\r\n  padding-left: 10px;\n}\n.batch-block div {\r\n  padding: 0;\n}\r\n\r\n/**/\r\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information {\r\n  width: fit-content;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  font-size: 10px;\n}\n.payment-information:hover {\r\n  cursor: pointer;\n}\r\n\r\n/**/\r\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button:focus {\r\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i {\r\n  transform: rotate(180deg);\n}\n.collapsing-block {\r\n  background-color: white;\r\n  border: 1px solid black;\r\n  padding: 5px 10px;\r\n  font-weight: bold;\n}\n.collapsing-block span,\r\ni {\r\n  font-size: 14px;\n}\r\n\r\n/**/\n.card-body {\r\n  background-color: unset;\r\n  border: 1px solid black;\n}\n.point-name {\r\n  width: fit-content;\r\n  margin: auto auto 0;\r\n  color: #3274dd;\r\n  text-decoration: underline;\n}\n.personal-data div {\r\n  padding: 0 0 0 3px;\n}\r\n\r\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative {\r\n  font-size: 11px;\r\n  font-weight: bold;\r\n  margin: 0 0 8px;\n}\r\n\r\n/**/\r\n/*Стили кнопки календаря*/\n.button-calendar {\r\n  background-color: white;\r\n  border: unset;\r\n  border-radius: 8px;\n}\n.button-calendar:focus {\r\n  box-shadow: unset;\n}\r\n\r\n/**/\r\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr {\r\n  display: flex;\r\n  margin: 5px auto 0;\n}\r\n\r\n/*Стили блока информации о товарной партии*/\n.product-batch {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\r\n\r\n/*Стиль синего хэдера с кнопками */\n.product-batch-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\n.batch-button:focus {\r\n  box-shadow: unset;\n}\n.batch-button i:before {\r\n  color: white;\n}\n.batch-button:last-child i {\r\n  transform: rotate(180deg);\n}\r\n\r\n/**/\n.product-inner-block {\r\n  padding: 10px;\n}\n.fs-12 {\r\n  font-size: 12px;\n}\r\n\r\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button {\r\n  background-color: white;\r\n  border-radius: 5px;\n}\n.new-window-button:hover {\r\n  box-shadow: unset;\n}\n.new-window-button:focus {\r\n  box-shadow: unset;\n}\n.new-window-button i {\r\n  font-size: 15px;\r\n  color: #3274dd;\n}\r\n\r\n/**/\r\n\r\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link {\r\n  display: block;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link:hover {\r\n  color: blue;\r\n  cursor: pointer;\n}\r\n\r\n/**/\n.product-info-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\n.product-info-actions button:focus {\r\n  box-shadow: unset;\n}\n.product-info-actions i:before {\r\n  color: white;\n}\n.product-info-actions .fa-sort-down:before {\r\n  color: black;\n}\n.product-actions-button:not(.collapsed) {\r\n  transform: rotate(180deg);\n}\n.btn-bg-white {\r\n  background-color: white;\r\n  border-radius: 5px;\n}\n.btn-bg-white:focus {\r\n  box-shadow: unset;\n}\n.fa-note-sticky {\r\n  font-size: 16px;\n}\r\n\r\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\n.optional-inf-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\r\n";
-styleInject(css_248z$2);
-
-script$2.render = render$2;
-script$2.__file = "src/components/Declaration/OrderDeclaration.vue";
-
-var script$1 = {
-  name: "TsoftLeftmenuGoods",
-  props: {
-    treeGoods: {
-      type: Object,
-      required: true,
     }
   }
 };
 
-const _withScopeId = n => (vue.pushScopeId("data-v-6ebd9650"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$1 = { class: "sidebar col-md-2 me-3" };
-const _hoisted_2$1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("div", { class: "menu-sitemap-tree" }, [
-  /*#__PURE__*/vue.createElementVNode("div", { class: "d-flex p-2 tree-buttons-block" }, [
-    /*#__PURE__*/vue.createElementVNode("button", {
-      class: "btn sidebar-prods active me-3 fs-5",
-      id: "goodsButton"
-    }, " Товары "),
-    /*#__PURE__*/vue.createElementVNode("button", {
-      class: "btn fs-5 sidebar-prods",
-      id: "treeButton"
-    }, " Дерево ")
-  ])
-], -1 /* HOISTED */));
-const _hoisted_3 = { id: "goodsList" };
-const _hoisted_4$1 = { href: "#declaration" };
+const _hoisted_1 = { class: "forms" };
+const _hoisted_2 = /*#__PURE__*/vue.createElementVNode("p", null, "Общие сведения", -1 /* HOISTED */);
+const _hoisted_3 = { class: "arrow" };
+const _hoisted_4 = /*#__PURE__*/vue.createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
+const _hoisted_5 = { class: "arrow" };
+const _hoisted_6 = /*#__PURE__*/vue.createElementVNode("p", null, "Документы", -1 /* HOISTED */);
+const _hoisted_7 = { class: "arrow" };
 
-function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
-    _hoisted_2$1,
-    vue.createElementVNode("ol", _hoisted_3, [
-      vue.createElementVNode("li", null, [
-        vue.createElementVNode("a", _hoisted_4$1, vue.toDisplayString($props.treeGoods.title) + "а", 1 /* TEXT */)
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_tsoft_general_declaration_form = vue.resolveComponent("tsoft-general-declaration-form");
+  const _component_tsoft_goods_awb_information_form = vue.resolveComponent("tsoft-goods-awb-information-form");
+  const _component_tsoft_additional_document_form = vue.resolveComponent("tsoft-additional-document-form");
+
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1, [
+    vue.createElementVNode("div", null, [
+      vue.createElementVNode("div", {
+        class: "group-panel-label",
+        onClick: _cache[0] || (_cache[0] = $event => ($data.isGeneralOpen = !$data.isGeneralOpen))
+      }, [
+        _hoisted_2,
+        vue.createElementVNode("div", _hoisted_3, [
+          vue.createElementVNode("span", {
+            class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isGeneralOpen}])
+          }, null, 2 /* CLASS */)
+        ])
       ]),
-      (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.treeGoods.goods, (good, index) => {
-        return (vue.openBlock(), vue.createElementBlock("li", { key: index }, vue.toDisplayString(good), 1 /* TEXT */))
-      }), 128 /* KEYED_FRAGMENT */))
+      vue.createElementVNode("div", {
+        class: vue.normalizeClass(["group-panel-content", {'open': $data.isGeneralOpen}])
+      }, [
+        vue.createVNode(_component_tsoft_general_declaration_form, {
+          "awb-info": this.awbInfo,
+          registry: this.registry
+        }, null, 8 /* PROPS */, ["awb-info", "registry"])
+      ], 2 /* CLASS */)
+    ]),
+    vue.createElementVNode("div", null, [
+      vue.createElementVNode("div", {
+        class: "group-panel-label",
+        onClick: _cache[1] || (_cache[1] = $event => ($data.isOrdersOpen = !$data.isOrdersOpen))
+      }, [
+        _hoisted_4,
+        vue.createElementVNode("div", _hoisted_5, [
+          vue.createElementVNode("span", {
+            class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrdersOpen}])
+          }, null, 2 /* CLASS */)
+        ])
+      ]),
+      vue.createElementVNode("div", {
+        class: vue.normalizeClass(["group-panel-content", {'open': $data.isOrdersOpen}])
+      }, [
+        (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(this.data.registry.orders, (order, index) => {
+          return (vue.openBlock(), vue.createBlock(_component_tsoft_goods_awb_information_form, {
+            order: order.orderInfo,
+            goods: order.goods,
+            orderNum: index
+          }, null, 8 /* PROPS */, ["order", "goods", "orderNum"]))
+        }), 256 /* UNKEYED_FRAGMENT */))
+      ], 2 /* CLASS */)
+    ]),
+    vue.createElementVNode("div", null, [
+      vue.createElementVNode("div", {
+        class: "group-panel-label",
+        onClick: _cache[2] || (_cache[2] = $event => ($data.isDocumentOpen = !$data.isDocumentOpen))
+      }, [
+        _hoisted_6,
+        vue.createElementVNode("div", _hoisted_7, [
+          vue.createElementVNode("span", {
+            class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isDocumentOpen}])
+          }, null, 2 /* CLASS */)
+        ])
+      ]),
+      vue.createElementVNode("div", {
+        class: vue.normalizeClass(["group-panel-content", {'open': $data.isDocumentOpen}])
+      }, [
+        (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(this.data.registry.documents, (document, index) => {
+          return (vue.openBlock(), vue.createBlock(_component_tsoft_additional_document_form, {
+            key: index,
+            document: document
+          }, null, 8 /* PROPS */, ["document"]))
+        }), 128 /* KEYED_FRAGMENT */))
+      ], 2 /* CLASS */)
     ])
   ]))
 }
 
-var css_248z$1 = "\n.sidebar[data-v-6ebd9650] {\r\n  position: sticky;\r\n  top: 0;\r\n  height: fit-content;\r\n  min-width: 300px;\r\n  margin-top: 40px ;\n}\n.tree-buttons-block[data-v-6ebd9650]{\r\n  background-color: #d7d8d4\n}\n.sidebar-prods[data-v-6ebd9650] {\r\n  border: 1px solid\n}\nli a[data-v-6ebd9650] {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\n.sidebar-prods.active[data-v-6ebd9650] {\r\n  color: orange;\r\n  background-color: green;\n}\r\n";
-styleInject(css_248z$1);
-
-script$1.render = render$1;
-script$1.__scopeId = "data-v-6ebd9650";
-script$1.__file = "src/components/Menu/LeftMenuGoods.vue";
-
-var script = {
-  name: "TsoftInstrumentsMenu"
-};
-
-const _hoisted_1 = { class: "row instruments" };
-const _hoisted_2 = /*#__PURE__*/vue.createStaticVNode("<div class=\"col-6 d-flex\" data-v-1012226a><div class=\"dropdown\" title=\"создать документ\" data-v-1012226a><button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" data-v-1012226a><i class=\"fa-solid fa-file\" style=\"color:orange;font-size:20px;\" data-v-1012226a></i></button><div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width:500px;\" data-v-1012226a><div class=\"d-flex\" data-v-1012226a></div><div class=\"d-flex\" data-v-1012226a><div class=\"col-6\" data-v-1012226a><div class=\"mt-2 p-3\" data-v-1012226a><select class=\"w-100\" name=\"\" id=\"\" data-v-1012226a><option data-v-1012226a> выберите перевозчика </option><option data-v-1012226a> Transporter-1 </option><option data-v-1012226a> Transporter-2 </option><option data-v-1012226a> Transporter-3 </option><option data-v-1012226a> Transporter... </option></select><p class=\"\" style=\"font-size:12px;\" data-v-1012226a> (не влияет на оформление, можно писать, что угодно) </p></div><div class=\"row mt-1 p-3\" data-v-1012226a><p data-v-1012226a>Тип транспорта</p><div class=\"btn-group-vertical\" data-v-1012226a><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio1\" autocomplete=\"off\" data-v-1012226a><label class=\"\" for=\"btnradio1\" data-v-1012226a>Авиационный</label></div><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio2\" autocomplete=\"off\" data-v-1012226a><label class=\"\" for=\"btnradio2\" data-v-1012226a>Автомобильный</label></div><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio3\" autocomplete=\"off\" data-v-1012226a><label class=\"\" for=\"btnradio3\" data-v-1012226a>Морской</label></div></div></div><div class=\"row p-3 mt-2\" data-v-1012226a><div class=\"d-flex\" data-v-1012226a><input class=\"checkbox\" type=\"checkbox\" id=\"reestr\" data-v-1012226a><label class=\"ms-2\" for=\"reestr\" style=\"font-size:13px;\" data-v-1012226a> Реестр по 158/142 решению ЕЭК </label></div><p data-v-1012226a>Тип</p><div class=\"btn-group-vertical\" data-v-1012226a><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"radio1\" autocomplete=\"off\" data-v-1012226a><label class=\"ms-2\" for=\"btnradio1\" style=\"font-size:13px;\" data-v-1012226a>ПТДЭГ</label></div><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"radio2\" autocomplete=\"off\" data-v-1012226a><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\" data-v-1012226a>ДТЭГ</label></div></div></div><div class=\"row mt-2 p-3\" data-v-1012226a><p data-v-1012226a>Тр. расходы к там. стоимости</p><div class=\"btn-group-vertical\" data-v-1012226a><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"io1\" autocomplete=\"off\" data-v-1012226a><label class=\"ms-2\" for=\"btnradio1\" style=\"font-size:13px;\" data-v-1012226a>Прибавлять</label></div><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"bio2\" autocomplete=\"off\" data-v-1012226a><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\" data-v-1012226a>Вычитать</label></div><div class=\"d-flex\" data-v-1012226a><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"io2\" autocomplete=\"off\" data-v-1012226a><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\" data-v-1012226a>Не использовать</label></div><div class=\"d-flex\" data-v-1012226a><input class=\"checkbox\" type=\"checkbox\" id=\"reestr\" data-v-1012226a><label class=\"ms-2\" for=\"reestr\" style=\"font-size:13px;\" data-v-1012226a> Поменять местами отп-я и пол-я </label></div></div></div><div class=\"row mt-2\" data-v-1012226a></div><div class=\"row mt-2\" data-v-1012226a></div></div><div class=\"col-6\" data-v-1012226a><img src=\"img/menushka.png\" style=\"width:250px;height:100%;\" data-v-1012226a></div></div><div class=\"d-flex\" data-v-1012226a><div class=\"col-8\" data-v-1012226a></div><div class=\"col-4 d-flex p-1\" data-v-1012226a><button class=\"btn me-2\" style=\"border:1px solid;\" data-v-1012226a><a href=\"alta-maket/index.html\" style=\"color:black;text-decoration:unset;\" data-v-1012226a>ОК</a></button><button class=\"btn\" style=\"border:1px solid;\" data-v-1012226a>Отмена</button></div></div></div></div><div class=\"import-doc\" data-v-1012226a><button class=\"btn\" id=\"sendRegistry\" title=\"Отправить документ\" data-v-1012226a><i class=\"fa-solid fa-file-import\" style=\"font-size:20px;color:red;\" data-v-1012226a></i></button></div><div class=\"import-doc\" data-v-1012226a><button class=\"btn\" title=\"переместить в архив\" data-v-1012226a><i class=\"fa-solid fa-box-archive\" id=\"archivingButton\" style=\"font-size:20px;color:#18b14e;\" data-v-1012226a></i></button></div><div class=\"import-doc\" data-v-1012226a><button class=\"btn\" title=\"сохранить\" data-v-1012226a><a href=\"../index.html\" data-v-1012226a><i class=\"fa-solid fa-floppy-disk\" style=\"background-color:white;color:black;font-size:20px;\" data-v-1012226a></i></a></button><button class=\"btn\" title=\"Загрузить реестр\" type=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModal\" data-v-1012226a><i class=\"fa-solid fa-file-arrow-down\" style=\"font-size:20px;color:brown;\" data-v-1012226a></i></button><!--Region Modal --><div class=\"modal fade\" id=\"exampleModal\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\" data-v-1012226a><div class=\"modal-dialog\" data-v-1012226a><div class=\"modal-content\" data-v-1012226a><div class=\"modal-header\" data-v-1012226a><h5 class=\"modal-title\" id=\"exampleModalLabel\" data-v-1012226a>Modal title</h5><button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\" data-v-1012226a></button></div><div class=\"modal-body\" data-v-1012226a> ... </div><div class=\"modal-footer\" data-v-1012226a><button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\" data-v-1012226a>Close</button><button type=\"button\" class=\"btn btn-primary\" data-v-1012226a>Save changes</button></div></div></div></div><!--        endregion--><button type=\"button\" class=\"btn\" title=\"Изменить структуру\" data-v-1012226a><i class=\"fa-solid fa-screwdriver-wrench\" style=\"font-size:20px;color:blue;\" data-v-1012226a></i></button></div></div><div class=\"col-6\" data-v-1012226a></div>", 2);
-const _hoisted_4 = [
-  _hoisted_2
-];
-
-function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1, _hoisted_4))
-}
-
-var css_248z = "\n.instruments[data-v-1012226a] {\r\n   margin-left: 50px;\n}\r\n";
+var css_248z = "\n.arrow {\r\n  margin-right: 5px;\r\n  margin-top: -3px;\r\n  font-size: 20px;\r\n  height: 20px;\r\n  width: 20px;\n}\n.forms {\r\n  padding-top: 10px;\n}\n.fa-caret-right {\r\n  transform: rotate(0deg);\r\n  transition: 0.15s;\n}\n.fa-caret-right.down-rotate {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.group-panel-label {\r\n  width: 100%;\r\n  height: 40px;\r\n  padding-left: 15px;\r\n  padding-top: 7px;\r\n  font-weight: bold;\r\n  border: 1px solid #c4c4c4;\r\n  margin-bottom: 10px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  cursor: pointer;\n}\n.group-panel-content {\r\n  width: 100%;\r\n  height: 0;\r\n  overflow: hidden;\r\n  opacity: 0;\r\n  transition: opacity 0.3s ease-in;\n}\n.goods {\r\n  padding: 10px 10px 0;\n}\n.order {\r\n  padding: 10px 10px 0;\n}\n.group-panel-content.open {\r\n  border: 1px solid #c4c4c4;\r\n  height: auto;\r\n  opacity: 1;\r\n  transition: opacity 0.3s ease-in;\r\n  margin-bottom: 10px;\n}\nli a {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\n.sidebar-prods.active {\r\n  color: orange;\r\n  background-color: green;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\r\n  font-size: 10px;\n}\r\n\r\n/*Region Стили блока декларации*/\n.declaration {\r\n  background-color: #d1d1d1;\r\n  padding: 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  font-size: 10px;\n}\nh4 {\r\n  font-size: 10px;\n}\nh5 {\r\n  text-align: center;\r\n  font-size: 10px;\n}\n.inf-block {\r\n  margin-bottom: 10px;\n}\nlabel {\r\n  margin-top: 7px;\n}\n.inputs-group > div {\r\n  padding: unset;\r\n  min-width: 30px;\r\n  margin-right: 7px;\n}\n.form-check-input {\r\n  min-width: 20px;\r\n  min-height: 20px;\n}\n.sheets-input {\r\n  max-width: 70px;\n}\n.certificate-block div:first-child {\r\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div {\r\n  padding: 0;\r\n  margin-right: 6px;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/**/\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\n}\r\n\r\n/**/\r\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph {\r\n  min-width: 250px;\r\n  max-width: 270px;\r\n  margin: 10px 0 auto 0;\n}\r\n\r\n/**/\n.changing-declaration .inf-block div {\r\n  padding: unset;\r\n  margin-right: 5px;\n}\n.changing-code {\r\n  margin-top: 10px;\n}\r\n\r\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code::-webkit-outer-spin-button,\r\n.number-code::-webkit-inner-spin-button {\r\n  -webkit-appearance: none;\n}\r\n\r\n/**/\r\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form {\r\n  padding: 0 10px 0 4px;\n}\n.batch-form div:first-child {\r\n  padding-left: 0;\n}\n.batch-block {\r\n  padding-left: 10px;\n}\n.batch-block div {\r\n  padding: 0;\n}\r\n\r\n/**/\r\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information {\r\n  width: fit-content;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  font-size: 10px;\n}\n.payment-information:hover {\r\n  cursor: pointer;\n}\r\n\r\n/**/\r\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button:focus {\r\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i {\r\n  transform: rotate(180deg);\n}\n.collapsing-block {\r\n  background-color: white;\r\n  border: 1px solid black;\r\n  padding: 5px 10px;\r\n  font-weight: bold;\n}\n.collapsing-block span,\r\ni {\r\n  font-size: 14px;\n}\r\n\r\n/**/\n.card-body {\r\n  background-color: unset;\r\n  border: 1px solid black;\n}\n.point-name {\r\n  width: fit-content;\r\n  margin: auto auto 0;\r\n  color: #3274dd;\r\n  text-decoration: underline;\n}\n.personal-data div {\r\n  padding: 0 0 0 3px;\n}\r\n\r\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative {\r\n  font-size: 11px;\r\n  font-weight: bold;\r\n  margin: 0 0 8px;\n}\r\n\r\n/**/\r\n/*Стили кнопки календаря*/\n.button-calendar {\r\n  background-color: white;\r\n  border: unset;\r\n  border-radius: 8px;\n}\n.button-calendar:focus {\r\n  box-shadow: unset;\n}\r\n\r\n/**/\r\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr {\r\n  display: flex;\r\n  margin: 5px auto 0;\n}\r\n\r\n/*Стили блока информации о товарной партии*/\n.product-batch {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\r\n\r\n/*Стиль синего хэдера с кнопками */\n.product-batch-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\n.batch-button:focus {\r\n  box-shadow: unset;\n}\n.batch-button i:before {\r\n  color: white;\n}\n.batch-button:last-child i {\r\n  transform: rotate(180deg);\n}\r\n\r\n/**/\n.product-inner-block {\r\n  padding: 10px;\n}\n.fs-12 {\r\n  font-size: 12px;\n}\r\n\r\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button {\r\n  background-color: white;\r\n  border-radius: 5px;\n}\n.new-window-button:hover {\r\n  box-shadow: unset;\n}\n.new-window-button:focus {\r\n  box-shadow: unset;\n}\n.new-window-button i {\r\n  font-size: 15px;\r\n  color: #3274dd;\n}\r\n\r\n/**/\r\n\r\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors router-link {\r\n  display: block;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link:hover {\r\n  color: blue;\r\n  cursor: pointer;\n}\r\n\r\n/**/\n.product-info-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\n.product-info-actions button:focus {\r\n  box-shadow: unset;\n}\n.product-info-actions i:before {\r\n  color: white;\n}\n.product-info-actions .fa-sort-down:before {\r\n  color: black;\n}\n.product-actions-button:not(.collapsed) {\r\n  transform: rotate(180deg);\n}\n.btn-bg-white {\r\n  background-color: white;\r\n  border-radius: 5px;\n}\n.btn-bg-white:focus {\r\n  box-shadow: unset;\n}\n.fa-note-sticky {\r\n  font-size: 16px;\n}\r\n\r\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\n}\n.optional-inf-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\r\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__scopeId = "data-v-1012226a";
-script.__file = "src/components/Menu/InstrumentsMenu.vue";
+script.__file = "src/components/Declaration/Declaration.vue";
 
 var components = { 
-    InputTextarea: script$e,
-    InputText: script$f,
-    TsoftTable: script$d,
-    TsoftTree: script$b,
-    TsoftLeftmenuFolder: script$7,
-    TsoftLeftmenuGoods: script$1,
-    TsoftGeneralDeclarationForm: script$6,
-    TsoftGoodsAwbInformationForm: script$5,
-    TsoftAdditionalDocumentForm: script$4,
-    TsoftGoodInformationForm: script$3,
-    TsoftOrderDeclaration: script$2,
-    TsoftInstrumentsMenu: script,
+    InputTextarea: script$c,
+    InputText: script$d,
+    TsoftTable: script$b,
+    TsoftTree: script$9,
+    TsoftLeftmenuFolder: script$5,
+    TsoftGeneralDeclarationForm: script$4,
+    TsoftGoodsAwbInformationForm: script$3,
+    TsoftAdditionalDocumentForm: script$2,
+    TsoftGoodInformationForm: script$1,
+    TsoftDeclaration: script
 };
 
 const plugin = {

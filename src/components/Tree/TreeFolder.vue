@@ -98,7 +98,6 @@ export default {
 }
 .fa-angle-right {
   transition: 0.15s;
-  rotate: 0;
 }
 .fa-angle-right.down-rotate {
   transform: rotate(90deg);
