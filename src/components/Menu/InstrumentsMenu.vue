@@ -1,6 +1,5 @@
 <template>
   <div class="row instruments">
-    <div class="col-6"></div>
     <div class="col-6 d-flex">
       <div class="dropdown" title="создать документ">
         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -165,12 +164,13 @@
             </div>
           </div>
         </div>
-<!--        endregion-->
+        <!--        endregion-->
         <button type="button" class="btn" title="Изменить структуру">
           <i class="fa-solid fa-screwdriver-wrench" style="font-size: 20px; color: blue"></i>
         </button>
       </div>
     </div>
+    <div class="col-6"></div>
   </div>
 </template>
 
@@ -181,5 +181,7 @@ export default {
 </script>
 
 <style scoped>
-
+ .instruments {
+   margin-left: 50px;
+ }
 </style>
