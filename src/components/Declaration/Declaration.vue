@@ -1,6 +1,7 @@
 <template>
-  <div class="forms col-9">
+  <div class="forms">
     <p>Текущий ID: {{ $route.params.reester_id }}</p>
+
     <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
     <tsoft-goods-awb-information-form
       v-for="(order, index) in this.data.registry.orders"
@@ -13,7 +14,7 @@
 
 <script>
 export default {
-  name: "TsoftOrderDeclaration",
+  name: "TsoftDeclaration",
   props: {
     data: {
       type: Object,
@@ -23,13 +24,86 @@ export default {
   data() {
     return {
       awbInfo: this.data.awbInfo,
-      registry: this.data.registry.regInfo
+      registry: this.data.registry.regInfo,
+      isGeneralOpen: false,
+      isOrdersOpen: false,
+      isDocumentOpen: false
     };
-  }
+  },
 };
 </script>
 
 <style>
+.arrow {
+  margin-right: 5px;
+  margin-top: -3px;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.forms {
+  padding-top: 10px;
+}
+
+.fa-caret-right {
+  transform: rotate(0deg);
+  transition: 0.15s;
+}
+
+.fa-caret-right.down-rotate {
+  transform: rotate(90deg);
+  transition: 0.15s;
+}
+
+.group-panel-label {
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  padding-top: 7px;
+  font-weight: bold;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.group-panel-content {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.goods {
+  padding: 10px 10px 0;
+}
+
+.order {
+  padding: 10px 10px 0;
+}
+
+.group-panel-content.open {
+  border: 1px solid #c4c4c4;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  margin-bottom: 10px;
+}
+
+li a {
+  color: black;
+  text-decoration: unset;
+  font-size: 14px;
+}
+
+.sidebar-prods.active {
+  color: orange;
+  background-color: green;
+}
+
 /*Стили текстовых инпутов*/
 .form-control {
   padding: 0 5px 0 3px;
@@ -75,7 +149,6 @@ export default {
   max-width: 950px;
   min-width: 900px;
   font-size: 10px;
-
 }
 
 h4 {

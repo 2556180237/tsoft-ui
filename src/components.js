@@ -7,7 +7,7 @@ import TsoftGeneralDeclarationForm from "./components/Form/GeneralDeclaration.vu
 import TsoftGoodsAwbInformationForm from "./components/Form/GoodsAwbInformation.vue"
 import TsoftAdditionalDocumentForm from './components/Form/AdditionalDocument.vue'
 import TsoftGoodInformationForm from './components/Form/GoodInformation.vue'
-import TsoftOrderDeclaration from  './components/Declaration/OrderDeclaration.vue'
+import TsoftDeclaration from  './components/Declaration/Declaration.vue'
 import TsoftLeftmenuGoods from './components/Menu/LeftMenuGoods.vue'
 import TsoftInstrumentsMenu from './components/Menu/InstrumentsMenu.vue'
 
@@ -22,6 +22,6 @@ export default {
     TsoftGoodsAwbInformationForm,
     TsoftAdditionalDocumentForm,
     TsoftGoodInformationForm,
-    TsoftOrderDeclaration,
+    TsoftDeclaration,
     TsoftInstrumentsMenu,
 }
