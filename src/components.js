@@ -10,6 +10,7 @@ import TsoftGoodInformationForm from './components/Form/GoodInformation.vue'
 import TsoftDeclaration from  './components/Declaration/Declaration.vue'
 import TsoftLeftmenuGoods from './components/Menu/LeftMenuGoods.vue'
 import TsoftInstrumentsMenu from './components/Menu/InstrumentsMenu.vue'
+import TsoftModalWindow from './components/Modal/ModalWindow.vue'
 
 export default { 
     InputTextarea,
@@ -24,4 +25,5 @@ export default {
     TsoftGoodInformationForm,
     TsoftDeclaration,
     TsoftInstrumentsMenu,
+    TsoftModalWindow,
 }
