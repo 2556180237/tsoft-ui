@@ -167,7 +167,6 @@ export default {
 }
 
 .group-panel-content.open {
-  border: 1px solid #c4c4c4;
   height: auto;
   opacity: 1;
   transition: opacity 0.3s ease-in;
@@ -244,6 +243,12 @@ li a {
 
 h4 {
   font-size: 14px;
+}
+
+h4.declaration-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
 }
 
 h5 {
