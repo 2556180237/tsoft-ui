@@ -11,10 +11,10 @@
       </div>
       <div class="row">
         <div class="inf-block">
-          <h5>
+          <h4 class="declaration-title">
             Декларация на товары и пассажирская таможенная декларация для
             экспресс-грузов
-          </h5>
+          </h4>
         </div>
       </div>
       <div class="row">

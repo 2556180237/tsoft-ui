@@ -1,13 +1,5 @@
 <template>
-  <div class="goods">
-    <div class="group-panel-label" @click="isGoodsOpen= !isGoodsOpen">
-      <p>Товар {{ goodNum }}</p>
-      <div class="arrow">
-        <span class="fa-solid fa-caret-right" :class="{'down-rotate': isGoodsOpen}" />
-      </div>
-    </div>
-    <div class="group-panel-content" :class="{'open': isGoodsOpen}">
-      <div class="product-info-block" id="productInvoiceBlock">
+      <div class="product-info-block my-2" id="productInvoiceBlock">
         <div class="d-flex product-batch-header justify-content-between">
           <h4 class="col-4">Товар (1 из 2)</h4>
           <div class="product-info-actions col-4 d-flex justify-content-end">
@@ -301,8 +293,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
 <script>
