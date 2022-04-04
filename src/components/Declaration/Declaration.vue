@@ -1,47 +1,38 @@
 <template>
   <div class="forms">
     <div>
-      <div class="group-panel-label" @click="isGeneralOpen = !isGeneralOpen">
-        <p>Общие сведения</p>
-        <div class="arrow">
-          <span class="fa-solid fa-caret-right" :class="{'down-rotate': isGeneralOpen}" />
+      <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry"/>
+      <div>
+        <div class="group-panel-label" @click="isOrdersOpen = !isOrdersOpen">
+          <p>Заказы</p>
+          <div class="arrow">
+            <span class="fa-solid fa-caret-right" :class="{'down-rotate': isOrdersOpen}"/>
+          </div>
+        </div>
+        <div class="group-panel-content" :class="{'open': isOrdersOpen}">
+          <tsoft-goods-awb-information-form
+              v-for="(order, index) in this.data.registry.orders"
+              :order="order.orderInfo"
+              :goods="order.goods"
+              :orderNum="index"
+          />
         </div>
       </div>
-      <div class="group-panel-content" :class="{'open': isGeneralOpen}">
-        <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
-      </div>
-    </div>
 
-    <div>
-      <div class="group-panel-label" @click="isOrdersOpen = !isOrdersOpen">
-        <p>Заказы</p>
-        <div class="arrow">
-          <span class="fa-solid fa-caret-right" :class="{'down-rotate': isOrdersOpen}" />
+      <div>
+        <div class="group-panel-label" @click="isDocumentOpen = !isDocumentOpen">
+          <p>Документы</p>
+          <div class="arrow">
+            <span class="fa-solid fa-caret-right" :class="{'down-rotate': isDocumentOpen}"/>
+          </div>
         </div>
-      </div>
-      <div class="group-panel-content" :class="{'open': isOrdersOpen}">
-        <tsoft-goods-awb-information-form
-          v-for="(order, index) in this.data.registry.orders"
-          :order="order.orderInfo"
-          :goods="order.goods"
-          :orderNum="index"
-        />
-      </div>
-    </div>
-
-    <div>
-      <div class="group-panel-label" @click="isDocumentOpen = !isDocumentOpen">
-        <p>Документы</p>
-        <div class="arrow">
-          <span class="fa-solid fa-caret-right" :class="{'down-rotate': isDocumentOpen}" />
+        <div class="group-panel-content" :class="{'open': isDocumentOpen}">
+          <tsoft-additional-document-form
+              v-for="(document, index) in this.data.registry.documents"
+              :key="index"
+              :document="document"
+          />
         </div>
-      </div>
-      <div class="group-panel-content" :class="{'open': isDocumentOpen}">
-        <tsoft-additional-document-form
-          v-for="(document, index) in this.data.registry.documents"
-          :key="index"
-          :document="document"
-        />
       </div>
     </div>
   </div>
@@ -69,14 +60,14 @@ export default {
 </script>
 
 <style>
-.common-inf  p {
+.common-inf p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 10px;
 }
 
-.common-inf  label {
+.common-inf label {
   box-sizing: border-box;
   font-size: 10px;
 }
@@ -91,11 +82,12 @@ export default {
 .product-batch label {
   font-size: 10px;
 }
+
 .product-batch a {
   font-size: 10px;
 }
 
-.product-info-block p{
+.product-info-block p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -331,7 +323,7 @@ label {
 .inf-paragraph {
   min-width: 250px;
   max-width: 270px;
-  margin:5px 0 auto 0;
+  margin: 5px 0 auto 0;
 }
 
 /**/
@@ -513,7 +505,7 @@ i {
 /**/
 
 /*Стили группы серых ссылок в элементе с общей информацией о партии*/
-.batch-info-anchors >a, router-link {
+.batch-info-anchors > a, router-link {
   display: block;
   color: gray;
   text-decoration: underline;

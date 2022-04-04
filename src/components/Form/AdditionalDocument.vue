@@ -1,5 +1,5 @@
 <template>
-  <div class="optional-inf-block" id="extraDocBlock">
+  <div class="optional-inf-block mt-2" id="extraDocBlock">
     <div class="d-flex optional-inf-header justify-content-between">
       <h4 class="col-4">Сведения о дополнительном документе</h4>
       <div class="product-info-actions col-4 d-flex justify-content-end">
