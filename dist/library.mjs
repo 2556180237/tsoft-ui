@@ -79,12 +79,12 @@ const _hoisted_2$d = { class: "row section" };
 const _hoisted_3$a = { class: "table-section" };
 const _hoisted_4$9 = { class: "slider-block" };
 const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$4(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
-const _hoisted_6$7 = [
+const _hoisted_6$6 = [
   _hoisted_5$8
 ];
-const _hoisted_7$7 = /*#__PURE__*/ _withScopeId$4(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
+const _hoisted_7$6 = /*#__PURE__*/ _withScopeId$4(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
 const _hoisted_8$5 = [
-  _hoisted_7$7
+  _hoisted_7$6
 ];
 const _hoisted_9$5 = { class: "table" };
 const _hoisted_10$4 = { class: "thead" };
@@ -105,7 +105,7 @@ function render$e(_ctx, _cache, $props, $setup, $data, $options) {
             style: {"transform":"translate3d(0px, 48px, 0px)"},
             onMouseout: _cache[0] || (_cache[0] = (...args) => ($options.stop && $options.stop(...args))),
             onMouseover: _cache[1] || (_cache[1] = (...args) => ($options.moveLeft && $options.moveLeft(...args)))
-          }, _hoisted_6$7, 34 /* CLASS, HYDRATE_EVENTS */),
+          }, _hoisted_6$6, 34 /* CLASS, HYDRATE_EVENTS */),
           createElementVNode("div", {
             class: "control-next btn-right",
             id: "tableSliderRight",
@@ -432,19 +432,19 @@ var script$7 = {
 };
 
 const _hoisted_1$7 = {
-  class: "declaration",
+  class: "declaration mb-3",
   id: "declaration"
 };
 const _hoisted_2$7 = { class: "common-inf" };
 const _hoisted_3$6 = { class: "row" };
 const _hoisted_4$6 = { class: "inf-block" };
 const _hoisted_5$6 = /*#__PURE__*/createTextVNode(" Подан с ДТ: ");
-const _hoisted_6$6 = /*#__PURE__*/createElementVNode("div", { class: "row" }, [
+const _hoisted_6$5 = /*#__PURE__*/createElementVNode("div", { class: "row" }, [
   /*#__PURE__*/createElementVNode("div", { class: "inf-block" }, [
     /*#__PURE__*/createElementVNode("h5", null, " Декларация на товары и пассажирская таможенная декларация для экспресс-грузов ")
   ])
 ], -1 /* HOISTED */);
-const _hoisted_7$6 = { class: "row" };
+const _hoisted_7$5 = { class: "row" };
 const _hoisted_8$4 = { class: "inf-block row col-12 justify-content-between" };
 const _hoisted_9$4 = { class: "checkbox-block d-flex col-2" };
 const _hoisted_10$3 = { class: "checkbox-bg col-2" };
@@ -1014,8 +1014,8 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
           })
         ])
       ]),
-      _hoisted_6$6,
-      createElementVNode("div", _hoisted_7$6, [
+      _hoisted_6$5,
+      createElementVNode("div", _hoisted_7$5, [
         createElementVNode("div", _hoisted_8$4, [
           createElementVNode("div", _hoisted_9$4, [
             createElementVNode("div", _hoisted_10$3, [
@@ -2864,8 +2864,8 @@ const _hoisted_2$6 = { class: "arrow" };
 const _hoisted_3$5 = { class: "product-batch" };
 const _hoisted_4$5 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
 const _hoisted_5$5 = { class: "product-inner-block" };
-const _hoisted_6$5 = { class: "row" };
-const _hoisted_7$5 = { class: "row" };
+const _hoisted_6$4 = { class: "row" };
+const _hoisted_7$4 = { class: "row" };
 const _hoisted_8$3 = { class: "col-9" };
 const _hoisted_9$3 = { action: "" };
 const _hoisted_10$2 = { class: "d-flex" };
@@ -3238,8 +3238,8 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
         createCommentVNode("Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе"),
         createElementVNode("div", _hoisted_5$5, [
           createCommentVNode("Region элемент с общей информацией о партии"),
-          createElementVNode("div", _hoisted_6$5, [
-            createElementVNode("div", _hoisted_7$5, [
+          createElementVNode("div", _hoisted_6$4, [
+            createElementVNode("div", _hoisted_7$4, [
               createElementVNode("div", _hoisted_8$3, [
                 createElementVNode("form", _hoisted_9$3, [
                   createElementVNode("div", _hoisted_10$2, [
@@ -4458,7 +4458,7 @@ var script$5 = {
 };
 
 const _hoisted_1$5 = {
-  class: "optional-inf-block",
+  class: "optional-inf-block mt-2",
   id: "extraDocBlock"
 };
 const _hoisted_2$5 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
@@ -4468,8 +4468,8 @@ const _hoisted_3$4 = {
 };
 const _hoisted_4$4 = { class: "optional-inf-card" };
 const _hoisted_5$4 = { class: "row" };
-const _hoisted_6$4 = { class: "d-flex" };
-const _hoisted_7$4 = { class: "col-5 d-flex" };
+const _hoisted_6$3 = { class: "d-flex" };
+const _hoisted_7$3 = { class: "col-5 d-flex" };
 const _hoisted_8$2 = { class: "col-3 d-flex" };
 const _hoisted_9$2 = { class: "col-8" };
 const _hoisted_10$1 = { class: "input-bg" };
@@ -4568,8 +4568,8 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("div", _hoisted_3$4, [
       createElementVNode("div", _hoisted_4$4, [
         createElementVNode("div", _hoisted_5$4, [
-          createElementVNode("div", _hoisted_6$4, [
-            createElementVNode("div", _hoisted_7$4, [
+          createElementVNode("div", _hoisted_6$3, [
+            createElementVNode("div", _hoisted_7$3, [
               createElementVNode("div", _hoisted_8$2, [
                 createElementVNode("div", _hoisted_9$2, [
                   createElementVNode("div", _hoisted_10$1, [
@@ -4958,8 +4958,8 @@ const _hoisted_5$3 = {
   class: "product-inner-block collapse",
   id: "product-1Inner"
 };
-const _hoisted_6$3 = { class: "row" };
-const _hoisted_7$3 = { class: "col-1" };
+const _hoisted_6$2 = { class: "row" };
+const _hoisted_7$2 = { class: "col-1" };
 const _hoisted_8$1 = { class: "col-9" };
 const _hoisted_9$1 = { class: "col input-bg" };
 const _hoisted_10 = { class: "col input-bg mt-3" };
@@ -5091,8 +5091,8 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
       createElementVNode("div", _hoisted_3$3, [
         _hoisted_4$3,
         createElementVNode("div", _hoisted_5$3, [
-          createElementVNode("div", _hoisted_6$3, [
-            createElementVNode("div", _hoisted_7$3, [
+          createElementVNode("div", _hoisted_6$2, [
+            createElementVNode("div", _hoisted_7$2, [
               createElementVNode("div", _hoisted_8$1, [
                 createElementVNode("div", _hoisted_9$1, [
                   withDirectives(createElementVNode("input", {
@@ -5564,12 +5564,10 @@ var script$3 = {
 };
 
 const _hoisted_1$3 = { class: "forms" };
-const _hoisted_2$3 = /*#__PURE__*/createElementVNode("p", null, "Общие сведения", -1 /* HOISTED */);
+const _hoisted_2$3 = /*#__PURE__*/createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
 const _hoisted_3$2 = { class: "arrow" };
-const _hoisted_4$2 = /*#__PURE__*/createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
+const _hoisted_4$2 = /*#__PURE__*/createElementVNode("p", null, "Документы", -1 /* HOISTED */);
 const _hoisted_5$2 = { class: "arrow" };
-const _hoisted_6$2 = /*#__PURE__*/createElementVNode("p", null, "Документы", -1 /* HOISTED */);
-const _hoisted_7$2 = { class: "arrow" };
 
 function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tsoft_general_declaration_form = resolveComponent("tsoft-general-declaration-form");
@@ -5578,72 +5576,57 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (openBlock(), createElementBlock("div", _hoisted_1$3, [
     createElementVNode("div", null, [
-      createElementVNode("div", {
-        class: "group-panel-label",
-        onClick: _cache[0] || (_cache[0] = $event => ($data.isGeneralOpen = !$data.isGeneralOpen))
-      }, [
-        _hoisted_2$3,
-        createElementVNode("div", _hoisted_3$2, [
-          createElementVNode("span", {
-            class: normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isGeneralOpen}])
-          }, null, 2 /* CLASS */)
-        ])
+      createVNode(_component_tsoft_general_declaration_form, {
+        "awb-info": this.awbInfo,
+        registry: this.registry
+      }, null, 8 /* PROPS */, ["awb-info", "registry"]),
+      createElementVNode("div", null, [
+        createElementVNode("div", {
+          class: "group-panel-label",
+          onClick: _cache[0] || (_cache[0] = $event => ($data.isOrdersOpen = !$data.isOrdersOpen))
+        }, [
+          _hoisted_2$3,
+          createElementVNode("div", _hoisted_3$2, [
+            createElementVNode("span", {
+              class: normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrdersOpen}])
+            }, null, 2 /* CLASS */)
+          ])
+        ]),
+        createElementVNode("div", {
+          class: normalizeClass(["group-panel-content", {'open': $data.isOrdersOpen}])
+        }, [
+          (openBlock(true), createElementBlock(Fragment, null, renderList(this.data.registry.orders, (order, index) => {
+            return (openBlock(), createBlock(_component_tsoft_goods_awb_information_form, {
+              order: order.orderInfo,
+              goods: order.goods,
+              orderNum: index
+            }, null, 8 /* PROPS */, ["order", "goods", "orderNum"]))
+          }), 256 /* UNKEYED_FRAGMENT */))
+        ], 2 /* CLASS */)
       ]),
-      createElementVNode("div", {
-        class: normalizeClass(["group-panel-content", {'open': $data.isGeneralOpen}])
-      }, [
-        createVNode(_component_tsoft_general_declaration_form, {
-          "awb-info": this.awbInfo,
-          registry: this.registry
-        }, null, 8 /* PROPS */, ["awb-info", "registry"])
-      ], 2 /* CLASS */)
-    ]),
-    createElementVNode("div", null, [
-      createElementVNode("div", {
-        class: "group-panel-label",
-        onClick: _cache[1] || (_cache[1] = $event => ($data.isOrdersOpen = !$data.isOrdersOpen))
-      }, [
-        _hoisted_4$2,
-        createElementVNode("div", _hoisted_5$2, [
-          createElementVNode("span", {
-            class: normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrdersOpen}])
-          }, null, 2 /* CLASS */)
-        ])
-      ]),
-      createElementVNode("div", {
-        class: normalizeClass(["group-panel-content", {'open': $data.isOrdersOpen}])
-      }, [
-        (openBlock(true), createElementBlock(Fragment, null, renderList(this.data.registry.orders, (order, index) => {
-          return (openBlock(), createBlock(_component_tsoft_goods_awb_information_form, {
-            order: order.orderInfo,
-            goods: order.goods,
-            orderNum: index
-          }, null, 8 /* PROPS */, ["order", "goods", "orderNum"]))
-        }), 256 /* UNKEYED_FRAGMENT */))
-      ], 2 /* CLASS */)
-    ]),
-    createElementVNode("div", null, [
-      createElementVNode("div", {
-        class: "group-panel-label",
-        onClick: _cache[2] || (_cache[2] = $event => ($data.isDocumentOpen = !$data.isDocumentOpen))
-      }, [
-        _hoisted_6$2,
-        createElementVNode("div", _hoisted_7$2, [
-          createElementVNode("span", {
-            class: normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isDocumentOpen}])
-          }, null, 2 /* CLASS */)
-        ])
-      ]),
-      createElementVNode("div", {
-        class: normalizeClass(["group-panel-content", {'open': $data.isDocumentOpen}])
-      }, [
-        (openBlock(true), createElementBlock(Fragment, null, renderList(this.data.registry.documents, (document, index) => {
-          return (openBlock(), createBlock(_component_tsoft_additional_document_form, {
-            key: index,
-            document: document
-          }, null, 8 /* PROPS */, ["document"]))
-        }), 128 /* KEYED_FRAGMENT */))
-      ], 2 /* CLASS */)
+      createElementVNode("div", null, [
+        createElementVNode("div", {
+          class: "group-panel-label",
+          onClick: _cache[1] || (_cache[1] = $event => ($data.isDocumentOpen = !$data.isDocumentOpen))
+        }, [
+          _hoisted_4$2,
+          createElementVNode("div", _hoisted_5$2, [
+            createElementVNode("span", {
+              class: normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isDocumentOpen}])
+            }, null, 2 /* CLASS */)
+          ])
+        ]),
+        createElementVNode("div", {
+          class: normalizeClass(["group-panel-content", {'open': $data.isDocumentOpen}])
+        }, [
+          (openBlock(true), createElementBlock(Fragment, null, renderList(this.data.registry.documents, (document, index) => {
+            return (openBlock(), createBlock(_component_tsoft_additional_document_form, {
+              key: index,
+              document: document
+            }, null, 8 /* PROPS */, ["document"]))
+          }), 128 /* KEYED_FRAGMENT */))
+        ], 2 /* CLASS */)
+      ])
     ])
   ]))
 }

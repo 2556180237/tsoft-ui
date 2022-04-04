@@ -1,5 +1,5 @@
 <template>
-  <div class="declaration" id="declaration">
+  <div class="declaration mb-3" id="declaration">
     <!--Region элемент с общей информацией декларации-->
     <div class="common-inf">
       <div class="row">
@@ -21,13 +21,13 @@
         <div class="inf-block row col-12 justify-content-between">
           <div class="checkbox-block d-flex col-2">
             <div class="checkbox-bg col-2">
-              <input class="form-check-input" type="checkbox" v-bind:checked="this.registry.docType.dteg" />
+              <input class="form-check-input" type="checkbox" v-bind:checked="this.registry.docType.dteg"/>
             </div>
             <div class="label-block col-4">
               <label>ДТЭГ</label>
             </div>
             <div class="checkbox-bg col-2">
-              <input class="form-check-input" type="checkbox" v-bind:checked="this.registry.docType.ptdeg" />
+              <input class="form-check-input" type="checkbox" v-bind:checked="this.registry.docType.ptdeg"/>
             </div>
             <div class="label-block col-4">
               <label>ПТДЭГ</label>
@@ -35,29 +35,31 @@
           </div>
           <div class="checkbox-block d-flex col-2">
             <div class="checkbox-bg col-2">
-              <input class="form-check-input" type="checkbox" v-bind:checked="this.registry.declarationKindCode.import" />
+              <input class="form-check-input" type="checkbox"
+                     v-bind:checked="this.registry.declarationKindCode.import"/>
             </div>
             <div class="label-block col-3">
               <label>ИМ</label>
             </div>
             <div class="checkbox-bg col-2">
-              <input class="form-check-input" type="checkbox" v-bind:checked="this.registry.declarationKindCode.export" />
+              <input class="form-check-input" type="checkbox"
+                     v-bind:checked="this.registry.declarationKindCode.export"/>
             </div>
             <div class="label-block col-3">
               <label>ЭК</label>
             </div>
           </div>
           <div
-            class="declaration-number-block justify-content-end d-flex col-5"
+              class="declaration-number-block justify-content-end d-flex col-5"
           >
             <div class="label-block col-2">
               <label>№</label>
             </div>
             <div class="input-bg col-10">
               <input
-                class="declaration-number-input form-control"
-                type="text"
-                v-model="this.registry.registryNum"
+                  class="declaration-number-input form-control"
+                  type="text"
+                  v-model="this.registry.registryNum"
               />
             </div>
           </div>
@@ -68,16 +70,16 @@
         <div class="inf-block row col-12">
           <div class="inputs-group d-flex col-2">
             <div class="col-2">
-              <input class="form-control" type="text" v-model="this.registry.customsCodeMode" />
+              <input class="form-control" type="text" v-model="this.registry.customsCodeMode"/>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" v-model="this.registry.previousCustomsCodeMode" />
+              <input class="form-control" type="text" v-model="this.registry.previousCustomsCodeMode"/>
             </div>
             <div class="col-3">
-              <input class="form-control" type="text" v-model="this.registry.declarationKind" />
+              <input class="form-control" type="text" v-model="this.registry.declarationKind"/>
             </div>
             <div class="col-2">
-              <input class="form-control" type="text" v-model="this.registry.electronicDocumentSign" />
+              <input class="form-control" type="text" v-model="this.registry.electronicDocumentSign"/>
             </div>
           </div>
           <div class="sheets-block d-flex col-2">
@@ -86,9 +88,9 @@
             </div>
             <div class="input-bg col-8">
               <input
-                class="sheets-input form-control"
-                type="text"
-                v-model="this.registry.countList"
+                  class="sheets-input form-control"
+                  type="text"
+                  v-model="this.registry.countList"
               />
             </div>
           </div>
@@ -98,19 +100,19 @@
             </div>
             <div class="input-bg col-10">
               <input
-                class="registry-number-input form-control"
-                type="text"
-                id="registryNumber"
-                v-model="this.registry.customNum"
+                  class="registry-number-input form-control"
+                  type="text"
+                  id="registryNumber"
+                  v-model="this.registry.customNum"
               />
             </div>
           </div>
           <div class="registry-changes d-flex col-3">
             <div class="input-bg">
               <input
-                class="registry-checkbox form-check-input"
-                type="checkbox"
-                v-model="this.registry.isRegistryWasChanged"
+                  class="registry-checkbox form-check-input"
+                  type="checkbox"
+                  v-model="this.registry.isRegistryWasChanged"
               />
             </div>
             <label>- реестр с внесёнными изменениями</label>
@@ -124,13 +126,13 @@
               <label class="express-courier-label">Экспресс перевозчик</label>
               <div class="express-courier-block col-12 d-flex">
                 <div class="col-1">
-                  <input class="form-control" type="text" v-model="this.registry.expressCourierCode" />
+                  <input class="form-control" type="text" v-model="this.registry.expressCourierCode"/>
                 </div>
                 <div class="col-11">
                   <input
-                    class="col-11 form-control"
-                    type="text"
-                    v-model="this.registry.expressCourierName"
+                      class="col-11 form-control"
+                      type="text"
+                      v-model="this.registry.expressCourierName"
                   />
                 </div>
               </div>
@@ -157,19 +159,19 @@
                 </div>
                 <form class="certificate-block row col-12">
                   <div class="input-bg col-1">
-                    <input class="form-control" type="text" v-model="this.registry.registerDocumentUnknownString1" />
+                    <input class="form-control" type="text" v-model="this.registry.registerDocumentUnknownString1"/>
                   </div>
                   <div class="input-bg col-1">
-                    <input class="form-control" type="text" v-model="this.registry.registerDocumentIdCountryCode" />
+                    <input class="form-control" type="text" v-model="this.registry.registerDocumentIdCountryCode"/>
                   </div>
                   <div class="input-bg col-7">
-                    <input class="form-control" type="text" v-model="this.registry.registerDocumentIdNumber" />
+                    <input class="form-control" type="text" v-model="this.registry.registerDocumentIdNumber"/>
                   </div>
                   <div class="input-bg col-1">
-                    <input class="form-control" type="text" v-model="this.registry.registerDocumentUnknownString2" />
+                    <input class="form-control" type="text" v-model="this.registry.registerDocumentUnknownString2"/>
                   </div>
                   <div class="input-bg col-1">
-                    <input class="form-control" type="text" v-model="this.registry.registerDocumentUnknownString3" />
+                    <input class="form-control" type="text" v-model="this.registry.registerDocumentUnknownString3"/>
                   </div>
                 </form>
               </div>
@@ -180,19 +182,19 @@
                 <div class="inf-block row">
                   <div class="col-3 input-bg">
                     <input class="form-control" type="text"
-                           v-model="this.registry.changingDeclarationNumber.customPoint" />
+                           v-model="this.registry.changingDeclarationNumber.customPoint"/>
                   </div>
                   <div class="col-4 input-bg">
                     <input class="form-control" type="text"
-                           v-model="this.registry.changingDeclarationNumber.date" />
+                           v-model="this.registry.changingDeclarationNumber.date"/>
                   </div>
                   <div class="col-3 input-bg">
                     <input class="form-control" type="text"
-                           v-model="this.registry.changingDeclarationNumber.innerNum" />
+                           v-model="this.registry.changingDeclarationNumber.innerNum"/>
                   </div>
                   <div class="col-1 input-bg">
                     <input class="form-control" type="text"
-                           v-model="this.registry.changingDeclarationNumber.unknownNum" />
+                           v-model="this.registry.changingDeclarationNumber.unknownNum"/>
                   </div>
                 </div>
                 <div class="inf-block changing-code row">
@@ -202,31 +204,31 @@
                   <div class="col-8 d-flex">
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.stageChangeCode" />
+                             v-model="this.registry.changeDetailsType.stageChangeCode"/>
                     </div>
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.reasonChangeCode" />
+                             v-model="this.registry.changeDetailsType.reasonChangeCode"/>
                     </div>
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.quantityChangeCode" />
+                             v-model="this.registry.changeDetailsType.quantityChangeCode"/>
                     </div>
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.TNVEDChangeCode" />
+                             v-model="this.registry.changeDetailsType.TNVEDChangeCode"/>
                     </div>
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.customsCostChangeCode" />
+                             v-model="this.registry.changeDetailsType.customsCostChangeCode"/>
                     </div>
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.customsPaymentChangeCode" />
+                             v-model="this.registry.changeDetailsType.customsPaymentChangeCode"/>
                     </div>
                     <div class="col input-bg">
                       <input class="form-control number-code" type="number"
-                             v-model="this.registry.changeDetailsType.otherChangeCode" />
+                             v-model="this.registry.changeDetailsType.otherChangeCode"/>
                     </div>
                     <button class="btn info-button p-1">
                       <i class="fa-solid fa-circle-info"></i>
@@ -252,10 +254,12 @@
               </div>
               <div class="batch-block row">
                 <div class="col-10">
-                  <input type="text" class="form-control" placeholder="Сумма" v-model="this.registry.totalPaymentAmountDetailsSum" />
+                  <input type="text" class="form-control" placeholder="Сумма"
+                         v-model="this.registry.totalPaymentAmountDetailsSum"/>
                 </div>
                 <div class="col-2">
-                  <input type="text" class="form-control" placeholder="Валюта" v-model="this.registry.totalPaymentAmountDetailsCurrency"/>
+                  <input type="text" class="form-control" placeholder="Валюта"
+                         v-model="this.registry.totalPaymentAmountDetailsCurrency"/>
                 </div>
               </div>
             </div>
@@ -322,12 +326,12 @@
     <div class="sender-common-inf">
       <div class="row">
         <button
-          class="btn invoice-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsedSenderInfo"
-          aria-expanded="false"
-          aria-controls="collapsedSenderInfo"
+            class="btn invoice-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsedSenderInfo"
+            aria-expanded="false"
+            aria-controls="collapsedSenderInfo"
         >
           <p class="collapsing-block d-flex justify-content-between">
             <span>ОТПРАВИТЕЛЬ по общей накладной</span>
@@ -352,7 +356,8 @@
                   <div class="col-1"></div>
                   <div class="col-2 d-flex">
                     <div class="input-bg col-2">
-                      <input type="checkbox" class="form-check-input" v-bind:checked="this.registry.consignor.isDeclarant"/>
+                      <input type="checkbox" class="form-check-input"
+                             v-bind:checked="this.registry.consignor.isDeclarant"/>
                     </div>
                     <div class="label-block col-10">
                       <label> Декларант (заявитель) </label>
@@ -363,10 +368,10 @@
                   <div class="col-5">
                     <div class="input-bg">
                       <input
-                        type="text"
-                        class="form-control"
-                        placeholder="краткое наименование организации"
-                        v-model="this.registry.consignor.shortName"
+                          type="text"
+                          class="form-control"
+                          placeholder="краткое наименование организации"
+                          v-model="this.registry.consignor.shortName"
                       />
                     </div>
                   </div>
@@ -412,30 +417,30 @@
                     <div class="col-3">
                       <div class="input-bg">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="номер телефона"
-                          v-model="this.registry.consignor.phone"
+                            class="form-control"
+                            type="text"
+                            placeholder="номер телефона"
+                            v-model="this.registry.consignor.phone"
                         />
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="input-bg">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Адрес электронной почты"
-                          v-model="this.registry.consignor.email"
+                            class="form-control"
+                            type="text"
+                            placeholder="Адрес электронной почты"
+                            v-model="this.registry.consignor.email"
                         />
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="input-bg">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="номер факса"
-                          v-model="this.registry.consignor.fax"
+                            class="form-control"
+                            type="text"
+                            placeholder="номер факса"
+                            v-model="this.registry.consignor.fax"
                         />
                       </div>
                     </div>
@@ -447,40 +452,40 @@
                       <div class="col-1">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="язык"
-                            v-model="this.registry.consignor.language"
+                              type="text"
+                              class="form-control"
+                              placeholder="язык"
+                              v-model="this.registry.consignor.language"
                           />
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="страна"
-                            v-model="this.registry.consignor.country"
+                              type="text"
+                              class="form-control"
+                              placeholder="страна"
+                              v-model="this.registry.consignor.country"
                           />
                         </div>
                       </div>
                       <div class="col-2">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="почтовый индекс"
-                            v-model="this.registry.consignor.mailIndex"
+                              type="text"
+                              class="form-control"
+                              placeholder="почтовый индекс"
+                              v-model="this.registry.consignor.mailIndex"
                           />
                         </div>
                       </div>
                       <div class="col-5">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="область (регион, штат, провинция)"
-                            v-model="this.registry.consignor.region"
+                              type="text"
+                              class="form-control"
+                              placeholder="область (регион, штат, провинция)"
+                              v-model="this.registry.consignor.region"
                           />
                         </div>
                       </div>
@@ -489,30 +494,30 @@
                       <div class="col-5">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="район"
-                            v-model="this.registry.consignor.area"
+                              type="text"
+                              class="form-control"
+                              placeholder="район"
+                              v-model="this.registry.consignor.area"
                           />
                         </div>
                       </div>
                       <div class="col-3">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="город"
-                            v-model="this.registry.consignor.city"
+                              type="text"
+                              class="form-control"
+                              placeholder="город"
+                              v-model="this.registry.consignor.city"
                           />
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="населённый пункт"
-                            v-model="this.registry.consignor.settlement"
+                              type="text"
+                              class="form-control"
+                              placeholder="населённый пункт"
+                              v-model="this.registry.consignor.settlement"
                           />
                         </div>
                       </div>
@@ -520,16 +525,16 @@
                     <div class="row my-2">
                       <div class="col-4">
                         <div class="input-bg">
-                          <input type="text" class="form-control" v-model="this.registry.consignor.address" />
+                          <input type="text" class="form-control" v-model="this.registry.consignor.address"/>
                         </div>
                       </div>
                       <div class="col-2">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="дом, корпус, строение"
-                            v-model="this.registry.consignor.house"
+                              type="text"
+                              class="form-control"
+                              placeholder="дом, корпус, строение"
+                              v-model="this.registry.consignor.house"
                           />
                         </div>
                       </div>
@@ -541,10 +546,10 @@
                       <div class="col-2">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="номер а/я"
-                            v-model="this.registry.consignor.officeLetter"
+                              type="text"
+                              class="form-control"
+                              placeholder="номер а/я"
+                              v-model="this.registry.consignor.officeLetter"
                           />
                         </div>
                       </div>
@@ -553,10 +558,10 @@
                       <div class="col-12">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="набор элементов адреса, представленных в свободной форме в виде текста"
-                            v-model="this.registry.consignor.fullAddress"
+                              type="text"
+                              class="form-control"
+                              placeholder="набор элементов адреса, представленных в свободной форме в виде текста"
+                              v-model="this.registry.consignor.fullAddress"
                           />
                         </div>
                       </div>
@@ -573,66 +578,66 @@
                     <div class="col-1">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="стр"
-                          v-model="this.registry.consignor.document.country"
+                            type="text"
+                            class="form-control"
+                            placeholder="стр"
+                            v-model="this.registry.consignor.document.country"
                         />
                       </div>
                     </div>
                     <div class="col-1">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="код"
-                          v-model="this.registry.consignor.document.countryCode"
+                            type="text"
+                            class="form-control"
+                            placeholder="код"
+                            v-model="this.registry.consignor.document.countryCode"
                         />
                       </div>
                     </div>
                     <div class="col-2">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="краткое наименование"
-                          v-model="this.registry.consignor.document.shortType"
+                            type="text"
+                            class="form-control"
+                            placeholder="краткое наименование"
+                            v-model="this.registry.consignor.document.shortType"
                         />
                       </div>
                     </div>
                     <div class="col-4 d-flex">
                       <div class="input-bg col-4">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="серия"
-                          v-model="this.registry.consignor.document.series"
+                            type="text"
+                            class="form-control"
+                            placeholder="серия"
+                            v-model="this.registry.consignor.document.series"
                         />
                       </div>
                       <div class="input-bg col-4">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="номер"
-                          v-model="this.registry.consignor.document.number"
+                            type="text"
+                            class="form-control"
+                            placeholder="номер"
+                            v-model="this.registry.consignor.document.number"
                         />
                       </div>
                       <div class="input-bg col-4">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="дата выдачи"
-                          v-model="this.registry.consignor.document.releaseDate"
+                            type="text"
+                            class="form-control"
+                            placeholder="дата выдачи"
+                            v-model="this.registry.consignor.document.releaseDate"
                         />
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="наименование организации, выдавшей документ"
-                          v-model="this.registry.consignor.document.issuedBy"
+                            type="text"
+                            class="form-control"
+                            placeholder="наименование организации, выдавшей документ"
+                            v-model="this.registry.consignor.document.issuedBy"
                         />
                       </div>
                     </div>
@@ -641,30 +646,30 @@
                     <div class="col-7">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="полное наименование документа, удостоверяющего личность"
-                          v-model="this.registry.consignor.document.fullType"
+                            type="text"
+                            class="form-control"
+                            placeholder="полное наименование документа, удостоверяющего личность"
+                            v-model="this.registry.consignor.document.fullType"
                         />
                       </div>
                     </div>
                     <div class="col-2">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="код подразделения"
-                          v-model="this.registry.consignor.document.divisionCode"
+                            type="text"
+                            class="form-control"
+                            placeholder="код подразделения"
+                            v-model="this.registry.consignor.document.divisionCode"
                         />
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="строка, иденти-ая орган государства"
-                          v-model="this.registry.consignor.document.countryIdString"
+                            type="text"
+                            class="form-control"
+                            placeholder="строка, иденти-ая орган государства"
+                            v-model="this.registry.consignor.document.countryIdString"
                         />
                       </div>
                     </div>
@@ -681,12 +686,12 @@
     <div class="recipient-common-inf">
       <div class="row">
         <button
-          class="btn invoice-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsedRecipientInfo"
-          aria-expanded="false"
-          aria-controls="collapsedRecipientInfo"
+            class="btn invoice-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsedRecipientInfo"
+            aria-expanded="false"
+            aria-controls="collapsedRecipientInfo"
         >
           <div class="collapsing-block d-flex justify-content-between">
             <span>ПОЛУЧАТЕЛЬ по общей накладной</span>
@@ -711,7 +716,8 @@
                   <div class="col-1"></div>
                   <div class="col-2 d-flex">
                     <div class="input-bg col-2">
-                      <input type="checkbox" class="form-check-input" v-bind:checked="this.registry.consignee.isDeclarant"/>
+                      <input type="checkbox" class="form-check-input"
+                             v-bind:checked="this.registry.consignee.isDeclarant"/>
                     </div>
                     <div class="label-block col-10">
                       <label> Декларант (заявитель) </label>
@@ -722,10 +728,10 @@
                   <div class="col-5">
                     <div class="input-bg">
                       <input
-                        type="text"
-                        class="form-control"
-                        placeholder="краткое наименование организации"
-                        v-model="this.registry.consignee.shortName"
+                          type="text"
+                          class="form-control"
+                          placeholder="краткое наименование организации"
+                          v-model="this.registry.consignee.shortName"
                       />
                     </div>
                   </div>
@@ -771,30 +777,30 @@
                     <div class="col-3">
                       <div class="input-bg">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="номер телефона"
-                          v-model="this.registry.consignee.phone"
+                            class="form-control"
+                            type="text"
+                            placeholder="номер телефона"
+                            v-model="this.registry.consignee.phone"
                         />
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="input-bg">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Адрес электронной почты"
-                          v-model="this.registry.consignee.email"
+                            class="form-control"
+                            type="text"
+                            placeholder="Адрес электронной почты"
+                            v-model="this.registry.consignee.email"
                         />
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="input-bg">
                         <input
-                          class="form-control"
-                          type="text"
-                          placeholder="номер факса"
-                          v-model="this.registry.consignee.fax"
+                            class="form-control"
+                            type="text"
+                            placeholder="номер факса"
+                            v-model="this.registry.consignee.fax"
                         />
                       </div>
                     </div>
@@ -806,40 +812,40 @@
                       <div class="col-1">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="язык"
-                            v-model="this.registry.consignee.language"
+                              type="text"
+                              class="form-control"
+                              placeholder="язык"
+                              v-model="this.registry.consignee.language"
                           />
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="страна"
-                            v-model="this.registry.consignee.country"
+                              type="text"
+                              class="form-control"
+                              placeholder="страна"
+                              v-model="this.registry.consignee.country"
                           />
                         </div>
                       </div>
                       <div class="col-2">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="почтовый индекс"
-                            v-model="this.registry.consignee.mailIndex"
+                              type="text"
+                              class="form-control"
+                              placeholder="почтовый индекс"
+                              v-model="this.registry.consignee.mailIndex"
                           />
                         </div>
                       </div>
                       <div class="col-5">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="область (регион, штат, провинция)"
-                            v-model="this.registry.consignee.region"
+                              type="text"
+                              class="form-control"
+                              placeholder="область (регион, штат, провинция)"
+                              v-model="this.registry.consignee.region"
                           />
                         </div>
                       </div>
@@ -848,30 +854,30 @@
                       <div class="col-5">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="район"
-                            v-model="this.registry.consignee.area"
+                              type="text"
+                              class="form-control"
+                              placeholder="район"
+                              v-model="this.registry.consignee.area"
                           />
                         </div>
                       </div>
                       <div class="col-3">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="город"
-                            v-model="this.registry.consignee.city"
+                              type="text"
+                              class="form-control"
+                              placeholder="город"
+                              v-model="this.registry.consignee.city"
                           />
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="населённый пункт"
-                            v-model="this.registry.consignee.settlement"
+                              type="text"
+                              class="form-control"
+                              placeholder="населённый пункт"
+                              v-model="this.registry.consignee.settlement"
                           />
                         </div>
                       </div>
@@ -879,16 +885,16 @@
                     <div class="row my-2">
                       <div class="col-4">
                         <div class="input-bg">
-                          <input type="text" class="form-control" v-model="this.registry.consignee.address" />
+                          <input type="text" class="form-control" v-model="this.registry.consignee.address"/>
                         </div>
                       </div>
                       <div class="col-2">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="дом, корпус, строение"
-                            v-model="this.registry.consignee.house"
+                              type="text"
+                              class="form-control"
+                              placeholder="дом, корпус, строение"
+                              v-model="this.registry.consignee.house"
                           />
                         </div>
                       </div>
@@ -900,10 +906,10 @@
                       <div class="col-2">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="номер а/я"
-                            v-model="this.registry.consignee.officeLetter"
+                              type="text"
+                              class="form-control"
+                              placeholder="номер а/я"
+                              v-model="this.registry.consignee.officeLetter"
                           />
                         </div>
                       </div>
@@ -912,10 +918,10 @@
                       <div class="col-12">
                         <div class="input-bg">
                           <input
-                            type="text"
-                            class="form-control"
-                            placeholder="набор элементов адреса, представленных в свободной форме в виде текста"
-                            v-model="this.registry.consignee.fullAddress"
+                              type="text"
+                              class="form-control"
+                              placeholder="набор элементов адреса, представленных в свободной форме в виде текста"
+                              v-model="this.registry.consignee.fullAddress"
                           />
                         </div>
                       </div>
@@ -932,66 +938,66 @@
                     <div class="col-1">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="стр"
-                          v-model="this.registry.consignee.document.country"
+                            type="text"
+                            class="form-control"
+                            placeholder="стр"
+                            v-model="this.registry.consignee.document.country"
                         />
                       </div>
                     </div>
                     <div class="col-1">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="код"
-                          v-model="this.registry.consignee.document.countryCode"
+                            type="text"
+                            class="form-control"
+                            placeholder="код"
+                            v-model="this.registry.consignee.document.countryCode"
                         />
                       </div>
                     </div>
                     <div class="col-2">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="краткое наименование"
-                          v-model="this.registry.consignee.document.shortType"
+                            type="text"
+                            class="form-control"
+                            placeholder="краткое наименование"
+                            v-model="this.registry.consignee.document.shortType"
                         />
                       </div>
                     </div>
                     <div class="col-4 d-flex">
                       <div class="input-bg col-4">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="серия"
-                          v-model="this.registry.consignee.document.series"
+                            type="text"
+                            class="form-control"
+                            placeholder="серия"
+                            v-model="this.registry.consignee.document.series"
                         />
                       </div>
                       <div class="input-bg col-4">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="номер"
-                          v-model="this.registry.consignee.document.number"
+                            type="text"
+                            class="form-control"
+                            placeholder="номер"
+                            v-model="this.registry.consignee.document.number"
                         />
                       </div>
                       <div class="input-bg col-4">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="дата выдачи"
-                          v-model="this.registry.consignee.document.releaseDate"
+                            type="text"
+                            class="form-control"
+                            placeholder="дата выдачи"
+                            v-model="this.registry.consignee.document.releaseDate"
                         />
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="наименование организации, выдавшей документ"
-                          v-model="this.registry.consignee.document.issuedBy"
+                            type="text"
+                            class="form-control"
+                            placeholder="наименование организации, выдавшей документ"
+                            v-model="this.registry.consignee.document.issuedBy"
                         />
                       </div>
                     </div>
@@ -1000,30 +1006,30 @@
                     <div class="col-7">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="полное наименование документа, удостоверяющего личность"
-                          v-model="this.registry.consignee.document.fullType"
+                            type="text"
+                            class="form-control"
+                            placeholder="полное наименование документа, удостоверяющего личность"
+                            v-model="this.registry.consignee.document.fullType"
                         />
                       </div>
                     </div>
                     <div class="col-2">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="код подразделения"
-                          v-model="this.registry.consignee.document.divisionCode"
+                            type="text"
+                            class="form-control"
+                            placeholder="код подразделения"
+                            v-model="this.registry.consignee.document.divisionCode"
                         />
                       </div>
                     </div>
                     <div class="col-3">
                       <div class="input-bg">
                         <input
-                          type="text"
-                          class="form-control"
-                          placeholder="строка, иденти-ая орган государства"
-                          v-model="this.registry.consignee.document.countryIdString"
+                            type="text"
+                            class="form-control"
+                            placeholder="строка, иденти-ая орган государства"
+                            v-model="this.registry.consignee.document.countryIdString"
                         />
                       </div>
                     </div>
@@ -1082,12 +1088,12 @@
       </div>
       <div class="row">
         <button
-          class="btn invoice-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsedNaturalPersonInfo"
-          aria-expanded="false"
-          aria-controls="collapsedNaturalPersonInfo"
+            class="btn invoice-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsedNaturalPersonInfo"
+            aria-expanded="false"
+            aria-controls="collapsedNaturalPersonInfo"
         >
           <div class="collapsing-block d-flex justify-content-between">
             <span>Сведения о физическом лице, заполнившем (подписавшем) таможенный
@@ -1101,22 +1107,26 @@
               <div class="d-flex">
                 <div class="col-3">
                   <div class="input-bg">
-                    <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.lastName" />
+                    <input type="text" class="form-control"
+                           v-model="this.registry.signatoryPersonIdentityDetails.lastName"/>
                   </div>
                 </div>
                 <div class="col-3">
                   <div class="input-bg">
-                    <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.firstName" />
+                    <input type="text" class="form-control"
+                           v-model="this.registry.signatoryPersonIdentityDetails.firstName"/>
                   </div>
                 </div>
                 <div class="col-3">
                   <div class="input-bg">
-                    <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.middleName" />
+                    <input type="text" class="form-control"
+                           v-model="this.registry.signatoryPersonIdentityDetails.middleName"/>
                   </div>
                 </div>
                 <div class="col-3">
                   <div class="input-bg">
-                    <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.profession"/>
+                    <input type="text" class="form-control"
+                           v-model="this.registry.signatoryPersonIdentityDetails.profession"/>
                   </div>
                 </div>
               </div>
@@ -1124,24 +1134,28 @@
                 <div class="col-9 d-flex">
                   <div class="col-3">
                     <div class="input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.mobilePhone" />
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.mobilePhone"/>
                     </div>
                   </div>
                   <div class="col-3">
                     <div class="input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.fax"/>
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.fax"/>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.email"/>
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.email"/>
                     </div>
                   </div>
                 </div>
                 <div class="col-3 row">
                   <div class="col-8">
                     <div class="input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.appealDocumentDate"/>
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.appealDocumentDate"/>
                     </div>
                   </div>
                   <div class="col-4">
@@ -1159,36 +1173,42 @@
                   <div class="col-3 d-flex">
                     <div class="col-5">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.countyCode" />
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.countyCode"/>
                       </div>
                     </div>
                     <div class="col-7">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.personalDocType" />
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.personalDocType"/>
                       </div>
                     </div>
                   </div>
                   <div class="col-3 d-flex">
                     <div class="col-4">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentSeries" />
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.documentSeries"/>
                       </div>
                     </div>
                     <div class="col-8">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentNumber" />
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.documentNumber"/>
                       </div>
                     </div>
                   </div>
                   <div class="col-3 d-flex">
                     <div class="col-6">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentReleaseDate"/>
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.documentReleaseDate"/>
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentDateEnd"/>
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.documentDateEnd"/>
                       </div>
                     </div>
                   </div>
@@ -1200,7 +1220,8 @@
                     </div>
                     <div class="col-8">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.qualificationCertificate" />
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.qualificationCertificate"/>
                       </div>
                     </div>
                   </div>
@@ -1208,23 +1229,28 @@
                 <div class="row my-2">
                   <div class="col-3">
                     <div class="input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.fullDocumentType" />
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.fullDocumentType"/>
                     </div>
                   </div>
                   <div class="col-5">
                     <div class="input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.issuedBy" />
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.issuedBy"/>
                     </div>
                   </div>
                   <div class="col-4 d-flex">
                     <div class="col-3 input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.divisionCode" />
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.divisionCode"/>
                     </div>
                     <div class="col-8 input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.countryIdString" />
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.countryIdString"/>
                     </div>
                     <div class="col-1 input-bg">
-                      <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.countryIdCode"/>
+                      <input type="text" class="form-control"
+                             v-model="this.registry.signatoryPersonIdentityDetails.countryIdCode"/>
                     </div>
                   </div>
                 </div>
@@ -1241,18 +1267,21 @@
                     <div class="col-8 d-flex">
                       <div class="col-6">
                         <div class="input-bg">
-                          <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentModeId" />
+                          <input type="text" class="form-control"
+                                 v-model="this.registry.signatoryPersonIdentityDetails.documentModeId"/>
                         </div>
                       </div>
                       <div class="col-6">
                         <div class="input-bg">
-                          <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentModeUnknown1"/>
+                          <input type="text" class="form-control"
+                                 v-model="this.registry.signatoryPersonIdentityDetails.documentModeUnknown1"/>
                         </div>
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="input-bg">
-                        <input type="text" class="form-control" v-model="this.registry.signatoryPersonIdentityDetails.documentModeUnknown2" />
+                        <input type="text" class="form-control"
+                               v-model="this.registry.signatoryPersonIdentityDetails.documentModeUnknown2"/>
                       </div>
                     </div>
                   </div>
@@ -1266,12 +1295,14 @@
                   <div class="col-4 d-flex">
                     <div class="col-4">
                       <div class="input-bg">
-                        <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docSeries" />
+                        <input class="form-control" type="text"
+                               v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docSeries"/>
                       </div>
                     </div>
                     <div class="col-8">
                       <div class="input-bg">
-                        <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docType"/>
+                        <input class="form-control" type="text"
+                               v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.docType"/>
                       </div>
                     </div>
                   </div>
@@ -1279,12 +1310,14 @@
                     <div class="col-4 d-flex">
                       <div class="col-5">
                         <div class="input-bg">
-                          <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownString" />
+                          <input class="form-control" type="text"
+                                 v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownString"/>
                         </div>
                       </div>
                       <div class="col-7">
                         <div class="input-bg">
-                          <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.appealDate"/>
+                          <input class="form-control" type="text"
+                                 v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.appealDate"/>
                         </div>
                       </div>
                     </div>
@@ -1295,7 +1328,8 @@
                         </div>
                         <div class="col-10">
                           <div class="input-bg">
-                            <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateStart"/>
+                            <input class="form-control" type="text"
+                                   v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateStart"/>
                           </div>
                         </div>
                       </div>
@@ -1305,13 +1339,15 @@
                         </div>
                         <div class="col-10">
                           <div class="input-bg">
-                            <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateEnd" />
+                            <input class="form-control" type="text"
+                                   v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.dateEnd"/>
                           </div>
                         </div>
                       </div>
                       <div class="col-2">
                         <div class="input-bg">
-                          <input class="form-control" type="text" v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownInput" />
+                          <input class="form-control" type="text"
+                                 v-model="this.registry.signatoryPersonIdentityDetails.powerOfAttorney.unknownInput"/>
                         </div>
                       </div>
                     </div>
@@ -1330,14 +1366,14 @@
         <div class="col-7">
           <p class="align-bcntr">ФИО инспектора</p>
           <div class="input-bg">
-            <input class="form-control" type="text" v-model="this.registry.inspectorFullName" />
+            <input class="form-control" type="text" v-model="this.registry.inspectorFullName"/>
           </div>
         </div>
         <div class="col-5">
           <p class="align-bcntr">ЛНП</p>
           <div class="row">
             <div class="col-2 input-bg">
-              <input class="form-control" type="text" v-model="this.registry.lnp" />
+              <input class="form-control" type="text" v-model="this.registry.lnp"/>
             </div>
           </div>
         </div>
