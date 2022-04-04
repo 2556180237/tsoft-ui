@@ -1,5 +1,5 @@
 <template>
-  <div class="declaration mt-3" id="declaration">
+  <div class="declaration" id="declaration">
     <!--Region элемент с общей информацией декларации-->
     <div class="common-inf">
       <div class="row">

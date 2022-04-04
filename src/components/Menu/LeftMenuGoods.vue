@@ -41,7 +41,7 @@ export default {
   top: 0;
   height: fit-content;
   min-width: 300px;
-  margin-top: 40px ;
+  margin-top: 10px ;
 }
 
 .tree-buttons-block{

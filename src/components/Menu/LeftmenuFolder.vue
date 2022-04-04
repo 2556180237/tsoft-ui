@@ -30,6 +30,6 @@ export default {
   background: rgb(253, 253, 253);
   border: 1px solid #ccc;
   padding: 10px;
-  overflow: scroll;
+  overflow: auto;
 }
 </style>

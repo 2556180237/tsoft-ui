@@ -1,5 +1,5 @@
 <template>
-  <div class="optional-inf-block my-3" id="extraDocBlock">
+  <div class="optional-inf-block" id="extraDocBlock">
     <div class="d-flex optional-inf-header justify-content-between">
       <h4 class="col-4">Сведения о дополнительном документе</h4>
       <div class="product-info-actions col-4 d-flex justify-content-end">
@@ -44,7 +44,7 @@
                   </div>
                 </div>
                 <div class="col-1">
-                  <p class="fs-3 my-0">/</p>
+                  <p class="fs-5 my-0">/</p>
                 </div>
                 <div class="col-3">
                   <div class="input-bg">

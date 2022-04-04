@@ -69,6 +69,60 @@ export default {
 </script>
 
 <style>
+.common-inf  p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.common-inf  label {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.product-batch p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.product-batch label {
+  font-size: 10px;
+}
+.product-batch a {
+  font-size: 10px;
+}
+
+.product-info-block p{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.product-info-block label {
+  font-size: 10px;
+}
+
+.product-info-block a {
+  font-size: 10px;
+}
+
+.optional-inf-block a {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.optional-inf-block p {
+  font-size: 10px;
+}
+
+.optional-inf-block label {
+  font-size: 10px;
+}
+
 .arrow {
   margin-right: 5px;
   margin-top: -3px;
@@ -175,6 +229,15 @@ li a {
 
 }
 
+.number-code::-webkit-outer-spin-button,
+.number-code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-code[type='number'] {
+  -moz-appearance: textfield;
+}
+
 /*Region Стили блока декларации*/
 
 .declaration {
@@ -184,10 +247,11 @@ li a {
   max-width: 950px;
   min-width: 900px;
   font-size: 10px;
+  margin: 0 auto;
 }
 
 h4 {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 h5 {
@@ -267,7 +331,7 @@ label {
 .inf-paragraph {
   min-width: 250px;
   max-width: 270px;
-  margin: 10px 0 auto 0;
+  margin:5px 0 auto 0;
 }
 
 /**/
@@ -290,7 +354,7 @@ label {
 /**/
 /*Стили блоков с инпутами из раздела "Товарная партия"*/
 .batch-form {
-  padding: 0 10px 0 4px;
+  padding: 0 10px 0 10px;
 }
 
 .batch-form div:first-child {
@@ -371,6 +435,7 @@ i {
   background-color: white;
   border: unset;
   border-radius: 8px;
+  padding: 1px 5px;
 }
 
 .button-calendar:focus {
@@ -391,6 +456,7 @@ i {
   border: 1px solid black;
   max-width: 950px;
   min-width: 900px;
+  margin: 0 auto;
 }
 
 /*Стиль синего хэдера с кнопками */
@@ -428,6 +494,7 @@ i {
 .new-window-button {
   background-color: white;
   border-radius: 5px;
+  padding: 1px 5px;
 }
 
 .new-window-button:hover {
@@ -446,7 +513,7 @@ i {
 /**/
 
 /*Стили группы серых ссылок в элементе с общей информацией о партии*/
-.batch-info-anchors router-link {
+.batch-info-anchors >a, router-link {
   display: block;
   color: gray;
   text-decoration: underline;
@@ -466,6 +533,7 @@ i {
   border: 1px solid black;
   max-width: 950px;
   min-width: 900px;
+  margin: 0 auto;
 }
 
 .product-info-actions button:focus {
@@ -484,9 +552,14 @@ i {
   transform: rotate(180deg);
 }
 
+/*.btn {*/
+/*  padding: 1rem;*/
+/*}*/
+
 .btn-bg-white {
   background-color: white;
   border-radius: 5px;
+  padding: 1px 5px;
 }
 
 .btn-bg-white:focus {
@@ -505,6 +578,7 @@ i {
   border: 1px solid black;
   max-width: 950px;
   min-width: 900px;
+  margin: 0 auto;
 }
 
 .optional-inf-header {
