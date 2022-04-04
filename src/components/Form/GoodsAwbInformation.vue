@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="group-panel-content" :class="{'open': isOrderOpen}">
-      <div class="product-batch my-3">
+      <div class="product-batch">
         <!--Region элемент хэдера блока с кнопками-->
         <div class="d-flex product-batch-header justify-content-between">
           <h4 class="col-4">Сведения о товарной партии</h4>
@@ -205,7 +205,7 @@
                     <div class="label-block" style="width: 100%">
                       <label class="fs-5">Код изменений</label>
                     </div>
-                    <div class="col-10 d-flex">
+                    <div class="col-10 d-flex w-100">
                       <div class="col input-bg">
                         <input class="form-control number-code" type="number"
                                v-model="order.changeDetailsType.stageChangeCode" />

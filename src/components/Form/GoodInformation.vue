@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="group-panel-content" :class="{'open': isGoodsOpen}">
-      <div class="product-info-block my-3" id="productInvoiceBlock">
+      <div class="product-info-block" id="productInvoiceBlock">
         <div class="d-flex product-batch-header justify-content-between">
           <h4 class="col-4">Товар (1 из 2)</h4>
           <div class="product-info-actions col-4 d-flex justify-content-end">
@@ -62,7 +62,7 @@
                 <div class="label-block">
                   <label class="fs-5">Код изменений</label>
                 </div>
-                <div class="col-9 d-flex">
+                <div class="col-9 d-flex w-100">
                   <div class="col input-bg">
                     <input class="form-control number-code" type="number"
                            v-model="good.changeDetailsType.stageChangeCode" />
@@ -269,7 +269,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row mt-2">
             <div class="col-9 d-flex">
               <div class="col-9 d-flex">
                 <div class="col input-bg">
