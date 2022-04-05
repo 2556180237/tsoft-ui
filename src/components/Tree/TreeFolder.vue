@@ -17,7 +17,7 @@
       <div class="file-content"
            :class="{'content-open': folder.settings.isOpen}"
       >
-        <tree-folder @changeTitle2="event" :tree-data="folder" v-show="folder.settings.isOpen"/>
+        <tree-folder @changeTitle2="event(folderName)" :tree-data="folder" v-show="folder.settings.isOpen"/>
       </div>
     </div>
     <tree-file
@@ -43,7 +43,7 @@ export default {
   },
   data() {
     return {
-      info: '',
+      info: null,
     }
   },
   methods: {
@@ -54,9 +54,9 @@ export default {
             !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
-    event(){
-      alert('event - ' + this.info)
-      this.$emit('changeTitle3', this.info);
+    event(value){
+      alert('event - ' + value)
+      this.$emit('changeTitle2', value);
     },
     getRegisters(name) {
       this.info = name;

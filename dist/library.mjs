@@ -302,7 +302,7 @@ var script$a = {
   },
   data() {
     return {
-      info: '',
+      info: null,
     }
   },
   methods: {
@@ -313,9 +313,9 @@ var script$a = {
             !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
-    event(){
-      alert('event - ' + this.info);
-      this.$emit('changeTitle3', this.info);
+    event(value){
+      alert('event - ' + value);
+      this.$emit('changeTitle2', value);
     },
     getRegisters(name) {
       this.info = name;
@@ -365,7 +365,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           class: normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
           withDirectives(createVNode(_component_tree_folder, {
-            onChangeTitle2: $options.event,
+            onChangeTitle2: $event => ($options.event(folderName)),
             "tree-data": folder
           }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
             [vShow, folder.settings.isOpen]
