@@ -294,26 +294,33 @@ script$b.__file = "src/components/Tree/TreeFile.vue";
 var script$a = {
   name: "TreeFolder",
   components: {
-    TreeFile: script$b,
+    TreeFile: script$b
   },
   props: {
     treeData: {
-      required: true,
-    },
-  },
-  data() {
-    return {
-      dataFiles: this.treeData,
-    };
+      type: Object,
+      required: false
+    }
   },
   methods: {
     toggle(name) {
-      this.dataFiles.folders[name].isOpen
-        ? (this.dataFiles.folders[name].isOpen =
-            !this.dataFiles.folders[name].isOpen)
-        : (this.dataFiles.folders[name].isOpen = true);
+      console.log(this.treeData);
+      this.treeData.folders[name].settings.isOpen
+        ? (this.treeData.folders[name].settings.isOpen =
+            !this.treeData.folders[name].settings.isOpen)
+        : (this.treeData.folders[name].settings.isOpen = true);
     },
+    getRegisters(name) {
+      if(this.treeData.folders[name].settings.isLink) {
+        alert(1);
+      } else {
+        alert(2);
+      }
+    }
   },
+  mounted() {
+    // console.log(this.treeData.settings);
+  }
 };
 
 const _withScopeId$2 = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
@@ -321,36 +328,39 @@ const _hoisted_1$9 = { class: "folder-row" };
 const _hoisted_2$9 = { class: "folder-container" };
 const _hoisted_3$7 = ["onClick"];
 const _hoisted_4$7 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
-const _hoisted_5$7 = { class: "folder-name" };
+const _hoisted_5$7 = ["onClick"];
 
 function render$a(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = vue.resolveComponent("tree-folder", true);
   const _component_tree_file = vue.resolveComponent("tree-file");
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$9, [
-    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.dataFiles.folders, (children, folderName) => {
+    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(this.treeData.folders, (folder, folderName) => {
       return (vue.openBlock(), vue.createElementBlock("div", {
         class: "folder",
         key: folderName
       }, [
         vue.createElementVNode("div", _hoisted_2$9, [
           vue.createElementVNode("i", {
-            class: vue.normalizeClass(["fa-solid fa-angle-right", {
-            'down-rotate': children.isOpen,
-          }]),
+            class: vue.normalizeClass(["fa-solid fa-angle-right", {'down-rotate': folder.settings.isOpen}]),
             onClick: $event => ($options.toggle(folderName))
           }, null, 10 /* CLASS, PROPS */, _hoisted_3$7),
           _hoisted_4$7,
-          vue.createElementVNode("span", _hoisted_5$7, vue.toDisplayString(folderName), 1 /* TEXT */)
+          vue.createElementVNode("span", {
+            class: "folder-name",
+            onClick: $event => ($options.getRegisters(folderName))
+          }, vue.toDisplayString(folderName), 9 /* TEXT, PROPS */, _hoisted_5$7)
         ]),
         vue.createElementVNode("div", {
-          class: vue.normalizeClass(["file-content", { 'content-open': children.isOpen }])
+          class: vue.normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
-          vue.createVNode(_component_tree_folder, { treeData: children }, null, 8 /* PROPS */, ["treeData"])
+          vue.withDirectives(vue.createVNode(_component_tree_folder, { "tree-data": folder }, null, 8 /* PROPS */, ["tree-data"]), [
+            [vue.vShow, folder.settings.isOpen]
+          ])
         ], 2 /* CLASS */)
       ]))
     }), 128 /* KEYED_FRAGMENT */)),
-    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.dataFiles.files, (filename, filetype) => {
+    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(this.treeData.files, (filename, filetype) => {
       return (vue.openBlock(), vue.createBlock(_component_tree_file, {
         filename: filename,
         key: filetype
@@ -359,7 +369,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$4 = "\n.toggle-icon[data-v-61a6cc5d] {\r\n  height: 16px;\r\n  width: 8px;\r\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\r\n  padding-left: 21px;\r\n  margin-right: -20px;\r\n  height: 0px;\r\n  overflow: unset;\r\n  opacity: 0;\r\n  transition: 0s;\n}\n.content-open[data-v-61a6cc5d] {\r\n  height: fit-content;\r\n  overflow: unset;\r\n  opacity: 1;\r\n  transition: 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\r\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\r\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\r\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\r\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  color: rgb(190, 190, 190);\r\n  margin-right: 7px;\r\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  transition: 0.15s;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\r\n  color: #e67926;\r\n  margin-right: 7px;\n}\r\n";
+var css_248z$4 = "\n.toggle-icon[data-v-61a6cc5d] {\r\n  height: 16px;\r\n  width: 8px;\r\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\r\n  padding-left: 21px;\r\n  margin-right: -20px;\r\n  height: 0;\r\n  overflow: unset;\r\n  opacity: 0;\r\n  transition: all 0s;\n}\n.content-open[data-v-61a6cc5d] {\r\n  height: fit-content;\r\n  overflow: unset;\r\n  opacity: 1;\r\n  transition: all 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\r\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\r\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\r\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\r\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  color: rgb(190, 190, 190);\r\n  margin-right: 7px;\r\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  transition: 0.15s;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\r\n  color: #e67926;\r\n  margin-right: 7px;\n}\r\n";
 styleInject(css_248z$4);
 
 script$a.render = render$a;
@@ -412,7 +422,7 @@ function render$8(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$3 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: auto;\n}\r\n";
+var css_248z$3 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n  height: 685px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: auto;\r\n  height: 100%;\n}\r\n";
 styleInject(css_248z$3);
 
 script$8.render = render$8;
@@ -5543,7 +5553,7 @@ var script$3 = {
       isOrdersOpen: false,
       isDocumentOpen: false
     };
-  },
+  }
 };
 
 const _hoisted_1$3 = { class: "forms" };
