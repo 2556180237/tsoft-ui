@@ -394,8 +394,8 @@ var script$9 = {
     },
   },
   methods:{
-    event(value) {
-      this.$emit('changeTitle1', value);
+    passEvent(value) {
+      this.$emit('changeTitle1', 'yapp');
     }
   }
 };
@@ -403,10 +403,13 @@ var script$9 = {
 function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = resolveComponent("tree-folder");
 
-  return (openBlock(), createBlock(_component_tree_folder, {
-    onChangeTitle2: _cache[0] || (_cache[0] = $event => ($options.event($event))),
-    "tree-data": $props.treeData
-  }, null, 8 /* PROPS */, ["tree-data"]))
+  return (openBlock(), createElementBlock(Fragment, null, [
+    createElementVNode("button", {
+      type: "button",
+      onClick: _cache[0] || (_cache[0] = (...args) => ($options.passEvent && $options.passEvent(...args)))
+    }, " Update me"),
+    createVNode(_component_tree_folder, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"])
+  ], 64 /* STABLE_FRAGMENT */))
 }
 
 script$9.render = render$9;

@@ -1,5 +1,6 @@
 <template>
-  <tree-folder @changeTitle2="event($event)" :tree-data="treeData" />
+  <button type="button" @click='passEvent'> Update me</button>
+  <tree-folder :tree-data="treeData" />
 </template>
 
 <script>
@@ -15,8 +16,8 @@ export default {
     },
   },
   methods:{
-    event(value) {
-      this.$emit('changeTitle1', value)
+    passEvent() {
+      this.$emit('changeTitle1', 'yapp')
     }
   }
 };
