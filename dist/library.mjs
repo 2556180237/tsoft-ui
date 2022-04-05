@@ -299,7 +299,10 @@ var script$a = {
       type: Object,
       required: false
     },
-    someProps: ''
+    someProps: {
+      type: Object,
+      required: false
+    },
   },
   data() {
     return {
@@ -316,12 +319,8 @@ var script$a = {
     },
     getRegisters(name) {
       if(this.treeData.folders[name].settings.isLink) {
-        this.$emit('getData', {
-          info: name,
-        });
-        alert('done');
-        console.log(this.info);
-        console.log(name);
+        this.treeData.folders[name].name = name;
+        alert(this.treeData.folders[name].name);
       } else {
         alert(2);
       }
