@@ -2,8 +2,13 @@
   <!--Region Modal -->
   <div class="mod-container" v-show="turn">
     <div class="mod-block">
-      <div class="mod-header">
+      <div class="mod-header d-flex justify-content-around">
         <h1>Заголовок</h1>
+        <div class="esc-btn">
+          <button class="btn close-modal-button" type="button" @click="$emit('close')">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
       </div>
       <div class="mod-body" >
         <div class="img-block" style="height: fit-content;
@@ -12,7 +17,7 @@ width: fit-content; padding: 60px; border: 2px gray; margin: 0 auto">
         </div>
       </div>
       <div class="mod-footer">
-        <div class=" px-4">
+        <div class="px-4 download-block">
           <button class="btn" type="button">Загрузить</button>
         </div>
         <div class="">
@@ -21,14 +26,6 @@ width: fit-content; padding: 60px; border: 2px gray; margin: 0 auto">
       </div>
     </div>
     <div class="mod-content">
-      <div class="esc-btn" style="position: absolute; top: 0; right: 30px">
-        <button class="btn p-0" type="button" style=" color: gray; border-radius: 10px" @click="$emit('close')">
-          <i class="fa-solid fa-xmark" style="font-size: 50px;" ></i>
-        </button>
-        <p style="color: gray; width: fit-content; margin: 0 auto; font-weight: bold">
-          ESC
-        </p>
-      </div>
     </div>
   </div>
 
@@ -64,7 +61,7 @@ export default {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: white;
     opacity: 0.9  ;
     z-index: 5;
   }
@@ -75,7 +72,7 @@ export default {
     width: 500px;
     opacity: 1;
     z-index: 11;
-    box-shadow: 4px 4px 10px 0 black;
+    box-shadow: 4px 4px 10px 0 #b3b3b3;
     border-radius: 10px;
     overflow: auto;
   }
@@ -93,8 +90,54 @@ export default {
     height: 50px;
   }
 
+  .esc-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  .close-modal-button {
+    color: white;
+    border-radius: 14px;
+    width: 30px;
+    background: lightgray;
+    height: 29px;
+    padding: 4px;
+    box-shadow: unset;
+  }
+
+  .close-modal-button:hover {
+    background-color: orange;
+    color: green;
+  }
+
+  .close-modal-button .fa-xmark {
+    font-size: 20px;
+  }
+
   .mod-body {
   }
   .mod-footer {
+  }
+
+  .download-block {
+    text-align: center;
+  }
+
+  .download-block .btn {
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px 6px 0 #818181;
+    font-weight: bold;
+  }
+
+  .download-block .btn:hover {
+    color: orange;
+    /*font-weight: bold;*/
+    background-color: white;
+    box-shadow: 2px 2px 6px 0 #9b9b9b;
+    transition: 0.3s;
   }
 </style>
