@@ -319,11 +319,11 @@ var script$a = {
     getRegisters(name) {
       if(this.treeData.folders[name].settings.isLink) {
         this.$emit('getData', {
-          info: Object.keys(this.treeData.folders[name])[0],
+          info: Object.keys(this.treeData.folders[name].folders)[0],
         });
         alert('done');
         console.log(this.info);
-        console.log(Object.keys(this.treeData.folders[name])[0]);
+        console.log(Object.keys(this.treeData.folders[name].folders)[0]);
       } else {
         alert(2);
       }
