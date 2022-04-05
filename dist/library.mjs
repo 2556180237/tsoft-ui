@@ -313,6 +313,9 @@ var script$a = {
             !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
+    event(){
+      this.$emit('changeTitle3', this.info);
+    },
     getRegisters(name) {
       this.info = name;
       if(this.treeData.folders[name].settings.isLink) {
@@ -360,7 +363,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
         createElementVNode("div", {
           class: normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
-          withDirectives(createVNode(_component_tree_folder, { "tree-data": folder }, null, 8 /* PROPS */, ["tree-data"]), [
+          withDirectives(createVNode(_component_tree_folder, {
+            onChangeTitle3: _cache[0] || (_cache[0] = $event => ($options.event($event))),
+            "tree-data": folder
+          }, null, 8 /* PROPS */, ["tree-data"]), [
             [vShow, folder.settings.isOpen]
           ])
         ], 2 /* CLASS */)
@@ -396,7 +402,8 @@ var script$9 = {
     passEvent() {
       this.$emit('changeTitle1', 'yapp');
     },
-    event(value){
+    newEvent(value){
+      alert(value);
       this.$emit('changeTitle1', value);
     }
   }
@@ -411,7 +418,7 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
       onClick: _cache[0] || (_cache[0] = (...args) => ($options.passEvent && $options.passEvent(...args)))
     }, " Update me"),
     createVNode(_component_tree_folder, {
-      onChangeTitle2: _cache[1] || (_cache[1] = $event => ($options.event($event))),
+      onChangeTitle2: _cache[1] || (_cache[1] = $event => ($options.newEvent($event))),
       "tree-data": $props.treeData
     }, null, 8 /* PROPS */, ["tree-data"])
   ], 64 /* STABLE_FRAGMENT */))
