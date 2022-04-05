@@ -17,7 +17,7 @@
       <div class="file-content"
            :class="{'content-open': folder.settings.isOpen}"
       >
-        <tree-folder @changeTitle3="event($event)" :tree-data="folder" v-show="folder.settings.isOpen"/>
+        <tree-folder @changeTitle2="getRegisters(folderName)" :tree-data="folder" v-show="folder.settings.isOpen"/>
       </div>
     </div>
     <tree-file
