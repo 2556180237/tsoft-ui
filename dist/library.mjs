@@ -308,25 +308,19 @@ var script$a = {
   },
   methods: {
     toggle(name) {
-      console.log(name);
+      // console.log(name);
       this.treeData.folders[name].settings.isOpen
         ? (this.treeData.folders[name].settings.isOpen =
             !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
     thisEvent(value){
-      alert('event - ' + value);
+      // alert('event - ' + value)
       this.$emit('changeTitle2', value);
     },
     getRegisters(name) {
-      this.info = name;
-      if(this.treeData.folders[name].settings.isLink) {
-        // alert(name);
-        this.$emit('changeTitle2', this.info);
-      } else {
-        this.$emit('changeTitle2', this.info);
-        // alert(name);
-      }
+      alert(name);
+      if(this.treeData.folders[name].settings.isLink) ;
     }
   },
   mounted() {
@@ -365,10 +359,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
         createElementVNode("div", {
           class: normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
-          withDirectives(createVNode(_component_tree_folder, {
-            onChangeTitle2: $event => ($options.thisEvent(folderName)),
-            "tree-data": folder
-          }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
+          withDirectives(createVNode(_component_tree_folder, { "tree-data": folder }, null, 8 /* PROPS */, ["tree-data"]), [
             [vShow, folder.settings.isOpen]
           ])
         ], 2 /* CLASS */)
