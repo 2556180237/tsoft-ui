@@ -364,9 +364,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           class: normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
           withDirectives(createVNode(_component_tree_folder, {
-            onChangeTitle2: $event => ($options.getRegisters(folderName)),
+            onChangeTitle2: _cache[0] || (_cache[0] = $event => ($options.getRegisters($data.info))),
             "tree-data": folder
-          }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
+          }, null, 8 /* PROPS */, ["tree-data"]), [
             [vShow, folder.settings.isOpen]
           ])
         ], 2 /* CLASS */)
