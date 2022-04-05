@@ -396,12 +396,23 @@ var script$9 = {
       required: true,
     },
   },
+  methods:{
+    passEvent() {
+      this.$emit('changeTitle1', 'yapp');
+    }
+  }
 };
 
 function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = vue.resolveComponent("tree-folder");
 
-  return (vue.openBlock(), vue.createBlock(_component_tree_folder, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"]))
+  return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
+    vue.createElementVNode("button", {
+      type: "button",
+      onClick: _cache[0] || (_cache[0] = (...args) => ($options.passEvent && $options.passEvent(...args)))
+    }, " Update me"),
+    vue.createVNode(_component_tree_folder, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"])
+  ], 64 /* STABLE_FRAGMENT */))
 }
 
 script$9.render = render$9;
@@ -418,9 +429,8 @@ var script$8 = {
     },
   },
   methods:{
-    passEvent()
-    {
-      this.$emit('changeTitle','Awesome');
+    event(value) {
+      this.$emit('changeTitle', value);
     }
   }
 };
@@ -431,17 +441,14 @@ const _hoisted_2$8 = { class: "file-system" };
 function render$8(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_file_system = vue.resolveComponent("tree-file-system");
 
-  return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
-    vue.createElementVNode("button", {
-      type: "button",
-      onClick: _cache[0] || (_cache[0] = (...args) => ($options.passEvent && $options.passEvent(...args)))
-    }, " Update me"),
-    vue.createElementVNode("div", _hoisted_1$8, [
-      vue.createElementVNode("div", _hoisted_2$8, [
-        vue.createVNode(_component_tree_file_system, { "tree-data": $props.treeData }, null, 8 /* PROPS */, ["tree-data"])
-      ])
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
+    vue.createElementVNode("div", _hoisted_2$8, [
+      vue.createVNode(_component_tree_file_system, {
+        onChangeTitle1: _cache[0] || (_cache[0] = $event => ($options.event($event))),
+        "tree-data": $props.treeData
+      }, null, 8 /* PROPS */, ["tree-data"])
     ])
-  ], 64 /* STABLE_FRAGMENT */))
+  ]))
 }
 
 var css_248z$3 = "\n.menu-sitemap-tree[data-v-647b20c4] {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  height: 685px;\n}\n.file-system[data-v-647b20c4] {\n  background: rgb(253, 253, 253);\n  border: 1px solid #ccc;\n  padding: 10px;\n  overflow: auto;\n  height: 100%;\n}\n";
