@@ -20,7 +20,6 @@ export default {
       this.$emit('changeTitle1', 'yapp')
     },
     newEvent(value){
-      alert(value)
       this.$emit('changeTitle1', value)
     }
   }
