@@ -1,4 +1,5 @@
 <template>
+  <button type="button" @click='passEvent'> Update me</button>
   <div class="menu-sitemap-tree">
     <div class="file-system">
       <tree-file-system :tree-data="treeData" />
@@ -19,6 +20,12 @@ export default {
       required: true,
     },
   },
+  methods:{
+    passEvent()
+    {
+      this.$emit('changeTitle','Awesome')
+    }
+  }
 };
 </script>
 
