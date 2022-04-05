@@ -296,6 +296,7 @@ var script$a = {
   components: {
     TreeFile: script$b
   },
+  emits: ["changeTitle2"],
   props: {
     treeData: {
       type: Object,
@@ -315,9 +316,9 @@ var script$a = {
             !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
-    event(value){
+    thisEvent(value){
       alert('event - ' + value);
-      this.$emit('changeTitle3', value);
+      this.$emit('changeTitle2', value);
     },
     getRegisters(name) {
       this.info = name;
@@ -367,7 +368,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           class: vue.normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
           vue.withDirectives(vue.createVNode(_component_tree_folder, {
-            onChangeTitle2: $event => ($options.event(folderName)),
+            onChangeTitle2: $event => ($options.thisEvent(folderName)),
             "tree-data": folder
           }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
             [vue.vShow, folder.settings.isOpen]
@@ -435,6 +436,7 @@ var script$8 = {
   components: {
     TreeFileSystem: script$9,
   },
+  emits: ["changeTitle1"],
   props: {
     treeData: {
       required: true,

@@ -14,6 +14,7 @@ export default {
   components: {
     TreeFileSystem,
   },
+  emits: ["changeTitle1"],
   props: {
     treeData: {
       required: true,
