@@ -39,6 +39,12 @@ export default {
     treeData: {
       type: Object,
       required: false
+    },
+    data: ''
+  },
+  data() {
+    return {
+      data: '',
     }
   },
   methods: {
@@ -51,7 +57,10 @@ export default {
     },
     getRegisters(name) {
       if(this.treeData.folders[name].settings.isLink) {
-        alert(1);
+        this.$emit('getData', {
+          data: this.treeData.folders[name],
+        })
+        alert('done');
       } else {
         alert(2);
       }
