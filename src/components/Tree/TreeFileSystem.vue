@@ -16,9 +16,9 @@ export default {
     },
   },
   methods:{
-    // passEvent() {
-    //   this.$emit('changeTitle1', 'yapp')
-    // },
+    passEvent() {
+      this.$emit('changeTitle1', 'yapp')
+    },
     event(value){
       this.$emit('changeTitle1', value)
     }

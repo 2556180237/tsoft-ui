@@ -393,9 +393,9 @@ var script$9 = {
     },
   },
   methods:{
-    // passEvent() {
-    //   this.$emit('changeTitle1', 'yapp')
-    // },
+    passEvent() {
+      this.$emit('changeTitle1', 'yapp');
+    },
     event(value){
       this.$emit('changeTitle1', value);
     }
@@ -408,7 +408,7 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock(Fragment, null, [
     createElementVNode("button", {
       type: "button",
-      onClick: _cache[0] || (_cache[0] = (...args) => (_ctx.passEvent && _ctx.passEvent(...args)))
+      onClick: _cache[0] || (_cache[0] = (...args) => ($options.passEvent && $options.passEvent(...args)))
     }, " Update me"),
     createVNode(_component_tree_folder, {
       onChangeTitle2: _cache[1] || (_cache[1] = $event => ($options.event($event))),
