@@ -367,9 +367,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           class: vue.normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
           vue.withDirectives(vue.createVNode(_component_tree_folder, {
-            onChangeTitle3: $event => ($options.event(folderName)),
+            onChangeTitle2: $event => ($options.event(folderName)),
             "tree-data": folder
-          }, null, 8 /* PROPS */, ["onChangeTitle3", "tree-data"]), [
+          }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
             [vue.vShow, folder.settings.isOpen]
           ])
         ], 2 /* CLASS */)
