@@ -309,7 +309,7 @@ var script$a = {
   },
   methods: {
     toggle(name) {
-      console.log(this.treeData);
+      console.log(name);
       this.treeData.folders[name].settings.isOpen
         ? (this.treeData.folders[name].settings.isOpen =
             !this.treeData.folders[name].settings.isOpen)
@@ -317,16 +317,16 @@ var script$a = {
     },
     event(value){
       alert('event - ' + value);
-      this.$emit('changeTitle2', value);
+      this.$emit('changeTitle3', value);
     },
     getRegisters(name) {
       this.info = name;
       if(this.treeData.folders[name].settings.isLink) {
-        alert(name);
+        // alert(name);
         this.$emit('changeTitle2', this.info);
       } else {
         this.$emit('changeTitle2', this.info);
-        alert(name);
+        // alert(name);
       }
     }
   },
@@ -367,9 +367,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           class: vue.normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
           vue.withDirectives(vue.createVNode(_component_tree_folder, {
-            onChangeTitle2: $event => ($options.event(folderName)),
+            onChangeTitle3: $event => ($options.event(folderName)),
             "tree-data": folder
-          }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
+          }, null, 8 /* PROPS */, ["onChangeTitle3", "tree-data"]), [
             [vue.vShow, folder.settings.isOpen]
           ])
         ], 2 /* CLASS */)
