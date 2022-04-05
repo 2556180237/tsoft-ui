@@ -40,11 +40,11 @@ export default {
       type: Object,
       required: false
     },
-    data: ''
+    someProps: ''
   },
   data() {
     return {
-      data: '',
+      info: '',
     }
   },
   methods: {
@@ -58,10 +58,11 @@ export default {
     getRegisters(name) {
       if(this.treeData.folders[name].settings.isLink) {
         this.$emit('getData', {
-          data: Object.keys(this.treeData.folders[name])[0],
+          info: Object.keys(this.treeData.folders[name])[0],
         })
         alert('done');
-        alert(this.data);
+        console.log(this.info);
+        console.log(Object.keys(this.treeData.folders[name])[0]);
       } else {
         alert(2);
       }
