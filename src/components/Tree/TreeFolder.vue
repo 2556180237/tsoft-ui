@@ -58,9 +58,10 @@ export default {
     getRegisters(name) {
       if(this.treeData.folders[name].settings.isLink) {
         this.$emit('getData', {
-          data: this.treeData.folders[name],
+          data: Object.keys(this.treeData.folders[name])[0],
         })
         alert('done');
+        alert(this.data);
       } else {
         alert(2);
       }
