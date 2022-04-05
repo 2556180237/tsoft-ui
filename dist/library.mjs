@@ -299,10 +299,6 @@ var script$a = {
       type: Object,
       required: false
     },
-    someProps: {
-      type: Object,
-      required: false
-    },
   },
   data() {
     return {
@@ -318,13 +314,13 @@ var script$a = {
         : (this.treeData.folders[name].settings.isOpen = true);
     },
     getRegisters(name) {
+      this.info = name;
       if(this.treeData.folders[name].settings.isLink) {
         alert(name);
-        this.$emit('changeTitle2', name);
+        this.$emit('changeTitle2', this.info);
       } else {
-        this.$emit('changeTitle2', name);
+        this.$emit('changeTitle2', this.info);
         alert(name);
-        alert(2);
       }
     }
   },
