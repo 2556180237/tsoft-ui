@@ -107,8 +107,8 @@ export default {
   }
 
   .close-modal-button:hover {
-    background-color: orange;
-    color: green;
+    background-color: #E67926;
+    color: #0D6247;
   }
 
   .close-modal-button .fa-xmark {
@@ -127,14 +127,14 @@ export default {
   .download-block .btn {
     border: unset;
     border-radius: 5px;
-    background-color: green;
+    background-color: #0D6247;
     color: white;
     box-shadow: 2px 2px 6px 0 #818181;
     font-weight: bold;
   }
 
   .download-block .btn:hover {
-    color: orange;
+    color: #E67926;
     /*font-weight: bold;*/
     background-color: white;
     box-shadow: 2px 2px 6px 0 #9b9b9b;

@@ -179,11 +179,6 @@ li a {
   font-size: 14px;
 }
 
-.sidebar-prods.active {
-  color: orange;
-  background-color: green;
-}
-
 /*Стили текстовых инпутов*/
 .form-control {
   padding: 0 5px 0 3px;
