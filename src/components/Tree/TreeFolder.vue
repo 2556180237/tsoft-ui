@@ -60,8 +60,7 @@ export default {
     },
     getRegisters(name) {
       if(this.treeData.folders[name].settings.isLink) {
-        this.treeData.folders[name].name = name;
-        alert(this.treeData.folders[name].name)
+        this.$emit('changeTitle2', name)
       } else {
         alert(2);
       }
