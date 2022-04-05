@@ -314,6 +314,7 @@ var script$a = {
         : (this.treeData.folders[name].settings.isOpen = true);
     },
     event(){
+      alert('event - ' + this.info);
       this.$emit('changeTitle3', this.info);
     },
     getRegisters(name) {
@@ -364,9 +365,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           class: normalizeClass(["file-content", {'content-open': folder.settings.isOpen}])
         }, [
           withDirectives(createVNode(_component_tree_folder, {
-            onChangeTitle2: _cache[0] || (_cache[0] = $event => ($options.getRegisters($data.info))),
+            onChangeTitle2: $options.event,
             "tree-data": folder
-          }, null, 8 /* PROPS */, ["tree-data"]), [
+          }, null, 8 /* PROPS */, ["onChangeTitle2", "tree-data"]), [
             [vShow, folder.settings.isOpen]
           ])
         ], 2 /* CLASS */)
