@@ -12,12 +12,15 @@
           </div>
 
           <div class="mod-body">
-            <h1>Тут будет компонент</h1>
+              <tsoft-preloader v-if="this.loading"/>
+            <div>
+              <h1>Тут будет компонент</h1>
+            </div>
           </div>
           <div class="mod-footer">
             <div class="footer-button">
-              <button class="btn cancel" type="button">Отменить</button>
-              <button class="btn accept" type="button">Применить</button>
+              <button class="btn cancel" type="button" :disabled="this.loading">Отменить</button>
+              <button class="btn accept" type="button" :disabled="this.loading">Применить</button>
             </div>
             <div class="footer-label">
               <span class="mod-title">Заключение</span>
@@ -33,6 +36,11 @@
 <script>
 export default {
   name: "TsoftModalWindow",
+  data() {
+    return {
+      loading: true,
+    }
+  },
   methods: {
     closeModal() {
       this.$emit("close");
@@ -50,6 +58,9 @@ export default {
   },
   mounted() {
     console.log(this.turn);
+    // setTimeout(() => {
+    //   this.loading = false
+    // }, 2000)
   }
 };
 </script>
@@ -80,6 +91,7 @@ export default {
   position: relative;
   margin: 0 auto auto auto;
   background-color: white;
+  min-width: 400px;
   width: fit-content;
   height: fit-content;
   max-height: 1000px;
@@ -134,6 +146,8 @@ export default {
 
 .mod-body {
   margin: 10px;
+  position: relative;
+  min-height: 80px;
 }
 
 .mod-footer {
