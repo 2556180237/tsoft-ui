@@ -12,12 +12,12 @@
           :class="{'down-rotate': folder.settings.isOpen}"
         />
         <i class="fas fa-folder folder-icon" />
-        <span class="folder-name" @click="getRegisters(folderName)">{{ folderName }}</span>
+        <span class="folder-name" @click="sendName(folderName)">{{ folderName }}</span>
       </div>
       <div class="file-content"
            :class="{'content-open': folder.settings.isOpen}"
       >
-        <tree-folder @changeTitle2="thisEvent($event)" :tree-data="folder" v-show="folder.settings.isOpen"/>
+        <tree-folder :tree-data="folder" v-show="folder.settings.isOpen" @getName="getName"/>
       </div>
     </div>
     <tree-file
@@ -35,44 +35,26 @@ export default {
   components: {
     TreeFile
   },
-  emits: ["changeTitle2"],
   props: {
     treeData: {
       type: Object,
       required: false
-    },
-  },
-  data() {
-    return {
-      info: null,
     }
   },
   methods: {
     toggle(name) {
-      // console.log(name);
       this.treeData.folders[name].settings.isOpen
         ? (this.treeData.folders[name].settings.isOpen =
             !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
-    thisEvent(value){
-      this.$emit('changeTitle1', value)
+    sendName(name) {
+      this.$emit('getName', name);
     },
-    getRegisters(name) {
-      alert(name);
-      this.$emit('changeTitle2', name);
-      if(this.treeData.folders[name].settings.isLink) {
-        // alert(name);
-        // this.$emit('changeTitle2', this.info);
-      } else {
-        // this.$emit('changeTitle2', this.info);
-        // alert(name);
-      }
+    getName(name) {
+      this.$emit('getName', name)
     }
   },
-  mounted() {
-    // console.log(this.treeData.settings);
-  }
 };
 </script>
 
