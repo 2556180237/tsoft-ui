@@ -1,35 +1,33 @@
 <template>
   <!--Region Modal -->
-  <div class="mod-container" v-show="turn">
-    <div class="mod-block">
-      <div class="mod-header d-flex justify-content-around">
-        <h1>Заголовок</h1>
-        <div class="esc-btn">
-          <button class="btn close-modal-button" type="button" @click="$emit('close')">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+  <div class="modal-window" v-show="turn" :class="{open: turn}">
+    <div class="wrapper d-flex">
+      <div class="mod-container">
+        <div class="mod-block">
+          <div class="mod-header d-flex">
+            <span class="mod-title">Заголовок</span>
+            <div class="btn close-modal-button" type="button" @click="$emit('close')" @keyup.esc="$emit('close')">
+              <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+          </div>
+
+          <div class="mod-body">
+            <h1>Тут будет компонент</h1>
+          </div>
+          <div class="mod-footer">
+            <div class="footer-button">
+              <button class="btn cancel" type="button">Отменить</button>
+              <button class="btn accept" type="button">Применить</button>
+            </div>
+            <div class="footer-label">
+              <span class="mod-title">Заключение</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="mod-body" >
-        <div class="img-block" style="height: fit-content;
-width: fit-content; padding: 60px; border: 2px gray; margin: 0 auto">
-          <i class="fa-regular fa-rectangle-list" style="font-size: 100px"></i>
-        </div>
-      </div>
-      <div class="mod-footer">
-        <div class="px-4 download-block">
-          <button class="btn" type="button">Загрузить</button>
-        </div>
-        <div class="">
-          <h4>Заключение</h4>
-        </div>
-      </div>
-    </div>
-    <div class="mod-content">
     </div>
   </div>
-
-  <!--        endregion-->
+  <!-- endregion -->
 </template>
 
 <script>
@@ -37,107 +35,151 @@ export default {
   name: "TsoftModalWindow",
   methods: {
     closeModal() {
-      this.$emit('close');
+      this.$emit("close");
     }
   },
   props: {
     turn: {
       type: Boolean,
-      required: true,
-    },
-    component: {
-      required: false,
+      required: true
     }
+    // component: {
+    //   type: String,
+    //   required: false
+    // }
   },
   mounted() {
     console.log(this.turn);
   }
-}
+};
 </script>
 <style scoped>
-  .mod-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-    opacity: 0.9  ;
-    z-index: 5;
-  }
-  .mod-block {
-    position: relative;
-    margin: 0 auto auto auto;
-    background-color: white;
-    width: 500px;
-    opacity: 1;
-    z-index: 11;
-    box-shadow: 4px 4px 10px 0 #b3b3b3;
-    border-radius: 10px;
-    overflow: auto;
-  }
 
-  .mod-container {
-    position:fixed;
-    margin: 63px auto 0 407px;
-    background-color: white;
-    width: 500px;
-    opacity: 1;
-    z-index: 10;
-  }
+.modal-window {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+}
 
-  .mod-header {
-    height: 50px;
-  }
+.modal-window.open {
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
 
-  .esc-btn {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-  }
+.wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
 
-  .close-modal-button {
-    color: white;
-    border-radius: 14px;
-    width: 30px;
-    background: lightgray;
-    height: 29px;
-    padding: 4px;
-    box-shadow: unset;
-  }
+.mod-block {
+  position: relative;
+  margin: 0 auto auto auto;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  max-height: 1000px;
+  z-index: 11;
+  box-shadow: 4px 4px 10px 0 #343434;
+  border-radius: 4px;
+  overflow: auto;
+}
 
-  .close-modal-button:hover {
-    background-color: #E67926;
-    color: #0D6247;
-  }
+.mod-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: grey;
+}
 
-  .close-modal-button .fa-xmark {
-    font-size: 20px;
-  }
+.mod-container {
+  background-color: white;
+  opacity: 1;
+  z-index: 10;
+  margin: auto;
+  border-radius: 4px;
+}
 
-  .mod-body {
-  }
-  .mod-footer {
-  }
+.mod-header {
+  margin: 10px;
+  border-bottom: 1px solid #c4c4c4;
+  justify-content: space-between;
+}
 
-  .download-block {
-    text-align: center;
-  }
+.close-modal-button {
+  color: white;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  background: lightgray;
+  padding: 4px;
+  box-shadow: unset;
+}
 
-  .download-block .btn {
-    border: unset;
-    border-radius: 5px;
-    background-color: #0D6247;
-    color: white;
-    box-shadow: 2px 2px 6px 0 #818181;
-    font-weight: bold;
-  }
+.close-modal-button:hover {
+  background-color: #0D6247;
+  color: #ffffff;
+}
 
-  .download-block .btn:hover {
-    color: #E67926;
-    /*font-weight: bold;*/
-    background-color: white;
-    box-shadow: 2px 2px 6px 0 #9b9b9b;
-    transition: 0.3s;
-  }
+.close-modal-button .fa-xmark {
+  font-size: 12px;
+}
+
+.xmark {
+  margin-top: -7px;
+}
+
+.mod-body {
+  margin: 10px;
+}
+
+.mod-footer {
+  display: contents;
+}
+
+.footer-label {
+  margin: 10px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer-button {
+  display: flex;
+  justify-content: end;
+}
+
+.footer-button .btn {
+  margin-right: 10px;
+  color: white;
+  box-shadow: 2px 2px 6px 0 #818181;
+  font-weight: bold;
+}
+
+.btn.cancel {
+  background: #E57A26;
+}
+
+.btn.accept {
+  background: #0D6247;
+}
+
+.btn.cancel:hover {
+  color: #E57A26;
+  background: white;
+}
+
+.btn.accept:hover {
+  color: #0D6247;
+  background: white;
+}
+
+.download-block .btn:hover {
+  color: orange;
+  /*font-weight: bold;*/
+  background-color: white;
+  box-shadow: 2px 2px 6px 0 #9b9b9b;
+  transition: 0.3s;
+}
 </style>

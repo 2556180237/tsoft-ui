@@ -148,7 +148,7 @@
           <i class="fa-solid fa-screwdriver-wrench" style="font-size: 20px; color: blue"></i>
         </button>
       </div>
-    <tsoft-modal-window @close="openModal" :turn="showModal"/>
+    <tsoft-modal-window @close="openModal" :turn="showModal" tabindex="0"/>
   </div>
 </template>
 

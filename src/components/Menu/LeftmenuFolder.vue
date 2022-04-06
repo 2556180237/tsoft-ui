@@ -1,28 +1,27 @@
 <template>
   <div class="menu-sitemap-tree">
     <div class="file-system">
-      <tree-file-system @changeTitle1="event($event)" :tree-data="treeData" />
+      <tree-folder :tree-data="treeData" @getName="getName"/>
     </div>
   </div>
 </template>
 
 <script>
-import TreeFileSystem from "../Tree/TreeFileSystem.vue";
+import TreeFolder from "../Tree/TreeFolder.vue";
 
 export default {
   name: "TsoftLeftmenuFolder",
   components: {
-    TreeFileSystem,
+    TreeFolder,
   },
-  emits: ["changeTitle1"],
   props: {
     treeData: {
       required: true,
     },
   },
-  methods:{
-    event(value) {
-      this.$emit('changeTitle', value)
+  methods: {
+    getName(name) {
+      this.$emit('getName', name);
     }
   }
 };
