@@ -1,4 +1,4 @@
-import { openBlock, createElementBlock, resolveComponent, createElementVNode, normalizeClass, Fragment, renderList, toDisplayString, createBlock, withCtx, createTextVNode, pushScopeId, popScopeId, createCommentVNode, createVNode, withDirectives, vShow, vModelText, vModelCheckbox, createStaticVNode, withKeys } from 'vue';
+import { openBlock, createElementBlock, resolveComponent, createElementVNode, normalizeClass, Fragment, renderList, toDisplayString, createBlock, withCtx, createTextVNode, pushScopeId, popScopeId, createCommentVNode, createVNode, withDirectives, vShow, Transition, vModelText, vModelCheckbox, createStaticVNode, withKeys } from 'vue';
 
 var script$g = {
   name: 'InputText'
@@ -386,6 +386,11 @@ var script$9 = {
     getName(name) {
       this.$emit('getName', name);
     }
+  },
+  computed: {
+    folders() {
+      return this.treeData ?? false
+    }
   }
 };
 
@@ -393,19 +398,31 @@ const _hoisted_1$9 = { class: "menu-sitemap-tree" };
 const _hoisted_2$9 = { class: "file-system" };
 
 function render$9(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_tsoft_preloader = resolveComponent("tsoft-preloader");
   const _component_tree_folder = resolveComponent("tree-folder");
 
   return (openBlock(), createElementBlock("div", _hoisted_1$9, [
     createElementVNode("div", _hoisted_2$9, [
-      createVNode(_component_tree_folder, {
-        "tree-data": $props.treeData,
-        onGetName: $options.getName
-      }, null, 8 /* PROPS */, ["tree-data", "onGetName"])
+      createVNode(Transition, {
+        name: "fade",
+        mode: "out-in"
+      }, {
+        default: withCtx(() => [
+          (!$options.folders)
+            ? (openBlock(), createBlock(_component_tsoft_preloader, { key: 0 }))
+            : (openBlock(), createBlock(_component_tree_folder, {
+                key: 1,
+                "tree-data": $props.treeData,
+                onGetName: $options.getName
+              }, null, 8 /* PROPS */, ["tree-data", "onGetName"]))
+        ]),
+        _: 1 /* STABLE */
+      })
     ])
   ]))
 }
 
-var css_248z$4 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n  height: 685px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: auto;\r\n  height: 100%;\n}\r\n";
+var css_248z$4 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n  height: 685px;\r\n  position: sticky;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: auto;\r\n  height: 100%;\n}\r\n";
 styleInject(css_248z$4);
 
 script$9.render = render$9;
@@ -5640,7 +5657,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$2 = "\n.sidebar[data-v-6ebd9650] {\r\n  position: sticky;\r\n  top: 0;\r\n  height: fit-content;\r\n  min-width: 300px;\r\n  margin-top: 10px;\n}\n.form-switch .form-check-input[data-v-6ebd9650] {\r\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")\n}\n.goods-switcher-block[data-v-6ebd9650] {\r\n  padding: 2px 0 0;\r\n  margin: 0 10px;\n}\n.goods-menu-switcher[data-v-6ebd9650] {\r\n  width: 50px;\r\n  background-color: #E67926;\r\n  box-shadow: unset;\r\n  border: unset;\r\n  margin: 0;\n}\n.goods-icon[data-v-6ebd9650] {\r\n  color: gray;\r\n  font-size: 18px;\n}\n.tree-icon[data-v-6ebd9650] {\r\n  color: gray;\r\n  font-size: 18px;\n}\n.goods-menu-switcher[data-v-6ebd9650]:checked {\r\n  background-color: #0D6247;\n}\n.goods-menu-switcher[data-v-6ebd9650]:hover {\r\n  cursor: pointer;\n}\n.goods-icon.active[data-v-6ebd9650] {\r\n  color: #0D6247;\n}\n.tree-icon.active[data-v-6ebd9650] {\r\n  color: #E67926;\n}\nli a[data-v-6ebd9650] {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\r\n";
+var css_248z$2 = "\n.sidebar[data-v-6ebd9650] {\r\n  height: fit-content;\r\n  min-width: 300px;\r\n  margin-top: 10px;\n}\n.form-switch .form-check-input[data-v-6ebd9650] {\r\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")\n}\n.goods-switcher-block[data-v-6ebd9650] {\r\n  padding: 2px 0 0;\r\n  margin: 0 10px;\n}\n.goods-menu-switcher[data-v-6ebd9650] {\r\n  width: 50px;\r\n  background-color: #E67926;\r\n  box-shadow: unset;\r\n  border: unset;\r\n  margin: 0;\n}\n.goods-icon[data-v-6ebd9650] {\r\n  color: gray;\r\n  font-size: 18px;\n}\n.tree-icon[data-v-6ebd9650] {\r\n  color: gray;\r\n  font-size: 18px;\n}\n.goods-menu-switcher[data-v-6ebd9650]:checked {\r\n  background-color: #0D6247;\n}\n.goods-menu-switcher[data-v-6ebd9650]:hover {\r\n  cursor: pointer;\n}\n.goods-icon.active[data-v-6ebd9650] {\r\n  color: #0D6247;\n}\n.tree-icon.active[data-v-6ebd9650] {\r\n  color: #E67926;\n}\nli a[data-v-6ebd9650] {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\r\n";
 styleInject(css_248z$2);
 
 script$3.render = render$3;
@@ -5826,7 +5843,7 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
   ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
 }
 
-var css_248z$1 = "\n.modal-window[data-v-477f0afb] {\r\n  background: rgba(0, 0, 0, 0);\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 997;\n}\n.modal-window.open[data-v-477f0afb] {\r\n  background: rgba(0, 0, 0, 0.4);\r\n  transition: 0.5s;\n}\n.wrapper[data-v-477f0afb] {\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\r\n  position: relative;\r\n  margin: 0 auto auto auto;\r\n  background-color: white;\r\n  min-width: 400px;\r\n  width: fit-content;\r\n  height: fit-content;\r\n  max-height: 1000px;\r\n  z-index: 11;\r\n  box-shadow: 4px 4px 10px 0 #343434;\r\n  border-radius: 4px;\r\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  color: grey;\n}\n.mod-container[data-v-477f0afb] {\r\n  background-color: white;\r\n  opacity: 1;\r\n  z-index: 10;\r\n  margin: auto;\r\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\r\n  margin: 10px;\r\n  border-bottom: 1px solid #c4c4c4;\r\n  justify-content: space-between;\n}\n.close-modal-button[data-v-477f0afb] {\r\n  color: white;\r\n  border-radius: 14px;\r\n  width: 20px;\r\n  height: 20px;\r\n  background: lightgray;\r\n  padding: 4px;\r\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\r\n  background-color: #0D6247;\r\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\r\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\r\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\r\n  margin: 10px;\r\n  position: relative;\r\n  min-height: 80px;\n}\n.mod-footer[data-v-477f0afb] {\r\n  display: contents;\n}\n.footer-label[data-v-477f0afb] {\r\n  margin: 10px;\r\n  border-top: 1px solid #c4c4c4;\n}\n.footer-button[data-v-477f0afb] {\r\n  display: flex;\r\n  justify-content: end;\n}\n.footer-button .btn[data-v-477f0afb] {\r\n  margin-right: 10px;\r\n  color: white;\r\n  box-shadow: 2px 2px 6px 0 #818181;\r\n  font-weight: bold;\n}\n.btn.cancel[data-v-477f0afb] {\r\n  background: #E57A26;\n}\n.btn.accept[data-v-477f0afb] {\r\n  background: #0D6247;\n}\n.btn.cancel[data-v-477f0afb]:hover {\r\n  color: #E57A26;\r\n  background: white;\n}\n.btn.accept[data-v-477f0afb]:hover {\r\n  color: #0D6247;\r\n  background: white;\n}\n.download-block .btn[data-v-477f0afb]:hover {\r\n  color: orange;\r\n  /*font-weight: bold;*/\r\n  background-color: white;\r\n  box-shadow: 2px 2px 6px 0 #9b9b9b;\r\n  transition: 0.3s;\n}\r\n";
+var css_248z$1 = "\n.modal-window[data-v-477f0afb] {\r\n  background: rgba(0, 0, 0, 0);\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 997;\n}\n.modal-window.open[data-v-477f0afb] {\r\n  background: rgba(0, 0, 0, 0.4);\r\n  transition: 0.5s;\n}\n.wrapper[data-v-477f0afb] {\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\r\n  position: relative;\r\n  margin: 0 auto auto auto;\r\n  background-color: white;\r\n  min-width: 400px;\r\n  width: fit-content;\r\n  height: fit-content;\r\n  max-height: 1000px;\r\n  z-index: 11;\r\n  box-shadow: 4px 4px 10px 0 #343434;\r\n  border-radius: 4px;\r\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  color: grey;\n}\n.mod-container[data-v-477f0afb] {\r\n  background-color: white;\r\n  opacity: 1;\r\n  z-index: 10;\r\n  margin: auto;\r\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\r\n  margin: 10px;\r\n  border-bottom: 1px solid #c4c4c4;\r\n  justify-content: space-between;\n}\n.close-modal-button[data-v-477f0afb] {\r\n  color: white;\r\n  border-radius: 14px;\r\n  width: 20px;\r\n  height: 20px;\r\n  background: lightgray;\r\n  padding: 4px;\r\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\r\n  background-color: #0D6247;\r\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\r\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\r\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\r\n  margin: 10px;\r\n  position: relative;\r\n  min-height: 80px  ;\n}\n.mod-footer[data-v-477f0afb] {\r\n  display: contents;\n}\n.footer-label[data-v-477f0afb] {\r\n  margin: 10px;\r\n  border-top: 1px solid #c4c4c4;\n}\n.footer-button[data-v-477f0afb] {\r\n  display: flex;\r\n  justify-content: end;\n}\n.footer-button .btn[data-v-477f0afb] {\r\n  margin-right: 10px;\r\n  color: white;\r\n  box-shadow: 2px 2px 6px 0 #818181;\r\n  font-weight: bold;\n}\n.btn.cancel[data-v-477f0afb] {\r\n  background: #E57A26;\n}\n.btn.accept[data-v-477f0afb] {\r\n  background: #0D6247;\n}\n.btn.cancel[data-v-477f0afb]:hover {\r\n  color: #E57A26;\r\n  background: white;\n}\n.btn.accept[data-v-477f0afb]:hover {\r\n  color: #0D6247;\r\n  background: white;\n}\n.download-block .btn[data-v-477f0afb]:hover {\r\n  color: orange;\r\n  /*font-weight: bold;*/\r\n  background-color: white;\r\n  box-shadow: 2px 2px 6px 0 #9b9b9b;\r\n  transition: 0.3s;\n}\r\n";
 styleInject(css_248z$1);
 
 script$1.render = render$1;
@@ -5835,16 +5852,6 @@ script$1.__file = "src/components/Modal/ModalWindow.vue";
 
 var script = {
   name: 'TsoftPreloader',
-  data() {
-    return {
-      loading: true,
-    };
-  },
-  mounted() {
-  setTimeout(() => {
-    this.loading = false;
-  }, 1000);
-  },
 };
 
 const _hoisted_1 = { class: "preloader-main" };
@@ -5862,7 +5869,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock("div", _hoisted_1, _hoisted_3))
 }
 
-var css_248z = "\n.preloader-main {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  display: flex;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(255, 255, 255, 0.8);\r\n  z-index: 200;\n}\n.lds-ring {\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 80px;\r\n  height: 80px;\r\n  margin: auto;\n}\n.lds-ring div {\r\n  box-sizing: border-box;\r\n  display: block;\r\n  position: absolute;\r\n  width: 50px;\r\n  height: 50px;\r\n  margin: 8px;\r\n  border: 8px solid #fff;\r\n  border-radius: 50%;\r\n  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;\r\n  border-color: #cccccc transparent transparent transparent;\n}\n.lds-ring div:nth-child(1) {\r\n  animation-delay: -0.45s;\n}\n.lds-ring div:nth-child(2) {\r\n  animation-delay: -0.3s;\n}\n.lds-ring div:nth-child(3) {\r\n  animation-delay: -0.15s;\n}\n@keyframes lds-ring {\n0% {\r\n    transform: rotate(0deg);\n}\n100% {\r\n    transform: rotate(360deg);\n}\n}\r\n\r\n";
+var css_248z = "\n.preloader-main {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  display: flex;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 200;\n}\n.lds-ring {\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 80px;\r\n  height: 80px;\r\n  margin: auto;\n}\n.lds-ring div {\r\n  box-sizing: border-box;\r\n  display: block;\r\n  position: absolute;\r\n  width: 50px;\r\n  height: 50px;\r\n  margin: 8px;\r\n  border: 8px solid #fff;\r\n  border-radius: 50%;\r\n  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;\r\n  border-color: #cccccc transparent transparent transparent;\n}\n.lds-ring div:nth-child(1) {\r\n  animation-delay: -0.45s;\n}\n.lds-ring div:nth-child(2) {\r\n  animation-delay: -0.3s;\n}\n.lds-ring div:nth-child(3) {\r\n  animation-delay: -0.15s;\n}\n@keyframes lds-ring {\n0% {\r\n    transform: rotate(0deg);\n}\n100% {\r\n    transform: rotate(360deg);\n}\n}\r\n\r\n";
 styleInject(css_248z);
 
 script.render = render;

@@ -12,16 +12,6 @@
 <script>
 export default {
   name: 'TsoftPreloader',
-  data() {
-    return {
-      loading: true,
-    };
-  },
-  mounted() {
-  setTimeout(() => {
-    this.loading = false;
-  }, 1000)
-  },
 }
 </script>
 
@@ -33,7 +23,6 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
   z-index: 200;
 }
 

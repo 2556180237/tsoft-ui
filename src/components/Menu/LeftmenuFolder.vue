@@ -1,7 +1,10 @@
 <template>
   <div class="menu-sitemap-tree">
-    <div class="file-system">
-      <tree-folder :tree-data="treeData" @getName="getName"/>
+    <div class="file-system" >
+      <transition name="fade" mode="out-in">
+        <tsoft-preloader v-if="!folders"/>
+        <tree-folder :tree-data="treeData" @getName="getName" v-else/>
+      </transition>
     </div>
   </div>
 </template>
@@ -23,6 +26,11 @@ export default {
     getName(name) {
       this.$emit('getName', name);
     }
+  },
+  computed: {
+    folders() {
+      return this.treeData ?? false
+    }
   }
 };
 </script>
@@ -32,6 +40,7 @@ export default {
   padding-top: 20px;
   padding-bottom: 20px;
   height: 685px;
+  position: sticky;
 }
 .file-system {
   background: rgb(253, 253, 253);
