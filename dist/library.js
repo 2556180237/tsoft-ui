@@ -2,31 +2,31 @@
 
 var vue = require('vue');
 
-var script$f = {
+var script$g = {
   name: 'InputText'
 };
 
-const _hoisted_1$e = { type: "text" };
+const _hoisted_1$f = { type: "text" };
 
-function render$f(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$e))
+function render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("input", _hoisted_1$f))
 }
 
-script$f.render = render$f;
-script$f.__file = "src/InputText.vue";
+script$g.render = render$g;
+script$g.__file = "src/InputText.vue";
 
-var script$e = {
+var script$f = {
   name: 'InputTextarea'
 };
 
-function render$e(_ctx, _cache, $props, $setup, $data, $options) {
+function render$f(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("textarea"))
 }
 
-script$e.render = render$e;
-script$e.__file = "src/InputTextarea.vue";
+script$f.render = render$f;
+script$f.__file = "src/InputTextarea.vue";
 
-var script$d = {
+var script$e = {
   name: "TsoftTable",
   props: {
     titles: {
@@ -76,9 +76,9 @@ var script$d = {
 };
 
 const _withScopeId$3 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$d = { class: "content" };
-const _hoisted_2$d = { class: "row section" };
-const _hoisted_3$a = { class: "table-section" };
+const _hoisted_1$e = { class: "content" };
+const _hoisted_2$e = { class: "row section" };
+const _hoisted_3$b = { class: "table-section" };
 const _hoisted_4$8 = { class: "slider-block" };
 const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
 const _hoisted_6$6 = [
@@ -88,17 +88,17 @@ const _hoisted_7$6 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createE
 const _hoisted_8$6 = [
   _hoisted_7$6
 ];
-const _hoisted_9$5 = { class: "table" };
-const _hoisted_10$4 = { class: "thead" };
-const _hoisted_11$4 = { class: "tbody" };
-const _hoisted_12$4 = { key: 1 };
+const _hoisted_9$6 = { class: "table" };
+const _hoisted_10$5 = { class: "thead" };
+const _hoisted_11$5 = { class: "tbody" };
+const _hoisted_12$5 = { key: 1 };
 
-function render$d(_ctx, _cache, $props, $setup, $data, $options) {
+function render$e(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$d, [
-    vue.createElementVNode("div", _hoisted_2$d, [
-      vue.createElementVNode("div", _hoisted_3$a, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$e, [
+    vue.createElementVNode("div", _hoisted_2$e, [
+      vue.createElementVNode("div", _hoisted_3$b, [
         vue.createElementVNode("div", _hoisted_4$8, [
           vue.createElementVNode("div", {
             class: vue.normalizeClass(["control-prev btn-left", { active: this.leftScroll }]),
@@ -122,15 +122,15 @@ function render$d(_ctx, _cache, $props, $setup, $data, $options) {
           id: "tableResponsive",
           onScroll: _cache[4] || (_cache[4] = (...args) => ($options.move && $options.move(...args)))
         }, [
-          vue.createElementVNode("table", _hoisted_9$5, [
-            vue.createElementVNode("thead", _hoisted_10$4, [
+          vue.createElementVNode("table", _hoisted_9$6, [
+            vue.createElementVNode("thead", _hoisted_10$5, [
               vue.createElementVNode("tr", null, [
                 (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.titles, (title) => {
                   return (vue.openBlock(), vue.createElementBlock("th", { key: title }, vue.toDisplayString(title), 1 /* TEXT */))
                 }), 128 /* KEYED_FRAGMENT */))
               ])
             ]),
-            vue.createElementVNode("tbody", _hoisted_11$4, [
+            vue.createElementVNode("tbody", _hoisted_11$5, [
               (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.rows, (row, index) => {
                 return (vue.openBlock(), vue.createElementBlock("tr", {
                   class: "document-row",
@@ -148,7 +148,7 @@ function render$d(_ctx, _cache, $props, $setup, $data, $options) {
                             ]),
                             _: 2 /* DYNAMIC */
                           }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
-                        : (vue.openBlock(), vue.createElementBlock("p", _hoisted_12$4, vue.toDisplayString(value), 1 /* TEXT */))
+                        : (vue.openBlock(), vue.createElementBlock("p", _hoisted_12$5, vue.toDisplayString(value), 1 /* TEXT */))
                     ]))
                   }), 128 /* KEYED_FRAGMENT */))
                 ]))
@@ -188,31 +188,31 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$7 = "\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
-styleInject(css_248z$7);
+var css_248z$8 = "\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\r\n  padding: 20px 0 20px 20px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\r\n    center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\r\n    center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\r\n";
+styleInject(css_248z$8);
 
-script$d.render = render$d;
-script$d.__scopeId = "data-v-647119ad";
-script$d.__file = "src/components/Table/Table.vue";
+script$e.render = render$e;
+script$e.__scopeId = "data-v-647119ad";
+script$e.__file = "src/components/Table/Table.vue";
 
-var script$c = {
+var script$d = {
   name: "node",
   props: {
     node: Object,
   },
 };
 
-const _hoisted_1$c = { class: "node-tree" };
-const _hoisted_2$c = { class: "label" };
-const _hoisted_3$9 = { key: 0 };
+const _hoisted_1$d = { class: "node-tree" };
+const _hoisted_2$d = { class: "label" };
+const _hoisted_3$a = { key: 0 };
 
-function render$c(_ctx, _cache, $props, $setup, $data, $options) {
+function render$d(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node = vue.resolveComponent("node");
 
-  return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$c, [
-    vue.createElementVNode("span", _hoisted_2$c, vue.toDisplayString($props.node.label), 1 /* TEXT */),
+  return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$d, [
+    vue.createElementVNode("span", _hoisted_2$d, vue.toDisplayString($props.node.label), 1 /* TEXT */),
     ($props.node.children && $props.node.children.length)
-      ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$9, [
+      ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$a, [
           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.node.children, (child) => {
             return (vue.openBlock(), vue.createBlock(_component_node, {
               node: child,
@@ -224,10 +224,10 @@ function render$c(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$c.render = render$c;
-script$c.__file = "src/components/Tree/NodeTreeMenu.vue";
+script$d.render = render$d;
+script$d.__file = "src/components/Tree/NodeTreeMenu.vue";
 
-var script$b = {
+var script$c = {
   props: {
     folders: {
       type: Object
@@ -237,30 +237,30 @@ var script$b = {
     }
   },
   components: {
-    NodeTree: script$c
+    NodeTree: script$d
   }
 };
 
-const _hoisted_1$b = { class: "tree" };
-const _hoisted_2$b = { class: "tree-list" };
+const _hoisted_1$c = { class: "tree" };
+const _hoisted_2$c = { class: "tree-list" };
 
-function render$b(_ctx, _cache) {
+function render$c(_ctx, _cache) {
   const _component_node_tree = vue.resolveComponent("node-tree");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$b, [
-    vue.createElementVNode("ul", _hoisted_2$b, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$c, [
+    vue.createElementVNode("ul", _hoisted_2$c, [
       vue.createVNode(_component_node_tree, { node: _ctx.treeData }, null, 8 /* PROPS */, ["node"])
     ])
   ]))
 }
 
-var css_248z$6 = "\n.tree-list ul {\n  padding-left: 16px;\n  margin: 6px 0;\n}\n";
-styleInject(css_248z$6);
+var css_248z$7 = "\n.tree-list ul {\r\n  padding-left: 16px;\r\n  margin: 6px 0;\n}\r\n";
+styleInject(css_248z$7);
 
-script$b.render = render$b;
-script$b.__file = "src/components/Tree/TreeMenu.vue";
+script$c.render = render$c;
+script$c.__file = "src/components/Tree/TreeMenu.vue";
 
-var script$a = {
+var script$b = {
   name: "TreeFile",
   props: {
     filename: {
@@ -270,31 +270,31 @@ var script$a = {
 };
 
 const _withScopeId$2 = n => (vue.pushScopeId("data-v-f314cfaa"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$a = { class: "file-row" };
-const _hoisted_2$a = { class: "file" };
-const _hoisted_3$8 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
+const _hoisted_1$b = { class: "file-row" };
+const _hoisted_2$b = { class: "file" };
+const _hoisted_3$9 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
 const _hoisted_4$7 = { class: "file-name" };
 
-function render$a(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
-    vue.createElementVNode("div", _hoisted_2$a, [
-      _hoisted_3$8,
+function render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$b, [
+    vue.createElementVNode("div", _hoisted_2$b, [
+      _hoisted_3$9,
       vue.createElementVNode("span", _hoisted_4$7, vue.toDisplayString($props.filename), 1 /* TEXT */)
     ])
   ]))
 }
 
-var css_248z$5 = "\n.file-name[data-v-f314cfaa]:hover {\n  color: #e67926;\n}\n.fa-file[data-v-f314cfaa] {\n  color: #252525;\n}\n.file[data-v-f314cfaa] {\n  margin-left: 18px;\n  white-space: nowrap;\n}\n.file-name[data-v-f314cfaa] {\n  margin-left: 9px;\n}\n.file-name[data-v-f314cfaa] {\n  white-space: nowrap;\n  cursor: pointer;\n}\n";
-styleInject(css_248z$5);
+var css_248z$6 = "\n.file-name[data-v-f314cfaa]:hover {\r\n  color: #e67926;\n}\n.fa-file[data-v-f314cfaa] {\r\n  color: #252525;\n}\n.file[data-v-f314cfaa] {\r\n  margin-left: 18px;\r\n  white-space: nowrap;\n}\n.file-name[data-v-f314cfaa] {\r\n  margin-left: 9px;\n}\n.file-name[data-v-f314cfaa] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\r\n";
+styleInject(css_248z$6);
 
-script$a.render = render$a;
-script$a.__scopeId = "data-v-f314cfaa";
-script$a.__file = "src/components/Tree/TreeFile.vue";
+script$b.render = render$b;
+script$b.__scopeId = "data-v-f314cfaa";
+script$b.__file = "src/components/Tree/TreeFile.vue";
 
-var script$9 = {
+var script$a = {
   name: "TreeFolder",
   components: {
-    TreeFile: script$a
+    TreeFile: script$b
   },
   props: {
     treeData: {
@@ -319,27 +319,27 @@ var script$9 = {
 };
 
 const _withScopeId$1 = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
-const _hoisted_1$9 = { class: "folder-row" };
-const _hoisted_2$9 = { class: "folder-container" };
-const _hoisted_3$7 = ["onClick"];
+const _hoisted_1$a = { class: "folder-row" };
+const _hoisted_2$a = { class: "folder-container" };
+const _hoisted_3$8 = ["onClick"];
 const _hoisted_4$6 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
 const _hoisted_5$7 = ["onClick"];
 
-function render$9(_ctx, _cache, $props, $setup, $data, $options) {
+function render$a(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = vue.resolveComponent("tree-folder", true);
   const _component_tree_file = vue.resolveComponent("tree-file");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$9, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
     (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(this.treeData.folders, (folder, folderName) => {
       return (vue.openBlock(), vue.createElementBlock("div", {
         class: "folder",
         key: folderName
       }, [
-        vue.createElementVNode("div", _hoisted_2$9, [
+        vue.createElementVNode("div", _hoisted_2$a, [
           vue.createElementVNode("i", {
             class: vue.normalizeClass(["fa-solid fa-angle-right", {'down-rotate': folder.settings.isOpen}]),
             onClick: $event => ($options.toggle(folderName))
-          }, null, 10 /* CLASS, PROPS */, _hoisted_3$7),
+          }, null, 10 /* CLASS, PROPS */, _hoisted_3$8),
           _hoisted_4$6,
           vue.createElementVNode("span", {
             class: "folder-name",
@@ -367,17 +367,17 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$4 = "\n.toggle-icon[data-v-61a6cc5d] {\n  height: 16px;\n  width: 8px;\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\n  padding-left: 21px;\n  margin-right: -20px;\n  height: 0;\n  overflow: unset;\n  opacity: 0;\n  transition: all 0s;\n}\n.content-open[data-v-61a6cc5d] {\n  height: fit-content;\n  overflow: unset;\n  opacity: 1;\n  transition: all 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\n  white-space: nowrap;\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\n  color: rgb(190, 190, 190);\n  margin-right: 7px;\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\n  transition: 0.15s;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\n  transform: rotate(90deg);\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\n  color: #e67926;\n  margin-right: 7px;\n}\n";
-styleInject(css_248z$4);
+var css_248z$5 = "\n.toggle-icon[data-v-61a6cc5d] {\r\n  height: 16px;\r\n  width: 8px;\r\n  display: flex;\n}\n.file-content[data-v-61a6cc5d] {\r\n  padding-left: 21px;\r\n  margin-right: -20px;\r\n  height: 0;\r\n  overflow: unset;\r\n  opacity: 0;\r\n  transition: all 0s;\n}\n.content-open[data-v-61a6cc5d] {\r\n  height: fit-content;\r\n  overflow: unset;\r\n  opacity: 1;\r\n  transition: all 0.5s;\n}\n.folder-container[data-v-61a6cc5d] {\r\n  white-space: nowrap;\n}\n.folder-container.empty[data-v-61a6cc5d] {\r\n  margin-left: 15px;\n}\n.folder-row[data-v-61a6cc5d] {\r\n  width: fit-content;\n}\n.folder-name[data-v-61a6cc5d] {\r\n  white-space: nowrap;\r\n  cursor: pointer;\n}\n.folder-name[data-v-61a6cc5d]:hover {\r\n  color: #e67926;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  color: rgb(190, 190, 190);\r\n  margin-right: 7px;\r\n  cursor: pointer;\n}\n.fa-angle-right[data-v-61a6cc5d] {\r\n  transition: 0.15s;\n}\n.fa-angle-right.down-rotate[data-v-61a6cc5d] {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.fa-folder[data-v-61a6cc5d] {\r\n  color: #e67926;\r\n  margin-right: 7px;\n}\r\n";
+styleInject(css_248z$5);
 
-script$9.render = render$9;
-script$9.__scopeId = "data-v-61a6cc5d";
-script$9.__file = "src/components/Tree/TreeFolder.vue";
+script$a.render = render$a;
+script$a.__scopeId = "data-v-61a6cc5d";
+script$a.__file = "src/components/Tree/TreeFolder.vue";
 
-var script$8 = {
+var script$9 = {
   name: "TsoftLeftmenuFolder",
   components: {
-    TreeFolder: script$9,
+    TreeFolder: script$a,
   },
   props: {
     treeData: {
@@ -391,14 +391,14 @@ var script$8 = {
   }
 };
 
-const _hoisted_1$8 = { class: "menu-sitemap-tree" };
-const _hoisted_2$8 = { class: "file-system" };
+const _hoisted_1$9 = { class: "menu-sitemap-tree" };
+const _hoisted_2$9 = { class: "file-system" };
 
-function render$8(_ctx, _cache, $props, $setup, $data, $options) {
+function render$9(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tree_folder = vue.resolveComponent("tree-folder");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
-    vue.createElementVNode("div", _hoisted_2$8, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$9, [
+    vue.createElementVNode("div", _hoisted_2$9, [
       vue.createVNode(_component_tree_folder, {
         "tree-data": $props.treeData,
         onGetName: $options.getName
@@ -407,14 +407,14 @@ function render$8(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$3 = "\n.menu-sitemap-tree[data-v-647b20c4] {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  height: 685px;\n}\n.file-system[data-v-647b20c4] {\n  background: rgb(253, 253, 253);\n  border: 1px solid #ccc;\n  padding: 10px;\n  overflow: auto;\n  height: 100%;\n}\n";
-styleInject(css_248z$3);
+var css_248z$4 = "\n.menu-sitemap-tree[data-v-647b20c4] {\r\n  padding-top: 20px;\r\n  padding-bottom: 20px;\r\n  height: 685px;\n}\n.file-system[data-v-647b20c4] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\r\n  padding: 10px;\r\n  overflow: auto;\r\n  height: 100%;\n}\r\n";
+styleInject(css_248z$4);
 
-script$8.render = render$8;
-script$8.__scopeId = "data-v-647b20c4";
-script$8.__file = "src/components/Menu/LeftmenuFolder.vue";
+script$9.render = render$9;
+script$9.__scopeId = "data-v-647b20c4";
+script$9.__file = "src/components/Menu/LeftmenuFolder.vue";
 
-var script$7 = {
+var script$8 = {
   name: "TsoftGeneralDeclarationForm",
   props: {
     awbInfo: {
@@ -428,12 +428,12 @@ var script$7 = {
   }
 };
 
-const _hoisted_1$7 = {
+const _hoisted_1$8 = {
   class: "declaration mb-3",
   id: "declaration"
 };
-const _hoisted_2$7 = { class: "common-inf" };
-const _hoisted_3$6 = { class: "row" };
+const _hoisted_2$8 = { class: "common-inf" };
+const _hoisted_3$7 = { class: "row" };
 const _hoisted_4$5 = { class: "inf-block" };
 const _hoisted_5$6 = /*#__PURE__*/vue.createTextVNode(" Подан с ДТ: ");
 const _hoisted_6$5 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
@@ -443,14 +443,14 @@ const _hoisted_6$5 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }
 ], -1 /* HOISTED */);
 const _hoisted_7$5 = { class: "row" };
 const _hoisted_8$5 = { class: "inf-block row col-12 justify-content-between" };
-const _hoisted_9$4 = { class: "checkbox-block d-flex col-2" };
-const _hoisted_10$3 = { class: "checkbox-bg col-2" };
-const _hoisted_11$3 = ["checked"];
-const _hoisted_12$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
+const _hoisted_9$5 = { class: "checkbox-block d-flex col-2" };
+const _hoisted_10$4 = { class: "checkbox-bg col-2" };
+const _hoisted_11$4 = ["checked"];
+const _hoisted_12$4 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "ДТЭГ")
 ], -1 /* HOISTED */);
-const _hoisted_13$3 = { class: "checkbox-bg col-2" };
-const _hoisted_14$3 = ["checked"];
+const _hoisted_13$4 = { class: "checkbox-bg col-2" };
+const _hoisted_14$4 = ["checked"];
 const _hoisted_15$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "ПТДЭГ")
 ], -1 /* HOISTED */);
@@ -992,13 +992,13 @@ const _hoisted_425 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bc
 const _hoisted_426 = { class: "row" };
 const _hoisted_427 = { class: "col-2 input-bg" };
 
-function render$7(_ctx, _cache, $props, $setup, $data, $options) {
+function render$8(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
     vue.createCommentVNode("Region элемент с общей информацией декларации"),
-    vue.createElementVNode("div", _hoisted_2$7, [
-      vue.createElementVNode("div", _hoisted_3$6, [
+    vue.createElementVNode("div", _hoisted_2$8, [
+      vue.createElementVNode("div", _hoisted_3$7, [
         vue.createElementVNode("div", _hoisted_4$5, [
           vue.createVNode(_component_router_link, {
             class: "point-name",
@@ -1014,21 +1014,21 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
       _hoisted_6$5,
       vue.createElementVNode("div", _hoisted_7$5, [
         vue.createElementVNode("div", _hoisted_8$5, [
-          vue.createElementVNode("div", _hoisted_9$4, [
-            vue.createElementVNode("div", _hoisted_10$3, [
+          vue.createElementVNode("div", _hoisted_9$5, [
+            vue.createElementVNode("div", _hoisted_10$4, [
               vue.createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.docType.dteg
-              }, null, 8 /* PROPS */, _hoisted_11$3)
+              }, null, 8 /* PROPS */, _hoisted_11$4)
             ]),
-            _hoisted_12$3,
-            vue.createElementVNode("div", _hoisted_13$3, [
+            _hoisted_12$4,
+            vue.createElementVNode("div", _hoisted_13$4, [
               vue.createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.docType.ptdeg
-              }, null, 8 /* PROPS */, _hoisted_14$3)
+              }, null, 8 /* PROPS */, _hoisted_14$4)
             ]),
             _hoisted_15$3
           ]),
@@ -2830,10 +2830,10 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$7.render = render$7;
-script$7.__file = "src/components/Form/GeneralDeclaration.vue";
+script$8.render = render$8;
+script$8.__file = "src/components/Form/GeneralDeclaration.vue";
 
-var script$6 = {
+var script$7 = {
   name: "TsoftGoodsAwbInformationForm",
   data() {
     return {
@@ -2856,22 +2856,22 @@ var script$6 = {
   }
 };
 
-const _hoisted_1$6 = { class: "order" };
-const _hoisted_2$6 = { class: "arrow" };
-const _hoisted_3$5 = { class: "product-batch" };
+const _hoisted_1$7 = { class: "order" };
+const _hoisted_2$7 = { class: "arrow" };
+const _hoisted_3$6 = { class: "product-batch" };
 const _hoisted_4$4 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
 const _hoisted_5$5 = { class: "product-inner-block" };
 const _hoisted_6$4 = { class: "row" };
 const _hoisted_7$4 = { class: "row" };
 const _hoisted_8$4 = { class: "col-9" };
-const _hoisted_9$3 = { action: "" };
-const _hoisted_10$2 = { class: "d-flex" };
-const _hoisted_11$2 = { class: "col-3 d-flex" };
-const _hoisted_12$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-6 align-bcntr" }, [
+const _hoisted_9$4 = { action: "" };
+const _hoisted_10$3 = { class: "d-flex" };
+const _hoisted_11$3 = { class: "col-3 d-flex" };
+const _hoisted_12$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-6 align-bcntr" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "Общая накладная")
 ], -1 /* HOISTED */);
-const _hoisted_13$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_14$2 = { class: "input-bg col-5" };
+const _hoisted_13$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_14$3 = { class: "input-bg col-5" };
 const _hoisted_15$2 = { class: "col-4" };
 const _hoisted_16$2 = { class: "input-bg" };
 const _hoisted_17$2 = { class: "col-3" };
@@ -3209,17 +3209,17 @@ const _hoisted_275 = { class: "goods" };
 const _hoisted_276 = /*#__PURE__*/vue.createElementVNode("p", null, "Товары", -1 /* HOISTED */);
 const _hoisted_277 = { class: "arrow" };
 
-function render$6(_ctx, _cache, $props, $setup, $data, $options) {
+function render$7(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
   const _component_tsoft_good_information_form = vue.resolveComponent("tsoft-good-information-form");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
     vue.createElementVNode("div", {
       class: "group-panel-label",
       onClick: _cache[0] || (_cache[0] = $event => ($data.isOrderOpen= !$data.isOrderOpen))
     }, [
       vue.createElementVNode("p", null, "Товарная партия " + vue.toDisplayString($props.orderNum), 1 /* TEXT */),
-      vue.createElementVNode("div", _hoisted_2$6, [
+      vue.createElementVNode("div", _hoisted_2$7, [
         vue.createElementVNode("span", {
           class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrderOpen}])
         }, null, 2 /* CLASS */)
@@ -3228,7 +3228,7 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
     vue.createElementVNode("div", {
       class: vue.normalizeClass(["group-panel-content", {'open': $data.isOrderOpen}])
     }, [
-      vue.createElementVNode("div", _hoisted_3$5, [
+      vue.createElementVNode("div", _hoisted_3$6, [
         vue.createCommentVNode("Region элемент хэдера блока с кнопками"),
         _hoisted_4$4,
         vue.createCommentVNode("endregion"),
@@ -3238,12 +3238,12 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
           vue.createElementVNode("div", _hoisted_6$4, [
             vue.createElementVNode("div", _hoisted_7$4, [
               vue.createElementVNode("div", _hoisted_8$4, [
-                vue.createElementVNode("form", _hoisted_9$3, [
-                  vue.createElementVNode("div", _hoisted_10$2, [
-                    vue.createElementVNode("div", _hoisted_11$2, [
-                      _hoisted_12$2,
-                      _hoisted_13$2,
-                      vue.createElementVNode("div", _hoisted_14$2, [
+                vue.createElementVNode("form", _hoisted_9$4, [
+                  vue.createElementVNode("div", _hoisted_10$3, [
+                    vue.createElementVNode("div", _hoisted_11$3, [
+                      _hoisted_12$3,
+                      _hoisted_13$3,
+                      vue.createElementVNode("div", _hoisted_14$3, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -4441,10 +4441,10 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$6.render = render$6;
-script$6.__file = "src/components/Form/GoodsAwbInformation.vue";
+script$7.render = render$7;
+script$7.__file = "src/components/Form/GoodsAwbInformation.vue";
 
-var script$5 = {
+var script$6 = {
   name: "TsoftAdditionalDocumentForm",
   props: {
     document: {
@@ -4454,12 +4454,12 @@ var script$5 = {
   }
 };
 
-const _hoisted_1$5 = {
+const _hoisted_1$6 = {
   class: "optional-inf-block mt-2",
   id: "extraDocBlock"
 };
-const _hoisted_2$5 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
-const _hoisted_3$4 = {
+const _hoisted_2$6 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_3$5 = {
   class: "product-inner-block collapse",
   id: "product-2Inner"
 };
@@ -4468,14 +4468,14 @@ const _hoisted_5$4 = { class: "row" };
 const _hoisted_6$3 = { class: "d-flex" };
 const _hoisted_7$3 = { class: "col-5 d-flex" };
 const _hoisted_8$3 = { class: "col-3 d-flex" };
-const _hoisted_9$2 = { class: "col-8" };
-const _hoisted_10$1 = { class: "input-bg" };
-const _hoisted_11$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, [
+const _hoisted_9$3 = { class: "col-8" };
+const _hoisted_10$2 = { class: "input-bg" };
+const _hoisted_11$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "fs-5 my-0" }, "/")
 ], -1 /* HOISTED */);
-const _hoisted_12$1 = { class: "col-3" };
-const _hoisted_13$1 = { class: "input-bg" };
-const _hoisted_14$1 = { class: "col-9 ps-2" };
+const _hoisted_12$2 = { class: "col-3" };
+const _hoisted_13$2 = { class: "input-bg" };
+const _hoisted_14$2 = { class: "col-9 ps-2" };
 const _hoisted_15$1 = { class: "input-bg" };
 const _hoisted_16$1 = { class: "col-7 row" };
 const _hoisted_17$1 = { class: "col-2" };
@@ -4559,17 +4559,17 @@ const _hoisted_84$1 = { class: "input-bg" };
 const _hoisted_85$1 = { class: "col-3" };
 const _hoisted_86$1 = { class: "input-bg" };
 
-function render$5(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$5, [
-    _hoisted_2$5,
-    vue.createElementVNode("div", _hoisted_3$4, [
+function render$6(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$6, [
+    _hoisted_2$6,
+    vue.createElementVNode("div", _hoisted_3$5, [
       vue.createElementVNode("div", _hoisted_4$3, [
         vue.createElementVNode("div", _hoisted_5$4, [
           vue.createElementVNode("div", _hoisted_6$3, [
             vue.createElementVNode("div", _hoisted_7$3, [
               vue.createElementVNode("div", _hoisted_8$3, [
-                vue.createElementVNode("div", _hoisted_9$2, [
-                  vue.createElementVNode("div", _hoisted_10$1, [
+                vue.createElementVNode("div", _hoisted_9$3, [
+                  vue.createElementVNode("div", _hoisted_10$2, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -4579,9 +4579,9 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                _hoisted_11$1,
-                vue.createElementVNode("div", _hoisted_12$1, [
-                  vue.createElementVNode("div", _hoisted_13$1, [
+                _hoisted_11$2,
+                vue.createElementVNode("div", _hoisted_12$2, [
+                  vue.createElementVNode("div", _hoisted_13$2, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -4592,7 +4592,7 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
                   ])
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_14$1, [
+              vue.createElementVNode("div", _hoisted_14$2, [
                 vue.createElementVNode("div", _hoisted_15$1, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     type: "text",
@@ -4919,10 +4919,10 @@ function render$5(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$5.render = render$5;
-script$5.__file = "src/components/Form/AdditionalDocument.vue";
+script$6.render = render$6;
+script$6.__file = "src/components/Form/AdditionalDocument.vue";
 
-var script$4 = {
+var script$5 = {
   name: "TsoftGoodInformationForm",
   data() {
     return {
@@ -4944,12 +4944,12 @@ var script$4 = {
   }
 };
 
-const _hoisted_1$4 = {
+const _hoisted_1$5 = {
   class: "product-info-block my-2",
   id: "productInvoiceBlock"
 };
-const _hoisted_2$4 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
-const _hoisted_3$3 = {
+const _hoisted_2$5 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_3$4 = {
   class: "product-inner-block collapse",
   id: "product-1Inner"
 };
@@ -4958,14 +4958,14 @@ const _hoisted_5$3 = { class: "col-1" };
 const _hoisted_6$2 = { class: "col-9" };
 const _hoisted_7$2 = { class: "col input-bg" };
 const _hoisted_8$2 = { class: "col input-bg mt-3" };
-const _hoisted_9$1 = { class: "col-8" };
-const _hoisted_10 = { class: "input-bg h-100" };
-const _hoisted_11 = { class: "col-3" };
-const _hoisted_12 = { class: "changing-code" };
-const _hoisted_13 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block" }, [
+const _hoisted_9$2 = { class: "col-8" };
+const _hoisted_10$1 = { class: "input-bg h-100" };
+const _hoisted_11$1 = { class: "col-3" };
+const _hoisted_12$1 = { class: "changing-code" };
+const _hoisted_13$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block" }, [
   /*#__PURE__*/vue.createElementVNode("label", { class: "fs-5" }, "Код изменений")
 ], -1 /* HOISTED */);
-const _hoisted_14 = { class: "col-9 d-flex w-100" };
+const _hoisted_14$1 = { class: "col-9 d-flex w-100" };
 const _hoisted_15 = { class: "col input-bg" };
 const _hoisted_16 = { class: "col input-bg" };
 const _hoisted_17 = { class: "col input-bg" };
@@ -5065,12 +5065,12 @@ const _hoisted_104 = { class: "col-3 d-flex" };
 const _hoisted_105 = { class: "d-flex batch-info-anchors" };
 const _hoisted_106 = /*#__PURE__*/vue.createTextVNode("Дополнительный документ ");
 
-function render$4(_ctx, _cache, $props, $setup, $data, $options) {
+function render$5(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
-    _hoisted_2$4,
-    vue.createElementVNode("div", _hoisted_3$3, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$5, [
+    _hoisted_2$5,
+    vue.createElementVNode("div", _hoisted_3$4, [
       vue.createElementVNode("div", _hoisted_4$2, [
         vue.createElementVNode("div", _hoisted_5$3, [
           vue.createElementVNode("div", _hoisted_6$2, [
@@ -5094,8 +5094,8 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ]),
-        vue.createElementVNode("div", _hoisted_9$1, [
-          vue.createElementVNode("div", _hoisted_10, [
+        vue.createElementVNode("div", _hoisted_9$2, [
+          vue.createElementVNode("div", _hoisted_10$1, [
             vue.withDirectives(vue.createElementVNode("textarea", {
               type: "text",
               class: "form-control h-100",
@@ -5105,10 +5105,10 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ]),
-        vue.createElementVNode("div", _hoisted_11, [
-          vue.createElementVNode("div", _hoisted_12, [
-            _hoisted_13,
-            vue.createElementVNode("div", _hoisted_14, [
+        vue.createElementVNode("div", _hoisted_11$1, [
+          vue.createElementVNode("div", _hoisted_12$1, [
+            _hoisted_13$1,
+            vue.createElementVNode("div", _hoisted_14$1, [
               vue.createElementVNode("div", _hoisted_15, [
                 vue.withDirectives(vue.createElementVNode("input", {
                   class: "form-control number-code",
@@ -5519,10 +5519,10 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$4.render = render$4;
-script$4.__file = "src/components/Form/GoodInformation.vue";
+script$5.render = render$5;
+script$5.__file = "src/components/Form/GoodInformation.vue";
 
-var script$3 = {
+var script$4 = {
   name: "TsoftDeclaration",
   props: {
     data: {
@@ -5541,18 +5541,18 @@ var script$3 = {
   }
 };
 
-const _hoisted_1$3 = { class: "forms" };
-const _hoisted_2$3 = /*#__PURE__*/vue.createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
-const _hoisted_3$2 = { class: "arrow" };
+const _hoisted_1$4 = { class: "forms" };
+const _hoisted_2$4 = /*#__PURE__*/vue.createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
+const _hoisted_3$3 = { class: "arrow" };
 const _hoisted_4$1 = /*#__PURE__*/vue.createElementVNode("p", null, "Документы", -1 /* HOISTED */);
 const _hoisted_5$2 = { class: "arrow" };
 
-function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+function render$4(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tsoft_general_declaration_form = vue.resolveComponent("tsoft-general-declaration-form");
   const _component_tsoft_goods_awb_information_form = vue.resolveComponent("tsoft-goods-awb-information-form");
   const _component_tsoft_additional_document_form = vue.resolveComponent("tsoft-additional-document-form");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$3, [
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
     vue.createElementVNode("div", null, [
       vue.createVNode(_component_tsoft_general_declaration_form, {
         "awb-info": this.awbInfo,
@@ -5563,8 +5563,8 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
           class: "group-panel-label",
           onClick: _cache[0] || (_cache[0] = $event => ($data.isOrdersOpen = !$data.isOrdersOpen))
         }, [
-          _hoisted_2$3,
-          vue.createElementVNode("div", _hoisted_3$2, [
+          _hoisted_2$4,
+          vue.createElementVNode("div", _hoisted_3$3, [
             vue.createElementVNode("span", {
               class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrdersOpen}])
             }, null, 2 /* CLASS */)
@@ -5609,13 +5609,13 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$2 = "\n.common-inf p {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n.common-inf label {\n  box-sizing: border-box;\n  font-size: 10px;\n}\n.product-batch p {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n.product-batch label {\n  font-size: 10px;\n}\n.product-batch a {\n  font-size: 10px;\n}\n.product-info-block p {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-size: 10px;\n}\n.product-info-block label {\n  font-size: 10px;\n}\n.product-info-block a {\n  font-size: 10px;\n}\n.optional-inf-block a {\n  box-sizing: border-box;\n  font-size: 10px;\n}\n.optional-inf-block p {\n  font-size: 10px;\n}\n.optional-inf-block label {\n  font-size: 10px;\n}\n.arrow {\n  margin-right: 5px;\n  margin-top: -3px;\n  font-size: 20px;\n  height: 20px;\n  width: 20px;\n}\n.forms {\n  padding-top: 10px;\n}\n.fa-caret-right {\n  transform: rotate(0deg);\n  transition: 0.15s;\n}\n.fa-caret-right.down-rotate {\n  transform: rotate(90deg);\n  transition: 0.15s;\n}\n.group-panel-label {\n  width: 100%;\n  height: 40px;\n  padding-left: 15px;\n  padding-top: 7px;\n  font-weight: bold;\n  border: 1px solid #c4c4c4;\n  margin-bottom: 10px;\n  display: flex;\n  justify-content: space-between;\n  cursor: pointer;\n}\n.group-panel-content {\n  width: 100%;\n  height: 0;\n  overflow: hidden;\n  opacity: 0;\n  transition: opacity 0.3s ease-in;\n}\n.goods {\n  padding: 10px 10px 0;\n}\n.order {\n  padding: 10px 10px 0;\n}\n.group-panel-content.open {\n  height: auto;\n  opacity: 1;\n  transition: opacity 0.3s ease-in;\n  margin-bottom: 10px;\n}\nli a {\n  color: black;\n  text-decoration: unset;\n  font-size: 14px;\n}\n\n/*Стили текстовых инпутов*/\n.form-control {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n  font-size: 10px;\n}\n.number-code::-webkit-outer-spin-button,\n.number-code::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n.number-code[type='number'] {\n  -moz-appearance: textfield;\n}\n\n/*Region Стили блока декларации*/\n.declaration {\n  background-color: #d1d1d1;\n  padding: 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n  font-size: 10px;\n  margin: 0 auto;\n}\nh4 {\n  font-size: 14px;\n}\nh4.declaration-title {\n  font-size: 14px;\n  font-weight: bold;\n  text-align: center;\n}\nh5 {\n  text-align: center;\n  font-size: 10px;\n}\n.inf-block {\n  margin-bottom: 10px;\n}\nlabel {\n  margin-top: 7px;\n}\n.inputs-group > div {\n  padding: unset;\n  min-width: 30px;\n  margin-right: 7px;\n}\n.form-check-input {\n  min-width: 20px;\n  min-height: 20px;\n}\n.sheets-input {\n  max-width: 70px;\n}\n.certificate-block div:first-child {\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div {\n  padding: 0;\n  margin-right: 6px;\n}\n\n/*Стили текстовых инпутов*/\n.form-control {\n  padding: 0 5px 0 3px;\n  background-color: #21a0fe;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\n  outline: unset;\n  border: unset;\n  background-color: #80ffff;\n  color: black;\n  font-weight: bold;\n  font-size: 16px;\n  box-shadow: 1px 1px 1px #9f9f9f;\n  border: 1px solid black;\n}\n.form-control::placeholder {\n  color: #597a93;\n  font-weight: bold;\n  font-size: 11px;\n  padding-left: 10px;\n}\n\n/**/\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\n  background-color: #21a0fe;\n  box-shadow: 1px 1px 1px white;\n}\n\n/**/\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph {\n  min-width: 250px;\n  max-width: 270px;\n  margin: 5px 0 auto 0;\n}\n\n/**/\n.changing-declaration .inf-block div {\n  padding: unset;\n  margin-right: 5px;\n}\n.changing-code {\n  margin-top: 10px;\n}\n\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code::-webkit-outer-spin-button,\n.number-code::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n\n/**/\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form {\n  padding: 0 10px 0 10px;\n}\n.batch-form div:first-child {\n  padding-left: 0;\n}\n.batch-block {\n  padding-left: 10px;\n}\n.batch-block div {\n  padding: 0;\n}\n\n/**/\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information {\n  width: fit-content;\n  color: gray;\n  text-decoration: underline;\n  font-size: 10px;\n}\n.payment-information:hover {\n  cursor: pointer;\n}\n\n/**/\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button:focus {\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i {\n  transform: rotate(180deg);\n}\n.collapsing-block {\n  background-color: white;\n  border: 1px solid black;\n  padding: 5px 10px;\n  font-weight: bold;\n}\n.collapsing-block span,\ni {\n  font-size: 14px;\n}\n\n/**/\n.card-body {\n  background-color: unset;\n  border: 1px solid black;\n}\n.point-name {\n  width: fit-content;\n  margin: auto auto 0;\n  color: #3274dd;\n  text-decoration: underline;\n}\n.personal-data div {\n  padding: 0 0 0 3px;\n}\n\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative {\n  font-size: 11px;\n  font-weight: bold;\n  margin: 0 0 8px;\n}\n\n/**/\n/*Стили кнопки календаря*/\n.button-calendar {\n  background-color: white;\n  border: unset;\n  border-radius: 8px;\n  padding: 1px 5px;\n}\n.button-calendar:focus {\n  box-shadow: unset;\n}\n\n/**/\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr {\n  display: flex;\n  margin: 5px auto 0;\n}\n\n/*Стили блока информации о товарной партии*/\n.product-batch {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n  margin: 0 auto;\n}\n\n/*Стиль синего хэдера с кнопками */\n.product-batch-header {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n.batch-button:focus {\n  box-shadow: unset;\n}\n.batch-button i:before {\n  color: white;\n}\n.batch-button:last-child i {\n  transform: rotate(180deg);\n}\n\n/**/\n.product-inner-block {\n  padding: 10px;\n}\n.fs-12 {\n  font-size: 12px;\n}\n\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button {\n  background-color: white;\n  border-radius: 5px;\n  padding: 1px 5px;\n}\n.new-window-button:hover {\n  box-shadow: unset;\n}\n.new-window-button:focus {\n  box-shadow: unset;\n}\n.new-window-button i {\n  font-size: 15px;\n  color: #3274dd;\n}\n\n/**/\n\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors > a, router-link {\n  display: block;\n  color: gray;\n  text-decoration: underline;\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link:hover {\n  color: blue;\n  cursor: pointer;\n}\n\n/**/\n.product-info-block {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n  margin: 0 auto;\n}\n.product-info-actions button:focus {\n  box-shadow: unset;\n}\n.product-info-actions i:before {\n  color: white;\n}\n.product-info-actions .fa-sort-down:before {\n  color: black;\n}\n.product-actions-button:not(.collapsed) {\n  transform: rotate(180deg);\n}\n\n/*.btn {*/\n/*  padding: 1rem;*/\n/*}*/\n.btn-bg-white {\n  background-color: white;\n  border-radius: 5px;\n  padding: 1px 5px;\n}\n.btn-bg-white:focus {\n  box-shadow: unset;\n}\n.fa-note-sticky {\n  font-size: 16px;\n}\n\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block {\n  background-color: #d1d1d1;\n  padding: 0 0 10px;\n  border: 1px solid black;\n  max-width: 950px;\n  min-width: 900px;\n  margin: 0 auto;\n}\n.optional-inf-header {\n  padding: 0 10px;\n  background-color: #3274dd;\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\n  color: white;\n}\n";
-styleInject(css_248z$2);
+var css_248z$3 = "\n.common-inf p {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-size: 10px;\n}\n.common-inf label {\r\n  box-sizing: border-box;\r\n  font-size: 10px;\n}\n.product-batch p {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-size: 10px;\n}\n.product-batch label {\r\n  font-size: 10px;\n}\n.product-batch a {\r\n  font-size: 10px;\n}\n.product-info-block p {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n  font-size: 10px;\n}\n.product-info-block label {\r\n  font-size: 10px;\n}\n.product-info-block a {\r\n  font-size: 10px;\n}\n.optional-inf-block a {\r\n  box-sizing: border-box;\r\n  font-size: 10px;\n}\n.optional-inf-block p {\r\n  font-size: 10px;\n}\n.optional-inf-block label {\r\n  font-size: 10px;\n}\n.arrow {\r\n  margin-right: 5px;\r\n  margin-top: -3px;\r\n  font-size: 20px;\r\n  height: 20px;\r\n  width: 20px;\n}\n.forms {\r\n  padding-top: 10px;\n}\n.fa-caret-right {\r\n  transform: rotate(0deg);\r\n  transition: 0.15s;\n}\n.fa-caret-right.down-rotate {\r\n  transform: rotate(90deg);\r\n  transition: 0.15s;\n}\n.group-panel-label {\r\n  width: 100%;\r\n  height: 40px;\r\n  padding-left: 15px;\r\n  padding-top: 7px;\r\n  font-weight: bold;\r\n  border: 1px solid #c4c4c4;\r\n  margin-bottom: 10px;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  cursor: pointer;\n}\n.group-panel-content {\r\n  width: 100%;\r\n  height: 0;\r\n  overflow: hidden;\r\n  opacity: 0;\r\n  transition: opacity 0.3s ease-in;\n}\n.goods {\r\n  padding: 10px 10px 0;\n}\n.order {\r\n  padding: 10px 10px 0;\n}\n.group-panel-content.open {\r\n  height: auto;\r\n  opacity: 1;\r\n  transition: opacity 0.3s ease-in;\r\n  margin-bottom: 10px;\n}\nli a {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\r\n  font-size: 10px;\n}\n.number-code::-webkit-outer-spin-button,\r\n.number-code::-webkit-inner-spin-button {\r\n  -webkit-appearance: none;\n}\n.number-code[type='number'] {\r\n  -moz-appearance: textfield;\n}\r\n\r\n/*Region Стили блока декларации*/\n.declaration {\r\n  background-color: #d1d1d1;\r\n  padding: 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  font-size: 10px;\r\n  margin: 0 auto;\n}\nh4 {\r\n  font-size: 14px;\n}\nh4.declaration-title {\r\n  font-size: 14px;\r\n  font-weight: bold;\r\n  text-align: center;\n}\nh5 {\r\n  text-align: center;\r\n  font-size: 10px;\n}\n.inf-block {\r\n  margin-bottom: 10px;\n}\nlabel {\r\n  margin-top: 7px;\n}\n.inputs-group > div {\r\n  padding: unset;\r\n  min-width: 30px;\r\n  margin-right: 7px;\n}\n.form-check-input {\r\n  min-width: 20px;\r\n  min-height: 20px;\n}\n.sheets-input {\r\n  max-width: 70px;\n}\n.certificate-block div:first-child {\r\n  padding-left: calc(var(--bs-gutter-x) * 0.5);\n}\n.certificate-block div {\r\n  padding: 0;\r\n  margin-right: 6px;\n}\r\n\r\n/*Стили текстовых инпутов*/\n.form-control {\r\n  padding: 0 5px 0 3px;\r\n  background-color: #21a0fe;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px white;\n}\n.form-control:focus {\r\n  outline: unset;\r\n  border: unset;\r\n  background-color: #80ffff;\r\n  color: black;\r\n  font-weight: bold;\r\n  font-size: 16px;\r\n  box-shadow: 1px 1px 1px #9f9f9f;\r\n  border: 1px solid black;\n}\n.form-control::placeholder {\r\n  color: #597a93;\r\n  font-weight: bold;\r\n  font-size: 11px;\r\n  padding-left: 10px;\n}\r\n\r\n/**/\r\n/*Стиль чекбоксовых инпутов*/\n.form-check-input {\r\n  background-color: #21a0fe;\r\n  box-shadow: 1px 1px 1px white;\n}\r\n\r\n/**/\r\n/*Стиль блоков-обёрток для <p>*/\n.inf-paragraph {\r\n  min-width: 250px;\r\n  max-width: 270px;\r\n  margin: 5px 0 auto 0;\n}\r\n\r\n/**/\n.changing-declaration .inf-block div {\r\n  padding: unset;\r\n  margin-right: 5px;\n}\n.changing-code {\r\n  margin-top: 10px;\n}\r\n\r\n/*стиль, отменяющий стрелки в <input type =\"number\"> в разделе \"Код изменений\"*/\n.number-code::-webkit-outer-spin-button,\r\n.number-code::-webkit-inner-spin-button {\r\n  -webkit-appearance: none;\n}\r\n\r\n/**/\r\n/*Стили блоков с инпутами из раздела \"Товарная партия\"*/\n.batch-form {\r\n  padding: 0 10px 0 10px;\n}\n.batch-form div:first-child {\r\n  padding-left: 0;\n}\n.batch-block {\r\n  padding-left: 10px;\n}\n.batch-block div {\r\n  padding: 0;\n}\r\n\r\n/**/\r\n/*Стили \"Сведений об оплате таможенных и иных платежей*/\n.payment-information {\r\n  width: fit-content;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  font-size: 10px;\n}\n.payment-information:hover {\r\n  cursor: pointer;\n}\r\n\r\n/**/\r\n/*Стили кнопок со скрывающимся контентом*/\n.invoice-button:focus {\r\n  box-shadow: unset;\n}\n.invoice-button.collapsed .collapsing-block i {\r\n  transform: rotate(180deg);\n}\n.collapsing-block {\r\n  background-color: white;\r\n  border: 1px solid black;\r\n  padding: 5px 10px;\r\n  font-weight: bold;\n}\n.collapsing-block span,\r\ni {\r\n  font-size: 14px;\n}\r\n\r\n/**/\n.card-body {\r\n  background-color: unset;\r\n  border: 1px solid black;\n}\n.point-name {\r\n  width: fit-content;\r\n  margin: auto auto 0;\r\n  color: #3274dd;\r\n  text-decoration: underline;\n}\n.personal-data div {\r\n  padding: 0 0 0 3px;\n}\r\n\r\n/*Стиль заголовка \"Таможенный представитель\"*/\n.customs-representative {\r\n  font-size: 11px;\r\n  font-weight: bold;\r\n  margin: 0 0 8px;\n}\r\n\r\n/**/\r\n/*Стили кнопки календаря*/\n.button-calendar {\r\n  background-color: white;\r\n  border: unset;\r\n  border-radius: 8px;\r\n  padding: 1px 5px;\n}\n.button-calendar:focus {\r\n  box-shadow: unset;\n}\r\n\r\n/**/\r\n/*Стиль для текста, который надо отцентровать внизу и посередине( применяется к родительскому блоку и к тэгу <p>*/\n.align-bcntr {\r\n  display: flex;\r\n  margin: 5px auto 0;\n}\r\n\r\n/*Стили блока информации о товарной партии*/\n.product-batch {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  margin: 0 auto;\n}\r\n\r\n/*Стиль синего хэдера с кнопками */\n.product-batch-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\n.batch-button:focus {\r\n  box-shadow: unset;\n}\n.batch-button i:before {\r\n  color: white;\n}\n.batch-button:last-child i {\r\n  transform: rotate(180deg);\n}\r\n\r\n/**/\n.product-inner-block {\r\n  padding: 10px;\n}\n.fs-12 {\r\n  font-size: 12px;\n}\r\n\r\n/*Стиль кнопки \"интернет-магазин\", которая находится в элементе с общей информацией о партии*/\n.new-window-button {\r\n  background-color: white;\r\n  border-radius: 5px;\r\n  padding: 1px 5px;\n}\n.new-window-button:hover {\r\n  box-shadow: unset;\n}\n.new-window-button:focus {\r\n  box-shadow: unset;\n}\n.new-window-button i {\r\n  font-size: 15px;\r\n  color: #3274dd;\n}\r\n\r\n/**/\r\n\r\n/*Стили группы серых ссылок в элементе с общей информацией о партии*/\n.batch-info-anchors > a, router-link {\r\n  display: block;\r\n  color: gray;\r\n  text-decoration: underline;\r\n  margin-bottom: 3px;\n}\n.batch-info-anchors router-link:hover {\r\n  color: blue;\r\n  cursor: pointer;\n}\r\n\r\n/**/\n.product-info-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  margin: 0 auto;\n}\n.product-info-actions button:focus {\r\n  box-shadow: unset;\n}\n.product-info-actions i:before {\r\n  color: white;\n}\n.product-info-actions .fa-sort-down:before {\r\n  color: black;\n}\n.product-actions-button:not(.collapsed) {\r\n  transform: rotate(180deg);\n}\r\n\r\n/*.btn {*/\r\n/*  padding: 1rem;*/\r\n/*}*/\n.btn-bg-white {\r\n  background-color: white;\r\n  border-radius: 5px;\r\n  padding: 1px 5px;\n}\n.btn-bg-white:focus {\r\n  box-shadow: unset;\n}\n.fa-note-sticky {\r\n  font-size: 16px;\n}\r\n\r\n/*Стили блока со сведениями о дополнительном документе*/\n.optional-inf-block {\r\n  background-color: #d1d1d1;\r\n  padding: 0 0 10px;\r\n  border: 1px solid black;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  margin: 0 auto;\n}\n.optional-inf-header {\r\n  padding: 0 10px;\r\n  background-color: #3274dd;\r\n  box-shadow: inset 1px 1px 6px 0 #0d3195;\r\n  color: white;\n}\r\n";
+styleInject(css_248z$3);
 
-script$3.render = render$3;
-script$3.__file = "src/components/Declaration/Declaration.vue";
+script$4.render = render$4;
+script$4.__file = "src/components/Declaration/Declaration.vue";
 
-var script$2 = {
+var script$3 = {
   name: "TsoftLeftmenuGoods",
   props: {
     treeGoods: {
@@ -5625,15 +5625,15 @@ var script$2 = {
   },
 };
 
-const _hoisted_1$2 = { class: "sidebar me-3" };
-const _hoisted_2$2 = { id: "goodsList" };
-const _hoisted_3$1 = { href: "#declaration" };
+const _hoisted_1$3 = { class: "sidebar me-3" };
+const _hoisted_2$3 = { id: "goodsList" };
+const _hoisted_3$2 = { href: "#declaration" };
 
-function render$2(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$2, [
-    vue.createElementVNode("ol", _hoisted_2$2, [
+function render$3(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$3, [
+    vue.createElementVNode("ol", _hoisted_2$3, [
       vue.createElementVNode("li", null, [
-        vue.createElementVNode("a", _hoisted_3$1, vue.toDisplayString($props.treeGoods.title), 1 /* TEXT */)
+        vue.createElementVNode("a", _hoisted_3$2, vue.toDisplayString($props.treeGoods.title), 1 /* TEXT */)
       ]),
       (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.treeGoods.goods, (good, index) => {
         return (vue.openBlock(), vue.createElementBlock("li", { key: index }, vue.toDisplayString(good), 1 /* TEXT */))
@@ -5642,14 +5642,14 @@ function render$2(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$1 = "\n.sidebar[data-v-6ebd9650] {\n  position: sticky;\n  top: 0;\n  height: fit-content;\n  min-width: 300px;\n  margin-top: 10px;\n}\n.form-switch .form-check-input[data-v-6ebd9650] {\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")\n}\n.goods-switcher-block[data-v-6ebd9650] {\n  padding: 2px 0 0;\n  margin: 0 10px;\n}\n.goods-menu-switcher[data-v-6ebd9650] {\n  width: 50px;\n  background-color: #E67926;\n  box-shadow: unset;\n  border: unset;\n  margin: 0;\n}\n.goods-icon[data-v-6ebd9650] {\n  color: gray;\n  font-size: 18px;\n}\n.tree-icon[data-v-6ebd9650] {\n  color: gray;\n  font-size: 18px;\n}\n.goods-menu-switcher[data-v-6ebd9650]:checked {\n  background-color: #0D6247;\n}\n.goods-menu-switcher[data-v-6ebd9650]:hover {\n  cursor: pointer;\n}\n.goods-icon.active[data-v-6ebd9650] {\n  color: #0D6247;\n}\n.tree-icon.active[data-v-6ebd9650] {\n  color: #E67926;\n}\nli a[data-v-6ebd9650] {\n  color: black;\n  text-decoration: unset;\n  font-size: 14px;\n}\n";
-styleInject(css_248z$1);
+var css_248z$2 = "\n.sidebar[data-v-6ebd9650] {\r\n  position: sticky;\r\n  top: 0;\r\n  height: fit-content;\r\n  min-width: 300px;\r\n  margin-top: 10px;\n}\n.form-switch .form-check-input[data-v-6ebd9650] {\r\n  background-image: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e\")\n}\n.goods-switcher-block[data-v-6ebd9650] {\r\n  padding: 2px 0 0;\r\n  margin: 0 10px;\n}\n.goods-menu-switcher[data-v-6ebd9650] {\r\n  width: 50px;\r\n  background-color: #E67926;\r\n  box-shadow: unset;\r\n  border: unset;\r\n  margin: 0;\n}\n.goods-icon[data-v-6ebd9650] {\r\n  color: gray;\r\n  font-size: 18px;\n}\n.tree-icon[data-v-6ebd9650] {\r\n  color: gray;\r\n  font-size: 18px;\n}\n.goods-menu-switcher[data-v-6ebd9650]:checked {\r\n  background-color: #0D6247;\n}\n.goods-menu-switcher[data-v-6ebd9650]:hover {\r\n  cursor: pointer;\n}\n.goods-icon.active[data-v-6ebd9650] {\r\n  color: #0D6247;\n}\n.tree-icon.active[data-v-6ebd9650] {\r\n  color: #E67926;\n}\nli a[data-v-6ebd9650] {\r\n  color: black;\r\n  text-decoration: unset;\r\n  font-size: 14px;\n}\r\n";
+styleInject(css_248z$2);
 
-script$2.render = render$2;
-script$2.__scopeId = "data-v-6ebd9650";
-script$2.__file = "src/components/Menu/LeftMenuGoods.vue";
+script$3.render = render$3;
+script$3.__scopeId = "data-v-6ebd9650";
+script$3.__file = "src/components/Menu/LeftMenuGoods.vue";
 
-var script$1 = {
+var script$2 = {
   name: "TsoftInstrumentsMenu",
   data() {
     return {
@@ -5665,8 +5665,8 @@ var script$1 = {
   emits: ['close']
 };
 
-const _hoisted_1$1 = { class: "d-flex instruments" };
-const _hoisted_2$1 = /*#__PURE__*/vue.createStaticVNode("<div class=\"dropdown\" title=\"создать документ\"><button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\"><i class=\"fa-solid fa-file\" style=\"color:orange;font-size:20px;\"></i></button><div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width:500px;\"><div class=\"d-flex\"></div><div class=\"d-flex\"><div class=\"col-6\"><div class=\"mt-2 p-3\"><select class=\"w-100\" name=\"\" id=\"\"><option> выберите перевозчика </option><option> Transporter-1 </option><option> Transporter-2 </option><option> Transporter-3 </option><option> Transporter... </option></select><p class=\"\" style=\"font-size:12px;\"> (не влияет на оформление, можно писать, что угодно) </p></div><div class=\"row mt-1 p-3\"><p>Тип транспорта</p><div class=\"btn-group-vertical\"><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio1\" autocomplete=\"off\"><label class=\"\" for=\"btnradio1\">Авиационный</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio2\" autocomplete=\"off\"><label class=\"\" for=\"btnradio2\">Автомобильный</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio3\" autocomplete=\"off\"><label class=\"\" for=\"btnradio3\">Морской</label></div></div></div><div class=\"row p-3 mt-2\"><div class=\"d-flex\"><input class=\"checkbox\" type=\"checkbox\" id=\"reestr\"><label class=\"ms-2\" for=\"reestr\" style=\"font-size:13px;\"> Реестр по 158/142 решению ЕЭК </label></div><p>Тип</p><div class=\"btn-group-vertical\"><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"radio1\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio1\" style=\"font-size:13px;\">ПТДЭГ</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"radio2\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\">ДТЭГ</label></div></div></div><div class=\"row mt-2 p-3\"><p>Тр. расходы к там. стоимости</p><div class=\"btn-group-vertical\"><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"io1\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio1\" style=\"font-size:13px;\">Прибавлять</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"bio2\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\">Вычитать</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"io2\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\">Не использовать</label></div><div class=\"d-flex\"><input class=\"checkbox\" type=\"checkbox\" id=\"reestr\"><label class=\"ms-2\" for=\"reestr\" style=\"font-size:13px;\"> Поменять местами отп-я и пол-я </label></div></div></div><div class=\"row mt-2\"></div><div class=\"row mt-2\"></div></div><div class=\"col-6\"><img src=\"img/menushka.png\" style=\"width:250px;height:100%;\"></div></div><div class=\"d-flex\"><div class=\"col-8\"></div><div class=\"col-4 d-flex p-1\"><button class=\"btn me-2\" style=\"border:1px solid;\"><a href=\"alta-maket/index.html\" style=\"color:black;text-decoration:unset;\">ОК</a></button><button class=\"btn\" style=\"border:1px solid;\">Отмена</button></div></div></div></div><div class=\"import-doc\"><button class=\"btn\" id=\"sendRegistry\" title=\"Отправить документ\"><i class=\"fa-solid fa-file-import\" style=\"font-size:20px;color:red;\"></i></button></div><div class=\"import-doc\"><button class=\"btn\" title=\"переместить в архив\"><i class=\"fa-solid fa-box-archive\" id=\"archivingButton\" style=\"font-size:20px;color:#18b14e;\"></i></button></div>", 3);
+const _hoisted_1$2 = { class: "d-flex instruments" };
+const _hoisted_2$2 = /*#__PURE__*/vue.createStaticVNode("<div class=\"dropdown\" title=\"создать документ\"><button class=\"btn dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\"><i class=\"fa-solid fa-file\" style=\"color:orange;font-size:20px;\"></i></button><div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\" style=\"width:500px;\"><div class=\"d-flex\"></div><div class=\"d-flex\"><div class=\"col-6\"><div class=\"mt-2 p-3\"><select class=\"w-100\" name=\"\" id=\"\"><option> выберите перевозчика </option><option> Transporter-1 </option><option> Transporter-2 </option><option> Transporter-3 </option><option> Transporter... </option></select><p class=\"\" style=\"font-size:12px;\"> (не влияет на оформление, можно писать, что угодно) </p></div><div class=\"row mt-1 p-3\"><p>Тип транспорта</p><div class=\"btn-group-vertical\"><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio1\" autocomplete=\"off\"><label class=\"\" for=\"btnradio1\">Авиационный</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio2\" autocomplete=\"off\"><label class=\"\" for=\"btnradio2\">Автомобильный</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"btnradio3\" autocomplete=\"off\"><label class=\"\" for=\"btnradio3\">Морской</label></div></div></div><div class=\"row p-3 mt-2\"><div class=\"d-flex\"><input class=\"checkbox\" type=\"checkbox\" id=\"reestr\"><label class=\"ms-2\" for=\"reestr\" style=\"font-size:13px;\"> Реестр по 158/142 решению ЕЭК </label></div><p>Тип</p><div class=\"btn-group-vertical\"><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"radio1\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio1\" style=\"font-size:13px;\">ПТДЭГ</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"radio2\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\">ДТЭГ</label></div></div></div><div class=\"row mt-2 p-3\"><p>Тр. расходы к там. стоимости</p><div class=\"btn-group-vertical\"><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"io1\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio1\" style=\"font-size:13px;\">Прибавлять</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"bio2\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\">Вычитать</label></div><div class=\"d-flex\"><input type=\"radio\" class=\"radio\" name=\"btnradio\" id=\"io2\" autocomplete=\"off\"><label class=\"ms-2\" for=\"btnradio2\" style=\"font-size:13px;\">Не использовать</label></div><div class=\"d-flex\"><input class=\"checkbox\" type=\"checkbox\" id=\"reestr\"><label class=\"ms-2\" for=\"reestr\" style=\"font-size:13px;\"> Поменять местами отп-я и пол-я </label></div></div></div><div class=\"row mt-2\"></div><div class=\"row mt-2\"></div></div><div class=\"col-6\"><img src=\"img/menushka.png\" style=\"width:250px;height:100%;\"></div></div><div class=\"d-flex\"><div class=\"col-8\"></div><div class=\"col-4 d-flex p-1\"><button class=\"btn me-2\" style=\"border:1px solid;\"><a href=\"alta-maket/index.html\" style=\"color:black;text-decoration:unset;\">ОК</a></button><button class=\"btn\" style=\"border:1px solid;\">Отмена</button></div></div></div></div><div class=\"import-doc\"><button class=\"btn\" id=\"sendRegistry\" title=\"Отправить документ\"><i class=\"fa-solid fa-file-import\" style=\"font-size:20px;color:red;\"></i></button></div><div class=\"import-doc\"><button class=\"btn\" title=\"переместить в архив\"><i class=\"fa-solid fa-box-archive\" id=\"archivingButton\" style=\"font-size:20px;color:#18b14e;\"></i></button></div>", 3);
 const _hoisted_5$1 = { class: "import-doc" };
 const _hoisted_6$1 = /*#__PURE__*/vue.createElementVNode("button", {
   class: "btn",
@@ -5686,7 +5686,7 @@ const _hoisted_7$1 = /*#__PURE__*/vue.createElementVNode("i", {
 const _hoisted_8$1 = [
   _hoisted_7$1
 ];
-const _hoisted_9 = /*#__PURE__*/vue.createElementVNode("button", {
+const _hoisted_9$1 = /*#__PURE__*/vue.createElementVNode("button", {
   type: "button",
   class: "btn",
   title: "Изменить структуру"
@@ -5697,11 +5697,11 @@ const _hoisted_9 = /*#__PURE__*/vue.createElementVNode("button", {
   })
 ], -1 /* HOISTED */);
 
-function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+function render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tsoft_modal_window = vue.resolveComponent("tsoft-modal-window");
 
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$1, [
-    _hoisted_2$1,
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$2, [
+    _hoisted_2$2,
     vue.createElementVNode("div", _hoisted_5$1, [
       _hoisted_6$1,
       vue.createElementVNode("button", {
@@ -5710,7 +5710,7 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
         type: "button",
         onClick: _cache[0] || (_cache[0] = (...args) => ($options.openModal && $options.openModal(...args)))
       }, _hoisted_8$1),
-      _hoisted_9
+      _hoisted_9$1
     ]),
     vue.createVNode(_component_tsoft_modal_window, {
       onClose: $options.openModal,
@@ -5720,11 +5720,16 @@ function render$1(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-script$1.render = render$1;
-script$1.__file = "src/components/Menu/InstrumentsMenu.vue";
+script$2.render = render$2;
+script$2.__file = "src/components/Menu/InstrumentsMenu.vue";
 
-var script = {
+var script$1 = {
   name: "TsoftModalWindow",
+  data() {
+    return {
+      loading: true,
+    }
+  },
   methods: {
     closeModal() {
       this.$emit("close");
@@ -5742,13 +5747,16 @@ var script = {
   },
   mounted() {
     console.log(this.turn);
+    // setTimeout(() => {
+    //   this.loading = false
+    // }, 2000)
   }
 };
 
 const _withScopeId = n => (vue.pushScopeId("data-v-477f0afb"),n=n(),vue.popScopeId(),n);
-const _hoisted_1 = { class: "wrapper d-flex" };
-const _hoisted_2 = { class: "mod-container" };
-const _hoisted_3 = { class: "mod-block" };
+const _hoisted_1$1 = { class: "wrapper d-flex" };
+const _hoisted_2$1 = { class: "mod-container" };
+const _hoisted_3$1 = { class: "mod-block" };
 const _hoisted_4 = { class: "mod-header d-flex" };
 const _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("span", { class: "mod-title" }, "Заголовок", -1 /* HOISTED */));
 const _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("div", { class: "xmark" }, [
@@ -5757,17 +5765,29 @@ const _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createEleme
 const _hoisted_7 = [
   _hoisted_6
 ];
-const _hoisted_8 = /*#__PURE__*/vue.createStaticVNode("<div class=\"mod-body\" data-v-477f0afb><h1 data-v-477f0afb>Тут будет компонент</h1></div><div class=\"mod-footer\" data-v-477f0afb><div class=\"footer-button\" data-v-477f0afb><button class=\"btn cancel\" type=\"button\" data-v-477f0afb>Отменить</button><button class=\"btn accept\" type=\"button\" data-v-477f0afb>Применить</button></div><div class=\"footer-label\" data-v-477f0afb><span class=\"mod-title\" data-v-477f0afb>Заключение</span></div></div>", 2);
+const _hoisted_8 = { class: "mod-body" };
+const _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("div", null, [
+  /*#__PURE__*/vue.createElementVNode("h1", null, "Тут будет компонент")
+], -1 /* HOISTED */));
+const _hoisted_10 = { class: "mod-footer" };
+const _hoisted_11 = { class: "footer-button" };
+const _hoisted_12 = ["disabled"];
+const _hoisted_13 = ["disabled"];
+const _hoisted_14 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/vue.createElementVNode("div", { class: "footer-label" }, [
+  /*#__PURE__*/vue.createElementVNode("span", { class: "mod-title" }, "Заключение")
+], -1 /* HOISTED */));
 
-function render(_ctx, _cache, $props, $setup, $data, $options) {
+function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_tsoft_preloader = vue.resolveComponent("tsoft-preloader");
+
   return (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
     vue.createCommentVNode("Region Modal "),
     vue.withDirectives(vue.createElementVNode("div", {
       class: vue.normalizeClass(["modal-window", {open: $props.turn}])
     }, [
-      vue.createElementVNode("div", _hoisted_1, [
-        vue.createElementVNode("div", _hoisted_2, [
-          vue.createElementVNode("div", _hoisted_3, [
+      vue.createElementVNode("div", _hoisted_1$1, [
+        vue.createElementVNode("div", _hoisted_2$1, [
+          vue.createElementVNode("div", _hoisted_3$1, [
             vue.createElementVNode("div", _hoisted_4, [
               _hoisted_5,
               vue.createElementVNode("div", {
@@ -5777,7 +5797,27 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 onKeyup: _cache[1] || (_cache[1] = vue.withKeys($event => (_ctx.$emit('close')), ["esc"]))
               }, _hoisted_7, 32 /* HYDRATE_EVENTS */)
             ]),
-            _hoisted_8
+            vue.createElementVNode("div", _hoisted_8, [
+              (this.loading)
+                ? (vue.openBlock(), vue.createBlock(_component_tsoft_preloader, { key: 0 }))
+                : vue.createCommentVNode("v-if", true),
+              _hoisted_9
+            ]),
+            vue.createElementVNode("div", _hoisted_10, [
+              vue.createElementVNode("div", _hoisted_11, [
+                vue.createElementVNode("button", {
+                  class: "btn cancel",
+                  type: "button",
+                  disabled: this.loading
+                }, "Отменить", 8 /* PROPS */, _hoisted_12),
+                vue.createElementVNode("button", {
+                  class: "btn accept",
+                  type: "button",
+                  disabled: this.loading
+                }, "Применить", 8 /* PROPS */, _hoisted_13)
+              ]),
+              _hoisted_14
+            ])
           ])
         ])
       ])
@@ -5788,27 +5828,63 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
 }
 
-var css_248z = "\n.modal-window[data-v-477f0afb] {\n  background: rgba(0, 0, 0, 0);\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 997;\n}\n.modal-window.open[data-v-477f0afb] {\n  background: rgba(0, 0, 0, 0.4);\n  transition: 0.5s;\n}\n.wrapper[data-v-477f0afb] {\n  width: 100%;\n  height: 100%;\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\n  position: relative;\n  margin: 0 auto auto auto;\n  background-color: white;\n  width: fit-content;\n  height: fit-content;\n  max-height: 1000px;\n  z-index: 11;\n  box-shadow: 4px 4px 10px 0 #343434;\n  border-radius: 4px;\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\n  font-size: 16px;\n  font-weight: bold;\n  color: grey;\n}\n.mod-container[data-v-477f0afb] {\n  background-color: white;\n  opacity: 1;\n  z-index: 10;\n  margin: auto;\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\n  margin: 10px;\n  border-bottom: 1px solid #c4c4c4;\n  justify-content: space-between;\n}\n.close-modal-button[data-v-477f0afb] {\n  color: white;\n  border-radius: 14px;\n  width: 20px;\n  height: 20px;\n  background: lightgray;\n  padding: 4px;\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\n  background-color: #0D6247;\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\n  margin: 10px;\n}\n.mod-footer[data-v-477f0afb] {\n  display: contents;\n}\n.footer-label[data-v-477f0afb] {\n  margin: 10px;\n  border-top: 1px solid #c4c4c4;\n}\n.footer-button[data-v-477f0afb] {\n  display: flex;\n  justify-content: end;\n}\n.footer-button .btn[data-v-477f0afb] {\n  margin-right: 10px;\n  color: white;\n  box-shadow: 2px 2px 6px 0 #818181;\n  font-weight: bold;\n}\n.btn.cancel[data-v-477f0afb] {\n  background: #E57A26;\n}\n.btn.accept[data-v-477f0afb] {\n  background: #0D6247;\n}\n.btn.cancel[data-v-477f0afb]:hover {\n  color: #E57A26;\n  background: white;\n}\n.btn.accept[data-v-477f0afb]:hover {\n  color: #0D6247;\n  background: white;\n}\n.download-block .btn[data-v-477f0afb]:hover {\n  color: orange;\n  /*font-weight: bold;*/\n  background-color: white;\n  box-shadow: 2px 2px 6px 0 #9b9b9b;\n  transition: 0.3s;\n}\n";
+var css_248z$1 = "\n.modal-window[data-v-477f0afb] {\r\n  background: rgba(0, 0, 0, 0);\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 997;\n}\n.modal-window.open[data-v-477f0afb] {\r\n  background: rgba(0, 0, 0, 0.4);\r\n  transition: 0.5s;\n}\n.wrapper[data-v-477f0afb] {\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\r\n  position: relative;\r\n  margin: 0 auto auto auto;\r\n  background-color: white;\r\n  min-width: 400px;\r\n  width: fit-content;\r\n  height: fit-content;\r\n  max-height: 1000px;\r\n  z-index: 11;\r\n  box-shadow: 4px 4px 10px 0 #343434;\r\n  border-radius: 4px;\r\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  color: grey;\n}\n.mod-container[data-v-477f0afb] {\r\n  background-color: white;\r\n  opacity: 1;\r\n  z-index: 10;\r\n  margin: auto;\r\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\r\n  margin: 10px;\r\n  border-bottom: 1px solid #c4c4c4;\r\n  justify-content: space-between;\n}\n.close-modal-button[data-v-477f0afb] {\r\n  color: white;\r\n  border-radius: 14px;\r\n  width: 20px;\r\n  height: 20px;\r\n  background: lightgray;\r\n  padding: 4px;\r\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\r\n  background-color: #0D6247;\r\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\r\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\r\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\r\n  margin: 10px;\r\n  position: relative;\r\n  min-height: 80px;\n}\n.mod-footer[data-v-477f0afb] {\r\n  display: contents;\n}\n.footer-label[data-v-477f0afb] {\r\n  margin: 10px;\r\n  border-top: 1px solid #c4c4c4;\n}\n.footer-button[data-v-477f0afb] {\r\n  display: flex;\r\n  justify-content: end;\n}\n.footer-button .btn[data-v-477f0afb] {\r\n  margin-right: 10px;\r\n  color: white;\r\n  box-shadow: 2px 2px 6px 0 #818181;\r\n  font-weight: bold;\n}\n.btn.cancel[data-v-477f0afb] {\r\n  background: #E57A26;\n}\n.btn.accept[data-v-477f0afb] {\r\n  background: #0D6247;\n}\n.btn.cancel[data-v-477f0afb]:hover {\r\n  color: #E57A26;\r\n  background: white;\n}\n.btn.accept[data-v-477f0afb]:hover {\r\n  color: #0D6247;\r\n  background: white;\n}\n.download-block .btn[data-v-477f0afb]:hover {\r\n  color: orange;\r\n  /*font-weight: bold;*/\r\n  background-color: white;\r\n  box-shadow: 2px 2px 6px 0 #9b9b9b;\r\n  transition: 0.3s;\n}\r\n";
+styleInject(css_248z$1);
+
+script$1.render = render$1;
+script$1.__scopeId = "data-v-477f0afb";
+script$1.__file = "src/components/Modal/ModalWindow.vue";
+
+var script = {
+  name: 'TsoftPreloader',
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  mounted() {
+  setTimeout(() => {
+    this.loading = false;
+  }, 1000);
+  },
+};
+
+const _hoisted_1 = { class: "preloader-main" };
+const _hoisted_2 = /*#__PURE__*/vue.createElementVNode("div", { class: "lds-ring" }, [
+  /*#__PURE__*/vue.createElementVNode("div"),
+  /*#__PURE__*/vue.createElementVNode("div"),
+  /*#__PURE__*/vue.createElementVNode("div"),
+  /*#__PURE__*/vue.createElementVNode("div")
+], -1 /* HOISTED */);
+const _hoisted_3 = [
+  _hoisted_2
+];
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1, _hoisted_3))
+}
+
+var css_248z = "\n.preloader-main {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  display: flex;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(255, 255, 255, 0.8);\r\n  z-index: 200;\n}\n.lds-ring {\r\n  display: inline-block;\r\n  position: relative;\r\n  width: 80px;\r\n  height: 80px;\r\n  margin: auto;\n}\n.lds-ring div {\r\n  box-sizing: border-box;\r\n  display: block;\r\n  position: absolute;\r\n  width: 50px;\r\n  height: 50px;\r\n  margin: 8px;\r\n  border: 8px solid #fff;\r\n  border-radius: 50%;\r\n  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;\r\n  border-color: #cccccc transparent transparent transparent;\n}\n.lds-ring div:nth-child(1) {\r\n  animation-delay: -0.45s;\n}\n.lds-ring div:nth-child(2) {\r\n  animation-delay: -0.3s;\n}\n.lds-ring div:nth-child(3) {\r\n  animation-delay: -0.15s;\n}\n@keyframes lds-ring {\n0% {\r\n    transform: rotate(0deg);\n}\n100% {\r\n    transform: rotate(360deg);\n}\n}\r\n\r\n";
 styleInject(css_248z);
 
 script.render = render;
-script.__scopeId = "data-v-477f0afb";
-script.__file = "src/components/Modal/ModalWindow.vue";
+script.__file = "src/components/Loader/Preloader.vue";
 
 var components = { 
-    InputTextarea: script$e,
-    InputText: script$f,
-    TsoftTable: script$d,
-    TsoftTree: script$b,
-    TsoftLeftmenuFolder: script$8,
-    TsoftLeftmenuGoods: script$2,
-    TsoftGeneralDeclarationForm: script$7,
-    TsoftGoodsAwbInformationForm: script$6,
-    TsoftAdditionalDocumentForm: script$5,
-    TsoftGoodInformationForm: script$4,
-    TsoftDeclaration: script$3,
-    TsoftInstrumentsMenu: script$1,
-    TsoftModalWindow: script,
+    InputTextarea: script$f,
+    InputText: script$g,
+    TsoftTable: script$e,
+    TsoftTree: script$c,
+    TsoftLeftmenuFolder: script$9,
+    TsoftLeftmenuGoods: script$3,
+    TsoftGeneralDeclarationForm: script$8,
+    TsoftGoodsAwbInformationForm: script$7,
+    TsoftAdditionalDocumentForm: script$6,
+    TsoftGoodInformationForm: script$5,
+    TsoftDeclaration: script$4,
+    TsoftInstrumentsMenu: script$2,
+    TsoftModalWindow: script$1,
+    TsoftPreloader: script,
 };
 
 const plugin = {
