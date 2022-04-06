@@ -28,8 +28,6 @@ export default {
 <style scoped>
 
 .sidebar {
-  position: sticky;
-  top: 0;
   height: fit-content;
   min-width: 300px;
   margin-top: 10px;

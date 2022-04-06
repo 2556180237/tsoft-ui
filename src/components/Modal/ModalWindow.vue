@@ -147,7 +147,7 @@ export default {
 .mod-body {
   margin: 10px;
   position: relative;
-  min-height: 80px;
+  min-height: 80px  ;
 }
 
 .mod-footer {
