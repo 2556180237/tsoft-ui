@@ -12,9 +12,8 @@
           </div>
 
           <div class="mod-body">
-              <tsoft-preloader v-if="this.loading"/>
             <div>
-              <h1>Тут будет компонент</h1>
+              <slot></slot>
             </div>
           </div>
           <div class="mod-footer">
