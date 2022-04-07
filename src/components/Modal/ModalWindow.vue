@@ -12,9 +12,8 @@
           </div>
 
           <div class="mod-body">
-            <div>
-              <slot></slot>
-            </div>
+            <tsoft-preloader v-if="!this.loading"/>
+            <slot :name="nameComponent"></slot>
           </div>
           <div class="mod-footer">
             <div class="footer-button">
@@ -49,18 +48,12 @@ export default {
     turn: {
       type: Boolean,
       required: true
+    },
+    nameComponent: {
+      type: String,
+      required: false
     }
-    // component: {
-    //   type: String,
-    //   required: false
-    // }
   },
-  mounted() {
-    console.log(this.turn);
-    // setTimeout(() => {
-    //   this.loading = false
-    // }, 2000)
-  }
 };
 </script>
 <style scoped>
