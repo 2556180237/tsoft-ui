@@ -11,9 +11,10 @@ import TsoftDeclaration from  './components/Declaration/Declaration.vue'
 import TsoftLeftmenuGoods from './components/Menu/LeftMenuGoods.vue'
 import TsoftInstrumentsMenu from './components/Menu/InstrumentsMenu.vue'
 import TsoftModalWindow from './components/Modal/ModalWindow.vue'
+import TsoftNewModalWindow from './components/Modal/NewModalWindow.vue'
 import TsoftPreloader from './components/Loader/Preloader.vue'
 
-export default { 
+export default {
     InputTextarea,
     InputText,
     TsoftTable,
@@ -27,5 +28,6 @@ export default {
     TsoftDeclaration,
     TsoftInstrumentsMenu,
     TsoftModalWindow,
+    TsoftNewModalWindow,
     TsoftPreloader,
 }
