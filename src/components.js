@@ -13,6 +13,7 @@ import TsoftInstrumentsMenu from './components/Menu/InstrumentsMenu.vue'
 import TsoftModalWindow from './components/Modal/ModalWindow.vue'
 import TsoftNewModalWindow from './components/Modal/NewModalWindow.vue'
 import TsoftPreloader from './components/Loader/Preloader.vue'
+import TsoftGoodsFoldersSwitcher from './components/Switcher/GoodsFoldersSwitcher.vue'
 
 export default {
     InputTextarea,
@@ -30,4 +31,5 @@ export default {
     TsoftModalWindow,
     TsoftNewModalWindow,
     TsoftPreloader,
+    TsoftGoodsFoldersSwitcher
 }
