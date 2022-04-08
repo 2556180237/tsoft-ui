@@ -281,15 +281,6 @@
                 <router-link :to="{ name: 'index' }" class="align-bcntr">Предшествующий документ</router-link>
               </div>
             </div>
-            <div class="col-3 d-flex">
-              <div class="d-flex batch-info-anchors">
-                <router-link
-                  :to="{ name: 'index' }"
-                  class="align-bcntr"
-                  id="extraDocLink">Дополнительный документ
-                </router-link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -305,10 +296,6 @@ export default {
   },
   props: {
     good: {
-      type: Object,
-      required: true
-    },
-    documents: {
       type: Object,
       required: true
     },

@@ -1,10 +1,9 @@
 <template>
   <div class="menu-sitemap-tree">
-    <div class="file-system" >
-      <transition name="fade" mode="out-in">
+    <div class="file-system">
+
         <tsoft-preloader v-if="!folders"/>
         <tree-folder :tree-data="treeData" @getName="getName" v-else/>
-      </transition>
     </div>
   </div>
 </template>
@@ -37,9 +36,9 @@ export default {
 
 <style scoped>
 .menu-sitemap-tree {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 685px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  height: 660px;
   position: sticky;
 }
 .file-system {

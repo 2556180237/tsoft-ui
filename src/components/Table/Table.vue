@@ -103,12 +103,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+a {
+  color: #0D6247;
+  font-weight: bold;
+}
 #tableResponsive {
   background: rgb(253, 253, 253);
   box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);
 }
 .content {
-  padding: 20px 0 20px 20px;
+  padding: 10px 0 10px 10px;
 }
 
 .tbody td p {

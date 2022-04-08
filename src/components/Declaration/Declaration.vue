@@ -124,7 +124,7 @@ export default {
 }
 
 .forms {
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .fa-caret-right {
