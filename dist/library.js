@@ -77,7 +77,7 @@ var script$g = {
 
 const _withScopeId$3 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$g = { class: "content" };
-const _hoisted_2$g = { class: "row section" };
+const _hoisted_2$f = { class: "row section" };
 const _hoisted_3$d = { class: "table-section" };
 const _hoisted_4$9 = { class: "slider-block" };
 const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
@@ -97,7 +97,7 @@ function render$g(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$g, [
-    vue.createElementVNode("div", _hoisted_2$g, [
+    vue.createElementVNode("div", _hoisted_2$f, [
       vue.createElementVNode("div", _hoisted_3$d, [
         vue.createElementVNode("div", _hoisted_4$9, [
           vue.createElementVNode("div", {
@@ -188,7 +188,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$b = "\na[data-v-647119ad] {\n  color: #0D6247;\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  /*box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);*/\n}\n.content[data-v-647119ad] {\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
+var css_248z$b = "\na[data-v-647119ad] {\n  color: #0D6247;\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  border: 1px solid #ccc;\n}\n.content[data-v-647119ad] {\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
 styleInject(css_248z$b);
 
 script$g.render = render$g;
@@ -203,14 +203,14 @@ var script$f = {
 };
 
 const _hoisted_1$f = { class: "node-tree" };
-const _hoisted_2$f = { class: "label" };
+const _hoisted_2$e = { class: "label" };
 const _hoisted_3$c = { key: 0 };
 
 function render$f(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_node = vue.resolveComponent("node");
 
   return (vue.openBlock(), vue.createElementBlock("li", _hoisted_1$f, [
-    vue.createElementVNode("span", _hoisted_2$f, vue.toDisplayString($props.node.label), 1 /* TEXT */),
+    vue.createElementVNode("span", _hoisted_2$e, vue.toDisplayString($props.node.label), 1 /* TEXT */),
     ($props.node.children && $props.node.children.length)
       ? (vue.openBlock(), vue.createElementBlock("ul", _hoisted_3$c, [
           (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.node.children, (child) => {
@@ -242,13 +242,13 @@ var script$e = {
 };
 
 const _hoisted_1$e = { class: "tree" };
-const _hoisted_2$e = { class: "tree-list" };
+const _hoisted_2$d = { class: "tree-list" };
 
 function render$e(_ctx, _cache) {
   const _component_node_tree = vue.resolveComponent("node-tree");
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$e, [
-    vue.createElementVNode("ul", _hoisted_2$e, [
+    vue.createElementVNode("ul", _hoisted_2$d, [
       vue.createVNode(_component_node_tree, { node: _ctx.treeData }, null, 8 /* PROPS */, ["node"])
     ])
   ]))
@@ -271,13 +271,13 @@ var script$d = {
 
 const _withScopeId$2 = n => (vue.pushScopeId("data-v-f314cfaa"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$d = { class: "file-row" };
-const _hoisted_2$d = { class: "file" };
+const _hoisted_2$c = { class: "file" };
 const _hoisted_3$b = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
 const _hoisted_4$8 = { class: "file-name" };
 
 function render$d(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$d, [
-    vue.createElementVNode("div", _hoisted_2$d, [
+    vue.createElementVNode("div", _hoisted_2$c, [
       _hoisted_3$b,
       vue.createElementVNode("span", _hoisted_4$8, vue.toDisplayString($props.filename), 1 /* TEXT */)
     ])
@@ -320,7 +320,7 @@ var script$c = {
 
 const _withScopeId$1 = n => (vue.pushScopeId("data-v-61a6cc5d"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$c = { class: "folder-row" };
-const _hoisted_2$c = { class: "folder-container" };
+const _hoisted_2$b = { class: "folder-container" };
 const _hoisted_3$a = ["onClick"];
 const _hoisted_4$7 = /*#__PURE__*/ _withScopeId$1(() => /*#__PURE__*/vue.createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
 const _hoisted_5$7 = ["onClick"];
@@ -335,7 +335,7 @@ function render$c(_ctx, _cache, $props, $setup, $data, $options) {
         class: "folder",
         key: folderName
       }, [
-        vue.createElementVNode("div", _hoisted_2$c, [
+        vue.createElementVNode("div", _hoisted_2$b, [
           vue.createElementVNode("i", {
             class: vue.normalizeClass(["fa-solid fa-angle-right", {'down-rotate': folder.settings.isOpen}]),
             onClick: $event => ($options.toggle(folderName))
@@ -397,14 +397,14 @@ var script$b = {
 };
 
 const _hoisted_1$b = { class: "menu-sitemap-tree" };
-const _hoisted_2$b = { class: "file-system" };
+const _hoisted_2$a = { class: "file-system" };
 
 function render$b(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tsoft_preloader = vue.resolveComponent("tsoft-preloader");
   const _component_tree_folder = vue.resolveComponent("tree-folder");
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$b, [
-    vue.createElementVNode("div", _hoisted_2$b, [
+    vue.createElementVNode("div", _hoisted_2$a, [
       (!$options.folders)
         ? (vue.openBlock(), vue.createBlock(_component_tsoft_preloader, { key: 0 }))
         : (vue.openBlock(), vue.createBlock(_component_tree_folder, {
@@ -441,7 +441,7 @@ const _hoisted_1$a = {
   class: "declaration mb-3",
   id: "declaration"
 };
-const _hoisted_2$a = { class: "common-inf" };
+const _hoisted_2$9 = { class: "common-inf" };
 const _hoisted_3$9 = { class: "row" };
 const _hoisted_4$6 = { class: "inf-block" };
 const _hoisted_5$6 = /*#__PURE__*/vue.createTextVNode(" Подан с ДТ: ");
@@ -1006,7 +1006,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
     vue.createCommentVNode("Region элемент с общей информацией декларации"),
-    vue.createElementVNode("div", _hoisted_2$a, [
+    vue.createElementVNode("div", _hoisted_2$9, [
       vue.createElementVNode("div", _hoisted_3$9, [
         vue.createElementVNode("div", _hoisted_4$6, [
           vue.createVNode(_component_router_link, {
@@ -2866,7 +2866,7 @@ var script$9 = {
 };
 
 const _hoisted_1$9 = { class: "order" };
-const _hoisted_2$9 = { class: "arrow" };
+const _hoisted_2$8 = { class: "arrow" };
 const _hoisted_3$8 = { class: "product-batch" };
 const _hoisted_4$5 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
 const _hoisted_5$5 = { class: "product-inner-block" };
@@ -3228,7 +3228,7 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
       onClick: _cache[0] || (_cache[0] = $event => ($data.isOrderOpen= !$data.isOrderOpen))
     }, [
       vue.createElementVNode("p", null, "Товарная партия " + vue.toDisplayString($props.orderNum), 1 /* TEXT */),
-      vue.createElementVNode("div", _hoisted_2$9, [
+      vue.createElementVNode("div", _hoisted_2$8, [
         vue.createElementVNode("span", {
           class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrderOpen}])
         }, null, 2 /* CLASS */)
@@ -4467,7 +4467,7 @@ const _hoisted_1$8 = {
   class: "optional-inf-block mt-2",
   id: "extraDocBlock"
 };
-const _hoisted_2$8 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_2$7 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex optional-inf-header justify-content-between\"><h4 class=\"col-4\">Сведения о дополнительном документе</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton2\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-2Inner\" aria-expanded=\"true\" aria-controls=\"product-2Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
 const _hoisted_3$7 = {
   class: "product-inner-block collapse",
   id: "product-2Inner"
@@ -4570,7 +4570,7 @@ const _hoisted_86$1 = { class: "input-bg" };
 
 function render$8(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
-    _hoisted_2$8,
+    _hoisted_2$7,
     vue.createElementVNode("div", _hoisted_3$7, [
       vue.createElementVNode("div", _hoisted_4$4, [
         vue.createElementVNode("div", _hoisted_5$4, [
@@ -4953,7 +4953,7 @@ const _hoisted_1$7 = {
   class: "product-info-block my-2",
   id: "productInvoiceBlock"
 };
-const _hoisted_2$7 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
+const _hoisted_2$6 = /*#__PURE__*/vue.createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Товар (1 из 2)</h4><div class=\"product-info-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-minus\" id=\"collapseButton\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div><div class=\"col-2\"><button class=\"btn product-actions-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#product-1Inner\" aria-expanded=\"true\" aria-controls=\"product-1Inner\"><i class=\"fa-solid fa-sort-down\"></i></button></div></div></div>", 1);
 const _hoisted_3$6 = {
   class: "product-inner-block collapse",
   id: "product-1Inner"
@@ -5071,7 +5071,7 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_router_link = vue.resolveComponent("router-link");
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
-    _hoisted_2$7,
+    _hoisted_2$6,
     vue.createElementVNode("div", _hoisted_3$6, [
       vue.createElementVNode("div", _hoisted_4$3, [
         vue.createElementVNode("div", _hoisted_5$3, [
@@ -5530,7 +5530,7 @@ var script$6 = {
 };
 
 const _hoisted_1$6 = { class: "forms" };
-const _hoisted_2$6 = /*#__PURE__*/vue.createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
+const _hoisted_2$5 = /*#__PURE__*/vue.createElementVNode("p", null, "Заказы", -1 /* HOISTED */);
 const _hoisted_3$5 = { class: "arrow" };
 const _hoisted_4$2 = /*#__PURE__*/vue.createElementVNode("p", null, "Документы", -1 /* HOISTED */);
 const _hoisted_5$2 = { class: "arrow" };
@@ -5551,7 +5551,7 @@ function render$6(_ctx, _cache, $props, $setup, $data, $options) {
           class: "group-panel-label",
           onClick: _cache[0] || (_cache[0] = $event => ($data.isOrdersOpen = !$data.isOrdersOpen))
         }, [
-          _hoisted_2$6,
+          _hoisted_2$5,
           vue.createElementVNode("div", _hoisted_3$5, [
             vue.createElementVNode("span", {
               class: vue.normalizeClass(["fa-solid fa-caret-right", {'down-rotate': $data.isOrdersOpen}])
@@ -5614,12 +5614,12 @@ var script$5 = {
 };
 
 const _hoisted_1$5 = { class: "sidebar me-3" };
-const _hoisted_2$5 = { id: "goodsList" };
+const _hoisted_2$4 = { id: "goodsList" };
 const _hoisted_3$4 = { href: "#declaration" };
 
 function render$5(_ctx, _cache, $props, $setup, $data, $options) {
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$5, [
-    vue.createElementVNode("ol", _hoisted_2$5, [
+    vue.createElementVNode("ol", _hoisted_2$4, [
       vue.createElementVNode("li", null, [
         vue.createElementVNode("a", _hoisted_3$4, vue.toDisplayString($props.treeGoods.title), 1 /* TEXT */)
       ]),
@@ -5639,22 +5639,25 @@ script$5.__file = "src/components/Menu/LeftMenuGoods.vue";
 
 var script$4 = {
   name: "TsoftInstrumentsMenu",
-  data() {
-    return {}
-  },
   props: {
     instruments: {
       type: Object,
       required: true
-    }
-  },
+    },
+    instrumentBlock: {
+      type: Object,
+      required: true
+    },
+  }
 };
 
-const _hoisted_1$4 = { class: "d-flex instruments" };
-const _hoisted_2$4 = ["onClick"];
+const _hoisted_1$4 = ["onClick", "title"];
 
 function render$4(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$4, [
+  return (vue.openBlock(), vue.createElementBlock("div", {
+    class: "d-flex instruments",
+    style: vue.normalizeStyle({'justify-content': $props.instrumentBlock.position})
+  }, [
     (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.instruments, (instrument) => {
       return (vue.openBlock(), vue.createElementBlock("div", {
         key: $props.instruments.id
@@ -5662,19 +5665,20 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
         vue.createElementVNode("button", {
           class: "instrument-btn btn",
           type: "button",
-          onClick: $event => (_ctx.$emit('action', instrument.action))
+          onClick: $event => (_ctx.$emit('action', instrument.action)),
+          title: instrument.name
         }, [
           vue.createElementVNode("i", {
             class: vue.normalizeClass(instrument.img),
             style: vue.normalizeStyle({'font-size': instrument.fontSize})
           }, null, 6 /* CLASS, STYLE */)
-        ], 8 /* PROPS */, _hoisted_2$4)
+        ], 8 /* PROPS */, _hoisted_1$4)
       ]))
     }), 128 /* KEYED_FRAGMENT */))
-  ]))
+  ], 4 /* STYLE */))
 }
 
-var css_248z$4 = "\n.instrument-btn[data-v-1012226a] {\n  margin: 0 5px;\n}\n\n";
+var css_248z$4 = "\n.instrument-btn[data-v-1012226a] {\n  margin: 0 5px;\n}\n.instrument-btn[data-v-1012226a]:hover {\n  color: #E67926;\n}\n.instrument-btn[data-v-1012226a]:focus {\n  box-shadow: unset;\n}\n";
 styleInject(css_248z$4);
 
 script$4.render = render$4;
@@ -5750,10 +5754,10 @@ var script$3 = {
   },
   computed: {
     top() {
-      return this.position.top ? this.position.top - 20 + "px" : "25%";
+      return this.position.top - 20 + "px";
     },
     left() {
-      return this.position.left ? this.position.left - (this.size.width / 2) + "px" : "40%";
+      return this.position.left - (this.size.width / 2) + "px";
     }
   },
   mounted() {
