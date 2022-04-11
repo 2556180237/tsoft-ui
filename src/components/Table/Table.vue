@@ -109,7 +109,7 @@ a {
 }
 #tableResponsive {
   background: rgb(253, 253, 253);
-  /*box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);*/
+  border: 1px solid #ccc;
 }
 .content {
   padding: 10px 0 10px 10px;
