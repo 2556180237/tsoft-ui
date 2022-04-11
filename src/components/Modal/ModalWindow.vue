@@ -96,10 +96,10 @@ export default {
   },
   computed: {
     top() {
-      return this.position.top ? this.position.top - 20 + "px" : "25%";
+      return this.position.top - 20 + "px";
     },
     left() {
-      return this.position.left ? this.position.left - (this.size.width / 2) + "px" : "40%";
+      return this.position.left - (this.size.width / 2) + "px";
     }
   },
   mounted() {

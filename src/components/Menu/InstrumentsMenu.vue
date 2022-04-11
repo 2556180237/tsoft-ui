@@ -11,9 +11,6 @@
 <script>
 export default {
   name: "TsoftInstrumentsMenu",
-  data() {
-    return {}
-  },
   props: {
     instruments: {
       type: Object,
@@ -22,8 +19,8 @@ export default {
     instrumentBlock: {
       type: Object,
       required: true
-    }
-  },
+    },
+  }
 }
 </script>
 
@@ -39,7 +36,6 @@ export default {
 .instrument-btn:focus {
   box-shadow: unset;
 }
-
 </style>
 
 
