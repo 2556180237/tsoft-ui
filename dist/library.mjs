@@ -82,13 +82,13 @@ const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/createEleme
 const _hoisted_6$5 = [
   _hoisted_5$8
 ];
-const _hoisted_7$5 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
-const _hoisted_8$5 = [
-  _hoisted_7$5
+const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
+const _hoisted_8$4 = [
+  _hoisted_7$4
 ];
-const _hoisted_9$5 = { class: "table" };
-const _hoisted_10$5 = { class: "thead" };
-const _hoisted_11$5 = { class: "tbody" };
+const _hoisted_9$4 = { class: "table" };
+const _hoisted_10$4 = { class: "thead" };
+const _hoisted_11$4 = { class: "tbody" };
 const _hoisted_12$4 = { key: 1 };
 
 function render$g(_ctx, _cache, $props, $setup, $data, $options) {
@@ -113,22 +113,22 @@ function render$g(_ctx, _cache, $props, $setup, $data, $options) {
             style: {"transform":"translate3d(0px, 48px, 0px)"},
             onMouseout: _cache[2] || (_cache[2] = (...args) => ($options.stop && $options.stop(...args))),
             onMouseover: _cache[3] || (_cache[3] = (...args) => ($options.moveRight && $options.moveRight(...args)))
-          }, _hoisted_8$5, 32 /* HYDRATE_EVENTS */)
+          }, _hoisted_8$4, 32 /* HYDRATE_EVENTS */)
         ]),
         createElementVNode("div", {
           class: "table-responsive table-statuses",
           id: "tableResponsive",
           onScroll: _cache[4] || (_cache[4] = (...args) => ($options.move && $options.move(...args)))
         }, [
-          createElementVNode("table", _hoisted_9$5, [
-            createElementVNode("thead", _hoisted_10$5, [
+          createElementVNode("table", _hoisted_9$4, [
+            createElementVNode("thead", _hoisted_10$4, [
               createElementVNode("tr", null, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList($props.titles, (title) => {
                   return (openBlock(), createElementBlock("th", { key: title }, toDisplayString(title), 1 /* TEXT */))
                 }), 128 /* KEYED_FRAGMENT */))
               ])
             ]),
-            createElementVNode("tbody", _hoisted_11$5, [
+            createElementVNode("tbody", _hoisted_11$4, [
               (openBlock(true), createElementBlock(Fragment, null, renderList($props.rows, (row, index) => {
                 return (openBlock(), createElementBlock("tr", {
                   class: "document-row",
@@ -186,7 +186,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$b = "\na[data-v-647119ad] {\n  color: #0D6247;\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);\n}\n.content[data-v-647119ad] {\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
+var css_248z$b = "\na[data-v-647119ad] {\n  color: #0D6247;\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\n  background: rgb(253, 253, 253);\n  /*box-shadow: inset 1px 1px 10px 1px rgb(0 0 0 / 10%);*/\n}\n.content[data-v-647119ad] {\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\n  border: 1px solid black;\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 10px;\n  width: auto;\n}\nth p[data-v-647119ad] {\n  line-height: 0.5rem;\n  min-width: 210px;\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\n  border: 1px solid #ccc;\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\n  margin: 2px;\n  white-space: nowrap;\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\n  font-size: 13px;\n  line-height: 18px;\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\n  color: #aaaaaa;\n  font-size: 12px;\n  line-height: 0 !important;\n  text-transform: uppercase;\n  border-top: 2px solid #e4e4e4;\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\n.table td[data-v-647119ad] {\n  margin: 0.75rem;\n  vertical-align: top;\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\n  display: flex;\n  justify-content: space-between;\n  height: 0;\n  position: sticky;\n  top: 200px;\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\n    center left no-repeat;\n  position: absolute;\n  left: 0;\n}\n.control-next[data-v-647119ad] {\n  z-index: 1;\n  width: 50px;\n  height: 100px;\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\n  -webkit-transform: translate3d(0px, 48px, 0);\n  -moz-transform: translate3d(0px, 48px, 0);\n  -ms-transform: translate3d(0px, 48px, 0);\n  -o-transform: translate3d(0px, 48px, 0);\n  transform: translate3d(0px, 48px, 0);\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\n    center right no-repeat;\n  position: absolute;\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\n  color: black;\n}\n.t-folder[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\n  color: black;\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\n  color: #ff6633;\n}\n";
 styleInject(css_248z$b);
 
 script$g.render = render$g;
@@ -448,11 +448,11 @@ const _hoisted_6$4 = /*#__PURE__*/createElementVNode("div", { class: "row" }, [
     /*#__PURE__*/createElementVNode("h4", { class: "declaration-title" }, " Декларация на товары и пассажирская таможенная декларация для экспресс-грузов ")
   ])
 ], -1 /* HOISTED */);
-const _hoisted_7$4 = { class: "row" };
-const _hoisted_8$4 = { class: "inf-block row col-12 justify-content-between" };
-const _hoisted_9$4 = { class: "checkbox-block d-flex col-2" };
-const _hoisted_10$4 = { class: "checkbox-bg col-2" };
-const _hoisted_11$4 = ["checked"];
+const _hoisted_7$3 = { class: "row" };
+const _hoisted_8$3 = { class: "inf-block row col-12 justify-content-between" };
+const _hoisted_9$3 = { class: "checkbox-block d-flex col-2" };
+const _hoisted_10$3 = { class: "checkbox-bg col-2" };
+const _hoisted_11$3 = ["checked"];
 const _hoisted_12$3 = /*#__PURE__*/createElementVNode("div", { class: "label-block col-4" }, [
   /*#__PURE__*/createElementVNode("label", null, "ДТЭГ")
 ], -1 /* HOISTED */);
@@ -1019,15 +1019,15 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
         ])
       ]),
       _hoisted_6$4,
-      createElementVNode("div", _hoisted_7$4, [
-        createElementVNode("div", _hoisted_8$4, [
-          createElementVNode("div", _hoisted_9$4, [
-            createElementVNode("div", _hoisted_10$4, [
+      createElementVNode("div", _hoisted_7$3, [
+        createElementVNode("div", _hoisted_8$3, [
+          createElementVNode("div", _hoisted_9$3, [
+            createElementVNode("div", _hoisted_10$3, [
               createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.docType.dteg
-              }, null, 8 /* PROPS */, _hoisted_11$4)
+              }, null, 8 /* PROPS */, _hoisted_11$3)
             ]),
             _hoisted_12$3,
             createElementVNode("div", _hoisted_13$3, [
@@ -2869,11 +2869,11 @@ const _hoisted_3$8 = { class: "product-batch" };
 const _hoisted_4$5 = /*#__PURE__*/createStaticVNode("<div class=\"d-flex product-batch-header justify-content-between\"><h4 class=\"col-4\">Сведения о товарной партии</h4><div class=\"product-batch-actions col-4 d-flex justify-content-end\"><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-plus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-minus\"></i></button></div><div class=\"col-2\"><button class=\"btn batch-button\"><i class=\"fa-solid fa-border-top-left\"></i></button></div></div></div>", 1);
 const _hoisted_5$5 = { class: "product-inner-block" };
 const _hoisted_6$3 = { class: "row" };
-const _hoisted_7$3 = { class: "row" };
-const _hoisted_8$3 = { class: "col-9" };
-const _hoisted_9$3 = { action: "" };
-const _hoisted_10$3 = { class: "d-flex" };
-const _hoisted_11$3 = { class: "col-3 d-flex" };
+const _hoisted_7$2 = { class: "row" };
+const _hoisted_8$2 = { class: "col-9" };
+const _hoisted_9$2 = { action: "" };
+const _hoisted_10$2 = { class: "d-flex" };
+const _hoisted_11$2 = { class: "col-3 d-flex" };
 const _hoisted_12$2 = /*#__PURE__*/createElementVNode("div", { class: "col-6 align-bcntr" }, [
   /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Общая накладная")
 ], -1 /* HOISTED */);
@@ -3243,11 +3243,11 @@ function render$9(_ctx, _cache, $props, $setup, $data, $options) {
         createElementVNode("div", _hoisted_5$5, [
           createCommentVNode("Region элемент с общей информацией о партии"),
           createElementVNode("div", _hoisted_6$3, [
-            createElementVNode("div", _hoisted_7$3, [
-              createElementVNode("div", _hoisted_8$3, [
-                createElementVNode("form", _hoisted_9$3, [
-                  createElementVNode("div", _hoisted_10$3, [
-                    createElementVNode("div", _hoisted_11$3, [
+            createElementVNode("div", _hoisted_7$2, [
+              createElementVNode("div", _hoisted_8$2, [
+                createElementVNode("form", _hoisted_9$2, [
+                  createElementVNode("div", _hoisted_10$2, [
+                    createElementVNode("div", _hoisted_11$2, [
                       _hoisted_12$2,
                       _hoisted_13$2,
                       createElementVNode("div", _hoisted_14$2, [
@@ -4473,11 +4473,11 @@ const _hoisted_3$7 = {
 const _hoisted_4$4 = { class: "optional-inf-card" };
 const _hoisted_5$4 = { class: "row" };
 const _hoisted_6$2 = { class: "d-flex" };
-const _hoisted_7$2 = { class: "col-5 d-flex" };
-const _hoisted_8$2 = { class: "col-3 d-flex" };
-const _hoisted_9$2 = { class: "col-8" };
-const _hoisted_10$2 = { class: "input-bg" };
-const _hoisted_11$2 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, [
+const _hoisted_7$1 = { class: "col-5 d-flex" };
+const _hoisted_8$1 = { class: "col-3 d-flex" };
+const _hoisted_9$1 = { class: "col-8" };
+const _hoisted_10$1 = { class: "input-bg" };
+const _hoisted_11$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, [
   /*#__PURE__*/createElementVNode("p", { class: "fs-5 my-0" }, "/")
 ], -1 /* HOISTED */);
 const _hoisted_12$1 = { class: "col-3" };
@@ -4573,10 +4573,10 @@ function render$8(_ctx, _cache, $props, $setup, $data, $options) {
       createElementVNode("div", _hoisted_4$4, [
         createElementVNode("div", _hoisted_5$4, [
           createElementVNode("div", _hoisted_6$2, [
-            createElementVNode("div", _hoisted_7$2, [
-              createElementVNode("div", _hoisted_8$2, [
-                createElementVNode("div", _hoisted_9$2, [
-                  createElementVNode("div", _hoisted_10$2, [
+            createElementVNode("div", _hoisted_7$1, [
+              createElementVNode("div", _hoisted_8$1, [
+                createElementVNode("div", _hoisted_9$1, [
+                  createElementVNode("div", _hoisted_10$1, [
                     withDirectives(createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -4586,7 +4586,7 @@ function render$8(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                _hoisted_11$2,
+                _hoisted_11$1,
                 createElementVNode("div", _hoisted_12$1, [
                   createElementVNode("div", _hoisted_13$1, [
                     withDirectives(createElementVNode("input", {
@@ -4959,11 +4959,11 @@ const _hoisted_3$6 = {
 const _hoisted_4$3 = { class: "row" };
 const _hoisted_5$3 = { class: "col-1" };
 const _hoisted_6$1 = { class: "col-9" };
-const _hoisted_7$1 = { class: "col input-bg" };
-const _hoisted_8$1 = { class: "col input-bg mt-3" };
-const _hoisted_9$1 = { class: "col-8" };
-const _hoisted_10$1 = { class: "input-bg h-100" };
-const _hoisted_11$1 = { class: "col-3" };
+const _hoisted_7 = { class: "col input-bg" };
+const _hoisted_8 = { class: "col input-bg mt-3" };
+const _hoisted_9 = { class: "col-8" };
+const _hoisted_10 = { class: "input-bg h-100" };
+const _hoisted_11 = { class: "col-3" };
 const _hoisted_12 = { class: "changing-code" };
 const _hoisted_13 = /*#__PURE__*/createElementVNode("div", { class: "label-block" }, [
   /*#__PURE__*/createElementVNode("label", { class: "fs-5" }, "Код изменений")
@@ -5074,7 +5074,7 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
       createElementVNode("div", _hoisted_4$3, [
         createElementVNode("div", _hoisted_5$3, [
           createElementVNode("div", _hoisted_6$1, [
-            createElementVNode("div", _hoisted_7$1, [
+            createElementVNode("div", _hoisted_7, [
               withDirectives(createElementVNode("input", {
                 class: "form-control",
                 type: "text",
@@ -5083,7 +5083,7 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
                 [vModelText, $props.good.numeric]
               ])
             ]),
-            createElementVNode("div", _hoisted_8$1, [
+            createElementVNode("div", _hoisted_8, [
               withDirectives(createElementVNode("input", {
                 class: "form-control",
                 type: "text",
@@ -5094,8 +5094,8 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ]),
-        createElementVNode("div", _hoisted_9$1, [
-          createElementVNode("div", _hoisted_10$1, [
+        createElementVNode("div", _hoisted_9, [
+          createElementVNode("div", _hoisted_10, [
             withDirectives(createElementVNode("textarea", {
               type: "text",
               class: "form-control h-100",
@@ -5105,7 +5105,7 @@ function render$7(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ]),
-        createElementVNode("div", _hoisted_11$1, [
+        createElementVNode("div", _hoisted_11, [
           createElementVNode("div", _hoisted_12, [
             _hoisted_13,
             createElementVNode("div", _hoisted_14, [
@@ -5711,6 +5711,10 @@ var script$3 = {
     height: {
       type: Number,
       required: false
+    },
+    title: {
+      type: String,
+      required: true
     }
   },
   methods: {
@@ -5758,7 +5762,7 @@ var script$3 = {
 const _withScopeId = n => (pushScopeId("data-v-477f0afb"),n=n(),popScopeId(),n);
 const _hoisted_1$3 = { class: "wrapper d-flex" };
 const _hoisted_2$3 = { class: "mod-container" };
-const _hoisted_3$3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/createElementVNode("span", { class: "mod-title" }, "Заголовок", -1 /* HOISTED */));
+const _hoisted_3$3 = { class: "mod-title" };
 const _hoisted_4$1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/createElementVNode("div", { class: "xmark" }, [
   /*#__PURE__*/createElementVNode("i", { class: "fa-solid fa-xmark" })
 ], -1 /* HOISTED */));
@@ -5766,13 +5770,6 @@ const _hoisted_5$1 = [
   _hoisted_4$1
 ];
 const _hoisted_6 = { class: "mod-body" };
-const _hoisted_7 = { class: "mod-footer" };
-const _hoisted_8 = { class: "footer-button" };
-const _hoisted_9 = ["disabled"];
-const _hoisted_10 = ["disabled"];
-const _hoisted_11 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/createElementVNode("div", { class: "footer-label" }, [
-  /*#__PURE__*/createElementVNode("span", { class: "mod-title" }, "Заключение")
-], -1 /* HOISTED */));
 
 function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tsoft_preloader = resolveComponent("tsoft-preloader");
@@ -5796,7 +5793,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
               class: "mod-header d-flex",
               onMousedown: _cache[2] || (_cache[2] = (...args) => ($options.dragStart && $options.dragStart(...args)))
             }, [
-              _hoisted_3$3,
+              createElementVNode("span", _hoisted_3$3, toDisplayString($props.title), 1 /* TEXT */),
               createElementVNode("div", {
                 class: "btn close-modal-button",
                 type: "button",
@@ -5809,19 +5806,6 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
                 ? (openBlock(), createBlock(_component_tsoft_preloader, { key: 0 }))
                 : createCommentVNode("v-if", true),
               renderSlot(_ctx.$slots, $props.nameComponent)
-            ]),
-            createElementVNode("div", _hoisted_7, [
-              createElementVNode("div", _hoisted_8, [
-                createElementVNode("button", {
-                  class: "btn cancel",
-                  disabled: this.loading
-                }, "Отменить", 8 /* PROPS */, _hoisted_9),
-                createElementVNode("button", {
-                  class: "btn accept",
-                  disabled: this.loading
-                }, "Применить", 8 /* PROPS */, _hoisted_10)
-              ]),
-              _hoisted_11
             ])
           ], 32 /* HYDRATE_EVENTS */)
         ])
@@ -5833,7 +5817,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
 }
 
-var css_248z$3 = "\n.modal-window[data-v-477f0afb] {\n  position: absolute;\n}\n.wrapper[data-v-477f0afb] {\n  width: 100%;\n  height: 100%;\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\n  position: relative;\n  margin: 0 auto auto auto;\n  background-color: white;\n  min-width: 400px;\n  width: fit-content;\n  height: fit-content;\n  max-height: 1000px;\n  z-index: 11;\n  box-shadow: 1px 1px 20px 0 #343434;\n  border-radius: 4px;\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\n  font-size: 16px;\n  font-weight: bold;\n  color: #aaaaaa;\n}\n.mod-container[data-v-477f0afb] {\n  background-color: white;\n  opacity: 1;\n  z-index: 10;\n  margin: auto;\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\n  margin: 15px;\n  border-bottom: 1px solid #c4c4c4;\n  justify-content: space-between;\n  cursor: move;\n}\n.close-modal-button[data-v-477f0afb] {\n  color: white;\n  border-radius: 14px;\n  width: 20px;\n  height: 20px;\n  background: lightgray;\n  padding: 4px;\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\n  background-color: #0D6247;\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\n  margin: 10px;\n  position: relative;\n  min-height: 80px;\n}\n.mod-footer[data-v-477f0afb] {\n  display: contents;\n}\n.footer-label[data-v-477f0afb] {\n  margin: 15px;\n  border-top: 1px solid #c4c4c4;\n}\n.footer-button[data-v-477f0afb] {\n  display: flex;\n  justify-content: end;\n}\n.footer-button .btn[data-v-477f0afb] {\n  color: white;\n  font-weight: bold;\n  margin-right: 5px;\n  outline: unset;\n}\n.btn[data-v-477f0afb]:focus {\n  box-shadow: unset;\n}\n.btn.cancel[data-v-477f0afb] {\n  color: #E57A26;\n  background: white;\n}\n.btn.accept[data-v-477f0afb] {\n  color: white;\n  background: #E57A26;\n  margin-right: 15px;\n}\n.btn.cancel[data-v-477f0afb]:hover {\n  color: #E57A26;\n  border: 1px solid #E57A26;\n}\n.btn.cancel[data-v-477f0afb]:active {\n  box-shadow: inset 1px 1px 1px 1px #ffc293;\n  border: unset;\n}\n.btn.accept[data-v-477f0afb]:active {\n  box-shadow: inset 2px 2px 6px 2px #b25f1c;\n  border: unset;\n}\n.download-block .btn[data-v-477f0afb]:hover {\n  color: orange;\n  /*font-weight: bold;*/\n  background-color: white;\n  box-shadow: 2px 2px 6px 0 #9b9b9b;\n  transition: 0.3s;\n}\n";
+var css_248z$3 = "\n.modal-window[data-v-477f0afb] {\n  position: absolute;\n}\n.wrapper[data-v-477f0afb] {\n  width: 100%;\n  height: 100%;\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\n  position: relative;\n  margin: 0 auto auto auto;\n  background-color: white;\n  min-width: 400px;\n  width: fit-content;\n  height: fit-content;\n  max-height: 1000px;\n  z-index: 11;\n  box-shadow: 1px 1px 20px 0 #343434;\n  border-radius: 4px;\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\n  font-size: 16px;\n  font-weight: bold;\n  color: #aaaaaa;\n}\n.mod-container[data-v-477f0afb] {\n  background-color: white;\n  opacity: 1;\n  z-index: 10;\n  margin: auto;\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\n  margin: 15px;\n  border-bottom: 1px solid #c4c4c4;\n  justify-content: space-between;\n  cursor: move;\n}\n.close-modal-button[data-v-477f0afb] {\n  color: white;\n  border-radius: 14px;\n  width: 20px;\n  height: 20px;\n  background: lightgray;\n  padding: 4px;\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\n  background-color: #0D6247;\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\n  margin: 10px;\n  position: relative;\n  min-height: 80px;\n}\n.btn[data-v-477f0afb]:focus {\n  box-shadow: unset;\n}\n";
 styleInject(css_248z$3);
 
 script$3.render = render$3;
