@@ -10,7 +10,7 @@
       <div class="mod-container">
         <div class="mod-block" tabindex="-1" @keyup.esc="$emit('close')">
           <div class="mod-header d-flex" @mousedown="dragStart">
-            <span class="mod-title">Заголовок</span>
+            <span class="mod-title">{{ title }}</span>
             <div class="btn close-modal-button" type="button" @mousedown="$emit('close')" @click="$emit('close')">
               <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
             </div>
@@ -18,15 +18,6 @@
           <div class="mod-body">
             <tsoft-preloader v-if="this.loading" />
             <slot :name="nameComponent"></slot>
-          </div>
-          <div class="mod-footer">
-            <div class="footer-button">
-              <button class="btn cancel" :disabled="this.loading">Отменить</button>
-              <button class="btn accept" :disabled="this.loading">Применить</button>
-            </div>
-            <div class="footer-label">
-              <span class="mod-title">Заключение</span>
-            </div>
           </div>
         </div>
       </div>
@@ -68,6 +59,10 @@ export default {
     height: {
       type: Number,
       required: false
+    },
+    title: {
+      type: String,
+      required: true
     }
   },
   methods: {
@@ -188,62 +183,7 @@ export default {
   min-height: 80px;
 }
 
-.mod-footer {
-  display: contents;
-}
-
-.footer-label {
-  margin: 15px;
-  border-top: 1px solid #c4c4c4;
-}
-
-.footer-button {
-  display: flex;
-  justify-content: end;
-}
-
-.footer-button .btn {
-  color: white;
-  font-weight: bold;
-  margin-right: 5px;
-  outline: unset;
-}
-
 .btn:focus {
   box-shadow: unset;
-}
-
-.btn.cancel {
-  color: #E57A26;
-  background: white;
-}
-
-.btn.accept {
-  color: white;
-  background: #E57A26;
-  margin-right: 15px;
-}
-
-.btn.cancel:hover {
-  color: #E57A26;
-  border: 1px solid #E57A26;
-}
-
-.btn.cancel:active {
-  box-shadow: inset 1px 1px 1px 1px #ffc293;
-  border: unset;
-}
-
-.btn.accept:active {
-  box-shadow: inset 2px 2px 6px 2px #b25f1c;
-  border: unset;
-}
-
-.download-block .btn:hover {
-  color: orange;
-  /*font-weight: bold;*/
-  background-color: white;
-  box-shadow: 2px 2px 6px 0 #9b9b9b;
-  transition: 0.3s;
 }
 </style>
