@@ -5673,6 +5673,10 @@ var script$3 = {
       size: {
         height: null,
         width: null
+      },
+      defaultPosition: {
+        left: "40%",
+        top: "25%"
       }
     };
   },
@@ -5724,15 +5728,17 @@ var script$3 = {
         this.size.height = modal.clientHeight;
         this.size.width = modal.clientWidth;
       }
+      console.log(modal.clientHeight);
+      console.log(modal.clientWidth);
       modal.focus();
     }
   },
   computed: {
     top() {
-      return this.position.top - 20 + "px";
+      return this.position.top ? this.position.top - 20 + "px" : this.defaultPosition.top;
     },
     left() {
-      return this.position.left - (this.size.width / 2) + "px";
+      return this.position.left ? this.position.left - (this.size.width / 2) + "px" : this.defaultPosition.left;
     }
   },
   mounted() {
@@ -5798,7 +5804,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
   ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
 }
 
-var css_248z$3 = "\n.modal-window[data-v-477f0afb] {\r\n  position: absolute;\n}\n.wrapper[data-v-477f0afb] {\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\r\n  position: relative;\r\n  margin: 0 auto auto auto;\r\n  background-color: white;\r\n  min-width: 400px;\r\n  width: fit-content;\r\n  height: fit-content;\r\n  max-height: 1000px;\r\n  z-index: 11;\r\n  box-shadow: 1px 1px 20px 0 #343434;\r\n  border-radius: 4px;\r\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  color: #aaaaaa;\n}\n.mod-container[data-v-477f0afb] {\r\n  background-color: white;\r\n  opacity: 1;\r\n  z-index: 10;\r\n  margin: auto;\r\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\r\n  margin: 15px;\r\n  border-bottom: 1px solid #c4c4c4;\r\n  justify-content: space-between;\r\n  cursor: move;\n}\n.close-modal-button[data-v-477f0afb] {\r\n  color: white;\r\n  border-radius: 14px;\r\n  width: 20px;\r\n  height: 20px;\r\n  background: lightgray;\r\n  padding: 4px;\r\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\r\n  background-color: #0D6247;\r\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\r\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\r\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\r\n  margin: 10px;\r\n  position: relative;\r\n  min-height: 80px;\n}\n.btn[data-v-477f0afb]:focus {\r\n  box-shadow: unset;\n}\r\n";
+var css_248z$3 = "\n.modal-window[data-v-477f0afb] {\r\n  position: absolute;\r\n  min-width: 435px;\r\n  min-height: 340px;\n}\n.wrapper[data-v-477f0afb] {\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 998;\n}\n.mod-block[data-v-477f0afb] {\r\n  position: relative;\r\n  margin: 0 auto auto auto;\r\n  background-color: white;\r\n  min-width: 400px;\r\n  width: fit-content;\r\n  height: fit-content;\r\n  max-height: 1000px;\r\n  z-index: 11;\r\n  box-shadow: 1px 1px 20px 0 #343434;\r\n  border-radius: 4px;\r\n  overflow: auto;\n}\n.mod-title[data-v-477f0afb] {\r\n  font-size: 16px;\r\n  font-weight: bold;\r\n  color: #aaaaaa;\n}\n.mod-container[data-v-477f0afb] {\r\n  background-color: white;\r\n  opacity: 1;\r\n  z-index: 10;\r\n  margin: auto;\r\n  border-radius: 4px;\n}\n.mod-header[data-v-477f0afb] {\r\n  margin: 15px;\r\n  border-bottom: 1px solid #c4c4c4;\r\n  justify-content: space-between;\r\n  cursor: move;\n}\n.close-modal-button[data-v-477f0afb] {\r\n  color: white;\r\n  border-radius: 14px;\r\n  width: 20px;\r\n  height: 20px;\r\n  background: lightgray;\r\n  padding: 4px;\r\n  box-shadow: unset;\n}\n.close-modal-button[data-v-477f0afb]:hover {\r\n  background-color: #0D6247;\r\n  color: #ffffff;\n}\n.close-modal-button .fa-xmark[data-v-477f0afb] {\r\n  font-size: 12px;\n}\n.xmark[data-v-477f0afb] {\r\n  margin-top: -7px;\n}\n.mod-body[data-v-477f0afb] {\r\n  margin: 10px;\r\n  position: relative;\r\n  min-height: 80px;\n}\n.btn[data-v-477f0afb]:focus {\r\n  box-shadow: unset;\n}\r\n";
 styleInject(css_248z$3);
 
 script$3.render = render$3;
