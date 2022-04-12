@@ -30,11 +30,9 @@ var script$g = {
   name: "TsoftTable",
   props: {
     titles: {
-      type: Object,
       required: true,
     },
     rows: {
-      type: Object,
       required: true,
     },
   },
@@ -73,11 +71,16 @@ var script$g = {
       this.mode = undefined;
     },
   },
+  computed: {
+    isPropsEmpty() {
+      return !!Object.keys(this.titles).length & !!Object.keys(this.rows).length
+    }
+  }
 };
 
 const _withScopeId$3 = n => (vue.pushScopeId("data-v-647119ad"),n=n(),vue.popScopeId(),n);
 const _hoisted_1$g = { class: "content" };
-const _hoisted_2$f = { class: "row section" };
+const _hoisted_2$f = { class: "section" };
 const _hoisted_3$d = { class: "table-section" };
 const _hoisted_4$9 = { class: "slider-block" };
 const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
@@ -88,12 +91,16 @@ const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/vue.createE
 const _hoisted_8$4 = [
   _hoisted_7$4
 ];
-const _hoisted_9$4 = { class: "table" };
+const _hoisted_9$4 = {
+  key: 1,
+  class: "table"
+};
 const _hoisted_10$4 = { class: "thead" };
 const _hoisted_11$4 = { class: "tbody" };
 const _hoisted_12$4 = { key: 1 };
 
 function render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_tsoft_preloader = vue.resolveComponent("tsoft-preloader");
   const _component_router_link = vue.resolveComponent("router-link");
 
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$g, [
@@ -122,39 +129,41 @@ function render$g(_ctx, _cache, $props, $setup, $data, $options) {
           id: "tableResponsive",
           onScroll: _cache[4] || (_cache[4] = (...args) => ($options.move && $options.move(...args)))
         }, [
-          vue.createElementVNode("table", _hoisted_9$4, [
-            vue.createElementVNode("thead", _hoisted_10$4, [
-              vue.createElementVNode("tr", null, [
-                (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.titles, (title) => {
-                  return (vue.openBlock(), vue.createElementBlock("th", { key: title }, vue.toDisplayString(title), 1 /* TEXT */))
-                }), 128 /* KEYED_FRAGMENT */))
-              ])
-            ]),
-            vue.createElementVNode("tbody", _hoisted_11$4, [
-              (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.rows, (row, index) => {
-                return (vue.openBlock(), vue.createElementBlock("tr", {
-                  class: "document-row",
-                  key: index
-                }, [
-                  (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(row, (value, key) => {
-                    return (vue.openBlock(), vue.createElementBlock("td", { key: key }, [
-                      (key === 'num')
-                        ? (vue.openBlock(), vue.createBlock(_component_router_link, {
-                            key: 0,
-                            to: {name: 'declaration', params: {reester_id: index}}
-                          }, {
-                            default: vue.withCtx(() => [
-                              vue.createTextVNode(vue.toDisplayString(value), 1 /* TEXT */)
-                            ]),
-                            _: 2 /* DYNAMIC */
-                          }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
-                        : (vue.openBlock(), vue.createElementBlock("p", _hoisted_12$4, vue.toDisplayString(value), 1 /* TEXT */))
+          (!$options.isPropsEmpty)
+            ? (vue.openBlock(), vue.createBlock(_component_tsoft_preloader, { key: 0 }))
+            : (vue.openBlock(), vue.createElementBlock("table", _hoisted_9$4, [
+                vue.createElementVNode("thead", _hoisted_10$4, [
+                  vue.createElementVNode("tr", null, [
+                    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.titles, (title) => {
+                      return (vue.openBlock(), vue.createElementBlock("th", { key: title }, vue.toDisplayString(title), 1 /* TEXT */))
+                    }), 128 /* KEYED_FRAGMENT */))
+                  ])
+                ]),
+                vue.createElementVNode("tbody", _hoisted_11$4, [
+                  (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.rows, (row, index) => {
+                    return (vue.openBlock(), vue.createElementBlock("tr", {
+                      class: "document-row",
+                      key: index
+                    }, [
+                      (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(row, (value, key) => {
+                        return (vue.openBlock(), vue.createElementBlock("td", { key: key }, [
+                          (key === 'num')
+                            ? (vue.openBlock(), vue.createBlock(_component_router_link, {
+                                key: 0,
+                                to: {name: 'declaration', params: {reester_id: index}}
+                              }, {
+                                default: vue.withCtx(() => [
+                                  vue.createTextVNode(vue.toDisplayString(value), 1 /* TEXT */)
+                                ]),
+                                _: 2 /* DYNAMIC */
+                              }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
+                            : (vue.openBlock(), vue.createElementBlock("p", _hoisted_12$4, vue.toDisplayString(value), 1 /* TEXT */))
+                        ]))
+                      }), 128 /* KEYED_FRAGMENT */))
                     ]))
                   }), 128 /* KEYED_FRAGMENT */))
-                ]))
-              }), 128 /* KEYED_FRAGMENT */))
-            ])
-          ])
+                ])
+              ]))
         ], 32 /* HYDRATE_EVENTS */)
       ])
     ])
@@ -188,7 +197,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$b = "\na[data-v-647119ad] {\r\n  color: #0D6247;\r\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\n}\n.content[data-v-647119ad] {\r\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E)\r\n    center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A)\r\n    center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\r\n";
+var css_248z$b = "\n.section[data-v-647119ad] {\r\n  position: relative;\n}\na[data-v-647119ad] {\r\n  color: #0D6247;\r\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\n}\n.content[data-v-647119ad] {\r\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\r\n  white-space: nowrap;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\r\n  white-space: nowrap;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E) center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A) center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.preloader-main[data-v-647119ad] {\r\n  background-color: white;\r\n  padding: 10px;\n}\r\n";
 styleInject(css_248z$b);
 
 script$g.render = render$g;
@@ -442,167 +451,161 @@ const _hoisted_1$a = {
   id: "declaration"
 };
 const _hoisted_2$9 = { class: "common-inf" };
-const _hoisted_3$9 = { class: "row" };
-const _hoisted_4$6 = { class: "inf-block" };
-const _hoisted_5$6 = /*#__PURE__*/vue.createTextVNode(" Подан с ДТ: ");
-const _hoisted_6$4 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
+const _hoisted_3$9 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, null, -1 /* HOISTED */);
+const _hoisted_4$6 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
   /*#__PURE__*/vue.createElementVNode("div", { class: "inf-block" }, [
     /*#__PURE__*/vue.createElementVNode("h4", { class: "declaration-title" }, " Декларация на товары и пассажирская таможенная декларация для экспресс-грузов ")
   ])
 ], -1 /* HOISTED */);
-const _hoisted_7$3 = { class: "row" };
-const _hoisted_8$3 = { class: "inf-block row col-12 justify-content-between" };
-const _hoisted_9$3 = { class: "checkbox-block d-flex col-2" };
-const _hoisted_10$3 = { class: "checkbox-bg col-2" };
-const _hoisted_11$3 = ["checked"];
-const _hoisted_12$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
+const _hoisted_5$6 = { class: "row" };
+const _hoisted_6$4 = { class: "inf-block row col-12 justify-content-between" };
+const _hoisted_7$3 = { class: "checkbox-block d-flex col-2" };
+const _hoisted_8$3 = { class: "checkbox-bg col-2" };
+const _hoisted_9$3 = ["checked"];
+const _hoisted_10$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "ДТЭГ")
 ], -1 /* HOISTED */);
-const _hoisted_13$3 = { class: "checkbox-bg col-2" };
-const _hoisted_14$3 = ["checked"];
-const _hoisted_15$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
+const _hoisted_11$3 = { class: "checkbox-bg col-2" };
+const _hoisted_12$3 = ["checked"];
+const _hoisted_13$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "ПТДЭГ")
 ], -1 /* HOISTED */);
-const _hoisted_16$3 = { class: "checkbox-block d-flex col-2" };
-const _hoisted_17$3 = { class: "checkbox-bg col-2" };
-const _hoisted_18$3 = ["checked"];
-const _hoisted_19$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3" }, [
+const _hoisted_14$3 = { class: "checkbox-block d-flex col-2" };
+const _hoisted_15$3 = { class: "checkbox-bg col-2" };
+const _hoisted_16$3 = ["checked"];
+const _hoisted_17$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "ИМ")
 ], -1 /* HOISTED */);
-const _hoisted_20$3 = { class: "checkbox-bg col-2" };
-const _hoisted_21$3 = ["checked"];
-const _hoisted_22$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3" }, [
+const _hoisted_18$3 = { class: "checkbox-bg col-2" };
+const _hoisted_19$3 = ["checked"];
+const _hoisted_20$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-3" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "ЭК")
 ], -1 /* HOISTED */);
-const _hoisted_23$3 = { class: "declaration-number-block justify-content-end d-flex col-5" };
-const _hoisted_24$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_21$3 = { class: "declaration-number-block justify-content-end d-flex col-5" };
+const _hoisted_22$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "№")
 ], -1 /* HOISTED */);
-const _hoisted_25$3 = { class: "input-bg col-10" };
-const _hoisted_26$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-3" }, null, -1 /* HOISTED */);
-const _hoisted_27$3 = { class: "row" };
-const _hoisted_28$3 = { class: "inf-block row col-12" };
-const _hoisted_29$3 = { class: "inputs-group d-flex col-2" };
-const _hoisted_30$3 = { class: "col-2" };
+const _hoisted_23$3 = { class: "input-bg col-10" };
+const _hoisted_24$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-3" }, null, -1 /* HOISTED */);
+const _hoisted_25$3 = { class: "row" };
+const _hoisted_26$3 = { class: "inf-block row col-12" };
+const _hoisted_27$3 = { class: "inputs-group d-flex col-2" };
+const _hoisted_28$3 = { class: "col-2" };
+const _hoisted_29$3 = { class: "col-2" };
+const _hoisted_30$3 = { class: "col-3" };
 const _hoisted_31$3 = { class: "col-2" };
-const _hoisted_32$3 = { class: "col-3" };
-const _hoisted_33$3 = { class: "col-2" };
-const _hoisted_34$3 = { class: "sheets-block d-flex col-2" };
-const _hoisted_35$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
+const _hoisted_32$3 = { class: "sheets-block d-flex col-2" };
+const _hoisted_33$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-4" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, "Листов")
 ], -1 /* HOISTED */);
-const _hoisted_36$3 = { class: "input-bg col-8" };
-const _hoisted_37$3 = { class: "registry-number-block d-flex justify-content-end col-5" };
-const _hoisted_38$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_34$3 = { class: "input-bg col-8" };
+const _hoisted_35$3 = { class: "registry-number-block d-flex justify-content-end col-5" };
+const _hoisted_36$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", { for: "registryNumber" }, "Рег. №")
 ], -1 /* HOISTED */);
-const _hoisted_39$3 = { class: "input-bg col-10" };
-const _hoisted_40$3 = { class: "registry-changes d-flex col-3" };
-const _hoisted_41$3 = { class: "input-bg" };
-const _hoisted_42$3 = /*#__PURE__*/vue.createElementVNode("label", null, "- реестр с внесёнными изменениями", -1 /* HOISTED */);
-const _hoisted_43$3 = { class: "row" };
-const _hoisted_44$3 = { class: "inf-block d-grid" };
-const _hoisted_45$3 = { class: "row col-12" };
-const _hoisted_46$3 = { class: "col-6" };
-const _hoisted_47$3 = /*#__PURE__*/vue.createElementVNode("label", { class: "express-courier-label" }, "Экспресс перевозчик", -1 /* HOISTED */);
-const _hoisted_48$3 = { class: "express-courier-block col-12 d-flex" };
-const _hoisted_49$3 = { class: "col-1" };
-const _hoisted_50$3 = { class: "col-11" };
-const _hoisted_51$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_52$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-5" }, [
+const _hoisted_37$3 = { class: "input-bg col-10" };
+const _hoisted_38$3 = { class: "registry-changes d-flex col-3" };
+const _hoisted_39$3 = { class: "input-bg" };
+const _hoisted_40$3 = /*#__PURE__*/vue.createElementVNode("label", null, "- реестр с внесёнными изменениями", -1 /* HOISTED */);
+const _hoisted_41$3 = { class: "row" };
+const _hoisted_42$3 = { class: "inf-block d-grid" };
+const _hoisted_43$3 = { class: "row col-12" };
+const _hoisted_44$3 = { class: "col-6" };
+const _hoisted_45$3 = /*#__PURE__*/vue.createElementVNode("label", { class: "express-courier-label" }, "Экспресс перевозчик", -1 /* HOISTED */);
+const _hoisted_46$3 = { class: "express-courier-block col-12 d-flex" };
+const _hoisted_47$3 = { class: "col-1" };
+const _hoisted_48$3 = { class: "col-11" };
+const _hoisted_49$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_50$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-5" }, [
   /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
     /*#__PURE__*/vue.createElementVNode("p", null, " Регистрационный номер декларации, в которую вносятся изменения ")
   ])
 ], -1 /* HOISTED */);
-const _hoisted_53$3 = { class: "row col-12" };
-const _hoisted_54$3 = { class: "col-6" };
-const _hoisted_55$3 = { class: "" };
-const _hoisted_56$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "" }, [
+const _hoisted_51$3 = { class: "row col-12" };
+const _hoisted_52$3 = { class: "col-6" };
+const _hoisted_53$3 = { class: "" };
+const _hoisted_54$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "" }, [
   /*#__PURE__*/vue.createElementVNode("h4", null, "Свидетельство о включении в"),
   /*#__PURE__*/vue.createElementVNode("p", null, " реестр УЭО, реестр владельцев СВХ, складов хранения собственных товаров, таможенных складов, свободных складов или магазинов БТ ")
 ], -1 /* HOISTED */);
-const _hoisted_57$3 = { class: "certificate-block row col-12" };
-const _hoisted_58$3 = { class: "input-bg col-1" };
+const _hoisted_55$3 = { class: "certificate-block row col-12" };
+const _hoisted_56$3 = { class: "input-bg col-1" };
+const _hoisted_57$3 = { class: "input-bg col-1" };
+const _hoisted_58$3 = { class: "input-bg col-7" };
 const _hoisted_59$3 = { class: "input-bg col-1" };
-const _hoisted_60$3 = { class: "input-bg col-7" };
-const _hoisted_61$3 = { class: "input-bg col-1" };
-const _hoisted_62$3 = { class: "input-bg col-1" };
-const _hoisted_63$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_64$3 = { class: "col-5" };
-const _hoisted_65$3 = {
+const _hoisted_60$3 = { class: "input-bg col-1" };
+const _hoisted_61$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_62$3 = { class: "col-5" };
+const _hoisted_63$3 = {
   class: "changing-declaration",
   action: ""
 };
-const _hoisted_66$3 = { class: "inf-block row" };
+const _hoisted_64$3 = { class: "inf-block row" };
+const _hoisted_65$3 = { class: "col-3 input-bg" };
+const _hoisted_66$3 = { class: "col-4 input-bg" };
 const _hoisted_67$3 = { class: "col-3 input-bg" };
-const _hoisted_68$3 = { class: "col-4 input-bg" };
-const _hoisted_69$3 = { class: "col-3 input-bg" };
-const _hoisted_70$3 = { class: "col-1 input-bg" };
-const _hoisted_71$3 = { class: "inf-block changing-code row" };
-const _hoisted_72$3 = /*#__PURE__*/vue.createElementVNode("div", {
+const _hoisted_68$3 = { class: "col-1 input-bg" };
+const _hoisted_69$3 = { class: "inf-block changing-code row" };
+const _hoisted_70$3 = /*#__PURE__*/vue.createElementVNode("div", {
   class: "label-block",
   style: {"width":"100%"}
 }, [
   /*#__PURE__*/vue.createElementVNode("label", { class: "fs-5" }, "Код изменений")
 ], -1 /* HOISTED */);
-const _hoisted_73$3 = { class: "col-8 d-flex" };
+const _hoisted_71$3 = { class: "col-8 d-flex" };
+const _hoisted_72$3 = { class: "col input-bg" };
+const _hoisted_73$3 = { class: "col input-bg" };
 const _hoisted_74$3 = { class: "col input-bg" };
 const _hoisted_75$3 = { class: "col input-bg" };
 const _hoisted_76$3 = { class: "col input-bg" };
 const _hoisted_77$3 = { class: "col input-bg" };
 const _hoisted_78$3 = { class: "col input-bg" };
-const _hoisted_79$3 = { class: "col input-bg" };
-const _hoisted_80$3 = { class: "col input-bg" };
-const _hoisted_81$3 = /*#__PURE__*/vue.createElementVNode("button", { class: "btn info-button p-1" }, [
+const _hoisted_79$3 = /*#__PURE__*/vue.createElementVNode("button", { class: "btn info-button p-1" }, [
   /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-circle-info" })
 ], -1 /* HOISTED */);
-const _hoisted_82$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-4" }, null, -1 /* HOISTED */);
-const _hoisted_83$3 = { class: "row" };
-const _hoisted_84$3 = { class: "inf-block" };
-const _hoisted_85$3 = /*#__PURE__*/vue.createElementVNode("h4", null, "Товарная партия", -1 /* HOISTED */);
-const _hoisted_86$3 = {
+const _hoisted_80$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-4" }, null, -1 /* HOISTED */);
+const _hoisted_81$3 = { class: "row" };
+const _hoisted_82$3 = { class: "inf-block" };
+const _hoisted_83$3 = /*#__PURE__*/vue.createElementVNode("h4", null, "Товарная партия", -1 /* HOISTED */);
+const _hoisted_84$3 = {
   action: "",
   class: "batch-form row"
 };
-const _hoisted_87$2 = { class: "col-3 inf-block" };
-const _hoisted_88$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "row inf-paragraph" }, [
+const _hoisted_85$3 = { class: "col-3 inf-block" };
+const _hoisted_86$3 = /*#__PURE__*/vue.createElementVNode("div", { class: "row inf-paragraph" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, " общая сумма таможенных и иных платежей, подлежащих уплате по декларации ")
 ], -1 /* HOISTED */);
-const _hoisted_89$2 = { class: "batch-block row" };
-const _hoisted_90$2 = { class: "col-10" };
-const _hoisted_91$2 = { class: "col-2" };
-const _hoisted_92$2 = { class: "col-3 inf-block" };
-const _hoisted_93$2 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общая стоимость", -1 /* HOISTED */);
-const _hoisted_94$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
+const _hoisted_87$2 = { class: "batch-block row" };
+const _hoisted_88$2 = { class: "col-10" };
+const _hoisted_89$2 = { class: "col-2" };
+const _hoisted_90$2 = { class: "col-3 inf-block" };
+const _hoisted_91$2 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общая стоимость", -1 /* HOISTED */);
+const _hoisted_92$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, "по ПТД для экспресс-грузов")
 ], -1 /* HOISTED */);
-const _hoisted_95$2 = { class: "batch-block row" };
-const _hoisted_96$2 = { class: "col-9" };
-const _hoisted_97$2 = { class: "col-3" };
-const _hoisted_98$2 = { class: "col-3 inf-block" };
-const _hoisted_99$2 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общий вес брутто", -1 /* HOISTED */);
-const _hoisted_100$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
+const _hoisted_93$2 = { class: "batch-block row" };
+const _hoisted_94$2 = { class: "col-9" };
+const _hoisted_95$2 = { class: "col-3" };
+const _hoisted_96$2 = { class: "col-3 inf-block" };
+const _hoisted_97$2 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общий вес брутто", -1 /* HOISTED */);
+const _hoisted_98$2 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, "по ТД для экспресс-грузов")
 ], -1 /* HOISTED */);
-const _hoisted_101$2 = { class: "batch-block row" };
-const _hoisted_102$2 = { class: "col-6" };
-const _hoisted_103$2 = { class: "col-3" };
-const _hoisted_104$1 = { class: "col-3" };
-const _hoisted_105$1 = { class: "col-3 inf-block" };
-const _hoisted_106$1 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общая таможенная стоимость", -1 /* HOISTED */);
-const _hoisted_107$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
+const _hoisted_99$2 = { class: "batch-block row" };
+const _hoisted_100$2 = { class: "col-6" };
+const _hoisted_101$2 = { class: "col-3" };
+const _hoisted_102$2 = { class: "col-3" };
+const _hoisted_103$2 = { class: "col-3 inf-block" };
+const _hoisted_104$1 = /*#__PURE__*/vue.createElementVNode("h5", null, "Общая таможенная стоимость", -1 /* HOISTED */);
+const _hoisted_105$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "inf-paragraph" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, "по ДТ для экспресс-грузов")
 ], -1 /* HOISTED */);
-const _hoisted_108$1 = { class: "batch-block row" };
-const _hoisted_109$1 = { class: "col-9" };
-const _hoisted_110$1 = { class: "col-3" };
-const _hoisted_111$1 = { class: "row" };
-const _hoisted_112$1 = { class: "inf-block row justify-content-end" };
-const _hoisted_113$1 = { class: "payment-information" };
-const _hoisted_114$1 = /*#__PURE__*/vue.createTextVNode(" Сведения об оплате таможенных и иных платежей ");
-const _hoisted_115$1 = { class: "sender-common-inf" };
-const _hoisted_116$1 = { class: "row" };
-const _hoisted_117$1 = /*#__PURE__*/vue.createElementVNode("button", {
+const _hoisted_106$1 = { class: "batch-block row" };
+const _hoisted_107$1 = { class: "col-9" };
+const _hoisted_108$1 = { class: "col-3" };
+const _hoisted_109$1 = { class: "sender-common-inf" };
+const _hoisted_110$1 = { class: "row" };
+const _hoisted_111$1 = /*#__PURE__*/vue.createElementVNode("button", {
   class: "btn invoice-button collapsed",
   type: "button",
   "data-bs-toggle": "collapse",
@@ -615,115 +618,115 @@ const _hoisted_117$1 = /*#__PURE__*/vue.createElementVNode("button", {
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-caret-up" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_118$1 = {
+const _hoisted_112$1 = {
   class: "collapse",
   id: "collapsedSenderInfo"
 };
-const _hoisted_119$1 = { class: "card card-body" };
-const _hoisted_120$1 = { class: "row" };
-const _hoisted_121$1 = { class: "sender-name" };
-const _hoisted_122$1 = { class: "row form my-2" };
-const _hoisted_123$1 = { class: "col-8" };
-const _hoisted_124$1 = { class: "input-bg" };
-const _hoisted_125$1 = { class: "col-1" };
-const _hoisted_126$1 = { class: "input-bg" };
-const _hoisted_127$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_128$1 = { class: "col-2 d-flex" };
-const _hoisted_129$1 = { class: "input-bg col-2" };
-const _hoisted_130$1 = ["checked"];
-const _hoisted_131$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
+const _hoisted_113$1 = { class: "card card-body" };
+const _hoisted_114$1 = { class: "row" };
+const _hoisted_115$1 = { class: "sender-name" };
+const _hoisted_116$1 = { class: "row form my-2" };
+const _hoisted_117$1 = { class: "col-8" };
+const _hoisted_118$1 = { class: "input-bg" };
+const _hoisted_119$1 = { class: "col-1" };
+const _hoisted_120$1 = { class: "input-bg" };
+const _hoisted_121$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_122$1 = { class: "col-2 d-flex" };
+const _hoisted_123$1 = { class: "input-bg col-2" };
+const _hoisted_124$1 = ["checked"];
+const _hoisted_125$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " Декларант (заявитель) ")
 ], -1 /* HOISTED */);
-const _hoisted_132$1 = { class: "row my-2" };
-const _hoisted_133$1 = { class: "col-5" };
-const _hoisted_134$1 = { class: "input-bg" };
-const _hoisted_135$1 = { class: "col-7 d-flex justify-content-between" };
-const _hoisted_136$1 = { class: "col-4 d-flex" };
-const _hoisted_137$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_126$1 = { class: "row my-2" };
+const _hoisted_127$1 = { class: "col-5" };
+const _hoisted_128$1 = { class: "input-bg" };
+const _hoisted_129$1 = { class: "col-7 d-flex justify-content-between" };
+const _hoisted_130$1 = { class: "col-4 d-flex" };
+const _hoisted_131$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ОГРН ")
 ], -1 /* HOISTED */);
-const _hoisted_138$1 = { class: "input-bg col-10" };
-const _hoisted_139$1 = { class: "col-3 d-flex" };
-const _hoisted_140$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_132$1 = { class: "input-bg col-10" };
+const _hoisted_133$1 = { class: "col-3 d-flex" };
+const _hoisted_134$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ИНН ")
 ], -1 /* HOISTED */);
-const _hoisted_141$1 = { class: "input-bg col-10" };
-const _hoisted_142$1 = { class: "col-3 d-flex" };
-const _hoisted_143$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_135$1 = { class: "input-bg col-10" };
+const _hoisted_136$1 = { class: "col-3 d-flex" };
+const _hoisted_137$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " КПП ")
 ], -1 /* HOISTED */);
-const _hoisted_144$1 = { class: "input-bg col-10" };
-const _hoisted_145$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, null, -1 /* HOISTED */);
-const _hoisted_146$1 = { class: "row" };
-const _hoisted_147$1 = { class: "sender-address" };
-const _hoisted_148$1 = { class: "row my-2" };
-const _hoisted_149$1 = { class: "d-flex sender-contacts" };
-const _hoisted_150$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, [
+const _hoisted_138$1 = { class: "input-bg col-10" };
+const _hoisted_139$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, null, -1 /* HOISTED */);
+const _hoisted_140$1 = { class: "row" };
+const _hoisted_141$1 = { class: "sender-address" };
+const _hoisted_142$1 = { class: "row my-2" };
+const _hoisted_143$1 = { class: "d-flex sender-contacts" };
+const _hoisted_144$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "point-name" }, "Адрес")
 ], -1 /* HOISTED */);
-const _hoisted_151$1 = { class: "col-3" };
-const _hoisted_152$1 = { class: "input-bg" };
-const _hoisted_153$1 = { class: "col-4" };
-const _hoisted_154$1 = { class: "input-bg" };
-const _hoisted_155$1 = { class: "col-3" };
-const _hoisted_156$1 = { class: "input-bg" };
-const _hoisted_157$1 = { class: "row my-2" };
-const _hoisted_158$1 = { class: "address-block" };
-const _hoisted_159$1 = { class: "row my-2" };
-const _hoisted_160$1 = { class: "col-1" };
+const _hoisted_145$1 = { class: "col-3" };
+const _hoisted_146$1 = { class: "input-bg" };
+const _hoisted_147$1 = { class: "col-4" };
+const _hoisted_148$1 = { class: "input-bg" };
+const _hoisted_149$1 = { class: "col-3" };
+const _hoisted_150$1 = { class: "input-bg" };
+const _hoisted_151$1 = { class: "row my-2" };
+const _hoisted_152$1 = { class: "address-block" };
+const _hoisted_153$1 = { class: "row my-2" };
+const _hoisted_154$1 = { class: "col-1" };
+const _hoisted_155$1 = { class: "input-bg" };
+const _hoisted_156$1 = { class: "col-4" };
+const _hoisted_157$1 = { class: "input-bg" };
+const _hoisted_158$1 = { class: "col-2" };
+const _hoisted_159$1 = { class: "input-bg" };
+const _hoisted_160$1 = { class: "col-5" };
 const _hoisted_161$1 = { class: "input-bg" };
-const _hoisted_162$1 = { class: "col-4" };
-const _hoisted_163$1 = { class: "input-bg" };
-const _hoisted_164$1 = { class: "col-2" };
-const _hoisted_165$1 = { class: "input-bg" };
-const _hoisted_166$1 = { class: "col-5" };
-const _hoisted_167$1 = { class: "input-bg" };
-const _hoisted_168$1 = { class: "row my-2" };
-const _hoisted_169$1 = { class: "col-5" };
-const _hoisted_170$1 = { class: "input-bg" };
-const _hoisted_171$1 = { class: "col-3" };
-const _hoisted_172$1 = { class: "input-bg" };
-const _hoisted_173$1 = { class: "col-4" };
-const _hoisted_174$1 = { class: "input-bg" };
-const _hoisted_175$1 = { class: "row my-2" };
-const _hoisted_176$1 = { class: "col-4" };
+const _hoisted_162$1 = { class: "row my-2" };
+const _hoisted_163$1 = { class: "col-5" };
+const _hoisted_164$1 = { class: "input-bg" };
+const _hoisted_165$1 = { class: "col-3" };
+const _hoisted_166$1 = { class: "input-bg" };
+const _hoisted_167$1 = { class: "col-4" };
+const _hoisted_168$1 = { class: "input-bg" };
+const _hoisted_169$1 = { class: "row my-2" };
+const _hoisted_170$1 = { class: "col-4" };
+const _hoisted_171$1 = { class: "input-bg" };
+const _hoisted_172$1 = { class: "col-2" };
+const _hoisted_173$1 = { class: "input-bg" };
+const _hoisted_174$1 = { class: "col-2" };
+const _hoisted_175$1 = { class: "input-bg" };
+const _hoisted_176$1 = { class: "col-2" };
 const _hoisted_177$1 = { class: "input-bg" };
-const _hoisted_178$1 = { class: "col-2" };
-const _hoisted_179$1 = { class: "input-bg" };
-const _hoisted_180$1 = { class: "col-2" };
-const _hoisted_181$1 = { class: "input-bg" };
-const _hoisted_182$1 = { class: "col-2" };
-const _hoisted_183$1 = { class: "input-bg" };
+const _hoisted_178$1 = { class: "row my-2" };
+const _hoisted_179$1 = { class: "col-12" };
+const _hoisted_180$1 = { class: "input-bg" };
+const _hoisted_181$1 = { class: "row" };
+const _hoisted_182$1 = { class: "personal-inf-block" };
+const _hoisted_183$1 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
 const _hoisted_184$1 = { class: "row my-2" };
-const _hoisted_185$1 = { class: "col-12" };
-const _hoisted_186$1 = { class: "input-bg" };
-const _hoisted_187$1 = { class: "row" };
-const _hoisted_188$1 = { class: "personal-inf-block" };
-const _hoisted_189$1 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
-const _hoisted_190$1 = { class: "row my-2" };
-const _hoisted_191$1 = { class: "row personal-data my-2" };
-const _hoisted_192$1 = { class: "col-1" };
-const _hoisted_193$1 = { class: "input-bg" };
-const _hoisted_194$1 = { class: "col-1" };
-const _hoisted_195$1 = { class: "input-bg" };
-const _hoisted_196$1 = { class: "col-2" };
+const _hoisted_185$1 = { class: "row personal-data my-2" };
+const _hoisted_186$1 = { class: "col-1" };
+const _hoisted_187$1 = { class: "input-bg" };
+const _hoisted_188$1 = { class: "col-1" };
+const _hoisted_189$1 = { class: "input-bg" };
+const _hoisted_190$1 = { class: "col-2" };
+const _hoisted_191$1 = { class: "input-bg" };
+const _hoisted_192$1 = { class: "col-4 d-flex" };
+const _hoisted_193$1 = { class: "input-bg col-4" };
+const _hoisted_194$1 = { class: "input-bg col-4" };
+const _hoisted_195$1 = { class: "input-bg col-4" };
+const _hoisted_196$1 = { class: "col-4" };
 const _hoisted_197$1 = { class: "input-bg" };
-const _hoisted_198$1 = { class: "col-4 d-flex" };
-const _hoisted_199$1 = { class: "input-bg col-4" };
-const _hoisted_200$1 = { class: "input-bg col-4" };
-const _hoisted_201$1 = { class: "input-bg col-4" };
-const _hoisted_202$1 = { class: "col-4" };
-const _hoisted_203$1 = { class: "input-bg" };
-const _hoisted_204$1 = { class: "row personal-data my-2" };
-const _hoisted_205$1 = { class: "col-7" };
-const _hoisted_206$1 = { class: "input-bg" };
-const _hoisted_207$1 = { class: "col-2" };
-const _hoisted_208$1 = { class: "input-bg" };
-const _hoisted_209$1 = { class: "col-3" };
-const _hoisted_210$1 = { class: "input-bg" };
-const _hoisted_211$1 = { class: "recipient-common-inf" };
-const _hoisted_212$1 = { class: "row" };
-const _hoisted_213$1 = /*#__PURE__*/vue.createElementVNode("button", {
+const _hoisted_198$1 = { class: "row personal-data my-2" };
+const _hoisted_199$1 = { class: "col-7" };
+const _hoisted_200$1 = { class: "input-bg" };
+const _hoisted_201$1 = { class: "col-2" };
+const _hoisted_202$1 = { class: "input-bg" };
+const _hoisted_203$1 = { class: "col-3" };
+const _hoisted_204$1 = { class: "input-bg" };
+const _hoisted_205$1 = { class: "recipient-common-inf" };
+const _hoisted_206$1 = { class: "row" };
+const _hoisted_207$1 = /*#__PURE__*/vue.createElementVNode("button", {
   class: "btn invoice-button collapsed",
   type: "button",
   "data-bs-toggle": "collapse",
@@ -736,133 +739,133 @@ const _hoisted_213$1 = /*#__PURE__*/vue.createElementVNode("button", {
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-caret-up" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_214$1 = {
+const _hoisted_208$1 = {
   class: "collapse",
   id: "collapsedRecipientInfo"
 };
-const _hoisted_215$1 = { class: "card card-body" };
-const _hoisted_216$1 = { class: "row" };
-const _hoisted_217$1 = { class: "sender-name" };
-const _hoisted_218$1 = { class: "row form my-2" };
-const _hoisted_219$1 = { class: "col-8" };
-const _hoisted_220$1 = { class: "input-bg" };
-const _hoisted_221$1 = { class: "col-1" };
-const _hoisted_222$1 = { class: "input-bg" };
-const _hoisted_223$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_224$1 = { class: "col-2 d-flex" };
-const _hoisted_225$1 = { class: "input-bg col-2" };
-const _hoisted_226$1 = ["checked"];
-const _hoisted_227$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
+const _hoisted_209$1 = { class: "card card-body" };
+const _hoisted_210$1 = { class: "row" };
+const _hoisted_211$1 = { class: "sender-name" };
+const _hoisted_212$1 = { class: "row form my-2" };
+const _hoisted_213$1 = { class: "col-8" };
+const _hoisted_214$1 = { class: "input-bg" };
+const _hoisted_215$1 = { class: "col-1" };
+const _hoisted_216$1 = { class: "input-bg" };
+const _hoisted_217$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
+const _hoisted_218$1 = { class: "col-2 d-flex" };
+const _hoisted_219$1 = { class: "input-bg col-2" };
+const _hoisted_220$1 = ["checked"];
+const _hoisted_221$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-10" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " Декларант (заявитель) ")
 ], -1 /* HOISTED */);
-const _hoisted_228$1 = { class: "row my-2" };
-const _hoisted_229$1 = { class: "col-5" };
-const _hoisted_230$1 = { class: "input-bg" };
-const _hoisted_231$1 = { class: "col-7 d-flex justify-content-between" };
-const _hoisted_232$1 = { class: "col-4 d-flex" };
-const _hoisted_233$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_222$1 = { class: "row my-2" };
+const _hoisted_223$1 = { class: "col-5" };
+const _hoisted_224$1 = { class: "input-bg" };
+const _hoisted_225$1 = { class: "col-7 d-flex justify-content-between" };
+const _hoisted_226$1 = { class: "col-4 d-flex" };
+const _hoisted_227$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ОГРН ")
 ], -1 /* HOISTED */);
-const _hoisted_234$1 = { class: "input-bg col-10" };
-const _hoisted_235$1 = { class: "col-3 d-flex" };
-const _hoisted_236$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_228$1 = { class: "input-bg col-10" };
+const _hoisted_229$1 = { class: "col-3 d-flex" };
+const _hoisted_230$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " ИНН ")
 ], -1 /* HOISTED */);
-const _hoisted_237$1 = { class: "input-bg col-10" };
-const _hoisted_238$1 = { class: "col-3 d-flex" };
-const _hoisted_239$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
+const _hoisted_231$1 = { class: "input-bg col-10" };
+const _hoisted_232$1 = { class: "col-3 d-flex" };
+const _hoisted_233$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "label-block col-2" }, [
   /*#__PURE__*/vue.createElementVNode("label", null, " КПП ")
 ], -1 /* HOISTED */);
-const _hoisted_240$1 = { class: "input-bg col-10" };
-const _hoisted_241$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, null, -1 /* HOISTED */);
-const _hoisted_242$1 = { class: "row" };
-const _hoisted_243$1 = { class: "sender-address" };
-const _hoisted_244$1 = { class: "row my-2" };
-const _hoisted_245$1 = { class: "d-flex sender-contacts" };
-const _hoisted_246$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, [
+const _hoisted_234$1 = { class: "input-bg col-10" };
+const _hoisted_235$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, null, -1 /* HOISTED */);
+const _hoisted_236$1 = { class: "row" };
+const _hoisted_237$1 = { class: "sender-address" };
+const _hoisted_238$1 = { class: "row my-2" };
+const _hoisted_239$1 = { class: "d-flex sender-contacts" };
+const _hoisted_240$1 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-1 d-flex" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "point-name" }, "Адрес")
 ], -1 /* HOISTED */);
-const _hoisted_247$1 = { class: "col-3" };
-const _hoisted_248$1 = { class: "input-bg" };
-const _hoisted_249$1 = { class: "col-4" };
-const _hoisted_250$1 = { class: "input-bg" };
-const _hoisted_251$1 = { class: "col-3" };
-const _hoisted_252$1 = { class: "input-bg" };
-const _hoisted_253$1 = { class: "row my-2" };
-const _hoisted_254$1 = { class: "address-block" };
-const _hoisted_255$1 = { class: "row my-2" };
-const _hoisted_256$1 = { class: "col-1" };
+const _hoisted_241$1 = { class: "col-3" };
+const _hoisted_242$1 = { class: "input-bg" };
+const _hoisted_243$1 = { class: "col-4" };
+const _hoisted_244$1 = { class: "input-bg" };
+const _hoisted_245$1 = { class: "col-3" };
+const _hoisted_246$1 = { class: "input-bg" };
+const _hoisted_247$1 = { class: "row my-2" };
+const _hoisted_248$1 = { class: "address-block" };
+const _hoisted_249$1 = { class: "row my-2" };
+const _hoisted_250$1 = { class: "col-1" };
+const _hoisted_251$1 = { class: "input-bg" };
+const _hoisted_252$1 = { class: "col-4" };
+const _hoisted_253$1 = { class: "input-bg" };
+const _hoisted_254$1 = { class: "col-2" };
+const _hoisted_255$1 = { class: "input-bg" };
+const _hoisted_256$1 = { class: "col-5" };
 const _hoisted_257$1 = { class: "input-bg" };
-const _hoisted_258$1 = { class: "col-4" };
-const _hoisted_259$1 = { class: "input-bg" };
-const _hoisted_260$1 = { class: "col-2" };
-const _hoisted_261$1 = { class: "input-bg" };
-const _hoisted_262$1 = { class: "col-5" };
-const _hoisted_263$1 = { class: "input-bg" };
-const _hoisted_264$1 = { class: "row my-2" };
-const _hoisted_265$1 = { class: "col-5" };
-const _hoisted_266$1 = { class: "input-bg" };
-const _hoisted_267$1 = { class: "col-3" };
-const _hoisted_268$1 = { class: "input-bg" };
-const _hoisted_269$1 = { class: "col-4" };
-const _hoisted_270$1 = { class: "input-bg" };
-const _hoisted_271$1 = { class: "row my-2" };
-const _hoisted_272$1 = { class: "col-4" };
+const _hoisted_258$1 = { class: "row my-2" };
+const _hoisted_259$1 = { class: "col-5" };
+const _hoisted_260$1 = { class: "input-bg" };
+const _hoisted_261$1 = { class: "col-3" };
+const _hoisted_262$1 = { class: "input-bg" };
+const _hoisted_263$1 = { class: "col-4" };
+const _hoisted_264$1 = { class: "input-bg" };
+const _hoisted_265$1 = { class: "row my-2" };
+const _hoisted_266$1 = { class: "col-4" };
+const _hoisted_267$1 = { class: "input-bg" };
+const _hoisted_268$1 = { class: "col-2" };
+const _hoisted_269$1 = { class: "input-bg" };
+const _hoisted_270$1 = { class: "col-2" };
+const _hoisted_271$1 = { class: "input-bg" };
+const _hoisted_272$1 = { class: "col-2" };
 const _hoisted_273$1 = { class: "input-bg" };
-const _hoisted_274$1 = { class: "col-2" };
-const _hoisted_275$1 = { class: "input-bg" };
-const _hoisted_276$1 = { class: "col-2" };
-const _hoisted_277$1 = { class: "input-bg" };
-const _hoisted_278 = { class: "col-2" };
-const _hoisted_279 = { class: "input-bg" };
+const _hoisted_274$1 = { class: "row my-2" };
+const _hoisted_275$1 = { class: "col-12" };
+const _hoisted_276$1 = { class: "input-bg" };
+const _hoisted_277$1 = { class: "row" };
+const _hoisted_278 = { class: "personal-inf-block" };
+const _hoisted_279 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
 const _hoisted_280 = { class: "row my-2" };
-const _hoisted_281 = { class: "col-12" };
-const _hoisted_282 = { class: "input-bg" };
-const _hoisted_283 = { class: "row" };
-const _hoisted_284 = { class: "personal-inf-block" };
-const _hoisted_285 = /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий личность", -1 /* HOISTED */);
-const _hoisted_286 = { class: "row my-2" };
-const _hoisted_287 = { class: "row personal-data my-2" };
-const _hoisted_288 = { class: "col-1" };
-const _hoisted_289 = { class: "input-bg" };
-const _hoisted_290 = { class: "col-1" };
-const _hoisted_291 = { class: "input-bg" };
-const _hoisted_292 = { class: "col-2" };
+const _hoisted_281 = { class: "row personal-data my-2" };
+const _hoisted_282 = { class: "col-1" };
+const _hoisted_283 = { class: "input-bg" };
+const _hoisted_284 = { class: "col-1" };
+const _hoisted_285 = { class: "input-bg" };
+const _hoisted_286 = { class: "col-2" };
+const _hoisted_287 = { class: "input-bg" };
+const _hoisted_288 = { class: "col-4 d-flex" };
+const _hoisted_289 = { class: "input-bg col-4" };
+const _hoisted_290 = { class: "input-bg col-4" };
+const _hoisted_291 = { class: "input-bg col-4" };
+const _hoisted_292 = { class: "col-4" };
 const _hoisted_293 = { class: "input-bg" };
-const _hoisted_294 = { class: "col-4 d-flex" };
-const _hoisted_295 = { class: "input-bg col-4" };
-const _hoisted_296 = { class: "input-bg col-4" };
-const _hoisted_297 = { class: "input-bg col-4" };
-const _hoisted_298 = { class: "col-4" };
-const _hoisted_299 = { class: "input-bg" };
-const _hoisted_300 = { class: "row personal-data my-2" };
-const _hoisted_301 = { class: "col-7" };
-const _hoisted_302 = { class: "input-bg" };
-const _hoisted_303 = { class: "col-2" };
-const _hoisted_304 = { class: "input-bg" };
-const _hoisted_305 = { class: "col-3" };
+const _hoisted_294 = { class: "row personal-data my-2" };
+const _hoisted_295 = { class: "col-7" };
+const _hoisted_296 = { class: "input-bg" };
+const _hoisted_297 = { class: "col-2" };
+const _hoisted_298 = { class: "input-bg" };
+const _hoisted_299 = { class: "col-3" };
+const _hoisted_300 = { class: "input-bg" };
+const _hoisted_301 = { class: "customs-sender-inf my-2" };
+const _hoisted_302 = { class: "col-12 row inf-block" };
+const _hoisted_303 = { class: "col-7" };
+const _hoisted_304 = { class: "col" };
+const _hoisted_305 = /*#__PURE__*/vue.createElementVNode("h4", { class: "customs-representative" }, "Таможенный представитель", -1 /* HOISTED */);
 const _hoisted_306 = { class: "input-bg" };
-const _hoisted_307 = { class: "customs-sender-inf my-2" };
-const _hoisted_308 = { class: "col-12 row inf-block" };
-const _hoisted_309 = { class: "col-7" };
-const _hoisted_310 = { class: "col" };
-const _hoisted_311 = /*#__PURE__*/vue.createElementVNode("h4", { class: "customs-representative" }, "Таможенный представитель", -1 /* HOISTED */);
-const _hoisted_312 = { class: "input-bg" };
-const _hoisted_313 = { class: "col-5" };
-const _hoisted_314 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, " Сведения о включении лица в реестр таможенных представителей ", -1 /* HOISTED */);
-const _hoisted_315 = { class: "col d-flex" };
-const _hoisted_316 = { class: "col-2" };
+const _hoisted_307 = { class: "col-5" };
+const _hoisted_308 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, " Сведения о включении лица в реестр таможенных представителей ", -1 /* HOISTED */);
+const _hoisted_309 = { class: "col d-flex" };
+const _hoisted_310 = { class: "col-2" };
+const _hoisted_311 = { class: "input-bg" };
+const _hoisted_312 = { class: "col-1" };
+const _hoisted_313 = { class: "input-bg" };
+const _hoisted_314 = { class: "col-7" };
+const _hoisted_315 = { class: "input-bg" };
+const _hoisted_316 = { class: "col-1" };
 const _hoisted_317 = { class: "input-bg" };
 const _hoisted_318 = { class: "col-1" };
 const _hoisted_319 = { class: "input-bg" };
-const _hoisted_320 = { class: "col-7" };
-const _hoisted_321 = { class: "input-bg" };
-const _hoisted_322 = { class: "col-1" };
-const _hoisted_323 = { class: "input-bg" };
-const _hoisted_324 = { class: "col-1" };
-const _hoisted_325 = { class: "input-bg" };
-const _hoisted_326 = { class: "row" };
-const _hoisted_327 = /*#__PURE__*/vue.createElementVNode("button", {
+const _hoisted_320 = { class: "row" };
+const _hoisted_321 = /*#__PURE__*/vue.createElementVNode("button", {
   class: "btn invoice-button collapsed",
   type: "button",
   "data-bs-toggle": "collapse",
@@ -875,36 +878,36 @@ const _hoisted_327 = /*#__PURE__*/vue.createElementVNode("button", {
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-caret-up" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_328 = {
+const _hoisted_322 = {
   class: "collapse",
   id: "collapsedNaturalPersonInfo"
 };
-const _hoisted_329 = { class: "card card-body" };
-const _hoisted_330 = {
+const _hoisted_323 = { class: "card card-body" };
+const _hoisted_324 = {
   action: "",
   class: "form"
 };
-const _hoisted_331 = { class: "d-flex" };
+const _hoisted_325 = { class: "d-flex" };
+const _hoisted_326 = { class: "col-3" };
+const _hoisted_327 = { class: "input-bg" };
+const _hoisted_328 = { class: "col-3" };
+const _hoisted_329 = { class: "input-bg" };
+const _hoisted_330 = { class: "col-3" };
+const _hoisted_331 = { class: "input-bg" };
 const _hoisted_332 = { class: "col-3" };
 const _hoisted_333 = { class: "input-bg" };
-const _hoisted_334 = { class: "col-3" };
-const _hoisted_335 = { class: "input-bg" };
+const _hoisted_334 = { class: "row my-2" };
+const _hoisted_335 = { class: "col-9 d-flex" };
 const _hoisted_336 = { class: "col-3" };
 const _hoisted_337 = { class: "input-bg" };
 const _hoisted_338 = { class: "col-3" };
 const _hoisted_339 = { class: "input-bg" };
-const _hoisted_340 = { class: "row my-2" };
-const _hoisted_341 = { class: "col-9 d-flex" };
-const _hoisted_342 = { class: "col-3" };
-const _hoisted_343 = { class: "input-bg" };
-const _hoisted_344 = { class: "col-3" };
-const _hoisted_345 = { class: "input-bg" };
-const _hoisted_346 = { class: "col-6" };
-const _hoisted_347 = { class: "input-bg" };
-const _hoisted_348 = { class: "col-3 row" };
-const _hoisted_349 = { class: "col-8" };
-const _hoisted_350 = { class: "input-bg" };
-const _hoisted_351 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-4" }, [
+const _hoisted_340 = { class: "col-6" };
+const _hoisted_341 = { class: "input-bg" };
+const _hoisted_342 = { class: "col-3 row" };
+const _hoisted_343 = { class: "col-8" };
+const _hoisted_344 = { class: "input-bg" };
+const _hoisted_345 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-4" }, [
   /*#__PURE__*/vue.createElementVNode("button", {
     class: "btn button-calendar",
     type: "button"
@@ -912,156 +915,142 @@ const _hoisted_351 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-4"
     /*#__PURE__*/vue.createElementVNode("i", { class: "fa-solid fa-calendar-days" })
   ])
 ], -1 /* HOISTED */);
-const _hoisted_352 = { class: "row my-2" };
-const _hoisted_353 = /*#__PURE__*/vue.createElementVNode("p", null, " Сведения о документе, удостоверяющем личность лица, заоплневшего (подписавшего) таможенного документ ", -1 /* HOISTED */);
-const _hoisted_354 = { class: "row" };
-const _hoisted_355 = { class: "col-3 d-flex" };
-const _hoisted_356 = { class: "col-5" };
-const _hoisted_357 = { class: "input-bg" };
-const _hoisted_358 = { class: "col-7" };
-const _hoisted_359 = { class: "input-bg" };
-const _hoisted_360 = { class: "col-3 d-flex" };
-const _hoisted_361 = { class: "col-4" };
-const _hoisted_362 = { class: "input-bg" };
-const _hoisted_363 = { class: "col-8" };
-const _hoisted_364 = { class: "input-bg" };
-const _hoisted_365 = { class: "col-3 d-flex" };
-const _hoisted_366 = { class: "col-6" };
-const _hoisted_367 = { class: "input-bg" };
-const _hoisted_368 = { class: "col-6" };
-const _hoisted_369 = { class: "input-bg" };
-const _hoisted_370 = { class: "col-3 d-flex" };
-const _hoisted_371 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-3" }, [
+const _hoisted_346 = { class: "row my-2" };
+const _hoisted_347 = /*#__PURE__*/vue.createElementVNode("p", null, " Сведения о документе, удостоверяющем личность лица, заоплневшего (подписавшего) таможенного документ ", -1 /* HOISTED */);
+const _hoisted_348 = { class: "row" };
+const _hoisted_349 = { class: "col-3 d-flex" };
+const _hoisted_350 = { class: "col-5" };
+const _hoisted_351 = { class: "input-bg" };
+const _hoisted_352 = { class: "col-7" };
+const _hoisted_353 = { class: "input-bg" };
+const _hoisted_354 = { class: "col-3 d-flex" };
+const _hoisted_355 = { class: "col-4" };
+const _hoisted_356 = { class: "input-bg" };
+const _hoisted_357 = { class: "col-8" };
+const _hoisted_358 = { class: "input-bg" };
+const _hoisted_359 = { class: "col-3 d-flex" };
+const _hoisted_360 = { class: "col-6" };
+const _hoisted_361 = { class: "input-bg" };
+const _hoisted_362 = { class: "col-6" };
+const _hoisted_363 = { class: "input-bg" };
+const _hoisted_364 = { class: "col-3 d-flex" };
+const _hoisted_365 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-3" }, [
   /*#__PURE__*/vue.createElementVNode("div", { class: "label-block align-bcntr" }, [
     /*#__PURE__*/vue.createElementVNode("label", { class: "align-bcntr" }, " аттестат ")
   ])
 ], -1 /* HOISTED */);
-const _hoisted_372 = { class: "col-8" };
-const _hoisted_373 = { class: "input-bg" };
-const _hoisted_374 = { class: "row my-2" };
-const _hoisted_375 = { class: "col-3" };
-const _hoisted_376 = { class: "input-bg" };
-const _hoisted_377 = { class: "col-5" };
-const _hoisted_378 = { class: "input-bg" };
-const _hoisted_379 = { class: "col-4 d-flex" };
-const _hoisted_380 = { class: "col-3 input-bg" };
-const _hoisted_381 = { class: "col-8 input-bg" };
-const _hoisted_382 = { class: "col-1 input-bg" };
-const _hoisted_383 = { class: "row my-2" };
-const _hoisted_384 = { class: "row" };
-const _hoisted_385 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
+const _hoisted_366 = { class: "col-8" };
+const _hoisted_367 = { class: "input-bg" };
+const _hoisted_368 = { class: "row my-2" };
+const _hoisted_369 = { class: "col-3" };
+const _hoisted_370 = { class: "input-bg" };
+const _hoisted_371 = { class: "col-5" };
+const _hoisted_372 = { class: "input-bg" };
+const _hoisted_373 = { class: "col-4 d-flex" };
+const _hoisted_374 = { class: "col-3 input-bg" };
+const _hoisted_375 = { class: "col-8 input-bg" };
+const _hoisted_376 = { class: "col-1 input-bg" };
+const _hoisted_377 = { class: "row my-2" };
+const _hoisted_378 = { class: "row" };
+const _hoisted_379 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, " Идентификаторы, присвоенные документу (сведениям) при размещении в хранилище электронных документов ")
 ], -1 /* HOISTED */);
-const _hoisted_386 = { class: "row" };
-const _hoisted_387 = { class: "col-8 d-flex" };
-const _hoisted_388 = { class: "col-6" };
-const _hoisted_389 = { class: "input-bg" };
-const _hoisted_390 = { class: "col-6" };
-const _hoisted_391 = { class: "input-bg" };
-const _hoisted_392 = { class: "col-4" };
-const _hoisted_393 = { class: "input-bg" };
-const _hoisted_394 = { class: "row my-2" };
-const _hoisted_395 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
+const _hoisted_380 = { class: "row" };
+const _hoisted_381 = { class: "col-8 d-flex" };
+const _hoisted_382 = { class: "col-6" };
+const _hoisted_383 = { class: "input-bg" };
+const _hoisted_384 = { class: "col-6" };
+const _hoisted_385 = { class: "input-bg" };
+const _hoisted_386 = { class: "col-4" };
+const _hoisted_387 = { class: "input-bg" };
+const _hoisted_388 = { class: "row my-2" };
+const _hoisted_389 = /*#__PURE__*/vue.createElementVNode("div", { class: "row" }, [
   /*#__PURE__*/vue.createElementVNode("p", null, "Документ, удостоверяющий полномочия")
 ], -1 /* HOISTED */);
-const _hoisted_396 = { class: "row" };
+const _hoisted_390 = { class: "row" };
+const _hoisted_391 = { class: "col-4 d-flex" };
+const _hoisted_392 = { class: "col-4" };
+const _hoisted_393 = { class: "input-bg" };
+const _hoisted_394 = { class: "col-8" };
+const _hoisted_395 = { class: "input-bg" };
+const _hoisted_396 = { class: "col-8 row" };
 const _hoisted_397 = { class: "col-4 d-flex" };
-const _hoisted_398 = { class: "col-4" };
+const _hoisted_398 = { class: "col-5" };
 const _hoisted_399 = { class: "input-bg" };
-const _hoisted_400 = { class: "col-8" };
+const _hoisted_400 = { class: "col-7" };
 const _hoisted_401 = { class: "input-bg" };
 const _hoisted_402 = { class: "col-8 row" };
-const _hoisted_403 = { class: "col-4 d-flex" };
-const _hoisted_404 = { class: "col-5" };
-const _hoisted_405 = { class: "input-bg" };
-const _hoisted_406 = { class: "col-7" };
-const _hoisted_407 = { class: "input-bg" };
-const _hoisted_408 = { class: "col-8 row" };
-const _hoisted_409 = { class: "col-5 d-flex" };
-const _hoisted_410 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2 align-bcntr" }, [
+const _hoisted_403 = { class: "col-5 d-flex" };
+const _hoisted_404 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2 align-bcntr" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "с")
 ], -1 /* HOISTED */);
-const _hoisted_411 = { class: "col-10" };
-const _hoisted_412 = { class: "input-bg" };
-const _hoisted_413 = { class: "col-5 d-flex" };
-const _hoisted_414 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2 align-bcntr" }, [
+const _hoisted_405 = { class: "col-10" };
+const _hoisted_406 = { class: "input-bg" };
+const _hoisted_407 = { class: "col-5 d-flex" };
+const _hoisted_408 = /*#__PURE__*/vue.createElementVNode("div", { class: "col-2 align-bcntr" }, [
   /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "по")
 ], -1 /* HOISTED */);
-const _hoisted_415 = { class: "col-10" };
-const _hoisted_416 = { class: "input-bg" };
-const _hoisted_417 = { class: "col-2" };
-const _hoisted_418 = { class: "input-bg" };
-const _hoisted_419 = { class: "inspector-inf my-2" };
+const _hoisted_409 = { class: "col-10" };
+const _hoisted_410 = { class: "input-bg" };
+const _hoisted_411 = { class: "col-2" };
+const _hoisted_412 = { class: "input-bg" };
+const _hoisted_413 = { class: "inspector-inf my-2" };
+const _hoisted_414 = { class: "row" };
+const _hoisted_415 = { class: "col-7" };
+const _hoisted_416 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "ФИО инспектора", -1 /* HOISTED */);
+const _hoisted_417 = { class: "input-bg" };
+const _hoisted_418 = { class: "col-5" };
+const _hoisted_419 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "ЛНП", -1 /* HOISTED */);
 const _hoisted_420 = { class: "row" };
-const _hoisted_421 = { class: "col-7" };
-const _hoisted_422 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "ФИО инспектора", -1 /* HOISTED */);
-const _hoisted_423 = { class: "input-bg" };
-const _hoisted_424 = { class: "col-5" };
-const _hoisted_425 = /*#__PURE__*/vue.createElementVNode("p", { class: "align-bcntr" }, "ЛНП", -1 /* HOISTED */);
-const _hoisted_426 = { class: "row" };
-const _hoisted_427 = { class: "col-2 input-bg" };
+const _hoisted_421 = { class: "col-2 input-bg" };
 
 function render$a(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_router_link = vue.resolveComponent("router-link");
-
   return (vue.openBlock(), vue.createElementBlock("div", _hoisted_1$a, [
     vue.createCommentVNode("Region элемент с общей информацией декларации"),
     vue.createElementVNode("div", _hoisted_2$9, [
-      vue.createElementVNode("div", _hoisted_3$9, [
-        vue.createElementVNode("div", _hoisted_4$6, [
-          vue.createVNode(_component_router_link, {
-            class: "point-name",
-            to: { name: 'index' }
-          }, {
-            default: vue.withCtx(() => [
-              _hoisted_5$6
-            ]),
-            _: 1 /* STABLE */
-          })
-        ])
-      ]),
-      _hoisted_6$4,
-      vue.createElementVNode("div", _hoisted_7$3, [
-        vue.createElementVNode("div", _hoisted_8$3, [
-          vue.createElementVNode("div", _hoisted_9$3, [
-            vue.createElementVNode("div", _hoisted_10$3, [
+      _hoisted_3$9,
+      _hoisted_4$6,
+      vue.createElementVNode("div", _hoisted_5$6, [
+        vue.createElementVNode("div", _hoisted_6$4, [
+          vue.createElementVNode("div", _hoisted_7$3, [
+            vue.createElementVNode("div", _hoisted_8$3, [
               vue.createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.docType.dteg
-              }, null, 8 /* PROPS */, _hoisted_11$3)
+              }, null, 8 /* PROPS */, _hoisted_9$3)
             ]),
-            _hoisted_12$3,
-            vue.createElementVNode("div", _hoisted_13$3, [
+            _hoisted_10$3,
+            vue.createElementVNode("div", _hoisted_11$3, [
               vue.createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.docType.ptdeg
-              }, null, 8 /* PROPS */, _hoisted_14$3)
+              }, null, 8 /* PROPS */, _hoisted_12$3)
             ]),
-            _hoisted_15$3
+            _hoisted_13$3
           ]),
-          vue.createElementVNode("div", _hoisted_16$3, [
-            vue.createElementVNode("div", _hoisted_17$3, [
+          vue.createElementVNode("div", _hoisted_14$3, [
+            vue.createElementVNode("div", _hoisted_15$3, [
               vue.createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.declarationKindCode.import
-              }, null, 8 /* PROPS */, _hoisted_18$3)
+              }, null, 8 /* PROPS */, _hoisted_16$3)
             ]),
-            _hoisted_19$3,
-            vue.createElementVNode("div", _hoisted_20$3, [
+            _hoisted_17$3,
+            vue.createElementVNode("div", _hoisted_18$3, [
               vue.createElementVNode("input", {
                 class: "form-check-input",
                 type: "checkbox",
                 checked: this.registry.declarationKindCode.export
-              }, null, 8 /* PROPS */, _hoisted_21$3)
+              }, null, 8 /* PROPS */, _hoisted_19$3)
             ]),
-            _hoisted_22$3
+            _hoisted_20$3
           ]),
-          vue.createElementVNode("div", _hoisted_23$3, [
-            _hoisted_24$3,
-            vue.createElementVNode("div", _hoisted_25$3, [
+          vue.createElementVNode("div", _hoisted_21$3, [
+            _hoisted_22$3,
+            vue.createElementVNode("div", _hoisted_23$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "declaration-number-input form-control",
                 type: "text",
@@ -1071,13 +1060,13 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
               ])
             ])
           ]),
-          _hoisted_26$3
+          _hoisted_24$3
         ])
       ]),
-      vue.createElementVNode("div", _hoisted_27$3, [
-        vue.createElementVNode("div", _hoisted_28$3, [
-          vue.createElementVNode("div", _hoisted_29$3, [
-            vue.createElementVNode("div", _hoisted_30$3, [
+      vue.createElementVNode("div", _hoisted_25$3, [
+        vue.createElementVNode("div", _hoisted_26$3, [
+          vue.createElementVNode("div", _hoisted_27$3, [
+            vue.createElementVNode("div", _hoisted_28$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "form-control",
                 type: "text",
@@ -1086,7 +1075,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 [vue.vModelText, this.registry.customsCodeMode]
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_31$3, [
+            vue.createElementVNode("div", _hoisted_29$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "form-control",
                 type: "text",
@@ -1095,7 +1084,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 [vue.vModelText, this.registry.previousCustomsCodeMode]
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_32$3, [
+            vue.createElementVNode("div", _hoisted_30$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "form-control",
                 type: "text",
@@ -1104,7 +1093,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 [vue.vModelText, this.registry.declarationKind]
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_33$3, [
+            vue.createElementVNode("div", _hoisted_31$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "form-control",
                 type: "text",
@@ -1114,9 +1103,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
               ])
             ])
           ]),
-          vue.createElementVNode("div", _hoisted_34$3, [
-            _hoisted_35$3,
-            vue.createElementVNode("div", _hoisted_36$3, [
+          vue.createElementVNode("div", _hoisted_32$3, [
+            _hoisted_33$3,
+            vue.createElementVNode("div", _hoisted_34$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "sheets-input form-control",
                 type: "text",
@@ -1126,9 +1115,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
               ])
             ])
           ]),
-          vue.createElementVNode("div", _hoisted_37$3, [
-            _hoisted_38$3,
-            vue.createElementVNode("div", _hoisted_39$3, [
+          vue.createElementVNode("div", _hoisted_35$3, [
+            _hoisted_36$3,
+            vue.createElementVNode("div", _hoisted_37$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "registry-number-input form-control",
                 type: "text",
@@ -1139,8 +1128,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
               ])
             ])
           ]),
-          vue.createElementVNode("div", _hoisted_40$3, [
-            vue.createElementVNode("div", _hoisted_41$3, [
+          vue.createElementVNode("div", _hoisted_38$3, [
+            vue.createElementVNode("div", _hoisted_39$3, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "registry-checkbox form-check-input",
                 type: "checkbox",
@@ -1149,17 +1138,17 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 [vue.vModelCheckbox, this.registry.isRegistryWasChanged]
               ])
             ]),
-            _hoisted_42$3
+            _hoisted_40$3
           ])
         ])
       ]),
-      vue.createElementVNode("div", _hoisted_43$3, [
-        vue.createElementVNode("div", _hoisted_44$3, [
-          vue.createElementVNode("div", _hoisted_45$3, [
-            vue.createElementVNode("div", _hoisted_46$3, [
-              _hoisted_47$3,
-              vue.createElementVNode("div", _hoisted_48$3, [
-                vue.createElementVNode("div", _hoisted_49$3, [
+      vue.createElementVNode("div", _hoisted_41$3, [
+        vue.createElementVNode("div", _hoisted_42$3, [
+          vue.createElementVNode("div", _hoisted_43$3, [
+            vue.createElementVNode("div", _hoisted_44$3, [
+              _hoisted_45$3,
+              vue.createElementVNode("div", _hoisted_46$3, [
+                vue.createElementVNode("div", _hoisted_47$3, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1168,7 +1157,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     [vue.vModelText, this.registry.expressCourierCode]
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_50$3, [
+                vue.createElementVNode("div", _hoisted_48$3, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "col-11 form-control",
                     type: "text",
@@ -1179,15 +1168,15 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            _hoisted_51$3,
-            _hoisted_52$3
+            _hoisted_49$3,
+            _hoisted_50$3
           ]),
-          vue.createElementVNode("div", _hoisted_53$3, [
-            vue.createElementVNode("div", _hoisted_54$3, [
-              vue.createElementVNode("div", _hoisted_55$3, [
-                _hoisted_56$3,
-                vue.createElementVNode("form", _hoisted_57$3, [
-                  vue.createElementVNode("div", _hoisted_58$3, [
+          vue.createElementVNode("div", _hoisted_51$3, [
+            vue.createElementVNode("div", _hoisted_52$3, [
+              vue.createElementVNode("div", _hoisted_53$3, [
+                _hoisted_54$3,
+                vue.createElementVNode("form", _hoisted_55$3, [
+                  vue.createElementVNode("div", _hoisted_56$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1196,7 +1185,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.registerDocumentUnknownString1]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_59$3, [
+                  vue.createElementVNode("div", _hoisted_57$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1205,7 +1194,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.registerDocumentIdCountryCode]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_60$3, [
+                  vue.createElementVNode("div", _hoisted_58$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1214,7 +1203,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.registerDocumentIdNumber]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_61$3, [
+                  vue.createElementVNode("div", _hoisted_59$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1223,7 +1212,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.registerDocumentUnknownString2]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_62$3, [
+                  vue.createElementVNode("div", _hoisted_60$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1235,11 +1224,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            _hoisted_63$3,
-            vue.createElementVNode("div", _hoisted_64$3, [
-              vue.createElementVNode("form", _hoisted_65$3, [
-                vue.createElementVNode("div", _hoisted_66$3, [
-                  vue.createElementVNode("div", _hoisted_67$3, [
+            _hoisted_61$3,
+            vue.createElementVNode("div", _hoisted_62$3, [
+              vue.createElementVNode("form", _hoisted_63$3, [
+                vue.createElementVNode("div", _hoisted_64$3, [
+                  vue.createElementVNode("div", _hoisted_65$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1248,7 +1237,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.changingDeclarationNumber.customPoint]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_68$3, [
+                  vue.createElementVNode("div", _hoisted_66$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1257,7 +1246,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.changingDeclarationNumber.date]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_69$3, [
+                  vue.createElementVNode("div", _hoisted_67$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1266,7 +1255,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       [vue.vModelText, this.registry.changingDeclarationNumber.innerNum]
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_70$3, [
+                  vue.createElementVNode("div", _hoisted_68$3, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       class: "form-control",
                       type: "text",
@@ -1276,10 +1265,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_71$3, [
-                  _hoisted_72$3,
-                  vue.createElementVNode("div", _hoisted_73$3, [
-                    vue.createElementVNode("div", _hoisted_74$3, [
+                vue.createElementVNode("div", _hoisted_69$3, [
+                  _hoisted_70$3,
+                  vue.createElementVNode("div", _hoisted_71$3, [
+                    vue.createElementVNode("div", _hoisted_72$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1288,7 +1277,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.stageChangeCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_75$3, [
+                    vue.createElementVNode("div", _hoisted_73$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1297,7 +1286,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.reasonChangeCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_76$3, [
+                    vue.createElementVNode("div", _hoisted_74$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1306,7 +1295,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.quantityChangeCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_77$3, [
+                    vue.createElementVNode("div", _hoisted_75$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1315,7 +1304,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.TNVEDChangeCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_78$3, [
+                    vue.createElementVNode("div", _hoisted_76$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1324,7 +1313,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.customsCostChangeCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_79$3, [
+                    vue.createElementVNode("div", _hoisted_77$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1333,7 +1322,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.customsPaymentChangeCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_80$3, [
+                    vue.createElementVNode("div", _hoisted_78$3, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         class: "form-control number-code",
                         type: "number",
@@ -1342,23 +1331,23 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.changeDetailsType.otherChangeCode]
                       ])
                     ]),
-                    _hoisted_81$3
+                    _hoisted_79$3
                   ]),
-                  _hoisted_82$3
+                  _hoisted_80$3
                 ])
               ])
             ])
           ])
         ])
       ]),
-      vue.createElementVNode("div", _hoisted_83$3, [
-        vue.createElementVNode("div", _hoisted_84$3, [
-          _hoisted_85$3,
-          vue.createElementVNode("form", _hoisted_86$3, [
-            vue.createElementVNode("div", _hoisted_87$2, [
-              _hoisted_88$2,
-              vue.createElementVNode("div", _hoisted_89$2, [
-                vue.createElementVNode("div", _hoisted_90$2, [
+      vue.createElementVNode("div", _hoisted_81$3, [
+        vue.createElementVNode("div", _hoisted_82$3, [
+          _hoisted_83$3,
+          vue.createElementVNode("form", _hoisted_84$3, [
+            vue.createElementVNode("div", _hoisted_85$3, [
+              _hoisted_86$3,
+              vue.createElementVNode("div", _hoisted_87$2, [
+                vue.createElementVNode("div", _hoisted_88$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     type: "text",
                     class: "form-control",
@@ -1368,7 +1357,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     [vue.vModelText, this.registry.totalPaymentAmountDetailsSum]
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_91$2, [
+                vue.createElementVNode("div", _hoisted_89$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     type: "text",
                     class: "form-control",
@@ -1380,11 +1369,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_92$2, [
-              _hoisted_93$2,
-              _hoisted_94$2,
-              vue.createElementVNode("div", _hoisted_95$2, [
-                vue.createElementVNode("div", _hoisted_96$2, [
+            vue.createElementVNode("div", _hoisted_90$2, [
+              _hoisted_91$2,
+              _hoisted_92$2,
+              vue.createElementVNode("div", _hoisted_93$2, [
+                vue.createElementVNode("div", _hoisted_94$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1393,7 +1382,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     [vue.vModelText, this.registry.CAValueAmountSum]
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_97$2, [
+                vue.createElementVNode("div", _hoisted_95$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1404,11 +1393,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_98$2, [
-              _hoisted_99$2,
-              _hoisted_100$2,
-              vue.createElementVNode("div", _hoisted_101$2, [
-                vue.createElementVNode("div", _hoisted_102$2, [
+            vue.createElementVNode("div", _hoisted_96$2, [
+              _hoisted_97$2,
+              _hoisted_98$2,
+              vue.createElementVNode("div", _hoisted_99$2, [
+                vue.createElementVNode("div", _hoisted_100$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1417,7 +1406,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     [vue.vModelText, this.registry.unifiedGrossWeightQuantity]
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_103$2, [
+                vue.createElementVNode("div", _hoisted_101$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1426,7 +1415,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     [vue.vModelText, this.registry.weightUnit]
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_104$1, [
+                vue.createElementVNode("div", _hoisted_102$2, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1437,11 +1426,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_105$1, [
-              _hoisted_106$1,
-              _hoisted_107$1,
-              vue.createElementVNode("div", _hoisted_108$1, [
-                vue.createElementVNode("div", _hoisted_109$1, [
+            vue.createElementVNode("div", _hoisted_103$2, [
+              _hoisted_104$1,
+              _hoisted_105$1,
+              vue.createElementVNode("div", _hoisted_106$1, [
+                vue.createElementVNode("div", _hoisted_107$1, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1450,7 +1439,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     [vue.vModelText, this.registry.customCost]
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_110$1, [
+                vue.createElementVNode("div", _hoisted_108$1, [
                   vue.withDirectives(vue.createElementVNode("input", {
                     class: "form-control",
                     type: "text",
@@ -1463,32 +1452,20 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ])
-      ]),
-      vue.createElementVNode("div", _hoisted_111$1, [
-        vue.createElementVNode("div", _hoisted_112$1, [
-          vue.createElementVNode("div", _hoisted_113$1, [
-            vue.createVNode(_component_router_link, { to: { name: 'index' } }, {
-              default: vue.withCtx(() => [
-                _hoisted_114$1
-              ]),
-              _: 1 /* STABLE */
-            })
-          ])
-        ])
       ])
     ]),
     vue.createCommentVNode(" endregion"),
     vue.createCommentVNode(" Region элемент с общей информацией по отправителю"),
-    vue.createElementVNode("div", _hoisted_115$1, [
-      vue.createElementVNode("div", _hoisted_116$1, [
-        _hoisted_117$1,
-        vue.createElementVNode("div", _hoisted_118$1, [
-          vue.createElementVNode("div", _hoisted_119$1, [
-            vue.createElementVNode("div", _hoisted_120$1, [
-              vue.createElementVNode("div", _hoisted_121$1, [
-                vue.createElementVNode("form", _hoisted_122$1, [
-                  vue.createElementVNode("div", _hoisted_123$1, [
-                    vue.createElementVNode("div", _hoisted_124$1, [
+    vue.createElementVNode("div", _hoisted_109$1, [
+      vue.createElementVNode("div", _hoisted_110$1, [
+        _hoisted_111$1,
+        vue.createElementVNode("div", _hoisted_112$1, [
+          vue.createElementVNode("div", _hoisted_113$1, [
+            vue.createElementVNode("div", _hoisted_114$1, [
+              vue.createElementVNode("div", _hoisted_115$1, [
+                vue.createElementVNode("form", _hoisted_116$1, [
+                  vue.createElementVNode("div", _hoisted_117$1, [
+                    vue.createElementVNode("div", _hoisted_118$1, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -1498,8 +1475,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_125$1, [
-                    vue.createElementVNode("div", _hoisted_126$1, [
+                  vue.createElementVNode("div", _hoisted_119$1, [
+                    vue.createElementVNode("div", _hoisted_120$1, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -1509,21 +1486,21 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  _hoisted_127$1,
-                  vue.createElementVNode("div", _hoisted_128$1, [
-                    vue.createElementVNode("div", _hoisted_129$1, [
+                  _hoisted_121$1,
+                  vue.createElementVNode("div", _hoisted_122$1, [
+                    vue.createElementVNode("div", _hoisted_123$1, [
                       vue.createElementVNode("input", {
                         type: "checkbox",
                         class: "form-check-input",
                         checked: this.registry.consignor.isDeclarant
-                      }, null, 8 /* PROPS */, _hoisted_130$1)
+                      }, null, 8 /* PROPS */, _hoisted_124$1)
                     ]),
-                    _hoisted_131$1
+                    _hoisted_125$1
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_132$1, [
-                  vue.createElementVNode("div", _hoisted_133$1, [
-                    vue.createElementVNode("div", _hoisted_134$1, [
+                vue.createElementVNode("div", _hoisted_126$1, [
+                  vue.createElementVNode("div", _hoisted_127$1, [
+                    vue.createElementVNode("div", _hoisted_128$1, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -1534,10 +1511,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_135$1, [
-                    vue.createElementVNode("div", _hoisted_136$1, [
-                      _hoisted_137$1,
-                      vue.createElementVNode("div", _hoisted_138$1, [
+                  vue.createElementVNode("div", _hoisted_129$1, [
+                    vue.createElementVNode("div", _hoisted_130$1, [
+                      _hoisted_131$1,
+                      vue.createElementVNode("div", _hoisted_132$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1547,9 +1524,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_139$1, [
-                      _hoisted_140$1,
-                      vue.createElementVNode("div", _hoisted_141$1, [
+                    vue.createElementVNode("div", _hoisted_133$1, [
+                      _hoisted_134$1,
+                      vue.createElementVNode("div", _hoisted_135$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1559,9 +1536,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_142$1, [
-                      _hoisted_143$1,
-                      vue.createElementVNode("div", _hoisted_144$1, [
+                    vue.createElementVNode("div", _hoisted_136$1, [
+                      _hoisted_137$1,
+                      vue.createElementVNode("div", _hoisted_138$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1571,18 +1548,18 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    _hoisted_145$1
+                    _hoisted_139$1
                   ])
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_146$1, [
-              vue.createElementVNode("div", _hoisted_147$1, [
-                vue.createElementVNode("div", _hoisted_148$1, [
-                  vue.createElementVNode("div", _hoisted_149$1, [
-                    _hoisted_150$1,
-                    vue.createElementVNode("div", _hoisted_151$1, [
-                      vue.createElementVNode("div", _hoisted_152$1, [
+            vue.createElementVNode("div", _hoisted_140$1, [
+              vue.createElementVNode("div", _hoisted_141$1, [
+                vue.createElementVNode("div", _hoisted_142$1, [
+                  vue.createElementVNode("div", _hoisted_143$1, [
+                    _hoisted_144$1,
+                    vue.createElementVNode("div", _hoisted_145$1, [
+                      vue.createElementVNode("div", _hoisted_146$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -1593,8 +1570,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_153$1, [
-                      vue.createElementVNode("div", _hoisted_154$1, [
+                    vue.createElementVNode("div", _hoisted_147$1, [
+                      vue.createElementVNode("div", _hoisted_148$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -1605,8 +1582,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_155$1, [
-                      vue.createElementVNode("div", _hoisted_156$1, [
+                    vue.createElementVNode("div", _hoisted_149$1, [
+                      vue.createElementVNode("div", _hoisted_150$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -1619,11 +1596,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_157$1, [
-                  vue.createElementVNode("div", _hoisted_158$1, [
-                    vue.createElementVNode("div", _hoisted_159$1, [
-                      vue.createElementVNode("div", _hoisted_160$1, [
-                        vue.createElementVNode("div", _hoisted_161$1, [
+                vue.createElementVNode("div", _hoisted_151$1, [
+                  vue.createElementVNode("div", _hoisted_152$1, [
+                    vue.createElementVNode("div", _hoisted_153$1, [
+                      vue.createElementVNode("div", _hoisted_154$1, [
+                        vue.createElementVNode("div", _hoisted_155$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1634,8 +1611,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_162$1, [
-                        vue.createElementVNode("div", _hoisted_163$1, [
+                      vue.createElementVNode("div", _hoisted_156$1, [
+                        vue.createElementVNode("div", _hoisted_157$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1646,8 +1623,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_164$1, [
-                        vue.createElementVNode("div", _hoisted_165$1, [
+                      vue.createElementVNode("div", _hoisted_158$1, [
+                        vue.createElementVNode("div", _hoisted_159$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1658,8 +1635,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_166$1, [
-                        vue.createElementVNode("div", _hoisted_167$1, [
+                      vue.createElementVNode("div", _hoisted_160$1, [
+                        vue.createElementVNode("div", _hoisted_161$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1671,9 +1648,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_168$1, [
-                      vue.createElementVNode("div", _hoisted_169$1, [
-                        vue.createElementVNode("div", _hoisted_170$1, [
+                    vue.createElementVNode("div", _hoisted_162$1, [
+                      vue.createElementVNode("div", _hoisted_163$1, [
+                        vue.createElementVNode("div", _hoisted_164$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1684,8 +1661,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_171$1, [
-                        vue.createElementVNode("div", _hoisted_172$1, [
+                      vue.createElementVNode("div", _hoisted_165$1, [
+                        vue.createElementVNode("div", _hoisted_166$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1696,8 +1673,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_173$1, [
-                        vue.createElementVNode("div", _hoisted_174$1, [
+                      vue.createElementVNode("div", _hoisted_167$1, [
+                        vue.createElementVNode("div", _hoisted_168$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1709,9 +1686,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_175$1, [
-                      vue.createElementVNode("div", _hoisted_176$1, [
-                        vue.createElementVNode("div", _hoisted_177$1, [
+                    vue.createElementVNode("div", _hoisted_169$1, [
+                      vue.createElementVNode("div", _hoisted_170$1, [
+                        vue.createElementVNode("div", _hoisted_171$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1721,8 +1698,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_178$1, [
-                        vue.createElementVNode("div", _hoisted_179$1, [
+                      vue.createElementVNode("div", _hoisted_172$1, [
+                        vue.createElementVNode("div", _hoisted_173$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1733,8 +1710,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_180$1, [
-                        vue.createElementVNode("div", _hoisted_181$1, [
+                      vue.createElementVNode("div", _hoisted_174$1, [
+                        vue.createElementVNode("div", _hoisted_175$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1744,8 +1721,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_182$1, [
-                        vue.createElementVNode("div", _hoisted_183$1, [
+                      vue.createElementVNode("div", _hoisted_176$1, [
+                        vue.createElementVNode("div", _hoisted_177$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1757,9 +1734,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_184$1, [
-                      vue.createElementVNode("div", _hoisted_185$1, [
-                        vue.createElementVNode("div", _hoisted_186$1, [
+                    vue.createElementVNode("div", _hoisted_178$1, [
+                      vue.createElementVNode("div", _hoisted_179$1, [
+                        vue.createElementVNode("div", _hoisted_180$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -1775,13 +1752,13 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_187$1, [
-              vue.createElementVNode("div", _hoisted_188$1, [
-                _hoisted_189$1,
-                vue.createElementVNode("div", _hoisted_190$1, [
-                  vue.createElementVNode("div", _hoisted_191$1, [
-                    vue.createElementVNode("div", _hoisted_192$1, [
-                      vue.createElementVNode("div", _hoisted_193$1, [
+            vue.createElementVNode("div", _hoisted_181$1, [
+              vue.createElementVNode("div", _hoisted_182$1, [
+                _hoisted_183$1,
+                vue.createElementVNode("div", _hoisted_184$1, [
+                  vue.createElementVNode("div", _hoisted_185$1, [
+                    vue.createElementVNode("div", _hoisted_186$1, [
+                      vue.createElementVNode("div", _hoisted_187$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1792,8 +1769,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_194$1, [
-                      vue.createElementVNode("div", _hoisted_195$1, [
+                    vue.createElementVNode("div", _hoisted_188$1, [
+                      vue.createElementVNode("div", _hoisted_189$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1804,8 +1781,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_196$1, [
-                      vue.createElementVNode("div", _hoisted_197$1, [
+                    vue.createElementVNode("div", _hoisted_190$1, [
+                      vue.createElementVNode("div", _hoisted_191$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1816,8 +1793,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_198$1, [
-                      vue.createElementVNode("div", _hoisted_199$1, [
+                    vue.createElementVNode("div", _hoisted_192$1, [
+                      vue.createElementVNode("div", _hoisted_193$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1827,7 +1804,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           [vue.vModelText, this.registry.consignor.document.series]
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_200$1, [
+                      vue.createElementVNode("div", _hoisted_194$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1837,7 +1814,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           [vue.vModelText, this.registry.consignor.document.number]
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_201$1, [
+                      vue.createElementVNode("div", _hoisted_195$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1848,8 +1825,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_202$1, [
-                      vue.createElementVNode("div", _hoisted_203$1, [
+                    vue.createElementVNode("div", _hoisted_196$1, [
+                      vue.createElementVNode("div", _hoisted_197$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1861,9 +1838,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_204$1, [
-                    vue.createElementVNode("div", _hoisted_205$1, [
-                      vue.createElementVNode("div", _hoisted_206$1, [
+                  vue.createElementVNode("div", _hoisted_198$1, [
+                    vue.createElementVNode("div", _hoisted_199$1, [
+                      vue.createElementVNode("div", _hoisted_200$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1874,8 +1851,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_207$1, [
-                      vue.createElementVNode("div", _hoisted_208$1, [
+                    vue.createElementVNode("div", _hoisted_201$1, [
+                      vue.createElementVNode("div", _hoisted_202$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1886,8 +1863,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_209$1, [
-                      vue.createElementVNode("div", _hoisted_210$1, [
+                    vue.createElementVNode("div", _hoisted_203$1, [
+                      vue.createElementVNode("div", _hoisted_204$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1908,16 +1885,16 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
     ]),
     vue.createCommentVNode(" endregion"),
     vue.createCommentVNode(" Region элемет с общей информацией по получателю"),
-    vue.createElementVNode("div", _hoisted_211$1, [
-      vue.createElementVNode("div", _hoisted_212$1, [
-        _hoisted_213$1,
-        vue.createElementVNode("div", _hoisted_214$1, [
-          vue.createElementVNode("div", _hoisted_215$1, [
-            vue.createElementVNode("div", _hoisted_216$1, [
-              vue.createElementVNode("div", _hoisted_217$1, [
-                vue.createElementVNode("form", _hoisted_218$1, [
-                  vue.createElementVNode("div", _hoisted_219$1, [
-                    vue.createElementVNode("div", _hoisted_220$1, [
+    vue.createElementVNode("div", _hoisted_205$1, [
+      vue.createElementVNode("div", _hoisted_206$1, [
+        _hoisted_207$1,
+        vue.createElementVNode("div", _hoisted_208$1, [
+          vue.createElementVNode("div", _hoisted_209$1, [
+            vue.createElementVNode("div", _hoisted_210$1, [
+              vue.createElementVNode("div", _hoisted_211$1, [
+                vue.createElementVNode("form", _hoisted_212$1, [
+                  vue.createElementVNode("div", _hoisted_213$1, [
+                    vue.createElementVNode("div", _hoisted_214$1, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -1927,8 +1904,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_221$1, [
-                    vue.createElementVNode("div", _hoisted_222$1, [
+                  vue.createElementVNode("div", _hoisted_215$1, [
+                    vue.createElementVNode("div", _hoisted_216$1, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -1938,21 +1915,21 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  _hoisted_223$1,
-                  vue.createElementVNode("div", _hoisted_224$1, [
-                    vue.createElementVNode("div", _hoisted_225$1, [
+                  _hoisted_217$1,
+                  vue.createElementVNode("div", _hoisted_218$1, [
+                    vue.createElementVNode("div", _hoisted_219$1, [
                       vue.createElementVNode("input", {
                         type: "checkbox",
                         class: "form-check-input",
                         checked: this.registry.consignee.isDeclarant
-                      }, null, 8 /* PROPS */, _hoisted_226$1)
+                      }, null, 8 /* PROPS */, _hoisted_220$1)
                     ]),
-                    _hoisted_227$1
+                    _hoisted_221$1
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_228$1, [
-                  vue.createElementVNode("div", _hoisted_229$1, [
-                    vue.createElementVNode("div", _hoisted_230$1, [
+                vue.createElementVNode("div", _hoisted_222$1, [
+                  vue.createElementVNode("div", _hoisted_223$1, [
+                    vue.createElementVNode("div", _hoisted_224$1, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -1963,10 +1940,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_231$1, [
-                    vue.createElementVNode("div", _hoisted_232$1, [
-                      _hoisted_233$1,
-                      vue.createElementVNode("div", _hoisted_234$1, [
+                  vue.createElementVNode("div", _hoisted_225$1, [
+                    vue.createElementVNode("div", _hoisted_226$1, [
+                      _hoisted_227$1,
+                      vue.createElementVNode("div", _hoisted_228$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1976,9 +1953,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_235$1, [
-                      _hoisted_236$1,
-                      vue.createElementVNode("div", _hoisted_237$1, [
+                    vue.createElementVNode("div", _hoisted_229$1, [
+                      _hoisted_230$1,
+                      vue.createElementVNode("div", _hoisted_231$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -1988,9 +1965,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_238$1, [
-                      _hoisted_239$1,
-                      vue.createElementVNode("div", _hoisted_240$1, [
+                    vue.createElementVNode("div", _hoisted_232$1, [
+                      _hoisted_233$1,
+                      vue.createElementVNode("div", _hoisted_234$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2000,18 +1977,18 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    _hoisted_241$1
+                    _hoisted_235$1
                   ])
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_242$1, [
-              vue.createElementVNode("div", _hoisted_243$1, [
-                vue.createElementVNode("div", _hoisted_244$1, [
-                  vue.createElementVNode("div", _hoisted_245$1, [
-                    _hoisted_246$1,
-                    vue.createElementVNode("div", _hoisted_247$1, [
-                      vue.createElementVNode("div", _hoisted_248$1, [
+            vue.createElementVNode("div", _hoisted_236$1, [
+              vue.createElementVNode("div", _hoisted_237$1, [
+                vue.createElementVNode("div", _hoisted_238$1, [
+                  vue.createElementVNode("div", _hoisted_239$1, [
+                    _hoisted_240$1,
+                    vue.createElementVNode("div", _hoisted_241$1, [
+                      vue.createElementVNode("div", _hoisted_242$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -2022,8 +1999,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_249$1, [
-                      vue.createElementVNode("div", _hoisted_250$1, [
+                    vue.createElementVNode("div", _hoisted_243$1, [
+                      vue.createElementVNode("div", _hoisted_244$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -2034,8 +2011,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_251$1, [
-                      vue.createElementVNode("div", _hoisted_252$1, [
+                    vue.createElementVNode("div", _hoisted_245$1, [
+                      vue.createElementVNode("div", _hoisted_246$1, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -2048,11 +2025,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_253$1, [
-                  vue.createElementVNode("div", _hoisted_254$1, [
-                    vue.createElementVNode("div", _hoisted_255$1, [
-                      vue.createElementVNode("div", _hoisted_256$1, [
-                        vue.createElementVNode("div", _hoisted_257$1, [
+                vue.createElementVNode("div", _hoisted_247$1, [
+                  vue.createElementVNode("div", _hoisted_248$1, [
+                    vue.createElementVNode("div", _hoisted_249$1, [
+                      vue.createElementVNode("div", _hoisted_250$1, [
+                        vue.createElementVNode("div", _hoisted_251$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2063,8 +2040,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_258$1, [
-                        vue.createElementVNode("div", _hoisted_259$1, [
+                      vue.createElementVNode("div", _hoisted_252$1, [
+                        vue.createElementVNode("div", _hoisted_253$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2075,8 +2052,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_260$1, [
-                        vue.createElementVNode("div", _hoisted_261$1, [
+                      vue.createElementVNode("div", _hoisted_254$1, [
+                        vue.createElementVNode("div", _hoisted_255$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2087,8 +2064,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_262$1, [
-                        vue.createElementVNode("div", _hoisted_263$1, [
+                      vue.createElementVNode("div", _hoisted_256$1, [
+                        vue.createElementVNode("div", _hoisted_257$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2100,9 +2077,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_264$1, [
-                      vue.createElementVNode("div", _hoisted_265$1, [
-                        vue.createElementVNode("div", _hoisted_266$1, [
+                    vue.createElementVNode("div", _hoisted_258$1, [
+                      vue.createElementVNode("div", _hoisted_259$1, [
+                        vue.createElementVNode("div", _hoisted_260$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2113,8 +2090,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_267$1, [
-                        vue.createElementVNode("div", _hoisted_268$1, [
+                      vue.createElementVNode("div", _hoisted_261$1, [
+                        vue.createElementVNode("div", _hoisted_262$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2125,8 +2102,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_269$1, [
-                        vue.createElementVNode("div", _hoisted_270$1, [
+                      vue.createElementVNode("div", _hoisted_263$1, [
+                        vue.createElementVNode("div", _hoisted_264$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2138,9 +2115,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_271$1, [
-                      vue.createElementVNode("div", _hoisted_272$1, [
-                        vue.createElementVNode("div", _hoisted_273$1, [
+                    vue.createElementVNode("div", _hoisted_265$1, [
+                      vue.createElementVNode("div", _hoisted_266$1, [
+                        vue.createElementVNode("div", _hoisted_267$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2150,8 +2127,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_274$1, [
-                        vue.createElementVNode("div", _hoisted_275$1, [
+                      vue.createElementVNode("div", _hoisted_268$1, [
+                        vue.createElementVNode("div", _hoisted_269$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2162,8 +2139,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_276$1, [
-                        vue.createElementVNode("div", _hoisted_277$1, [
+                      vue.createElementVNode("div", _hoisted_270$1, [
+                        vue.createElementVNode("div", _hoisted_271$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2173,8 +2150,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_278, [
-                        vue.createElementVNode("div", _hoisted_279, [
+                      vue.createElementVNode("div", _hoisted_272$1, [
+                        vue.createElementVNode("div", _hoisted_273$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2186,9 +2163,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_280, [
-                      vue.createElementVNode("div", _hoisted_281, [
-                        vue.createElementVNode("div", _hoisted_282, [
+                    vue.createElementVNode("div", _hoisted_274$1, [
+                      vue.createElementVNode("div", _hoisted_275$1, [
+                        vue.createElementVNode("div", _hoisted_276$1, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2204,13 +2181,13 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_283, [
-              vue.createElementVNode("div", _hoisted_284, [
-                _hoisted_285,
-                vue.createElementVNode("div", _hoisted_286, [
-                  vue.createElementVNode("div", _hoisted_287, [
-                    vue.createElementVNode("div", _hoisted_288, [
-                      vue.createElementVNode("div", _hoisted_289, [
+            vue.createElementVNode("div", _hoisted_277$1, [
+              vue.createElementVNode("div", _hoisted_278, [
+                _hoisted_279,
+                vue.createElementVNode("div", _hoisted_280, [
+                  vue.createElementVNode("div", _hoisted_281, [
+                    vue.createElementVNode("div", _hoisted_282, [
+                      vue.createElementVNode("div", _hoisted_283, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2221,8 +2198,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_290, [
-                      vue.createElementVNode("div", _hoisted_291, [
+                    vue.createElementVNode("div", _hoisted_284, [
+                      vue.createElementVNode("div", _hoisted_285, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2233,8 +2210,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_292, [
-                      vue.createElementVNode("div", _hoisted_293, [
+                    vue.createElementVNode("div", _hoisted_286, [
+                      vue.createElementVNode("div", _hoisted_287, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2245,8 +2222,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_294, [
-                      vue.createElementVNode("div", _hoisted_295, [
+                    vue.createElementVNode("div", _hoisted_288, [
+                      vue.createElementVNode("div", _hoisted_289, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2256,7 +2233,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           [vue.vModelText, this.registry.consignee.document.series]
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_296, [
+                      vue.createElementVNode("div", _hoisted_290, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2266,7 +2243,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           [vue.vModelText, this.registry.consignee.document.number]
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_297, [
+                      vue.createElementVNode("div", _hoisted_291, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2277,8 +2254,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_298, [
-                      vue.createElementVNode("div", _hoisted_299, [
+                    vue.createElementVNode("div", _hoisted_292, [
+                      vue.createElementVNode("div", _hoisted_293, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2290,9 +2267,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_300, [
-                    vue.createElementVNode("div", _hoisted_301, [
-                      vue.createElementVNode("div", _hoisted_302, [
+                  vue.createElementVNode("div", _hoisted_294, [
+                    vue.createElementVNode("div", _hoisted_295, [
+                      vue.createElementVNode("div", _hoisted_296, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2303,8 +2280,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_303, [
-                      vue.createElementVNode("div", _hoisted_304, [
+                    vue.createElementVNode("div", _hoisted_297, [
+                      vue.createElementVNode("div", _hoisted_298, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2315,8 +2292,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_305, [
-                      vue.createElementVNode("div", _hoisted_306, [
+                    vue.createElementVNode("div", _hoisted_299, [
+                      vue.createElementVNode("div", _hoisted_300, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2337,12 +2314,12 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
     ]),
     vue.createCommentVNode("endregion"),
     vue.createCommentVNode(" Region элемент с общей информацией по таможенному представителю и исполнителю"),
-    vue.createElementVNode("div", _hoisted_307, [
-      vue.createElementVNode("div", _hoisted_308, [
-        vue.createElementVNode("div", _hoisted_309, [
-          vue.createElementVNode("div", _hoisted_310, [
-            _hoisted_311,
-            vue.createElementVNode("div", _hoisted_312, [
+    vue.createElementVNode("div", _hoisted_301, [
+      vue.createElementVNode("div", _hoisted_302, [
+        vue.createElementVNode("div", _hoisted_303, [
+          vue.createElementVNode("div", _hoisted_304, [
+            _hoisted_305,
+            vue.createElementVNode("div", _hoisted_306, [
               vue.withDirectives(vue.createElementVNode("input", {
                 type: "text",
                 class: "form-control",
@@ -2353,11 +2330,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ]),
-        vue.createElementVNode("div", _hoisted_313, [
-          _hoisted_314,
-          vue.createElementVNode("div", _hoisted_315, [
-            vue.createElementVNode("div", _hoisted_316, [
-              vue.createElementVNode("div", _hoisted_317, [
+        vue.createElementVNode("div", _hoisted_307, [
+          _hoisted_308,
+          vue.createElementVNode("div", _hoisted_309, [
+            vue.createElementVNode("div", _hoisted_310, [
+              vue.createElementVNode("div", _hoisted_311, [
                 vue.withDirectives(vue.createElementVNode("input", {
                   type: "text",
                   class: "form-control",
@@ -2367,8 +2344,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_318, [
-              vue.createElementVNode("div", _hoisted_319, [
+            vue.createElementVNode("div", _hoisted_312, [
+              vue.createElementVNode("div", _hoisted_313, [
                 vue.withDirectives(vue.createElementVNode("input", {
                   type: "text",
                   class: "form-control",
@@ -2378,8 +2355,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_320, [
-              vue.createElementVNode("div", _hoisted_321, [
+            vue.createElementVNode("div", _hoisted_314, [
+              vue.createElementVNode("div", _hoisted_315, [
                 vue.withDirectives(vue.createElementVNode("input", {
                   type: "text",
                   class: "form-control",
@@ -2389,8 +2366,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_322, [
-              vue.createElementVNode("div", _hoisted_323, [
+            vue.createElementVNode("div", _hoisted_316, [
+              vue.createElementVNode("div", _hoisted_317, [
                 vue.withDirectives(vue.createElementVNode("input", {
                   type: "text",
                   class: "form-control",
@@ -2400,8 +2377,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
               ])
             ]),
-            vue.createElementVNode("div", _hoisted_324, [
-              vue.createElementVNode("div", _hoisted_325, [
+            vue.createElementVNode("div", _hoisted_318, [
+              vue.createElementVNode("div", _hoisted_319, [
                 vue.withDirectives(vue.createElementVNode("input", {
                   type: "text",
                   class: "form-control",
@@ -2414,14 +2391,14 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
           ])
         ])
       ]),
-      vue.createElementVNode("div", _hoisted_326, [
-        _hoisted_327,
-        vue.createElementVNode("div", _hoisted_328, [
-          vue.createElementVNode("div", _hoisted_329, [
-            vue.createElementVNode("form", _hoisted_330, [
-              vue.createElementVNode("div", _hoisted_331, [
-                vue.createElementVNode("div", _hoisted_332, [
-                  vue.createElementVNode("div", _hoisted_333, [
+      vue.createElementVNode("div", _hoisted_320, [
+        _hoisted_321,
+        vue.createElementVNode("div", _hoisted_322, [
+          vue.createElementVNode("div", _hoisted_323, [
+            vue.createElementVNode("form", _hoisted_324, [
+              vue.createElementVNode("div", _hoisted_325, [
+                vue.createElementVNode("div", _hoisted_326, [
+                  vue.createElementVNode("div", _hoisted_327, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -2431,8 +2408,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_334, [
-                  vue.createElementVNode("div", _hoisted_335, [
+                vue.createElementVNode("div", _hoisted_328, [
+                  vue.createElementVNode("div", _hoisted_329, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -2442,8 +2419,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_336, [
-                  vue.createElementVNode("div", _hoisted_337, [
+                vue.createElementVNode("div", _hoisted_330, [
+                  vue.createElementVNode("div", _hoisted_331, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -2453,8 +2430,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_338, [
-                  vue.createElementVNode("div", _hoisted_339, [
+                vue.createElementVNode("div", _hoisted_332, [
+                  vue.createElementVNode("div", _hoisted_333, [
                     vue.withDirectives(vue.createElementVNode("input", {
                       type: "text",
                       class: "form-control",
@@ -2465,10 +2442,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                   ])
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_340, [
-                vue.createElementVNode("div", _hoisted_341, [
-                  vue.createElementVNode("div", _hoisted_342, [
-                    vue.createElementVNode("div", _hoisted_343, [
+              vue.createElementVNode("div", _hoisted_334, [
+                vue.createElementVNode("div", _hoisted_335, [
+                  vue.createElementVNode("div", _hoisted_336, [
+                    vue.createElementVNode("div", _hoisted_337, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2478,8 +2455,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_344, [
-                    vue.createElementVNode("div", _hoisted_345, [
+                  vue.createElementVNode("div", _hoisted_338, [
+                    vue.createElementVNode("div", _hoisted_339, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2489,8 +2466,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_346, [
-                    vue.createElementVNode("div", _hoisted_347, [
+                  vue.createElementVNode("div", _hoisted_340, [
+                    vue.createElementVNode("div", _hoisted_341, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2501,9 +2478,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_348, [
-                  vue.createElementVNode("div", _hoisted_349, [
-                    vue.createElementVNode("div", _hoisted_350, [
+                vue.createElementVNode("div", _hoisted_342, [
+                  vue.createElementVNode("div", _hoisted_343, [
+                    vue.createElementVNode("div", _hoisted_344, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2513,15 +2490,15 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  _hoisted_351
+                  _hoisted_345
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_352, [
-                _hoisted_353,
-                vue.createElementVNode("div", _hoisted_354, [
-                  vue.createElementVNode("div", _hoisted_355, [
-                    vue.createElementVNode("div", _hoisted_356, [
-                      vue.createElementVNode("div", _hoisted_357, [
+              vue.createElementVNode("div", _hoisted_346, [
+                _hoisted_347,
+                vue.createElementVNode("div", _hoisted_348, [
+                  vue.createElementVNode("div", _hoisted_349, [
+                    vue.createElementVNode("div", _hoisted_350, [
+                      vue.createElementVNode("div", _hoisted_351, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2531,8 +2508,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_358, [
-                      vue.createElementVNode("div", _hoisted_359, [
+                    vue.createElementVNode("div", _hoisted_352, [
+                      vue.createElementVNode("div", _hoisted_353, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2543,9 +2520,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_360, [
-                    vue.createElementVNode("div", _hoisted_361, [
-                      vue.createElementVNode("div", _hoisted_362, [
+                  vue.createElementVNode("div", _hoisted_354, [
+                    vue.createElementVNode("div", _hoisted_355, [
+                      vue.createElementVNode("div", _hoisted_356, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2555,8 +2532,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_363, [
-                      vue.createElementVNode("div", _hoisted_364, [
+                    vue.createElementVNode("div", _hoisted_357, [
+                      vue.createElementVNode("div", _hoisted_358, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2567,9 +2544,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_365, [
-                    vue.createElementVNode("div", _hoisted_366, [
-                      vue.createElementVNode("div", _hoisted_367, [
+                  vue.createElementVNode("div", _hoisted_359, [
+                    vue.createElementVNode("div", _hoisted_360, [
+                      vue.createElementVNode("div", _hoisted_361, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2579,8 +2556,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_368, [
-                      vue.createElementVNode("div", _hoisted_369, [
+                    vue.createElementVNode("div", _hoisted_362, [
+                      vue.createElementVNode("div", _hoisted_363, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2591,10 +2568,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_370, [
-                    _hoisted_371,
-                    vue.createElementVNode("div", _hoisted_372, [
-                      vue.createElementVNode("div", _hoisted_373, [
+                  vue.createElementVNode("div", _hoisted_364, [
+                    _hoisted_365,
+                    vue.createElementVNode("div", _hoisted_366, [
+                      vue.createElementVNode("div", _hoisted_367, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2606,9 +2583,9 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                     ])
                   ])
                 ]),
-                vue.createElementVNode("div", _hoisted_374, [
-                  vue.createElementVNode("div", _hoisted_375, [
-                    vue.createElementVNode("div", _hoisted_376, [
+                vue.createElementVNode("div", _hoisted_368, [
+                  vue.createElementVNode("div", _hoisted_369, [
+                    vue.createElementVNode("div", _hoisted_370, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2618,8 +2595,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_377, [
-                    vue.createElementVNode("div", _hoisted_378, [
+                  vue.createElementVNode("div", _hoisted_371, [
+                    vue.createElementVNode("div", _hoisted_372, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2629,8 +2606,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_379, [
-                    vue.createElementVNode("div", _hoisted_380, [
+                  vue.createElementVNode("div", _hoisted_373, [
+                    vue.createElementVNode("div", _hoisted_374, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2639,7 +2616,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.signatoryPersonIdentityDetails.divisionCode]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_381, [
+                    vue.createElementVNode("div", _hoisted_375, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2648,7 +2625,7 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         [vue.vModelText, this.registry.signatoryPersonIdentityDetails.countryIdString]
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_382, [
+                    vue.createElementVNode("div", _hoisted_376, [
                       vue.withDirectives(vue.createElementVNode("input", {
                         type: "text",
                         class: "form-control",
@@ -2660,13 +2637,13 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                   ])
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_383, [
-                vue.createElementVNode("div", _hoisted_384, [
-                  _hoisted_385,
-                  vue.createElementVNode("div", _hoisted_386, [
-                    vue.createElementVNode("div", _hoisted_387, [
-                      vue.createElementVNode("div", _hoisted_388, [
-                        vue.createElementVNode("div", _hoisted_389, [
+              vue.createElementVNode("div", _hoisted_377, [
+                vue.createElementVNode("div", _hoisted_378, [
+                  _hoisted_379,
+                  vue.createElementVNode("div", _hoisted_380, [
+                    vue.createElementVNode("div", _hoisted_381, [
+                      vue.createElementVNode("div", _hoisted_382, [
+                        vue.createElementVNode("div", _hoisted_383, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2676,8 +2653,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_390, [
-                        vue.createElementVNode("div", _hoisted_391, [
+                      vue.createElementVNode("div", _hoisted_384, [
+                        vue.createElementVNode("div", _hoisted_385, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             type: "text",
                             class: "form-control",
@@ -2688,8 +2665,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_392, [
-                      vue.createElementVNode("div", _hoisted_393, [
+                    vue.createElementVNode("div", _hoisted_386, [
+                      vue.createElementVNode("div", _hoisted_387, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           type: "text",
                           class: "form-control",
@@ -2702,12 +2679,12 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                   ])
                 ])
               ]),
-              vue.createElementVNode("div", _hoisted_394, [
-                _hoisted_395,
-                vue.createElementVNode("div", _hoisted_396, [
-                  vue.createElementVNode("div", _hoisted_397, [
-                    vue.createElementVNode("div", _hoisted_398, [
-                      vue.createElementVNode("div", _hoisted_399, [
+              vue.createElementVNode("div", _hoisted_388, [
+                _hoisted_389,
+                vue.createElementVNode("div", _hoisted_390, [
+                  vue.createElementVNode("div", _hoisted_391, [
+                    vue.createElementVNode("div", _hoisted_392, [
+                      vue.createElementVNode("div", _hoisted_393, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -2717,8 +2694,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_400, [
-                      vue.createElementVNode("div", _hoisted_401, [
+                    vue.createElementVNode("div", _hoisted_394, [
+                      vue.createElementVNode("div", _hoisted_395, [
                         vue.withDirectives(vue.createElementVNode("input", {
                           class: "form-control",
                           type: "text",
@@ -2729,10 +2706,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                       ])
                     ])
                   ]),
-                  vue.createElementVNode("div", _hoisted_402, [
-                    vue.createElementVNode("div", _hoisted_403, [
-                      vue.createElementVNode("div", _hoisted_404, [
-                        vue.createElementVNode("div", _hoisted_405, [
+                  vue.createElementVNode("div", _hoisted_396, [
+                    vue.createElementVNode("div", _hoisted_397, [
+                      vue.createElementVNode("div", _hoisted_398, [
+                        vue.createElementVNode("div", _hoisted_399, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             class: "form-control",
                             type: "text",
@@ -2742,8 +2719,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_406, [
-                        vue.createElementVNode("div", _hoisted_407, [
+                      vue.createElementVNode("div", _hoisted_400, [
+                        vue.createElementVNode("div", _hoisted_401, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             class: "form-control",
                             type: "text",
@@ -2754,11 +2731,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                         ])
                       ])
                     ]),
-                    vue.createElementVNode("div", _hoisted_408, [
-                      vue.createElementVNode("div", _hoisted_409, [
-                        _hoisted_410,
-                        vue.createElementVNode("div", _hoisted_411, [
-                          vue.createElementVNode("div", _hoisted_412, [
+                    vue.createElementVNode("div", _hoisted_402, [
+                      vue.createElementVNode("div", _hoisted_403, [
+                        _hoisted_404,
+                        vue.createElementVNode("div", _hoisted_405, [
+                          vue.createElementVNode("div", _hoisted_406, [
                             vue.withDirectives(vue.createElementVNode("input", {
                               class: "form-control",
                               type: "text",
@@ -2769,10 +2746,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_413, [
-                        _hoisted_414,
-                        vue.createElementVNode("div", _hoisted_415, [
-                          vue.createElementVNode("div", _hoisted_416, [
+                      vue.createElementVNode("div", _hoisted_407, [
+                        _hoisted_408,
+                        vue.createElementVNode("div", _hoisted_409, [
+                          vue.createElementVNode("div", _hoisted_410, [
                             vue.withDirectives(vue.createElementVNode("input", {
                               class: "form-control",
                               type: "text",
@@ -2783,8 +2760,8 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ])
                       ]),
-                      vue.createElementVNode("div", _hoisted_417, [
-                        vue.createElementVNode("div", _hoisted_418, [
+                      vue.createElementVNode("div", _hoisted_411, [
+                        vue.createElementVNode("div", _hoisted_412, [
                           vue.withDirectives(vue.createElementVNode("input", {
                             class: "form-control",
                             type: "text",
@@ -2805,11 +2782,11 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
     ]),
     vue.createCommentVNode("endregion"),
     vue.createCommentVNode("Region элемент с информацией по инспектору"),
-    vue.createElementVNode("div", _hoisted_419, [
-      vue.createElementVNode("div", _hoisted_420, [
-        vue.createElementVNode("div", _hoisted_421, [
-          _hoisted_422,
-          vue.createElementVNode("div", _hoisted_423, [
+    vue.createElementVNode("div", _hoisted_413, [
+      vue.createElementVNode("div", _hoisted_414, [
+        vue.createElementVNode("div", _hoisted_415, [
+          _hoisted_416,
+          vue.createElementVNode("div", _hoisted_417, [
             vue.withDirectives(vue.createElementVNode("input", {
               class: "form-control",
               type: "text",
@@ -2819,10 +2796,10 @@ function render$a(_ctx, _cache, $props, $setup, $data, $options) {
             ])
           ])
         ]),
-        vue.createElementVNode("div", _hoisted_424, [
-          _hoisted_425,
-          vue.createElementVNode("div", _hoisted_426, [
-            vue.createElementVNode("div", _hoisted_427, [
+        vue.createElementVNode("div", _hoisted_418, [
+          _hoisted_419,
+          vue.createElementVNode("div", _hoisted_420, [
+            vue.createElementVNode("div", _hoisted_421, [
               vue.withDirectives(vue.createElementVNode("input", {
                 class: "form-control",
                 type: "text",

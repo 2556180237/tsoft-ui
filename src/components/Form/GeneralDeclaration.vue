@@ -3,11 +3,6 @@
     <!--Region элемент с общей информацией декларации-->
     <div class="common-inf">
       <div class="row">
-        <div class="inf-block">
-          <router-link class="point-name" :to="{ name: 'index' }">
-            Подан с ДТ:
-          </router-link>
-        </div>
       </div>
       <div class="row">
         <div class="inf-block">
@@ -309,15 +304,6 @@
               </div>
             </div>
           </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="inf-block row justify-content-end">
-          <div class="payment-information">
-            <router-link :to="{ name: 'index' }">
-              Сведения об оплате таможенных и иных платежей
-            </router-link>
-          </div>
         </div>
       </div>
     </div>
