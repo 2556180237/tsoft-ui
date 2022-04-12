@@ -40,6 +40,10 @@ export default {
       size: {
         height: null,
         width: null
+      },
+      defaultPosition: {
+        left: "40%",
+        top: "25%"
       }
     };
   },
@@ -91,15 +95,17 @@ export default {
         this.size.height = modal.clientHeight;
         this.size.width = modal.clientWidth;
       }
+      console.log(modal.clientHeight);
+      console.log(modal.clientWidth);
       modal.focus();
     }
   },
   computed: {
     top() {
-      return this.position.top - 20 + "px";
+      return this.position.top ? this.position.top - 20 + "px" : this.defaultPosition.top;
     },
     left() {
-      return this.position.left - (this.size.width / 2) + "px";
+      return this.position.left ? this.position.left - (this.size.width / 2) + "px" : this.defaultPosition.left;
     }
   },
   mounted() {
@@ -111,6 +117,8 @@ export default {
 <style scoped>
 .modal-window {
   position: absolute;
+  min-width: 435px;
+  min-height: 340px;
 }
 
 .wrapper {
