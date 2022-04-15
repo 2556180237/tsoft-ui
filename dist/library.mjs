@@ -28,9 +28,11 @@ var script$g = {
   name: "TsoftTable",
   props: {
     titles: {
+      type: Object,
       required: true,
     },
     rows: {
+      type: Object,
       required: true,
     },
   },
@@ -68,10 +70,13 @@ var script$g = {
     stop() {
       this.mode = undefined;
     },
+    setSelect(index) {
+      this.rows[index].isSelected = !this.rows[index].isSelected;
+    }
   },
   computed: {
     isPropsEmpty() {
-      return !!Object.keys(this.titles).length & !!Object.keys(this.rows).length
+      return !!Object.keys(this.titles).length & !!Object.keys(this.rows).length;
     }
   }
 };
@@ -94,8 +99,14 @@ const _hoisted_9$4 = {
   class: "table"
 };
 const _hoisted_10$4 = { class: "thead" };
-const _hoisted_11$4 = { class: "tbody" };
+const _hoisted_11$4 = {
+  key: 0,
+  type: "checkbox"
+};
 const _hoisted_12$4 = { key: 1 };
+const _hoisted_13$4 = { class: "tbody" };
+const _hoisted_14$4 = ["checked", "onChange"];
+const _hoisted_15$4 = { key: 2 };
 
 function render$g(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tsoft_preloader = resolveComponent("tsoft-preloader");
@@ -132,12 +143,16 @@ function render$g(_ctx, _cache, $props, $setup, $data, $options) {
             : (openBlock(), createElementBlock("table", _hoisted_9$4, [
                 createElementVNode("thead", _hoisted_10$4, [
                   createElementVNode("tr", null, [
-                    (openBlock(true), createElementBlock(Fragment, null, renderList($props.titles, (title) => {
-                      return (openBlock(), createElementBlock("th", { key: title }, toDisplayString(title), 1 /* TEXT */))
+                    (openBlock(true), createElementBlock(Fragment, null, renderList($props.titles, (title, index) => {
+                      return (openBlock(), createElementBlock("th", { key: index }, [
+                        (index === 'isSelectedAll')
+                          ? (openBlock(), createElementBlock("input", _hoisted_11$4))
+                          : (openBlock(), createElementBlock("span", _hoisted_12$4, toDisplayString(title), 1 /* TEXT */))
+                      ]))
                     }), 128 /* KEYED_FRAGMENT */))
                   ])
                 ]),
-                createElementVNode("tbody", _hoisted_11$4, [
+                createElementVNode("tbody", _hoisted_13$4, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList($props.rows, (row, index) => {
                     return (openBlock(), createElementBlock("tr", {
                       class: "document-row",
@@ -155,7 +170,15 @@ function render$g(_ctx, _cache, $props, $setup, $data, $options) {
                                 ]),
                                 _: 2 /* DYNAMIC */
                               }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["to"]))
-                            : (openBlock(), createElementBlock("p", _hoisted_12$4, toDisplayString(value), 1 /* TEXT */))
+                            : (key === 'isSelected')
+                              ? (openBlock(), createElementBlock("input", {
+                                  key: 1,
+                                  class: "selected-row",
+                                  type: "checkbox",
+                                  checked: value,
+                                  onChange: $event => ($options.setSelect(index))
+                                }, null, 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_14$4))
+                              : (openBlock(), createElementBlock("p", _hoisted_15$4, toDisplayString(value), 1 /* TEXT */))
                         ]))
                       }), 128 /* KEYED_FRAGMENT */))
                     ]))
@@ -195,7 +218,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$b = "\n.section[data-v-647119ad] {\r\n  position: relative;\n}\na[data-v-647119ad] {\r\n  color: #0D6247;\r\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\n}\n.content[data-v-647119ad] {\r\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 10px;\r\n  width: auto;\r\n  white-space: nowrap;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\r\n  white-space: nowrap;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E) center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A) center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.preloader-main[data-v-647119ad] {\r\n  background-color: white;\r\n  padding: 10px;\n}\r\n";
+var css_248z$b = "\n.section[data-v-647119ad] {\r\n  position: relative;\n}\na[data-v-647119ad] {\r\n  color: #0D6247;\r\n  font-weight: bold;\n}\n#tableResponsive[data-v-647119ad] {\r\n  background: rgb(253, 253, 253);\r\n  border: 1px solid #ccc;\n}\n.content[data-v-647119ad] {\r\n  padding: 10px 0 10px 10px;\n}\n.tbody td p[data-v-647119ad] {\r\n  padding-bottom: 0;\n}\nthead th[data-v-647119ad] {\r\n  border: 1px solid black;\r\n  line-height: 0.5rem;\r\n  margin-bottom: 10px;\r\n  width: auto;\r\n  white-space: nowrap;\n}\nth p[data-v-647119ad] {\r\n  line-height: 0.5rem;\r\n  min-width: 210px;\r\n  margin-bottom: 0;\n}\n.tbody tr td[data-v-647119ad] {\r\n  border: 1px solid #ccc;\r\n  padding: 1px;\r\n  white-space: nowrap;\n}\n.tbody tr td p[data-v-647119ad] {\r\n  margin: 2px;\n}\n.tbody td div[data-v-647119ad] {\r\n  white-space: nowrap;\n}\n.tbody tr td span[data-v-647119ad] {\r\n  margin: 2px;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.tbody td[data-v-647119ad]:first-child {\r\n  text-align: center;\n}\n.tableRow[data-v-647119ad] {\r\n  font-size: 13px;\r\n  line-height: 18px;\r\n  color: #362518;\n}\n.table tbody + tbody[data-v-647119ad] {\r\n  border-top: 2px solid #dee2e6;\n}\n.tableContents[data-v-647119ad] {\r\n  color: #aaaaaa;\r\n  font-size: 12px;\r\n  line-height: 0 !important;\r\n  text-transform: uppercase;\r\n  border-top: 2px solid #e4e4e4;\r\n  border-bottom: 2px solid #e4e4e4;\n}\n.tableRow > tr[data-v-647119ad] {\r\n  border-bottom: 1px solid #eef2f7;\n}\n.table .tableContents[data-v-647119ad] {\r\n  line-height: 10px !important;\n}\n.table th[data-v-647119ad],\r\n.table td[data-v-647119ad] {\r\n  margin: 0.75rem;\r\n  vertical-align: top;\r\n  /* border: 1px solid #dee2e6; */\n}\n.table-section[data-v-647119ad] {\r\n  padding-top: 200px;\n}\n.table-statuses[data-v-647119ad] {\r\n  margin-top: -700px;\n}\n.table-responsive[data-v-647119ad] {\r\n  min-height: 645px;\n}\n.slider-block[data-v-647119ad] {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  height: 0;\r\n  position: sticky;\r\n  top: 200px;\r\n  margin-bottom: 500px;\n}\n.control-prev[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\r\n  display: none;\n}\n.control-prev.active[data-v-647119ad] {\r\n  display: block;\n}\n.control-prev[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-left[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M0%2C0H1.023A40.977%2C40.977%2C0%2C0%2C1%2C42%2C40.977v0A40.024%2C40.024%2C0%2C0%2C1%2C1.977%2C81H0a0%2C0%2C0%2C0%2C1%2C0%2C0V0A0%2C0%2C0%2C0%2C1%2C0%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.8%2C49.09l-8.014-8.576L20.8%2C31.939a0.762%2C0.762%2C0%2C0%2C0%2C0-1.026l-1.563-1.673a0.647%2C0.647%2C0%2C0%2C0-.959%2C0l-8.014%2C8.576h0L8.224%2C40a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026L18.28%2C51.788a0.647%2C0.647%2C0%2C0%2C0%2C.959%2C0L20.8%2C50.116A0.761%2C0.761%2C0%2C0%2C0%2C20.8%2C49.09Z%22/%3E%3C/svg%3E) center left no-repeat;\r\n  position: absolute;\r\n  left: 0;\n}\n.control-next[data-v-647119ad] {\r\n  z-index: 1;\r\n  width: 50px;\r\n  height: 100px;\r\n  transition: opacity 200ms ease, margin 200ms ease, height 200ms ease;\r\n  -webkit-transform: translate3d(0px, 48px, 0);\r\n  -moz-transform: translate3d(0px, 48px, 0);\r\n  -ms-transform: translate3d(0px, 48px, 0);\r\n  -o-transform: translate3d(0px, 48px, 0);\r\n  transform: translate3d(0px, 48px, 0);\r\n  will-change: transform;\n}\n.control-next[data-v-647119ad]:hover {\r\n  opacity: 0.8;\n}\n.btn-right[data-v-647119ad] {\r\n  background: url(data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A) center right no-repeat;\r\n  position: absolute;\r\n  right: 0;\n}\n.back-anchor[data-v-647119ad] {\r\n  text-decoration: unset;\n}\n.back-anchor span[data-v-647119ad] {\r\n  color: black;\n}\n.t-folder[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.t-folder[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.fa-folder-open[data-v-647119ad] {\r\n  color: #ff6633;\n}\n.documentNumber[data-v-647119ad] {\r\n  color: black;\r\n  text-decoration: unset;\n}\n.documentNumber[data-v-647119ad]:hover {\r\n  color: #ff6633;\n}\n.preloader-main[data-v-647119ad] {\r\n  background-color: white;\r\n  padding: 10px;\n}\r\n";
 styleInject(css_248z$b);
 
 script$g.render = render$g;

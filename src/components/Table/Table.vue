@@ -33,17 +33,23 @@
           <tsoft-preloader v-if="!isPropsEmpty"/>
           <table class="table" v-else>
             <thead class="thead">
-            <tr>
-              <th v-for="title in titles" :key="title">{{ title }}</th>
-            </tr>
+              <tr>
+                <th v-for="(title, index) in titles" :key="index">
+                  <input type="checkbox" v-if="index === 'isSelectedAll'">
+                  <span v-else>{{ title }}</span>
+                </th>
+              </tr>
             </thead>
             <tbody class="tbody">
             <tr class="document-row" v-for="(row, index) in rows" :key="index">
               <td v-for="(value, key) in row" :key="key">
-                <router-link :to="{name: 'declaration', params: {reester_id: index}}" v-if="key === 'num'">{{
-                    value
-                  }}
+                <router-link :to="{name: 'declaration', params: {reester_id: index}}" v-if="key === 'num'">
+                  {{ value }}
                 </router-link>
+                <input class="selected-row" type="checkbox" :checked="value"
+                       @change="setSelect(index)"
+                       v-else-if="key === 'isSelected'"
+                />
                 <p v-else>{{ value }}</p>
               </td>
             </tr>
@@ -60,9 +66,11 @@ export default {
   name: "TsoftTable",
   props: {
     titles: {
+      type: Object,
       required: true,
     },
     rows: {
+      type: Object,
       required: true,
     },
   },
@@ -100,10 +108,13 @@ export default {
     stop() {
       this.mode = undefined;
     },
+    setSelect(index) {
+      this.rows[index].isSelected = !this.rows[index].isSelected;
+    }
   },
   computed: {
     isPropsEmpty() {
-      return !!Object.keys(this.titles).length & !!Object.keys(this.rows).length
+      return !!Object.keys(this.titles).length & !!Object.keys(this.rows).length;
     }
   }
 };
@@ -136,7 +147,6 @@ a {
 thead th {
   border: 1px solid black;
   line-height: 0.5rem;
-  min-width: 210px;
   margin-bottom: 10px;
   width: auto;
   white-space: nowrap;
@@ -166,6 +176,10 @@ th p {
   margin: 2px;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.tbody td:first-child {
+  text-align: center;
 }
 
 .tableRow {
