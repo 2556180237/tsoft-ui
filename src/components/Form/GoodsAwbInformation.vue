@@ -1,5 +1,4 @@
 <template>
-
   <div class="order">
     <div class="group-panel-label" @click="isOrderOpen= !isOrderOpen">
       <p>Товарная партия {{ orderNum }}</p>
@@ -9,28 +8,6 @@
     </div>
     <div class="group-panel-content" :class="{'open': isOrderOpen}">
       <div class="product-batch">
-        <!--Region элемент хэдера блока с кнопками-->
-        <div class="d-flex product-batch-header justify-content-between">
-          <h4 class="col-4">Сведения о товарной партии</h4>
-          <div class="product-batch-actions col-4 d-flex justify-content-end">
-            <div class="col-2">
-              <button class="btn batch-button">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <button class="btn batch-button">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <button class="btn batch-button">
-                <i class="fa-solid fa-border-top-left"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!--endregion-->
         <!--Region элемент с информацией о партии, индивидуальной информацией об отправителе, с информацией о получателе-->
         <div class="product-inner-block">
           <!--Region элемент с общей информацией о партии-->
@@ -285,17 +262,12 @@
               <button
                 class="btn invoice-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapsedBatchSender"
-                aria-expanded="false"
-                aria-controls="collapsedBatchSender"
               >
-                <div class="collapsing-block d-flex justify-content-between">
+                <div class="collapsing-block d-flex justify-content-between" @click="sender = !sender">
                   <span>Отправитель по индивидуальной накладной</span>
-                  <i class="fa-solid fa-caret-up"></i>
                 </div>
               </button>
-              <div class="collapse" id="collapsedBatchSender">
+              <div v-show="sender">
                 <div class="card card-body">
                   <div class="row">
                     <div class="recipient-name">
@@ -615,17 +587,12 @@
               <button
                 class="btn invoice-button collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapsedBatchRecipient"
-                aria-expanded="false"
-                aria-controls="collapsedBatchRecipient"
               >
-                <div class="collapsing-block d-flex justify-content-between">
+                <div class="collapsing-block d-flex justify-content-between" @click="recipient = !recipient">
                   <span>Получатель по индивидуальной накладной</span>
-                  <i class="fa-solid fa-caret-up"></i>
                 </div>
               </button>
-              <div class="collapse" id="collapsedBatchRecipient">
+              <div v-show="recipient">
                 <div class="card card-body">
                   <div class="row">
                     <div class="recipient-name">
@@ -941,10 +908,10 @@
         </div>
       </div>
       <div class="goods">
-        <div class="group-panel-label" @click="isGoodsOpen= !isGoodsOpen">
+        <div class="group-panel-label mb-2" @click="isGoodsOpen= !isGoodsOpen">
           <p>Товары</p>
           <div class="arrow">
-            <span class="fa-solid fa-caret-right" :class="{'down-rotate': isGoodsOpen}" />
+            <i class="fa-solid fa-caret-right" :class="{'down-rotate': isGoodsOpen}" />
           </div>
         </div>
         <div class="group-panel-content" :class="{'open': isGoodsOpen}">
@@ -966,7 +933,9 @@ export default {
   data() {
     return {
       isGoodsOpen: false,
-      isOrderOpen: false
+      isOrderOpen: false,
+      sender: false,
+      recipient: false
     };
   },
   props: {

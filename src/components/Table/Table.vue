@@ -4,53 +4,54 @@
       <div class="table-section">
         <div class="slider-block">
           <div
-              class="control-prev btn-left"
-              id="tableSliderLeft"
-              data-bs-slide="prev"
-              style="transform: translate3d(0px, 48px, 0px)"
-              :class="{ active: this.leftScroll }"
-              @mouseout="stop"
-              @mouseover="moveLeft"
+            class="control-prev btn-left"
+            id="tableSliderLeft"
+            data-bs-slide="prev"
+            style="transform: translate3d(0px, 48px, 0px)"
+            :class="{ active: this.leftScroll }"
+            @mouseout="stop"
+            @mouseover="moveLeft"
           >
             <span class="visually-hidden">Предыдущий</span>
           </div>
           <div
-              class="control-next btn-right"
-              id="tableSliderRight"
-              data-bs-slide="next"
-              style="transform: translate3d(0px, 48px, 0px)"
-              @mouseout="stop"
-              @mouseover="moveRight"
+            class="control-next btn-right"
+            id="tableSliderRight"
+            data-bs-slide="next"
+            style="transform: translate3d(0px, 48px, 0px)"
+            @mouseout="stop"
+            @mouseover="moveRight"
+            v-show="isPropsEmpty"
           >
             <span class="visually-hidden">Следующий</span>
           </div>
         </div>
         <div
-            class="table-responsive table-statuses"
-            id="tableResponsive"
-            @scroll="move"
+          class="table-responsive table-statuses"
+          id="tableResponsive"
+          @scroll="move"
         >
-          <tsoft-preloader v-if="!isPropsEmpty"/>
-          <table class="table" v-else>
-            <thead class="thead">
-              <tr>
-                <th v-for="(title, index) in titles" :key="index">
-                  <input type="checkbox" v-if="index === 'isSelectedAll'">
-                  <span v-else>{{ title }}</span>
-                </th>
-              </tr>
+          <tsoft-preloader v-if="!isPropsEmpty" />
+          <table v-else>
+            <thead>
+            <tr>
+              <td v-for="(title, index) in titles" :key="index">
+                <input type="checkbox" v-if="index === 'isSelectedAll'">
+                <span v-else>{{ title }}</span>
+              </td>
+            </tr>
             </thead>
-            <tbody class="tbody">
+            <tbody>
             <tr class="document-row" v-for="(row, index) in rows" :key="index">
               <td v-for="(value, key) in row" :key="key">
-                <router-link :to="{name: 'declaration', params: {reester_id: index}}" v-if="key === 'num'">
+                <router-link :to="{name: 'declaration', params: {reester_id: value}}" v-if="key === 'uuid'">
                   {{ value }}
                 </router-link>
-                <input class="selected-row" type="checkbox" :checked="value"
-                       @change="setSelect(index)"
-                       v-else-if="key === 'isSelected'"
-                />
-                <p v-else>{{ value }}</p>
+<!--                <input class="selected-row" type="checkbox" :checked="value"-->
+<!--                       @change="setSelect(index)"-->
+<!--                       v-else-if="key === 'isSelected'"-->
+<!--                />-->
+                <span v-else>{{ value }}</span>
               </td>
             </tr>
             </tbody>
@@ -67,18 +68,18 @@ export default {
   props: {
     titles: {
       type: Object,
-      required: true,
+      required: true
     },
     rows: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   data() {
     return {
       mode: undefined,
       table: null,
-      leftScroll: false,
+      leftScroll: false
     };
   },
   mounted() {
@@ -107,6 +108,7 @@ export default {
     },
     stop() {
       this.mode = undefined;
+      console.log(this.rows);
     },
     setSelect(index) {
       this.rows[index].isSelected = !this.rows[index].isSelected;
@@ -120,7 +122,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style scoped>
 
 .section {
   position: relative;
@@ -133,19 +135,57 @@ a {
 
 #tableResponsive {
   background: rgb(253, 253, 253);
-  border: 1px solid #ccc;
+  border: 1px solid #c4c4c4;
+}
+
+table {
+  width: 100%;
+}
+
+table tr {
+  line-height: 20px;
+}
+
+thead tr > td {
+  padding: 5px;
+  border: 1px solid #2d2d2d;
+}
+
+tbody tr > td {
+  padding: 5px;
+  border: 1px solid #c4c4c4;
+}
+
+tbody tr:first-child {
+  border-top: unset;
+}
+
+tbody tr > td:first-child {
+  border-left: unset;
+}
+
+tbody tr > td:last-child {
+  border-right: unset;
+}
+
+
+thead tr {
+  font-weight: bold;
 }
 
 .content {
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 0;
 }
 
 .tbody td p {
   padding-bottom: 0;
 }
 
+thead {
+  border: unset !important;
+}
+
 thead th {
-  border: 1px solid black;
   line-height: 0.5rem;
   margin-bottom: 10px;
   width: auto;
@@ -159,7 +199,6 @@ th p {
 }
 
 .tbody tr td {
-  border: 1px solid #ccc;
   padding: 1px;
   white-space: nowrap;
 }
@@ -178,42 +217,9 @@ th p {
   overflow: hidden;
 }
 
-.tbody td:first-child {
-  text-align: center;
-}
-
-.tableRow {
-  font-size: 13px;
-  line-height: 18px;
-  color: #362518;
-}
-
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
-
-.tableContents {
-  color: #aaaaaa;
-  font-size: 12px;
-  line-height: 0 !important;
-  text-transform: uppercase;
-  border-top: 2px solid #e4e4e4;
-  border-bottom: 2px solid #e4e4e4;
-}
-
-.tableRow > tr {
-  border-bottom: 1px solid #eef2f7;
-}
-
-.table .tableContents {
-  line-height: 10px !important;
-}
-
-.table th,
 .table td {
   margin: 0.75rem;
-  vertical-align: top;
-  /* border: 1px solid #dee2e6; */
+  vertical-align: center;
 }
 
 .table-section {
@@ -288,38 +294,7 @@ th p {
   right: 0;
 }
 
-.back-anchor {
-  text-decoration: unset;
-}
-
 .back-anchor span {
   color: black;
-}
-
-.t-folder {
-  color: black;
-  text-decoration: unset;
-}
-
-.t-folder:hover {
-  color: #ff6633;
-}
-
-.fa-folder-open {
-  color: #ff6633;
-}
-
-.documentNumber {
-  color: black;
-  text-decoration: unset;
-}
-
-.documentNumber:hover {
-  color: #ff6633;
-}
-
-.preloader-main {
-  background-color: white;
-  padding: 10px;
 }
 </style>

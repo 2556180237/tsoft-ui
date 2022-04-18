@@ -1,38 +1,14 @@
 <template>
-      <div class="product-info-block my-2" id="productInvoiceBlock">
-        <div class="d-flex product-batch-header justify-content-between">
-          <h4 class="col-4">Товар (1 из 2)</h4>
-          <div class="product-info-actions col-4 d-flex justify-content-end">
-            <div class="col-2">
-              <button class="btn product-actions-button">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <button class="btn product-actions-button">
-                <i class="fa-solid fa-minus" id="collapseButton"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <button class="btn product-actions-button">
-                <i class="fa-solid fa-border-top-left"></i>
-              </button>
-            </div>
-            <div class="col-2">
-              <button
-                class="btn product-actions-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#product-1Inner"
-                aria-expanded="true"
-                aria-controls="product-1Inner"
-              >
-                <i class="fa-solid fa-sort-down"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="product-inner-block collapse" id="product-1Inner">
+  <div class="good">
+    <div class="group-panel-label" @click="isGoodOpen = !isGoodOpen">
+      <p>Товар №</p>
+      <div class="arrow">
+        <span class="fa-solid fa-caret-right" :class="{'down-rotate': isGoodOpen}" />
+      </div>
+    </div>
+    <div class="group-panel-content" :class="{'open': isGoodOpen}">
+      <div class="product-info-block">
+        <div class="product-inner-block">
           <div class="row">
             <div class="col-1">
               <div class="col-9">
@@ -284,6 +260,8 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -291,7 +269,7 @@ export default {
   name: "TsoftGoodInformationForm",
   data() {
     return {
-      isGoodsOpen: false
+      isGoodOpen: false
     };
   },
   props: {
@@ -305,3 +283,55 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.product-batch p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.product-batch label {
+  font-size: 10px;
+}
+
+.product-batch a {
+  font-size: 10px;
+}
+
+.product-info-block p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.product-info-block label {
+  font-size: 10px;
+}
+
+.product-info-block a {
+  font-size: 10px;
+}
+
+.product-info-block {
+  border: 1px solid #c4c4c4;
+  border-top: unset;
+  max-width: 950px;
+  min-width: 900px;
+  margin: 0 auto;
+}
+
+.product-info-actions button:focus {
+  box-shadow: unset;
+}
+
+.product-info-actions i:before {
+  color: white;
+}
+
+.product-info-actions .fa-sort-down:before {
+  color: black;
+}
+</style>
