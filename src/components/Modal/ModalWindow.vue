@@ -95,8 +95,6 @@ export default {
         this.size.height = modal.clientHeight;
         this.size.width = modal.clientWidth;
       }
-      console.log(modal.clientHeight);
-      console.log(modal.clientWidth);
       modal.focus();
     }
   },
@@ -119,6 +117,8 @@ export default {
   position: absolute;
   min-width: 435px;
   min-height: 340px;
+  top: 20%;
+  left: 40%;
 }
 
 .wrapper {

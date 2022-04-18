@@ -3,7 +3,7 @@
     <div>
       <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
       <div>
-        <div class="group-panel-label" @click="isOrdersOpen = !isOrdersOpen">
+        <div class="group-panel-label mb-2" @click="isOrdersOpen = !isOrdersOpen">
           <p>Заказы</p>
           <div class="arrow">
             <span class="fa-solid fa-caret-right" :class="{'down-rotate': isOrdersOpen}" />
@@ -20,7 +20,7 @@
       </div>
 
       <div>
-        <div class="group-panel-label" @click="isDocumentOpen = !isDocumentOpen">
+        <div class="group-panel-label mb-2" @click="isDocumentOpen = !isDocumentOpen">
           <p>Документы</p>
           <div class="arrow">
             <span class="fa-solid fa-caret-right" :class="{'down-rotate': isDocumentOpen}" />
@@ -72,49 +72,6 @@ export default {
   font-size: 10px;
 }
 
-.product-batch p {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-}
-
-.product-batch label {
-  font-size: 10px;
-}
-
-.product-batch a {
-  font-size: 10px;
-}
-
-.product-info-block p {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-}
-
-.product-info-block label {
-  font-size: 10px;
-}
-
-.product-info-block a {
-  font-size: 10px;
-}
-
-.optional-inf-block a {
-  box-sizing: border-box;
-  font-size: 10px;
-}
-
-.optional-inf-block p {
-  font-size: 10px;
-}
-
-.optional-inf-block label {
-  font-size: 10px;
-}
-
 .arrow {
   margin-right: 5px;
   margin-top: -3px;
@@ -144,7 +101,7 @@ export default {
   padding-top: 7px;
   font-weight: bold;
   border: 1px solid #c4c4c4;
-  margin-bottom: 10px;
+  /*margin-bottom: 1px;*/
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -159,11 +116,23 @@ export default {
 }
 
 .goods {
-  padding: 10px 10px 0;
+  padding-top: 5px;
+  padding-left: 40px;
 }
 
 .order {
-  padding: 10px 10px 0;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.doc {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.good {
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .group-panel-content.open {
@@ -182,17 +151,18 @@ li a {
 /*Стили текстовых инпутов*/
 .form-control {
   padding: 0 5px 0 3px;
-  background-color: #21a0fe;
+  background-color: #e1e1e1;
   color: black;
   font-weight: bold;
   font-size: 16px;
   box-shadow: 1px 1px 1px white;
+  border: 1px solid #afafaf;
 }
 
 .form-control:focus {
   outline: unset;
   border: unset;
-  background-color: #80ffff;
+  background-color: #38d9a6;
   color: black;
   font-weight: bold;
   font-size: 16px;
@@ -201,7 +171,7 @@ li a {
 }
 
 .form-control::placeholder {
-  color: #597a93;
+  color: #989898;
   font-weight: bold;
   font-size: 11px;
   padding-left: 10px;
@@ -209,10 +179,20 @@ li a {
 
 /*Стиль чекбоксовых инпутов*/
 .form-check-input {
-  background-color: #21a0fe;
+  background-color: #E67926;
   box-shadow: 1px 1px 1px white;
   font-size: 10px;
+}
 
+.form-check-input:checked {
+  background-color: #0a9167;
+  box-shadow: unset;
+  border: unset;
+}
+
+.form-check-input:focus {
+  box-shadow: unset;
+  border: unset;
 }
 
 .number-code::-webkit-outer-spin-button,
@@ -227,9 +207,8 @@ li a {
 /*Region Стили блока декларации*/
 
 .declaration {
-  background-color: #d1d1d1;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #c4c4c4;
   max-width: 950px;
   min-width: 900px;
   font-size: 10px;
@@ -283,49 +262,12 @@ label {
   margin-right: 6px;
 }
 
-/*Стили текстовых инпутов*/
-.form-control {
-  padding: 0 5px 0 3px;
-  background-color: #21a0fe;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 1px 1px 1px white;
-}
-
-.form-control:focus {
-  outline: unset;
-  border: unset;
-  background-color: #80ffff;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 1px 1px 1px #9f9f9f;
-  border: 1px solid black;
-}
-
-.form-control::placeholder {
-  color: #597a93;
-  font-weight: bold;
-  font-size: 11px;
-  padding-left: 10px;
-}
-
-/**/
-/*Стиль чекбоксовых инпутов*/
-.form-check-input {
-  background-color: #21a0fe;
-  box-shadow: 1px 1px 1px white;
-}
-
-/**/
 /*Стиль блоков-обёрток для <p>*/
 .inf-paragraph {
   min-width: 250px;
   max-width: 270px;
   margin: 5px 0 auto 0;
 }
-
 /**/
 
 .changing-declaration .inf-block div {
@@ -387,7 +329,7 @@ label {
 
 .collapsing-block {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #c4c4c4;
   padding: 5px 10px;
   font-weight: bold;
 }
@@ -400,13 +342,14 @@ i {
 /**/
 .card-body {
   background-color: unset;
-  border: 1px solid black;
+  border: 1px solid #c4c4c4;
 }
 
 .point-name {
   width: fit-content;
   margin: auto auto 0;
-  color: #3274dd;
+  color: #0D6247;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -443,9 +386,9 @@ i {
 
 /*Стили блока информации о товарной партии*/
 .product-batch {
-  background-color: #d1d1d1;
   padding: 0 0 10px;
-  border: 1px solid black;
+  border: 1px solid #c4c4c4;
+  border-top:unset;
   max-width: 950px;
   min-width: 900px;
   margin: 0 auto;
@@ -517,37 +460,6 @@ i {
   cursor: pointer;
 }
 
-/**/
-
-.product-info-block {
-  background-color: #d1d1d1;
-  padding: 0 0 10px;
-  border: 1px solid black;
-  max-width: 950px;
-  min-width: 900px;
-  margin: 0 auto;
-}
-
-.product-info-actions button:focus {
-  box-shadow: unset;
-}
-
-.product-info-actions i:before {
-  color: white;
-}
-
-.product-info-actions .fa-sort-down:before {
-  color: black;
-}
-
-.product-actions-button:not(.collapsed) {
-  transform: rotate(180deg);
-}
-
-/*.btn {*/
-/*  padding: 1rem;*/
-/*}*/
-
 .btn-bg-white {
   background-color: white;
   border-radius: 5px;
@@ -562,21 +474,4 @@ i {
   font-size: 16px;
 }
 
-/*Стили блока со сведениями о дополнительном документе*/
-
-.optional-inf-block {
-  background-color: #d1d1d1;
-  padding: 0 0 10px;
-  border: 1px solid black;
-  max-width: 950px;
-  min-width: 900px;
-  margin: 0 auto;
-}
-
-.optional-inf-header {
-  padding: 0 10px;
-  background-color: #3274dd;
-  box-shadow: inset 1px 1px 6px 0 #0d3195;
-  color: white;
-}
 </style>
