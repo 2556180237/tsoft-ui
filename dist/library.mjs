@@ -82,16 +82,16 @@ var script$g = {
   }
 };
 
-const _withScopeId$4 = n => (pushScopeId("data-v-647119ad"),n=n(),popScopeId(),n);
+const _withScopeId$5 = n => (pushScopeId("data-v-647119ad"),n=n(),popScopeId(),n);
 const _hoisted_1$g = { class: "content" };
 const _hoisted_2$f = { class: "section" };
 const _hoisted_3$d = { class: "table-section" };
 const _hoisted_4$9 = { class: "slider-block" };
-const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$4(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
+const _hoisted_5$8 = /*#__PURE__*/ _withScopeId$5(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Предыдущий", -1 /* HOISTED */));
 const _hoisted_6$5 = [
   _hoisted_5$8
 ];
-const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$4(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
+const _hoisted_7$4 = /*#__PURE__*/ _withScopeId$5(() => /*#__PURE__*/createElementVNode("span", { class: "visually-hidden" }, "Следующий", -1 /* HOISTED */));
 const _hoisted_8$4 = [
   _hoisted_7$4
 ];
@@ -293,10 +293,10 @@ var script$d = {
   },
 };
 
-const _withScopeId$3 = n => (pushScopeId("data-v-f314cfaa"),n=n(),popScopeId(),n);
+const _withScopeId$4 = n => (pushScopeId("data-v-f314cfaa"),n=n(),popScopeId(),n);
 const _hoisted_1$d = { class: "file-row" };
 const _hoisted_2$c = { class: "file" };
-const _hoisted_3$b = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
+const _hoisted_3$b = /*#__PURE__*/ _withScopeId$4(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-file" }, null, -1 /* HOISTED */));
 const _hoisted_4$8 = { class: "file-name" };
 
 function render$d(_ctx, _cache, $props, $setup, $data, $options) {
@@ -342,11 +342,11 @@ var script$c = {
   },
 };
 
-const _withScopeId$2 = n => (pushScopeId("data-v-61a6cc5d"),n=n(),popScopeId(),n);
+const _withScopeId$3 = n => (pushScopeId("data-v-61a6cc5d"),n=n(),popScopeId(),n);
 const _hoisted_1$c = { class: "folder-row" };
 const _hoisted_2$b = { class: "folder-container" };
 const _hoisted_3$a = ["onClick"];
-const _hoisted_4$7 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
+const _hoisted_4$7 = /*#__PURE__*/ _withScopeId$3(() => /*#__PURE__*/createElementVNode("i", { class: "fas fa-folder folder-icon" }, null, -1 /* HOISTED */));
 const _hoisted_5$7 = ["onClick"];
 
 function render$c(_ctx, _cache, $props, $setup, $data, $options) {
@@ -4450,12 +4450,13 @@ var script$8 = {
   data() {
     return {
       isDocumentOpen: false
-    }
+    };
   }
 };
 
+const _withScopeId$2 = n => (pushScopeId("data-v-598fc5a6"),n=n(),popScopeId(),n);
 const _hoisted_1$8 = { class: "doc" };
-const _hoisted_2$7 = /*#__PURE__*/createElementVNode("p", null, "Документы №", -1 /* HOISTED */);
+const _hoisted_2$7 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("p", null, "Документы №", -1 /* HOISTED */));
 const _hoisted_3$7 = { class: "arrow" };
 const _hoisted_4$4 = { class: "optional-inf-block" };
 const _hoisted_5$4 = { class: "product-inner-block" };
@@ -4466,9 +4467,9 @@ const _hoisted_9$1 = { class: "col-5 d-flex" };
 const _hoisted_10$1 = { class: "col-3 d-flex" };
 const _hoisted_11$1 = { class: "col-8" };
 const _hoisted_12$1 = { class: "input-bg" };
-const _hoisted_13$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, [
+const _hoisted_13$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "col-1" }, [
   /*#__PURE__*/createElementVNode("p", { class: "fs-5 my-0" }, "/")
-], -1 /* HOISTED */);
+], -1 /* HOISTED */));
 const _hoisted_14$1 = { class: "col-3" };
 const _hoisted_15$1 = { class: "input-bg" };
 const _hoisted_16$1 = { class: "col-9 ps-2" };
@@ -4477,20 +4478,20 @@ const _hoisted_18$1 = { class: "col-7 row" };
 const _hoisted_19$1 = { class: "col-2" };
 const _hoisted_20$1 = { class: "input-bg" };
 const _hoisted_21$1 = { class: "col-3 d-flex" };
-const _hoisted_22$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "от", -1 /* HOISTED */);
+const _hoisted_22$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "от", -1 /* HOISTED */));
 const _hoisted_23$1 = { class: "input-bg" };
 const _hoisted_24$1 = { class: "col-3 d-flex" };
-const _hoisted_25$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "с", -1 /* HOISTED */);
+const _hoisted_25$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "с", -1 /* HOISTED */));
 const _hoisted_26$1 = { class: "input-bg" };
 const _hoisted_27$1 = { class: "col-3 d-flex" };
-const _hoisted_28$1 = /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "по", -1 /* HOISTED */);
+const _hoisted_28$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("p", { class: "align-bcntr pe-1" }, "по", -1 /* HOISTED */));
 const _hoisted_29$1 = { class: "input-bg" };
 const _hoisted_30$1 = { class: "col-1" };
 const _hoisted_31$1 = { class: "input-bg" };
 const _hoisted_32$1 = { class: "row mt-3" };
 const _hoisted_33$1 = { class: "d-flex" };
 const _hoisted_34$1 = { class: "col-5 d-flex" };
-const _hoisted_35$1 = /*#__PURE__*/createStaticVNode("<div class=\"col-2\"><div class=\"row pe-4\"><div class=\"col-6\"><button class=\"btn\"><i class=\"fa-solid fa-bolt-lightning\"></i></button></div><div class=\"col-6\"><button class=\"btn\"><i class=\"fa-solid fa-folder-open\"></i></button></div></div><div class=\"row\"></div></div>", 1);
+const _hoisted_35$1 = /*#__PURE__*/createStaticVNode("<div class=\"col-2\" data-v-598fc5a6><div class=\"row pe-4\" data-v-598fc5a6><div class=\"col-6\" data-v-598fc5a6><button class=\"btn\" data-v-598fc5a6><i class=\"fa-solid fa-bolt-lightning\" data-v-598fc5a6></i></button></div><div class=\"col-6\" data-v-598fc5a6><button class=\"btn\" data-v-598fc5a6><i class=\"fa-solid fa-folder-open\" data-v-598fc5a6></i></button></div></div><div class=\"row\" data-v-598fc5a6></div></div>", 1);
 const _hoisted_36$1 = { class: "col-10 d-flex" };
 const _hoisted_37$1 = { class: "col-8" };
 const _hoisted_38$1 = { class: "input-bg" };
@@ -4505,17 +4506,17 @@ const _hoisted_46$1 = { class: "col-3" };
 const _hoisted_47$1 = { class: "input-bg" };
 const _hoisted_48$1 = { class: "row justify-content-center mt-2" };
 const _hoisted_49$1 = { class: "col-11" };
-const _hoisted_50$1 = /*#__PURE__*/createElementVNode("div", { class: "" }, [
+const _hoisted_50$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "" }, [
   /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, " Сведения о фактическом представлении документа ")
-], -1 /* HOISTED */);
+], -1 /* HOISTED */));
 const _hoisted_51$1 = { class: "d-flex" };
 const _hoisted_52$1 = { class: "col-2 d-flex" };
 const _hoisted_53$1 = { class: "input-bg col-4" };
 const _hoisted_54$1 = { class: "input-bg col-8" };
 const _hoisted_55$1 = { class: "col-5 d-flex" };
-const _hoisted_56$1 = /*#__PURE__*/createElementVNode("div", { class: "align-bcntr" }, [
-  /*#__PURE__*/createElementVNode("p", { class: "col-1 align-bcntr" }, "ДТ")
-], -1 /* HOISTED */);
+const _hoisted_56$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "col-1 align-bcntr text" }, "ДТ")
+], -1 /* HOISTED */));
 const _hoisted_57$1 = { class: "col-3" };
 const _hoisted_58$1 = { class: "input-bg" };
 const _hoisted_59$1 = { class: "col-4" };
@@ -4525,9 +4526,9 @@ const _hoisted_62$1 = { class: "input-bg" };
 const _hoisted_63$1 = { class: "col-1" };
 const _hoisted_64$1 = { class: "input-bg" };
 const _hoisted_65$1 = { class: "col-5 d-flex" };
-const _hoisted_66$1 = /*#__PURE__*/createElementVNode("div", { class: "align-bcntr" }, [
+const _hoisted_66$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "align-bcntr" }, [
   /*#__PURE__*/createElementVNode("p", { class: "col-1 align-bcntr" }, "ТС")
-], -1 /* HOISTED */);
+], -1 /* HOISTED */));
 const _hoisted_67$1 = { class: "col-3" };
 const _hoisted_68$1 = { class: "input-bg" };
 const _hoisted_69$1 = { class: "col-4" };
@@ -4538,18 +4539,18 @@ const _hoisted_73$1 = { class: "col-1" };
 const _hoisted_74$1 = { class: "input-bg" };
 const _hoisted_75$1 = { class: "d-flex mt-2" };
 const _hoisted_76$1 = { class: "col-2 d-flex" };
-const _hoisted_77$1 = /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */);
-const _hoisted_78$1 = /*#__PURE__*/createElementVNode("div", { class: "col-2 align-bcntr" }, [
-  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "TIR")
-], -1 /* HOISTED */);
+const _hoisted_77$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "col-1" }, null, -1 /* HOISTED */));
+const _hoisted_78$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "col-2 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr text" }, "TIR")
+], -1 /* HOISTED */));
 const _hoisted_79$1 = { class: "col-2" };
 const _hoisted_80$1 = { class: "input-bg" };
 const _hoisted_81$1 = { class: "col-7" };
 const _hoisted_82$1 = { class: "input-bg" };
 const _hoisted_83$1 = { class: "col-6 d-flex" };
-const _hoisted_84$1 = /*#__PURE__*/createElementVNode("div", { class: "col-3 align-bcntr" }, [
-  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr" }, "Иной документ")
-], -1 /* HOISTED */);
+const _hoisted_84$1 = /*#__PURE__*/ _withScopeId$2(() => /*#__PURE__*/createElementVNode("div", { class: "col-3 align-bcntr" }, [
+  /*#__PURE__*/createElementVNode("p", { class: "align-bcntr text" }, "Иной документ")
+], -1 /* HOISTED */));
 const _hoisted_85$1 = { class: "col-6" };
 const _hoisted_86$1 = { class: "input-bg" };
 const _hoisted_87$1 = { class: "col-3" };
@@ -4931,7 +4932,7 @@ function render$8(_ctx, _cache, $props, $setup, $data, $options) {
   ]))
 }
 
-var css_248z$8 = "\n.optional-inf-block a[data-v-598fc5a6] {\r\n  box-sizing: border-box;\r\n  font-size: 10px;\n}\n.optional-inf-block p[data-v-598fc5a6] {\r\n  font-size: 10px;\n}\n.optional-inf-block label[data-v-598fc5a6] {\r\n  font-size: 10px;\n}\n.optional-inf-block[data-v-598fc5a6] {\r\n  padding: 0 0 10px;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  margin: 0 auto;\n}\n.group-panel-content.doc[data-v-598fc5a6] {\r\n  border: 1px solid #c4c4c4;\r\n  border-top: unset;\n}\r\n";
+var css_248z$8 = "\n.optional-inf-block > a[data-v-598fc5a6] {\r\n  box-sizing: border-box;\r\n  font-size: 10px;\n}\n.optional-inf-block p[data-v-598fc5a6] {\r\n  font-size: 10px;\n}\n.optional-inf-block label[data-v-598fc5a6] {\r\n  font-size: 10px;\n}\n.optional-inf-block[data-v-598fc5a6] {\r\n  padding: 0 0 10px;\r\n  max-width: 950px;\r\n  min-width: 900px;\r\n  margin: 0 auto;\n}\n.group-panel-content.doc[data-v-598fc5a6] {\r\n  border: 1px solid #c4c4c4;\r\n  border-top: unset;\n}\n.text[data-v-598fc5a6] {\r\n  font-size: 10px;\n}\r\n";
 styleInject(css_248z$8);
 
 script$8.render = render$8;
