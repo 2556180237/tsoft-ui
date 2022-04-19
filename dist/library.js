@@ -5681,6 +5681,9 @@ var script$4 = {
       return !!Object.keys(this.instruments).length;
     }
   },
+  mounted() {
+    console.log(this.instrumentSettings);
+  }
 };
 
 const _hoisted_1$4 = ["onClick", "title"];
