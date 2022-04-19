@@ -17,7 +17,7 @@
           </div>
           <div class="mod-body">
             <tsoft-preloader v-if="this.loading" />
-            <slot :name="nameComponent"></slot>
+            <slot v-else />
           </div>
         </div>
       </div>

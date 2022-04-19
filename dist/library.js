@@ -5671,16 +5671,16 @@ var script$4 = {
       type: Object,
       required: true
     },
-    instrumentBlock: {
+    instrumentSettings: {
       type: Object,
       required: true
-    },
+    }
   },
   computed: {
     isInstrumentsExist() {
       return !!Object.keys(this.instruments).length;
     }
-  }
+  },
 };
 
 const _hoisted_1$4 = ["onClick", "title"];
@@ -5690,12 +5690,10 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
     ? (vue.openBlock(), vue.createElementBlock("div", {
         key: 0,
         class: "d-flex instruments",
-        style: vue.normalizeStyle({'justify-content': $props.instrumentBlock.position})
+        style: vue.normalizeStyle({'justify-content': $props.instrumentSettings.position})
       }, [
-        (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.instruments, (instrument) => {
-          return (vue.openBlock(), vue.createElementBlock("div", {
-            key: $props.instruments.id
-          }, [
+        (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.instruments, (instrument, index) => {
+          return (vue.openBlock(), vue.createElementBlock("div", { key: index }, [
             vue.createElementVNode("button", {
               class: "instrument-btn btn",
               type: "button",
@@ -5704,7 +5702,7 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
             }, [
               vue.createElementVNode("i", {
                 class: vue.normalizeClass(instrument.img),
-                style: vue.normalizeStyle({'font-size': instrument.fontSize})
+                style: vue.normalizeStyle({'font-size': $props.instrumentSettings.fontSize})
               }, null, 6 /* CLASS, STYLE */)
             ], 8 /* PROPS */, _hoisted_1$4)
           ]))
@@ -5849,8 +5847,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
             vue.createElementVNode("div", _hoisted_6, [
               (this.loading)
                 ? (vue.openBlock(), vue.createBlock(_component_tsoft_preloader, { key: 0 }))
-                : vue.createCommentVNode("v-if", true),
-              vue.renderSlot(_ctx.$slots, $props.nameComponent)
+                : vue.renderSlot(_ctx.$slots, "default", { key: 1 })
             ])
           ], 32 /* HYDRATE_EVENTS */)
         ])
