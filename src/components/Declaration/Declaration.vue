@@ -117,7 +117,7 @@ export default {
 
 .goods {
   padding-top: 5px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .order {
