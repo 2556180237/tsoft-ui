@@ -1,8 +1,9 @@
 <template>
-  <div class="d-flex instruments" :style="{'justify-content': instrumentBlock.position}" v-if="isInstrumentsExist">
-    <div v-for="instrument in instruments" :key="instruments.id">
-      <button class="instrument-btn btn" type="button" @click="$emit('action', instrument.action)" :title="instrument.name">
-        <i :class="instrument.img" :style="{'font-size': instrument.fontSize}"></i>
+  <div class="d-flex instruments" :style="{'justify-content': instrumentSettings.position}" v-if="isInstrumentsExist">
+    <div v-for="(instrument, index) in instruments" :key="index">
+      <button class="instrument-btn btn" type="button" @click="$emit('action', instrument.action)"
+              :title="instrument.name">
+        <i :class="instrument.img" :style="{'font-size': instrumentSettings.fontSize}"></i>
       </button>
     </div>
   </div>
@@ -16,17 +17,17 @@ export default {
       type: Object,
       required: true
     },
-    instrumentBlock: {
+    instrumentSettings: {
       type: Object,
       required: true
-    },
+    }
   },
   computed: {
     isInstrumentsExist() {
       return !!Object.keys(this.instruments).length;
     }
-  }
-}
+  },
+};
 </script>
 
 <style scoped>

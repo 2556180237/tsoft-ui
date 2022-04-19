@@ -5669,16 +5669,16 @@ var script$4 = {
       type: Object,
       required: true
     },
-    instrumentBlock: {
+    instrumentSettings: {
       type: Object,
       required: true
-    },
+    }
   },
   computed: {
     isInstrumentsExist() {
       return !!Object.keys(this.instruments).length;
     }
-  }
+  },
 };
 
 const _hoisted_1$4 = ["onClick", "title"];
@@ -5688,12 +5688,10 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
     ? (openBlock(), createElementBlock("div", {
         key: 0,
         class: "d-flex instruments",
-        style: normalizeStyle({'justify-content': $props.instrumentBlock.position})
+        style: normalizeStyle({'justify-content': $props.instrumentSettings.position})
       }, [
-        (openBlock(true), createElementBlock(Fragment, null, renderList($props.instruments, (instrument) => {
-          return (openBlock(), createElementBlock("div", {
-            key: $props.instruments.id
-          }, [
+        (openBlock(true), createElementBlock(Fragment, null, renderList($props.instruments, (instrument, index) => {
+          return (openBlock(), createElementBlock("div", { key: index }, [
             createElementVNode("button", {
               class: "instrument-btn btn",
               type: "button",
@@ -5702,7 +5700,7 @@ function render$4(_ctx, _cache, $props, $setup, $data, $options) {
             }, [
               createElementVNode("i", {
                 class: normalizeClass(instrument.img),
-                style: normalizeStyle({'font-size': instrument.fontSize})
+                style: normalizeStyle({'font-size': $props.instrumentSettings.fontSize})
               }, null, 6 /* CLASS, STYLE */)
             ], 8 /* PROPS */, _hoisted_1$4)
           ]))
@@ -5847,8 +5845,7 @@ function render$3(_ctx, _cache, $props, $setup, $data, $options) {
             createElementVNode("div", _hoisted_6, [
               (this.loading)
                 ? (openBlock(), createBlock(_component_tsoft_preloader, { key: 0 }))
-                : createCommentVNode("v-if", true),
-              renderSlot(_ctx.$slots, $props.nameComponent)
+                : renderSlot(_ctx.$slots, "default", { key: 1 })
             ])
           ], 32 /* HYDRATE_EVENTS */)
         ])
