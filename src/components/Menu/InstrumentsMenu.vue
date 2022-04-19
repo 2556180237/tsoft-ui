@@ -27,6 +27,9 @@ export default {
       return !!Object.keys(this.instruments).length;
     }
   },
+  mounted() {
+    console.log(this.instrumentSettings)
+  }
 };
 </script>
 
