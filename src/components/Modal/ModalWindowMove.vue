@@ -1,12 +1,17 @@
 <template>
   <!--Region Modal -->
-  <div class="modal-window" v-show="turn">
+  <div class="modal-window"
+       v-show="turn"
+       :style="{'left': left,'top': top}"
+       @mousemove="move"
+       @mouseup="dragEnd"
+  >
     <div class="wrapper d-flex">
       <div class="mod-container">
-        <div class="mod-block" tabindex="-1" @keyup.esc="close">
-          <div class="mod-header d-flex">
+        <div class="mod-block" tabindex="-1" @keyup.esc="$emit('close')">
+          <div class="mod-header d-flex" @mousedown="dragStart">
             <span class="mod-title">{{ title }}</span>
-            <div class="btn close-modal-button" type="button" @mousedown="close" @click="close">
+            <div class="btn close-modal-button" type="button" @mousedown="$emit('close')" @click="$emit('close')">
               <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
             </div>
           </div>
@@ -47,27 +52,73 @@ export default {
       type: Boolean,
       required: true
     },
+    nameComponent: {
+      type: String,
+      required: false
+    },
+    width: {
+      type: Number,
+      required: false
+    },
+    height: {
+      type: Number,
+      required: false
+    },
     title: {
       type: String,
       required: true
     }
   },
   methods: {
-    close() {
+    closeModal() {
       this.$emit("close");
     },
+    dragStart(event) {
+      this.isMoving = true;
+      this.move(event);
+    },
+    dragEnd() {
+      this.isMoving = false;
+    },
+    move(event) {
+      if (this.isMoving) {
+        this.position.left = event.clientX;
+        this.position.top = event.clientY;
+      }
+    },
+    getModalSize() {
+      let modal = document.querySelectorAll(".mod-block")[0];
+      if (this.width && this.height) {
+        this.size.height = this.height;
+        this.size.width = this.width;
+      } else {
+        this.size.height = modal.clientHeight;
+        this.size.width = modal.clientWidth;
+      }
+      modal.focus();
+    }
   },
+  computed: {
+    top() {
+      return this.position.top ? this.position.top - 20 + "px" : this.defaultPosition.top;
+    },
+    left() {
+      return this.position.left ? this.position.left - (this.size.width / 2) + "px" : this.defaultPosition.left;
+    }
+  },
+  mounted() {
+    this.getModalSize();
+  }
 };
 </script>
 
 <style scoped>
 .modal-window {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0, 0.6);
+  position: absolute;
+  min-width: 435px;
+  min-height: 340px;
+  top: 20%;
+  left: 40%;
 }
 
 .wrapper {
@@ -108,6 +159,7 @@ export default {
   margin: 15px;
   border-bottom: 1px solid #c4c4c4;
   justify-content: space-between;
+  cursor: move;
 }
 
 .close-modal-button {
@@ -128,18 +180,3 @@ export default {
 .close-modal-button .fa-xmark {
   font-size: 12px;
 }
-
-.xmark {
-  margin-top: -7px;
-}
-
-.mod-body {
-  margin: 10px;
-  position: relative;
-  min-height: 80px;
-}
-
-.btn:focus {
-  box-shadow: unset;
-}
-</style>

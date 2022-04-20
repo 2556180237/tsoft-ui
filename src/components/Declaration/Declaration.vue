@@ -1,7 +1,7 @@
 <template>
   <div class="forms">
     <div>
-      <tsoft-general-declaration-form :awb-info="this.awbInfo" :registry="this.registry" />
+      <tsoft-general-declaration-form :awb-info="this.data.awbInfo" :registry="this.data.registry.regInfo"/>
       <div>
         <div class="group-panel-label mb-2" @click="isOrdersOpen = !isOrdersOpen">
           <p>Заказы</p>
@@ -11,6 +11,7 @@
         </div>
         <div class="group-panel-content" :class="{'open': isOrdersOpen}">
           <tsoft-goods-awb-information-form
+            v-if="isOrdersExist"
             v-for="(order, index) in this.data.registry.orders"
             :order="order.orderInfo"
             :goods="order.goods"
@@ -28,6 +29,7 @@
         </div>
         <div class="group-panel-content" :class="{'open': isDocumentOpen}">
           <tsoft-additional-document-form
+            v-if="isDocumentsExist"
             v-for="(document, index) in this.data.registry.documents"
             :key="index"
             :document="document"
@@ -43,18 +45,23 @@ export default {
   name: "TsoftDeclaration",
   props: {
     data: {
-      type: Object,
       required: true
     }
   },
   data() {
     return {
-      awbInfo: this.data.awbInfo,
-      registry: this.data.registry.regInfo,
       isGeneralOpen: false,
       isOrdersOpen: false,
       isDocumentOpen: false
     };
+  },
+  computed: {
+    isDocumentsExist() {
+      return !!Object.keys(this.data.registry.documents).length;
+    },
+    isOrdersExist() {
+      return !!Object.keys(this.data.registry.orders).length;
+    }
   }
 };
 </script>
@@ -211,6 +218,7 @@ li a {
   border: 1px solid #c4c4c4;
   max-width: 950px;
   min-width: 900px;
+  min-height: 660px;
   font-size: 10px;
   margin: 0 auto;
 }
