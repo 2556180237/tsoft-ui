@@ -180,18 +180,3 @@ export default {
 .close-modal-button .fa-xmark {
   font-size: 12px;
 }
-
-.xmark {
-  margin-top: -7px;
-}
-
-.mod-body {
-  margin: 10px;
-  position: relative;
-  min-height: 80px;
-}
-
-.btn:focus {
-  box-shadow: unset;
-}
-</style>

@@ -11,7 +11,7 @@
         </div>
         <div class="group-panel-content" :class="{'open': isOrdersOpen}">
           <tsoft-goods-awb-information-form
-            v-if="this.data.registry"
+            v-if="isOrdersExist"
             v-for="(order, index) in this.data.registry.orders"
             :order="order.orderInfo"
             :goods="order.goods"

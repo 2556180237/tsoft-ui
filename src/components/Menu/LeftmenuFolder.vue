@@ -1,9 +1,10 @@
 <template>
   <div class="menu-sitemap-tree">
     <div class="file-system">
-
+      <transition name="fade" mode="out-in">
         <tsoft-preloader v-if="!folders"/>
         <tree-folder :tree-data="treeData" @getName="getName" v-else/>
+      </transition>
     </div>
   </div>
 </template>
