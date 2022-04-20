@@ -940,14 +940,12 @@ export default {
   },
   props: {
     order: {
-      type: Object,
       required: true
     },
     orderNum: {
       required: true
     },
     goods: {
-      type: Object,
       required: true
     }
   }
