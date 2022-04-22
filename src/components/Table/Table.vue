@@ -32,30 +32,57 @@
           @scroll="move"
         >
           <tsoft-preloader v-if="!isPropsEmpty" />
-          <table v-else>
-            <thead>
-            <tr>
-              <td v-for="(title, index) in titles" :key="index">
-                <input type="checkbox" v-if="index === 'isSelectedAll'">
-                <span v-else>{{ title }}</span>
-              </td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="document-row" v-for="(row, index) in rows" :key="index">
-              <td v-for="(value, key) in row" :key="key">
-                <router-link :to="{name: 'declaration', params: {reester_id: value}}" v-if="key === 'uuid'">
-                  {{ value }}
-                </router-link>
-<!--                <input class="selected-row" type="checkbox" :checked="value"-->
-<!--                       @change="setSelect(index)"-->
-<!--                       v-else-if="key === 'isSelected'"-->
-<!--                />-->
-                <span v-else>{{ value }}</span>
-              </td>
-            </tr>
-            </tbody>
-          </table>
+          <div v-else>
+            <div class="search d-flex mb-2">
+              <div class="mt-2">
+                <i class="fa fa-search"></i>
+              </div>
+              <div class="ms-3">
+                <input type="text" placeholder="Поиск" class="search-filter" />
+              </div>
+            </div>
+            <table>
+              <thead>
+              <tr v-for="(row, index) in titles" :key="index">
+                <td class="row-selector" @change="setSelectAll()">
+                  <label>
+                    <input type="checkbox" class="checkbox">
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </td>
+                <td v-for="(title, index) in row" :key="index">
+                  <div class="title-filter">
+                    <div class="title">
+                      <span>{{ title }}</span>
+                    </div>
+                    <div class="filter">
+                      <i class="fa fa-caret-down" aria-hidden="true" />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              </thead>
+              <tbody @mouseleave="selectionStop">
+              <tr class="document-row" v-for="(row, index) in rows" :key="index"
+                  @mousedown="selectionStart" @mousemove="selection(index)" @mouseup="selectionStop"
+                  @click="setSelectState(index)"
+              >
+                <td v-for="(value, key) in row" :key="key">
+                  <router-link :to="{name: 'declaration', params: {reester_id: value}}" v-if="key === 'uuid'">
+                    {{ value }}
+                  </router-link>
+                  <div class="row-selector" v-else-if="key === 'isSelected'">
+                    <label>
+                      <input type="checkbox" class="checkbox" :checked="value" @click="setSelectState(index)">
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </div>
+                  <span v-else>{{ value }}</span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -79,13 +106,26 @@ export default {
     return {
       mode: undefined,
       table: null,
-      leftScroll: false
+      leftScroll: false,
+      isSelectedAll: false,
+      selectingMode: false
     };
   },
   mounted() {
     this.setTable();
   },
   methods: {
+    selection(index) {
+      if (this.selectingMode) {
+        this.setSelect(index);
+      }
+    },
+    selectionStart() {
+      this.selectingMode = true;
+    },
+    selectionStop() {
+      this.selectingMode = false;
+    },
     setTable() {
       this.table = document.querySelector("#tableResponsive");
       this.scrollLeftValue = this.table.scrollLeft;
@@ -110,8 +150,17 @@ export default {
       this.mode = undefined;
       console.log(this.rows);
     },
-    setSelect(index) {
+    setSelectAll() {
+      this.isSelectedAll = !this.isSelectedAll;
+      for (let row in this.rows) {
+        this.rows[row].isSelected = this.isSelectedAll;
+      }
+    },
+    setSelectState(index) {
       this.rows[index].isSelected = !this.rows[index].isSelected;
+    },
+    setSelect(index) {
+      this.rows[index].isSelected = true;
     }
   },
   computed: {
@@ -123,66 +172,56 @@ export default {
 </script>
 
 <style scoped>
+.row-selector {
+  text-align: center;
+  padding-top: 6px;
+}
 
 .section {
   position: relative;
 }
 
 a {
+  color: black;
+  text-decoration: unset;
+}
+
+a:hover {
   color: #0D6247;
   font-weight: bold;
 }
 
-#tableResponsive {
-  background: rgb(253, 253, 253);
-  border: 1px solid #c4c4c4;
+.fa-search {
+  color: #c4c4c4;
+  font-size: 18px;
+}
+
+.search-filter {
+  border-style: unset;
+  padding: 5px;
+  border-bottom: 1px solid #E4E4E4;
+  box-shadow: unset;
+  color: #000000;
+}
+
+.search-filter::placeholder {
+  color: #c4c4c4;
+}
+
+.search-filter:focus {
+  border-style: unset;
+  box-shadow: unset;
+  outline: unset;
+  border-bottom: 1px solid #E4E4E4;
 }
 
 table {
   width: 100%;
 }
 
-table tr {
-  line-height: 20px;
-}
-
-thead tr > td {
-  padding: 5px;
-  border: 1px solid #2d2d2d;
-}
-
-tbody tr > td {
-  padding: 5px;
-  border: 1px solid #c4c4c4;
-}
-
-tbody tr:first-child {
-  border-top: unset;
-}
-
-tbody tr > td:first-child {
-  border-left: unset;
-}
-
-tbody tr > td:last-child {
-  border-right: unset;
-}
-
-
-thead tr {
-  font-weight: bold;
-}
-
-.content {
-  padding: 10px 0 10px 0;
-}
-
-.tbody td p {
-  padding-bottom: 0;
-}
-
 thead {
   border: unset !important;
+  font-size: 12px;
 }
 
 thead th {
@@ -197,6 +236,49 @@ th p {
   min-width: 210px;
   margin-bottom: 0;
 }
+
+table tr {
+  line-height: 30px;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+thead tr > td {
+  padding: 5px;
+  color: #c4c4c4;
+  text-transform: uppercase;
+}
+
+.title-filter {
+  display: flex;
+}
+
+tbody {
+  font-size: 13px;
+  user-select: none;
+}
+
+tbody tr > td {
+  padding: 5px;
+}
+
+.filter {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.filter::before {
+
+}
+
+.content {
+  padding: 10px 0 10px 0;
+}
+
+.tbody td p {
+  padding-bottom: 0;
+}
+
 
 .tbody tr td {
   padding: 1px;
@@ -296,5 +378,36 @@ th p {
 
 .back-anchor span {
   color: black;
+}
+
+.checkbox {
+  display: none;
+}
+
+.fake-checkbox {
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid #AAAAAA;
+  width: 20px;
+  height: 20px;
+}
+
+.fake-checkbox::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #E67926;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.checkbox:checked + .fake-checkbox::before {
+  opacity: 1;
 }
 </style>
