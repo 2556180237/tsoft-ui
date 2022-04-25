@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     folders() {
-      return this.treeData ?? false
+      return this.treeData ?? false;
     }
   }
 };
@@ -43,8 +43,6 @@ export default {
   position: sticky;
 }
 .file-system {
-  background: rgb(253, 253, 253);
-  border: 1px solid #ccc;
   padding: 10px;
   overflow: auto;
   height: 100%;

@@ -11,20 +11,14 @@
           @click="toggle(folderName)"
           :class="{'down-rotate': folder.settings.isOpen}"
         />
-        <i class="fas fa-folder folder-icon" />
         <span class="folder-name" @click="sendName(folderName)">{{ folderName }}</span>
       </div>
       <div class="file-content"
            :class="{'content-open': folder.settings.isOpen}"
       >
-        <tree-folder :tree-data="folder" v-show="folder.settings.isOpen" @getName="getName"/>
+        <tree-folder :tree-data="folder" v-show="folder.settings.isOpen" @getName="getName" />
       </div>
     </div>
-    <tree-file
-      v-for="(filename, filetype) in this.treeData.files"
-      :filename="filename"
-      :key="filetype"
-    />
   </div>
 </template>
 <script>
@@ -45,16 +39,16 @@ export default {
     toggle(name) {
       this.treeData.folders[name].settings.isOpen
         ? (this.treeData.folders[name].settings.isOpen =
-            !this.treeData.folders[name].settings.isOpen)
+          !this.treeData.folders[name].settings.isOpen)
         : (this.treeData.folders[name].settings.isOpen = true);
     },
     sendName(name) {
-      this.$emit('getName', name);
+      this.$emit("getName", name);
     },
     getName(name) {
-      this.$emit('getName', name)
+      this.$emit("getName", name);
     }
-  },
+  }
 };
 </script>
 
@@ -96,6 +90,8 @@ export default {
 .folder-name {
   white-space: nowrap;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .folder-name:hover {
@@ -103,9 +99,10 @@ export default {
 }
 
 .fa-angle-right {
-  color: rgb(190, 190, 190);
+  color: #e67926;
   margin-right: 7px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .fa-angle-right {

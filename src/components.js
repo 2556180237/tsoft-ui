@@ -31,5 +31,5 @@ export default {
     TsoftModalWindow,
     TsoftNewModalWindow,
     TsoftPreloader,
-    TsoftGoodsFoldersSwitcher
+    TsoftGoodsFoldersSwitcher,
 }

@@ -105,7 +105,7 @@ export default {
 }
 
 .mod-header {
-  margin: 15px;
+  margin: 15px 15px 10px 15px;
   border-bottom: 1px solid #c4c4c4;
   justify-content: space-between;
 }
@@ -134,7 +134,7 @@ export default {
 }
 
 .mod-body {
-  margin: 10px;
+  margin: 5px;
   position: relative;
   min-height: 80px;
 }
